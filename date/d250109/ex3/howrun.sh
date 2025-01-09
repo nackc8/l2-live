@@ -5,4 +5,6 @@ docker run \
     -v ./modified:/grey/modified \
     -d \
     --rm \
-    --name greyiocontainer grey_io
+    --name greyiocontainer \
+    --network none \
+    grey_io
