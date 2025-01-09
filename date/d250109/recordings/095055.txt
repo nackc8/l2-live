@@ -72,4 +72,128 @@ l9dwy91mfsiecx3su6753okn3
 vu5ozayogf6yv8yw8qnghu605
 x5hzq8qsu83spv6t431jvr6ed
 1cmpulqqgpz3r1kssz8md10ij
-8a
+8avrauomehjgqklslgb3zm2dw
+ok63efnysjanhi2pwdx0m724r
+v6olwevxoa1jiy3tasgl5rfh5
+sghojdmzk21ueals4icta070u
+xiwcbqbcm7zzhadfbht0irdaa
+tojn0mtez5vr23je25k1fi6jk
+4g3nz9q9slb1ri02wh814yog6
+6xrfrjofjektedog3ba3lrqo6
+o2fg320ibuzjchcu0b1irkbgu
+0251iuqz6dnjc9w6lp4czufpa
+i28qvbi1x0q6pyhdleqjpf3bo
+qr97mbct4bxj4rjfcof4sdd02
+ij54vhag8zh5ha8ubp3it7s4c
+s91tuqv8of7cjelowgcregc5q
+zq5kw1sih61dcmfsqljguilho
+90wxlvc5h4mrc2z5u4p4ss42f
+87zr92ocgjl78p2s377wf221u
+8y6btbiqy4fbkbw9ry4h4xgnj
+1mdfyt7vrudn95ls2oz52lslq
+odyc3a07cz4jznwemzlp1rcl4
+o0gtwm4mnw2b2yghaovlq8odv
+gmu007sobd7kool1kr91di0gn
+ucjtu4y0b4oqgt90xuk9e7pka
+
+Total reclaimed space: 457.9MB
+[?2004h[94mdate/d250109/ex1
+(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ docker image ls
+[?2004lREPOSITORY                       TAG                         IMAGE ID       CREATED         SIZE
+kopia/kopia                      latest                      7d1dd6559cb5   7 weeks ago     201MB
+ubuntu                           latest                      b1d9df8ab815   7 weeks ago     78.1MB
+backend_image                    latest                      13db26592aaf   7 weeks ago     144MB
+frontend_image                   latest                      a91188bf952c   7 weeks ago     1.38GB
+introimg                         latest                      e2a6a9076b3a   7 weeks ago     1.12GB
+mariadb                          latest                      0ebd7a1848dc   7 weeks ago     407MB
+dbeaver/cloudbeaver              latest                      dd4765dfec54   2 months ago    800MB
+jenkins/jenkins                  lts                         58550a76f713   2 months ago    472MB
+jenkins/jenkins                  lts-jdk17                   58550a76f713   2 months ago    472MB
+intro                            latest                      cbf745280983   3 months ago    78.1MB
+dbeaver/cloudbeaver-ee           latest                      c76a4fe16649   3 months ago    1.45GB
+mysql                            5.7                         5107333e08a8   13 months ago   501MB
+mcr.microsoft.com/mssql/server   2022-preview-ubuntu-22.04   b716b9a89740   15 months ago   1.58GB
+[?2004h[94mdate/d250109/ex1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker image prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker image prune[C +a[K[K-a
+[?2004lWARNING! This will remove all images without at least one container associated to them.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+untagged: backend_image:latest
+deleted: sha256:13db26592aafec35d8f1e86c45dc774cb5b97b72c9a4c2ba968c474b9c838fa9
+untagged: mysql:5.7
+untagged: mysql@sha256:4bc6bc963e6d8443453676cae56536f4b8156d78bae03c0145cbe47c2aad73bb
+deleted: sha256:5107333e08a87b836d48ff7528b1e84b9c86781cc9f1748bbc1b8c42a870d933
+untagged: introimg:latest
+deleted: sha256:e2a6a9076b3ac8477454c702ab0b49c9ab443c35aa1b39c7385c4188f97624c7
+untagged: dbeaver/cloudbeaver:latest
+untagged: dbeaver/cloudbeaver@sha256:5f5f8399107771d33a4aff51e1574fcc82ae6de8820dc325ea40d4e06d2d0405
+deleted: sha256:dd4765dfec54af9e58c116ac388261875b3d32d9c54cdc281f1cd885789ac2e8
+deleted: sha256:f47a4cbf42dc150104432f8bce23980346b95fa85a93067a1145717a303b4c6f
+deleted: sha256:323ee2b3f3bce5f3c6661eacef4d76ea0c1b4fe3852e2a2993b4149e4f66fc96
+deleted: sha256:2caa823a06d2616de49c2a9e7f3f0d4a2e16aa8720ccdcb691eb4b7c342be84d
+deleted: sha256:a78b8ef48bc51562b30ffbe60712abe6bd2c07ce7023b59dcc0a4377fd6f3312
+untagged: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+untagged: mcr.microsoft.com/mssql/server@sha256:6a9e9c9b3caace51857d12ba4c363fd1f94ef7d5a5b2062b102c5be8d51b2776
+deleted: sha256:b716b9a897402409852b309b8f181b53f8db401703411b71c3696cb57a280a76
+deleted: sha256:5eb1c8d48060249d1ddd5245ca2b7d7f44e0d0bfdd069f0072dc4869885bed65
+deleted: sha256:65f95ac1b7807aa10982e513fe4ae11706d926ff308d26a38d44b3b6630a4df9
+deleted: sha256:dc0585a4b8b71f7f4eb8f2e028067f88aec780d9ab40c948a8d431c1aeadeeb5
+untagged: frontend_image:latest
+deleted: sha256:a91188bf952c7f1e17dd88f06d1fceebd8fe93fbf99521f9a0f1d93a77ff245e
+untagged: kopia/kopia:latest
+untagged: kopia/kopia@sha256:b6cb1f09a5fa832a320ee06d7803e82cdd7f69ac6f61d76a0d55fbbf1495c043
+deleted: sha256:7d1dd6559cb5129d1ba38ac77fc4e398b1a5e9d0a0399fddb06bd38ba3ce16e3
+deleted: sha256:f7f4c7eeb61a0de6e43cbeaaf4052365e872643adc00f510588b2d9aeb8fcc9e
+deleted: sha256:8591fae34b40f7230ff309aecaf6531c35d6e9b30eb769638e44b58713677db2
+deleted: sha256:14db684d288cdd2c3e3d2dd33e15326ba10949f2ab58fb57d26d7bbb3d2e4b69
+deleted: sha256:271bbfd6d184ab33f105f2b6d02f93394ece9f9e573822f9ee56ab9bf082ee0d
+deleted: sha256:2573e0d8158209ed54ab25c87bcdcb00bd3d2539246960a3d592a1c599d70465
+untagged: intro:latest
+deleted: sha256:cbf7452809833fc56af083ad457d086095f800487eacc35c5eabe888a5631fff
+untagged: mariadb:latest
+untagged: mariadb@sha256:2d50fe0f77dac919396091e527e5e148a9de690e58f32875f113bef6506a17f5
+deleted: sha256:0ebd7a1848dcdc62b0ebedc804b15d94b5d8b663355c578e6e819923d83a8611
+deleted: sha256:240012dde1c5a529e4367dbd702a6bc7b57063e78a035ca6ea5bfd9b9faad301
+deleted: sha256:6f91a19cbe5850e5820082c8737f35326cef3f8c66a04b2c650e7872d1349f08
+deleted: sha256:50e8a961a0f4e148278b89ae1c6537ea818b4cf224134dc451cb2097001930cc
+deleted: sha256:09b5675fd2c3d02244d2877cd24d27fd6ca5651ab8c872745a4fed9e9a91766b
+deleted: sha256:f8a0ca59edcb589abaadb6f9678f714176a4483aff143779d09e8ada06eb8bc4
+deleted: sha256:8380031fdb80766040fa86d3793eccb6c196d94b7eaa0b0d71be943e9de8f7e1
+deleted: sha256:eb40581ff71648c2fc15a9f6b1e16fa34da3a75d50cbab5b9db04abf614a87c0
+deleted: sha256:27123a71e85e0540333291adccf7b9c340d089e8c3717c380d3b75cc8c7df90f
+untagged: ubuntu:latest
+untagged: ubuntu@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+deleted: sha256:b1d9df8ab81559494794e522b380878cf9ba82d4c1fb67293bcf931c3aa69ae4
+deleted: sha256:687d50f2f6a697da02e05f2b2b9cb05c1d551f37c404ebe55fdec44b0ae8aa5c
+untagged: dbeaver/cloudbeaver-ee:latest
+untagged: dbeaver/cloudbeaver-ee@sha256:b4aed90d2477e09fb7bb351d83ef653e7a913e248e2e7750e3b0024bd0c4e152
+deleted: sha256:c76a4fe166490a5dcf00c756bd01922b4ad58054967f6bea0a552c719e728443
+deleted: sha256:3a6725dbd40660377467db2d112427720b60fad306408dedf1d664249c428cbb
+deleted: sha256:ca6e3e6067ea8310b9750eff96cc6a972dcf898fc9c9ff1f4288ef2ccebd2b12
+deleted: sha256:76b5b00632b046436cde63990fa0a6a8c86b103f8f3dd5a62b06be460c29e3d3
+deleted: sha256:7a5ca417709f3a909cff543c8255cffbb72fab1d8c23c92c959de1ecb185a232
+deleted: sha256:85b9ca955581b21eafd18d6e447f4d4c35b873e70f80a1d05e1daf21ba74621e
+deleted: sha256:4c2e754bf0df448cd38ad67c95c31147620cc51e03dde8e74eedc9fb775f0dbf
+deleted: sha256:ba3e3d18dbe1c05e49c265d26e4bbb9531b029b9e8567ce45c56d00ecf495799
+deleted: sha256:5f5595f4d975eb3772fe2e1d4f2448d0e9ec1ab88884e32093b35974526838ab
+deleted: sha256:7e2cca5b4a3412ad330ad567ea29ea030deb2edcdb34feadeab768f8d366ecb1
+deleted: sha256:4ce1ff90bfe302457ac8f0c3c492c3ff4c5a9dbc235f7a9453adf432762bace4
+deleted: sha256:833475ad399e1b63f39320dd5c93b553a4720219a4972e7b1145f8fbc4796026
+deleted: sha256:a30a5965a4f7d9d5ff76a46eb8939f58e95be844de1ac4a4b452d5d31158fdea
+untagged: jenkins/jenkins:lts
+untagged: jenkins/jenkins:lts-jdk17
+untagged: jenkins/jenkins@sha256:7ea4989040ce0840129937b339bf8c8f878c14b08991def312bdf51ca05aa358
+deleted: sha256:58550a76f7137eaa0e0e058be8f9ef2dc676b13ea4d1ad34b3bc62d808c3a235
+deleted: sha256:19f69adbc20e1330ab8d8cad96d8f5dbb221b452de37a8a5cf009dbe8ba58f7c
+deleted: sha256:e5b01e831ed957ed54098cb575310d7765952acc9d7f112e841bd90918d0e136
+deleted: sha256:a880d467869eb541b66d87970904159bce35721babc85b55879bfa60914aa2b3
+deleted: sha256:aa39b640a546e0aecba265e86fa2d0d8288295f0ecb415bf020611b941eb2dda
+deleted: sha256:c7442be2de64ea781d898a671187b2e23b6e4c4c9d1ede48224f2eb1cede57f3
+deleted: sha256:dbb1842198528be42238144d4cc5b0dcd58eca199a6a33cf40c5cc2d96af3e79
+deleted: sha256:77bdd3576a505217646ce9fe3b9ade1b2b1425c91dd4e26fd461910d18
