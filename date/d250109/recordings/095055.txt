@@ -2986,4 +2986,46 @@ CMD ["python3", "/app/app.py"]
 [0m[34m => => resolve docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
 [0m[34m => => sha256:6e75a10070b0fcb0bead763c5118a369bc7cc30dfc1b0749c491bbb21f15 424B / 424B  0.0s
 [0m[34m => => sha256:b1d9df8ab81559494794e522b380878cf9ba82d4c1fb67293bcf931c 2.30kB / 2.30kB  0.0s
-[0m[34m => => sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068b 29.75MB / 29.
+[0m[34m => => sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068b 29.75MB / 29.75MB  1.5s
+[0m[34m => => sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92 6.69kB / 6.69kB  0.0s
+[0m[34m => => extracting sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2  1.2s
+[0m[34m => [internal] load build context                                                       0.0s
+[0m[34m => => transferring context: 338B                                                       0.0s
+[0m[34m => [2/3] RUN apt-get update && apt-get install -y python3                             15.9s
+[0m[34m => [3/3] COPY . /app                                                                   0.1s
+[0m[34m => exporting to image                                                                  0.5s
+[0m[34m => => exporting layers                                                                 0.5s
+[0m[34m => => writing image sha256:23edca0eb013cb5a475b266e224c43bffb655f9e1a3e0807b951c4f3f9  0.0s
+[0m[?25h[?2004h[94mdate/d250109/ex1
+(B[m$ docker imae[Kge ls
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+<none>       <none>    23edca0eb013   23 seconds ago   163MB
+[?2004h[94mdate/d250109/ex1
+(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ [7mdocker build -t my-python-app:latest .[27m[C[C[C[C[C[C[C[Cdocker build -t my-python-app:latest .[C[C[C[C[C[C[C[C[C
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                       docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.7s (2/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.7s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (8/8) FINISHED                                              docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 338B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.7s
+[0m[34m => [internal] load .dockerignore       
