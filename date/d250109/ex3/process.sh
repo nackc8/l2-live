@@ -5,7 +5,8 @@ dst=modified
 
 while true; do
     for src_img in "$src"/*; do
-        basename "$src_img"
+        dst_img="$(basename "$src_img")"
+        echo "$dst_img"
     done
     sleep 10
 done
