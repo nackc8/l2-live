@@ -327748,4 +327748,51 @@ exit
 f2b19aa01065   zzz       "sleep infinity"   12 minutes ago   Up 12 minutes             sovarn
 ecefead3f3a2   zzz       "sleep infinity"   24 minutes ago   Up 6 minutes              gracious_solomon
 [?2004h[94mdate/d250109/ex1
-(B[m$ q[Kdocker rm,[K grac[K[K[K[K[7mgracious_
+(B[m$ q[Kdocker rm,[K grac[K[K[K[K[7mgracious_solomon[27mgracious_solomon
+[?2004lError response from daemon: cannot remove container "/gracious_solomon": container is running: stop the container before removing or force remove
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker srtop [K[K[K[K[Ktop [7mgracious_solomon[27mgracious_solomon
+[?2004lgracious_solomon
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker stop gracious_solomon[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps[Kls[Kdocker psrm gracious_solomon[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@stop[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker stop gracious_solomon[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lgracious_solomon
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES
+f2b19aa01065   zzz       "sleep infinity"   13 minutes ago   Up 13 minutes             sovarn
+[?2004h[94mdate/d250109/ex1
+(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ ls
+[?2004lDockerfile  langfil
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker s[Kps
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED             STATUS             PORTS     NAMES
+f2b19aa01065   zzz       "sleep infinity"   About an hour ago   Up About an hour             sovarn
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker exec --t[Kit zzz &[K/bin/bash
+[?2004lunknown flag: --it
+See 'docker exec --help'.
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker exec --it zzz /bin/bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P/bin/bashs /bin/bash[1P /bin/bash[C /bin/bashs /bin/basho /bin/bashv /bin/basha /bin/bashr /bin/bashn /bin/bash
+[?2004lunknown flag: --it
+See 'docker exec --help'.
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker exec --it sovarn /bin/bash[C[1P[H[2J[94mdate/d250109/ex1
+(B[m$ docker exec -it sovarn /bin/bash
+[?2004l[?2004h]0;root@f2b19aa01065: /root@f2b19aa01065:/# pse  -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+     40 pts/0    00:00:00 bash
+     48 pts/0    00:00:00 ps
+[?2004h]0;root@f2b19aa01065: /root@f2b19aa01065:/# kill 1
+[?2004l[?2004h]0;root@f2b19aa01065: /root@f2b19aa01065:/# i kill -9 1
+[?2004l[?2004h]0;root@f2b19aa01065: /root@f2b19aa01065:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+     40 pts/0    00:00:00 bash
+     49 pts/0    00:00:00 ps
+[?2004h]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [K]0;root@f2b19aa01065: /root@f2b19aa01065:/# [?2004l
+exit
+[?2004h[94mdate/d250109/ex1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ cd ..
+[?2004l[?2004h[94mdate/d250109 (B[m$ [H[2J[94mdate/d250109 (B[m$ cd ex4[K3
