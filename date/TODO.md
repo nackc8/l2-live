@@ -6,3 +6,6 @@
 - varför inte kill sleep?
   - Docker går emellan
 
+apt-get update
+apt-get install -y imagemagick
+convert input.jpg -colorspace Gray output.png
