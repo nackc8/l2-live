@@ -4867,4 +4867,384 @@ my-python-app   latest    23edca0eb013   2 minutes ago   163MB
                 "LowerDir": "/var/lib/docker/overlay2/wpqsb505kmz7urfd6r7isw5qm/diff:/var/lib/docker/overlay2/upo1b0sr2nlk99mkzl701ukd4/diff:/var/lib/docker/overlay2/edb581386b8afd15e66927a96cc22f1b4a742f9984a8e4ec34c882f680d1f492/diff",
                 "MergedDir": "/var/lib/docker/overlay2/mi5hyplbhw45a3ufcso0cta13/merged",
                 "UpperDir": "/var/lib/docker/overlay2/mi5hyplbhw45a3ufcso0cta13/diff",
-                "WorkDir": "/var/lib/docker/overlay2/mi5hyplbhw45a3ufcso0cta
+                "WorkDir": "/var/lib/docker/overlay2/mi5hyplbhw45a3ufcso0cta13/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:687d50f2f6a697da02e05f2b2b9cb05c1d551f37c404ebe55fdec44b0ae8aa5c",
+                "sha256:de623eee8bbee549462d01eccd4623664e6c27378878c2d3f68a8c18631a3a55",
+                "sha256:af2a8fd0ce1cf06136e07b5e41236272d31ea77dbbb769f3cb57cafc5c199a87",
+                "sha256:5191dd97d918fdb8d0cca5c7978756134dec331888a591909d160b2fdf718167"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2025-01-09T10:04:12.197358356+01:00"
+        }
+    }
+]
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker imagesl
+[?2004ldocker: 'imagesl' is not a docker command.
+See 'docker --help'
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker imagesl[K[H[2J[94mdate/d250109/ex1
+(B[m$ docker images
+[?2004lREPOSITORY      TAG       IMAGE ID       CREATED          SIZE
+my-python-app   latest    5bebcb54e8df   13 minutes ago   165MB
+<none>          <none>    121ff0b83a8d   15 minutes ago   165MB
+<none>          <none>    74a125db68c8   17 minutes ago   165MB
+<none>          <none>    23edca0eb013   24 minutes ago   163MB
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker prune
+[?2004ldocker: 'prune' is not a docker command.
+See 'docker --help'
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker pruneiprunempruneaprunegpruneeprune prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:23edca0eb013cb5a475b266e224c43bffb655f9e1a3e0807b951c4f3f98ae31a
+deleted: sha256:121ff0b83a8d9086de5301220a1c030222b2abdbb175d5070a79165b0b5d78b7
+deleted: sha256:74a125db68c89bde032294a868749707647d9ee5aef15138970f84849c888f3e
+
+Total reclaimed space: 0B
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker images
+[?2004lREPOSITORY      TAG       IMAGE ID       CREATED          SIZE
+my-python-app   latest    5bebcb54e8df   14 minutes ago   165MB
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps [K -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps -a[C[K[K[K[K[Kcoo[Kntainer ls
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker container ls -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ docker build . -t sleeper>[K:latest[1P:latest[1P:latest[1P:latest[1P:latest[1P:latest[1P:latest[1P:latestz:latestz:latestz:latest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                       docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.8s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        0.9s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.2s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.4s (1/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.5s (2/2)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.7s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.8s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.9s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.3s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.0s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.5s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.2s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.6s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.3s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.8s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.5s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   0.9s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.1s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.8s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.2s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.9s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.4s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.1s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.5s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.1s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.5s
+[2m => => # Reading package lists...                                                           
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.2s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.7s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.4s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.9s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.4s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   1.9s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.6s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.0s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.7s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.2s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.9s (5/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
+[0m[34m => => transferring dockerfile: 304B                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.3s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.9s (5/6)                                                       docker:default
+[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.4s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[2m => => # The following NEW packages will be installed:                                      
+[0m[2m => => #   tree                                                                             
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.0s (5/6)                                                       docker:default
+[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.5s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[2m => => # The following NEW packages will be installed:                                      
+[0m[2m => => #   tree                                                                             
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.2s (5/6)                                                       docker:default
+[34m => [internal] load metadata for docker.io/library/ubuntu:latest                        1.5s
+[0m[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.7s
+[2m => => # Reading package lists...                                                           
+[0m[2m => => # Building dependency tree...                                                        
+[0m[2m => => # Reading state information...                                                       
+[0m[2m => => # The following NEW packages will be installed:                                      
+[0m[2m => => #   tree                                                                             
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.3s (5/6)                                                       docker:default
+[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.8s
+[2m => => #   tree                                                                             
+[0m[2m => => # 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.                     
+[0m[2m => => # Need to get 47.1 kB of archives.                                                   
+[0m[2m => => # After this operation, 111 kB of additional disk space will be used.                
+[0m[2m => => # Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 tree amd64 2.1.1-2ubunt
+[0m[2m => => # u3 [47.1 kB]                                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.4s (5/6)                                                       docker:default
+[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   2.9s
+[2m => => #   tree                                                                             
+[0m[2m => => # 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.                     
+[0m[2m => => # Need to get 47.1 kB of archives.                                                   
+[0m[2m => => # After this operation, 111 kB of additional disk space will be used.                
+[0m[2m => => # Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 tree amd64 2.1.1-2ubunt
+[0m[2m => => # u3 [47.1 kB]                                                                       
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.6s (5/6)                                                       docker:default
+[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   3.1s
+[2m => => # 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.                     
+[0m[2m => => # Need to get 47.1 kB of archives.                                                   
+[0m[2m => => # After this operation, 111 kB of additional disk space will be used.                
+[0m[2m => => # Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 tree amd64 2.1.1-2ubunt
+[0m[2m => => # u3 [47.1 kB]                                                                       
+[0m[2m => => # debconf: delaying package configuration, since apt-utils is not installed          
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.7s (5/6)                                                       docker:default
+[34m => [internal] load .dockerignore                                                       0.0s
+[0m[34m => => transferring context: 2B                                                         0.0s
+[0m[34m => [1/3] FROM docker.io/library/ubuntu:latest@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61  0.0s
+[0m[34m => CACHED [2/3] RUN apt-get update && apt-get install -y python3                       0.0s
+[0m => [3/3] RUN apt-get install -y tree                                                   3.2s
+[2m => => # debconf: delaying package configuration, since apt-utils is not installed          
+[0m[2m => => # Fetched 47.1 kB in 0s (99.0 kB/s)                                                  
+[0m[2m => => # Selecting previously unselected package tree.                                      
+[0m[2m => => # (Reading database ... 6205 files and directories currently installed.)             
+[0m[2m => => # Preparing to unpack .../tree_2.1.1-2ubuntu3_amd64.deb ...                          
+[0m[2m => => # Unpacking tree (2.1.1-2ubuntu3) ...                                                
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.8s (6/6)                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                    0.0s
