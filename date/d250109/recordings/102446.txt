@@ -231,4 +231,78 @@ ecefead3f3a2   zzz       "sleep infinity"   20 minutes ago   Up 2 minutes       
             "Ports": {},
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
-            "
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "e53e897c30bb40cce0e65326e58194c1e6bb792f318b579d8c4f984b792fb033",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:03",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:03",
+                    "DriverOpts": null,
+                    "NetworkID": "4d02f4d896f151afc08817b17c0587604e1dea96db14d5c86a6a3887e468f5d9",
+                    "EndpointID": "e53e897c30bb40cce0e65326e58194c1e6bb792f318b579d8c4f984b792fb033",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+[?2004h[94mdate/d250109 (B[m$ q[Kdocker container[H[2J[94mdate/d250109 (B[m$ docker container
+[?2004l
+Usage:  docker container COMMAND
+
+Manage containers
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  exec        Execute a command in a running container
+  export      Export a container's filesystem as a tar archive
+  inspect     Display detailed information on one or more containers
+  kill        Kill one or more running containers
+  logs        Fetch the logs of a container
+  ls          List containers
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  prune       Remove all stopped containers
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  run         Create and run a new container from an image
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker container COMMAND --help' for more information on a command.
+[?2004h[94mdate/d250109 (B[m$ docker container[K[K[K[K[K[K[K[K[Kps -s[H[2J[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS                   PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   10 minutes ago   Up 10 minutes (Paused)             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes                       gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS                   PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   10 minutes ago   Up 10 minutes (Paused)             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes                       gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[
