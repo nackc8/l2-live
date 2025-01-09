@@ -1,0 +1,54 @@
+Script started on 2025-01-09 10:24:46+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="93" LINES="13"]
+[?2004h[94mdate/d250109 (B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES
+ecefead3f3a2   zzz       "sleep infinity"   19 seconds ago   Up 18 seconds             gracious_solomon
+[?2004h[94mdate/d250109 (B[m$ docker exec -[K/[Kgracioys[K[Kus_solomon /bin/bash[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@i[1@t[1P[C[1@ [1@-[1@t[1P[1P[1@-[1@t[1P[1P[C
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls  [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps
+[?2004l    PID TTY          TIME CMD
+      7 pts/0    00:00:00 bash
+     17 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# man ps
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     19 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# 
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     20 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1[1P[1P[1P1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -09  9 -1
+[?2004lbash: kill: (-1) - No such process
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 -1  1[H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     21 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -ea
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     22 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -ea[Kkill -9 1/1\1[1P1[1P1-1
+[?2004lbash: kill: (-1) - No such process
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill 7-797 77
+[?2004l[?2004h[94mdate/d250109 (B[m$ 
+[?2004l[?2004h[94mdate/d250109 (B[m$ 
+[?2004l[?
