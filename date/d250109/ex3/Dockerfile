@@ -8,4 +8,6 @@ RUN apt-get install -y imagemagick
 
 COPY process.sh .
 
-CMD ["sleep", "infinity"]
+
+
+CMD ["./process.sh", "infinity"]
