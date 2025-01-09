@@ -8,6 +8,6 @@ RUN apt-get install -y imagemagick
 
 COPY process.sh .
 
+RUN mkdir -p /grey/original /grey/modified
 
-
-CMD ["./process.sh", "infinity"]
+CMD ["./process.sh", "/grey/original", "/grey/modified"]
