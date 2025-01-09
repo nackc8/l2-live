@@ -1,0 +1,75 @@
+Script started on 2025-01-09 09:50:55+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="93" LINES="10"]
+[?2004h[94mdate/d250109 (B[m$ [H[2J[94mdate/d250109 (B[m$ ls
+[?2004lex1  recordings
+[?2004h[94mdate/d250109 (B[m$ cd ex1/
+[?2004l[?2004h[94mdate/d250109/ex1
+(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ l[Kdocker ps
+[?2004lCONTAINER ID   IMAGE                       COMMAND                  CREATED       STATUS       PORTS                                                                                      NAMES
+3e7a8ec65351   jenkins/jenkins:lts-jdk17   "/usr/bin/tini -- /u…"   6 weeks ago   Up 2 hours   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 0.0.0.0:50000->50000/tcp, :::50000->50000/tcp   eloquent_volhard
+3d57029adbb0   mariadb                     "docker-entrypoint.s…"   7 weeks ago   Up 2 hours   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp                                                  databashantering-db-1
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker stop mariadb
+[?2004lError response from daemon: No such container: mariadb
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker stop mariadb[7meloquent_volhard[27meloquent_volhard[1Peloquent_volhard[1Peloquent_volhard[1Peloquent_volhard[1Peloquent_volhard[1Peloquent_volhard[1Peloquent_volhard[1Peloquent_volhard
+[?2004leloquent_volhard
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker ps[H[2J[94mdate/d250109/ex1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                       NAMES
+3d57029adbb0   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 2 hours   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp   databashantering-db-1
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker stop [7mdatabashantering-db-1[27mdatabashantering-db-1
+[?2004ldatabashantering-db-1
+[?2004h[94mdate/d250109/ex1
+(B[m$ [H[2J[94mdate/d250109/ex1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mdate/d250109/ex1
+(B[m$ docker system prune
+[?2004lWARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - unused build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+335d23f57b452f9949ceba145782771ef944bd29bb1608c9552033966f426463
+3e7a8ec65351ee1664c1c7852e34c405106da71c50d1fa79b3cbb8d7650b1a34
+6d1b1dc3ede1803e22d8390d94d0c494467882f47e9cc30969d1dcef77b30249
+3d57029adbb060014197274a3e10d85a694af7efbeb1025598f0326bf605cb32
+c3440814649ec67cf111be65752f5a10fb5433595dd2028d87a583ca742a31b9
+9748ffedee2a525e6fff09dd7d7a5aae547dc0bdfe18c2e1cc0babeab3c32d8c
+d8d60b05ce8f7d60545e4c46fe41b9ec513729bff85502d018067a7fc451ee26
+
+Deleted Networks:
+databashantering_default
+docans_kopia-network
+mssql_default
+pingurl_pingurl
+
+Deleted Images:
+deleted: sha256:996805824c09c411984fd10658cc9d42de7d03c69e2417f7058174fc0ac764de
+deleted: sha256:f49b2f691b90efbc467682c25affc8add448e91390353ef9cb21cdf1aa701424
+deleted: sha256:3db0161440cea73f6272504436c6c0611bec50a3617b0401c545852998bbc913
+deleted: sha256:76c85ed76e79fd890fa2c2da76c14643cd3390444b3317f3194f0b2a36407cc6
+deleted: sha256:21e83f4aa0e8d63751b8a68a1e0db50aae9693b4a95486fd0bbbc09676989677
+deleted: sha256:6845be9f88a6e79085f25e352bf0ee9fa69db44b4e92eac7fb41a65b4bc33cf5
+deleted: sha256:2fa7dc842f1852fe2a288e08de75843aa1fe04b7c944a0ed7653d9be0a5c2e64
+deleted: sha256:293991e48ea0c2cd2dddce7c2dc17d43d44df48748701cf81b0ba0af816434e0
+
+Deleted build cache objects:
+nw1r3brh2zhaz2slzamb6eocv
+vebyresh9f348opoyhog0khac
+jlh0jr8ecf2pbwx33yjm1dvb4
+kefeb5sryls4z33g2z8d915qv
+7dj97rfuorapd8jervf7uzeif
+e2faco8jyrsj44lf4xnemgusx
+jwxhyt9rt4p5tzcaw38cizfli
+l9dwy91mfsiecx3su6753okn3
+vu5ozayogf6yv8yw8qnghu605
+x5hzq8qsu83spv6t431jvr6ed
+1cmpulqqgpz3r1kssz8md10ij
+8a
