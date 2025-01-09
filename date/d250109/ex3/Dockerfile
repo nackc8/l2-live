@@ -1,3 +1,3 @@
-FROM ubuntu:lts
+FROM ubuntu:24.04
 
 CMD ["sleep", "infinty"]
