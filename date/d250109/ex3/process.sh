@@ -1,5 +1,8 @@
 #!/bin/bash
 
 src=original
+dst=modified
 
-echo Hejsan
+while true; do
+    :
+done
