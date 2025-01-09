@@ -1,0 +1,325 @@
+Script started on 2025-01-09 10:24:46+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="93" LINES="13"]
+[?2004h[94mdate/d250109 (B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES
+ecefead3f3a2   zzz       "sleep infinity"   19 seconds ago   Up 18 seconds             gracious_solomon
+[?2004h[94mdate/d250109 (B[m$ docker exec -[K/[Kgracioys[K[Kus_solomon /bin/bash[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@i[1@t[1P[C[1@ [1@-[1@t[1P[1P[1@-[1@t[1P[1P[C
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ls  [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [K]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps
+[?2004l    PID TTY          TIME CMD
+      7 pts/0    00:00:00 bash
+     17 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# man ps
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# [H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     19 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# 
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     20 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1[1P[1P[1P1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -09  9 -1
+[?2004lbash: kill: (-1) - No such process
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 -1  1[H[2J]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill -9 1
+[?2004l[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     21 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -ea
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 sleep
+      7 pts/0    00:00:00 bash
+     22 pts/0    00:00:00 ps
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# ps -ea[Kkill -9 1/1\1[1P1[1P1-1
+[?2004lbash: kill: (-1) - No such process
+[?2004h]0;root@ecefead3f3a2: /root@ecefead3f3a2:/# kill 7-797 77
+[?2004l[?2004h[94mdate/d250109 (B[m$ 
+[?2004l[?2004h[94mdate/d250109 (B[m$ 
+[?2004l[?2004h[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ 
+[?2004l[?2004h[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ [K[94mdate/d250109 (B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS         PORTS     NAMES
+f2b19aa01065   zzz       "sleep infinity"   8 minutes ago    Up 8 minutes             sovarn
+ecefead3f3a2   zzz       "sleep infinity"   20 minutes ago   Up 2 minutes             gracious_solomon
+[?2004h[94mdate/d250109 (B[m$ od[K[Kdocker pause sovarn
+[?2004lsovarn
+[?2004h[94mdate/d250109 (B[m$ docker inspect i[Ksovarn[H[2J[94mdate/d250109 (B[m$ docker inspect sovarn[K[94mdate/d250109 (B[m$ docker inspect sovarn[K[94mdate/d250109 (B[m$ docker inspect sovarn[K[94mdate/d250109 (B[m$ docker inspect sovarn[K[94mdate/d250109 (B[m$ docker inspect sovarn[K[94mdate/d250109 (B[m$ docker inspect sovarn
+[?2004l[
+    {
+        "Id": "f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928",
+        "Created": "2025-01-09T09:37:08.10628478Z",
+        "Path": "sleep",
+        "Args": [
+            "infinity"
+        ],
+        "State": {
+            "Status": "paused",
+            "Running": true,
+            "Paused": true,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 70697,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-01-09T09:37:08.266653282Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:83b7451bcad901b586b00b154c7cd45d12384c9ba86890c46323e11d470ea53d",
+        "ResolvConfPath": "/var/lib/docker/containers/f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928/hostname",
+        "HostsPath": "/var/lib/docker/containers/f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928/hosts",
+        "LogPath": "/var/lib/docker/containers/f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928/f2b19aa010654c6abf381101ea084e89c51e42e7b551e6843b95e99aa8248928-json.log",
+        "Name": "/sovarn",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": [
+            "cc25b739d20e93188a5c855d19d5944af58044d22090422f98a5e56c5378d934"
+        ],
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                9,
+                93
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/6c201103dc6366696ab75be136b914a9e593d95552cbf9ae685d9367140eaa5a-init/diff:/var/lib/docker/overlay2/qs503oknc54s78kg6gvueoog9/diff:/var/lib/docker/overlay2/upo1b0sr2nlk99mkzl701ukd4/diff:/var/lib/docker/overlay2/edb581386b8afd15e66927a96cc22f1b4a742f9984a8e4ec34c882f680d1f492/diff",
+                "MergedDir": "/var/lib/docker/overlay2/6c201103dc6366696ab75be136b914a9e593d95552cbf9ae685d9367140eaa5a/merged",
+                "UpperDir": "/var/lib/docker/overlay2/6c201103dc6366696ab75be136b914a9e593d95552cbf9ae685d9367140eaa5a/diff",
+                "WorkDir": "/var/lib/docker/overlay2/6c201103dc6366696ab75be136b914a9e593d95552cbf9ae685d9367140eaa5a/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "f2b19aa01065",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "zzz",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "7d94fa0a1c8ad364273bee57200e3ab3ee7b98a7f91c5924810aaee8ad75eeb3",
+            "SandboxKey": "/var/run/docker/netns/7d94fa0a1c8a",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "e53e897c30bb40cce0e65326e58194c1e6bb792f318b579d8c4f984b792fb033",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:03",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:03",
+                    "DriverOpts": null,
+                    "NetworkID": "4d02f4d896f151afc08817b17c0587604e1dea96db14d5c86a6a3887e468f5d9",
+                    "EndpointID": "e53e897c30bb40cce0e65326e58194c1e6bb792f318b579d8c4f984b792fb033",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+[?2004h[94mdate/d250109 (B[m$ q[Kdocker container[H[2J[94mdate/d250109 (B[m$ docker container
+[?2004l
+Usage:  docker container COMMAND
+
+Manage containers
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  exec        Execute a command in a running container
+  export      Export a container's filesystem as a tar archive
+  inspect     Display detailed information on one or more containers
+  kill        Kill one or more running containers
+  logs        Fetch the logs of a container
+  ls          List containers
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  prune       Remove all stopped containers
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  run         Create and run a new container from an image
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker container COMMAND --help' for more information on a command.
+[?2004h[94mdate/d250109 (B[m$ docker container[K[K[K[K[K[K[K[K[Kps -s[H[2J[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS                   PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   10 minutes ago   Up 10 minutes (Paused)             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes                       gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS                   PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   10 minutes ago   Up 10 minutes (Paused)             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes                       gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ dockerun[K[K unpause sovarn
+[?2004lsovarn
+[?2004h[94mdate/d250109 (B[m$ docker unpause sovarn[9Pps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 5 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 5 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ [?2004l
+exit
+
+Script done on 2025-01-09 10:48:50+01:00 [COMMAND_EXIT_CODE="0"]
