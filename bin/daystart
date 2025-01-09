@@ -1,0 +1,23 @@
+#!/bin/bash
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "$script_dir" || true
+
+datepart="$(date +"%y%m%d")"
+
+git config --local pull.rebase true
+git config --local rebase.autostash true
+
+git fetch
+
+if ! git checkout "$datepart" 2>/dev/null; then
+	cat <<-eom | tr $'\n' ' ' | sed 's/  / /g' | fold -s -w 80
+		Dagens branch verkar inte skapad och pushad ännu. Testa igen
+		om en stund!
+	eom
+	exit 1
+fi
+echo
+
+git pull

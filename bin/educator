@@ -1,0 +1,42 @@
+#!/bin/bash
+
+cat <<-eom | tr $'\n' ' ' | sed 's/  / /g' | fold -s -w 80
+	Utbildarläget skriver över filer och inställningar som då går
+	förlorade. Det gör det även svårare att hänga med "live" eftersom
+	det blir möjligt att ändra filer, vilka kan orsaka konflikter
+	när du hämtar uppdateringar.
+eom
+
+echo
+
+while read -r -p "Är du säker på att du vill slå på utbildarläget (j/N)? " answer; do
+	case "$answer" in
+	[jJyY])
+		break
+		;;
+	[nN] | '')
+		exit 1
+		;;
+	esac
+done
+
+script_parent_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd .. && pwd)"
+
+sleep 1
+stamp="$(date +%s)"
+
+if [ "$UNSAFE_LIVE" = "true" ]; then
+	rm -f "$script_parent_dir/.gitignore"
+	rm -rf "$script_parent_dir/.vscode/"
+	rm -rf "$script_parent_dir/.idea/"
+else
+	mv "$script_parent_dir/.gitignore" "$script_parent_dir/ignored-$stamp-gitignore" 2>/dev/null || true
+	mv "$script_parent_dir/.vscode" "$script_parent_dir/ignored-$stamp-vscode" 2>/dev/null || true
+	mv "$script_parent_dir/.idea" "$script_parent_dir/ignored-$stamp-idea" 2>/dev/null || true
+fi
+
+ln "$script_parent_dir/.educator.gitignore" "$script_parent_dir/.gitignore"
+ln -s "$script_parent_dir/.educator.vscode" "$script_parent_dir/.vscode"
+ln -s "$script_parent_dir/.educator.idea" "$script_parent_dir/.idea"
+
+git update-index --skip-worktree "$script_parent_dir/.gitignore"

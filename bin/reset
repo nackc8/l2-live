@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cat <<-eom | tr $'\n' ' ' | sed 's/  / /g' | fold -s -w 80
+	Det här skriptet skriver över alla förändringar i "live"-klonen
+    så att de blir exakt som den senaste versionen på GitHub. Det
+    löser t.ex. problem om utbildaren ändrat i Git-historiken så att
+    det annars är svårt att få de senaste ändringarna.
+eom
+
+echo
+
+while read -r -p "Är du säker på att du radera dina lokala ändringar och hämta de senaste (j/N)? " answer; do
+    case "$answer" in
+    [jJyY])
+        break
+        ;;
+    [nN] | '')
+        exit 1
+        ;;
+    esac
+done
+
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+"$script_dir/daystart"
