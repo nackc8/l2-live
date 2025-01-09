@@ -305,4 +305,21 @@ ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes       
 [?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS                   PORTS     NAMES              SIZE
 f2b19aa01065   zzz       "sleep infinity"   10 minutes ago   Up 10 minutes (Paused)             sovarn             9.89GB (virtual 10.1GB)
 ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes                       gracious_solomon   0B (virtual 165MB)
-[?2004h[94mdate/d250109 (B[
+[?2004h[94mdate/d250109 (B[m$ dockerun[K[K unpause sovarn
+[?2004lsovarn
+[?2004h[94mdate/d250109 (B[m$ docker unpause sovarn[9Pps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 4 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 5 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ docker ps -s
+[?2004lCONTAINER ID   IMAGE     COMMAND            CREATED          STATUS          PORTS     NAMES              SIZE
+f2b19aa01065   zzz       "sleep infinity"   11 minutes ago   Up 11 minutes             sovarn             9.89GB (virtual 10.1GB)
+ecefead3f3a2   zzz       "sleep infinity"   23 minutes ago   Up 5 minutes              gracious_solomon   0B (virtual 165MB)
+[?2004h[94mdate/d250109 (B[m$ [?2004l
+exit
+
+Script done on 2025-01-09 10:48:50+01:00 [COMMAND_EXIT_CODE="0"]
