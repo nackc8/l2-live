@@ -1,0 +1,72 @@
+name: pingurl
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    image: ${BACKEND_HOSTNAME}_image:latest
+    container_name: ${BACKEND_HOSTNAME}
+    volumes:
+      - ./backend:/app
+    environment:
+      BACKEND_HOST: ${BACKEND_HOST}
+      BACKEND_PORT: ${BACKEND_PORT}
+      BACKEND_URL: ${BACKEND_URL}
+      ENVIRONMENT: ${ENVIRONMENT}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_TCP_PORT: ${MYSQL_TCP_PORT}
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      PERSISTANCE_HOSTNAME: ${PERSISTANCE_HOSTNAME}
+    networks:
+      pingurl:
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    depends_on:
+      persistance:
+        condition: service_healthy
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    image: ${FRONTEND_HOSTNAME}_image:latest
+    container_name: ${FRONTEND_HOSTNAME}
+    volumes:
+      - ./frontend/public:/app/public
+      - ./frontend/src:/app/src
+      - ./frontend/package.json:/app/package.json
+      - ./frontend/package-lock.json:/app/package-lock.json
+    environment:
+      PORT: ${FRONTEND_PORT}
+    networks:
+      pingurl:
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+  persistance:
+    image: mysql:5.7
+    container_name: ${PERSISTANCE_HOSTNAME}
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_TCP_PORT: ${MYSQL_TCP_PORT}
+    volumes:
+      - persistance_data:/var/lib/mysql
+    ports:
+      - "${MYSQL_TCP_PORT}:${MYSQL_TCP_PORT}"
+    healthcheck:
+      test: [
+        "CMD-SHELL",
+        "mysql -u${MYSQL_USERNAME} -p${MYSQL_ROOT_PASSWORD} \
+        -e 'USE pingurl; CREATE TEMPORARY TABLE IF NOT EXISTS HEALTHCHECK (id INT); \
+        DROP TABLE IF EXISTS HEALTHCHECK;' || exit 1"
+      ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    networks:
+      pingurl:
+networks:
+  pingurl:
+volumes:
+  persistance_data:
