@@ -1,23 +1,29 @@
 #!/bin/bash
 
-script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -euo pipefail
 
-cd "$script_dir" || true
+cd "$(dirname "${BASH_SOURCE[0]}")"
+root="$(git rev-parse --show-toplevel)"
+source "$root/.shared/repo.bash"
 
-datepart="$(date +"%y%m%d")"
+marker_file="$root/.vscode/.initialized"
+
+if [ ! -e "$marker_file" ]; then
+	reset_vscode_profile_student
+	touch "$marker_file"
+fi
+
+date_ymd="$(date +"%y%m%d")"
 
 git config --local pull.rebase true
 git config --local rebase.autostash true
 
 git fetch
 
-if ! git checkout "$datepart" 2>/dev/null; then
-	cat <<-eom | tr $'\n' ' ' | sed 's/  / /g' | fold -s -w 80
-		Dagens branch verkar inte skapad och pushad ännu. Testa igen
-		om en stund!
-	eom
+if ! git checkout "$date_ymd" 2>/dev/null; then
+	msg <<-EOM
+		Dagens branch verkar inte skapad och pushad ännu.
+		Testa igen om en stund!
+	EOM
 	exit 1
 fi
-echo
-
-git pull

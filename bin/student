@@ -1,31 +1,23 @@
 #!/bin/bash
 
-while read -r -p "Vill du återgå till studentläget (J/n)? " answer; do
-	case "$answer" in
-	[jJyY] | '')
-		break
-		;;
-	[nN])
-		exit 1
-		;;
-	esac
-done
+set -euo pipefail
 
-script_parent_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd .. && pwd)"
+cd "$(dirname "${BASH_SOURCE[0]}")"
+root="$(git rev-parse --show-toplevel)"
+source "$root/.shared/repo.bash"
 
-sleep 1
-stamp="$(date +%s)"
+answer=$(
+	ask --default n "Vill du återgå till studentläget? (j/N) " yYjJ nN
+)
 
-if [ "$UNSAFE_LIVE" = "true" ]; then
-	rm -f "$script_parent_dir/.gitignore"
-	rm -rf "$script_parent_dir/.vscode"
-	rm -rf "$script_parent_dir/.idea"
-else
-	mv "$script_parent_dir/.gitignore" "$script_parent_dir/ignored-$stamp-gitignore" 2>/dev/null || true
-	mv "$script_parent_dir/.vscode" "$script_parent_dir/ignored-$stamp-vscode" 2>/dev/null || true
-	mv "$script_parent_dir/.idea" "$script_parent_dir/ignored-$stamp-idea" 2>/dev/null || true
+if [[ "$answer" == 'n' ]]; then
+	exit 1
 fi
 
-git update-index --no-skip-worktree "$script_parent_dir/.gitignore"
+sleep 1
+timestamp="$(date +%s)"
 
-git restore -- "$script_parent_dir/.gitignore"
+save=$(mktemp -d -t "educator-save-$timestamp-XXX")
+mv -v "$root/."{vscode,shellcheckrc,gitignore} "$save" 2>/dev/null || true
+
+reset_vscode_profile_student
