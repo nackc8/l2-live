@@ -1,0 +1,27 @@
+Script started on 2025-08-19 09:17:21+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="71" LINES="10"]
+DEVOPS24/lektion2
+$ DEVOPS24/lektion2
+$ ls
+recordings
+DEVOPS24/lektion2
+$ cd ..
+DEVOPS24 $ ls
+lektion2
+DEVOPS24 $ cd ..
+$ $ ls
+bin  date  DEVOPS24  ITINF24  README.md
+$ cd ..
+nackademin/linux2
+$ nackademin/linux2
+$ ls
+l1-live  l2-archlinux  l2-live
+nackademin/linux2
+$ cd l2
+-live/
+$ ls bin/
+daystart  educator  reset  student
+$ bin/daystartcode 
+$ 
+exit
+
+Script done on 2025-08-19 13:12:50+02:00 [COMMAND_EXIT_CODE="0"]
