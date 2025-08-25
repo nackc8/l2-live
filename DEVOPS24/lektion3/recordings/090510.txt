@@ -250,4 +250,83 @@ Options:
 [?2004lspeed 38400 baud; rows 17; columns 55; line = 0;
 intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D;
 eol = M-^?; eol2 = M-^?; swtch = <undef>; start = ^Q;
-stop = ^S; susp = ^Z
+stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W;
+lnext = ^V; discard = ^O; min = 1; time = 0;
+-parenb -parodd -cmspar cs8 hupcl -cstopb cread -clocal
+-crtscts
+-ignbrk brkint -ignpar -parmrk -inpck -istrip -inlcr
+-igncr icrnl ixon -ixoff -iuclc ixany imaxbel iutf8
+opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel
+nl0 cr0 tab0 bs0 vt0 ff0
+isig icanon iexten echo echoe echok -echonl -noflsh
+-xcase -tostop -echoprt echoctl echoke -flusho -extproc
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ stty -a | grep [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mstty icanon -echo[27m
+[7mread -p "Lösenord: " -r pwd[27m
+[7mecho[27m
+[7mstty echo[27m
+[A[A[A[A[C[Cstty icanon -echo
+read -p "Lösenord: " -r pwd
+echo
+stty echo
+[A[C[C[C[C[C[C[C[C[C[A[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawd[C[C
+[C[C[C[C
+[C[C[C[C[C[C[C[C[C
+[A
+[?2004lLösenord: 
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ stty echo[C[C[5Pecho[C[Cstty echo[C[C[Kecho $pawd
+[?2004lhejsan
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mdocker run alpine[27m[C[Cdocker run alpine
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[K[K[K[K[K[K[K[K[Kbash </dev/null
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [H[2J[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID 
+[?2004l9340
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [C[Cbash </dev/null
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ bash </dev/null[C[C[1Pecho $BASHPID 
+[?2004l9340
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [C[Cbash </dev/null[H[2J[94mDEVOPS24/lektion3
+(B[m$ bash </dev/null[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h
+[1;36ml2-live/DEVOPS24/lektion3[0m on [1;35m 250825[0m 
+[1;32m❯[0m exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ bash[C[Cecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash[K[C[C[K(reverse-i-search)`': a': b[7ma[27mshl': docker run [7mal[27mpinep': docker run [7malp[27mine[23P(B[m$ docker run alpine[C[C[C[C[C[C[K[K[K[K[K[Kdebain [K[K[K[Kain[K[K[Kian
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ dockerps
+[?2004lbash: dockerps: command not found
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ dockerps[C ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[1Pps run debian[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run debian & sleep 0.2 && docker ps
+[?2004l[1] 78110
+CONTAINER ID   IMAGE     COMMAND   CREATED                  STATUS                  PORTS     NAMES
+b2e0acce7b5a   debian    "bash"    Less than a second ago   Up Less than a second             objective_shamir
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1]+  Done                    docker run debian
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker psrun debian & sleep 0.2 && docker ps[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-debianudebianidebian[1Pdebian[1Pdebianidebian debian
+[?2004lhostname
+31e53ee3f0c0
+umae   name /a  -a
+Linux 31e53ee3f0c0 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64 GNU/Linux
+cat /etc/os/ -release
+P
