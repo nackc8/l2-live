@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Muuu $RANDOM" | cowsay
+echo "Muuu $RANDOM" | /usr/games/cowsay
 
 sleep infinity
