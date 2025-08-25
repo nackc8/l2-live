@@ -899,4 +899,100 @@ Setting up libtasn1-6:amd64 (4.19.0-3ubuntu0.24.04.1) ...
 Setting up libgnutls30t64:amd64 (3.8.3-1.1ubuntu3.4) ...
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
 Preparing to unpack .../libproc2-0_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
-Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) over (2:4
+Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3.2) ...
+Preparing to unpack .../libpipeline1_1.5.7-2_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-2) over (1.5.7-2) ...
+Setting up libpipeline1:amd64 (1.5.7-2) ...
+Setting up libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Restoring system translations...
+Documentation has been restored successfully.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# [?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker ps /a[K[K-a
+[?2004lCONTAINER ID   IMAGE           COMMAND                   CREATED             STATUS                           PORTS     NAMES
+c5905a7a342e   alpine          "sh"                      33 minutes ago      Exited (0) 4 minutes ago                   alp1
+cf9cb871dfa4   debian          "bash"                    34 minutes ago      Exited (127) 34 minutes ago                pedantic_ptolemy
+887dd1217e01   debian          "bash"                    37 minutes ago      Exited (130) 34 minutes ago                sweet_golick
+ebde5e47fec6   ubuntu          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 goofy_kepler
+62fa8fa4e368   debian          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_agnesi
+5ac231026264   alpine          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_lamport
+ce73d73e9c2d   alpine          "hostname"                About an hour ago   Exited (0) About an hour ago               compassionate_lederberg
+322dae0afc79   debian          "bash"                    About an hour ago   Exited (0) About an hour ago               bold_bhabha
+206b2988c362   debian          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 quirky_hugle
+31e53ee3f0c0   debian          "bash"                    2 hours ago         Exited (127) About an hour ago             youthful_gates
+b2e0acce7b5a   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     objective_shamir
+a147b1775bb7   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     heuristic_brahmagupta
+6471f7c83e3e   alpine          "/bin/sh"                 2 hours ago         Exited (0) 2 hours ago                     hardcore_spence
+9ec68a55c3fc   alpine          "/bin/sh"                 36 hours ago        Exited (137) 13 hours ago                  nackademin
+0952cc2c72be   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    brave_gates
+8550d7468f53   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    wizardly_pike
+bee908c11f54   alpine          "du -hs /"                38 hours ago        Exited (0) 38 hours ago                    intelligent_agnesi
+982733eed50c   alpine          "ls -l /usr/sbin"         38 hours ago        Exited (0) 38 hours ago                    hardcore_shamir
+8f82c1b65d0e   alpine          "tree /usr/sbin"          38 hours ago        Exited (0) 38 hours ago                    competent_bohr
+c736e13c180b   alpine          "tree /usr/share/"        38 hours ago        Exited (0) 38 hours ago                    pensive_einstein
+ff88620ad249   alpine          "ls /usr/share/apk"       38 hours ago        Exited (0) 38 hours ago                    focused_lederberg
+382e5f307f71   alpine          "ls /usr/share"           38 hours ago        Exited (0) 38 hours ago                    beautiful_taussig
+bbe4f65fa8c0   alpine          "hostname"                38 hours ago        Exited (0) 38 hours ago                    quizzical_williamson
+0f93a9a91041   alpine          "sh"                      38 hours ago        Exited (0) 38 hours ago                    eager_zhukovsky
+787ce3a08ba9   alpine          "cat /etc/os-release"     38 hours ago        Exited (0) 38 hours ago                    modest_joliot
+cab3da78824b   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  nice_easley
+9f46b3bc31e7   ubuntu          "/bin/bash"               39 hours ago        Exited (137) 13 hours ago                  gracious_yalow
+56222883136c   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  mystifying_lalande
+8443962701ee   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  flamboyant_allen
+bf3b3bad97ce   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  dreamy_albattani
+9fa4bc333041   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    keen_raman
+1948697d1223   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    silly_heyrovsky
+75658a73063b   alpine          "/bin/sh"                 39 hours ago        Exited (1) 39 hours ago                    focused_ardinghelli
+118b0d422712   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    brave_cray
+a1d7cdda51cc   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    bold_hopper
+69ee61c88b2a   ubuntu:latest   "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_wilbur
+c474a24f65a9   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    zen_babbage
+6e7a4b0ff8b6   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    frosty_rosalind
+deb838f8a1f3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    eloquent_chaplygin
+8e03386146b3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    quirky_rosalind
+46ae482fdc11   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    stoic_roentgen
+5fe52fe146df   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    agitated_mclean
+afd847f53ace   ubuntu          "/bin/bash"               2 days ago          Exited (137) 2 days ago                    blissful_jemison
+4cda3030a82f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      cool_moser
+9d8c0a51db40   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_chandrasekhar
+3e6284bb9333   ubuntu          "/bin/bash"               2 days ago          Exited (127) 2 days ago                    gallant_kalam
+29dea16b3c06   ubuntu          "/bin/bash"               2 days ago          Exited (1) 2 days ago                      competent_hamilton
+3984d2390d89   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_noyce
+99319f75f99f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      fervent_hawking
+893209d630f0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_dhawan
+3e25620469e0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      pensive_shamir
+d25275108af4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      beautiful_wilson
+ba823c69d9c1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      friendly_hellman
+e72745992ba6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      kind_grothendieck
+6ad1cc1f0ab6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      sweet_zhukovsky
+4dba07be1215   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_kapitsa
+75b626e2585e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      dreamy_burnell
+f86046a7b9b9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      focused_galois
+4f2e92abdd50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      great_goodall
+873f357d6a13   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_poincare
+aaa5356a6a9c   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_chatelet
+c1e277c39a46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_lalande
+7f059118764e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      stoic_poitras
+3efd5bfb9cde   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      mystifying_meitner
+5ad958f1e2cd   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      peaceful_goldstine
+17113938d94a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      clever_khayyam
+f6206f852f8b   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_brown
+d4cda700fb1a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_curran
+22c4ca604fd1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_feistel
+eab77e499ef7   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      trusting_bhaskara
+3e1f647492e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      priceless_lovelace
+819f8712c2d0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_wescoff
+7e60a4ca846f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_gates
+f0c7f0a809e6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      intelligent_wing
+306894ea5c56   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      zealous_jackson
+5e24e480bfe9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      gallant_robinson
+aa10399835a9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_ganguly
+928264e65b15   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      hardcore_khorana
+95e28c2da9ef   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      jolly_wing
+849b7c25ae46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_neumann
+2cff94e9ed50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      goofy_hermann
+d4fb412db9b4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      adoring_clarke
+0ef0118ae4e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_chatterjee
+37d195a6a0af   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eloquent_margulis
+baa80bd95fb9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      fro
