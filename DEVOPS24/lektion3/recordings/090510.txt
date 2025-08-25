@@ -329,4 +329,248 @@ b2e0acce7b5a   debian    "bash"    Less than a second ago   Up Less than a secon
 umae   name /a  -a
 Linux 31e53ee3f0c0 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64 GNU/Linux
 cat /etc/os/ -release
-P
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+^L
+bash: line 4: $'\f': command not found
+^L^L^L
+bash: line 5: $'\f\f\f': command not found
+^C
+^[[C^[[D^[[C^[[D^[[C
+bash: line 7: $'\E[C\E[D\E[C\E[D\E[C': command not found
+hejsan hoppsan svensjan     jsanhihkdhui        
+bash: line 8: hejsan: command not found
+^[[C^[[D^[[C
+bash: line 9: $'\E[C\E[D\E[C': command not found
+^L
+bash: line 10: $'\f': command not found
+ls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+pwd
+/
+ls //  --color=auto  
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+^[[A
+bash: line 14: $'\E[A': command not found
+gsudygudg         
+\
+
+^C^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run -i debian[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -i debian[1P debiant debian[C[C[C[C[C[C[C
+[?2004l[?2004hroot@206b2988c362:/# ls
+hejs
+iokjsio
+s
+js
+js
+^C^C[?2004l[?2004h[?2004l
+[?2004hroot@206b2988c362:/# 
+^C^C[?2004l[?2004h[?2004l
+[?2004hroot@206b2988c362:/# ^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run -t debian[1@i[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -it debian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004hroot@322dae0afc79:/# ls
+[?2004lbin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+[?2004hroot@322dae0afc79:/# ls //  --color=auto
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004hroot@322dae0afc79:/# i -t t    exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run alpine hostname
+[?2004lce73d73e9c2d
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run alpine hostname[K[K[K[K[K[K[K[Kcat /etc/os/[K-release[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run alpine cat /etc/os-release
+[?2004lNAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.22.1
+PRETTY_NAME="Alpine Linux v3.22"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run alpine cat /etc/os-release[C[1P[1P[1P[1P[1P[1P[1@d[1@e[1@b[1@i[1@a[1@n[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run debian cat /etc/os-release[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lPRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -it ubuntu bash
+[?2004l[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# man more
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# apt update
+[?2004l[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+[33m0% [1 InRelease 14.2 kB/256 kB 6%] [Connecting to secu[0m[33m                                                      0% [Waiting for headers][0m                        Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m                                                      Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+[33m0% [3 InRelease 6932 B/126 kB 5%] [2 InRelease 14.2 kB[0m[33m0% [3 InRelease 63.4 kB/126 kB 50%] [2 InRelease 14.2 [0m[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m                                                      Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+[33m0% [4 InRelease 10.3 kB/126 kB 8%] [2 InRelease 14.2 k[0m[33m                                                      0% [2 InRelease 14.2 kB/126 kB 11%][0m[33m0% [Waiting for headers] [2 InRelease 28.7 kB/126 kB 2[0m                                                      Get:5 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+[33m0% [5 Packages 7001 B/117 kB 6%] [2 InRelease 31.5 kB/[0m[33m0% [Waiting for headers] [2 InRelease 37.3 kB/126 kB 3[0m                                                      Get:6 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+[33m0% [6 Packages 35.6 kB/331 kB 11%] [2 InRelease 37.3 k[0m[33m0% [5 Packages store 0 B] [6 Packages 35.6 kB/331 kB 1[0m[33m0% [6 Packages 65.6 kB/331 kB 20%] [2 InRelease 40.2 k[0m[33m0% [Waiting for headers] [2 InRelease 43.1 kB/126 kB 3[0m                                                      Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+[33m0% [7 Packages 15.2 kB/1808 kB 1%] [2 InRelease 43.1 k[0m[33m0% [6 Packages store 0 B] [7 Packages 15.2 kB/1808 kB [0m[33m0% [7 Packages 78.4 kB/1808 kB 4%] [2 InRelease 43.1 k[0m[33m                                                      0% [7 Packages 1622 kB/1808 kB 90%][0m[33m20% [7 Packages 1683 kB/1808 kB 93%][0m                                    Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+[33m21% [8 Packages 5792 B/19.3 MB 0%] [Waiting for header[0m[33m21% [7 Packages store 0 B] [8 Packages 5792 B/19.3 MB [0m[33m22% [8 Packages 387 kB/19.3 MB 2%] [Waiting for header[0m                                                      Get:9 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [23.0 kB]
+[33m23% [8 Packages 695 kB/19.3 MB 4%] [9 Packages 7003 B/[0m[33m                                                      23% [8 Packages 727 kB/19.3 MB 4%][0m[33m23% [9 Packages store 0 B] [8 Packages 727 kB/19.3 MB [0m[33m23% [8 Packages 727 kB/19.3 MB 4%] [Waiting for header[0m                                                      Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1137 kB]
+[33m27% [8 Packages 2331 kB/19.3 MB 12%] [10 Packages 2655[0m[33m35% [8 Packages 5168 kB/19.3 MB 27%] [10 Packages 266 [0m[33m44% [8 Packages 8332 kB/19.3 MB 43%] [10 Packages 650 [0m[33m51% [8 Packages 10.8 MB/19.3 MB 56%] [10 Packages 1054[0m[33m                                                      53% [8 Packages 11.6 MB/19.3 MB 60%][0m                                    Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1363 kB]
+[33m53% [8 Packages 11.6 MB/19.3 MB 60%] [11 Packages 0 B/[0m[33m53% [10 Packages store 0 B] [8 Packages 11.6 MB/19.3 M[0m[33m54% [8 Packages 11.8 MB/19.3 MB 61%] [11 Packages 44.9[0m[33m63% [8 Packages 14.7 MB/19.3 MB 76%] [11 Packages 508 [0m[33m72% [8 Packages 17.9 MB/19.3 MB 92%] [11 Packages 931 [0m[33m76% [Waiting for headers] [11 Packages 1200 kB/1363 kB[0m                                                      Get:12 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.2 kB]
+[33m76% [12 Packages 1448 B/45.2 kB 3%] [11 Packages 1200 [0m[33m76% [8 Packages store 0 B] [12 Packages 1448 B/45.2 kB[0m[33m76% [8 Packages store 0 B] [Waiting for headers] [11 P[0m                                                      Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1458 kB]
+[33m76% [8 Packages store 0 B] [13 Packages 11.0 kB/1458 k[0m[33m78% [8 Packages store 0 B] [13 Packages 818 kB/1458 kB[0m                                                      Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2066 kB]
+[33m78% [8 Packages store 0 B] [13 Packages 818 kB/1458 kB[0m[33m80% [8 Packages store 0 B] [Waiting for headers] [14 P[0m                                                      Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1713 kB]
+[33m81% [8 Packages store 0 B] [15 Packages 15.7 kB/1713 k[0m[33m84% [15 Packages 1022 kB/1713 kB 60%] [14 Packages 324[0m[33m84% [12 Packages store 0 B] [15 Packages 1022 kB/1713 [0m[33m84% [15 Packages 1035 kB/1713 kB 60%] [14 Packages 327[0m[33m84% [11 Packages store 0 B] [15 Packages 1035 kB/1713 [0m[33m86% [15 Packages 1203 kB/1713 kB 70%] [14 Packages 354[0m[33m86% [13 Packages store 0 B] [15 Packages 1218 kB/1713 [0m[33m87% [15 Packages 1471 kB/1713 kB 86%] [14 Packages 389[0m[33m88% [Waiting for headers] [14 Packages 428 kB/2066 kB [0m                                                      Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2193 kB]
+[33m88% [16 Packages 5705 B/2193 kB 0%] [14 Packages 428 k[0m[33m88% [15 Packages store 0 B] [16 Packages 5705 B/2193 k[0m[33m89% [16 Packages 236 kB/2193 kB 11%] [14 Packages 478 [0m[33m95% [Waiting for headers] [14 Packages 905 kB/2066 kB [0m                                                      Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.8 kB]
+[33m95% [17 Packages 6956 B/48.8 kB 14%] [14 Packages 905 [0m[33m95% [16 Packages store 0 B] [17 Packages 6956 B/48.8 k[0m[33m95% [16 Packages store 0 B] [14 Packages 910 kB/2066 k[0m                                                      Get:18 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.6 kB]
+[33m95% [16 Packages store 0 B] [18 Packages 1117 B/35.6 k[0m[33m95% [16 Packages store 0 B] [14 Packages 925 kB/2066 k[0m[33m                                                      96% [14 Packages 1036 kB/2066 kB 50%][0m[33m96% [17 Packages store 0 B] [14 Packages 1036 kB/2066 [0m[33m                                                      96% [14 Packages 1038 kB/2066 kB 50%][0m[33m96% [18 Packages store 0 B] [14 Packages 1038 kB/2066 [0m[33m                                                      97% [14 Packages 1041 kB/2066 kB 50%][0m[33m98% [14 Packages 1623 kB/2066 kB 79%][0m[33m99% [Working]                             5335 kB/s 0s[0m[33m99% [14 Packages store 0 B]               5335 kB/s 0s[0m[33m100% [Working]                            5335 kB/s 0s[0m                                                      Fetched 32.3 MB in 6s (5287 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# [H[2J]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# apt install man-db
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 94%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+The following additional packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0
+Suggested packages:
+  groff gdbm-l10n apparmor less www-browser
+The following NEW packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0 man-db
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2463 kB of archives.
+After this operation, 7478 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.3 [73.7 kB]
+[33m0% [1 bsdextrautils 14.2 kB/73.7 kB 19%][0m[33m                                        6% [Waiting for headers][0m                        Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libuchardet0 amd64 0.0.8-1build1 [75.3 kB]
+[33m6% [2 libuchardet0 14.2 kB/75.3 kB 19%][0m[33m                                       12% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+[33m12% [3 groff-base 5162 B/1020 kB 1%][0m[33m37% [3 groff-base 796 kB/1020 kB 78%][0m                                     Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libgdbm6t64 amd64 1.23-5.1build1 [34.4 kB]
+[33m48% [4 libgdbm6t64 4632 B/34.4 kB 13%][0m[33m                                      52% [Working][0m             Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+[33m53% [5 libpipeline1 14.2 kB/23.6 kB 60%][0m                                        Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+[33m                                        57% [6 man-db 3384 B/1237 kB 0%][0m[33m                                100% [Working][0m              Fetched 2463 kB in 2s (1121 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;16r8[1ASelecting previously unselected package bsdextrautils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4381 files and directories currently installed.)
+Preparing to unpack .../0-bsdextrautils_2.39.3-9ubuntu6.3_amd64.deb ...
+7[17;0f[42m[30mProgress: [  0%][49m[39m [.................................] 87[17;0f[42m[30mProgress: [  4%][49m[39m [#................................] 8Unpacking bsdextrautils (2.39.3-9ubuntu6.3) ...
+7[17;0f[42m[30mProgress: [  8%][49m[39m [##...............................] 8Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../1-libuchardet0_0.0.8-1build1_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 12%][49m[39m [###..............................] 8Unpacking libuchardet0:amd64 (0.0.8-1build1) ...
+7[17;0f[42m[30mProgress: [ 16%][49m[39m [#####............................] 8Selecting previously unselected package groff-base.
+Preparing to unpack .../2-groff-base_1.23.0-3build2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 20%][49m[39m [######...........................] 8Unpacking groff-base (1.23.0-3build2) ...
+7[17;0f[42m[30mProgress: [ 24%][49m[39m [#######..........................] 8Selecting previously unselected package libgdbm6t64:amd64.
+Preparing to unpack .../3-libgdbm6t64_1.23-5.1build1_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 28%][49m[39m [#########........................] 8Unpacking libgdbm6t64:amd64 (1.23-5.1build1) ...
+7[17;0f[42m[30mProgress: [ 32%][49m[39m [##########.......................] 8Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../4-libpipeline1_1.5.7-2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 36%][49m[39m [###########......................] 8Unpacking libpipeline1:amd64 (1.5.7-2) ...
+7[17;0f[42m[30mProgress: [ 40%][49m[39m [#############....................] 8Selecting previously unselected package man-db.
+Preparing to unpack .../5-man-db_2.12.0-4build2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 44%][49m[39m [##############...................] 8Unpacking man-db (2.12.0-4build2) ...
+7[17;0f[42m[30mProgress: [ 48%][49m[39m [###############..................] 8Setting up libpipeline1:amd64 (1.5.7-2) ...
+7[17;0f[42m[30mProgress: [ 52%][49m[39m [#################................] 87[17;0f[42m[30mProgress: [ 56%][49m[39m [##################...............] 8Setting up libgdbm6t64:amd64 (1.23-5.1build1) ...
+7[17;0f[42m[30mProgress: [ 60%][49m[39m [###################..............] 87[17;0f[42m[30mProgress: [ 64%][49m[39m [#####################............] 8Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+7[17;0f[42m[30mProgress: [ 68%][49m[39m [######################...........] 87[17;0f[42m[30mProgress: [ 72%][49m[39m [#######################..........] 8Setting up libuchardet0:amd64 (0.0.8-1build1) ...
+7[17;0f[42m[30mProgress: [ 76%][49m[39m [#########################........] 87[17;0f[42m[30mProgress: [ 80%][49m[39m [##########################.......] 8Setting up groff-base (1.23.0-3build2) ...
+7[17;0f[42m[30mProgress: [ 84%][49m[39m [###########################......] 87[17;0f[42m[30mProgress: [ 88%][49m[39m [#############################....] 8Setting up man-db (2.12.0-4build2) ...
+7[17;0f[42m[30mProgress: [ 92%][49m[39m [##############################...] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Building database of manual pages ...
+7[17;0f[42m[30mProgress: [ 96%][49m[39m [###############################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+
+7[0;17r8[1A[J[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# man more
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# unminimize
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+This script restores content and packages that are found on a default
+Ubuntu server system in order to make this system more suitable for
+interactive use.
+
+Reinstallation of packages may fail due to changes to the system
+configuration, the presence of third-party packages, or for other
+reasons.
+
+This operation may take some time.
+
+Would you like to continue? [y/N] y
+
+Re-enabling installation of all documentation in dpkg...
+Updating package list and upgrading packages...
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+0% [Waiting for headers] [Connecting to security.ubunt0% [Waiting for headers] [Connecting to security.ubunt                                                      Hit:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+                                                      0% [Connecting to security.ubuntu.com (91.189.91.83)]                                                     0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers]                        Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+                        0% [Working]20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74
