@@ -1030,4 +1030,68 @@ f40e86ed5d4e   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          E
 [?2004h[94mDEVOPS24/lektion3
 (B[m$ dcoke[K[K[K[Kocker ps
 [?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
-56c458860055   ubuntu    "/bin/bash"
+56c458860055   ubuntu    "/bin/bash"   11 seconds ago   Up 11 seconds             trusting_wing
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker atrt[K[Ktachg[K trusting_wing
+[?2004l[K]0;root@56c458860055: /root@56c458860055:/# [K]0;root@56c458860055: /root@56c458860055:/# ps -e -o pid,ppid,cmd[H[2J]0;root@56c458860055: /root@56c458860055:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@56c458860055: /root@56c458860055:/# ei xit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing
+[?2004ldocker: 'docker exec' requires at least 2 arguments
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+See 'docker exec --help' for more information
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing bahs[K[Ksh[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing bash
+[?2004lError response from daemon: container 56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714 is not running
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker psexec trusting_wing bash[K[C[C[C[C[C[C[C[C[C[2@attach[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps[Krun -dit ubuntu[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -dit ubuntu
+[?2004ldb42f9a3a8a5884737586a4abad73ae57fb35c88e5edc7d6ae9fd72304cd40bb
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+db42f9a3a8a5   ubuntu    "/bin/bash"   3 seconds ago   Up 3 seconds             exciting_diffie
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [7mexciting_diffie[27m[C[Cexciting_diffiedexciting_diffieoexciting_diffiecexciting_diffiekexciting_diffie[Cexciting_diffierexciting_diffie exciting_diffie[Cexciting_diffiexexciting_diffie[Cexciting_diffiecexciting_diffie exciting_diffie[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C bash
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec exciting_diffie bash[1@/[1P[1@i[1@t[1@ [1P[1P[1P[1@=[1P[1@-[1@u[1@t[1@ [1P[1P[1P[1@i[1@t[1@ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker exec -it exciting_diffie bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# [7mps -e -o pid,ppid,cmd[27m
+[Aroot@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+[K[Aroot@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     15       0 bash
+     23      15 ps -e -o pid,ppid,cmd
+[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ 
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mbash -c 'count=0; while true; do (( count++ )); sleep[27m[7m [27m[7m1; echo $count * ; done' [27m
+[A[A[C[Cbash -c 'count=0; while true; do (( count++ )); sleep 1; echo $count * ; done'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l1 recordings
+2 recordings
+3 recordings
+4 recordings
+5 recordings
+6 recordings
+7 recordings
+^C
+[?2004h[94mDEVOPS24/lek
