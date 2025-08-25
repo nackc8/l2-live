@@ -1,0 +1,171 @@
+Script started on 2025-08-25 09:05:22+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="55" LINES="17"]
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ Hejsan[K[K[K[K[K[Kjijwiwji[K[K[K[K[K[K[K[K[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker pull redit[Ks
+[?2004lUsing default tag: latest
+latest: Pulling from library/redis
+Digest: sha256:cc2dfb8f5151da2684b4a09bd04b567f92d07591d91980eb3eca21df07e12760
+Status: Image is up to date for redis:latest
+docker.io/library/redis:latest
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ man docker
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker  -  Docker  image and container command[m
+       line interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[m
+       [1mdocker[0m [--help|-v|--version][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdocker[0m is a client for  interacting  with  the[m
+       daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[m
+       The  Docker CLI has over 30 commands. The com‐[m
+[7mpage docker(1) line 1 (press h for help or q to quit)[27m[K[K       mands are listed below and each  has  its  own[m
+       man page which explains usage and arguments.[m
+[m
+       To  see  the  man  page  for a command run [1mman[0m[m
+       [1mdocker[0m .[m
+[m
+[1mOPTIONS[0m[m
+       [1m--help[0m[m
+         Print usage statement[m
+[m
+       [1m--config[0m=""[m
+         Specifies the location of the Docker  client[m
+       configuration    files.    The    default   is[m
+       '~/.docker'.[m
+[m
+       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[7mage docker(1) line 17 (press h for help or q to quit)[27m[K[K         Enable debug mode. Default is false.[m
+[m
+       [1m-H[0m,      [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:[m
+       tcp://[host]:[port][path]     to    bind    or[m
+       unix://[/path/to/socket] to use.[m
+         The socket(s) to  bind  to  in  daemon  mode[m
+       specified using one or more[m
+         tcp://host:port/path,[m
+       unix:///path/to/socket, fd://*  or  fd://sock‐[m
+       etfd.[m
+         If  the  tcp  port is not specified, then it[m
+       will default to either [1m2375[0m when[m
+         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is  on,  or[m
+       [1m--tlsverify[0m is specified.[m
+[m
+       [1m-l[0m, [1m--log-level[0m="[4mdebug[24m|[4minfo[24m|[4mwarn[24m|[4merror[24m|[4mfatal[24m"[m
+[7mage docker(1) line 33 (press h for help or q to quit)[27m[K[K         Set the logging level. Default is [1minfo[0m.[m
+[m
+       [1m--tls[0m=[4mtrue[24m|[4mfalse[24m[m
+         Use  TLS; implied by --tlsverify. Default is[m
+       false.[m
+[m
+       [1m--tlscacert[0m=[4m~/.docker/ca.pem[24m[m
+         Trust certs signed only by this CA.[m
+[m
+       [1m--tlscert[0m=[4m~/.docker/cert.pem[24m[m
+         Path to TLS certificate file.[m
+[m
+       [1m--tlskey[0m=[4m~/.docker/key.pem[24m[m
+         Path to TLS key file.[m
+[m
+       [1m--tlsverify[0m=[4mtrue[24m|[4mfalse[24m[m
+[7mage docker(1) line 49 (press h for help or q to quit)[27m[K[K         Use TLS and verify the remote (daemon:  ver‐[m
+       ify client, client: verify daemon).[m
+         Default is false.[m
+[m
+       [1m-v[0m, [1m--version[0m=[4mtrue[24m|[4mfalse[24m[m
+         Print  version information and quit. Default[m
+       is false.[m
+[m
+[1mCOMMANDS[0m[m
+       Use "docker help" or "docker --help" to get an[m
+       overview of available commands.[m
+[m
+[1mEXAMPLES[0m[m
+       For  specific client examples see the man page[m
+       for the specific Docker command. For example:[m
+[m
+[7mage docker(1) line 65 (press h for help or q to quit)[27m[K[K       man docker-run[m
+[m
+[1mHISTORY[0m[m
+       April 2014,  Originally  compiled  by  William[m
+       Henry  (whenry  at  redhat  dot  com) based on[m
+       docker.com source material and internal work.[m
+[m
+Docker Community      APRIL 2014            DOCKER(1)[m
+[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 72/88 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       is false.[m
+[17;1H[K[7mker(1) line 71/88 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Print  version information and quit. Default[m
+[17;1H[K[7mker(1) line 70/88 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-v[0m, [1m--version[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 69/88 95% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 68/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Default is false.[m
+[17;1H[K[7mker(1) line 67/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ify client, client: verify daemon).[m
+[17;1H[K[7mker(1) line 66/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Use TLS and verify the remote (daemon:  ver‐[m
+[17;1H[K[7mker(1) line 65/88 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlsverify[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 64/88 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 63/88 90% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Path to TLS key file.[m
+[17;1H[K[7mker(1) line 62/88 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlskey[0m=[4m~/.docker/key.pem[24m[m
+[17;1H[K[7mker(1) line 61/88 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 60/88 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Path to TLS certificate file.[m
+[17;1H[K[7mker(1) line 59/88 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlscert[0m=[4m~/.docker/cert.pem[24m[m
+[17;1H[K[7mker(1) line 58/88 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 57/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Trust certs signed only by this CA.[m
+[17;1H[K[7mker(1) line 56/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlscacert[0m=[4m~/.docker/ca.pem[24m[m
+[17;1H[K[7mker(1) line 55/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 54/88 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       false.[m
+[17;1H[K[7mker(1) line 53/88 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Use  TLS; implied by --tlsverify. Default is[m
+[17;1H[K[7mker(1) line 52/88 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tls[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 51/88 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 50/88 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Set the logging level. Default is [1minfo[0m.[m
+[17;1H[K[7mker(1) line 49/88 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-l[0m, [1m--log-level[0m="[4mdebug[24m|[4minfo[24m|[4mwarn[24m|[4merror[24m|[4mfatal[24m"[m
+[17;1H[K[7mker(1) line 48/88 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 47/88 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlsverify[0m is specified.[m
+[17;1H[K[7mker(1) line 46/88 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is  on,  or[m
+[17;1H[K[7mker(1) line 45/88 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       will default to either [1m2375[0m when[m
+[17;1H[K[7mker(1) line 44/88 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         If  the  tcp  port is not specified, then it[m
+[17;1H[K[7mker(1) line 43/88 69% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       etfd.[m
+[17;1H[K[7mker(1) line 42/88 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       unix:///path/to/socket, fd://*  or  fd://sock‐[m
+[17;1H[K[7mker(1) line 41/88 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         tcp://host:port/path,[m
+[17;1H[K[7mker(1) line 40/88 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       specified using one or more[m
+[17;1H[K[7mker(1) line 39/88 62% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         The socket(s) to  bind  to  in  daemon  mode[m
+[17;1H[K[7mker(1) line 38/88 62% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       unix://[/path/to/socket] to use.[m
+[17;1H[K[7mker(1) line 37/88 61% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tcp://[host]:[port][path]     to    bind    or[m
+[17;1H[K[7mker(1) line 36/88 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-H[0m,      [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:[m
+[17;1H[K[7mker(1) line 35/88 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 34/88 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Enable debug mode. Default is false.[m
+[17;1H[K[7mker(1) line 33/88 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 32/88 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 31/88 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       '~/.docker'.[m
+[17;1H[K[7mker(1) line 30/88 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       configuration    files.    The    default   is[m
+[17;1H[K[7mker(1) line 29/88 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Specifies the location of the Docker  client[m
+[17;1H[K[7mker(1) line 28/88 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--config[0m=""[m
+[17;1H[K[7mker(1) line 27/88 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 26/88 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Print usage statement[m
+[17;1H[K[7mker(1) line 25/88 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--help[0m[m
+[17;1H[K[7mker(1) line 24/88 42% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[17;1H[K[7mker(1) line 23/88 41% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 22/88 39% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m .[m
+[17;1H[K[7mker(1) line 21/88 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       To  see  the  man  page  for a command run [1mman[0m[m
+[17;1H[K[7mker(1) line 20/88 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 19/88 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       man page which explains usage and arguments.[m
+[17;1H[K[7mker(1) line 18/88 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       mands are listed below and each  has  its  own[m
+[17;1H[K[7mker(1) line 17/88 31% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The  Docker CLI has over 30 commands. The com‐[m
+[17;1H[K[7mker(1) line 16/88 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 15/88 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[17;1H[K[7mker(1) line 14/88 28% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m is a client for  interacting  with  the[m
+[17;1H[K[7mker(1) line 13/88 27% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[17;1H[K[7mker(1) line 12/88 25% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 11/88 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [--help|-v|--version][m
+[17;1H[K[7mker(1) line 10/88 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 9/88 23% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[17;1H[K[7mcker(1) line 8/88 22% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[17;1H[K[7mcker(1) line 7/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 6/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       line interface[m
+[17;1H[K[7mcker(1) line 5/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       docker  -  Docker  image and container command[m
+[17;1H[K[7mcker(1) line 4/88 19% (press h for help or q to quit)[27m[K[
