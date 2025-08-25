@@ -51,4 +51,46 @@ ls
 [0m[34m => [internal] load metadata for docker.io/library/debian:l  0.0s
 [0m[34m => [internal] load .dockerignore                            0.0s
 [0m[34m => => transferring context: 2B                              0.0s
-[0m[34m => [1/3] FROM docker.io/library/debian:latest          
+[0m[34m => [1/3] FROM docker.io/library/debian:latest               0.0s
+[0m[34m => [internal] load build context                            0.0s
+[0m[34m => => transferring context: 105B                            0.0s
+[0m[34m => CACHED [2/3] RUN apt update && apt install -y cowsay     0.0s
+[0m[34m => [3/3] COPY ./main.bash /main                             0.0s
+[0m[34m => exporting to image                                       0.0s
+[0m[34m => => exporting layers                                      0.0s
+[0m[34m => => writing image sha256:70eb4e699fec85e90d4b2ade452b464  0.0s
+[0m[34m => => naming to docker.io/library/cowimg:latest             0.0s
+[0m[?25h[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker build -t cowimg:latest .[C[C[C[C[C[C[C[C[Crun -it --name cow --rm cowimg
+[?2004l ____________
+< Muuu 14284 >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+^C[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker run -it --name cow --rm cowimg[C[1@d
+[?2004lb28d17908e07b730cc93338f150307a4bc3905c18357580706d7b95d10ff43b0
+[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker attach cow
+[?2004l^C[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker attach cowrun -dit --name cow --rm cowimg
+[?2004l1eaa7e4df5534824062cd90f6610cec06c4e0c26459b887f4aa2dc7c00c2ef6c
+[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker logs cow[H[2J[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ docker logs cow
+[?2004l __________
+< Muuu 337 >
+ ----------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+[?2004h[94mDEVOPS24/lektion3/TestDockerfile
+(B[m$ [?2004l
+exit
+
+Script done on 2025-08-25 14:39:15+02:00 [COMMAND_EXIT_CODE="0"]
