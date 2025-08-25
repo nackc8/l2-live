@@ -205,4 +205,49 @@ Docker Community       Jul 2025             DOCKER(1)[m
 [7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
 [17;1H[K[7mull(1) line 13/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
 [17;1H[K[7mull(1) line 12/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
-[17;1H[K[7mull(1) line 11/29 91% (press h for help or q to quit)[27m
+[17;1H[K[7mull(1) line 11/29 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[17;1H[K[7mull(1) line 10/29 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 9/29 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[17;1H[K[7mpull(1) line 8/29 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[17;1H[K[7mpull(1) line 7/29 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 6/29 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       istry[m
+[17;1H[K[7mpull(1) line 5/29 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       docker-pull  -  Download  an image from a reg‐[m
+[17;1H[K[7mpull(1) line 4/29 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[17;1H[K[7mpull(1) line 3/29 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 2/29 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[17;1H[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker pull
+[?2004ldocker: 'docker pull' requires 1 argument
+
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Run 'docker pull --help' for more information
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker pull --help
+[?2004lUsage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Download an image from a registry
+
+Aliases:
+  docker image pull, docker pull
+
+Options:
+  -a, --all-tags                
+                Download all tagged images in
+                the repository
+      --disable-content-trust   
+                Skip image verification (default
+                true)
+      --platform string         
+                Set platform if server is
+                multi-platform capable
+  -q, --quiet                   
+                Suppress verbose output
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ jeee[K[K[K[Khej[K[K[Kstty /a[K[K-a
+[?2004lspeed 38400 baud; rows 17; columns 55; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D;
+eol = M-^?; eol2 = M-^?; swtch = <undef>; start = ^Q;
+stop = ^S; susp = ^Z
