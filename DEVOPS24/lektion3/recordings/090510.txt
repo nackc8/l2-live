@@ -168,4 +168,41 @@ Docker Community      APRIL 2014            DOCKER(1)[m
 [17;1H[K[7mcker(1) line 7/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
 [17;1H[K[7mcker(1) line 6/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       line interface[m
 [17;1H[K[7mcker(1) line 5/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       docker  -  Docker  image and container command[m
-[17;1H[K[7mcker(1) line 4/88 19% (press h for help or q to quit)[27m[K[
+[17;1H[K[7mcker(1) line 4/88 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[17;1H[K[7mcker(1) line 3/88 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 2/88 17% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[17;1H[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion3
+(B[m$ man docker u[Koyk[K[K[K[K pull[1Ppull/pull[1Ppull-pull[C[C[C[C
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull  -  Download  an image from a reg‐[m
+       istry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m,   [1m--all-tags[0m[=false]        Download   all[m
+       tagged images in the repository[m
+[m
+[7mdocker-pull(1) line 1 (press h for help or q to quit)[27m[K[K       [1m--disable-content-trust[0m[=true]      Skip image[m
+       verification[m
+[m
+       [1m--platform[0m=""      Set platform if  server  is[m
+       multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose out‐[m
+       put[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+       [1mdocker(1)[0m[m
+[m
+Docker Community       Jul 2025             DOCKER(1)[m
+[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[17;1H[K[7mull(1) line 13/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mull(1) line 12/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[17;1H[K[7mull(1) line 11/29 91% (press h for help or q to quit)[27m
