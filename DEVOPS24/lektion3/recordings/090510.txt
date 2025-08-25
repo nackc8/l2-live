@@ -995,4 +995,39 @@ aa10399835a9   ubuntu          "/bin/bash"               2 days ago          Exi
 d4fb412db9b4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      adoring_clarke
 0ef0118ae4e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_chatterjee
 37d195a6a0af   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eloquent_margulis
-baa80bd95fb9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      fro
+baa80bd95fb9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      frosty_driscoll
+bcf4ee3bb2a4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_curie
+270e5e7f7f33   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_mestorf
+cf06dad5cf0e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_chatelet
+9e48969ea89c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (1) 2 days ago                      happy_kare
+4f33c4e445ae   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      hungry_fermat
+7570ac7deecc   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      funny_clarke
+173f42953e3f   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_goodall
+f79a716d6bc6   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_mclean
+8fa3fba6d215   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      keen_ride
+f6a0daf4da79   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jolly_tu
+20c999463d4c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      brave_lumiere
+58344e253e61   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      eager_northcutt
+d4ee10322188   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_maxwell
+12718b1da18e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      nice_chebyshev
+af5df74529df   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      loving_dewdney
+984626b4ad1a   alpine          "bash -c 'read -p \"V…"   2 days ago          Created                                    agitated_galois
+f6d667473054   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      competent_diffie
+f0f4b6c3f54e   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      nostalgic_rosalind
+5a75332b3855   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      heuristic_rhodes
+c56045063a8a   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_almeida
+d4556528613c   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_bartik
+848ed87c1de9   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      bold_galileo
+ace67dc599f1   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      charming_noyce
+590cd4082fb0   debian:stable   "bash -c 'read x; ec…"    3 days ago          Exited (0) 3 days ago                      admiring_sinoussi
+7a50208dcde5   debian:stable   "bash -c 'read x; pr…"    3 days ago          Exited (127) 3 days ago                    naughty_faraday
+52e3ddc31a46   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      funny_bardeen
+f40e86ed5d4e   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      bold_pare
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run /[K-dit ubuntu
+[?2004l56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ dcoke[K[K[K[Kocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+56c458860055   ubuntu    "/bin/bash"
