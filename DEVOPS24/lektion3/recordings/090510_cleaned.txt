@@ -1,0 +1,1180 @@
+Script started on 2025-08-25 09:05:22+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="55" LINES="17"]
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ Hejsa
+jijwiwj
+DEVOPS24/lektion3
+$ docker pull redis
+Using default tag: latest
+latest: Pulling from library/redis
+Digest: sha256:cc2dfb8f5151da2684b4a09bd04b567f92d07591d91980eb3eca21df07e12760
+Status: Image is up to date for redis:latest
+docker.io/library/redis:latest
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ man docker
+DOCKER(1)        Docker User Manuals        DOCKER(1)
+
+NAME
+       docker  -  Docker  image and container command
+       line interface
+
+SYNOPSIS
+       docker [OPTIONS] COMMAND [ARG...]
+
+       docker [--help|-v|--version]
+
+DESCRIPTION
+       docker is a client for  interacting  with  the
+       daemon (see dockerd(8)) through the CLI.
+
+       The  Docker CLI has over 30 commands. The com‐
+       mands are listed below and each  has  its  own
+       man page which explains usage and arguments.
+
+       To  see  the  man  page  for a command run man
+       docker .
+
+OPTIONS
+       --help
+         Print usage statement
+
+       --config=""
+         Specifies the location of the Docker  client
+       configuration    files.    The    default   is
+       '~/.docker'.
+
+       -D, --debug=true|false
+         Enable debug mode. Default is false.to quit)
+
+       -H,      --host=[unix:///var/run/docker.sock]:
+       tcp://[host]:[port][path]     to    bind    or
+       unix://[/path/to/socket] to use.
+         The socket(s) to  bind  to  in  daemon  mode
+       specified using one or more
+         tcp://host:port/path,
+       unix:///path/to/socket, fd://*  or  fd://sock‐
+       etfd.
+         If  the  tcp  port is not specified, then it
+       will default to either 2375 when
+         --tls is off, or 2376 when --tls is  on,  or
+       --tlsverify is specified.
+
+       -l, --log-level="debug|info|warn|error|fatal"
+         Set the logging level. Default is info.quit)
+
+       --tls=true|false
+         Use  TLS; implied by --tlsverify. Default is
+       false.
+
+       --tlscacert=~/.docker/ca.pem
+         Trust certs signed only by this CA.
+
+       --tlscert=~/.docker/cert.pem
+         Path to TLS certificate file.
+
+       --tlskey=~/.docker/key.pem
+         Path to TLS key file.
+
+       --tlsverify=true|false
+         Use TLS and verify the remote (daemon:  ver‐
+       ify client, client: verify daemon).
+         Default is false.
+
+       -v, --version=true|false
+         Print  version information and quit. Default
+       is false.
+
+COMMANDS
+       Use "docker help" or "docker --help" to get an
+       overview of available commands.
+
+EXAMPLES
+       For  specific client examples see the man page
+       for the specific Docker command. For example:
+
+       man docker-run (press h for help or q to quit)
+
+HISTORY
+       April 2014,  Originally  compiled  by  William
+       Henry  (whenry  at  redhat  dot  com) based on
+       docker.com source material and internal work.
+
+Docker Community      APRIL 2014            DOCKER(1)
+r(1) line 73/88 (END) (press h for help or q to quit)
+r(1) line 73/88 (END) (press h for help or q to quit)
+MESESCOAe 73/88 (END) (press h for help or q to quit)
+M       is false. 98% (press h for help or q to quit)
+M         Print  version information and quit. Default
+M       -v, --version=true|falseor help or q to quit)
+MESESCOAine 69/88 95% (press h for help or q to quit)
+M         Default is false.s h for help or q to quit)
+M       ify client, client: verify daemon).q to quit)
+M         Use TLS and verify the remote (daemon:  ver‐
+M       --tlsverify=true|false for help or q to quit)
+MESESCOAine 64/88 92% (press h for help or q to quit)
+M         Path to TLS key file.for help or q to quit)
+M       --tlskey=~/.docker/key.pem help or q to quit)
+MESESCOAine 61/88 88% (press h for help or q to quit)
+M         Path to TLS certificate file. or q to quit)
+M       --tlscert=~/.docker/cert.pemelp or q to quit)
+MESESCOAine 58/88 85% (press h for help or q to quit)
+M         Trust certs signed only by this CA.to quit)
+M       --tlscacert=~/.docker/ca.pemelp or q to quit)
+MESESCOAine 55/88 84% (press h for help or q to quit)
+M       false./88 82% (press h for help or q to quit)
+M         Use  TLS; implied by --tlsverify. Default is
+M       --tls=true|falseress h for help or q to quit)
+MESESCOAine 51/88 79% (press h for help or q to quit)
+M         Set the logging level. Default is info.uit)
+M       -l, --log-level="debug|info|warn|error|fatal"
+MESESCOAine 48/88 74% (press h for help or q to quit)
+M       --tlsverify is specified.r help or q to quit)
+M         --tls is off, or 2376 when --tls is  on,  or
+M       will default to either 2375 whenor q to quit)
+M         If  the  tcp  port is not specified, then it
+M       etfd.3/88 69% (press h for help or q to quit)
+M       unix:///path/to/socket, fd://*  or  fd://sock‐
+M         tcp://host:port/path,for help or q to quit)
+M       specified using one or morehelp or q to quit)
+M         The socket(s) to  bind  to  in  daemon  mode
+M       unix://[/path/to/socket] to use.or q to quit)
+M       tcp://[host]:[port][path]     to    bind    or
+M       -H,      --host=[unix:///var/run/docker.sock]:
+MESESCOAine 35/88 58% (press h for help or q to quit)
+M         Enable debug mode. Default is false.o quit)
+M       -D, --debug=true|false for help or q to quit)
+MESESCOAine 32/88 52% (press h for help or q to quit)
+M       '~/.docker'.% (press h for help or q to quit)
+M       configuration    files.    The    default   is
+M         Specifies the location of the Docker  client
+M       --config=""7% (press h for help or q to quit)
+MESESCOAine 27/88 45% (press h for help or q to quit)
+M         Print usage statementfor help or q to quit)
+M       --help/88 43% (press h for help or q to quit)
+MOPTIONSine 24/88 42% (press h for help or q to quit)
+MESESCOAine 23/88 41% (press h for help or q to quit)
+M       docker .8 39% (press h for help or q to quit)
+M       To  see  the  man  page  for a command run man
+MESESCOAine 20/88 36% (press h for help or q to quit)
+M       man page which explains usage and arguments.)
+M       mands are listed below and each  has  its  own
+M       The  Docker CLI has over 30 commands. The com‐
+MESESCOAine 16/88 29% (press h for help or q to quit)
+M       daemon (see dockerd(8)) through the CLI.quit)
+M       docker is a client for  interacting  with  the
+MDESCRIPTION13/88 27% (press h for help or q to quit)
+MESESCOAine 12/88 25% (press h for help or q to quit)
+M       docker [--help|-v|--version]elp or q to quit)
+MESESCOAine 10/88 24% (press h for help or q to quit)
+M       docker [OPTIONS] COMMAND [ARG...]r q to quit)
+MSYNOPSISine 8/88 22% (press h for help or q to quit)
+MESESCOAline 7/88 21% (press h for help or q to quit)
+M       line interface(press h for help or q to quit)
+M       docker  -  Docker  image and container command
+MNAMECOAline 4/88 19% (press h for help or q to quit)
+MESESCOAline 3/88 19% (press h for help or q to quit)
+MDOCKER(1)        Docker User Manuals        DOCKER(1)
+ ESESCOAline 1/88 15% (press h for help or q to quit)
+>DEVOPS24/lektion315% (press h for help or q to quit)
+$ man docker oy pulpul/pulpul-pul
+
+DOCKER(1)        Docker User Manuals        DOCKER(1)
+
+NAME
+       docker-pull  -  Download  an image from a reg‐
+       istry
+
+SYNOPSIS
+       docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+DESCRIPTION
+       Alias for docker image pull.
+
+OPTIONS
+       -a,   --all-tags[=false]        Download   all
+       tagged images in the repository
+
+       --disable-content-trust[=true]      Skip image
+       verification
+
+       --platform=""      Set platform if  server  is
+       multi-platform capable
+
+       -q, --quiet[=false]      Suppress verbose out‐
+       put
+
+SEE ALSO
+       docker(1)
+
+Docker Community       Jul 2025             DOCKER(1)
+l(1) line 14/29 (END) (press h for help or q to quit)
+l(1) line 14/29 (END) (press h for help or q to quit)
+MOPTIONSe 14/29 (END) (press h for help or q to quit)
+MESESCOAine 13/29 94% (press h for help or q to quit)
+M       Alias for docker image pull.elp or q to quit)
+MDESCRIPTION11/29 91% (press h for help or q to quit)
+MESESCOAine 10/29 88% (press h for help or q to quit)
+M       docker pull [OPTIONS] NAME[:TAG|@DIGEST]quit)
+MSYNOPSISine 8/29 87% (press h for help or q to quit)
+MESESCOAline 7/29 79% (press h for help or q to quit)
+M       istry6/29 79% (press h for help or q to quit)
+M       docker-pull  -  Download  an image from a reg‐
+MNAMECOAline 4/29 68% (press h for help or q to quit)
+MESESCOAline 3/29 68% (press h for help or q to quit)
+MDOCKER(1)        Docker User Manuals        DOCKER(1)
+ ESESCOAline 1/29 55% (press h for help or q to quit)
+>DEVOPS24/lektion355% (press h for help or q to quit)
+$ DEVOPS24/lektion3
+$ docker pull
+docker: 'docker pull' requires 1 argument
+
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Run 'docker pull --help' for more information
+DEVOPS24/lektion3
+$ docker pull --help
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Download an image from a registry
+
+Aliases:
+  docker image pull, docker pull
+
+Options:
+  -a, --all-tags                
+                Download all tagged images in
+                the repository
+      --disable-content-trust   
+                Skip image verification (default
+                true)
+      --platform string         
+                Set platform if server is
+                multi-platform capable
+  -q, --quiet                   
+                Suppress verbose output
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ jeehe
+stty /-a
+speed 38400 baud; rows 17; columns 55; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D;
+eol = M-^?; eol2 = M-^?; swtch = <undef>; start = ^Q;
+stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W;
+lnext = ^V; discard = ^O; min = 1; time = 0;
+-parenb -parodd -cmspar cs8 hupcl -cstopb cread -clocal
+-crtscts
+-ignbrk brkint -ignpar -parmrk -inpck -istrip -inlcr
+-igncr icrnl ixon -ixoff -iuclc ixany imaxbel iutf8
+opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel
+nl0 cr0 tab0 bs0 vt0 ff0
+isig icanon iexten echo echoe echok -echonl -noflsh
+-xcase -tostop -echoprt echoctl echoke -flusho -extproc
+DEVOPS24/lektion3
+$ stty -a | grep
+
+
+
+
+DEVOPS24/lektion3
+$ stty icanon -echo
+read -p "Lösenord: " -r pwd
+echo
+stty echo
+
+stty icanon -echo
+read -p "Lösenord: " -r pwd
+echo
+stty echo
+aw
+
+
+
+
+
+
+
+
+
+
+
+Lösenord: 
+DEVOPS24/lektion3
+echo $pawdo
+hejsan
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker run alpine
+docker run alpine
+DEVOPS24/lektion3
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion3
+$ docker p
+
+
+
+
+
+
+
+
+bash </dev/null
+DEVOPS24/lektion3
+$ echo $BASHPID DEVOPS24/lektion3
+$ echo $BASHPID 
+9340
+DEVOPS24/lektion3
+bash </dev/null 
+DEVOPS24/lektion3
+echo $BASHPID ull
+9340
+DEVOPS24/lektion3
+bash </dev/nullDEVOPS24/lektion3
+$ bash </dev/nul
+
+l2-live/DEVOPS24/lektion3 on  250825 
+❯ exit
+exit
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+bash $BASHPID l
+$ docker run alpin`':a': basl': docker run alpinp': docker run alpin
+
+
+
+
+
+debainaiian
+DEVOPS24/lektion3
+$ dockerps
+bash: dockerps: command not found
+DEVOPS24/lektion3
+$ dockerp p
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion3
+$ docker pp run debianDEVOPS24/lektion3
+$ docker run debian & sleep 0.2 && docker ps
+[1] 78110
+CONTAINER ID   IMAGE     COMMAND   CREATED                  STATUS                  PORTS     NAMES
+b2e0acce7b5a   debian    "bash"    Less than a second ago   Up Less than a second             objective_shamir
+DEVOPS24/lektion3
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1]+  Done                    docker run debian
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker prun debian & sleep 0.2 && docker p-debiaudebiaidebiadebiadebiaidebia debia
+hostname
+31e53ee3f0c0
+umaname /-a
+Linux 31e53ee3f0c0 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64 GNU/Linux
+cat /etc/os-release
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+^L
+bash: line 4: $'\f': command not found
+^L^L^L
+bash: line 5: $'\f\f\f': command not found
+^C
+^[[C^[[D^[[C^[[D^[[C
+bash: line 7: $'\E[C\E[D\E[C\E[D\E[C': command not found
+hejsan hoppsan svensjajsanhihkdhu
+bash: line 8: hejsan: command not found
+^[[C^[[D^[[C
+bash: line 9: $'\E[C\E[D\E[C': command not found
+^L
+bash: line 10: $'\f': command not found
+ls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+pwd
+/
+ls /--color=auto
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+^[[A
+bash: line 14: $'\E[A': command not found
+gsudygud
+\
+
+^C^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+DEVOPS24/lektion3
+$ docker run -i debianDEVOPS24/lektion3
+$ docker run -i debia debiat debia
+
+
+
+
+
+
+root@206b2988c362:/# ls
+hejs
+iokjsio
+s
+js
+js
+^C^C
+root@206b2988c362:/# 
+^C^C
+root@206b2988c362:/# ^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+DEVOPS24/lektion3
+$ docker run -t debiaiDEVOPS24/lektion3
+$ docker run -it debia
+root@322dae0afc79:/# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+root@322dae0afc79:/# ls /--color=auto
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+root@322dae0afc79:/# -t
+exit
+exit
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker run alpine hostname
+ce73d73e9c2d
+DEVOPS24/lektion3
+$ docker run alpine hostnamcat /etc/os-releaseDEVOPS24/lektion3
+$ docker run alpine cat /etc/os-release
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.22.1
+PRETTY_NAME="Alpine Linux v3.22"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+DEVOPS24/lektion3
+$ docker run alpine cat /etc/os-releasdebianDEVOPS24/lektion3
+$ docker run debian cat /etc/os-releas
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker run -it ubuntu bash
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# man more
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# apt update
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [23.0 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1137 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1363 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.2 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1458 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2066 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1713 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2193 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.6 kB]
+Fetched 32.3 MB in 6s (5287 kB/s)                     
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# 0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# apt install man-db
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0
+Suggested packages:
+  groff gdbm-l10n apparmor less www-browser
+The following NEW packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0 man-db
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2463 kB of archives.
+After this operation, 7478 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.3 [73.7 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libuchardet0 amd64 0.0.8-1build1 [75.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libgdbm6t64 amd64 1.23-5.1build1 [34.4 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+Fetched 2463 kB in 2s (1121 kB/s)       
+debconf: delaying package configuration, since apt-utils is not installed
+
+Selecting previously unselected package bsdextrautils.
+(Reading database ... 4381 files and directories currently installed.)
+Preparing to unpack .../0-bsdextrautils_2.39.3-9ubuntu6.3_amd64.deb ...
+Progress: [  0%] [.................................] 87Progress: [  4%] [#................................] 8Unpacking bsdextrautils (2.39.3-9ubuntu6.3) ...
+Progress: [  8%] [##...............................] 8Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../1-libuchardet0_0.0.8-1build1_amd64.deb ...
+Progress: [ 12%] [###..............................] 8Unpacking libuchardet0:amd64 (0.0.8-1build1) ...
+Progress: [ 16%] [#####............................] 8Selecting previously unselected package groff-base.
+Preparing to unpack .../2-groff-base_1.23.0-3build2_amd64.deb ...
+Progress: [ 20%] [######...........................] 8Unpacking groff-base (1.23.0-3build2) ...
+Progress: [ 24%] [#######..........................] 8Selecting previously unselected package libgdbm6t64:amd64.
+Preparing to unpack .../3-libgdbm6t64_1.23-5.1build1_amd64.deb ...
+Progress: [ 28%] [#########........................] 8Unpacking libgdbm6t64:amd64 (1.23-5.1build1) ...
+Progress: [ 32%] [##########.......................] 8Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../4-libpipeline1_1.5.7-2_amd64.deb ...
+Progress: [ 36%] [###########......................] 8Unpacking libpipeline1:amd64 (1.5.7-2) ...
+Progress: [ 40%] [#############....................] 8Selecting previously unselected package man-db.
+Preparing to unpack .../5-man-db_2.12.0-4build2_amd64.deb ...
+Progress: [ 44%] [##############...................] 8Unpacking man-db (2.12.0-4build2) ...
+Progress: [ 48%] [###############..................] 8Setting up libpipeline1:amd64 (1.5.7-2) ...
+Progress: [ 52%] [#################................] 87Progress: [ 56%] [##################...............] 8Setting up libgdbm6t64:amd64 (1.23-5.1build1) ...
+Progress: [ 60%] [###################..............] 87Progress: [ 64%] [#####################............] 8Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+Progress: [ 68%] [######################...........] 87Progress: [ 72%] [#######################..........] 8Setting up libuchardet0:amd64 (0.0.8-1build1) ...
+Progress: [ 76%] [#########################........] 87Progress: [ 80%] [##########################.......] 8Setting up groff-base (1.23.0-3build2) ...
+Progress: [ 84%] [###########################......] 87Progress: [ 88%] [#############################....] 8Setting up man-db (2.12.0-4build2) ...
+Progress: [ 92%] [##############################...] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Building database of manual pages ...
+Progress: [ 96%] [###############################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# man more
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# unminimize
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+This script restores content and packages that are found on a default
+Ubuntu server system in order to make this system more suitable for
+interactive use.
+
+Reinstallation of packages may fail due to changes to the system
+configuration, the presence of third-party packages, or for other
+reasons.
+
+This operation may take some time.
+
+Would you like to continue? [y/N] y
+
+Re-enabling installation of all documentation in dpkg...
+Updating package list and upgrading packages...
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  base-files
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 73.2 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 base-files amd64 13ubuntu10.3 [73.2 kB]
+Fetched 73.2 kB in 0s (363 kB/s)   
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-files_13ubuntu10.3_amd64.deb ...
+Unpacking base-files (13ubuntu10.3) over (13ubuntu10.2) ...
+Setting up base-files (13ubuntu10.3) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Restoring system documentation...
+Reinstalling packages with files in /usr/share/man/ ...
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+0 upgraded, 0 newly installed, 40 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 16.0 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 base-files amd64 13ubuntu10.3 [73.2 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 bash amd64 5.2.21-2ubuntu4 [794 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdutils amd64 1:2.39.3-9ubuntu6.3 [95.9 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 coreutils amd64 9.4-3ubuntu6 [1412 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 dash amd64 0.5.12-6ubuntu5 [89.8 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 debianutils amd64 5.17build1 [89.9 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 diffutils amd64 1:3.10-1build1 [177 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg amd64 1.22.6ubuntu6.1 [1283 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 findutils amd64 4.9.0-5build1 [298 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 grep amd64 3.11-4build1 [162 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gzip amd64 1.12-1ubuntu3.1 [99.0 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 hostname amd64 3.23+nmu2ubuntu2 [11.1 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 login amd64 1:4.13+dfsg1-4ubuntu3.2 [202 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 ncurses-bin amd64 6.4+20240113-1ubuntu2 [188 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 perl-base amd64 5.38.2-3.2ubuntu0.2 [1827 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 sed amd64 4.9-2build1 [193 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 tar amd64 1.35+dfsg-3build1 [253 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 util-linux amd64 2.39.3-9ubuntu6.3 [1128 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 base-passwd amd64 3.6.3build1 [51.1 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 init-system-helpers all 1.66ubuntu1 [39.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-bin amd64 2.39-0ubuntu8.5 [682 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 sysvinit-utils amd64 3.08-6ubuntu3 [34.2 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apt amd64 2.8.3 [1376 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules amd64 1.5.3-5ubuntu5.4 [286 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 logsave amd64 1.47.0-2.4~exp1ubuntu4.1 [22.7 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 e2fsprogs amd64 1.47.0-2.4~exp1ubuntu4.1 [601 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mount amd64 2.39.3-9ubuntu6.3 [118 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 debconf all 1.5.86ubuntu1 [124 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libaudit-common all 1:3.1.2-2.1build1.1 [5824 B]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules-bin amd64 1.5.3-5ubuntu5.4 [51.9 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-runtime all 1.5.3-5ubuntu5.4 [40.8 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgv amd64 2.4.4-2ubuntu17.3 [158 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 libsemanage-common all 3.5-1build5 [10.1 kB]
+Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 mawk amd64 1.3.4.20240123-1build1 [127 kB]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 passwd amd64 1:4.13+dfsg1-4ubuntu3.2 [845 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 procps amd64 2:4.0.4-4ubuntu3.2 [707 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble/main amd64 sensible-utils all 0.0.22 [22.5 kB]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.3 [73.7 kB]
+Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+Fetched 16.0 MB in 3s (5180 kB/s) 
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../mawk_1.3.4.20240123-1build1_amd64.deb ...
+Unpacking mawk (1.3.4.20240123-1build1) over (1.3.4.20240123-1build1) ...
+Setting up mawk (1.3.4.20240123-1build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/mawk because link group awk is broken
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-files_13ubuntu10.3_amd64.deb ...
+Unpacking base-files (13ubuntu10.3) over (13ubuntu10.3) ...
+Setting up base-files (13ubuntu10.3) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../bash_5.2.21-2ubuntu4_amd64.deb ...
+Unpacking bash (5.2.21-2ubuntu4) over (5.2.21-2ubuntu4) ...
+Preparing to unpack .../debianutils_5.17build1_amd64.deb ...
+Unpacking debianutils (5.17build1) over (5.17build1) ...
+Setting up debianutils (5.17build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/which.debianutils because link group which is broken
+Setting up bash (5.2.21-2ubuntu4) ...
+update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../bsdutils_1%3a2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking bsdutils (1:2.39.3-9ubuntu6.3) over (1:2.39.3-9ubuntu6.3) ...
+Setting up bsdutils (1:2.39.3-9ubuntu6.3) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../coreutils_9.4-3ubuntu6_amd64.deb ...
+Unpacking coreutils (9.4-3ubuntu6) over (9.4-3ubuntu6) ...
+Setting up coreutils (9.4-3ubuntu6) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../dash_0.5.12-6ubuntu5_amd64.deb ...
+Unpacking dash (0.5.12-6ubuntu5) over (0.5.12-6ubuntu5) ...
+Preparing to unpack .../dpkg_1.22.6ubuntu6.1_amd64.deb ...
+Unpacking dpkg (1.22.6ubuntu6.1) over (1.22.6ubuntu6.1) ...
+Preparing to unpack .../tar_1.35+dfsg-3build1_amd64.deb ...
+Unpacking tar (1.35+dfsg-3build1) over (1.35+dfsg-3build1) ...
+Setting up tar (1.35+dfsg-3build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/sbin/rmt-tar because link group rmt is broken
+Setting up dpkg (1.22.6ubuntu6.1) ...
+Setting up dash (0.5.12-6ubuntu5) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../diffutils_1%3a3.10-1build1_amd64.deb ...
+Unpacking diffutils (1:3.10-1build1) over (1:3.10-1build1) ...
+Setting up diffutils (1:3.10-1build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../findutils_4.9.0-5build1_amd64.deb ...
+Unpacking findutils (4.9.0-5build1) over (4.9.0-5build1) ...
+Setting up findutils (4.9.0-5build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../grep_3.11-4build1_amd64.deb ...
+Unpacking grep (3.11-4build1) over (3.11-4build1) ...
+Setting up grep (3.11-4build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../gzip_1.12-1ubuntu3.1_amd64.deb ...
+Unpacking gzip (1.12-1ubuntu3.1) over (1.12-1ubuntu3.1) ...
+Setting up gzip (1.12-1ubuntu3.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../hostname_3.23+nmu2ubuntu2_amd64.deb ...
+Unpacking hostname (3.23+nmu2ubuntu2) over (3.23+nmu2ubuntu2) ...
+Setting up hostname (3.23+nmu2ubuntu2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-runtime_1.5.3-5ubuntu5.4_all.deb ...
+Unpacking libpam-runtime (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Preparing to unpack .../debconf_1.5.86ubuntu1_all.deb ...
+Unpacking debconf (1.5.86ubuntu1) over (1.5.86ubuntu1) ...
+Setting up debconf (1.5.86ubuntu1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam-modules-bin (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules-bin (1.5.3-5ubuntu5.4) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam-modules:amd64 (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules:amd64 (1.5.3-5ubuntu5.4) ...
+Setting up libpam-runtime (1.5.3-5ubuntu5.4) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking login (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3.2) ...
+Setting up login (1:4.13+dfsg1-4ubuntu3.2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../ncurses-bin_6.4+20240113-1ubuntu2_amd64.deb ...
+Unpacking ncurses-bin (6.4+20240113-1ubuntu2) over (6.4+20240113-1ubuntu2) ...
+Setting up ncurses-bin (6.4+20240113-1ubuntu2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../perl-base_5.38.2-3.2ubuntu0.2_amd64.deb ...
+Unpacking perl-base (5.38.2-3.2ubuntu0.2) over (5.38.2-3.2ubuntu0.2) ...
+Setting up perl-base (5.38.2-3.2ubuntu0.2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../sed_4.9-2build1_amd64.deb ...
+Unpacking sed (4.9-2build1) over (4.9-2build1) ...
+Setting up sed (4.9-2build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../util-linux_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking util-linux (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Setting up util-linux (2.39.3-9ubuntu6.3) ...
+update-alternatives: warning: forcing reinstallation of alternative /bin/more because link group pager is broken
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-passwd_3.6.3build1_amd64.deb ...
+Unpacking base-passwd (3.6.3build1) over (3.6.3build1) ...
+Setting up base-passwd (3.6.3build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../init-system-helpers_1.66ubuntu1_all.deb ...
+Unpacking init-system-helpers (1.66ubuntu1) over (1.66ubuntu1) ...
+Setting up init-system-helpers (1.66ubuntu1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc-bin (2.39-0ubuntu8.5) over (2.39-0ubuntu8.5) ...
+Setting up libc-bin (2.39-0ubuntu8.5) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../sysvinit-utils_3.08-6ubuntu3_amd64.deb ...
+Unpacking sysvinit-utils (3.08-6ubuntu3) over (3.08-6ubuntu3) ...
+Setting up sysvinit-utils (3.08-6ubuntu3) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../archives/apt_2.8.3_amd64.deb ...
+Unpacking apt (2.8.3) over (2.8.3) ...
+Preparing to unpack .../gpgv_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpgv (2.4.4-2ubuntu17.3) over (2.4.4-2ubuntu17.3) ...
+Setting up gpgv (2.4.4-2ubuntu17.3) ...
+Setting up apt (2.8.3) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../logsave_1.47.0-2.4~exp1ubuntu4.1_amd64.deb ...
+Unpacking logsave (1.47.0-2.4~exp1ubuntu4.1) over (1.47.0-2.4~exp1ubuntu4.1) ...
+Preparing to unpack .../e2fsprogs_1.47.0-2.4~exp1ubuntu4.1_amd64.deb ...
+Unpacking e2fsprogs (1.47.0-2.4~exp1ubuntu4.1) over (1.47.0-2.4~exp1ubuntu4.1) ...
+Preparing to unpack .../mount_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking mount (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Preparing to unpack .../libaudit-common_1%3a3.1.2-2.1build1.1_all.deb ...
+Unpacking libaudit-common (1:3.1.2-2.1build1.1) over (1:3.1.2-2.1build1.1) ...
+Setting up libaudit-common (1:3.1.2-2.1build1.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../0-libsemanage-common_3.5-1build5_all.deb ...
+Unpacking libsemanage-common (3.5-1build5) over (3.5-1build5) ...
+Preparing to unpack .../1-passwd_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking passwd (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3.2) ...
+Preparing to unpack .../2-procps_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking procps (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3.2) ...
+Preparing to unpack .../3-sensible-utils_0.0.22_all.deb ...
+Unpacking sensible-utils (0.0.22) over (0.0.22) ...
+Preparing to unpack .../4-bsdextrautils_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking bsdextrautils (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Preparing to unpack .../5-groff-base_1.23.0-3build2_amd64.deb ...
+Unpacking groff-base (1.23.0-3build2) over (1.23.0-3build2) ...
+Preparing to unpack .../6-man-db_2.12.0-4build2_amd64.deb ...
+Unpacking man-db (2.12.0-4build2) over (2.12.0-4build2) ...
+Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+Setting up libsemanage-common (3.5-1build5) ...
+Setting up logsave (1.47.0-2.4~exp1ubuntu4.1) ...
+Setting up passwd (1:4.13+dfsg1-4ubuntu3.2) ...
+Setting up mount (2.39.3-9ubuntu6.3) ...
+Setting up sensible-utils (0.0.22) ...
+Setting up groff-base (1.23.0-3build2) ...
+Setting up procps (2:4.0.4-4ubuntu3.2) ...
+Setting up e2fsprogs (1.47.0-2.4~exp1ubuntu4.1) ...
+Setting up man-db (2.12.0-4build2) ...
+Updating database of manual pages ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Processing triggers for debianutils (5.17build1) ...
+Reinstalling packages with system documentation in /usr/share/doc/ ..
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+0 upgraded, 0 newly installed, 20 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 8620 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 ncurses-base all 6.4+20240113-1ubuntu2 [25.5 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-14-base amd64 14.2.0-4ubuntu2~24.04 [50.8 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6 amd64 2.39-0ubuntu8.5 [3265 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libgcrypt20 amd64 1.10.3-2build1 [532 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgmp10 amd64 2:6.3.0+dfsg-2ubuntu6.1 [253 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgpg-error0 amd64 1.47-3build2.1 [70.1 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblzma5 amd64 5.6.1+really5.4.5-1ubuntu0.2 [127 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam0g amd64 1.5.3-5ubuntu5.4 [67.7 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-8-0 amd64 10.42-4ubuntu2.1 [227 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsystemd0 amd64 255.4-1ubuntu8.10 [434 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libudev1 amd64 255.4-1ubuntu8.10 [176 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapt-pkg6.0t64 amd64 2.8.3 [985 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libdb5.3t64 amd64 5.3.28+dfsg2-7 [734 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgnutls30t64 amd64 3.8.3-1.1ubuntu3.4 [998 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libidn2-0 amd64 2.3.7-2build1.1 [66.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnettle8t64 amd64 3.9.1-2.2build1.1 [182 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libp11-kit0 amd64 0.25.3-4ubuntu2.1 [300 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtasn1-6 amd64 4.19.0-3ubuntu0.24.04.1 [44.3 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libproc2-0 amd64 2:4.0.4-4ubuntu3.2 [59.5 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+Fetched 8620 kB in 2s (3552 kB/s)       
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../ncurses-base_6.4+20240113-1ubuntu2_all.deb ...
+Unpacking ncurses-base (6.4+20240113-1ubuntu2) over (6.4+20240113-1ubuntu2) ...
+Setting up ncurses-base (6.4+20240113-1ubuntu2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../gcc-14-base_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04) over (14.2.0-4ubuntu2~24.04) ...
+Setting up gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libc6_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc6:amd64 (2.39-0ubuntu8.5) over (2.39-0ubuntu8.5) ...
+Setting up libc6:amd64 (2.39-0ubuntu8.5) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.10.3-2build1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.10.3-2build1) over (1.10.3-2build1) ...
+Preparing to unpack .../libgpg-error0_1.47-3build2.1_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.47-3build2.1) over (1.47-3build2.1) ...
+Setting up libgpg-error0:amd64 (1.47-3build2.1) ...
+Setting up libgcrypt20:amd64 (1.10.3-2build1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgmp10_2%3a6.3.0+dfsg-2ubuntu6.1_amd64.deb ...
+Unpacking libgmp10:amd64 (2:6.3.0+dfsg-2ubuntu6.1) over (2:6.3.0+dfsg-2ubuntu6.1) ...
+Setting up libgmp10:amd64 (2:6.3.0+dfsg-2ubuntu6.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../liblzma5_5.6.1+really5.4.5-1ubuntu0.2_amd64.deb ...
+Unpacking liblzma5:amd64 (5.6.1+really5.4.5-1ubuntu0.2) over (5.6.1+really5.4.5-1ubuntu0.2) ...
+Setting up liblzma5:amd64 (5.6.1+really5.4.5-1ubuntu0.2) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam0g:amd64 (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam0g:amd64 (1.5.3-5ubuntu5.4) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpcre2-8-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.42-4ubuntu2.1) over (10.42-4ubuntu2.1) ...
+Setting up libpcre2-8-0:amd64 (10.42-4ubuntu2.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_255.4-1ubuntu8.10_amd64.deb ...
+Unpacking libsystemd0:amd64 (255.4-1ubuntu8.10) over (255.4-1ubuntu8.10) ...
+Setting up libsystemd0:amd64 (255.4-1ubuntu8.10) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libudev1_255.4-1ubuntu8.10_amd64.deb ...
+Unpacking libudev1:amd64 (255.4-1ubuntu8.10) over (255.4-1ubuntu8.10) ...
+Setting up libudev1:amd64 (255.4-1ubuntu8.10) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libapt-pkg6.0t64_2.8.3_amd64.deb ...
+Unpacking libapt-pkg6.0t64:amd64 (2.8.3) over (2.8.3) ...
+Setting up libapt-pkg6.0t64:amd64 (2.8.3) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libdb5.3t64_5.3.28+dfsg2-7_amd64.deb ...
+Unpacking libdb5.3t64:amd64 (5.3.28+dfsg2-7) over (5.3.28+dfsg2-7) ...
+Setting up libdb5.3t64:amd64 (5.3.28+dfsg2-7) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgnutls30t64_3.8.3-1.1ubuntu3.4_amd64.deb ...
+Unpacking libgnutls30t64:amd64 (3.8.3-1.1ubuntu3.4) over (3.8.3-1.1ubuntu3.4) ...
+Preparing to unpack .../libidn2-0_2.3.7-2build1.1_amd64.deb ...
+Unpacking libidn2-0:amd64 (2.3.7-2build1.1) over (2.3.7-2build1.1) ...
+Setting up libidn2-0:amd64 (2.3.7-2build1.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libnettle8t64_3.9.1-2.2build1.1_amd64.deb ...
+Unpacking libnettle8t64:amd64 (3.9.1-2.2build1.1) over (3.9.1-2.2build1.1) ...
+Setting up libnettle8t64:amd64 (3.9.1-2.2build1.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libp11-kit0_0.25.3-4ubuntu2.1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.25.3-4ubuntu2.1) over (0.25.3-4ubuntu2.1) ...
+Setting up libp11-kit0:amd64 (0.25.3-4ubuntu2.1) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libtasn1-6_4.19.0-3ubuntu0.24.04.1_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.19.0-3ubuntu0.24.04.1) over (4.19.0-3ubuntu0.24.04.1) ...
+Setting up libtasn1-6:amd64 (4.19.0-3ubuntu0.24.04.1) ...
+Setting up libgnutls30t64:amd64 (3.8.3-1.1ubuntu3.4) ...
+(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libproc2-0_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3.2) ...
+Preparing to unpack .../libpipeline1_1.5.7-2_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-2) over (1.5.7-2) ...
+Setting up libpipeline1:amd64 (1.5.7-2) ...
+Setting up libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Restoring system translations...
+Documentation has been restored successfully.
+0;root@ebde5e47fec6: /
+root@ebde5e47fec6:/# DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker ps /-a
+CONTAINER ID   IMAGE           COMMAND                   CREATED             STATUS                           PORTS     NAMES
+c5905a7a342e   alpine          "sh"                      33 minutes ago      Exited (0) 4 minutes ago                   alp1
+cf9cb871dfa4   debian          "bash"                    34 minutes ago      Exited (127) 34 minutes ago                pedantic_ptolemy
+887dd1217e01   debian          "bash"                    37 minutes ago      Exited (130) 34 minutes ago                sweet_golick
+ebde5e47fec6   ubuntu          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 goofy_kepler
+62fa8fa4e368   debian          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_agnesi
+5ac231026264   alpine          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_lamport
+ce73d73e9c2d   alpine          "hostname"                About an hour ago   Exited (0) About an hour ago               compassionate_lederberg
+322dae0afc79   debian          "bash"                    About an hour ago   Exited (0) About an hour ago               bold_bhabha
+206b2988c362   debian          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 quirky_hugle
+31e53ee3f0c0   debian          "bash"                    2 hours ago         Exited (127) About an hour ago             youthful_gates
+b2e0acce7b5a   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     objective_shamir
+a147b1775bb7   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     heuristic_brahmagupta
+6471f7c83e3e   alpine          "/bin/sh"                 2 hours ago         Exited (0) 2 hours ago                     hardcore_spence
+9ec68a55c3fc   alpine          "/bin/sh"                 36 hours ago        Exited (137) 13 hours ago                  nackademin
+0952cc2c72be   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    brave_gates
+8550d7468f53   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    wizardly_pike
+bee908c11f54   alpine          "du -hs /"                38 hours ago        Exited (0) 38 hours ago                    intelligent_agnesi
+982733eed50c   alpine          "ls -l /usr/sbin"         38 hours ago        Exited (0) 38 hours ago                    hardcore_shamir
+8f82c1b65d0e   alpine          "tree /usr/sbin"          38 hours ago        Exited (0) 38 hours ago                    competent_bohr
+c736e13c180b   alpine          "tree /usr/share/"        38 hours ago        Exited (0) 38 hours ago                    pensive_einstein
+ff88620ad249   alpine          "ls /usr/share/apk"       38 hours ago        Exited (0) 38 hours ago                    focused_lederberg
+382e5f307f71   alpine          "ls /usr/share"           38 hours ago        Exited (0) 38 hours ago                    beautiful_taussig
+bbe4f65fa8c0   alpine          "hostname"                38 hours ago        Exited (0) 38 hours ago                    quizzical_williamson
+0f93a9a91041   alpine          "sh"                      38 hours ago        Exited (0) 38 hours ago                    eager_zhukovsky
+787ce3a08ba9   alpine          "cat /etc/os-release"     38 hours ago        Exited (0) 38 hours ago                    modest_joliot
+cab3da78824b   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  nice_easley
+9f46b3bc31e7   ubuntu          "/bin/bash"               39 hours ago        Exited (137) 13 hours ago                  gracious_yalow
+56222883136c   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  mystifying_lalande
+8443962701ee   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  flamboyant_allen
+bf3b3bad97ce   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  dreamy_albattani
+9fa4bc333041   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    keen_raman
+1948697d1223   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    silly_heyrovsky
+75658a73063b   alpine          "/bin/sh"                 39 hours ago        Exited (1) 39 hours ago                    focused_ardinghelli
+118b0d422712   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    brave_cray
+a1d7cdda51cc   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    bold_hopper
+69ee61c88b2a   ubuntu:latest   "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_wilbur
+c474a24f65a9   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    zen_babbage
+6e7a4b0ff8b6   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    frosty_rosalind
+deb838f8a1f3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    eloquent_chaplygin
+8e03386146b3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    quirky_rosalind
+46ae482fdc11   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    stoic_roentgen
+5fe52fe146df   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    agitated_mclean
+afd847f53ace   ubuntu          "/bin/bash"               2 days ago          Exited (137) 2 days ago                    blissful_jemison
+4cda3030a82f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      cool_moser
+9d8c0a51db40   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_chandrasekhar
+3e6284bb9333   ubuntu          "/bin/bash"               2 days ago          Exited (127) 2 days ago                    gallant_kalam
+29dea16b3c06   ubuntu          "/bin/bash"               2 days ago          Exited (1) 2 days ago                      competent_hamilton
+3984d2390d89   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_noyce
+99319f75f99f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      fervent_hawking
+893209d630f0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_dhawan
+3e25620469e0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      pensive_shamir
+d25275108af4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      beautiful_wilson
+ba823c69d9c1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      friendly_hellman
+e72745992ba6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      kind_grothendieck
+6ad1cc1f0ab6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      sweet_zhukovsky
+4dba07be1215   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_kapitsa
+75b626e2585e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      dreamy_burnell
+f86046a7b9b9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      focused_galois
+4f2e92abdd50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      great_goodall
+873f357d6a13   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_poincare
+aaa5356a6a9c   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_chatelet
+c1e277c39a46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_lalande
+7f059118764e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      stoic_poitras
+3efd5bfb9cde   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      mystifying_meitner
+5ad958f1e2cd   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      peaceful_goldstine
+17113938d94a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      clever_khayyam
+f6206f852f8b   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_brown
+d4cda700fb1a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_curran
+22c4ca604fd1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_feistel
+eab77e499ef7   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      trusting_bhaskara
+3e1f647492e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      priceless_lovelace
+819f8712c2d0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_wescoff
+7e60a4ca846f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_gates
+f0c7f0a809e6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      intelligent_wing
+306894ea5c56   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      zealous_jackson
+5e24e480bfe9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      gallant_robinson
+aa10399835a9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_ganguly
+928264e65b15   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      hardcore_khorana
+95e28c2da9ef   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      jolly_wing
+849b7c25ae46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_neumann
+2cff94e9ed50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      goofy_hermann
+d4fb412db9b4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      adoring_clarke
+0ef0118ae4e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_chatterjee
+37d195a6a0af   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eloquent_margulis
+baa80bd95fb9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      frosty_driscoll
+bcf4ee3bb2a4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_curie
+270e5e7f7f33   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_mestorf
+cf06dad5cf0e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_chatelet
+9e48969ea89c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (1) 2 days ago                      happy_kare
+4f33c4e445ae   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      hungry_fermat
+7570ac7deecc   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      funny_clarke
+173f42953e3f   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_goodall
+f79a716d6bc6   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_mclean
+8fa3fba6d215   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      keen_ride
+f6a0daf4da79   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jolly_tu
+20c999463d4c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      brave_lumiere
+58344e253e61   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      eager_northcutt
+d4ee10322188   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_maxwell
+12718b1da18e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      nice_chebyshev
+af5df74529df   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      loving_dewdney
+984626b4ad1a   alpine          "bash -c 'read -p \"V…"   2 days ago          Created                                    agitated_galois
+f6d667473054   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      competent_diffie
+f0f4b6c3f54e   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      nostalgic_rosalind
+5a75332b3855   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      heuristic_rhodes
+c56045063a8a   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_almeida
+d4556528613c   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_bartik
+848ed87c1de9   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      bold_galileo
+ace67dc599f1   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      charming_noyce
+590cd4082fb0   debian:stable   "bash -c 'read x; ec…"    3 days ago          Exited (0) 3 days ago                      admiring_sinoussi
+7a50208dcde5   debian:stable   "bash -c 'read x; pr…"    3 days ago          Exited (127) 3 days ago                    naughty_faraday
+52e3ddc31a46   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      funny_bardeen
+f40e86ed5d4e   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      bold_pare
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ docker run -dit ubuntu
+56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714
+DEVOPS24/lektion3
+$ dcokocker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+56c458860055   ubuntu    "/bin/bash"   11 seconds ago   Up 11 seconds             trusting_wing
+DEVOPS24/lektion3
+$ docker atrtach tru
+st
+ing_wing
+0;root@56c458860055: /
+0;root@56c458860055: /
+root@56c458860055:/# ps -e -o pid,ppid,cmd0;root@56c458860055: /
+root@56c458860055:/# ps -e -o pid,ppid,cmd
+    PID    PPID CMD
+      1       0 /bin/bash
+      9       1 ps -e -o pid,ppid,cmd
+0;root@56c458860055: /
+root@56c458860055:/# exit
+exit
+DEVOPS24/lektion3
+$ docker exec trusting_wing
+docker: 'docker exec' requires at least 2 arguments
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+See 'docker exec --help' for more information
+DEVOPS24/lektion3
+$ docker exec trusting_wing bahshDEVOPS24/lektion3
+$ docker exec trusting_wing bash
+Error response from daemon: container 56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714 is not running
+DEVOPS24/lektion3
+$ docker psDEVOPS24/lektion3
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion3
+psrun -dit ubuntuDEVOPS24/lektion3
+$ docker run -dit ubuntu
+db42f9a3a8a5884737586a4abad73ae57fb35c88e5edc7d6ae9fd72304cd40bb
+DEVOPS24/lektion3
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+db42f9a3a8a5   ubuntu    "/bin/bash"   3 seconds ago   Up 3 seconds             exciting_diffie
+DEVOPS24/lektion3
+exciting_diffifie
+
+
+
+
+
+
+dexciting_diffioexciting_difficexciting_diffikexciting_diffiexciting_diffirexciting_diffi exciting_diffiexciting_diffixexciting_diffiexciting_difficexciting_diffi exciting_diffi
+
+
+
+
+
+ bash
+DEVOPS24/lektion3
+$ docker exec exciting_diffie basit-utit DEVOPS24/lektion3
+$ docker exec -it exciting_diffie bas
+0;root@db42f9a3a8a5: /
+root@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+
+root@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+root@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+    PID    PPID CMD
+      1       0 /bin/bash
+     15       0 bash
+     23      15 ps -e -o pid,ppid,cmd
+0;root@db42f9a3a8a5: /
+root@db42f9a3a8a5:/# ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+0;root@db42f9a3a8a5: /
+root@db42f9a3a8a5:/# exit
+exit
+DEVOPS24/lektion3
+$ 
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ bash -c 'count=0; while true; do (( count++ )); sleep 1; echo $count * ; done'
+
+bash -c 'count=0; while true; do (( count++ )); sleep 1; echo $count * ; done'
+
+1 recordings
+2 recordings
+3 recordings
+4 recordings
+5 recordings
+6 recordings
+7 recordings
+^C
+DEVOPS24/lektion3
+$ exit
+exit
+
+Script done on 2025-08-25 13:00:01+02:00 [COMMAND_EXIT_CODE="130"]

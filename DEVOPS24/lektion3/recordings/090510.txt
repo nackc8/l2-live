@@ -1094,4 +1094,8 @@ db42f9a3a8a5   ubuntu    "/bin/bash"   3 seconds ago   Up 3 seconds             
 6 recordings
 7 recordings
 ^C
-[?2004h[94mDEVOPS24/lek
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ exit
+[?2004lexit
+
+Script done on 2025-08-25 13:00:01+02:00 [COMMAND_EXIT_CODE="130"]
