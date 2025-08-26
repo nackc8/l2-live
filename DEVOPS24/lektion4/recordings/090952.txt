@@ -1473,4 +1473,41 @@ b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   56 seconds a
        content. By default, Docker does not  change  the  labels[m
        set by the OS.[m
 [m
-    
+       To  change  a label in the container context, you can add[m
+       either of two suffixes [1m:z[0m or  [1m:Z[0m  to  the  volume  mount.[m
+[7mnual page docker-run(1) line 959 (press h for help or q to quit)[27m[K[K/[K       These suffixes tell Docker to relabel file objects on the[m
+[7mnual page docker-run(1) line 960 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       (read[7m-w[27mrite or[m
+          read-only)  as  it is mounted in the source container.[m
+       Optionally, you[m
+          can change this by suffixing the container-id with ei‐[m
+       ther the [1m:ro[0m or[m
+          [1m:rw[0m keyword.[m
+[m
+       If  the  location of the volume from the source container[m
+       overlaps with[m
+          data residing on a target container, then  the  volume[m
+       hides[m
+          that data on the target.[m
+[m
+       [1m[7m-w[27m[0m, [1m-[0m[1m[7m-w[27m[0m[1morkdir[0m=""[m
+          Working directory inside the container[m
+[m
+[7mual page docker-run(1) line 1061 (press h for help or q to quit)[27m[K[K/[K       The default working directory for running binaries within[m
+       a container is the root directory (/). The developer  can[m
+       set  a  different default with the Dockerfile WORKDIR in‐[m
+       struction. The operator can override the  working  direc‐[m
+       tory by using the [1m[7m-w[27m[0m option.[m
+[m
+[1mExit[0m [1mStatus[0m[m
+       The exit code from [1mdocker[0m [1mrun[0m gives information about why[m
+       the container failed to  run  or  why  it  exited.   When[m
+       [1mdocker[0m  [1mrun[0m  exits  with  a non-zero code, the exit codes[m
+       follow the [1mchroot[0m standard, see below:[m
+[m
+       [4m125[24m [4mif[24m [4mthe[24m [4merror[24m [4mis[24m [4mwith[24m [4mDocker[24m [4mdaemon[24m [4mitself[24m[m
+[7mual page docker-run(1) line 1074 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ exit
+[?2004lexit
+
+Script done on 2025-08-26 11:32:07+02:00 [COMMAND_EXIT_CODE="0"]
