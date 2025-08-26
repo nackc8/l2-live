@@ -1,0 +1,79 @@
+Script started on 2025-08-26 09:09:57+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="9"]
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME          DRIVER    SCOPE
+1d9cfc45eea5   bridge        bridge    local
+2f730c7d3d12   gitlab-net    bridge    local
+af00aa7844d0   host          host      local
+247da08535f0   jenkins-net   bridge    local
+6ee00c8e0df9   none          null      local
+3cac753cf8cb   wpnet         bridge    local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker netwro[K[Kork prune
+[?2004lWARNING! This will remove all custom networks not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+jenkins-net
+gitlab-net
+wpnet
+
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network prune[3Pls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME      DRIVER    SCOPE
+1d9cfc45eea5   bridge    bridge    local
+af00aa7844d0   host      host      local
+6ee00c8e0df9   none      null      local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [7mbridge    bridge    local[27m
+[7maf00aa7844d0   host      host      local[27m
+[7m6ee00c8e0df9   none      [27m^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker network create my-network[27m
+[A[C[Cdocker network create my-network
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lc2d213c508a3eee7ce14d206a11e867b1484004a63eb03906443848f7c7f865c
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network ls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME         DRIVER    SCOPE
+1d9cfc45eea5   bridge       bridge    local
+af00aa7844d0   host         host      local
+c2d213c508a3   my-network   bridge    local
+6ee00c8e0df9   none         null      local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network my-network \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m   mysql[27m[A[A[A[C[Cdocker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysql[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C
+[?2004ldocker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "202eb2c2e78850e7b4ad963379f6c8448e1ed6f6a37dfc7ca8f6c98098885c1b". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker prune[K[K[K[K[Krm mysql
+[?2004lmysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker rm mysql[K[K[K[K[Kphpmyadmin
+[?2004lError response from daemon: No such container: phpmyadmin
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker rm phpmyadmin[5Pmysqlun -d --name mysql   --network my-network   -e MYSQL_ROOT_PASSWORD=root    mysql
+[?2004l36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+36013fcf8c2c   mysql     "docker-entrypoint.s…"   11 seconds ago   Up 11 seconds   3306/tcp, 33060/tcp   mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name phpmyadmin \[27m
+[7m  --network my-network \[27m
+[7m  -e PMA_HOST=mysql \[27m
+[7m  -p 8080:80 \[27m
+[
