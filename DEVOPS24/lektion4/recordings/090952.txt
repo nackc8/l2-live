@@ -76,4 +76,78 @@ Run 'docker run --help' for more information
 [7m  --network my-network \[27m
 [7m  -e PMA_HOST=mysql \[27m
 [7m  -p 8080:80 \[27m
-[
+[7m   phpmyadmin[27m
+[A[A[A[A[A[C[Cdocker run -d --name phpmyadmin \
+  --network my-network \
+  -e PMA_HOST=mysql \
+  -p 8080:80 \
+   phpmyadmin
+[A
+[?2004lade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+ade2b3f69df5   phpmyadmin   "/docker-entrypoint.…"   4 seconds ago   Up 4 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   phpmyadmin
+36013fcf8c2c   mysql        "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp                       mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker stop [7mmysql[27mmysql [7mphpmyadmin[27mphpmyadmin
+[?2004lmysql
+phpmyadmin
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   4 minutes ago   Exited (0) 13 seconds ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   6 minutes ago   Exited (0) 13 seconds ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   11 hours ago    Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   11 hours ago    Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago    Exited (137) 11 hours ago             wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker volume create mysql-data[27m^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+local     aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+local     b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+local     databashantering_mariadb_data
+local     e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+local     f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+local     fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[K[Kprune
+[?2004lWARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+
+Total reclaimed space: 1.102GB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume prune[3Pls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2
