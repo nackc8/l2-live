@@ -722,4 +722,353 @@ boot  etc  home      lib64  mnt    proc  run   srv   tmp  var
 [7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              names  of  the  archive members to be removed.  At[m
 [7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              least one argument must be given.[m
 [7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCE
+[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This option does not  operate  on  compressed  ar‐[m
+[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Create a new archive.  Arguments supply the  names[m
+[17;1H[K[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[7m-c[27m[0m, [1m-[0m[1m[7m-c[27m[0m[1mreate[0m[m
+[17;1H[K[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Compressed archives cannot be concatenated.[m
+[17;1H[K[7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              names  of  the  archive members to be removed.  At[m
+[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              least one argument must be given.[m
+[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This option does not  operate  on  compressed  ar‐[m
+[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              chives.  There is no short option equivalent.[m
+[7m Manual page tar(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m--append[0m[m
+[7m Manual page tar(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append  files to the end of an archive.  Arguments[m
+[7m Manual page tar(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              have the same meaning as for [1m[7m-c[27m[0m ([1m-[0m[1m[7m-c[27m[0m[1mreate[0m).[m
+[7m Manual page tar(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t[0m, [1m--list[0m[m
+[7m Manual page tar(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              List the contents of an  archive.   Arguments  are[m
+[7m Manual page tar(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              optional.   When  given, they specify the names of[m
+[7m Manual page tar(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the members to list.[m
+[7m Manual page tar(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--test-label[0m[m
+[7m Manual page tar(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Test the archive volume label and exit.  When used[m
+[7m Manual page tar(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              without  arguments, it prints the volume label (if[m
+[7m Manual page tar(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              any) and exits with status [1m0[0m.  When  one  or  more[m
+[7m Manual page tar(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              command  line  arguments  are given.  [1mtar[0m compares[m
+[7m Manual page tar(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the volume label with  each  argument.   It  exits[m
+[7m Manual page tar(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[7m Manual page tar(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              otherwise.  No output is  displayed,  unless  used[m
+[7m Manual page tar(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              together with the [1m-v[0m ([1m--verbose[0m) option.[m
+[7m Manual page tar(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              There  is  no short option equivalent for this op‐[m
+[7m Manual page tar(1) line 180 (press h for help or q to quit)[27m[K[K/[K--[Kvv[K[1;1H       [1m-t[0m, [1m--list[0m[m
+[2;1H              List the contents of an  archive.   Arguments  are[m
+[3;1H              optional.   When  given, they specify the names of[m
+[4;1H              the members to list.[m
+[5;1H[m
+[6;1H       [1m--test-label[0m[m
+[7;1H              Test the archive volume label and exit.  When used[m
+[8;1H              without  arguments, it prints the volume label (if[m
+[9;1H              any) and exits with status [1m0[0m.  When  one  or  more[m
+[10;1H              command  line  arguments  are given.  [1mtar[0m compares[m
+[11;1H              the volume label with  each  argument.   It  exits[m
+[12;1H              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[13;1H              otherwise.  No output is  displayed,  unless  used[m
+[14;1H              together with the [1m-v[0m ([1m--verbose[0m) option.[m
+[15;1H[m
+[16;1H              There  is  no short option equivalent for this op‐[m
+[17;1H[1;1H       [1m-t[0m, [1m--list[0m[m
+[2;1H              List the contents of an  archive.   Arguments  are[m
+[3;1H              optional.   When  given, they specify the names of[m
+[4;1H              the members to list.[m
+[5;1H[m
+[6;1H       [1m--test-label[0m[m
+[7;1H              Test the archive volume label and exit.  When used[m
+[8;1H              without  arguments, it prints the volume label (if[m
+[9;1H              any) and exits with status [1m0[0m.  When  one  or  more[m
+[10;1H              command  line  arguments  are given.  [1mtar[0m compares[m
+[11;1H              the volume label with  each  argument.   It  exits[m
+[12;1H              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[13;1H              otherwise.  No output is  displayed,  unless  used[m
+[14;1H              together with the [1m[7m-v[27m[0m ([1m-[0m[1m[7m-v[27m[0m[1merbose[0m) option.[m
+[15;1H[m
+[16;1H              There  is  no short option equivalent for this op‐[m
+[17;1H              tion.[m
+[m
+       [1m-u[0m, [1m--update[0m[m
+              Append files which are newer than the  correspond‐[m
+              ing  copy in the archive.  Arguments have the same[m
+              meaning as with [1m-c[0m and [1m-r[0m options.   Notice,  that[m
+              newer   files  don't  replace  their  old  archive[m
+              copies, but instead are appended to the end of ar‐[m
+              chive.   The  resulting  archive  can thus contain[m
+              several members of the same name, corresponding to[m
+              various versions of the same file.[m
+[m
+       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-v[27m[0m[1mersion[0m[m
+              Print program version  and  copyright  information[m
+              and exit.[m
+[m
+[1mOPTIONS[0m[m
+   [1mOperation[0m [1mmodifiers[0m[m
+       [1m--check-device[0m[m
+              Check device numbers when creating incremental ar‐[m
+              chives (default).[m
+[m
+       [1m-g[0m, [1m--listed-incremental[0m=[4mFILE[24m[m
+              Handle new GNU-format incremental  backups.   [4mFILE[24m[m
+              is  the  name of a [1msnapshot[0m [1mfile[0m, where tar stores[m
+              additional information which  is  used  to  decide[m
+              which files changed since the previous incremental[m
+              dump and, consequently, must be dumped again.   If[m
+[7m Manual page tar(1) line 225 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--sparse[0m[1m[7m-v[27m[0m[1mersion[0m=[4mMAJOR[24m[.[4mMINOR[24m][m
+              Set  version  of the sparse format to use (implies[m
+              [1m--sparse[0m).  This option implies  [1m--sparse[0m.   Valid[m
+              argument  values are [1m0.0[0m, [1m0.1[0m, and [1m1.0[0m.  For a de‐[m
+              tailed discussion of sparse formats, refer to  the[m
+              [1mGNU[0m [1mTar[0m [1mManual[0m, appendix [1mD[0m, "[1mSparse[0m [1mFormats[0m".  Us‐[m
+              ing [1minfo[0m reader, it can be  accessed  running  the[m
+              following command: [1minfo[0m [1mtar[0m [1m'Sparse[0m [1mFormats'[0m.[m
+[m
+       [1m-S[0m, [1m--sparse[0m[m
+              Handle  sparse  files  efficiently.  Some files in[m
+              the file system may have segments which were actu‐[m
+              ally never written (quite often these are database[m
+              files created by such systems as [1mDBM[0m).  When given[m
+              this option, [1mtar[0m attempts to determine if the file[m
+              is sparse prior to archiving it, and if so, to re‐[m
+[7m Manual page tar(1) line 298 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-W[0m, [1m-[0m[1m[7m-v[27m[0m[1merify[0m[m
+              Verify the archive after writing it.[m
+[m
+   [1mOutput[0m [1mstream[0m [1mselection[0m[m
+       [1m--ignore-command-error[0m[m
+[m
+       Ignore subprocess exit codes.[m
+[m
+       [1m--no-ignore-command-error[0m[m
+              Treat non-zero exit codes  of  children  as  error[m
+              (default).[m
+[m
+       [1m-O[0m, [1m--to-stdout[0m[m
+              Extract files to standard output.[m
+[m
+       [1m--to-command[0m=[4mCOMMAND[24m[m
+[7m Manual page tar(1) line 363 (press h for help or q to quit)[27m[K[K/[K...skipping...
+                     cessing (set if reading a multi[7m-v[27molume  ar‐[m
+                     chive).[m
+[m
+              [1mTAR_FORMAT[0m[m
+                     Format of the archive being processed.  One[m
+                     of: [1mgnu[0m, [1moldgnu[0m, [1mposix[0m, [1mustar[0m, [1mv7[0m.[m
+[m
+              [1mTAR_SUBCOMMAND[0m[m
+                     A short option (with a  leading  dash)  de‐[m
+                     scribing the operation [1mtar[0m is executing.[m
+[m
+   [1mHandling[0m [1mof[0m [1mfile[0m [1mattributes[0m[m
+       [1m--atime-preserve[0m[=[4mMETHOD[24m][m
+              Preserve  access  times on dumped files, either by[m
+              restoring the times after reading ([4mMETHOD[24m=[1mreplace[0m,[m
+              this  is  the default) or by not setting the times[m
+[7m Manual page tar(1) line 453 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-F[0m, [1m--info-script[0m=[4mCOMMAND[24m, [1m--new[0m[1m[7m-v[27m[0m[1molume-script[0m=[4mCOMMAND[24m[m
+              Run  [4mCOMMAND[24m at the end of each tape (implies [1m-M[0m).[m
+              The command can include arguments.  When  started,[m
+              it will inherit [1mtar[0m's environment plus the follow‐[m
+              ing variables:[m
+[m
+              [1mTAR_VERSION[0m[m
+                     GNU [1mtar[0m version number.[m
+[m
+              [1mTAR_ARCHIVE[0m[m
+                     The name of the archive [1mtar[0m is processing.[m
+[m
+              [1mTAR_BLOCKING_FACTOR[0m[m
+                     Current blocking  factor,  i.e.  number  of[m
+                     512-byte blocks in a record.[m
+[m
+[7m Manual page tar(1) line 659 (press h for help or q to quit)[27m[K[K/[K...skipping...
+                     cessing (set if reading a multi[7m-v[27molume  ar‐[m
+                     chive).[m
+[m
+              [1mTAR_FORMAT[0m[m
+                     Format of the archive being processed.  One[m
+                     of: [1mgnu[0m, [1moldgnu[0m, [1mposix[0m, [1mustar[0m, [1mv7[0m.[m
+[m
+              [1mTAR_SUBCOMMAND[0m[m
+                     A short option (with a  leading  dash)  de‐[m
+                     scribing the operation [1mtar[0m is executing.[m
+[m
+              [1mTAR_FD[0m File descriptor which can be used to commu‐[m
+                     nicate the new volume name to [1mtar[0m.[m
+[m
+              If the info script fails, [1mtar[0m exits; otherwise, it[m
+              begins writing the next volume.[m
+[7m Manual page tar(1) line 677 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-M[0m, [1m--multi[0m[1m[7m-v[27m[0m[1molume[0m[m
+              Create/list/extract multi[7m-v[27molume archive.[m
+[m
+       [1m--rmt-command[0m=[4mCOMMAND[24m[m
+              Use [4mCOMMAND[24m instead of [1mrmt[0m when  accessing  remote[m
+              archives.   See  the description of the [1m-f[0m option,[m
+              above.[m
+[m
+       [1m--rsh-command[0m=[4mCOMMAND[24m[m
+              Use [4mCOMMAND[24m instead of [1mrsh[0m when  accessing  remote[m
+              archives.   See  the description of the [1m-f[0m option,[m
+              above.[m
+[m
+       [1m-[0m[1m[7m-v[27m[0m[1molno-file[0m=[4mFILE[24m[m
+              When this  option  is  used  in  conjunction  with[m
+              [1m--multi[0m[1m[7m-v[27m[0m[1molume[0m,  [1mtar[0m will keep track of which vol‐[m
+[7m Manual page tar(1) line 702 (press h for help or q to quit)[27m[K[K/[K              ume of a multi[7m-v[27molume archive  it  is  working  in[m
+[7m Manual page tar(1) line 703 (press h for help or q to quit)[27m[K[K/[K              [4mFILE[24m.[m
+[m
+   [1mDevice[0m [1mblocking[0m[m
+       [1m-b[0m, [1m--blocking-factor[0m=[4mBLOCKS[24m[m
+              Set record size to [4mBLOCKS[24mx[1m512[0m bytes.[m
+[m
+       [1m-B[0m, [1m--read-full-records[0m[m
+              When  listing or extracting, accept incomplete in‐[m
+              put records after end-of-file marker.[m
+[m
+       [1m-i[0m, [1m--ignore-zeros[0m[m
+              Ignore zeroed blocks  in  archive.   Normally  two[m
+[7m Manual page tar(1) line 715 (press h for help or q to quit)[27m[K[K/[K              consecutive 512-blocks filled with zeroes mean EOF[m
+              and tar stops  reading  after  encountering  them.[m
+[7m Manual page tar(1) line 717 (press h for help or q to quit)[27m[K[K[H[2J[HM[m
+[HM       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[HM   [1mUNIX-style[0m [1musage[0m[m
+[HM[m
+[HM       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[HM   [1mTraditional[0m [1musage[0m[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       tar - an archiving utility[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[17;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kvv[K[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H...skipping...
+       tered  together  after a single dash, e.g. [1m[7m-v[27m[0m[1mkp[0m.  Options[m
+       that take arguments (whether mandatory or optional),  can[m
+       appear at the end of such a cluster, e.g. [1m[7m-v[27m[0m[1mkpf[0m [1ma.tar[0m.[m
+[m
+       The  example  command  above  written in the [1mshort-option[0m[m
+       [1mstyle[0m could look like:[m
+[m
+       tar -cvf etc.tar /etc[m
+       or[m
+       tar -c [7m-v[27m -f etc.tar /etc[m
+[m
+       In [1mGNU[0m or [1mlong-option[0m [1mstyle[0m, each option begins with  two[m
+       dashes  and  has  a meaningful name, consisting of lower-[m
+       case letters and dashes.  When used, the long option  can[m
+       be abbreviated to its initial letters, provided that this[m
+       does not create ambiguity.  Arguments to long options are[m
+[7m Manual page tar(1) line 105 (press h for help or q to quit)[27m[K[K/[K       supplied  either as a separate command line word, immedi‐[m
+       ately following the option, or separated from the  option[m
+[7m Manual page tar(1) line 107 (press h for help or q to quit)[27m[K[K/[K       by  an  equals  sign with no intervening whitespace.  Op‐[m
+       tional arguments must always use the latter method.[m
+[m
+       Here are several ways of writing the example  command  in[m
+       this style:[m
+[m
+       tar --create --file etc.tar -[7m-v[27merbose /etc[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K/[K       or (abbreviating some options):[m
+       tar --cre --file=etc.tar -[7m-v[27merb /etc[m
+[m
+       The  options  in  all three styles can be intermixed, al‐[m
+       though doing so with old options is not encouraged.[m
+[m
+   [1mOperation[0m [1mmode[0m[m
+       The options listed in the table below tell GNU  [1mtar[0m  what[m
+       operation  it is to perform.  Exactly one of them must be[m
+       given.  Meaning of non-optional arguments depends on  the[m
+       operation mode requested.[m
+[m
+       [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+              Append archive to the end of another archive.  The[m
+              arguments are treated as the names of archives  to[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K/[K              append.   All  archives must be of the same format[m
+              as the archive they are appended to, otherwise the[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K/[K...skipping...
+              together with the [1m[7m-v[27m[0m ([1m-[0m[1m[7m-v[27m[0m[1merbose[0m) option.[m
+[m
+              There  is  no short option equivalent for this op‐[m
+              tion.[m
+[m
+       [1m-u[0m, [1m--update[0m[m
+              Append files which are newer than the  correspond‐[m
+              ing  copy in the archive.  Arguments have the same[m
+              meaning as with [1m-c[0m and [1m-r[0m options.   Notice,  that[m
+              newer   files  don't  replace  their  old  archive[m
+              copies, but instead are appended to the end of ar‐[m
+              chive.   The  resulting  archive  can thus contain[m
+              several members of the same name, corresponding to[m
+              various versions of the same file.[m
+[m
+       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-v[27m[0m[1mersion[0m[m
+              Print program version  and  copyright  information[m
+              and exit.[m
+[m
+[1mOPTIONS[0m[m
+   [1mOperation[0m [1mmodifiers[0m[m
+       [1m--check-device[0m[m
+              Check device numbers when creating incremental ar‐[m
+              chives (default).[m
+[m
+       [1m-g[0m, [1m--listed-incremental[0m=[4mFILE[24m[m
+              Handle new GNU-format incremental  backups.   [4mFILE[24m[m
+              is  the  name of a [1msnapshot[0m [1mfile[0m, where tar stores[m
+              additional information which  is  used  to  decide[m
+              which files changed since the previous incremental[m
+              dump and, consequently, must be dumped again.   If[m
+[7m Manual page tar(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              arguments allowed.[m
+[17;1H[K[7m Manual page tar(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Display  a list of available options and exit.  No[m
+[17;1H[K[7m Manual page tar(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--usage[0m[m
+[17;1H[K[7m Manual page tar(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ments allowed.[m
+[17;1H[K[7m Manual page tar(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Display a short option summary and exit.  No argu‐[m
+[17;1H[K[7m Manual page tar(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-?[0m, [1m--help[0m[m
+[17;1H[K[7m Manual page tar(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              exit.  No arguments are allowed.[m
+[17;1H[K[7m Manual page tar(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Show built-in defaults for various [1mtar[0m options and[m
+[17;1H[K[7m Manual page tar(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--show-defaults[0m[m
+[17;1H[K[7m Manual page tar(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              chive members to be extracted.[m
+[17;1H[K[7m Manual page tar(1) line 211 (press h for help or q to quit)[27m[K[K?
