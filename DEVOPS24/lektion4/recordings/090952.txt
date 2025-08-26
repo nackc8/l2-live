@@ -150,4 +150,73 @@ Total reclaimed space: 1.102GB
 (B[m$ docker volume prune[3Pls[H[2J[94mDEVOPS24/lektion4
 (B[m$ docker volume ls
 [?2004lDRIVER    VOLUME NAME
-local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     databashantering_mariadb_data
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume lsprune +[K-a
+[?2004lWARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+server-start.sh
+jenkins_home
+databashantering_mariadb_data
+wordpress-db
+pingurl_persistance_data
+
+Total reclaimed space: 907.4MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume prune -als[Kl[K[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[K[Krm [7mgitlab-config[27mgitlab-config [7mgitlab-data[27mgitlab-data [7mgitlab-logs[27mgitlab-logs [7mjenkins-d[27m[7ma[27m[7mta[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjenkins-data [7mwordpress-files[27m[C[C[C[Cwordpress-files
+[?2004lError response from daemon: remove gitlab-config: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-data: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-logs: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove jenkins-data: volume is in use - [11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885]
+Error response from daemon: remove wordpress-files: volume is in use - [ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647]
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker psvolume rm gitlab-config gitlab-data gitlab-logs jenkins-data wordpress-files[Aps[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C -a[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   28 minutes ago   Exited (0) 24 minutes ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   30 minutes ago   Exited (0) 24 minutes ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   12 hours ago     Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   12 hours ago     Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago     Exited (137) 12 hours ago             wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+ade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace
+11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885
+ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647
+
+Total reclaimed space: 3.803MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps-[K -a
+[?2004lCONTAINER ID   IMAGE     COMMAND  
