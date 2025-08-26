@@ -1206,4 +1206,271 @@ b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
 [?2004h[94mDEVOPS24/lektion4
 (B[m$ docker volume [H[2J[94mDEVOPS24/lektion4
 (B[m$ docker volume ls
-[?2004l
+[?2004lDRIVER    VOLUME NAME
+local     hittamig
+local     mysql-data
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network wpnet \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m  -e MYSQL_DATABASE=wordpress \[27m
+[7m  -e MYSQL_USER=wpuser \[27m
+[7m  -e MYSQL_PASSWORD=wppass \[27m
+[7m  -v wordpress-db:/var/lib/mysql \[27m
+[7m  mysql:8[27m
+[7mdocker run -d --name wordpress \[27m
+[7m  --network wpnet \[27m
+[7m  -p 9090:80 \[27m
+[7m  -e WORDPRESS_DB_HOST=mysql:3306 \[27m
+[7m  -e WORDPRESS_DB_USER=wpuser \[27m
+[7m  -e WORDPRESS_DB_PASSWORD=wppass \[27m
+[7m  -e WORDPRESS_DB_NAME=wordpress \[27m
+[7m  -v wordpress-files:/var/www/html \[27m
+[7m  wordpress:php8.2-apache[27m
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[Cdocker run -d --name mysql \
+  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \
+  -e WORDPRESS_DB_PASSWORD=wppass \
+  -e WORDPRESS_DB_NAME=wordpress \
+  -v wordpress-files:/var/www/html \
+  wordpress:php8.2-apache
+[A
+[?2004l1e0e6725c1fa367f7ef8702287566a3dc7df57d63ab72c72526a59faf337934d
+docker: Error response from daemon: Conflict. The container name "/wordpress" is already in use by container "b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker rs[Kestrt[K[Kart wordpress
+[?2004lwordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   21 seconds ago   Up 21 seconds   3306/tcp, 33060/tcp                       mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   56 seconds ago   Up 3 seconds    0.0.0.0:9090->80/tcp, [::]:9090->80/tcp   wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ man docker/run[K[K[K[K-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run - Create and run a new container from an image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[7mManual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kww[K[1;1HDOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run - Create and run a new container from an image[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+[8;1H       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+[9;1H       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+[10;1H       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+[11;1H       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+[12;1H       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+[13;1H       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+[14;1H       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+[15;1H       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+[16;1H       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[17;1H[1;1HDOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run - Create and run a new container from an image[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+[8;1H       [1mtation[0m[=[4m[][24m]] [[1m--blkio[0m[1m[7m-w[27m[0m[1meight[0m[=[4m[BLKIO[24m[4m[7m-W[27m[24m[4mEIGHT][24m]]  [[1m--blkio-[0m[m
+[9;1H       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+[10;1H       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+[11;1H       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+[12;1H       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+[13;1H       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+[14;1H       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+[15;1H       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+[16;1H       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[17;1H       [1mread-bps[0m[=[4m[][24m]] [[1m--device-read-iops[0m[=[4m[][24m]] [[1m--device[0m[1m[7m-w[27m[0m[1mrite-[0m[m
+       [1mbps[0m[=[4m[][24m]] [[1m--device[0m[1m[7m-w[27m[0m[1mrite-iops[0m[=[4m[][24m]] [[1m--dns[0m[=[4m[][24m]] [[1m--dns-[0m[m
+       [1moption[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]]  [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+       [4mNAME[24m]]    [[1m-e[0m|[1m--env[0m[=[4m[][24m]]     [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+       [[1m--env-file[0m[=[4m[][24m]]    [[1m--expose[0m[=[4m[][24m]]   [[1m--group-add[0m[=[4m[][24m]][m
+       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m--init[0m] [[1m-i[0m|[1m--inter‐[0m[m
+       [1mactive[0m]    [[1m--ip[0m[=[4mIPv4-ADDRESS[24m]]   [[1m--ip6[0m[=[4mIPv6-ADDRESS[24m]][m
+[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ man docker-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run - Create and run a new container from an image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[7mManual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mread-bps[0m[=[4m[][24m]] [[1m--device-read-iops[0m[=[4m[][24m]] [[1m--device-write-[0m[m
+[7mManual page docker-run(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mbps[0m[=[4m[][24m]] [[1m--device-write-iops[0m[=[4m[][24m]] [[1m--dns[0m[=[4m[][24m]] [[1m--dns-[0m[m
+[7mManual page docker-run(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1moption[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]]  [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+[7mManual page docker-run(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mNAME[24m]]    [[1m-e[0m|[1m--env[0m[=[4m[][24m]]     [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+[7mManual page docker-run(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--env-file[0m[=[4m[][24m]]    [[1m--expose[0m[=[4m[][24m]]   [[1m--group-add[0m[=[4m[][24m]][m
+[7mManual page docker-run(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m--init[0m] [[1m-i[0m|[1m--inter‐[0m[m
+[7mManual page docker-run(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mactive[0m]    [[1m--ip[0m[=[4mIPv4-ADDRESS[24m]]   [[1m--ip6[0m[=[4mIPv6-ADDRESS[24m]][m
+[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--ipc[0m[=[4mIPC[24m]]   [[1m--isolation[0m[=[4mdefault[24m]]    [[1m--kernel-mem‐[0m[m
+[7mManual page docker-run(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mory[0m[=[4mKERNEL-MEMORY[24m]]      [[1m-l[0m|[1m--label[0m[=[4m[][24m]]     [[1m--label-[0m[m
+[7manual page docker-run(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mfile[0m[=[4m[][24m]] [[1m--link[0m[=[4m[][24m]]  [[1m--link-local-ip[0m[=[4m[][24m]]  [[1m--log-[0m[m
+[7manual page docker-run(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdriver[0m[=[4m[][24m]]    [[1m--log-opt[0m[=[4m[][24m]]   [[1m-m[0m|[1m--memory[0m[=[4mMEMORY[24m]][m
+[7manual page docker-run(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--mac-address[0m[=[4mMAC-ADDRESS[24m]] [[1m--memory-reservation[0m[=[4mMEM‐[24m[m
+[7manual page docker-run(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mORY-RESERVATION[24m]] [[1m--memory-swap[0m[=[4mLIMIT[24m]] [[1m--memory-swap‐[0m[m
+[7manual page docker-run(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mpiness[0m[=[4mMEMORY-SWAPPINESS[24m]]           [[1m--mount[0m[=[4m[MOUNT][24m]][m
+[7manual page docker-run(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--name[0m[=[4mNAME[24m]]       [[1m--network-alias[0m[=[4m[][24m]]      [[1m--net‐[0m[m
+[7manual page docker-run(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mwork[0m[=[4m"bridge"[24m]]    [[1m--oom-kill-disable[0m]    [[1m--oom-score-[0m[m
+[7manual page docker-run(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1madj[0m[=[4m0[24m]]      [[1m-P[0m|[1m--publish-all[0m]      [[1m-p[0m|[1m--publish[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--pid[0m[=[4m[PID][24m]]         [[1m--userns[0m[=[4m[][24m]]          [[1m--pids-[0m[m
+[7manual page docker-run(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mlimit[0m[=[4mPIDS_LIMIT[24m]]      [[1m--privileged[0m]     [[1m--read-only[0m][m
+[7manual page docker-run(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--restart[0m[=[4mRESTART[24m]]    [[1m--rm[0m]     [[1m--security-opt[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--storage-opt[0m[=[4m[][24m]]   [[1m--stop-signal[0m[=[4mSIGNAL[24m]]  [[1m--stop-[0m[m
+[7manual page docker-run(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtimeout[0m[=[4mTIMEOUT[24m]] [[1m--shm-size[0m[=[4m[][24m]] [[1m--sig-proxy[0m[=[4mtrue[24m]][m
+[7manual page docker-run(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--sysctl[0m[=[4m[][24m]]  [[1m-t[0m|[1m--tty[0m] [[1m--tmpfs[0m[=[4m[CONTAINER-DIR[:OP‐[24m[m
+[7manual page docker-run(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mTIONS][24m]] [[1m-u[0m|[1m--user[0m[=[4mUSER[24m]] [[1m--ulimit[0m[=[4m[][24m]]  [[1m--uts[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-v[0m|[1m--volume[0m[=[4m[[HOST-DIR:]CONTAINER-DIR[:OPTIONS]][24m]][m
+[7manual page docker-run(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-w[0m|[1m--workdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[7manual page docker-run(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page docker-run(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mDESCRIPTION[0m[m
+[7manual page docker-run(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[7manual page docker-run(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       process with its own file system, its own networking, and[m
+[7manual page docker-run(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       its own isolated process tree. The IMAGE which starts the[m
+[7manual page docker-run(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       process may define defaults related to the  process  that[m
+[7manual page docker-run(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       will  be  run in the container, the networking to expose,[m
+[7manual page docker-run(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[7manual page docker-run(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ator  or  administrator who starts the container from the[m
+[7manual page docker-run(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[7manual page docker-run(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       any other Docker command.[m
+[7manual page docker-run(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page docker-run(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[7manual page docker-run(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[7manual page docker-run(1) line 42 (press h for help or q to quit)[27m[K[K/[K--[Kww[K[1;1H       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[2;1H       [[1m-w[0m|[1m--workdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[3;1H[m
+[4;1H[1mDESCRIPTION[0m[m
+[5;1H       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[6;1H       process with its own file system, its own networking, and[m
+[7;1H       its own isolated process tree. The IMAGE which starts the[m
+[8;1H       process may define defaults related to the  process  that[m
+[9;1H       will  be  run in the container, the networking to expose,[m
+[10;1H       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[11;1H       ator  or  administrator who starts the container from the[m
+[12;1H       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[13;1H       any other Docker command.[m
+[14;1H[m
+[15;1H       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[16;1H       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[17;1H[1;1H       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[2;1H       [[1m[7m-w[27m[0m|[1m-[0m[1m[7m-w[27m[0m[1morkdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[3;1H[m
+[4;1H[1mDESCRIPTION[0m[m
+[5;1H       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[6;1H       process with its own file system, its own networking, and[m
+[7;1H       its own isolated process tree. The IMAGE which starts the[m
+[8;1H       process may define defaults related to the  process  that[m
+[9;1H       will  be  run in the container, the networking to expose,[m
+[10;1H       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[11;1H       ator  or  administrator who starts the container from the[m
+[12;1H       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[13;1H       any other Docker command.[m
+[14;1H[m
+[15;1H       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[16;1H       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[17;1H       repository in the same way running [1mdocker[0m [1mpull[0m IMAGE, be‐[m
+[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       fore it starts the container from that image.[m
+[7manual page docker-run(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [[1m[7m-w[27m[0m|[1m-[0m[1m[7m-w[27m[0m[1morkdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[17;1H[K[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[17;1H[K[7manual page docker-run(1) line 42 (press h for help or q to quit)[27m[K[K/[K       repository in the same way running [1mdocker[0m [1mpull[0m IMAGE, be‐[m
+[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--blkio[0m[1m[7m-w[27m[0m[1meight[0m=[4m0[24m[m
+          Block IO weight (relative  weight)  accepts  a  weight[m
+       value between 10 and 1000.[m
+[m
+       [1m--blkio[0m[1m[7m-w[27m[0m[1meight-device[0m=[][m
+          Block  IO  weight (relative device weight, format: [1mDE‐[0m[m
+       [1mVICE_NAME:WEIGHT[0m).[m
+[m
+       [1m-c[0m, [1m--cpu-shares[0m=[4m0[24m[m
+          CPU shares (relative weight)[m
+[m
+       By default, all containers get the same proportion of CPU[m
+       cycles.  This  proportion can be modified by changing the[m
+       container's CPU share weighting relative to the weighting[m
+       of all other running containers.[m
+[m
+[7manual page docker-run(1) line 86 (press h for help or q to quit)[27m[K[K/[K       To  modify  the  proportion from the default of 1024, use[m
+       the [1m-c[0m or [1m--cpu-shares[0m flag to set the weighting to 2  or[m
+       higher.[m
+[m
+[7manual page docker-run(1) line 90 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--device[0m[1m[7m-w[27m[0m[1mrite-bps[0m=[][m
+          Limit  write  rate  to  a device (e.g. --device[7m-w[27mrite-[m
+       bps=/dev/sda:1mb)[m
+[m
+       [1m--device[0m[1m[7m-w[27m[0m[1mrite-iops[0m=[][m
+          Limit write rate to  a  device  (e.g.  --device[7m-w[27mrite-[m
+       iops=/dev/sda:1000)[m
+[m
+       [1m--dns-search[0m=[][m
+          Set  custom  DNS search domains (Use --dns-search=. if[m
+       you don't wish to set the search domain)[m
+[m
+       [1m--dns-option[0m=[][m
+          Set custom DNS options[m
+[m
+       [1m--dns[0m=[][m
+[7mnual page docker-run(1) line 278 (press h for help or q to quit)[27m[K[K/[K          Set custom DNS servers[m
+[7mnual page docker-run(1) line 279 (press h for help or q to quit)[27m[K[K/[K[m
+       This option can be used to override the DNS configuration[m
+       passed to the container. Typically this is necessary when[m
+[7mnual page docker-run(1) line 282 (press h for help or q to quit)[27m[K[K/[K       the host DNS configuration is invalid for  the  container[m
+[7mnual page docker-run(1) line 283 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       mounts  a volume in read-only or read[7m-w[27mrite mode, respec‐[m
+       tively. By default, volumes  are  mounted  in  read[7m-w[27mrite[m
+       mode.   You  can also specify the consistency requirement[m
+       for the mount, either [1m:consistent[0m (the default), [1m:cached[0m,[m
+       or [1m:delegated[0m.  Multiple options are separated by commas,[m
+       e.g. [1m:ro,cached[0m.[m
+[m
+       Labeling systems like SELinux require that proper  labels[m
+       are  placed  on  volume content mounted into a container.[m
+       Without a label, the security system  might  prevent  the[m
+       processes  running  inside  the  container from using the[m
+       content. By default, Docker does not  change  the  labels[m
+       set by the OS.[m
+[m
+    
