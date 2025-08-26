@@ -1120,4 +1120,90 @@ boot  etc  home      lib64  mnt    proc  run   srv   tmp  var
 [5;1H[m
 [6;1H[1mSYNOPSIS[0m[m
 [7;1H   [1mTraditional[0m [1musage[0m[m
-[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRv
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H...skipping...
+       [1m[7m-C[27m[0m, [1m--directory[0m=[4mDIR[24m[m
+              Change to [4mDIR[24m before  performing  any  operations.[m
+              This  option  is  order-sensitive, i.e. it affects[m
+              all options that follow.[m
+[m
+       [1m--exclude[0m=[4mPATTERN[24m[m
+              Exclude files matching  [4mPATTERN[24m,  a  [1mglob[0m(3)-style[m
+              wildcard pattern.[m
+[m
+       [1m--exclude-backups[0m[m
+              Exclude backup and lock files.[m
+[m
+       [1m--exclude-caches[0m[m
+              Exclude  contents  of  directories containing file[m
+              [1mCACHEDIR.TAG[0m, except for the tag file itself.[m
+[m
+[7m Manual page tar(1) line 837 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network create wpnet
+
+docker volume create wordpress-db
+docker volume create wordpress-files
+
+docker run -d --name mysql \
+[7m  --network wpnet \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m  -e MYSQL_DATABASE=wordpress \[27m
+[7m  -e MYSQL_USER=wpuser \[27m
+[7m  -e MYSQL_PASSWORD=wppass \[27m
+[7m  -v wordpress-db:/var/lib/mysql \[27m
+[7m  mysql:8[27m
+[7mdocker run -d --name wordpress \[27m
+[7m  --network wpnet \[27m
+[7m  -p 9090:80 \[27m
+[7m  -e WORDPRESS_DB_HOST=mysql:3306 \[27m
+[7m  -e WORDPRESS_DB_USER=wpuser \[27m[7m  -e WORDPRESS_DB_PASSWORD=wppass \[27m[7m  -e WORDPRESS_DB_NAME=wordpress \[27m[7m  -v wordpress-files:/var/www/html \[27m[7m  wordpress:php8.2-apache[27m[A[A[A[A[A[A[A[A[A[A[A  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \  -e WORDPRESS_DB_PASSWORD=wppass \  -e WORDPRESS_DB_NAME=wordpress \  -v wordpress-files:/var/www/html \  wordpress:php8.2-apache
+[?2004lb83ffb830a2533dbc9f757b600b3fc810d8d6909729386dc2e9ca54d82cb0b38
+wordpress-db
+wordpress-files
+docker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "1216e275a73d4f6bdcda2fb18ca5d72431a442918aa2a4c4e51f24309b3645d3". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docme[K[Kker rm mysql
+[?2004lmysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004l
