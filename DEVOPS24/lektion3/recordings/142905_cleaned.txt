@@ -1,0 +1,98 @@
+Script started on 2025-08-25 14:29:05+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="66" LINES="9"]
+DEVOPS24/lektion3
+$ DEVOPS24/lektion3
+$ ls
+minkat	recordings  TestDockerfile
+DEVOPS24/lektion3
+$ cd TestDockerfile/
+DEVOPS24/lektion3/TestDockerfile
+$ DEVOPS24/lektion3/TestDockerfile
+$ ls
+Dockerfile  main.bash
+DEVOPS24/lektion3/TestDockerfile
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion3/TestDockerfile
+$ docker ruDEVOPS24/lektion3/TestDockerfile run -it debian basn': docker run
+$ docker rusearch)`': docker run -it debian basrunrun--name cow --rm cowim
+/main: line 3: cowsay: command not found
+
+ls
+^CDEVOPS24/lektion3/TestDockerfile
+$ docker psDEVOPS24/lektion3/TestDockerfile
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion3/TestDockerfile
+$ docker prun -it --name cow --rm cowimg
+/main: line 3: cowsay: command not found
+ls
+^CDEVOPS24/lektion3/TestDockerfile
+$ docker run -it --name cow --rm cowimgDEVOPS24/lektion3/TestDockerfile
+$ docker run -it --name cow --rm cowimg
+/main: line 3: cowsay: command not found
+^CDEVOPS24/lektion3/TestDockerfile
+$ docker run -it --name cow --rm cowimgDEVOPS24/lektion3/TestDockerfile
+ls^C TestDockerfile/ --rm cowimg cowimg
+DEVOPS24/lektion3/TestDockerfile
+(reverse-i-search)`':u': docker run -it --name cow --rm cowimi': docker build -t cowimg:latest ': docker bu
+
+$ docker buearch)`b': docker bu': docker bui': docker buit 
+[+] Building 0.0s (0/1)                            docker:default
+ => [internal] load build definition from Dockerfile         0.0s
+[+] Building 0.1s (7/8)                            docker:default
+ => => transferring context: 105B                            0.0s
+ => CACHED [2/3] RUN apt update && apt install -y cowsay     0.0s
+ => [3/3] COPY ./main.bash /main                             0.0s
+ => exporting to image                                       0.0s
+ => => exporting layers                                      0.0s
+ => => writing image sha256:70eb4e699fec85e90d4b2ade452b464  0.0s
+ => => naming to docker.io/library/cowimg:latest             0.0s
+[+] Building 0.2s (8/8) FINISHED                   docker:default
+ => [internal] load build definition from Dockerfile         0.0s
+ => => transferring dockerfile: 129B                         0.0s
+ => [internal] load metadata for docker.io/library/debian:l  0.0s
+ => [internal] load .dockerignore                            0.0s
+ => => transferring context: 2B                              0.0s
+ => [1/3] FROM docker.io/library/debian:latest               0.0s
+ => [internal] load build context                            0.0s
+ => => transferring context: 105B                            0.0s
+ => CACHED [2/3] RUN apt update && apt install -y cowsay     0.0s
+ => [3/3] COPY ./main.bash /main                             0.0s
+ => exporting to image                                       0.0s
+ => => exporting layers                                      0.0s
+ => => writing image sha256:70eb4e699fec85e90d4b2ade452b464  0.0s
+ => => naming to docker.io/library/cowimg:latest             0.0s
+DEVOPS24/lektion3/TestDockerfile
+run -it --name cow --rm cowimgt .
+ ____________
+< Muuu 14284 >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+^CDEVOPS24/lektion3/TestDockerfile
+$ docker run -it --name cow --rm cowimd
+b28d17908e07b730cc93338f150307a4bc3905c18357580706d7b95d10ff43b0
+DEVOPS24/lektion3/TestDockerfile
+$ docker attach cow
+^CDEVOPS24/lektion3/TestDockerfile
+$ docker attach corun -dit --name cow --rm cowimg
+1eaa7e4df5534824062cd90f6610cec06c4e0c26459b887f4aa2dc7c00c2ef6c
+DEVOPS24/lektion3/TestDockerfile
+$ docker logs cowDEVOPS24/lektion3/TestDockerfile
+$ docker logs cow
+ __________
+< Muuu 337 >
+ ----------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+DEVOPS24/lektion3/TestDockerfile
+$ 
+exit
+
+Script done on 2025-08-25 14:39:15+02:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,26 @@
+Script started on 2025-08-19 09:17:21+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="71" LINES="10"]
+[?2004h[94mDEVOPS24/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mDEVOPS24/lektion2
+(B[m$ l[Kls
+[?2004lrecordings
+[?2004h[94mDEVOPS24/lektion2
+(B[m$ cd ..
+[?2004l[?2004h[94mDEVOPS24 (B[m$ ls
+[?2004llektion2
+[?2004h[94mDEVOPS24 (B[m$ cd ..
+[?2004l[?2004h[94m(B[m$ [H[2J[94m(B[m$ ls
+[?2004lbin  date  DEVOPS24  ITINF24  README.md
+[?2004h[94m(B[m$ cd ..
+[?2004l[?2004h[94mnackademin/linux2
+(B[m$ [H[2J[94mnackademin/linux2
+(B[m$ ls
+[?2004ll1-live  l2-archlinux  l2-live
+[?2004h[94mnackademin/linux2
+(B[m$ cd l2-live/
+[?2004l[?2004h[94m(B[m$ ls bin/
+[?2004ldaystart  educator  reset  student
+[?2004h[94m(B[m$ bin/daystart [1@c[1@o[1@d[1@e[1@ 
+[?2004l[?2004h[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [K[94m(B[m$ [?2004l
+exit
+
+Script done on 2025-08-19 13:12:50+02:00 [COMMAND_EXIT_CODE="0"]

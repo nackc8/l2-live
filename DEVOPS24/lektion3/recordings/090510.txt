@@ -1,0 +1,1101 @@
+Script started on 2025-08-25 09:05:22+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="55" LINES="17"]
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ Hejsan[K[K[K[K[K[Kjijwiwji[K[K[K[K[K[K[K[K[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker pull redit[Ks
+[?2004lUsing default tag: latest
+latest: Pulling from library/redis
+Digest: sha256:cc2dfb8f5151da2684b4a09bd04b567f92d07591d91980eb3eca21df07e12760
+Status: Image is up to date for redis:latest
+docker.io/library/redis:latest
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ man docker
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker  -  Docker  image and container command[m
+       line interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[m
+       [1mdocker[0m [--help|-v|--version][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdocker[0m is a client for  interacting  with  the[m
+       daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[m
+       The  Docker CLI has over 30 commands. The com‐[m
+[7mpage docker(1) line 1 (press h for help or q to quit)[27m[K[K       mands are listed below and each  has  its  own[m
+       man page which explains usage and arguments.[m
+[m
+       To  see  the  man  page  for a command run [1mman[0m[m
+       [1mdocker[0m .[m
+[m
+[1mOPTIONS[0m[m
+       [1m--help[0m[m
+         Print usage statement[m
+[m
+       [1m--config[0m=""[m
+         Specifies the location of the Docker  client[m
+       configuration    files.    The    default   is[m
+       '~/.docker'.[m
+[m
+       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[7mage docker(1) line 17 (press h for help or q to quit)[27m[K[K         Enable debug mode. Default is false.[m
+[m
+       [1m-H[0m,      [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:[m
+       tcp://[host]:[port][path]     to    bind    or[m
+       unix://[/path/to/socket] to use.[m
+         The socket(s) to  bind  to  in  daemon  mode[m
+       specified using one or more[m
+         tcp://host:port/path,[m
+       unix:///path/to/socket, fd://*  or  fd://sock‐[m
+       etfd.[m
+         If  the  tcp  port is not specified, then it[m
+       will default to either [1m2375[0m when[m
+         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is  on,  or[m
+       [1m--tlsverify[0m is specified.[m
+[m
+       [1m-l[0m, [1m--log-level[0m="[4mdebug[24m|[4minfo[24m|[4mwarn[24m|[4merror[24m|[4mfatal[24m"[m
+[7mage docker(1) line 33 (press h for help or q to quit)[27m[K[K         Set the logging level. Default is [1minfo[0m.[m
+[m
+       [1m--tls[0m=[4mtrue[24m|[4mfalse[24m[m
+         Use  TLS; implied by --tlsverify. Default is[m
+       false.[m
+[m
+       [1m--tlscacert[0m=[4m~/.docker/ca.pem[24m[m
+         Trust certs signed only by this CA.[m
+[m
+       [1m--tlscert[0m=[4m~/.docker/cert.pem[24m[m
+         Path to TLS certificate file.[m
+[m
+       [1m--tlskey[0m=[4m~/.docker/key.pem[24m[m
+         Path to TLS key file.[m
+[m
+       [1m--tlsverify[0m=[4mtrue[24m|[4mfalse[24m[m
+[7mage docker(1) line 49 (press h for help or q to quit)[27m[K[K         Use TLS and verify the remote (daemon:  ver‐[m
+       ify client, client: verify daemon).[m
+         Default is false.[m
+[m
+       [1m-v[0m, [1m--version[0m=[4mtrue[24m|[4mfalse[24m[m
+         Print  version information and quit. Default[m
+       is false.[m
+[m
+[1mCOMMANDS[0m[m
+       Use "docker help" or "docker --help" to get an[m
+       overview of available commands.[m
+[m
+[1mEXAMPLES[0m[m
+       For  specific client examples see the man page[m
+       for the specific Docker command. For example:[m
+[m
+[7mage docker(1) line 65 (press h for help or q to quit)[27m[K[K       man docker-run[m
+[m
+[1mHISTORY[0m[m
+       April 2014,  Originally  compiled  by  William[m
+       Henry  (whenry  at  redhat  dot  com) based on[m
+       docker.com source material and internal work.[m
+[m
+Docker Community      APRIL 2014            DOCKER(1)[m
+[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K[K[7mr(1) line 73/88 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 72/88 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       is false.[m
+[17;1H[K[7mker(1) line 71/88 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Print  version information and quit. Default[m
+[17;1H[K[7mker(1) line 70/88 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-v[0m, [1m--version[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 69/88 95% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 68/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Default is false.[m
+[17;1H[K[7mker(1) line 67/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ify client, client: verify daemon).[m
+[17;1H[K[7mker(1) line 66/88 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Use TLS and verify the remote (daemon:  ver‐[m
+[17;1H[K[7mker(1) line 65/88 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlsverify[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 64/88 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 63/88 90% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Path to TLS key file.[m
+[17;1H[K[7mker(1) line 62/88 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlskey[0m=[4m~/.docker/key.pem[24m[m
+[17;1H[K[7mker(1) line 61/88 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 60/88 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Path to TLS certificate file.[m
+[17;1H[K[7mker(1) line 59/88 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlscert[0m=[4m~/.docker/cert.pem[24m[m
+[17;1H[K[7mker(1) line 58/88 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 57/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Trust certs signed only by this CA.[m
+[17;1H[K[7mker(1) line 56/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlscacert[0m=[4m~/.docker/ca.pem[24m[m
+[17;1H[K[7mker(1) line 55/88 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 54/88 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       false.[m
+[17;1H[K[7mker(1) line 53/88 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Use  TLS; implied by --tlsverify. Default is[m
+[17;1H[K[7mker(1) line 52/88 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tls[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 51/88 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 50/88 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Set the logging level. Default is [1minfo[0m.[m
+[17;1H[K[7mker(1) line 49/88 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-l[0m, [1m--log-level[0m="[4mdebug[24m|[4minfo[24m|[4mwarn[24m|[4merror[24m|[4mfatal[24m"[m
+[17;1H[K[7mker(1) line 48/88 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 47/88 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--tlsverify[0m is specified.[m
+[17;1H[K[7mker(1) line 46/88 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is  on,  or[m
+[17;1H[K[7mker(1) line 45/88 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       will default to either [1m2375[0m when[m
+[17;1H[K[7mker(1) line 44/88 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         If  the  tcp  port is not specified, then it[m
+[17;1H[K[7mker(1) line 43/88 69% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       etfd.[m
+[17;1H[K[7mker(1) line 42/88 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       unix:///path/to/socket, fd://*  or  fd://sock‐[m
+[17;1H[K[7mker(1) line 41/88 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         tcp://host:port/path,[m
+[17;1H[K[7mker(1) line 40/88 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       specified using one or more[m
+[17;1H[K[7mker(1) line 39/88 62% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         The socket(s) to  bind  to  in  daemon  mode[m
+[17;1H[K[7mker(1) line 38/88 62% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       unix://[/path/to/socket] to use.[m
+[17;1H[K[7mker(1) line 37/88 61% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tcp://[host]:[port][path]     to    bind    or[m
+[17;1H[K[7mker(1) line 36/88 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-H[0m,      [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:[m
+[17;1H[K[7mker(1) line 35/88 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 34/88 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Enable debug mode. Default is false.[m
+[17;1H[K[7mker(1) line 33/88 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[17;1H[K[7mker(1) line 32/88 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 31/88 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       '~/.docker'.[m
+[17;1H[K[7mker(1) line 30/88 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       configuration    files.    The    default   is[m
+[17;1H[K[7mker(1) line 29/88 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Specifies the location of the Docker  client[m
+[17;1H[K[7mker(1) line 28/88 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--config[0m=""[m
+[17;1H[K[7mker(1) line 27/88 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 26/88 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         Print usage statement[m
+[17;1H[K[7mker(1) line 25/88 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--help[0m[m
+[17;1H[K[7mker(1) line 24/88 42% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[17;1H[K[7mker(1) line 23/88 41% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 22/88 39% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m .[m
+[17;1H[K[7mker(1) line 21/88 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       To  see  the  man  page  for a command run [1mman[0m[m
+[17;1H[K[7mker(1) line 20/88 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 19/88 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       man page which explains usage and arguments.[m
+[17;1H[K[7mker(1) line 18/88 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       mands are listed below and each  has  its  own[m
+[17;1H[K[7mker(1) line 17/88 31% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The  Docker CLI has over 30 commands. The com‐[m
+[17;1H[K[7mker(1) line 16/88 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 15/88 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[17;1H[K[7mker(1) line 14/88 28% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m is a client for  interacting  with  the[m
+[17;1H[K[7mker(1) line 13/88 27% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[17;1H[K[7mker(1) line 12/88 25% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mker(1) line 11/88 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [--help|-v|--version][m
+[17;1H[K[7mker(1) line 10/88 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 9/88 23% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[17;1H[K[7mcker(1) line 8/88 22% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[17;1H[K[7mcker(1) line 7/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 6/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       line interface[m
+[17;1H[K[7mcker(1) line 5/88 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       docker  -  Docker  image and container command[m
+[17;1H[K[7mcker(1) line 4/88 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[17;1H[K[7mcker(1) line 3/88 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mcker(1) line 2/88 17% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[17;1H[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mcker(1) line 1/88 15% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion3
+(B[m$ man docker u[Koyk[K[K[K[K pull[1Ppull/pull[1Ppull-pull[C[C[C[C
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull  -  Download  an image from a reg‐[m
+       istry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m,   [1m--all-tags[0m[=false]        Download   all[m
+       tagged images in the repository[m
+[m
+[7mdocker-pull(1) line 1 (press h for help or q to quit)[27m[K[K       [1m--disable-content-trust[0m[=true]      Skip image[m
+       verification[m
+[m
+       [1m--platform[0m=""      Set platform if  server  is[m
+       multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose out‐[m
+       put[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+       [1mdocker(1)[0m[m
+[m
+Docker Community       Jul 2025             DOCKER(1)[m
+[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K[K[7ml(1) line 14/29 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[17;1H[K[7mull(1) line 13/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mull(1) line 12/29 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[17;1H[K[7mull(1) line 11/29 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[17;1H[K[7mull(1) line 10/29 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 9/29 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[17;1H[K[7mpull(1) line 8/29 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[17;1H[K[7mpull(1) line 7/29 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 6/29 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       istry[m
+[17;1H[K[7mpull(1) line 5/29 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       docker-pull  -  Download  an image from a reg‐[m
+[17;1H[K[7mpull(1) line 4/29 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[17;1H[K[7mpull(1) line 3/29 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mpull(1) line 2/29 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)        Docker User Manuals        DOCKER(1)[m
+[17;1H[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mpull(1) line 1/29 55% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker pull
+[?2004ldocker: 'docker pull' requires 1 argument
+
+Usage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Run 'docker pull --help' for more information
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker pull --help
+[?2004lUsage:  docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+
+Download an image from a registry
+
+Aliases:
+  docker image pull, docker pull
+
+Options:
+  -a, --all-tags                
+                Download all tagged images in
+                the repository
+      --disable-content-trust   
+                Skip image verification (default
+                true)
+      --platform string         
+                Set platform if server is
+                multi-platform capable
+  -q, --quiet                   
+                Suppress verbose output
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ jeee[K[K[K[Khej[K[K[Kstty /a[K[K-a
+[?2004lspeed 38400 baud; rows 17; columns 55; line = 0;
+intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D;
+eol = M-^?; eol2 = M-^?; swtch = <undef>; start = ^Q;
+stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W;
+lnext = ^V; discard = ^O; min = 1; time = 0;
+-parenb -parodd -cmspar cs8 hupcl -cstopb cread -clocal
+-crtscts
+-ignbrk brkint -ignpar -parmrk -inpck -istrip -inlcr
+-igncr icrnl ixon -ixoff -iuclc ixany imaxbel iutf8
+opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel
+nl0 cr0 tab0 bs0 vt0 ff0
+isig icanon iexten echo echoe echok -echonl -noflsh
+-xcase -tostop -echoprt echoctl echoke -flusho -extproc
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ stty -a | grep [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mstty icanon -echo[27m
+[7mread -p "Lösenord: " -r pwd[27m
+[7mecho[27m
+[7mstty echo[27m
+[A[A[A[A[C[Cstty icanon -echo
+read -p "Lösenord: " -r pwd
+echo
+stty echo
+[A[C[C[C[C[C[C[C[C[C[A[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawd[C[C
+[C[C[C[C
+[C[C[C[C[C[C[C[C[C
+[A
+[?2004lLösenord: 
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ stty echo[C[C[5Pecho[C[Cstty echo[C[C[Kecho $pawd
+[?2004lhejsan
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mdocker run alpine[27m[C[Cdocker run alpine
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[K[K[K[K[K[K[K[K[Kbash </dev/null
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [H[2J[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID 
+[?2004l9340
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [C[Cbash </dev/null
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ bash </dev/null[C[C[1Pecho $BASHPID 
+[?2004l9340
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ echo $BASHPID [C[Cbash </dev/null[H[2J[94mDEVOPS24/lektion3
+(B[m$ bash </dev/null[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h
+[1;36ml2-live/DEVOPS24/lektion3[0m on [1;35m 250825[0m 
+[1;32m❯[0m exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ bash[C[Cecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash </dev/null[C[C[1Pecho $BASHPID [C[Cbash[K[C[C[K(reverse-i-search)`': a': b[7ma[27mshl': docker run [7mal[27mpinep': docker run [7malp[27mine[23P(B[m$ docker run alpine[C[C[C[C[C[C[K[K[K[K[K[Kdebain [K[K[K[Kain[K[K[Kian
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ dockerps
+[?2004lbash: dockerps: command not found
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ dockerps[C ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[1Pps run debian[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run debian & sleep 0.2 && docker ps
+[?2004l[1] 78110
+CONTAINER ID   IMAGE     COMMAND   CREATED                  STATUS                  PORTS     NAMES
+b2e0acce7b5a   debian    "bash"    Less than a second ago   Up Less than a second             objective_shamir
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1]+  Done                    docker run debian
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker psrun debian & sleep 0.2 && docker ps[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-debianudebianidebian[1Pdebian[1Pdebianidebian debian
+[?2004lhostname
+31e53ee3f0c0
+umae   name /a  -a
+Linux 31e53ee3f0c0 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64 GNU/Linux
+cat /etc/os/ -release
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+^L
+bash: line 4: $'\f': command not found
+^L^L^L
+bash: line 5: $'\f\f\f': command not found
+^C
+^[[C^[[D^[[C^[[D^[[C
+bash: line 7: $'\E[C\E[D\E[C\E[D\E[C': command not found
+hejsan hoppsan svensjan     jsanhihkdhui        
+bash: line 8: hejsan: command not found
+^[[C^[[D^[[C
+bash: line 9: $'\E[C\E[D\E[C': command not found
+^L
+bash: line 10: $'\f': command not found
+ls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+pwd
+/
+ls //  --color=auto  
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+^[[A
+bash: line 14: $'\E[A': command not found
+gsudygudg         
+\
+
+^C^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run -i debian[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -i debian[1P debiant debian[C[C[C[C[C[C[C
+[?2004l[?2004hroot@206b2988c362:/# ls
+hejs
+iokjsio
+s
+js
+js
+^C^C[?2004l[?2004h[?2004l
+[?2004hroot@206b2988c362:/# 
+^C^C[?2004l[?2004h[?2004l
+[?2004hroot@206b2988c362:/# ^C
+got 3 SIGTERM/SIGINTs, forcefully exiting
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run -t debian[1@i[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -it debian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004hroot@322dae0afc79:/# ls
+[?2004lbin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+[?2004hroot@322dae0afc79:/# ls //  --color=auto
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004hroot@322dae0afc79:/# i -t t    exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run alpine hostname
+[?2004lce73d73e9c2d
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run alpine hostname[K[K[K[K[K[K[K[Kcat /etc/os/[K-release[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run alpine cat /etc/os-release
+[?2004lNAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.22.1
+PRETTY_NAME="Alpine Linux v3.22"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker run alpine cat /etc/os-release[C[1P[1P[1P[1P[1P[1P[1@d[1@e[1@b[1@i[1@a[1@n[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run debian cat /etc/os-release[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lPRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.0
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -it ubuntu bash
+[?2004l[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# man more
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# apt update
+[?2004l[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+[33m0% [1 InRelease 14.2 kB/256 kB 6%] [Connecting to secu[0m[33m                                                      0% [Waiting for headers][0m                        Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m                                                      Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+[33m0% [3 InRelease 6932 B/126 kB 5%] [2 InRelease 14.2 kB[0m[33m0% [3 InRelease 63.4 kB/126 kB 50%] [2 InRelease 14.2 [0m[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m[33m0% [Waiting for headers] [2 InRelease 14.2 kB/126 kB 1[0m                                                      Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+[33m0% [4 InRelease 10.3 kB/126 kB 8%] [2 InRelease 14.2 k[0m[33m                                                      0% [2 InRelease 14.2 kB/126 kB 11%][0m[33m0% [Waiting for headers] [2 InRelease 28.7 kB/126 kB 2[0m                                                      Get:5 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+[33m0% [5 Packages 7001 B/117 kB 6%] [2 InRelease 31.5 kB/[0m[33m0% [Waiting for headers] [2 InRelease 37.3 kB/126 kB 3[0m                                                      Get:6 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+[33m0% [6 Packages 35.6 kB/331 kB 11%] [2 InRelease 37.3 k[0m[33m0% [5 Packages store 0 B] [6 Packages 35.6 kB/331 kB 1[0m[33m0% [6 Packages 65.6 kB/331 kB 20%] [2 InRelease 40.2 k[0m[33m0% [Waiting for headers] [2 InRelease 43.1 kB/126 kB 3[0m                                                      Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+[33m0% [7 Packages 15.2 kB/1808 kB 1%] [2 InRelease 43.1 k[0m[33m0% [6 Packages store 0 B] [7 Packages 15.2 kB/1808 kB [0m[33m0% [7 Packages 78.4 kB/1808 kB 4%] [2 InRelease 43.1 k[0m[33m                                                      0% [7 Packages 1622 kB/1808 kB 90%][0m[33m20% [7 Packages 1683 kB/1808 kB 93%][0m                                    Get:8 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+[33m21% [8 Packages 5792 B/19.3 MB 0%] [Waiting for header[0m[33m21% [7 Packages store 0 B] [8 Packages 5792 B/19.3 MB [0m[33m22% [8 Packages 387 kB/19.3 MB 2%] [Waiting for header[0m                                                      Get:9 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [23.0 kB]
+[33m23% [8 Packages 695 kB/19.3 MB 4%] [9 Packages 7003 B/[0m[33m                                                      23% [8 Packages 727 kB/19.3 MB 4%][0m[33m23% [9 Packages store 0 B] [8 Packages 727 kB/19.3 MB [0m[33m23% [8 Packages 727 kB/19.3 MB 4%] [Waiting for header[0m                                                      Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1137 kB]
+[33m27% [8 Packages 2331 kB/19.3 MB 12%] [10 Packages 2655[0m[33m35% [8 Packages 5168 kB/19.3 MB 27%] [10 Packages 266 [0m[33m44% [8 Packages 8332 kB/19.3 MB 43%] [10 Packages 650 [0m[33m51% [8 Packages 10.8 MB/19.3 MB 56%] [10 Packages 1054[0m[33m                                                      53% [8 Packages 11.6 MB/19.3 MB 60%][0m                                    Get:11 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1363 kB]
+[33m53% [8 Packages 11.6 MB/19.3 MB 60%] [11 Packages 0 B/[0m[33m53% [10 Packages store 0 B] [8 Packages 11.6 MB/19.3 M[0m[33m54% [8 Packages 11.8 MB/19.3 MB 61%] [11 Packages 44.9[0m[33m63% [8 Packages 14.7 MB/19.3 MB 76%] [11 Packages 508 [0m[33m72% [8 Packages 17.9 MB/19.3 MB 92%] [11 Packages 931 [0m[33m76% [Waiting for headers] [11 Packages 1200 kB/1363 kB[0m                                                      Get:12 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.2 kB]
+[33m76% [12 Packages 1448 B/45.2 kB 3%] [11 Packages 1200 [0m[33m76% [8 Packages store 0 B] [12 Packages 1448 B/45.2 kB[0m[33m76% [8 Packages store 0 B] [Waiting for headers] [11 P[0m                                                      Get:13 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1458 kB]
+[33m76% [8 Packages store 0 B] [13 Packages 11.0 kB/1458 k[0m[33m78% [8 Packages store 0 B] [13 Packages 818 kB/1458 kB[0m                                                      Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2066 kB]
+[33m78% [8 Packages store 0 B] [13 Packages 818 kB/1458 kB[0m[33m80% [8 Packages store 0 B] [Waiting for headers] [14 P[0m                                                      Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1713 kB]
+[33m81% [8 Packages store 0 B] [15 Packages 15.7 kB/1713 k[0m[33m84% [15 Packages 1022 kB/1713 kB 60%] [14 Packages 324[0m[33m84% [12 Packages store 0 B] [15 Packages 1022 kB/1713 [0m[33m84% [15 Packages 1035 kB/1713 kB 60%] [14 Packages 327[0m[33m84% [11 Packages store 0 B] [15 Packages 1035 kB/1713 [0m[33m86% [15 Packages 1203 kB/1713 kB 70%] [14 Packages 354[0m[33m86% [13 Packages store 0 B] [15 Packages 1218 kB/1713 [0m[33m87% [15 Packages 1471 kB/1713 kB 86%] [14 Packages 389[0m[33m88% [Waiting for headers] [14 Packages 428 kB/2066 kB [0m                                                      Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2193 kB]
+[33m88% [16 Packages 5705 B/2193 kB 0%] [14 Packages 428 k[0m[33m88% [15 Packages store 0 B] [16 Packages 5705 B/2193 k[0m[33m89% [16 Packages 236 kB/2193 kB 11%] [14 Packages 478 [0m[33m95% [Waiting for headers] [14 Packages 905 kB/2066 kB [0m                                                      Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.8 kB]
+[33m95% [17 Packages 6956 B/48.8 kB 14%] [14 Packages 905 [0m[33m95% [16 Packages store 0 B] [17 Packages 6956 B/48.8 k[0m[33m95% [16 Packages store 0 B] [14 Packages 910 kB/2066 k[0m                                                      Get:18 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.6 kB]
+[33m95% [16 Packages store 0 B] [18 Packages 1117 B/35.6 k[0m[33m95% [16 Packages store 0 B] [14 Packages 925 kB/2066 k[0m[33m                                                      96% [14 Packages 1036 kB/2066 kB 50%][0m[33m96% [17 Packages store 0 B] [14 Packages 1036 kB/2066 [0m[33m                                                      96% [14 Packages 1038 kB/2066 kB 50%][0m[33m96% [18 Packages store 0 B] [14 Packages 1038 kB/2066 [0m[33m                                                      97% [14 Packages 1041 kB/2066 kB 50%][0m[33m98% [14 Packages 1623 kB/2066 kB 79%][0m[33m99% [Working]                             5335 kB/s 0s[0m[33m99% [14 Packages store 0 B]               5335 kB/s 0s[0m[33m100% [Working]                            5335 kB/s 0s[0m                                                      Fetched 32.3 MB in 6s (5287 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# [H[2J]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# apt install man-db
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 94%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+The following additional packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0
+Suggested packages:
+  groff gdbm-l10n apparmor less www-browser
+The following NEW packages will be installed:
+  bsdextrautils groff-base libgdbm6t64 libpipeline1
+  libuchardet0 man-db
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2463 kB of archives.
+After this operation, 7478 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.3 [73.7 kB]
+[33m0% [1 bsdextrautils 14.2 kB/73.7 kB 19%][0m[33m                                        6% [Waiting for headers][0m                        Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libuchardet0 amd64 0.0.8-1build1 [75.3 kB]
+[33m6% [2 libuchardet0 14.2 kB/75.3 kB 19%][0m[33m                                       12% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+[33m12% [3 groff-base 5162 B/1020 kB 1%][0m[33m37% [3 groff-base 796 kB/1020 kB 78%][0m                                     Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libgdbm6t64 amd64 1.23-5.1build1 [34.4 kB]
+[33m48% [4 libgdbm6t64 4632 B/34.4 kB 13%][0m[33m                                      52% [Working][0m             Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+[33m53% [5 libpipeline1 14.2 kB/23.6 kB 60%][0m                                        Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+[33m                                        57% [6 man-db 3384 B/1237 kB 0%][0m[33m                                100% [Working][0m              Fetched 2463 kB in 2s (1121 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;16r8[1ASelecting previously unselected package bsdextrautils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4381 files and directories currently installed.)
+Preparing to unpack .../0-bsdextrautils_2.39.3-9ubuntu6.3_amd64.deb ...
+7[17;0f[42m[30mProgress: [  0%][49m[39m [.................................] 87[17;0f[42m[30mProgress: [  4%][49m[39m [#................................] 8Unpacking bsdextrautils (2.39.3-9ubuntu6.3) ...
+7[17;0f[42m[30mProgress: [  8%][49m[39m [##...............................] 8Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../1-libuchardet0_0.0.8-1build1_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 12%][49m[39m [###..............................] 8Unpacking libuchardet0:amd64 (0.0.8-1build1) ...
+7[17;0f[42m[30mProgress: [ 16%][49m[39m [#####............................] 8Selecting previously unselected package groff-base.
+Preparing to unpack .../2-groff-base_1.23.0-3build2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 20%][49m[39m [######...........................] 8Unpacking groff-base (1.23.0-3build2) ...
+7[17;0f[42m[30mProgress: [ 24%][49m[39m [#######..........................] 8Selecting previously unselected package libgdbm6t64:amd64.
+Preparing to unpack .../3-libgdbm6t64_1.23-5.1build1_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 28%][49m[39m [#########........................] 8Unpacking libgdbm6t64:amd64 (1.23-5.1build1) ...
+7[17;0f[42m[30mProgress: [ 32%][49m[39m [##########.......................] 8Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../4-libpipeline1_1.5.7-2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 36%][49m[39m [###########......................] 8Unpacking libpipeline1:amd64 (1.5.7-2) ...
+7[17;0f[42m[30mProgress: [ 40%][49m[39m [#############....................] 8Selecting previously unselected package man-db.
+Preparing to unpack .../5-man-db_2.12.0-4build2_amd64.deb ...
+7[17;0f[42m[30mProgress: [ 44%][49m[39m [##############...................] 8Unpacking man-db (2.12.0-4build2) ...
+7[17;0f[42m[30mProgress: [ 48%][49m[39m [###############..................] 8Setting up libpipeline1:amd64 (1.5.7-2) ...
+7[17;0f[42m[30mProgress: [ 52%][49m[39m [#################................] 87[17;0f[42m[30mProgress: [ 56%][49m[39m [##################...............] 8Setting up libgdbm6t64:amd64 (1.23-5.1build1) ...
+7[17;0f[42m[30mProgress: [ 60%][49m[39m [###################..............] 87[17;0f[42m[30mProgress: [ 64%][49m[39m [#####################............] 8Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+7[17;0f[42m[30mProgress: [ 68%][49m[39m [######################...........] 87[17;0f[42m[30mProgress: [ 72%][49m[39m [#######################..........] 8Setting up libuchardet0:amd64 (0.0.8-1build1) ...
+7[17;0f[42m[30mProgress: [ 76%][49m[39m [#########################........] 87[17;0f[42m[30mProgress: [ 80%][49m[39m [##########################.......] 8Setting up groff-base (1.23.0-3build2) ...
+7[17;0f[42m[30mProgress: [ 84%][49m[39m [###########################......] 87[17;0f[42m[30mProgress: [ 88%][49m[39m [#############################....] 8Setting up man-db (2.12.0-4build2) ...
+7[17;0f[42m[30mProgress: [ 92%][49m[39m [##############################...] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Building database of manual pages ...
+7[17;0f[42m[30mProgress: [ 96%][49m[39m [###############################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+
+7[0;17r8[1A[J[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# man more
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# unminimize
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+This script restores content and packages that are found on a default
+Ubuntu server system in order to make this system more suitable for
+interactive use.
+
+Reinstallation of packages may fail due to changes to the system
+configuration, the presence of third-party packages, or for other
+reasons.
+
+This operation may take some time.
+
+Would you like to continue? [y/N] y
+
+Re-enabling installation of all documentation in dpkg...
+Updating package list and upgrading packages...
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+0% [Waiting for headers] [Connecting to security.ubunt0% [Waiting for headers] [Connecting to security.ubunt                                                      Hit:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+                                                      0% [Connecting to security.ubuntu.com (91.189.91.83)]                                                     0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers]                        Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+                        0% [Working]20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 96%Building dependency tree... Done
+Reading state information... 0% Reading state information... 16%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 50%Calculating upgrade... Done
+The following packages will be upgraded:
+  base-files
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 73.2 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] 
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 base-files amd64 13ubuntu10.3 [73.2 kB]
+1% [1 base-files 1157 B/73.2 kB 2%]                                   100% [Working]              Fetched 73.2 kB in 0s (363 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-files_13ubuntu10.3_amd64.deb ...
+Unpacking base-files (13ubuntu10.3) over (13ubuntu10.2) ...
+Setting up base-files (13ubuntu10.3) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Restoring system documentation...
+Reinstalling packages with files in /usr/share/man/ ...
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 91%Building dependency tree... Done
+Reading state information... 0% Reading state information... 16%Reading state information... Done
+0 upgraded, 0 newly installed, 40 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 16.0 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 base-files amd64 13ubuntu10.3 [73.2 kB]
+0% [1 base-files 1157 B/73.2 kB 2%]                                   1% [Working]            Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 bash amd64 5.2.21-2ubuntu4 [794 kB]
+1% [2 bash 9844 B/794 kB 1%]                            Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdutils amd64 1:2.39.3-9ubuntu6.3 [95.9 kB]
+5% [3 bsdutils 3179 B/95.9 kB 3%]                                 6% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 coreutils amd64 9.4-3ubuntu6 [1412 kB]
+6% [4 coreutils 15.6 kB/1412 kB 1%]                                   14% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 dash amd64 0.5.12-6ubuntu5 [89.8 kB]
+14% [5 dash 15.9 kB/89.8 kB 18%]                                15% [Working]             Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 debianutils amd64 5.17build1 [89.9 kB]
+15% [6 debianutils 5404 B/89.9 kB 6%]                                     16% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 diffutils amd64 1:3.10-1build1 [177 kB]
+16% [7 diffutils 12.1 kB/177 kB 7%]                                   17% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg amd64 1.22.6ubuntu6.1 [1283 kB]
+17% [8 dpkg 1430 B/1283 kB 0%]                              24% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 findutils amd64 4.9.0-5build1 [298 kB]
+24% [9 findutils 7056 B/298 kB 2%]                                  Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 grep amd64 3.11-4build1 [162 kB]
+                                  26% [10 grep 12.0 kB/162 kB 7%]                               27% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gzip amd64 1.12-1ubuntu3.1 [99.0 kB]
+27% [11 gzip 9653 B/99.0 kB 10%]                                Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 hostname amd64 3.23+nmu2ubuntu2 [11.1 kB]
+28% [12 hostname 11.1 kB/11.1 kB 100%]                                      Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 login amd64 1:4.13+dfsg1-4ubuntu3.2 [202 kB]
+                                      29% [13 login 234 B/202 kB 0%]                              30% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 ncurses-bin amd64 6.4+20240113-1ubuntu2 [188 kB]
+30% [14 ncurses-bin 11.6 kB/188 kB 6%]                                      32% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 perl-base amd64 5.38.2-3.2ubuntu0.2 [1827 kB]
+32% [15 perl-base 6804 B/1827 kB 0%]                                    41% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 sed amd64 4.9-2build1 [193 kB]
+42% [16 sed 13.0 kB/193 kB 7%]                              43% [Working]             Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 tar amd64 1.35+dfsg-3build1 [253 kB]
+43% [17 tar 11.3 kB/253 kB 4%]                              Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 util-linux amd64 2.39.3-9ubuntu6.3 [1128 kB]
+45% [18 util-linux 4052 B/1128 kB 0%]                                     Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 base-passwd amd64 3.6.3build1 [51.1 kB]
+51% [19 base-passwd 3002 B/51.1 kB 6%]                                      52% [Working]             Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 init-system-helpers all 1.66ubuntu1 [39.4 kB]
+52% [20 init-system-helpers 1442 B/39.4 kB 4%]                                              52% [Waiting for headers]                         Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc-bin amd64 2.39-0ubuntu8.5 [682 kB]
+52% [21 libc-bin 2292 B/682 kB 0%]                                  56% [Waiting for headers]                         Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 sysvinit-utils amd64 3.08-6ubuntu3 [34.2 kB]
+56% [22 sysvinit-utils 5572 B/34.2 kB 16%]                                          57% [Waiting for headers]                         Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 apt amd64 2.8.3 [1376 kB]
+57% [23 apt 2964 B/1376 kB 0%]                              64% [Waiting for headers]                         Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules amd64 1.5.3-5ubuntu5.4 [286 kB]
+64% [24 libpam-modules 4344 B/286 kB 2%]                                        66% [Waiting for headers]                         Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 logsave amd64 1.47.0-2.4~exp1ubuntu4.1 [22.7 kB]
+66% [25 logsave 4502 B/22.7 kB 20%]                                   67% [Waiting for headers]                         Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 e2fsprogs amd64 1.47.0-2.4~exp1ubuntu4.1 [601 kB]
+67% [26 e2fsprogs 2604 B/601 kB 0%]                                   70% [Waiting for headers]                         Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mount amd64 2.39.3-9ubuntu6.3 [118 kB]
+70% [27 mount 6992 B/118 kB 6%]                               71% [Waiting for headers]                         Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 debconf all 1.5.86ubuntu1 [124 kB]
+71% [28 debconf 16.6 kB/124 kB 13%]                                   73% [Waiting for headers]                         Get:29 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libaudit-common all 1:3.1.2-2.1build1.1 [5824 B]
+73% [29 libaudit-common 3743 B/5824 B 64%]                                          73% [Waiting for headers]                         Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-modules-bin amd64 1.5.3-5ubuntu5.4 [51.9 kB]
+73% [30 libpam-modules-bin 13.7 kB/51.9 kB 26%]                                               Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam-runtime all 1.5.3-5ubuntu5.4 [40.8 kB]
+                                               74% [31 libpam-runtime 9370 B/40.8 kB 23%]                                          75% [Working]             Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgv amd64 2.4.4-2ubuntu17.3 [158 kB]
+75% [32 gpgv 412 B/158 kB 0%]                             76% [Waiting for headers]                         Get:33 http://archive.ubuntu.com/ubuntu noble/main amd64 libsemanage-common all 3.5-1build5 [10.1 kB]
+76% [33 libsemanage-common 4330 B/10.1 kB 43%]                                              76% [Working]             Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 mawk amd64 1.3.4.20240123-1build1 [127 kB]
+76% [34 mawk 0 B/127 kB 0%]                           77% [Waiting for headers]                         Get:35 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 passwd amd64 1:4.13+dfsg1-4ubuntu3.2 [845 kB]
+78% [35 passwd 11.0 kB/845 kB 1%]                                 82% [Waiting for headers]                         Get:36 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 procps amd64 2:4.0.4-4ubuntu3.2 [707 kB]
+82% [36 procps 11.3 kB/707 kB 2%]                                 86% [Waiting for headers]                         Get:37 http://archive.ubuntu.com/ubuntu noble/main amd64 sensible-utils all 0.0.22 [22.5 kB]
+86% [37 sensible-utils 0 B/22.5 kB 0%]                                      87% [Waiting for headers]                         Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.3 [73.7 kB]
+87% [38 bsdextrautils 9103 B/73.7 kB 12%]                                         88% [Waiting for headers]                         Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 groff-base amd64 1.23.0-3build2 [1020 kB]
+88% [39 groff-base 14.8 kB/1020 kB 1%]                                      93% [Waiting for headers]                         Get:40 http://archive.ubuntu.com/ubuntu noble/main amd64 man-db amd64 2.12.0-4build2 [1237 kB]
+93% [40 man-db 18.6 kB/1237 kB 2%]                                  100% [Working]              Fetched 16.0 MB in 3s (5180 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../mawk_1.3.4.20240123-1build1_amd64.deb ...
+Unpacking mawk (1.3.4.20240123-1build1) over (1.3.4.20240123-1build1) ...
+Setting up mawk (1.3.4.20240123-1build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/mawk because link group awk is broken
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-files_13ubuntu10.3_amd64.deb ...
+Unpacking base-files (13ubuntu10.3) over (13ubuntu10.3) ...
+Setting up base-files (13ubuntu10.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../bash_5.2.21-2ubuntu4_amd64.deb ...
+Unpacking bash (5.2.21-2ubuntu4) over (5.2.21-2ubuntu4) ...
+Preparing to unpack .../debianutils_5.17build1_amd64.deb ...
+Unpacking debianutils (5.17build1) over (5.17build1) ...
+Setting up debianutils (5.17build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/bin/which.debianutils because link group which is broken
+Setting up bash (5.2.21-2ubuntu4) ...
+update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../bsdutils_1%3a2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking bsdutils (1:2.39.3-9ubuntu6.3) over (1:2.39.3-9ubuntu6.3) ...
+Setting up bsdutils (1:2.39.3-9ubuntu6.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../coreutils_9.4-3ubuntu6_amd64.deb ...
+Unpacking coreutils (9.4-3ubuntu6) over (9.4-3ubuntu6) ...
+Setting up coreutils (9.4-3ubuntu6) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../dash_0.5.12-6ubuntu5_amd64.deb ...
+Unpacking dash (0.5.12-6ubuntu5) over (0.5.12-6ubuntu5) ...
+Preparing to unpack .../dpkg_1.22.6ubuntu6.1_amd64.deb ...
+Unpacking dpkg (1.22.6ubuntu6.1) over (1.22.6ubuntu6.1) ...
+Preparing to unpack .../tar_1.35+dfsg-3build1_amd64.deb ...
+Unpacking tar (1.35+dfsg-3build1) over (1.35+dfsg-3build1) ...
+Setting up tar (1.35+dfsg-3build1) ...
+update-alternatives: warning: forcing reinstallation of alternative /usr/sbin/rmt-tar because link group rmt is broken
+Setting up dpkg (1.22.6ubuntu6.1) ...
+Setting up dash (0.5.12-6ubuntu5) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../diffutils_1%3a3.10-1build1_amd64.deb ...
+Unpacking diffutils (1:3.10-1build1) over (1:3.10-1build1) ...
+Setting up diffutils (1:3.10-1build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../findutils_4.9.0-5build1_amd64.deb ...
+Unpacking findutils (4.9.0-5build1) over (4.9.0-5build1) ...
+Setting up findutils (4.9.0-5build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../grep_3.11-4build1_amd64.deb ...
+Unpacking grep (3.11-4build1) over (3.11-4build1) ...
+Setting up grep (3.11-4build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../gzip_1.12-1ubuntu3.1_amd64.deb ...
+Unpacking gzip (1.12-1ubuntu3.1) over (1.12-1ubuntu3.1) ...
+Setting up gzip (1.12-1ubuntu3.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../hostname_3.23+nmu2ubuntu2_amd64.deb ...
+Unpacking hostname (3.23+nmu2ubuntu2) over (3.23+nmu2ubuntu2) ...
+Setting up hostname (3.23+nmu2ubuntu2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-runtime_1.5.3-5ubuntu5.4_all.deb ...
+Unpacking libpam-runtime (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Preparing to unpack .../debconf_1.5.86ubuntu1_all.deb ...
+Unpacking debconf (1.5.86ubuntu1) over (1.5.86ubuntu1) ...
+Setting up debconf (1.5.86ubuntu1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam-modules-bin (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules-bin (1.5.3-5ubuntu5.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam-modules:amd64 (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam-modules:amd64 (1.5.3-5ubuntu5.4) ...
+Setting up libpam-runtime (1.5.3-5ubuntu5.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking login (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3.2) ...
+Setting up login (1:4.13+dfsg1-4ubuntu3.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../ncurses-bin_6.4+20240113-1ubuntu2_amd64.deb ...
+Unpacking ncurses-bin (6.4+20240113-1ubuntu2) over (6.4+20240113-1ubuntu2) ...
+Setting up ncurses-bin (6.4+20240113-1ubuntu2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../perl-base_5.38.2-3.2ubuntu0.2_amd64.deb ...
+Unpacking perl-base (5.38.2-3.2ubuntu0.2) over (5.38.2-3.2ubuntu0.2) ...
+Setting up perl-base (5.38.2-3.2ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../sed_4.9-2build1_amd64.deb ...
+Unpacking sed (4.9-2build1) over (4.9-2build1) ...
+Setting up sed (4.9-2build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../util-linux_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking util-linux (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Setting up util-linux (2.39.3-9ubuntu6.3) ...
+update-alternatives: warning: forcing reinstallation of alternative /bin/more because link group pager is broken
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../base-passwd_3.6.3build1_amd64.deb ...
+Unpacking base-passwd (3.6.3build1) over (3.6.3build1) ...
+Setting up base-passwd (3.6.3build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../init-system-helpers_1.66ubuntu1_all.deb ...
+Unpacking init-system-helpers (1.66ubuntu1) over (1.66ubuntu1) ...
+Setting up init-system-helpers (1.66ubuntu1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc-bin (2.39-0ubuntu8.5) over (2.39-0ubuntu8.5) ...
+Setting up libc-bin (2.39-0ubuntu8.5) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../sysvinit-utils_3.08-6ubuntu3_amd64.deb ...
+Unpacking sysvinit-utils (3.08-6ubuntu3) over (3.08-6ubuntu3) ...
+Setting up sysvinit-utils (3.08-6ubuntu3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../archives/apt_2.8.3_amd64.deb ...
+Unpacking apt (2.8.3) over (2.8.3) ...
+Preparing to unpack .../gpgv_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpgv (2.4.4-2ubuntu17.3) over (2.4.4-2ubuntu17.3) ...
+Setting up gpgv (2.4.4-2ubuntu17.3) ...
+Setting up apt (2.8.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../logsave_1.47.0-2.4~exp1ubuntu4.1_amd64.deb ...
+Unpacking logsave (1.47.0-2.4~exp1ubuntu4.1) over (1.47.0-2.4~exp1ubuntu4.1) ...
+Preparing to unpack .../e2fsprogs_1.47.0-2.4~exp1ubuntu4.1_amd64.deb ...
+Unpacking e2fsprogs (1.47.0-2.4~exp1ubuntu4.1) over (1.47.0-2.4~exp1ubuntu4.1) ...
+Preparing to unpack .../mount_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking mount (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Preparing to unpack .../libaudit-common_1%3a3.1.2-2.1build1.1_all.deb ...
+Unpacking libaudit-common (1:3.1.2-2.1build1.1) over (1:3.1.2-2.1build1.1) ...
+Setting up libaudit-common (1:3.1.2-2.1build1.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../0-libsemanage-common_3.5-1build5_all.deb ...
+Unpacking libsemanage-common (3.5-1build5) over (3.5-1build5) ...
+Preparing to unpack .../1-passwd_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking passwd (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3.2) ...
+Preparing to unpack .../2-procps_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking procps (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3.2) ...
+Preparing to unpack .../3-sensible-utils_0.0.22_all.deb ...
+Unpacking sensible-utils (0.0.22) over (0.0.22) ...
+Preparing to unpack .../4-bsdextrautils_2.39.3-9ubuntu6.3_amd64.deb ...
+Unpacking bsdextrautils (2.39.3-9ubuntu6.3) over (2.39.3-9ubuntu6.3) ...
+Preparing to unpack .../5-groff-base_1.23.0-3build2_amd64.deb ...
+Unpacking groff-base (1.23.0-3build2) over (1.23.0-3build2) ...
+Preparing to unpack .../6-man-db_2.12.0-4build2_amd64.deb ...
+Unpacking man-db (2.12.0-4build2) over (2.12.0-4build2) ...
+Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+Setting up libsemanage-common (3.5-1build5) ...
+Setting up logsave (1.47.0-2.4~exp1ubuntu4.1) ...
+Setting up passwd (1:4.13+dfsg1-4ubuntu3.2) ...
+Setting up mount (2.39.3-9ubuntu6.3) ...
+Setting up sensible-utils (0.0.22) ...
+Setting up groff-base (1.23.0-3build2) ...
+Setting up procps (2:4.0.4-4ubuntu3.2) ...
+Setting up e2fsprogs (1.47.0-2.4~exp1ubuntu4.1) ...
+Setting up man-db (2.12.0-4build2) ...
+Updating database of manual pages ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Processing triggers for debianutils (5.17build1) ...
+Reinstalling packages with system documentation in /usr/share/doc/ ..
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 5%Reading package lists... 5%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 87%Reading package lists... 87%Reading package lists... 92%Reading package lists... 92%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 92%Building dependency tree... Done
+Reading state information... 0% Reading state information... 16%Reading state information... Done
+0 upgraded, 0 newly installed, 20 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 8620 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 ncurses-base all 6.4+20240113-1ubuntu2 [25.5 kB]
+0% [1 ncurses-base 14.2 kB/25.5 kB 56%]                                       1% [Working]            Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-14-base amd64 14.2.0-4ubuntu2~24.04 [50.8 kB]
+1% [2 gcc-14-base 2606 B/50.8 kB 5%]                                    3% [Working]            Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libc6 amd64 2.39-0ubuntu8.5 [3265 kB]
+3% [3 libc6 718 B/3265 kB 0%]15% [3 libc6 1276 kB/3265 kB 39%]                                 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libgcrypt20 amd64 1.10.3-2build1 [532 kB]
+34% [4 libgcrypt20 10.1 kB/532 kB 2%]                                     40% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgmp10 amd64 2:6.3.0+dfsg-2ubuntu6.1 [253 kB]
+40% [5 libgmp10 0 B/253 kB 0%]                              43% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgpg-error0 amd64 1.47-3build2.1 [70.1 kB]
+43% [6 libgpg-error0 3249 B/70.1 kB 5%]                                       45% [Working]             Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblzma5 amd64 5.6.1+really5.4.5-1ubuntu0.2 [127 kB]
+45% [7 liblzma5 7520 B/127 kB 6%]                                 47% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpam0g amd64 1.5.3-5ubuntu5.4 [67.7 kB]
+47% [8 libpam0g 6992 B/67.7 kB 10%]                                   49% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-8-0 amd64 10.42-4ubuntu2.1 [227 kB]
+49% [9 libpcre2-8-0 2710 B/227 kB 1%]                                     Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsystemd0 amd64 255.4-1ubuntu8.10 [434 kB]
+52% [10 libsystemd0 10.5 kB/434 kB 2%]                                      57% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libudev1 amd64 255.4-1ubuntu8.10 [176 kB]
+57% [11 libudev1 7434 B/176 kB 4%]                                  60% [Waiting for headers]                         Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapt-pkg6.0t64 amd64 2.8.3 [985 kB]
+60% [12 libapt-pkg6.0t64 9068 B/985 kB 1%]                                          Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libdb5.3t64 amd64 5.3.28+dfsg2-7 [734 kB]
+                                          70% [13 libdb5.3t64 13.0 kB/734 kB 2%]                                      77% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgnutls30t64 amd64 3.8.3-1.1ubuntu3.4 [998 kB]
+78% [14 libgnutls30t64 9834 B/998 kB 1%]                                        88% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libidn2-0 amd64 2.3.7-2build1.1 [66.2 kB]
+88% [15 libidn2-0 14.7 kB/66.2 kB 22%]                                      89% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnettle8t64 amd64 3.9.1-2.2build1.1 [182 kB]
+89% [16 libnettle8t64 5786 B/182 kB 3%]                                       92% [Waiting for headers]                         Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libp11-kit0 amd64 0.25.3-4ubuntu2.1 [300 kB]
+92% [17 libp11-kit0 6480 B/300 kB 2%]                                     96% [Waiting for headers]                         Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtasn1-6 amd64 4.19.0-3ubuntu0.24.04.1 [44.3 kB]
+96% [18 libtasn1-6 12.6 kB/44.3 kB 28%]                                       Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libproc2-0 amd64 2:4.0.4-4ubuntu3.2 [59.5 kB]
+                                       97% [19 libproc2-0 4184 B/59.5 kB 7%]                                     Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libpipeline1 amd64 1.5.7-2 [23.6 kB]
+99% [20 libpipeline1 5376 B/23.6 kB 23%]                                        100% [Working]              Fetched 8620 kB in 2s (3552 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../ncurses-base_6.4+20240113-1ubuntu2_all.deb ...
+Unpacking ncurses-base (6.4+20240113-1ubuntu2) over (6.4+20240113-1ubuntu2) ...
+Setting up ncurses-base (6.4+20240113-1ubuntu2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../gcc-14-base_14.2.0-4ubuntu2~24.04_amd64.deb ...
+Unpacking gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04) over (14.2.0-4ubuntu2~24.04) ...
+Setting up gcc-14-base:amd64 (14.2.0-4ubuntu2~24.04) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libc6_2.39-0ubuntu8.5_amd64.deb ...
+Unpacking libc6:amd64 (2.39-0ubuntu8.5) over (2.39-0ubuntu8.5) ...
+Setting up libc6:amd64 (2.39-0ubuntu8.5) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.10.3-2build1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.10.3-2build1) over (1.10.3-2build1) ...
+Preparing to unpack .../libgpg-error0_1.47-3build2.1_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.47-3build2.1) over (1.47-3build2.1) ...
+Setting up libgpg-error0:amd64 (1.47-3build2.1) ...
+Setting up libgcrypt20:amd64 (1.10.3-2build1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgmp10_2%3a6.3.0+dfsg-2ubuntu6.1_amd64.deb ...
+Unpacking libgmp10:amd64 (2:6.3.0+dfsg-2ubuntu6.1) over (2:6.3.0+dfsg-2ubuntu6.1) ...
+Setting up libgmp10:amd64 (2:6.3.0+dfsg-2ubuntu6.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../liblzma5_5.6.1+really5.4.5-1ubuntu0.2_amd64.deb ...
+Unpacking liblzma5:amd64 (5.6.1+really5.4.5-1ubuntu0.2) over (5.6.1+really5.4.5-1ubuntu0.2) ...
+Setting up liblzma5:amd64 (5.6.1+really5.4.5-1ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.5.3-5ubuntu5.4_amd64.deb ...
+Unpacking libpam0g:amd64 (1.5.3-5ubuntu5.4) over (1.5.3-5ubuntu5.4) ...
+Setting up libpam0g:amd64 (1.5.3-5ubuntu5.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libpcre2-8-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.42-4ubuntu2.1) over (10.42-4ubuntu2.1) ...
+Setting up libpcre2-8-0:amd64 (10.42-4ubuntu2.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_255.4-1ubuntu8.10_amd64.deb ...
+Unpacking libsystemd0:amd64 (255.4-1ubuntu8.10) over (255.4-1ubuntu8.10) ...
+Setting up libsystemd0:amd64 (255.4-1ubuntu8.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libudev1_255.4-1ubuntu8.10_amd64.deb ...
+Unpacking libudev1:amd64 (255.4-1ubuntu8.10) over (255.4-1ubuntu8.10) ...
+Setting up libudev1:amd64 (255.4-1ubuntu8.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libapt-pkg6.0t64_2.8.3_amd64.deb ...
+Unpacking libapt-pkg6.0t64:amd64 (2.8.3) over (2.8.3) ...
+Setting up libapt-pkg6.0t64:amd64 (2.8.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libdb5.3t64_5.3.28+dfsg2-7_amd64.deb ...
+Unpacking libdb5.3t64:amd64 (5.3.28+dfsg2-7) over (5.3.28+dfsg2-7) ...
+Setting up libdb5.3t64:amd64 (5.3.28+dfsg2-7) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libgnutls30t64_3.8.3-1.1ubuntu3.4_amd64.deb ...
+Unpacking libgnutls30t64:amd64 (3.8.3-1.1ubuntu3.4) over (3.8.3-1.1ubuntu3.4) ...
+Preparing to unpack .../libidn2-0_2.3.7-2build1.1_amd64.deb ...
+Unpacking libidn2-0:amd64 (2.3.7-2build1.1) over (2.3.7-2build1.1) ...
+Setting up libidn2-0:amd64 (2.3.7-2build1.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libnettle8t64_3.9.1-2.2build1.1_amd64.deb ...
+Unpacking libnettle8t64:amd64 (3.9.1-2.2build1.1) over (3.9.1-2.2build1.1) ...
+Setting up libnettle8t64:amd64 (3.9.1-2.2build1.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libp11-kit0_0.25.3-4ubuntu2.1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.25.3-4ubuntu2.1) over (0.25.3-4ubuntu2.1) ...
+Setting up libp11-kit0:amd64 (0.25.3-4ubuntu2.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libtasn1-6_4.19.0-3ubuntu0.24.04.1_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.19.0-3ubuntu0.24.04.1) over (4.19.0-3ubuntu0.24.04.1) ...
+Setting up libtasn1-6:amd64 (4.19.0-3ubuntu0.24.04.1) ...
+Setting up libgnutls30t64:amd64 (3.8.3-1.1ubuntu3.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4903 files and directories currently installed.)
+Preparing to unpack .../libproc2-0_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3.2) ...
+Preparing to unpack .../libpipeline1_1.5.7-2_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-2) over (1.5.7-2) ...
+Setting up libpipeline1:amd64 (1.5.7-2) ...
+Setting up libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Restoring system translations...
+Documentation has been restored successfully.
+[?2004h]0;root@ebde5e47fec6: /root@ebde5e47fec6:/# [?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker ps /a[K[K-a
+[?2004lCONTAINER ID   IMAGE           COMMAND                   CREATED             STATUS                           PORTS     NAMES
+c5905a7a342e   alpine          "sh"                      33 minutes ago      Exited (0) 4 minutes ago                   alp1
+cf9cb871dfa4   debian          "bash"                    34 minutes ago      Exited (127) 34 minutes ago                pedantic_ptolemy
+887dd1217e01   debian          "bash"                    37 minutes ago      Exited (130) 34 minutes ago                sweet_golick
+ebde5e47fec6   ubuntu          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 goofy_kepler
+62fa8fa4e368   debian          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_agnesi
+5ac231026264   alpine          "cat /etc/os-release"     About an hour ago   Exited (0) About an hour ago               focused_lamport
+ce73d73e9c2d   alpine          "hostname"                About an hour ago   Exited (0) About an hour ago               compassionate_lederberg
+322dae0afc79   debian          "bash"                    About an hour ago   Exited (0) About an hour ago               bold_bhabha
+206b2988c362   debian          "bash"                    About an hour ago   Exited (137) 3 minutes ago                 quirky_hugle
+31e53ee3f0c0   debian          "bash"                    2 hours ago         Exited (127) About an hour ago             youthful_gates
+b2e0acce7b5a   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     objective_shamir
+a147b1775bb7   debian          "bash"                    2 hours ago         Exited (0) 2 hours ago                     heuristic_brahmagupta
+6471f7c83e3e   alpine          "/bin/sh"                 2 hours ago         Exited (0) 2 hours ago                     hardcore_spence
+9ec68a55c3fc   alpine          "/bin/sh"                 36 hours ago        Exited (137) 13 hours ago                  nackademin
+0952cc2c72be   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    brave_gates
+8550d7468f53   ubuntu          "du -hs /"                38 hours ago        Exited (1) 38 hours ago                    wizardly_pike
+bee908c11f54   alpine          "du -hs /"                38 hours ago        Exited (0) 38 hours ago                    intelligent_agnesi
+982733eed50c   alpine          "ls -l /usr/sbin"         38 hours ago        Exited (0) 38 hours ago                    hardcore_shamir
+8f82c1b65d0e   alpine          "tree /usr/sbin"          38 hours ago        Exited (0) 38 hours ago                    competent_bohr
+c736e13c180b   alpine          "tree /usr/share/"        38 hours ago        Exited (0) 38 hours ago                    pensive_einstein
+ff88620ad249   alpine          "ls /usr/share/apk"       38 hours ago        Exited (0) 38 hours ago                    focused_lederberg
+382e5f307f71   alpine          "ls /usr/share"           38 hours ago        Exited (0) 38 hours ago                    beautiful_taussig
+bbe4f65fa8c0   alpine          "hostname"                38 hours ago        Exited (0) 38 hours ago                    quizzical_williamson
+0f93a9a91041   alpine          "sh"                      38 hours ago        Exited (0) 38 hours ago                    eager_zhukovsky
+787ce3a08ba9   alpine          "cat /etc/os-release"     38 hours ago        Exited (0) 38 hours ago                    modest_joliot
+cab3da78824b   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  nice_easley
+9f46b3bc31e7   ubuntu          "/bin/bash"               39 hours ago        Exited (137) 13 hours ago                  gracious_yalow
+56222883136c   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  mystifying_lalande
+8443962701ee   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  flamboyant_allen
+bf3b3bad97ce   alpine          "/bin/sh"                 39 hours ago        Exited (137) 13 hours ago                  dreamy_albattani
+9fa4bc333041   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    keen_raman
+1948697d1223   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    silly_heyrovsky
+75658a73063b   alpine          "/bin/sh"                 39 hours ago        Exited (1) 39 hours ago                    focused_ardinghelli
+118b0d422712   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    brave_cray
+a1d7cdda51cc   alpine          "/bin/sh"                 39 hours ago        Exited (0) 39 hours ago                    bold_hopper
+69ee61c88b2a   ubuntu:latest   "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_wilbur
+c474a24f65a9   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    zen_babbage
+6e7a4b0ff8b6   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (137) 2 days ago                    frosty_rosalind
+deb838f8a1f3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    eloquent_chaplygin
+8e03386146b3   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    quirky_rosalind
+46ae482fdc11   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    stoic_roentgen
+5fe52fe146df   ubuntu          "bash -c 'count=0; w…"    2 days ago          Exited (130) 2 days ago                    agitated_mclean
+afd847f53ace   ubuntu          "/bin/bash"               2 days ago          Exited (137) 2 days ago                    blissful_jemison
+4cda3030a82f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      cool_moser
+9d8c0a51db40   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_chandrasekhar
+3e6284bb9333   ubuntu          "/bin/bash"               2 days ago          Exited (127) 2 days ago                    gallant_kalam
+29dea16b3c06   ubuntu          "/bin/bash"               2 days ago          Exited (1) 2 days ago                      competent_hamilton
+3984d2390d89   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_noyce
+99319f75f99f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      fervent_hawking
+893209d630f0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      nifty_dhawan
+3e25620469e0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      pensive_shamir
+d25275108af4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      beautiful_wilson
+ba823c69d9c1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      friendly_hellman
+e72745992ba6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      kind_grothendieck
+6ad1cc1f0ab6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      sweet_zhukovsky
+4dba07be1215   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_kapitsa
+75b626e2585e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      dreamy_burnell
+f86046a7b9b9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      focused_galois
+4f2e92abdd50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      great_goodall
+873f357d6a13   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_poincare
+aaa5356a6a9c   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_chatelet
+c1e277c39a46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      festive_lalande
+7f059118764e   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      stoic_poitras
+3efd5bfb9cde   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      mystifying_meitner
+5ad958f1e2cd   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      peaceful_goldstine
+17113938d94a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      clever_khayyam
+f6206f852f8b   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_brown
+d4cda700fb1a   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eager_curran
+22c4ca604fd1   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      angry_feistel
+eab77e499ef7   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      trusting_bhaskara
+3e1f647492e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      priceless_lovelace
+819f8712c2d0   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      relaxed_wescoff
+7e60a4ca846f   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_gates
+f0c7f0a809e6   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      intelligent_wing
+306894ea5c56   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      zealous_jackson
+5e24e480bfe9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      gallant_robinson
+aa10399835a9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_ganguly
+928264e65b15   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      hardcore_khorana
+95e28c2da9ef   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      jolly_wing
+849b7c25ae46   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      practical_neumann
+2cff94e9ed50   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      goofy_hermann
+d4fb412db9b4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      adoring_clarke
+0ef0118ae4e8   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      tender_chatterjee
+37d195a6a0af   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      eloquent_margulis
+baa80bd95fb9   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      frosty_driscoll
+bcf4ee3bb2a4   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      serene_curie
+270e5e7f7f33   ubuntu          "/bin/bash"               2 days ago          Exited (0) 2 days ago                      happy_mestorf
+cf06dad5cf0e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_chatelet
+9e48969ea89c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (1) 2 days ago                      happy_kare
+4f33c4e445ae   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      hungry_fermat
+7570ac7deecc   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      funny_clarke
+173f42953e3f   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jovial_goodall
+f79a716d6bc6   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_mclean
+8fa3fba6d215   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      keen_ride
+f6a0daf4da79   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      jolly_tu
+20c999463d4c   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      brave_lumiere
+58344e253e61   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      eager_northcutt
+d4ee10322188   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      bold_maxwell
+12718b1da18e   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      nice_chebyshev
+af5df74529df   debian          "bash -c 'read -p \"V…"   2 days ago          Exited (0) 2 days ago                      loving_dewdney
+984626b4ad1a   alpine          "bash -c 'read -p \"V…"   2 days ago          Created                                    agitated_galois
+f6d667473054   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      competent_diffie
+f0f4b6c3f54e   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      nostalgic_rosalind
+5a75332b3855   alpine          "ls --color=auto"         2 days ago          Exited (0) 2 days ago                      heuristic_rhodes
+c56045063a8a   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_almeida
+d4556528613c   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      vigilant_bartik
+848ed87c1de9   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      bold_galileo
+ace67dc599f1   alpine          "ls --color=always"       2 days ago          Exited (0) 2 days ago                      charming_noyce
+590cd4082fb0   debian:stable   "bash -c 'read x; ec…"    3 days ago          Exited (0) 3 days ago                      admiring_sinoussi
+7a50208dcde5   debian:stable   "bash -c 'read x; pr…"    3 days ago          Exited (127) 3 days ago                    naughty_faraday
+52e3ddc31a46   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      funny_bardeen
+f40e86ed5d4e   debian:stable   "bash -c '[ -t 1 ] &…"    3 days ago          Exited (0) 3 days ago                      bold_pare
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run /[K-dit ubuntu
+[?2004l56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ dcoke[K[K[K[Kocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+56c458860055   ubuntu    "/bin/bash"   11 seconds ago   Up 11 seconds             trusting_wing
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker atrt[K[Ktachg[K trusting_wing
+[?2004l[K]0;root@56c458860055: /root@56c458860055:/# [K]0;root@56c458860055: /root@56c458860055:/# ps -e -o pid,ppid,cmd[H[2J]0;root@56c458860055: /root@56c458860055:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@56c458860055: /root@56c458860055:/# ei xit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing
+[?2004ldocker: 'docker exec' requires at least 2 arguments
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+See 'docker exec --help' for more information
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing bahs[K[Ksh[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker exec trusting_wing bash
+[?2004lError response from daemon: container 56c458860055be337a75628fe861e8d7f6e2a19946cbeadb761d62a604377714 is not running
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker psexec trusting_wing bash[K[C[C[C[C[C[C[C[C[C[2@attach[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps[Krun -dit ubuntu[H[2J[94mDEVOPS24/lektion3
+(B[m$ docker run -dit ubuntu
+[?2004ldb42f9a3a8a5884737586a4abad73ae57fb35c88e5edc7d6ae9fd72304cd40bb
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+db42f9a3a8a5   ubuntu    "/bin/bash"   3 seconds ago   Up 3 seconds             exciting_diffie
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ [7mexciting_diffie[27m[C[Cexciting_diffiedexciting_diffieoexciting_diffiecexciting_diffiekexciting_diffie[Cexciting_diffierexciting_diffie exciting_diffie[Cexciting_diffiexexciting_diffie[Cexciting_diffiecexciting_diffie exciting_diffie[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C bash
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ docker exec exciting_diffie bash[1@/[1P[1@i[1@t[1@ [1P[1P[1P[1@=[1P[1@-[1@u[1@t[1@ [1P[1P[1P[1@i[1@t[1@ [H[2J[94mDEVOPS24/lektion3
+(B[m$ docker exec -it exciting_diffie bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# [7mps -e -o pid,ppid,cmd[27m
+[Aroot@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+[K[Aroot@db42f9a3a8a5:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     15       0 bash
+     23      15 ps -e -o pid,ppid,cmd
+[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@db42f9a3a8a5: /root@db42f9a3a8a5:/# exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ 
+[?2004l[?2004h[94mDEVOPS24/lektion3
+(B[m$ [H[2J[94mDEVOPS24/lektion3
+(B[m$ [7mbash -c 'count=0; while true; do (( count++ )); sleep[27m[7m [27m[7m1; echo $count * ; done' [27m
+[A[A[C[Cbash -c 'count=0; while true; do (( count++ )); sleep 1; echo $count * ; done'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l1 recordings
+2 recordings
+3 recordings
+4 recordings
+5 recordings
+6 recordings
+7 recordings
+^C
+[?2004h[94mDEVOPS24/lektion3
+(B[m$ exit
+[?2004lexit
+
+Script done on 2025-08-25 13:00:01+02:00 [COMMAND_EXIT_CODE="130"]
