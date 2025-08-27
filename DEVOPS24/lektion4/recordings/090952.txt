@@ -1,0 +1,1513 @@
+Script started on 2025-08-26 09:09:57+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="9"]
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME          DRIVER    SCOPE
+1d9cfc45eea5   bridge        bridge    local
+2f730c7d3d12   gitlab-net    bridge    local
+af00aa7844d0   host          host      local
+247da08535f0   jenkins-net   bridge    local
+6ee00c8e0df9   none          null      local
+3cac753cf8cb   wpnet         bridge    local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker netwro[K[Kork prune
+[?2004lWARNING! This will remove all custom networks not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+jenkins-net
+gitlab-net
+wpnet
+
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network prune[3Pls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME      DRIVER    SCOPE
+1d9cfc45eea5   bridge    bridge    local
+af00aa7844d0   host      host      local
+6ee00c8e0df9   none      null      local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [7mbridge    bridge    local[27m
+[7maf00aa7844d0   host      host      local[27m
+[7m6ee00c8e0df9   none      [27m^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker network create my-network[27m
+[A[C[Cdocker network create my-network
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lc2d213c508a3eee7ce14d206a11e867b1484004a63eb03906443848f7c7f865c
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network ls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker network ls
+[?2004lNETWORK ID     NAME         DRIVER    SCOPE
+1d9cfc45eea5   bridge       bridge    local
+af00aa7844d0   host         host      local
+c2d213c508a3   my-network   bridge    local
+6ee00c8e0df9   none         null      local
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network my-network \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m   mysql[27m[A[A[A[C[Cdocker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysql[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C
+[?2004ldocker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "202eb2c2e78850e7b4ad963379f6c8448e1ed6f6a37dfc7ca8f6c98098885c1b". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker prune[K[K[K[K[Krm mysql
+[?2004lmysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker rm mysql[K[K[K[K[Kphpmyadmin
+[?2004lError response from daemon: No such container: phpmyadmin
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker rm phpmyadmin[5Pmysqlun -d --name mysql   --network my-network   -e MYSQL_ROOT_PASSWORD=root    mysql
+[?2004l36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+36013fcf8c2c   mysql     "docker-entrypoint.s…"   11 seconds ago   Up 11 seconds   3306/tcp, 33060/tcp   mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name phpmyadmin \[27m
+[7m  --network my-network \[27m
+[7m  -e PMA_HOST=mysql \[27m
+[7m  -p 8080:80 \[27m
+[7m   phpmyadmin[27m
+[A[A[A[A[A[C[Cdocker run -d --name phpmyadmin \
+  --network my-network \
+  -e PMA_HOST=mysql \
+  -p 8080:80 \
+   phpmyadmin
+[A
+[?2004lade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+ade2b3f69df5   phpmyadmin   "/docker-entrypoint.…"   4 seconds ago   Up 4 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   phpmyadmin
+36013fcf8c2c   mysql        "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp                       mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker stop [7mmysql[27mmysql [7mphpmyadmin[27mphpmyadmin
+[?2004lmysql
+phpmyadmin
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   4 minutes ago   Exited (0) 13 seconds ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   6 minutes ago   Exited (0) 13 seconds ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   11 hours ago    Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   11 hours ago    Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago    Exited (137) 11 hours ago             wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker volume create mysql-data[27m^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+local     aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+local     b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+local     databashantering_mariadb_data
+local     e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+local     f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+local     fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[K[Kprune
+[?2004lWARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+
+Total reclaimed space: 1.102GB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume prune[3Pls[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     databashantering_mariadb_data
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume lsprune +[K-a
+[?2004lWARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+server-start.sh
+jenkins_home
+databashantering_mariadb_data
+wordpress-db
+pingurl_persistance_data
+
+Total reclaimed space: 907.4MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume prune -als[Kl[K[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume ls[K[Krm [7mgitlab-config[27mgitlab-config [7mgitlab-data[27mgitlab-data [7mgitlab-logs[27mgitlab-logs [7mjenkins-d[27m[7ma[27m[7mta[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjenkins-data [7mwordpress-files[27m[C[C[C[Cwordpress-files
+[?2004lError response from daemon: remove gitlab-config: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-data: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-logs: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove jenkins-data: volume is in use - [11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885]
+Error response from daemon: remove wordpress-files: volume is in use - [ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647]
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker psvolume rm gitlab-config gitlab-data gitlab-logs jenkins-data wordpress-files[Aps[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C -a[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   28 minutes ago   Exited (0) 24 minutes ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   30 minutes ago   Exited (0) 24 minutes ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   12 hours ago     Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   12 hours ago     Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago     Exited (137) 12 hours ago             wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+ade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace
+11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885
+ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647
+
+Total reclaimed space: 3.803MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps-[K -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker ps -acontainer prune[C[C[C[C[C[C[C[C[C[10Pps -a[Kvolume rm gitlab-config gitlab-data gitlab-logs jenkins-data wordpress-files[Als[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprune -a[K[K[K
+[?2004lWARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+
+Total reclaimed space: 204.9MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume lsprune -a
+[?2004lWARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+gitlab-data
+jenkins-data
+wordpress-files
+gitlab-config
+gitlab-logs
+
+Total reclaimed space: 671.9MB
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [7mdocker volume create mysql-data[27m
+[A[C[Cdocker volume create mysql-data
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume create mysql-data
+[?2004lmysql-data
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     mysql-data
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [7m# Starta containern[27m
+[7mdocker run -d \[27m
+[7m  --name mysql \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m  -v mysql-data:/var/lib/mysql \[27m
+[7m  mysql:8.0[27m[A[A[A[A[A[C[C# Starta containern
+docker run -d \
+  --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -v mysql-data:/var/lib/mysql \
+  mysql:8.0 .-[K([K/[K[K[K
+[?2004lUnable to find image 'mysql:8.0' locally
+8.0: Pulling from library/mysql
+
+[1A[2K500d7b2546c4: Already exists [1B
+[1A[2K5cd63fb67c17: Pulling fs layer [1B
+[1A[2K9476b8faedba: Pulling fs layer [1B
+[1A[2Kecc6cc933381: Pulling fs layer [1B
+[1A[2K789fa151603e: Pulling fs layer [1B
+[1A[2K1756a372d796: Pulling fs layer [1B
+[1A[2K131412d69359: Pulling fs layer [1B
+[1A[2K4d3eacc36b14: Pulling fs layer [1B
+[1A[2Kbc0f5543b464: Pulling fs layer [1B
+[1A[2K03ca01bc78d4: Pulling fs layer [1B[4A[2K131412d69359: Waiting [4B[5A[2K1756a372d796: Waiting [5B[3A[2K4d3eacc36b14: Waiting [3B
+[1A[2K04fa42a56901: Pulling fs layer [1B[2A[2K03ca01bc78d4: Waiting [2B[7A[2K789fa151603e: Waiting [7B[1A[2K04fa42a56901: Waiting [1B[3A[2Kbc0f5543b464: Waiting [3B[10A[2K5cd63fb67c17: Downloading     883B/883B[10B[10A[2K5cd63fb67c17: Verifying Checksum [10B[10A[2K5cd63fb67c17: Download complete [10B[10A[2K5cd63fb67c17: Extracting     883B/883B[10B[10A[2K5cd63fb67c17: Extracting     883B/883B[10B[9A[2K9476b8faedba: Downloading  10.63kB/983kB[9B[8A[2Kecc6cc933381: Downloading  69.77kB/6.819MB[8B[10A[2K5cd63fb67c17: Pull complete [10B[9A[2K9476b8faedba: Downloading    103kB/983kB[9B[8A[2Kecc6cc933381: Downloading  209.3kB/6.819MB[8B[9A[2K9476b8faedba: Downloading    140kB/983kB[9B[9A[2K9476b8faedba: Downloading    177kB/983kB[9B[8A[2Kecc6cc933381: Downloading  360.4kB/6.819MB[8B[9A[2K9476b8faedba: Downloading  213.5kB/983kB[9B[8A[2Kecc6cc933381: Downloading  442.4kB/6.819MB[8B[7A[2K789fa151603e: Downloading  1.369kB/2.608kB[7B[7A[2K789fa151603e: Downloading  2.608kB/2.608kB[7B[7A[2K789fa151603e: Verifying Checksum [7B[7A[2K789fa151603e: Download complete [7B[9A[2K9476b8faedba: Downloading  262.1kB/983kB[9B[8A[2Kecc6cc933381: Downloading  524.3kB/6.819MB[8B[9A[2K9476b8faedba: Downloading  311.3kB/983kB[9B[9A[2K9476b8faedba: Downloading  360.4kB/983kB[9B[8A[2Kecc6cc933381: Downloading  687.8kB/6.819MB[8B[9A[2K9476b8faedba: Downloading  393.2kB/983kB[9B[8A[2Kecc6cc933381: Downloading  769.7kB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  851.6kB/6.819MB[8B[9A[2K9476b8faedba: Downloading    426kB/983kB[9B[6A[2K1756a372d796: Downloading     333B/333B[6B[6A[2K1756a372d796: Verifying Checksum [6B[6A[2K1756a372d796: Download complete [6B[8A[2Kecc6cc933381: Downloading  933.6kB/6.819MB[8B[9A[2K9476b8faedba: Downloading  458.8kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.015MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  507.9kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.097MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  540.7kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.179MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  589.8kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.261MB/6.819MB[8B[9A[2K9476b8faedba: Downloading    639kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.343MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  688.1kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.425MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  737.3kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.507MB/6.819MB[8B[9A[2K9476b8faedba: Downloading    770kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.589MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  819.2kB/983kB[9B[5A[2K131412d69359: Downloading  507.9kB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  1.753MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  868.4kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.835MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  901.1kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.917MB/6.819MB[8B[9A[2K9476b8faedba: Downloading  933.9kB/983kB[9B[8A[2Kecc6cc933381: Downloading  1.999MB/6.819MB[8B[9A[2K9476b8faedba: Downloading    983kB/983kB[9B[9A[2K9476b8faedba: Verifying Checksum [9B[9A[2K9476b8faedba: Download complete [9B[9A[2K9476b8faedba: Extracting  32.77kB/983kB[9B[9A[2K9476b8faedba: Extracting    983kB/983kB[9B[9A[2K9476b8faedba: Extracting    983kB/983kB[9B[9A[2K9476b8faedba: Pull complete [9B[8A[2Kecc6cc933381: Downloading   2.08MB/6.819MB[8B[5A[2K131412d69359: Downloading  1.016MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  2.244MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  2.326MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  2.408MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading   2.49MB/6.819MB[8B[4A[2K4d3eacc36b14: Downloading     316B/316B[4B[4A[2K4d3eacc36b14: Verifying Checksum [4B[4A[2K4d3eacc36b14: Download complete [4B[8A[2Kecc6cc933381: Downloading  2.563MB/6.819MB[8B[5A[2K131412d69359: Downloading  1.524MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  2.727MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  2.809MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  2.973MB/6.819MB[8B[5A[2K131412d69359: Downloading  2.027MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  3.218MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  540.7kB/128.9MB[3B[5A[2K131412d69359: Downloading  2.535MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  3.456MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  1.618MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading   3.62MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  3.784MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  2.686MB/128.9MB[3B[5A[2K131412d69359: Downloading  3.043MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  4.026MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  3.767MB/128.9MB[3B[5A[2K131412d69359: Downloading  3.551MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading   4.19MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  4.836MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading  4.436MB/6.819MB[8B[5A[2K131412d69359: Downloading  4.059MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading   4.68MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  5.907MB/128.9MB[3B[5A[2K131412d69359: Downloading  4.567MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  4.926MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading   6.98MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading   5.09MB/6.819MB[8B[5A[2K131412d69359: Downloading  5.074MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  5.254MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  8.062MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading    5.5MB/6.819MB[8B[5A[2K131412d69359: Downloading  5.582MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  9.134MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading  5.745MB/6.819MB[8B[5A[2K131412d69359: Downloading   6.09MB/49.82MB[5B[8A[2Kecc6cc933381: Downloading  5.991MB/6.819MB[8B[3A[2Kbc0f5543b464: Downloading  10.21MB/128.9MB[3B[5A[2K131412d69359: Downloading  6.598MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  10.75MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading  6.237MB/6.819MB[8B[8A[2Kecc6cc933381: Downloading  6.483MB/6.819MB[8B[5A[2K131412d69359: Downloading  7.106MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  11.83MB/128.9MB[3B[8A[2Kecc6cc933381: Downloading  6.728MB/6.819MB[8B[8A[2Kecc6cc933381: Verifying Checksum [8B[8A[2Kecc6cc933381: Download complete [8B[8A[2Kecc6cc933381: Extracting   98.3kB/6.819MB[8B[5A[2K131412d69359: Downloading  7.614MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  12.91MB/128.9MB[3B[8A[2Kecc6cc933381: Extracting   5.21MB/6.819MB[8B[8A[2Kecc6cc933381: Extracting  6.819MB/6.819MB[8B[8A[2Kecc6cc933381: Pull complete [8B[7A[2K789fa151603e: Extracting  2.608kB/2.608kB[7B[7A[2K789fa151603e: Extracting  2.608kB/2.608kB[7B[7A[2K789fa151603e: Pull complete [7B[6A[2K1756a372d796: Extracting     333B/333B[6B[6A[2K1756a372d796: Extracting     333B/333B[6B[6A[2K1756a372d796: Pull complete [6B[5A[2K131412d69359: Downloading  8.118MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  13.99MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  15.07MB/128.9MB[3B[5A[2K131412d69359: Downloading  8.626MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  16.15MB/128.9MB[3B[5A[2K131412d69359: Downloading  9.134MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  17.23MB/128.9MB[3B[5A[2K131412d69359: Downloading  9.642MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   18.3MB/128.9MB[3B[5A[2K131412d69359: Downloading  10.15MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  19.39MB/128.9MB[3B[5A[2K131412d69359: Downloading  10.66MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  20.47MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  21.53MB/128.9MB[3B[5A[2K131412d69359: Downloading  11.17MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  22.61MB/128.9MB[3B[5A[2K131412d69359: Downloading  11.67MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  23.67MB/128.9MB[3B[5A[2K131412d69359: Downloading  12.18MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  24.75MB/128.9MB[3B[5A[2K131412d69359: Downloading  12.69MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  25.82MB/128.9MB[3B[2A[2K03ca01bc78d4: Downloading  1.369kB/5.334kB[2B[2A[2K03ca01bc78d4: Downloading  5.334kB/5.334kB[2B[2A[2K03ca01bc78d4: Verifying Checksum [2B[2A[2K03ca01bc78d4: Download complete [2B[3A[2Kbc0f5543b464: Downloading  26.88MB/128.9MB[3B[5A[2K131412d69359: Downloading   13.2MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  27.42MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  27.96MB/128.9MB[3B[5A[2K131412d69359: Downloading  13.71MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   28.5MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  29.04MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  29.58MB/128.9MB[3B[5A[2K131412d69359: Downloading  14.21MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  30.65MB/128.9MB[3B[5A[2K131412d69359: Downloading  14.72MB/49.82MB[5B[1A[2K04fa42a56901: Downloading     122B/122B[1B[1A[2K04fa42a56901: Download complete [1B[3A[2Kbc0f5543b464: Downloading  31.73MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  32.27MB/128.9MB[3B[5A[2K131412d69359: Downloading  15.23MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   32.8MB/128.9MB[3B[5A[2K131412d69359: Downloading  15.74MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  33.88MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  34.95MB/128.9MB[3B[5A[2K131412d69359: Downloading  16.24MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  36.03MB/128.9MB[3B[5A[2K131412d69359: Downloading  16.75MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   37.1MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  37.64MB/128.9MB[3B[5A[2K131412d69359: Downloading  17.26MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  38.18MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  38.72MB/128.9MB[3B[5A[2K131412d69359: Downloading  17.76MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  39.26MB/128.9MB[3B[5A[2K131412d69359: Downloading  18.27MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  40.34MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  40.88MB/128.9MB[3B[5A[2K131412d69359: Downloading  18.78MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  41.41MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  41.95MB/128.9MB[3B[5A[2K131412d69359: Downloading  19.29MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  42.49MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  43.03MB/128.9MB[3B[5A[2K131412d69359: Downloading  19.79MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  43.56MB/128.9MB[3B[5A[2K131412d69359: Downloading   20.3MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  44.64MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  45.18MB/128.9MB[3B[5A[2K131412d69359: Downloading   20.8MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  45.72MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  46.27MB/128.9MB[3B[5A[2K131412d69359: Downloading  21.31MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  46.81MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  47.89MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  48.97MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  50.04MB/128.9MB[3B[5A[2K131412d69359: Downloading  21.81MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  51.12MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  51.66MB/128.9MB[3B[5A[2K131412d69359: Downloading  22.32MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  52.74MB/128.9MB[3B[5A[2K131412d69359: Downloading  22.83MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  53.82MB/128.9MB[3B[5A[2K131412d69359: Downloading  23.34MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   54.9MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  55.97MB/128.9MB[3B[5A[2K131412d69359: Downloading  23.84MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  57.05MB/128.9MB[3B[5A[2K131412d69359: Downloading  24.35MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  58.13MB/128.9MB[3B[5A[2K131412d69359: Downloading  24.86MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading   59.2MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  60.28MB/128.9MB[3B[5A[2K131412d69359: Downloading  25.37MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  61.36MB/128.9MB[3B[5A[2K131412d69359: Downloading  25.88MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  62.42MB/128.9MB[3B[5A[2K131412d69359: Downloading  26.38MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  64.03MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  65.09MB/128.9MB[3B[5A[2K131412d69359: Downloading  26.89MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  66.17MB/128.9MB[3B[5A[2K131412d69359: Downloading   27.4MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  67.24MB/128.9MB[3B[5A[2K131412d69359: Downloading  27.91MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  68.31MB/128.9MB[3B[5A[2K131412d69359: Downloading  28.42MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  69.92MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading     71MB/128.9MB[3B[5A[2K131412d69359: Downloading  28.92MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  72.07MB/128.9MB[3B[5A[2K131412d69359: Downloading  29.43MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  73.68MB/128.9MB[3B[5A[2K131412d69359: Downloading  29.94MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  74.76MB/128.9MB[3B[5A[2K131412d69359: Downloading  30.45MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  75.84MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  76.38MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  76.92MB/128.9MB[3B[5A[2K131412d69359: Downloading  30.95MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  77.45MB/128.9MB[3B[5A[2K131412d69359: Downloading  31.46MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  77.98MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  79.05MB/128.9MB[3B[5A[2K131412d69359: Downloading  31.97MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  80.12MB/128.9MB[3B[5A[2K131412d69359: Downloading  32.48MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  81.74MB/128.9MB[3B[5A[2K131412d69359: Downloading  32.99MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  82.82MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  83.88MB/128.9MB[3B[5A[2K131412d69359: Downloading   33.5MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  84.94MB/128.9MB[3B[5A[2K131412d69359: Downloading  34.01MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  86.02MB/128.9MB[3B[5A[2K131412d69359: Downloading  34.51MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  87.09MB/128.9MB[3B[5A[2K131412d69359: Downloading  35.02MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  88.15MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  89.21MB/128.9MB[3B[5A[2K131412d69359: Downloading  35.53MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  90.29MB/128.9MB[3B[5A[2K131412d69359: Downloading  36.03MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  91.37MB/128.9MB[3B[5A[2K131412d69359: Downloading  36.54MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  92.45MB/128.9MB[3B[5A[2K131412d69359: Downloading  37.05MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  93.51MB/128.9MB[3B[5A[2K131412d69359: Downloading  37.56MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  94.59MB/128.9MB[3B[5A[2K131412d69359: Downloading  38.06MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  95.65MB/128.9MB[3B[5A[2K131412d69359: Downloading  38.57MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  96.72MB/128.9MB[3B[5A[2K131412d69359: Downloading  39.08MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  97.79MB/128.9MB[3B[5A[2K131412d69359: Downloading  39.59MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  98.87MB/128.9MB[3B[5A[2K131412d69359: Downloading   40.1MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  99.94MB/128.9MB[3B[5A[2K131412d69359: Downloading   40.6MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading    101MB/128.9MB[3B[5A[2K131412d69359: Downloading  41.11MB/49.82MB[5B[5A[2K131412d69359: Downloading  41.62MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  102.1MB/128.9MB[3B[5A[2K131412d69359: Downloading  42.13MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  103.2MB/128.9MB[3B[5A[2K131412d69359: Downloading  42.63MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  104.2MB/128.9MB[3B[5A[2K131412d69359: Downloading  43.13MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  105.3MB/128.9MB[3B[5A[2K131412d69359: Downloading  43.64MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  106.4MB/128.9MB[3B[5A[2K131412d69359: Downloading  44.15MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  107.5MB/128.9MB[3B[5A[2K131412d69359: Downloading  44.65MB/49.82MB[5B[5A[2K131412d69359: Downloading  45.16MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  108.5MB/128.9MB[3B[5A[2K131412d69359: Downloading  45.67MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  109.6MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  110.7MB/128.9MB[3B[5A[2K131412d69359: Downloading  46.69MB/49.82MB[5B[5A[2K131412d69359: Downloading  47.19MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  111.8MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  112.3MB/128.9MB[3B[5A[2K131412d69359: Downloading   47.7MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  112.9MB/128.9MB[3B[5A[2K131412d69359: Downloading  48.21MB/49.82MB[5B[5A[2K131412d69359: Downloading  48.72MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  113.9MB/128.9MB[3B[5A[2K131412d69359: Downloading  49.23MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading    115MB/128.9MB[3B[5A[2K131412d69359: Downloading  49.74MB/49.82MB[5B[5A[2K131412d69359: Verifying Checksum [5B[5A[2K131412d69359: Download complete [5B[5A[2K131412d69359: Extracting  524.3kB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  116.1MB/128.9MB[3B[5A[2K131412d69359: Extracting  11.01MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  117.1MB/128.9MB[3B[5A[2K131412d69359: Extracting  19.92MB/49.82MB[5B[5A[2K131412d69359: Extracting  29.88MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  118.7MB/128.9MB[3B[5A[2K131412d69359: Extracting  38.27MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  119.8MB/128.9MB[3B[5A[2K131412d69359: Extracting  46.66MB/49.82MB[5B[5A[2K131412d69359: Extracting  49.82MB/49.82MB[5B[3A[2Kbc0f5543b464: Downloading  120.9MB/128.9MB[3B[5A[2K131412d69359: Pull complete [5B[4A[2K4d3eacc36b14: Extracting     316B/316B[4B[4A[2K4d3eacc36b14: Extracting     316B/316B[4B[4A[2K4d3eacc36b14: Pull complete [4B[3A[2Kbc0f5543b464: Downloading  122.5MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  123.6MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  125.2MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  126.3MB/128.9MB[3B[3A[2Kbc0f5543b464: Downloading  127.9MB/128.9MB[3B[3A[2Kbc0f5543b464: Verifying Checksum [3B[3A[2Kbc0f5543b464: Extracting  557.1kB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting   9.47MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  17.83MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  22.28MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  28.41MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  31.75MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  32.31MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  32.87MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  33.42MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  34.54MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  35.09MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  35.65MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  36.77MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  37.32MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  37.88MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  38.44MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  38.99MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  40.11MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  40.67MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  41.22MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  42.34MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  42.89MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  43.45MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  44.01MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  44.56MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  47.35MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  48.46MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  50.14MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  55.71MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  62.95MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  70.19MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  77.99MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  86.34MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  95.81MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  104.7MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  113.1MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  123.7MB/128.9MB[3B[3A[2Kbc0f5543b464: Extracting  128.9MB/128.9MB[3B[3A[2Kbc0f5543b464: Pull complete [3B[2A[2K03ca01bc78d4: Extracting  5.334kB/5.334kB[2B[2A[2K03ca01bc78d4: Extracting  5.334kB/5.334kB[2B[2A[2K03ca01bc78d4: Pull complete [2B[1A[2K04fa42a56901: Extracting     122B/122B[1B[1A[2K04fa42a56901: Extracting     122B/122B[1B[1A[2K04fa42a56901: Pull complete [1BDigest: sha256:18dee92bbc23147cf0917a26b079c7b659e1170bd03f2ccc42b91236a02fa34b
+Status: Downloaded newer image for mysql:8.0
+1216e275a73d4f6bdcda2fb18ca5d72431a442918aa2a4c4e51f24309b3645d3
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                 NAMES
+1216e275a73d   mysql:8.0   "docker-entrypoint.s…"   About a minute ago   Up About a minute   3306/tcp, 33060/tcp   mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker psrun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0[A[C[C[C[C[C[C[C[C[Cps[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker psrun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0[A[C[C[C[C[C[C[C[C[Cps[K
+[K[A[C[C[C[C[C[C[C[C[C[C[Crun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0[A[C[C# Starta containern[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pdocker volume lscreate mysql-data[K[K[K[K[K[K[K[K[K[Khittamig
+[?2004lhittamig
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume create hittamig[C[C[C[C[C[C[C[C[Cps[Krun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khittamig[C[C[1P:/hittamig[1P:/hittamig[C[C[C[C[C[C[C[C[1P:/hittamig[C[C[C[C[C[C[C[1P:/hittamig[C[C[C[C[C[C[1P:/hittamig[C[C[C[C[C[1P:/hittamig[C[C[C[C[1P:/hittamig[C[C[C[1P:/hittamig[C[C[1P:/hittamig[C[1P:/hittamigh:/hittamig[Ci:/hittamig[C[Ct:/hittamig[C[C[Ct:/hittamig[C[C[C[Ca:/hittamig[C[C[C[C[Cm:/hittamig[C[C[C[C[C[Ci:/hittamig[C[C[C[C[C[C[Cg:/hittamig[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chi[1Pttamig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C hittamig:/hittamig[C[A(B[m$ # Starta containern[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v hittamig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v hi[1Pttamig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v hit[C[1Pamig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hitt[1Pamig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hitta[1Pmig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittam[1Pig:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittami[1Pg:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig[1P:/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:[1P/hittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/[1Phittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/h[1Pittamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hi[1Pttamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hit[C[1Pamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hitt[1Pamig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hitta[1Pmig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hittam[1Pig[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hittami[1Pg[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hittamig[K[A(B[m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v hittamig:/hittamig [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C do[K[Kdebian
+[?2004l0d246cf9bf420707130a0a21f06086b2bf832828fdb24bc30f16c945fc139cb4
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker run -d -v hittamig:/hittamig debian[C[1@i[1P[C[1@i[1@t
+[?2004lea98153cf04b870d405181a7f3a78ebe7efab71faf97ce083fba5c861b76e654
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                 NAMES
+ea98153cf04b   debian      "bash"                   2 seconds ago   Up 1 second                          sharp_vaughan
+1216e275a73d   mysql:8.0   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp   mysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ edocke[K[K[K[K[K[Kdocker stop mysql
+[?2004lmysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker exe[K[K[Kattach [7msharp_vaughan[27msharp_vaughan-sharp_vaughanisharp_vaughan sharp_vaughan
+[?2004lunknown shorthand flag: 'i' in -i
+
+Usage:  docker attach [OPTIONS] CONTAINER
+
+Run 'docker attach --help' for more information
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker attach -i sharp_vaughan[1Psharp_vaughan[1Psharp_vaughan[1Psharp_vaughan[H[2J[94mDEVOPS24/lektion4
+(B[m$ docker attach sharp_vaughan[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[Kroot@ea98153cf04b:/# [Kroot@ea98153cf04b:/# [H[2Jroot@ea98153cf04b:/# ls
+[?2004lbin   dev  hittamig  lib    media  opt	 root  sbin  sys  usr
+boot  etc  home      lib64  mnt    proc  run   srv   tmp  var
+[?2004hroot@ea98153cf04b:/# cd jhot    hittamig/
+[?2004l[?2004hroot@ea98153cf04b:/hittamig# echo SL  IDFIL : 
+[?2004lIDFIL
+[?2004hroot@ea98153cf04b:/hittamig# > echo IDFIL > $RNA  ANDOM
+[?2004l[?2004hroot@ea98153cf04b:/hittamig# ls
+[?2004l22149
+[?2004hroot@ea98153cf04b:/hittamig# exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ find / -iname [7m22149[27m22149 2>/dev/null[1@s[1@u[1@d[1@o[1@ 
+[?2004l[sudo] password for kent: 
+/var/lib/docker/volumes/hittamig/_data/22149
+^C
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ man c[Ktar
+[?2004l[?1049h[22;0;0t[?1h=TAR(1)                   GNU TAR Manual                   TAR(1)[m
+[m
+[1mNAME[0m[m
+       tar - an archiving utility[m
+[m
+[1mSYNOPSIS[0m[m
+   [1mTraditional[0m [1musage[0m[m
+       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[m
+   [1mUNIX-style[0m [1musage[0m[m
+       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[m
+       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-t[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-r[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-u[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m-x[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mGNU-style[0m [1musage[0m[m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m {[1m--catenate[0m|[1m--concatenate[0m} [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--create[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m   {[1m--diff[0m|[1m--compare[0m}   [[1m--file[0m   [4mARCHIVE[24m]   [[4mOPTIONS[24m][m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[4mFILE[24m...][m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--delete[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--append[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--list[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--test-label[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mLABEL[24m...][m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtar[0m [1m--create[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[17;1H[K[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtar[0m {[1m--catenate[0m|[1m--concatenate[0m} [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[17;1H[K[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM   [1mGNU-style[0m [1musage[0m[m
+[17;1H[K[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtar[0m [1m-x[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[17;1H[K[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtar[0m [1m-u[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[17;1H[K[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--list[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--test-label[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mLABEL[24m...][m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m [1m--update[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtar[0m {[1m--extract[0m|[1m--get[0m} [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mNOTE[0m[m
+[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This manpage is a short description of GNU  [1mtar[0m.   For  a[m
+[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       detailed  discussion, including examples and usage recom‐[m
+[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mendations, refer to the [1mGNU[0m [1mTar[0m [1mManual[0m available in tex‐[m
+[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       info  format.   If the [1minfo[0m reader and the tar documenta‐[m
+[7m Manual page tar(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tion are properly installed on your system, the command[m
+[7m Manual page tar(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1minfo[0m [1mtar[0m[m
+[7m Manual page tar(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       should give you access to the complete manual.[m
+[7m Manual page tar(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       You can also view the  manual  using  the  info  mode  in[m
+[7m Manual page tar(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1memacs[0m(1), or find it in various formats online at[m
+[7m Manual page tar(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mhttp://www.gnu.org/software/tar/manual[0m[m
+[7m Manual page tar(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  any  discrepancies occur between this manpage and the[m
+[7m Manual page tar(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mGNU[0m [1mTar[0m [1mManual[0m, the later shall be considered the author‐[m
+[7m Manual page tar(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       itative source.[m
+[7m Manual page tar(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mDESCRIPTION[0m[m
+[7m Manual page tar(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU  [1mtar[0m is an archiving program designed to store multi‐[m
+[7m Manual page tar(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ple files in a single file (an [1marchive[0m), and  to  manipu‐[m
+[7m Manual page tar(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       late  such archives.  The archive can be either a regular[m
+[7m Manual page tar(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       file or a device (e.g. a tape drive, hence  the  name  of[m
+[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the  program,  which stands for [1mt[0mape [1mar[0mchiver), which can[m
+[7m Manual page tar(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       be located either on the local or on a remote machine.[m
+[7m Manual page tar(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mOption[0m [1mstyles[0m[m
+[7m Manual page tar(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Options to GNU  [1mtar[0m  can  be  given  in  three  different[m
+[7m Manual page tar(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       styles.   In  [1mtraditional[0m  [1mstyle[0m, the first argument is a[m
+[7m Manual page tar(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       cluster of option letters and  all  subsequent  arguments[m
+[7m Manual page tar(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supply arguments to those options that require them.  The[m
+[7m Manual page tar(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       arguments are read in the same order as the  option  let‐[m
+[7m Manual page tar(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ters.   Any  command line words that remain after all op‐[m
+[7m Manual page tar(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tions has been processed are treated as non-optional  ar‐[m
+[7m Manual page tar(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       guments: file or archive member names.[m
+[7m Manual page tar(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For  example, the [1mc[0m option requires creating the archive,[m
+[7m Manual page tar(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the [1mv[0m option requests the verbose operation,  and  the  [1mf[0m[m
+[7m Manual page tar(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       option  takes  an  argument that sets the name of the ar‐[m
+[7m Manual page tar(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       chive to operate upon.  The following command, written in[m
+[7m Manual page tar(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the  traditional  style, instructs tar to store all files[m
+[7m Manual page tar(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       from the directory [1m/etc[0m into  the  archive  file  [1metc.tar[0m[m
+[7m Manual page tar(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       verbosely listing the files being archived:[m
+[7m Manual page tar(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar cfv etc.tar /etc[m
+[7m Manual page tar(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In [1mUNIX[0m or [1mshort-option[0m [1mstyle[0m, each option letter is pre‐[m
+[7m Manual page tar(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       fixed with a single dash, as in other command line utili‐[m
+[7m Manual page tar(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ties.   If an option takes argument, the argument follows[m
+[7m Manual page tar(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       it, either as a separate command line  word,  or  immedi‐[m
+[7m Manual page tar(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ately following the option.  However, if the option takes[m
+[7m Manual page tar(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       an [1moptional[0m argument, the argument must follow the option[m
+[7m Manual page tar(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       letter   without   any   intervening  whitespace,  as  in[m
+[7m Manual page tar(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-g/tmp/snar.db[0m.[m
+[7m Manual page tar(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Any number of options not taking arguments can  be  clus‐[m
+[7m Manual page tar(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tered  together  after a single dash, e.g. [1m-vkp[0m.  Options[m
+[7m Manual page tar(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       that take arguments (whether mandatory or optional),  can[m
+[7m Manual page tar(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       appear at the end of such a cluster, e.g. [1m-vkpf[0m [1ma.tar[0m.[m
+[7m Manual page tar(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The  example  command  above  written in the [1mshort-option[0m[m
+[7m Manual page tar(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mstyle[0m could look like:[m
+[7m Manual page tar(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar -cvf etc.tar /etc[m
+[7m Manual page tar(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or[m
+[7m Manual page tar(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar -c -v -f etc.tar /etc[m
+[7m Manual page tar(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In [1mGNU[0m or [1mlong-option[0m [1mstyle[0m, each option begins with  two[m
+[7m Manual page tar(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       dashes  and  has  a meaningful name, consisting of lower-[m
+[7m Manual page tar(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       case letters and dashes.  When used, the long option  can[m
+[7m Manual page tar(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       be abbreviated to its initial letters, provided that this[m
+[7m Manual page tar(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       does not create ambiguity.  Arguments to long options are[m
+[7m Manual page tar(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supplied  either as a separate command line word, immedi‐[m
+[7m Manual page tar(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ately following the option, or separated from the  option[m
+[7m Manual page tar(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       by  an  equals  sign with no intervening whitespace.  Op‐[m
+[7m Manual page tar(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tional arguments must always use the latter method.[m
+[7m Manual page tar(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Here are several ways of writing the example  command  in[m
+[7m Manual page tar(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       this style:[m
+[7m Manual page tar(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar --create --file etc.tar --verbose /etc[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or (abbreviating some options):[m
+[7m Manual page tar(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tar --cre --file=etc.tar --verb /etc[m
+[7m Manual page tar(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The  options  in  all three styles can be intermixed, al‐[m
+[7m Manual page tar(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       though doing so with old options is not encouraged.[m
+[7m Manual page tar(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mOperation[0m [1mmode[0m[m
+[7m Manual page tar(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The options listed in the table below tell GNU  [1mtar[0m  what[m
+[7m Manual page tar(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       operation  it is to perform.  Exactly one of them must be[m
+[7m Manual page tar(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       given.  Meaning of non-optional arguments depends on  the[m
+[7m Manual page tar(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       operation mode requested.[m
+[7m Manual page tar(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+[7m Manual page tar(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append archive to the end of another archive.  The[m
+[7m Manual page tar(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              arguments are treated as the names of archives  to[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              append.   All  archives must be of the same format[m
+[7m Manual page tar(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              as the archive they are appended to, otherwise the[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              resulting  archive  might be unusable with non-GNU[m
+[7m Manual page tar(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              implementations of [1mtar[0m.   Notice  also  that  when[m
+[7m Manual page tar(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              more  than  one archive is given, the members from[m
+[7m Manual page tar(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              archives other than the first one will be accessi‐[m
+[7m Manual page tar(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ble  in the resulting archive only if using the [1m-i[0m[m
+[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ([1m--ignore-zeros[0m) option.[m
+[7m Manual page tar(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Compressed archives cannot be concatenated.[m
+[7m Manual page tar(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m, [1m--create[0m[m
+[7m Manual page tar(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Create a new archive.  Arguments supply the  names[m
+[7m Manual page tar(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of  the  files  to  be  archived.  Directories are[m
+[7m Manual page tar(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              archived recursively,  unless  the  [1m--no-recursion[0m[m
+[7m Manual page tar(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              option is given.[m
+[7m Manual page tar(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--diff[0m, [1m--compare[0m[m
+[7m Manual page tar(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Find  differences between archive and file system.[m
+[7m Manual page tar(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The arguments are  optional  and  specify  archive[m
+[7m Manual page tar(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              members  to  compare.   If  not given, the current[m
+[7m Manual page tar(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              working directory is assumed.[m
+[7m Manual page tar(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--delete[0m[m
+[7m Manual page tar(1) line 153 (press h for help or q to quit)[27m[K[K              Delete from the  archive.   The  arguments  supply[m
+              names  of  the  archive members to be removed.  At[m
+              least one argument must be given.[m
+[m
+              This option does not  operate  on  compressed  ar‐[m
+              chives.  There is no short option equivalent.[m
+[m
+       [1m-r[0m, [1m--append[0m[m
+              Append  files to the end of an archive.  Arguments[m
+[7m Manual page tar(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              option is given.[m
+[17;1H[K[7m Manual page tar(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              archived recursively,  unless  the  [1m--no-recursion[0m[m
+[17;1H[K[7m Manual page tar(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              of  the  files  to  be  archived.  Directories are[m
+[17;1H[K[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Create a new archive.  Arguments supply the  names[m
+[17;1H[K[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-c[0m, [1m--create[0m[m
+[17;1H[K[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Compressed archives cannot be concatenated.[m
+[17;1H[K[7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ([1m--ignore-zeros[0m) option.[m
+[17;1H[K[7m Manual page tar(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ble  in the resulting archive only if using the [1m-i[0m[m
+[17;1H[K[7m Manual page tar(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              archives other than the first one will be accessi‐[m
+[17;1H[K[7m Manual page tar(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              more  than  one archive is given, the members from[m
+[17;1H[K[7m Manual page tar(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              implementations of [1mtar[0m.   Notice  also  that  when[m
+[17;1H[K[7m Manual page tar(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              resulting  archive  might be unusable with non-GNU[m
+[17;1H[K[7m Manual page tar(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              as the archive they are appended to, otherwise the[m
+[17;1H[K[7m Manual page tar(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              append.   All  archives must be of the same format[m
+[17;1H[K[7m Manual page tar(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              arguments are treated as the names of archives  to[m
+[17;1H[K[7m Manual page tar(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Append archive to the end of another archive.  The[m
+[17;1H[K[7m Manual page tar(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+[17;1H[K[7m Manual page tar(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       operation mode requested.[m
+[17;1H[K[7m Manual page tar(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       given.  Meaning of non-optional arguments depends on  the[m
+[17;1H[K[7m Manual page tar(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       operation  it is to perform.  Exactly one of them must be[m
+[17;1H[K[7m Manual page tar(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The options listed in the table below tell GNU  [1mtar[0m  what[m
+[17;1H[K[7m Manual page tar(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM   [1mOperation[0m [1mmode[0m[m
+[17;1H[K[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ble  in the resulting archive only if using the [1m-i[0m[m
+[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ([1m--ignore-zeros[0m) option.[m
+[7m Manual page tar(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM   [1mOperation[0m [1mmode[0m[m
+[17;1H[K[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       though doing so with old options is not encouraged.[m
+[17;1H[K[7m Manual page tar(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The  options  in  all three styles can be intermixed, al‐[m
+[17;1H[K[7m Manual page tar(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tar --cre --file=etc.tar --verb /etc[m
+[17;1H[K[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       or (abbreviating some options):[m
+[17;1H[K[7m Manual page tar(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tar --create --file etc.tar --verbose /etc[m
+[17;1H[K[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 128 (press h for help or q to quit)[27m[K[K[H[2J[HM[m
+[HM       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[HM   [1mUNIX-style[0m [1musage[0m[m
+[HM[m
+[HM       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[HM   [1mTraditional[0m [1musage[0m[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       tar - an archiving utility[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[17;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kcc[K[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m[7m-c[27m[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H       [1mtar[0m [1m-t[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+       [1mtar[0m [1m-r[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-u[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m-x[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+   [1mGNU-style[0m [1musage[0m[m
+       [1mtar[0m {[1m-[0m[1m[7m-c[27m[0m[1matenate[0m|[1m-[0m[1m[7m-c[27m[0m[1moncatenate[0m} [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[m
+       [1mtar[0m [1m-[0m[1m[7m-c[27m[0m[1mreate[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K/[K[m
+       [1mtar[0m   {[1m--diff[0m|[1m-[0m[1m[7m-c[27m[0m[1mompare[0m}   [[1m--file[0m   [4mARCHIVE[24m]   [[4mOPTIONS[24m][m
+       [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m--delete[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+       [1mtar[0m [1m--append[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[m
+       [1mtar[0m [1m--list[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[m
+       [1mtar[0m [1m--test-label[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mLABEL[24m...][m
+[m
+       [1mtar[0m [1m--update[0m [[1m--file[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K/[K[m
+       [1mtar[0m [1m--update[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K/[K[m
+       [1mtar[0m {[1m--extract[0m|[1m--get[0m} [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mMEMBER[24m...][m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       tar [7m-c[27mvf etc.tar /etc[m
+       or[m
+       tar [7m-c[27m -v -f etc.tar /etc[m
+[m
+       In [1mGNU[0m or [1mlong-option[0m [1mstyle[0m, each option begins with  two[m
+       dashes  and  has  a meaningful name, consisting of lower-[m
+       case letters and dashes.  When used, the long option  can[m
+       be abbreviated to its initial letters, provided that this[m
+       does not create ambiguity.  Arguments to long options are[m
+       supplied  either as a separate command line word, immedi‐[m
+       ately following the option, or separated from the  option[m
+       by  an  equals  sign with no intervening whitespace.  Op‐[m
+       tional arguments must always use the latter method.[m
+[m
+       Here are several ways of writing the example  command  in[m
+       this style:[m
+[7m Manual page tar(1) line 112 (press h for help or q to quit)[27m[K[K/[K[m
+       tar -[7m-c[27mreate --file etc.tar --verbose /etc[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K/[K       or (abbreviating some options):[m
+       tar -[7m-c[27mre --file=etc.tar --verb /etc[m
+[m
+       The  options  in  all three styles can be intermixed, al‐[m
+       though doing so with old options is not encouraged.[m
+[m
+   [1mOperation[0m [1mmode[0m[m
+       The options listed in the table below tell GNU  [1mtar[0m  what[m
+       operation  it is to perform.  Exactly one of them must be[m
+       given.  Meaning of non-optional arguments depends on  the[m
+       operation mode requested.[m
+[m
+       [1m-A[0m, [1m-[0m[1m[7m-c[27m[0m[1matenate[0m, [1m-[0m[1m[7m-c[27m[0m[1moncatenate[0m[m
+              Append archive to the end of another archive.  The[m
+              arguments are treated as the names of archives  to[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K/[K              append.   All  archives must be of the same format[m
+              as the archive they are appended to, otherwise the[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K/[K              resulting  archive  might be unusable with non-GNU[m
+              implementations of [1mtar[0m.   Notice  also  that  when[m
+              more  than  one archive is given, the members from[m
+              archives other than the first one will be accessi‐[m
+              ble  in the resulting archive only if using the [1m-i[0m[m
+              ([1m--ignore-zeros[0m) option.[m
+[m
+              Compressed archives cannot be concatenated.[m
+[m
+       [1m[7m-c[27m[0m, [1m-[0m[1m[7m-c[27m[0m[1mreate[0m[m
+              Create a new archive.  Arguments supply the  names[m
+[7m Manual page tar(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of  the  files  to  be  archived.  Directories are[m
+[7m Manual page tar(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              archived recursively,  unless  the  [1m--no-recursion[0m[m
+[7m Manual page tar(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              option is given.[m
+[7m Manual page tar(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m, [1m--diff[0m, [1m-[0m[1m[7m-c[27m[0m[1mompare[0m[m
+[7m Manual page tar(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Find  differences between archive and file system.[m
+[7m Manual page tar(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The arguments are  optional  and  specify  archive[m
+[7m Manual page tar(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              members  to  compare.   If  not given, the current[m
+[7m Manual page tar(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              working directory is assumed.[m
+[7m Manual page tar(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--delete[0m[m
+[7m Manual page tar(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Delete from the  archive.   The  arguments  supply[m
+[7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              names  of  the  archive members to be removed.  At[m
+[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              least one argument must be given.[m
+[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This option does not  operate  on  compressed  ar‐[m
+[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Create a new archive.  Arguments supply the  names[m
+[17;1H[K[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[7m-c[27m[0m, [1m-[0m[1m[7m-c[27m[0m[1mreate[0m[m
+[17;1H[K[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Compressed archives cannot be concatenated.[m
+[17;1H[K[7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              names  of  the  archive members to be removed.  At[m
+[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              least one argument must be given.[m
+[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This option does not  operate  on  compressed  ar‐[m
+[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              chives.  There is no short option equivalent.[m
+[7m Manual page tar(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-r[0m, [1m--append[0m[m
+[7m Manual page tar(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append  files to the end of an archive.  Arguments[m
+[7m Manual page tar(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              have the same meaning as for [1m[7m-c[27m[0m ([1m-[0m[1m[7m-c[27m[0m[1mreate[0m).[m
+[7m Manual page tar(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t[0m, [1m--list[0m[m
+[7m Manual page tar(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              List the contents of an  archive.   Arguments  are[m
+[7m Manual page tar(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              optional.   When  given, they specify the names of[m
+[7m Manual page tar(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the members to list.[m
+[7m Manual page tar(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--test-label[0m[m
+[7m Manual page tar(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Test the archive volume label and exit.  When used[m
+[7m Manual page tar(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              without  arguments, it prints the volume label (if[m
+[7m Manual page tar(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              any) and exits with status [1m0[0m.  When  one  or  more[m
+[7m Manual page tar(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              command  line  arguments  are given.  [1mtar[0m compares[m
+[7m Manual page tar(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the volume label with  each  argument.   It  exits[m
+[7m Manual page tar(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[7m Manual page tar(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              otherwise.  No output is  displayed,  unless  used[m
+[7m Manual page tar(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              together with the [1m-v[0m ([1m--verbose[0m) option.[m
+[7m Manual page tar(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              There  is  no short option equivalent for this op‐[m
+[7m Manual page tar(1) line 180 (press h for help or q to quit)[27m[K[K/[K--[Kvv[K[1;1H       [1m-t[0m, [1m--list[0m[m
+[2;1H              List the contents of an  archive.   Arguments  are[m
+[3;1H              optional.   When  given, they specify the names of[m
+[4;1H              the members to list.[m
+[5;1H[m
+[6;1H       [1m--test-label[0m[m
+[7;1H              Test the archive volume label and exit.  When used[m
+[8;1H              without  arguments, it prints the volume label (if[m
+[9;1H              any) and exits with status [1m0[0m.  When  one  or  more[m
+[10;1H              command  line  arguments  are given.  [1mtar[0m compares[m
+[11;1H              the volume label with  each  argument.   It  exits[m
+[12;1H              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[13;1H              otherwise.  No output is  displayed,  unless  used[m
+[14;1H              together with the [1m-v[0m ([1m--verbose[0m) option.[m
+[15;1H[m
+[16;1H              There  is  no short option equivalent for this op‐[m
+[17;1H[1;1H       [1m-t[0m, [1m--list[0m[m
+[2;1H              List the contents of an  archive.   Arguments  are[m
+[3;1H              optional.   When  given, they specify the names of[m
+[4;1H              the members to list.[m
+[5;1H[m
+[6;1H       [1m--test-label[0m[m
+[7;1H              Test the archive volume label and exit.  When used[m
+[8;1H              without  arguments, it prints the volume label (if[m
+[9;1H              any) and exits with status [1m0[0m.  When  one  or  more[m
+[10;1H              command  line  arguments  are given.  [1mtar[0m compares[m
+[11;1H              the volume label with  each  argument.   It  exits[m
+[12;1H              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[13;1H              otherwise.  No output is  displayed,  unless  used[m
+[14;1H              together with the [1m[7m-v[27m[0m ([1m-[0m[1m[7m-v[27m[0m[1merbose[0m) option.[m
+[15;1H[m
+[16;1H              There  is  no short option equivalent for this op‐[m
+[17;1H              tion.[m
+[m
+       [1m-u[0m, [1m--update[0m[m
+              Append files which are newer than the  correspond‐[m
+              ing  copy in the archive.  Arguments have the same[m
+              meaning as with [1m-c[0m and [1m-r[0m options.   Notice,  that[m
+              newer   files  don't  replace  their  old  archive[m
+              copies, but instead are appended to the end of ar‐[m
+              chive.   The  resulting  archive  can thus contain[m
+              several members of the same name, corresponding to[m
+              various versions of the same file.[m
+[m
+       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-v[27m[0m[1mersion[0m[m
+              Print program version  and  copyright  information[m
+              and exit.[m
+[m
+[1mOPTIONS[0m[m
+   [1mOperation[0m [1mmodifiers[0m[m
+       [1m--check-device[0m[m
+              Check device numbers when creating incremental ar‐[m
+              chives (default).[m
+[m
+       [1m-g[0m, [1m--listed-incremental[0m=[4mFILE[24m[m
+              Handle new GNU-format incremental  backups.   [4mFILE[24m[m
+              is  the  name of a [1msnapshot[0m [1mfile[0m, where tar stores[m
+              additional information which  is  used  to  decide[m
+              which files changed since the previous incremental[m
+              dump and, consequently, must be dumped again.   If[m
+[7m Manual page tar(1) line 225 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--sparse[0m[1m[7m-v[27m[0m[1mersion[0m=[4mMAJOR[24m[.[4mMINOR[24m][m
+              Set  version  of the sparse format to use (implies[m
+              [1m--sparse[0m).  This option implies  [1m--sparse[0m.   Valid[m
+              argument  values are [1m0.0[0m, [1m0.1[0m, and [1m1.0[0m.  For a de‐[m
+              tailed discussion of sparse formats, refer to  the[m
+              [1mGNU[0m [1mTar[0m [1mManual[0m, appendix [1mD[0m, "[1mSparse[0m [1mFormats[0m".  Us‐[m
+              ing [1minfo[0m reader, it can be  accessed  running  the[m
+              following command: [1minfo[0m [1mtar[0m [1m'Sparse[0m [1mFormats'[0m.[m
+[m
+       [1m-S[0m, [1m--sparse[0m[m
+              Handle  sparse  files  efficiently.  Some files in[m
+              the file system may have segments which were actu‐[m
+              ally never written (quite often these are database[m
+              files created by such systems as [1mDBM[0m).  When given[m
+              this option, [1mtar[0m attempts to determine if the file[m
+              is sparse prior to archiving it, and if so, to re‐[m
+[7m Manual page tar(1) line 298 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-W[0m, [1m-[0m[1m[7m-v[27m[0m[1merify[0m[m
+              Verify the archive after writing it.[m
+[m
+   [1mOutput[0m [1mstream[0m [1mselection[0m[m
+       [1m--ignore-command-error[0m[m
+[m
+       Ignore subprocess exit codes.[m
+[m
+       [1m--no-ignore-command-error[0m[m
+              Treat non-zero exit codes  of  children  as  error[m
+              (default).[m
+[m
+       [1m-O[0m, [1m--to-stdout[0m[m
+              Extract files to standard output.[m
+[m
+       [1m--to-command[0m=[4mCOMMAND[24m[m
+[7m Manual page tar(1) line 363 (press h for help or q to quit)[27m[K[K/[K...skipping...
+                     cessing (set if reading a multi[7m-v[27molume  ar‐[m
+                     chive).[m
+[m
+              [1mTAR_FORMAT[0m[m
+                     Format of the archive being processed.  One[m
+                     of: [1mgnu[0m, [1moldgnu[0m, [1mposix[0m, [1mustar[0m, [1mv7[0m.[m
+[m
+              [1mTAR_SUBCOMMAND[0m[m
+                     A short option (with a  leading  dash)  de‐[m
+                     scribing the operation [1mtar[0m is executing.[m
+[m
+   [1mHandling[0m [1mof[0m [1mfile[0m [1mattributes[0m[m
+       [1m--atime-preserve[0m[=[4mMETHOD[24m][m
+              Preserve  access  times on dumped files, either by[m
+              restoring the times after reading ([4mMETHOD[24m=[1mreplace[0m,[m
+              this  is  the default) or by not setting the times[m
+[7m Manual page tar(1) line 453 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-F[0m, [1m--info-script[0m=[4mCOMMAND[24m, [1m--new[0m[1m[7m-v[27m[0m[1molume-script[0m=[4mCOMMAND[24m[m
+              Run  [4mCOMMAND[24m at the end of each tape (implies [1m-M[0m).[m
+              The command can include arguments.  When  started,[m
+              it will inherit [1mtar[0m's environment plus the follow‐[m
+              ing variables:[m
+[m
+              [1mTAR_VERSION[0m[m
+                     GNU [1mtar[0m version number.[m
+[m
+              [1mTAR_ARCHIVE[0m[m
+                     The name of the archive [1mtar[0m is processing.[m
+[m
+              [1mTAR_BLOCKING_FACTOR[0m[m
+                     Current blocking  factor,  i.e.  number  of[m
+                     512-byte blocks in a record.[m
+[m
+[7m Manual page tar(1) line 659 (press h for help or q to quit)[27m[K[K/[K...skipping...
+                     cessing (set if reading a multi[7m-v[27molume  ar‐[m
+                     chive).[m
+[m
+              [1mTAR_FORMAT[0m[m
+                     Format of the archive being processed.  One[m
+                     of: [1mgnu[0m, [1moldgnu[0m, [1mposix[0m, [1mustar[0m, [1mv7[0m.[m
+[m
+              [1mTAR_SUBCOMMAND[0m[m
+                     A short option (with a  leading  dash)  de‐[m
+                     scribing the operation [1mtar[0m is executing.[m
+[m
+              [1mTAR_FD[0m File descriptor which can be used to commu‐[m
+                     nicate the new volume name to [1mtar[0m.[m
+[m
+              If the info script fails, [1mtar[0m exits; otherwise, it[m
+              begins writing the next volume.[m
+[7m Manual page tar(1) line 677 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-M[0m, [1m--multi[0m[1m[7m-v[27m[0m[1molume[0m[m
+              Create/list/extract multi[7m-v[27molume archive.[m
+[m
+       [1m--rmt-command[0m=[4mCOMMAND[24m[m
+              Use [4mCOMMAND[24m instead of [1mrmt[0m when  accessing  remote[m
+              archives.   See  the description of the [1m-f[0m option,[m
+              above.[m
+[m
+       [1m--rsh-command[0m=[4mCOMMAND[24m[m
+              Use [4mCOMMAND[24m instead of [1mrsh[0m when  accessing  remote[m
+              archives.   See  the description of the [1m-f[0m option,[m
+              above.[m
+[m
+       [1m-[0m[1m[7m-v[27m[0m[1molno-file[0m=[4mFILE[24m[m
+              When this  option  is  used  in  conjunction  with[m
+              [1m--multi[0m[1m[7m-v[27m[0m[1molume[0m,  [1mtar[0m will keep track of which vol‐[m
+[7m Manual page tar(1) line 702 (press h for help or q to quit)[27m[K[K/[K              ume of a multi[7m-v[27molume archive  it  is  working  in[m
+[7m Manual page tar(1) line 703 (press h for help or q to quit)[27m[K[K/[K              [4mFILE[24m.[m
+[m
+   [1mDevice[0m [1mblocking[0m[m
+       [1m-b[0m, [1m--blocking-factor[0m=[4mBLOCKS[24m[m
+              Set record size to [4mBLOCKS[24mx[1m512[0m bytes.[m
+[m
+       [1m-B[0m, [1m--read-full-records[0m[m
+              When  listing or extracting, accept incomplete in‐[m
+              put records after end-of-file marker.[m
+[m
+       [1m-i[0m, [1m--ignore-zeros[0m[m
+              Ignore zeroed blocks  in  archive.   Normally  two[m
+[7m Manual page tar(1) line 715 (press h for help or q to quit)[27m[K[K/[K              consecutive 512-blocks filled with zeroes mean EOF[m
+              and tar stops  reading  after  encountering  them.[m
+[7m Manual page tar(1) line 717 (press h for help or q to quit)[27m[K[K[H[2J[HM[m
+[HM       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[HM   [1mUNIX-style[0m [1musage[0m[m
+[HM[m
+[HM       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[HM   [1mTraditional[0m [1musage[0m[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       tar - an archiving utility[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[17;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kvv[K[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H...skipping...
+       tered  together  after a single dash, e.g. [1m[7m-v[27m[0m[1mkp[0m.  Options[m
+       that take arguments (whether mandatory or optional),  can[m
+       appear at the end of such a cluster, e.g. [1m[7m-v[27m[0m[1mkpf[0m [1ma.tar[0m.[m
+[m
+       The  example  command  above  written in the [1mshort-option[0m[m
+       [1mstyle[0m could look like:[m
+[m
+       tar -cvf etc.tar /etc[m
+       or[m
+       tar -c [7m-v[27m -f etc.tar /etc[m
+[m
+       In [1mGNU[0m or [1mlong-option[0m [1mstyle[0m, each option begins with  two[m
+       dashes  and  has  a meaningful name, consisting of lower-[m
+       case letters and dashes.  When used, the long option  can[m
+       be abbreviated to its initial letters, provided that this[m
+       does not create ambiguity.  Arguments to long options are[m
+[7m Manual page tar(1) line 105 (press h for help or q to quit)[27m[K[K/[K       supplied  either as a separate command line word, immedi‐[m
+       ately following the option, or separated from the  option[m
+[7m Manual page tar(1) line 107 (press h for help or q to quit)[27m[K[K/[K       by  an  equals  sign with no intervening whitespace.  Op‐[m
+       tional arguments must always use the latter method.[m
+[m
+       Here are several ways of writing the example  command  in[m
+       this style:[m
+[m
+       tar --create --file etc.tar -[7m-v[27merbose /etc[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K/[K       or (abbreviating some options):[m
+       tar --cre --file=etc.tar -[7m-v[27merb /etc[m
+[m
+       The  options  in  all three styles can be intermixed, al‐[m
+       though doing so with old options is not encouraged.[m
+[m
+   [1mOperation[0m [1mmode[0m[m
+       The options listed in the table below tell GNU  [1mtar[0m  what[m
+       operation  it is to perform.  Exactly one of them must be[m
+       given.  Meaning of non-optional arguments depends on  the[m
+       operation mode requested.[m
+[m
+       [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+              Append archive to the end of another archive.  The[m
+              arguments are treated as the names of archives  to[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K/[K              append.   All  archives must be of the same format[m
+              as the archive they are appended to, otherwise the[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K/[K...skipping...
+              together with the [1m[7m-v[27m[0m ([1m-[0m[1m[7m-v[27m[0m[1merbose[0m) option.[m
+[m
+              There  is  no short option equivalent for this op‐[m
+              tion.[m
+[m
+       [1m-u[0m, [1m--update[0m[m
+              Append files which are newer than the  correspond‐[m
+              ing  copy in the archive.  Arguments have the same[m
+              meaning as with [1m-c[0m and [1m-r[0m options.   Notice,  that[m
+              newer   files  don't  replace  their  old  archive[m
+              copies, but instead are appended to the end of ar‐[m
+              chive.   The  resulting  archive  can thus contain[m
+              several members of the same name, corresponding to[m
+              various versions of the same file.[m
+[m
+       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-v[27m[0m[1mersion[0m[m
+              Print program version  and  copyright  information[m
+              and exit.[m
+[m
+[1mOPTIONS[0m[m
+   [1mOperation[0m [1mmodifiers[0m[m
+       [1m--check-device[0m[m
+              Check device numbers when creating incremental ar‐[m
+              chives (default).[m
+[m
+       [1m-g[0m, [1m--listed-incremental[0m=[4mFILE[24m[m
+              Handle new GNU-format incremental  backups.   [4mFILE[24m[m
+              is  the  name of a [1msnapshot[0m [1mfile[0m, where tar stores[m
+              additional information which  is  used  to  decide[m
+              which files changed since the previous incremental[m
+              dump and, consequently, must be dumped again.   If[m
+[7m Manual page tar(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              arguments allowed.[m
+[17;1H[K[7m Manual page tar(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Display  a list of available options and exit.  No[m
+[17;1H[K[7m Manual page tar(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--usage[0m[m
+[17;1H[K[7m Manual page tar(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ments allowed.[m
+[17;1H[K[7m Manual page tar(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Display a short option summary and exit.  No argu‐[m
+[17;1H[K[7m Manual page tar(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-?[0m, [1m--help[0m[m
+[17;1H[K[7m Manual page tar(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              exit.  No arguments are allowed.[m
+[17;1H[K[7m Manual page tar(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Show built-in defaults for various [1mtar[0m options and[m
+[17;1H[K[7m Manual page tar(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--show-defaults[0m[m
+[17;1H[K[7m Manual page tar(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              chive members to be extracted.[m
+[17;1H[K[7m Manual page tar(1) line 211 (press h for help or q to quit)[27m[K[K?[K[H[2J[HM       [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+[HM[m
+[HM              various versions of the same file.[m
+[HM              several members of the same name, corresponding to[m
+[HM              chive.   The  resulting  archive  can thus contain[m
+[HM              copies, but instead are appended to the end of ar‐[m
+[HM              newer   files  don't  replace  their  old  archive[m
+[HM              meaning as with [1m-c[0m and [1m-r[0m options.   Notice,  that[m
+[HM              ing  copy in the archive.  Arguments have the same[m
+[HM              Append files which are newer than the  correspond‐[m
+[HM       [1m-u[0m, [1m--update[0m[m
+[HM[m
+[HM              tion.[m
+[HM              There  is  no short option equivalent for this op‐[m
+[HM[m
+[HM              together with the [1m[7m-v[27m[0m ([1m-[0m[1m[7m-v[27m[0m[1merbose[0m) option.[m
+[17;1H[K[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              otherwise.  No output is  displayed,  unless  used[m
+[17;1H[K[7m Manual page tar(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with  code  [1m0[0m if a match is found, and with code [1m1[0m[m
+[17;1H[K[7m Manual page tar(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the volume label with  each  argument.   It  exits[m
+[17;1H[K[7m Manual page tar(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              command  line  arguments  are given.  [1mtar[0m compares[m
+[17;1H[K[7m Manual page tar(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              any) and exits with status [1m0[0m.  When  one  or  more[m
+[17;1H[K[7m Manual page tar(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              without  arguments, it prints the volume label (if[m
+[17;1H[K[7m Manual page tar(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Test the archive volume label and exit.  When used[m
+[17;1H[K[7m Manual page tar(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--test-label[0m[m
+[17;1H[K[7m Manual page tar(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page tar(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the members to list.[m
+[17;1H[K[7m Manual page tar(1) line 183 (press h for help or q to quit)[27m[K[K[H[2J[HM[m
+[HM       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[HM[m
+[HM       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[HM   [1mUNIX-style[0m [1musage[0m[m
+[HM[m
+[HM       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[HM   [1mTraditional[0m [1musage[0m[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       tar - an archiving utility[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[17;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[KCC[K[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H[1;1HTAR(1)                   GNU TAR Manual                   TAR(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       tar - an archiving utility[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H   [1mTraditional[0m [1musage[0m[m
+[8;1H       [1mtar[0m {[1mA[0m|[1mc[0m|[1md[0m|[1mr[0m|[1mt[0m|[1mu[0m|[1mx[0m}[[1mGnSkUWOmpsMBiajJzZhPlRvwo[0m] [[4mARG[24m...][m
+[9;1H[m
+[10;1H   [1mUNIX-style[0m [1musage[0m[m
+[11;1H       [1mtar[0m [1m-A[0m [[4mOPTIONS[24m] [4mARCHIVE[24m [4mARCHIVE[24m[m
+[12;1H[m
+[13;1H       [1mtar[0m [1m-c[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[14;1H[m
+[15;1H       [1mtar[0m [1m-d[0m [[1m-f[0m [4mARCHIVE[24m] [[4mOPTIONS[24m] [[4mFILE[24m...][m
+[16;1H[m
+[17;1H...skipping...
+       [1m[7m-C[27m[0m, [1m--directory[0m=[4mDIR[24m[m
+              Change to [4mDIR[24m before  performing  any  operations.[m
+              This  option  is  order-sensitive, i.e. it affects[m
+              all options that follow.[m
+[m
+       [1m--exclude[0m=[4mPATTERN[24m[m
+              Exclude files matching  [4mPATTERN[24m,  a  [1mglob[0m(3)-style[m
+              wildcard pattern.[m
+[m
+       [1m--exclude-backups[0m[m
+              Exclude backup and lock files.[m
+[m
+       [1m--exclude-caches[0m[m
+              Exclude  contents  of  directories containing file[m
+              [1mCACHEDIR.TAG[0m, except for the tag file itself.[m
+[m
+[7m Manual page tar(1) line 837 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker network create wpnet
+
+docker volume create wordpress-db
+docker volume create wordpress-files
+
+docker run -d --name mysql \
+[7m  --network wpnet \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m  -e MYSQL_DATABASE=wordpress \[27m
+[7m  -e MYSQL_USER=wpuser \[27m
+[7m  -e MYSQL_PASSWORD=wppass \[27m
+[7m  -v wordpress-db:/var/lib/mysql \[27m
+[7m  mysql:8[27m
+[7mdocker run -d --name wordpress \[27m
+[7m  --network wpnet \[27m
+[7m  -p 9090:80 \[27m
+[7m  -e WORDPRESS_DB_HOST=mysql:3306 \[27m
+[7m  -e WORDPRESS_DB_USER=wpuser \[27m[7m  -e WORDPRESS_DB_PASSWORD=wppass \[27m[7m  -e WORDPRESS_DB_NAME=wordpress \[27m[7m  -v wordpress-files:/var/www/html \[27m[7m  wordpress:php8.2-apache[27m[A[A[A[A[A[A[A[A[A[A[A  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \  -e WORDPRESS_DB_PASSWORD=wppass \  -e WORDPRESS_DB_NAME=wordpress \  -v wordpress-files:/var/www/html \  wordpress:php8.2-apache
+[?2004lb83ffb830a2533dbc9f757b600b3fc810d8d6909729386dc2e9ca54d82cb0b38
+wordpress-db
+wordpress-files
+docker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "1216e275a73d4f6bdcda2fb18ca5d72431a442918aa2a4c4e51f24309b3645d3". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docme[K[Kker rm mysql
+[?2004lmysql
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker volume [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     hittamig
+local     mysql-data
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network wpnet \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m  -e MYSQL_DATABASE=wordpress \[27m
+[7m  -e MYSQL_USER=wpuser \[27m
+[7m  -e MYSQL_PASSWORD=wppass \[27m
+[7m  -v wordpress-db:/var/lib/mysql \[27m
+[7m  mysql:8[27m
+[7mdocker run -d --name wordpress \[27m
+[7m  --network wpnet \[27m
+[7m  -p 9090:80 \[27m
+[7m  -e WORDPRESS_DB_HOST=mysql:3306 \[27m
+[7m  -e WORDPRESS_DB_USER=wpuser \[27m
+[7m  -e WORDPRESS_DB_PASSWORD=wppass \[27m
+[7m  -e WORDPRESS_DB_NAME=wordpress \[27m
+[7m  -v wordpress-files:/var/www/html \[27m
+[7m  wordpress:php8.2-apache[27m
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[Cdocker run -d --name mysql \
+  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \
+  -e WORDPRESS_DB_PASSWORD=wppass \
+  -e WORDPRESS_DB_NAME=wordpress \
+  -v wordpress-files:/var/www/html \
+  wordpress:php8.2-apache
+[A
+[?2004l1e0e6725c1fa367f7ef8702287566a3dc7df57d63ab72c72526a59faf337934d
+docker: Error response from daemon: Conflict. The container name "/wordpress" is already in use by container "b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ docker rs[Kestrt[K[Kart wordpress
+[?2004lwordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   21 seconds ago   Up 21 seconds   3306/tcp, 33060/tcp                       mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   56 seconds ago   Up 3 seconds    0.0.0.0:9090->80/tcp, [::]:9090->80/tcp   wordpress
+[?2004h[94mDEVOPS24/lektion4
+(B[m$ [H[2J[94mDEVOPS24/lektion4
+(B[m$ man docker/run[K[K[K[K-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run - Create and run a new container from an image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[7mManual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kww[K[1;1HDOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run - Create and run a new container from an image[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+[8;1H       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+[9;1H       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+[10;1H       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+[11;1H       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+[12;1H       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+[13;1H       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+[14;1H       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+[15;1H       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+[16;1H       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[17;1H[1;1HDOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run - Create and run a new container from an image[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+[8;1H       [1mtation[0m[=[4m[][24m]] [[1m--blkio[0m[1m[7m-w[27m[0m[1meight[0m[=[4m[BLKIO[24m[4m[7m-W[27m[24m[4mEIGHT][24m]]  [[1m--blkio-[0m[m
+[9;1H       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+[10;1H       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+[11;1H       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+[12;1H       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+[13;1H       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+[14;1H       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+[15;1H       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+[16;1H       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[17;1H       [1mread-bps[0m[=[4m[][24m]] [[1m--device-read-iops[0m[=[4m[][24m]] [[1m--device[0m[1m[7m-w[27m[0m[1mrite-[0m[m
+       [1mbps[0m[=[4m[][24m]] [[1m--device[0m[1m[7m-w[27m[0m[1mrite-iops[0m[=[4m[][24m]] [[1m--dns[0m[=[4m[][24m]] [[1m--dns-[0m[m
+       [1moption[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]]  [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+       [4mNAME[24m]]    [[1m-e[0m|[1m--env[0m[=[4m[][24m]]     [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+       [[1m--env-file[0m[=[4m[][24m]]    [[1m--expose[0m[=[4m[][24m]]   [[1m--group-add[0m[=[4m[][24m]][m
+       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m--init[0m] [[1m-i[0m|[1m--inter‐[0m[m
+       [1mactive[0m]    [[1m--ip[0m[=[4mIPv4-ADDRESS[24m]]   [[1m--ip6[0m[=[4mIPv6-ADDRESS[24m]][m
+[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ man docker-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)              Docker User Manuals             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run - Create and run a new container from an image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m  [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--anno‐[0m[m
+       [1mtation[0m[=[4m[][24m]] [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]]  [[1m--blkio-[0m[m
+       [1mweight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]]     [[1m--cap-[0m[m
+       [1madd[0m[=[4m[][24m]] [[1m--cap-drop[0m[=[4m[][24m]] [[1m--cgroupns[0m[=[4m[][24m]]  [[1m--cgroup-[0m[m
+       [1mparent[0m[=[4mCGROUP-PATH[24m]]    [[1m--cidfile[0m[=[4mCIDFILE[24m]]    [[1m--cpu-[0m[m
+       [1mcount[0m[=[4m0[24m]] [[1m--cpu-percent[0m[=[4m0[24m]] [[1m--cpu-period[0m[=[4m0[24m]] [[1m--cpu-[0m[m
+       [1mquota[0m[=[4m0[24m]]  [[1m--cpu-rt-period[0m[=[4m0[24m]]  [[1m--cpu-rt-runtime[0m[=[4m0[24m]][m
+       [[1m--cpus[0m[=[4m0.0[24m]]  [[1m--cpuset-cpus[0m[=[4mCPUSET-CPUS[24m]]  [[1m--cpuset-[0m[m
+       [1mmems[0m[=[4mCPUSET-MEMS[24m]]   [[1m-d[0m|[1m--detach[0m]  [[1m--detach-keys[0m[=[4m[][24m]][m
+       [[1m--device[0m[=[4m[][24m]]  [[1m--device-cgroup-rule[0m[=[4m[][24m]]   [[1m--device-[0m[m
+[7mManual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mread-bps[0m[=[4m[][24m]] [[1m--device-read-iops[0m[=[4m[][24m]] [[1m--device-write-[0m[m
+[7mManual page docker-run(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mbps[0m[=[4m[][24m]] [[1m--device-write-iops[0m[=[4m[][24m]] [[1m--dns[0m[=[4m[][24m]] [[1m--dns-[0m[m
+[7mManual page docker-run(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1moption[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]]  [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+[7mManual page docker-run(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mNAME[24m]]    [[1m-e[0m|[1m--env[0m[=[4m[][24m]]     [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+[7mManual page docker-run(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--env-file[0m[=[4m[][24m]]    [[1m--expose[0m[=[4m[][24m]]   [[1m--group-add[0m[=[4m[][24m]][m
+[7mManual page docker-run(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m--init[0m] [[1m-i[0m|[1m--inter‐[0m[m
+[7mManual page docker-run(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mactive[0m]    [[1m--ip[0m[=[4mIPv4-ADDRESS[24m]]   [[1m--ip6[0m[=[4mIPv6-ADDRESS[24m]][m
+[7mManual page docker-run(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--ipc[0m[=[4mIPC[24m]]   [[1m--isolation[0m[=[4mdefault[24m]]    [[1m--kernel-mem‐[0m[m
+[7mManual page docker-run(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mory[0m[=[4mKERNEL-MEMORY[24m]]      [[1m-l[0m|[1m--label[0m[=[4m[][24m]]     [[1m--label-[0m[m
+[7manual page docker-run(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mfile[0m[=[4m[][24m]] [[1m--link[0m[=[4m[][24m]]  [[1m--link-local-ip[0m[=[4m[][24m]]  [[1m--log-[0m[m
+[7manual page docker-run(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdriver[0m[=[4m[][24m]]    [[1m--log-opt[0m[=[4m[][24m]]   [[1m-m[0m|[1m--memory[0m[=[4mMEMORY[24m]][m
+[7manual page docker-run(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--mac-address[0m[=[4mMAC-ADDRESS[24m]] [[1m--memory-reservation[0m[=[4mMEM‐[24m[m
+[7manual page docker-run(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mORY-RESERVATION[24m]] [[1m--memory-swap[0m[=[4mLIMIT[24m]] [[1m--memory-swap‐[0m[m
+[7manual page docker-run(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mpiness[0m[=[4mMEMORY-SWAPPINESS[24m]]           [[1m--mount[0m[=[4m[MOUNT][24m]][m
+[7manual page docker-run(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--name[0m[=[4mNAME[24m]]       [[1m--network-alias[0m[=[4m[][24m]]      [[1m--net‐[0m[m
+[7manual page docker-run(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mwork[0m[=[4m"bridge"[24m]]    [[1m--oom-kill-disable[0m]    [[1m--oom-score-[0m[m
+[7manual page docker-run(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1madj[0m[=[4m0[24m]]      [[1m-P[0m|[1m--publish-all[0m]      [[1m-p[0m|[1m--publish[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--pid[0m[=[4m[PID][24m]]         [[1m--userns[0m[=[4m[][24m]]          [[1m--pids-[0m[m
+[7manual page docker-run(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mlimit[0m[=[4mPIDS_LIMIT[24m]]      [[1m--privileged[0m]     [[1m--read-only[0m][m
+[7manual page docker-run(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--restart[0m[=[4mRESTART[24m]]    [[1m--rm[0m]     [[1m--security-opt[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--storage-opt[0m[=[4m[][24m]]   [[1m--stop-signal[0m[=[4mSIGNAL[24m]]  [[1m--stop-[0m[m
+[7manual page docker-run(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtimeout[0m[=[4mTIMEOUT[24m]] [[1m--shm-size[0m[=[4m[][24m]] [[1m--sig-proxy[0m[=[4mtrue[24m]][m
+[7manual page docker-run(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--sysctl[0m[=[4m[][24m]]  [[1m-t[0m|[1m--tty[0m] [[1m--tmpfs[0m[=[4m[CONTAINER-DIR[:OP‐[24m[m
+[7manual page docker-run(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mTIONS][24m]] [[1m-u[0m|[1m--user[0m[=[4mUSER[24m]] [[1m--ulimit[0m[=[4m[][24m]]  [[1m--uts[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-v[0m|[1m--volume[0m[=[4m[[HOST-DIR:]CONTAINER-DIR[:OPTIONS]][24m]][m
+[7manual page docker-run(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[7manual page docker-run(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [[1m-w[0m|[1m--workdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[7manual page docker-run(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page docker-run(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mDESCRIPTION[0m[m
+[7manual page docker-run(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[7manual page docker-run(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       process with its own file system, its own networking, and[m
+[7manual page docker-run(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       its own isolated process tree. The IMAGE which starts the[m
+[7manual page docker-run(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       process may define defaults related to the  process  that[m
+[7manual page docker-run(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       will  be  run in the container, the networking to expose,[m
+[7manual page docker-run(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[7manual page docker-run(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ator  or  administrator who starts the container from the[m
+[7manual page docker-run(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[7manual page docker-run(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       any other Docker command.[m
+[7manual page docker-run(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page docker-run(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[7manual page docker-run(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[7manual page docker-run(1) line 42 (press h for help or q to quit)[27m[K[K/[K--[Kww[K[1;1H       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[2;1H       [[1m-w[0m|[1m--workdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[3;1H[m
+[4;1H[1mDESCRIPTION[0m[m
+[5;1H       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[6;1H       process with its own file system, its own networking, and[m
+[7;1H       its own isolated process tree. The IMAGE which starts the[m
+[8;1H       process may define defaults related to the  process  that[m
+[9;1H       will  be  run in the container, the networking to expose,[m
+[10;1H       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[11;1H       ator  or  administrator who starts the container from the[m
+[12;1H       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[13;1H       any other Docker command.[m
+[14;1H[m
+[15;1H       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[16;1H       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[17;1H[1;1H       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[2;1H       [[1m[7m-w[27m[0m|[1m-[0m[1m[7m-w[27m[0m[1morkdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[3;1H[m
+[4;1H[1mDESCRIPTION[0m[m
+[5;1H       Run  a  process  in  a new container. [1mdocker[0m [1mrun[0m starts a[m
+[6;1H       process with its own file system, its own networking, and[m
+[7;1H       its own isolated process tree. The IMAGE which starts the[m
+[8;1H       process may define defaults related to the  process  that[m
+[9;1H       will  be  run in the container, the networking to expose,[m
+[10;1H       and more, but [1mdocker[0m [1mrun[0m gives final control to the oper‐[m
+[11;1H       ator  or  administrator who starts the container from the[m
+[12;1H       image. For that reason [1mdocker[0m [1mrun[0m has more  options  than[m
+[13;1H       any other Docker command.[m
+[14;1H[m
+[15;1H       If  the  IMAGE is not already loaded then [1mdocker[0m [1mrun[0m will[m
+[16;1H       pull the IMAGE, and  all  image  dependencies,  from  the[m
+[17;1H       repository in the same way running [1mdocker[0m [1mpull[0m IMAGE, be‐[m
+[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       fore it starts the container from that image.[m
+[7manual page docker-run(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [[1m[7m-w[27m[0m|[1m-[0m[1m[7m-w[27m[0m[1morkdir[0m[=[4mWORKDIR[24m]] IMAGE [COMMAND] [ARG...][m
+[17;1H[K[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [[1m--volume-driver[0m[=[4mDRIVER[24m]]          [[1m--volumes-from[0m[=[4m[][24m]][m
+[17;1H[K[7manual page docker-run(1) line 42 (press h for help or q to quit)[27m[K[K/[K       repository in the same way running [1mdocker[0m [1mpull[0m IMAGE, be‐[m
+[7manual page docker-run(1) line 43 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--blkio[0m[1m[7m-w[27m[0m[1meight[0m=[4m0[24m[m
+          Block IO weight (relative  weight)  accepts  a  weight[m
+       value between 10 and 1000.[m
+[m
+       [1m--blkio[0m[1m[7m-w[27m[0m[1meight-device[0m=[][m
+          Block  IO  weight (relative device weight, format: [1mDE‐[0m[m
+       [1mVICE_NAME:WEIGHT[0m).[m
+[m
+       [1m-c[0m, [1m--cpu-shares[0m=[4m0[24m[m
+          CPU shares (relative weight)[m
+[m
+       By default, all containers get the same proportion of CPU[m
+       cycles.  This  proportion can be modified by changing the[m
+       container's CPU share weighting relative to the weighting[m
+       of all other running containers.[m
+[m
+[7manual page docker-run(1) line 86 (press h for help or q to quit)[27m[K[K/[K       To  modify  the  proportion from the default of 1024, use[m
+       the [1m-c[0m or [1m--cpu-shares[0m flag to set the weighting to 2  or[m
+       higher.[m
+[m
+[7manual page docker-run(1) line 90 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--device[0m[1m[7m-w[27m[0m[1mrite-bps[0m=[][m
+          Limit  write  rate  to  a device (e.g. --device[7m-w[27mrite-[m
+       bps=/dev/sda:1mb)[m
+[m
+       [1m--device[0m[1m[7m-w[27m[0m[1mrite-iops[0m=[][m
+          Limit write rate to  a  device  (e.g.  --device[7m-w[27mrite-[m
+       iops=/dev/sda:1000)[m
+[m
+       [1m--dns-search[0m=[][m
+          Set  custom  DNS search domains (Use --dns-search=. if[m
+       you don't wish to set the search domain)[m
+[m
+       [1m--dns-option[0m=[][m
+          Set custom DNS options[m
+[m
+       [1m--dns[0m=[][m
+[7mnual page docker-run(1) line 278 (press h for help or q to quit)[27m[K[K/[K          Set custom DNS servers[m
+[7mnual page docker-run(1) line 279 (press h for help or q to quit)[27m[K[K/[K[m
+       This option can be used to override the DNS configuration[m
+       passed to the container. Typically this is necessary when[m
+[7mnual page docker-run(1) line 282 (press h for help or q to quit)[27m[K[K/[K       the host DNS configuration is invalid for  the  container[m
+[7mnual page docker-run(1) line 283 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       mounts  a volume in read-only or read[7m-w[27mrite mode, respec‐[m
+       tively. By default, volumes  are  mounted  in  read[7m-w[27mrite[m
+       mode.   You  can also specify the consistency requirement[m
+       for the mount, either [1m:consistent[0m (the default), [1m:cached[0m,[m
+       or [1m:delegated[0m.  Multiple options are separated by commas,[m
+       e.g. [1m:ro,cached[0m.[m
+[m
+       Labeling systems like SELinux require that proper  labels[m
+       are  placed  on  volume content mounted into a container.[m
+       Without a label, the security system  might  prevent  the[m
+       processes  running  inside  the  container from using the[m
+       content. By default, Docker does not  change  the  labels[m
+       set by the OS.[m
+[m
+       To  change  a label in the container context, you can add[m
+       either of two suffixes [1m:z[0m or  [1m:Z[0m  to  the  volume  mount.[m
+[7mnual page docker-run(1) line 959 (press h for help or q to quit)[27m[K[K/[K       These suffixes tell Docker to relabel file objects on the[m
+[7mnual page docker-run(1) line 960 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       (read[7m-w[27mrite or[m
+          read-only)  as  it is mounted in the source container.[m
+       Optionally, you[m
+          can change this by suffixing the container-id with ei‐[m
+       ther the [1m:ro[0m or[m
+          [1m:rw[0m keyword.[m
+[m
+       If  the  location of the volume from the source container[m
+       overlaps with[m
+          data residing on a target container, then  the  volume[m
+       hides[m
+          that data on the target.[m
+[m
+       [1m[7m-w[27m[0m, [1m-[0m[1m[7m-w[27m[0m[1morkdir[0m=""[m
+          Working directory inside the container[m
+[m
+[7mual page docker-run(1) line 1061 (press h for help or q to quit)[27m[K[K/[K       The default working directory for running binaries within[m
+       a container is the root directory (/). The developer  can[m
+       set  a  different default with the Dockerfile WORKDIR in‐[m
+       struction. The operator can override the  working  direc‐[m
+       tory by using the [1m[7m-w[27m[0m option.[m
+[m
+[1mExit[0m [1mStatus[0m[m
+       The exit code from [1mdocker[0m [1mrun[0m gives information about why[m
+       the container failed to  run  or  why  it  exited.   When[m
+       [1mdocker[0m  [1mrun[0m  exits  with  a non-zero code, the exit codes[m
+       follow the [1mchroot[0m standard, see below:[m
+[m
+       [4m125[24m [4mif[24m [4mthe[24m [4merror[24m [4mis[24m [4mwith[24m [4mDocker[24m [4mdaemon[24m [4mitself[24m[m
+[7mual page docker-run(1) line 1074 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mDEVOPS24/lektion4
+(B[m$ exit
+[?2004lexit
+
+Script done on 2025-08-26 11:32:07+02:00 [COMMAND_EXIT_CODE="0"]

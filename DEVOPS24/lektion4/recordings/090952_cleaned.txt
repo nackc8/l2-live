@@ -1,0 +1,1541 @@
+Script started on 2025-08-26 09:09:57+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="9"]
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker network ls
+NETWORK ID     NAME          DRIVER    SCOPE
+1d9cfc45eea5   bridge        bridge    local
+2f730c7d3d12   gitlab-net    bridge    local
+af00aa7844d0   host          host      local
+247da08535f0   jenkins-net   bridge    local
+6ee00c8e0df9   none          null      local
+3cac753cf8cb   wpnet         bridge    local
+DEVOPS24/lektion4
+$ docker netwrork prune
+WARNING! This will remove all custom networks not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+jenkins-net
+gitlab-net
+wpnet
+
+DEVOPS24/lektion4
+$ docker network prunlsDEVOPS24/lektion4
+$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+1d9cfc45eea5   bridge    bridge    local
+af00aa7844d0   host      host      local
+6ee00c8e0df9   none      null      local
+DEVOPS24/lektion4
+$ bridge    bridge    local
+af00aa7844d0   host      host      local
+6ee00c8e0df9   none      ^C
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker network create my-network
+
+docker network create my-network
+
+c2d213c508a3eee7ce14d206a11e867b1484004a63eb03906443848f7c7f865c
+DEVOPS24/lektion4
+$ docker network lsDEVOPS24/lektion4
+$ docker network ls
+NETWORK ID     NAME         DRIVER    SCOPE
+1d9cfc45eea5   bridge       bridge    local
+af00aa7844d0   host         host      local
+c2d213c508a3   my-network   bridge    local
+6ee00c8e0df9   none         null      local
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysql
+docker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysq
+
+
+
+
+
+
+
+
+
+
+
+
+docker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "202eb2c2e78850e7b4ad963379f6c8448e1ed6f6a37dfc7ca8f6c98098885c1b". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+DEVOPS24/lektion4
+$ docker prunrm mysql
+mysql
+DEVOPS24/lektion4
+$ docker rm mysqphpmyadmin
+Error response from daemon: No such container: phpmyadmin
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker rm phpmyadmimysqun -d --name mysql   --network my-network   -e MYSQL_ROOT_PASSWORD=root    mysql
+36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                 NAMES
+36013fcf8c2c   mysql     "docker-entrypoint.s…"   11 seconds ago   Up 11 seconds   3306/tcp, 33060/tcp   mysql
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker run -d --name phpmyadmin \
+  --network my-network \
+  -e PMA_HOST=mysql \
+  -p 8080:80 \
+   phpmyadmin
+
+docker run -d --name phpmyadmin \
+  --network my-network \
+  -e PMA_HOST=mysql \
+  -p 8080:80 \
+   phpmyadmin
+
+ade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+ade2b3f69df5   phpmyadmin   "/docker-entrypoint.…"   4 seconds ago   Up 4 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   phpmyadmin
+36013fcf8c2c   mysql        "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp                       mysql
+DEVOPS24/lektion4
+$ docker stop mysql
+mysql phpmyadmin
+phpmyadmin
+mysql
+phpmyadmin
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps -a
+CONTAINER ID   IMAGE                     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   4 minutes ago   Exited (0) 13 seconds ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   6 minutes ago   Exited (0) 13 seconds ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   11 hours ago    Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   11 hours ago    Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago    Exited (137) 11 hours ago             wordpress
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker volume create mysql-data^C
+DEVOPS24/lektion4
+$ docker volume lsDEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+local     aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+local     b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+local     databashantering_mariadb_data
+local     e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+local     f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+local     fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+DEVOPS24/lektion4
+$ docker volume lprune
+WARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+aa4322f896ec93d257eaf1671a691e8e7f8a188f4f4079645f467ac9f5c45c2f
+e9703d93287562e939602c58ede68910bbd205fec7fa2ad9f183d782cf7ce616
+fe431ed08e0d65bd78df150c49ac50f54117380526a3446e97fe4937be6345ec
+a0425407b0bb96a43733adfec03f2e590e214e24e08a5a19ad8d8f4434c9c52c
+144e0723f3dbfb5917bf8005aaf4e47d1dc30b82f688a1e8d72e581a2a07919f
+b76175c9cef7e10098b56ec3ed1740a12be653aaea234b5fb913e7b6f9616af9
+f36380d34e8ca25c051cb6ee81e55270ffa530a67a39000b25fea4c82bc2dde0
+
+Total reclaimed space: 1.102GB
+DEVOPS24/lektion4
+$ docker volume prunlsDEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     databashantering_mariadb_data
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     jenkins_home
+local     pingurl_persistance_data
+local     server-start.sh
+local     wordpress-db
+local     wordpress-files
+DEVOPS24/lektion4
+$ docker volume lprune -a
+WARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+server-start.sh
+jenkins_home
+databashantering_mariadb_data
+wordpress-db
+pingurl_persistance_data
+
+Total reclaimed space: 907.4MB
+DEVOPS24/lektion4
+$ docker volume prune -lsDEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     wordpress-files
+DEVOPS24/lektion4
+$ docker volume lrm gitlab-configgitlab-config gitlab-datagitlab-data gitlab-logsgitlab-logs jenkins-datajenkins-data wordpress-files
+wordpress-files
+Error response from daemon: remove gitlab-config: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-data: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove gitlab-logs: volume is in use - [e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace]
+Error response from daemon: remove jenkins-data: volume is in use - [11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885]
+Error response from daemon: remove wordpress-files: volume is in use - [ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647]
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion4
+$ docker pvolume rm gitlab-config gitlab-data gitlab-logs jenkins-data wordpress-filesps
+ -aDEVOPS24/lektion4
+$ docker ps -a
+CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+ade2b3f69df5   phpmyadmin                "/docker-entrypoint.…"   28 minutes ago   Exited (0) 24 minutes ago             phpmyadmin
+36013fcf8c2c   mysql                     "docker-entrypoint.s…"   30 minutes ago   Exited (0) 24 minutes ago             mysql
+e58c952b8f0b   gitlab/gitlab-ce:latest   "/assets/init-contai…"   12 hours ago     Exited (137) 11 hours ago             gitlab
+11469c3e086a   jenkins/jenkins:lts       "/usr/bin/tini -- /u…"   12 hours ago     Exited (143) 11 hours ago             jenkins
+ec6af4f8625b   wordpress:php8.2-apache   "docker-entrypoint.s…"   12 hours ago     Exited (137) 12 hours ago             wordpress
+DEVOPS24/lektion4
+$ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+ade2b3f69df59cf66e703591ebace21d0ce9bb69a6b9ca606aaf683a63e1ac9f
+36013fcf8c2c9d1c9457f9b63ee1cde9e934849d2f2503e4380e291cce71693e
+e58c952b8f0b2bc08ca3598fed4f18fdc821e6dd7376ded4eafd9e64dbda4ace
+11469c3e086a6cffc979939ceec6b24b6277bc8e9d6485511fbe3ee68d608885
+ec6af4f8625b9e7d7c39cbe3c88c81093f1cc35e416fdeb7a17a46052d914647
+
+Total reclaimed space: 3.803MB
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DEVOPS24/lektion4
+ps -volume rm gitlab-config gitlab-data gitlab-logs jenkins-data wordpress-filesls
+prune -
+WARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+990d25da12cee693a1a631267876036adfb44aa11d504a23c0a8ab2a91810b18
+
+Total reclaimed space: 204.9MB
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     gitlab-config
+local     gitlab-data
+local     gitlab-logs
+local     jenkins-data
+local     wordpress-files
+DEVOPS24/lektion4
+$ docker volume lprune -a
+WARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+gitlab-data
+jenkins-data
+wordpress-files
+gitlab-config
+gitlab-logs
+
+Total reclaimed space: 671.9MB
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+DEVOPS24/lektion4
+$ docker volume create mysql-data
+
+docker volume create mysql-data
+DEVOPS24/lektion4
+$ docker volume create mysql-data
+mysql-data
+DEVOPS24/lektion4
+$ docker volume DEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     mysql-data
+DEVOPS24/lektion4
+$ # Starta containern
+docker run -d \
+  --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -v mysql-data:/var/lib/mysql \
+  mysql:8.0
+# Starta containern
+docker run -d \
+  --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -v mysql-data:/var/lib/mysql \
+  mysql:8.0 .
+Unable to find image 'mysql:8.0' locally
+8.0: Pulling from library/mysql
+
+500d7b2546c4: Already exists 
+5cd63fb67c17: Pulling fs layer 
+9476b8faedba: Pulling fs layer 
+ecc6cc933381: Pulling fs layer 
+789fa151603e: Pulling fs layer 
+1756a372d796: Pulling fs layer 
+131412d69359: Pulling fs layer 
+4d3eacc36b14: Pulling fs layer 
+bc0f5543b464: Pulling fs layer 
+4d3eacc36b14: Waiting fs layer 
+Digest: sha256:18dee92bbc23147cf0917a26b079c7b659e1170bd03f2ccc42b91236a02fa34b
+Status: Downloaded newer image for mysql:8.0
+1216e275a73d4f6bdcda2fb18ca5d72431a442918aa2a4c4e51f24309b3645d3
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                 NAMES
+1216e275a73d   mysql:8.0   "docker-entrypoint.s…"   About a minute ago   Up About a minute   3306/tcp, 33060/tcp   mysql
+DEVOPS24/lektion4
+psdocker prun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0
+
+
+DEVOPS24/lektion4
+psdocker prun -d   --name mysql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0
+# Starta containernql   -e MYSQL_ROOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.0
+docker volume lcreate mysql-dathittamig
+hittamig
+DEVOPS24/lektion4
+$ # Starta containernttamig:/hittamigOT_PASSWORD=root   -v mysql-data:/var/lib/mysql   mysql:8.hittami:/hittami:/hittamig
+$  -v hittamig:/hittamig itamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hitamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig -v hittamig:/hittamig
+
+
+ ddebian
+0d246cf9bf420707130a0a21f06086b2bf832828fdb24bc30f16c945fc139cb4
+DEVOPS24/lektion4
+$ docker run -d -v hittamig:/hittamig debiait
+ea98153cf04b870d405181a7f3a78ebe7efab71faf97ce083fba5c861b76e654
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                 NAMES
+ea98153cf04b   debian      "bash"                   2 seconds ago   Up 1 second                          sharp_vaughan
+1216e275a73d   mysql:8.0   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   3306/tcp, 33060/tcp   mysql
+DEVOPS24/lektion4
+$ edock
+docker stop mysql
+mysql
+DEVOPS24/lektion4
+$ docker exattach sharp_vaughan
+sharp_vaugha-sharp_vaughaisharp_vaugha sharp_vaugha
+unknown shorthand flag: 'i' in -i
+
+Usage:  docker attach [OPTIONS] CONTAINER
+
+Run 'docker attach --help' for more information
+DEVOPS24/lektion4
+$ docker attach -i sharp_vaughasharp_vaughasharp_vaughasharp_vaughaDEVOPS24/lektion4
+$ docker attach sharp_vaugha
+root@ea98153cf04b:/# root@ea98153cf04b:/# ls
+bin   dev  hittamig  lib    media  opt	 root  sbin  sys  usr
+boot  etc  home      lib64  mnt    proc  run   srv   tmp  var
+root@ea98153cf04b:/# cd jhohittamig/
+root@ea98153cf04b:/hittamig# echo SIDFIL 
+IDFIL
+root@ea98153cf04b:/hittamig# 
+echo IDFIL > $RNANDOM
+root@ea98153cf04b:/hittamig# ls
+22149
+root@ea98153cf04b:/hittamig# exit
+exit
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ find / -iname 22149
+22149 2>/dev/nulsudo 
+[sudo] password for kent: 
+/var/lib/docker/volumes/hittamig/_data/22149
+^C
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ man tar
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -t [-f ARCHIVE] [OPTIONS] [MEMBER...]q to quit)
+ ESESCOBpage tar(1) line 2 (press h for help or q to quit)
+       tar -r [-f ARCHIVE] [OPTIONS] [FILE...]r q to quit)
+ ESESCOBpage tar(1) line 4 (press h for help or q to quit)
+       tar -u [-f ARCHIVE] [OPTIONS] [FILE...]r q to quit)
+ ESESCOBpage tar(1) line 6 (press h for help or q to quit)
+       tar -x [-f ARCHIVE] [OPTIONS] [MEMBER...]q to quit)
+ ESESCOBpage tar(1) line 8 (press h for help or q to quit)
+   GNU-style usage) line 9 (press h for help or q to quit)
+       tar {--catenate|--concatenate} [OPTIONS] ARCHIVE ARCHIVE
+ ESESCOBpage tar(1) line 11 (press h for help or q to quit)
+       tar --create [--file ARCHIVE] [OPTIONS] [FILE...]it)
+ ESESCOBpage tar(1) line 13 (press h for help or q to quit)
+       tar   {--diff|--compare}   [--file   ARCHIVE]   [OPTIONS]
+       [FILE...](1) line 15 (press h for help or q to quit)
+ ESESCOBpage tar(1) line 16 (press h for help or q to quit)
+       tar --delete [--file ARCHIVE] [OPTIONS] [MEMBER...])
+ ESESCOBpage tar(1) line 18 (press h for help or q to quit)
+       tar --append [-f ARCHIVE] [OPTIONS] [FILE...]o quit)
+ ESESCOBpage tar(1) line 20 (press h for help or q to quit)
+       tar --list [-f ARCHIVE] [OPTIONS] [MEMBER...]o quit)
+ ESESCOBpage tar(1) line 22 (press h for help or q to quit)
+       tar --test-label [--file ARCHIVE] [OPTIONS] [LABEL...]
+ ESESCOBpage tar(1) line 24 (press h for help or q to quit)
+       tar --update [--file ARCHIVE] [OPTIONS] [FILE...]it)
+ ESESCOBpage tar(1) line 26 (press h for help or q to quit)
+       tar --update [-f ARCHIVE] [OPTIONS] [FILE...]o quit)
+ ESESCOBpage tar(1) line 28 (press h for help or q to quit)
+M       tar --create [--file ARCHIVE] [OPTIONS] [FILE...]t)
+MESESCOApage tar(1) line 28 (press h for help or q to quit)
+M       tar {--catenate|--concatenate} [OPTIONS] ARCHIVE ARCHIVE
+M   GNU-style usage line 26 (press h for help or q to quit)
+MESESCOApage tar(1) line 25 (press h for help or q to quit)
+M       tar -x [-f ARCHIVE] [OPTIONS] [MEMBER...]q to quit)
+MESESCOApage tar(1) line 23 (press h for help or q to quit)
+M       tar -u [-f ARCHIVE] [OPTIONS] [FILE...]r q to quit)
+       tar --list [-f ARCHIVE] [OPTIONS] [MEMBER...]o quit)
+ ESESCOBpage tar(1) line 22 (press h for help or q to quit)
+       tar --test-label [--file ARCHIVE] [OPTIONS] [LABEL...]
+ ESESCOBpage tar(1) line 24 (press h for help or q to quit)
+       tar --update [--file ARCHIVE] [OPTIONS] [FILE...]it)
+ ESESCOBpage tar(1) line 26 (press h for help or q to quit)
+       tar --update [-f ARCHIVE] [OPTIONS] [FILE...]o quit)
+ ESESCOBpage tar(1) line 28 (press h for help or q to quit)
+       tar {--extract|--get} [-f ARCHIVE] [OPTIONS] [MEMBER...]
+ ESESCOBpage tar(1) line 30 (press h for help or q to quit)
+NOTESCOBpage tar(1) line 31 (press h for help or q to quit)
+       This manpage is a short description of GNU  tar.   For  a
+       detailed  discussion, including examples and usage recom‐
+       mendations, refer to the GNU Tar Manual available in tex‐
+       info  format.   If the info reader and the tar documenta‐
+       tion are properly installed on your system, the command
+ ESESCOBpage tar(1) line 37 (press h for help or q to quit)
+           info tar line 38 (press h for help or q to quit)
+ ESESCOBpage tar(1) line 39 (press h for help or q to quit)
+       should give you access to the complete manual. quit)
+ ESESCOBpage tar(1) line 41 (press h for help or q to quit)
+       You can also view the  manual  using  the  info  mode  in
+       emacs(1), or find it in various formats online atit)
+ ESESCOBpage tar(1) line 44 (press h for help or q to quit)
+           http://www.gnu.org/software/tar/manualq to quit)
+ ESESCOBpage tar(1) line 46 (press h for help or q to quit)
+       If  any  discrepancies occur between this manpage and the
+       GNU Tar Manual, the later shall be considered the author‐
+       itative source.ne 49 (press h for help or q to quit)
+ ESESCOBpage tar(1) line 50 (press h for help or q to quit)
+DESCRIPTIONe tar(1) line 51 (press h for help or q to quit)
+       GNU  tar is an archiving program designed to store multi‐
+       ple files in a single file (an archive), and  to  manipu‐
+       late  such archives.  The archive can be either a regular
+       file or a device (e.g. a tape drive, hence  the  name  of
+       the  program,  which stands for tape archiver), which can
+       be located either on the local or on a remote machine.
+ ESESCOBpage tar(1) line 58 (press h for help or q to quit)
+   Option styles(1) line 59 (press h for help or q to quit)
+       Options to GNU  tar  can  be  given  in  three  different
+       styles.   In  traditional  style, the first argument is a
+       cluster of option letters and  all  subsequent  arguments
+       supply arguments to those options that require them.  The
+       arguments are read in the same order as the  option  let‐
+       ters.   Any  command line words that remain after all op‐
+       tions has been processed are treated as non-optional  ar‐
+       guments: file or archive member names. or q to quit)
+ ESESCOBpage tar(1) line 68 (press h for help or q to quit)
+       For  example, the c option requires creating the archive,
+       the v option requests the verbose operation,  and  the  f
+       option  takes  an  argument that sets the name of the ar‐
+       chive to operate upon.  The following command, written in
+       the  traditional  style, instructs tar to store all files
+       from the directory /etc into  the  archive  file  etc.tar
+       verbosely listing the files being archived: to quit)
+ ESESCOBpage tar(1) line 76 (press h for help or q to quit)
+       tar cfv etc.tar /etc (press h for help or q to quit)
+ ESESCOBpage tar(1) line 78 (press h for help or q to quit)
+       In UNIX or short-option style, each option letter is pre‐
+       fixed with a single dash, as in other command line utili‐
+       ties.   If an option takes argument, the argument follows
+       it, either as a separate command line  word,  or  immedi‐
+       ately following the option.  However, if the option takes
+       an optional argument, the argument must follow the option
+       letter   without   any   intervening  whitespace,  as  in
+       -g/tmp/snar.db.ne 86 (press h for help or q to quit)
+ ESESCOBpage tar(1) line 87 (press h for help or q to quit)
+       Any number of options not taking arguments can  be  clus‐
+       tered  together  after a single dash, e.g. -vkp.  Options
+       that take arguments (whether mandatory or optional),  can
+       appear at the end of such a cluster, e.g. -vkpf a.tar.
+ ESESCOBpage tar(1) line 92 (press h for help or q to quit)
+       The  example  command  above  written in the short-option
+       style could look like:press h for help or q to quit)
+ ESESCOBpage tar(1) line 95 (press h for help or q to quit)
+       tar -cvf etc.tar /etc(press h for help or q to quit)
+       orage tar(1) line 97 (press h for help or q to quit)
+       tar -c -v -f etc.tar /etcss h for help or q to quit)
+ ESESCOBpage tar(1) line 99 (press h for help or q to quit)
+       In GNU or long-option style, each option begins with  two
+       dashes  and  has  a meaningful name, consisting of lower-
+       case letters and dashes.  When used, the long option  can
+       be abbreviated to its initial letters, provided that this
+       does not create ambiguity.  Arguments to long options are
+       supplied  either as a separate command line word, immedi‐
+       ately following the option, or separated from the  option
+       by  an  equals  sign with no intervening whitespace.  Op‐
+       tional arguments must always use the latter method.t)
+ ESESCOBpage tar(1) line 109 (press h for help or q to quit)
+       Here are several ways of writing the example  command  in
+       this style:) line 111 (press h for help or q to quit)
+ ESESCOBpage tar(1) line 112 (press h for help or q to quit)
+       tar --create --file etc.tar --verbose /etc q to quit)
+       or (abbreviating some options):for help or q to quit)
+       tar --cre --file=etc.tar --verb /etcelp or q to quit)
+ ESESCOBpage tar(1) line 116 (press h for help or q to quit)
+       The  options  in  all three styles can be intermixed, al‐
+       though doing so with old options is not encouraged.t)
+ ESESCOBpage tar(1) line 119 (press h for help or q to quit)
+   Operation mode1) line 120 (press h for help or q to quit)
+       The options listed in the table below tell GNU  tar  what
+       operation  it is to perform.  Exactly one of them must be
+       given.  Meaning of non-optional arguments depends on  the
+       operation mode requested.ess h for help or q to quit)
+ ESESCOBpage tar(1) line 125 (press h for help or q to quit)
+       -A, --catenate, --concatenateh for help or q to quit)
+              Append archive to the end of another archive.  The
+              arguments are treated as the names of archives  to
+              append.   All  archives must be of the same format
+              as the archive they are appended to, otherwise the
+              resulting  archive  might be unusable with non-GNU
+              implementations of tar.   Notice  also  that  when
+              more  than  one archive is given, the members from
+              archives other than the first one will be accessi‐
+              ble  in the resulting archive only if using the -i
+              (--ignore-zeros) option.for help or q to quit)
+ ESESCOBpage tar(1) line 137 (press h for help or q to quit)
+              Compressed archives cannot be concatenated.it)
+ ESESCOBpage tar(1) line 139 (press h for help or q to quit)
+       -c, --create line 140 (press h for help or q to quit)
+              Create a new archive.  Arguments supply the  names
+              of  the  files  to  be  archived.  Directories are
+              archived recursively,  unless  the  --no-recursion
+              option is given.press h for help or q to quit)
+ ESESCOBpage tar(1) line 145 (press h for help or q to quit)
+       -d, --diff, --compare (press h for help or q to quit)
+              Find  differences between archive and file system.
+              The arguments are  optional  and  specify  archive
+              members  to  compare.   If  not given, the current
+              working directory is assumed.elp or q to quit)
+ ESESCOBpage tar(1) line 151 (press h for help or q to quit)
+       --deleter(1) line 152 (press h for help or q to quit)
+              Delete from the  archive.   The  arguments  supply
+              names  of  the  archive members to be removed.  At
+              least one argument must be given.
+
+              This option does not  operate  on  compressed  ar‐
+              chives.  There is no short option equivalent.
+
+       -r, --append
+              Append  files to the end of an archive.  Arguments
+MESESCOApage tar(1) line 162 (press h for help or q to quit)
+M              option is given.ress h for help or q to quit)
+M              archived recursively,  unless  the  --no-recursion
+M              of  the  files  to  be  archived.  Directories are
+M              Create a new archive.  Arguments supply the  names
+M       -c, --createline 157 (press h for help or q to quit)
+MESESCOApage tar(1) line 156 (press h for help or q to quit)
+M              Compressed archives cannot be concatenated.t)
+MESESCOApage tar(1) line 154 (press h for help or q to quit)
+M              (--ignore-zeros) option.or help or q to quit)
+M              ble  in the resulting archive only if using the -i
+M              archives other than the first one will be accessi‐
+M              more  than  one archive is given, the members from
+M              implementations of tar.   Notice  also  that  when
+M              resulting  archive  might be unusable with non-GNU
+M              as the archive they are appended to, otherwise the
+M              append.   All  archives must be of the same format
+M              arguments are treated as the names of archives  to
+M              Append archive to the end of another archive.  The
+M       -A, --catenate, --concatenate for help or q to quit)
+MESESCOApage tar(1) line 142 (press h for help or q to quit)
+M       operation mode requested.ss h for help or q to quit)
+M       given.  Meaning of non-optional arguments depends on  the
+M       operation  it is to perform.  Exactly one of them must be
+M       The options listed in the table below tell GNU  tar  what
+M   Operation mode) line 137 (press h for help or q to quit)
+MESESCOApage tar(1) line 136 (press h for help or q to quit)
+              ble  in the resulting archive only if using the -i
+              (--ignore-zeros) option.for help or q to quit)
+M   Operation mode) line 137 (press h for help or q to quit)
+MESESCOApage tar(1) line 136 (press h for help or q to quit)
+M       though doing so with old options is not encouraged.)
+M       The  options  in  all three styles can be intermixed, al‐
+MESESCOApage tar(1) line 133 (press h for help or q to quit)
+M       tar --cre --file=etc.tar --verb /etclp or q to quit)
+M       or (abbreviating some options):or help or q to quit)
+M       tar --create --file etc.tar --verbose /etcq to quit)
+MESESCOApage tar(1) line 129 (press h for help or q to quit)
+MManual page tar(1) line 128 (press h for help or q to quit)
+M       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -A [OPTIONS] ARCHIVE ARCHIVE
+M   UNIX-style usage
+M
+M       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+M   Traditional usage
+MSYNOPSIS
+M
+M       tar - an archiving utility
+MNAME
+M
+MTAR(1)                   GNU TAR Manual                   TAR(1)
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -t [-f ARCHIVE] [OPTIONS] [MEMBER...]
+
+       tar -r [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -u [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -x [-f ARCHIVE] [OPTIONS] [MEMBER...]
+
+   GNU-style usage
+       tar {--catenate|--concatenate} [OPTIONS] ARCHIVE ARCHIVE
+
+       tar --create [--file ARCHIVE] [OPTIONS] [FILE...]
+/Manual page tar(1) line 13 (press h for help or q to quit)
+       tar   {--diff|--compare}   [--file   ARCHIVE]   [OPTIONS]
+       [FILE...]
+
+       tar --delete [--file ARCHIVE] [OPTIONS] [MEMBER...]
+
+       tar --append [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar --list [-f ARCHIVE] [OPTIONS] [MEMBER...]
+
+       tar --test-label [--file ARCHIVE] [OPTIONS] [LABEL...]
+
+       tar --update [--file ARCHIVE] [OPTIONS] [FILE...]
+/Manual page tar(1) line 26 (press h for help or q to quit)
+       tar --update [-f ARCHIVE] [OPTIONS] [FILE...]
+/Manual page tar(1) line 28 (press h for help or q to quit)
+       tar {--extract|--get} [-f ARCHIVE] [OPTIONS] [MEMBER...]
+...skipping...ar(1) line 30 (press h for help or q to quit)
+       tar -cvf etc.tar /etc
+       or
+       tar -c -v -f etc.tar /etc
+
+       In GNU or long-option style, each option begins with  two
+       dashes  and  has  a meaningful name, consisting of lower-
+       case letters and dashes.  When used, the long option  can
+       be abbreviated to its initial letters, provided that this
+       does not create ambiguity.  Arguments to long options are
+       supplied  either as a separate command line word, immedi‐
+       ately following the option, or separated from the  option
+       by  an  equals  sign with no intervening whitespace.  Op‐
+       tional arguments must always use the latter method.
+
+       Here are several ways of writing the example  command  in
+       this style:
+/Manual page tar(1) line 112 (press h for help or q to quit)
+       tar --create --file etc.tar --verbose /etc
+       or (abbreviating some options):for help or q to quit)
+       tar --cre --file=etc.tar --verb /etc
+
+       The  options  in  all three styles can be intermixed, al‐
+       though doing so with old options is not encouraged.
+
+   Operation mode
+       The options listed in the table below tell GNU  tar  what
+       operation  it is to perform.  Exactly one of them must be
+       given.  Meaning of non-optional arguments depends on  the
+       operation mode requested.
+
+       -A, --catenate, --concatenate
+              Append archive to the end of another archive.  The
+              arguments are treated as the names of archives  to
+              append.   All  archives must be of the same format
+              as the archive they are appended to, otherwise the
+              resulting  archive  might be unusable with non-GNU
+              implementations of tar.   Notice  also  that  when
+              more  than  one archive is given, the members from
+              archives other than the first one will be accessi‐
+              ble  in the resulting archive only if using the -i
+              (--ignore-zeros) option.
+
+              Compressed archives cannot be concatenated.
+
+       -c, --create
+              Create a new archive.  Arguments supply the  names
+              of  the  files  to  be  archived.  Directories are
+              archived recursively,  unless  the  --no-recursion
+              option is given.press h for help or q to quit)
+ ESESCOBpage tar(1) line 145 (press h for help or q to quit)
+       -d, --diff, --compare (press h for help or q to quit)
+              Find  differences between archive and file system.
+              The arguments are  optional  and  specify  archive
+              members  to  compare.   If  not given, the current
+              working directory is assumed.elp or q to quit)
+ ESESCOBpage tar(1) line 151 (press h for help or q to quit)
+       --deleter(1) line 152 (press h for help or q to quit)
+              Delete from the  archive.   The  arguments  supply
+              names  of  the  archive members to be removed.  At
+              least one argument must be given.or q to quit)
+ ESESCOBpage tar(1) line 156 (press h for help or q to quit)
+              This option does not  operate  on  compressed  ar‐
+M              Create a new archive.  Arguments supply the  names
+M       -c, --createline 157 (press h for help or q to quit)
+MESESCOApage tar(1) line 156 (press h for help or q to quit)
+M              Compressed archives cannot be concatenated.t)
+              names  of  the  archive members to be removed.  At
+              least one argument must be given.or q to quit)
+ ESESCOBpage tar(1) line 156 (press h for help or q to quit)
+              This option does not  operate  on  compressed  ar‐
+              chives.  There is no short option equivalent.)
+ ESESCOBpage tar(1) line 159 (press h for help or q to quit)
+       -r, --append line 160 (press h for help or q to quit)
+              Append  files to the end of an archive.  Arguments
+              have the same meaning as for -c (--create).it)
+ ESESCOBpage tar(1) line 163 (press h for help or q to quit)
+       -t, --list1) line 164 (press h for help or q to quit)
+              List the contents of an  archive.   Arguments  are
+              optional.   When  given, they specify the names of
+              the members to list.s h for help or q to quit)
+ ESESCOBpage tar(1) line 168 (press h for help or q to quit)
+       --test-label line 169 (press h for help or q to quit)
+              Test the archive volume label and exit.  When used
+              without  arguments, it prints the volume label (if
+              any) and exits with status 0.  When  one  or  more
+              command  line  arguments  are given.  tar compares
+              the volume label with  each  argument.   It  exits
+              with  code  0 if a match is found, and with code 1
+              otherwise.  No output is  displayed,  unless  used
+              together with the -v (--verbose) option. quit)
+ ESESCOBpage tar(1) line 178 (press h for help or q to quit)
+              There  is  no short option equivalent for this op‐
+       -t, --list1) line 180 (press h for help or q to quit)
+              List the contents of an  archive.   Arguments  are
+              optional.   When  given, they specify the names of
+              the members to list.
+
+       --test-label
+              Test the archive volume label and exit.  When used
+              without  arguments, it prints the volume label (if
+              any) and exits with status 0.  When  one  or  more
+              command  line  arguments  are given.  tar compares
+              the volume label with  each  argument.   It  exits
+              with  code  0 if a match is found, and with code 1
+              otherwise.  No output is  displayed,  unless  used
+              together with the -v (--verbose) option.
+
+              There  is  no short option equivalent for this op‐
+       -t, --list
+              List the contents of an  archive.   Arguments  are
+              optional.   When  given, they specify the names of
+              the members to list.
+
+       --test-label
+              Test the archive volume label and exit.  When used
+              without  arguments, it prints the volume label (if
+              any) and exits with status 0.  When  one  or  more
+              command  line  arguments  are given.  tar compares
+              the volume label with  each  argument.   It  exits
+              with  code  0 if a match is found, and with code 1
+              otherwise.  No output is  displayed,  unless  used
+              together with the -v (--verbose) option.
+
+              There  is  no short option equivalent for this op‐
+              tion.
+
+       -u, --update
+              Append files which are newer than the  correspond‐
+              ing  copy in the archive.  Arguments have the same
+              meaning as with -c and -r options.   Notice,  that
+              newer   files  don't  replace  their  old  archive
+              copies, but instead are appended to the end of ar‐
+              chive.   The  resulting  archive  can thus contain
+              several members of the same name, corresponding to
+              various versions of the same file.
+
+       -x, --extract, --get
+...skipping...ar(1) line 193 (press h for help or q to quit)
+       --version
+              Print program version  and  copyright  information
+              and exit.
+
+OPTIONS
+   Operation modifiers
+       --check-device
+              Check device numbers when creating incremental ar‐
+              chives (default).
+
+       -g, --listed-incremental=FILE
+              Handle new GNU-format incremental  backups.   FILE
+              is  the  name of a snapshot file, where tar stores
+              additional information which  is  used  to  decide
+              which files changed since the previous incremental
+              dump and, consequently, must be dumped again.   If
+...skipping...ar(1) line 225 (press h for help or q to quit)
+       --sparse-version=MAJOR[.MINOR]
+              Set  version  of the sparse format to use (implies
+              --sparse).  This option implies  --sparse.   Valid
+              argument  values are 0.0, 0.1, and 1.0.  For a de‐
+              tailed discussion of sparse formats, refer to  the
+              GNU Tar Manual, appendix D, "Sparse Formats".  Us‐
+              ing info reader, it can be  accessed  running  the
+              following command: info tar 'Sparse Formats'.
+
+       -S, --sparse
+              Handle  sparse  files  efficiently.  Some files in
+              the file system may have segments which were actu‐
+              ally never written (quite often these are database
+              files created by such systems as DBM).  When given
+              this option, tar attempts to determine if the file
+              is sparse prior to archiving it, and if so, to re‐
+...skipping...ar(1) line 298 (press h for help or q to quit)
+       -W, --verify
+              Verify the archive after writing it.
+
+   Output stream selection
+       --ignore-command-error
+
+       Ignore subprocess exit codes.
+
+       --no-ignore-command-error
+              Treat non-zero exit codes  of  children  as  error
+              (default).
+
+       -O, --to-stdout
+              Extract files to standard output.
+
+       --to-command=COMMAND
+...skipping...ar(1) line 363 (press h for help or q to quit)
+                     cessing (set if reading a multi-volume  ar‐
+                     chive).
+
+              TAR_FORMAT
+                     Format of the archive being processed.  One
+                     of: gnu, oldgnu, posix, ustar, v7.
+
+              TAR_SUBCOMMAND
+                     A short option (with a  leading  dash)  de‐
+                     scribing the operation tar is executing.
+
+   Handling of file attributes
+       --atime-preserve[=METHOD]
+              Preserve  access  times on dumped files, either by
+              restoring the times after reading (METHOD=replace,
+              this  is  the default) or by not setting the times
+...skipping...ar(1) line 453 (press h for help or q to quit)
+       -F, --info-script=COMMAND, --new-volume-script=COMMAND
+              Run  COMMAND at the end of each tape (implies -M).
+              The command can include arguments.  When  started,
+              it will inherit tar's environment plus the follow‐
+              ing variables:
+
+              TAR_VERSION
+                     GNU tar version number.
+
+              TAR_ARCHIVE
+                     The name of the archive tar is processing.
+
+              TAR_BLOCKING_FACTOR
+                     Current blocking  factor,  i.e.  number  of
+                     512-byte blocks in a record.
+
+...skipping...ar(1) line 659 (press h for help or q to quit)
+                     cessing (set if reading a multi-volume  ar‐
+                     chive).
+
+              TAR_FORMAT
+                     Format of the archive being processed.  One
+                     of: gnu, oldgnu, posix, ustar, v7.
+
+              TAR_SUBCOMMAND
+                     A short option (with a  leading  dash)  de‐
+                     scribing the operation tar is executing.
+
+              TAR_FD File descriptor which can be used to commu‐
+                     nicate the new volume name to tar.
+
+              If the info script fails, tar exits; otherwise, it
+              begins writing the next volume.
+...skipping...ar(1) line 677 (press h for help or q to quit)
+       -M, --multi-volume
+              Create/list/extract multi-volume archive.
+
+       --rmt-command=COMMAND
+              Use COMMAND instead of rmt when  accessing  remote
+              archives.   See  the description of the -f option,
+              above.
+
+       --rsh-command=COMMAND
+              Use COMMAND instead of rsh when  accessing  remote
+              archives.   See  the description of the -f option,
+              above.
+
+       --volno-file=FILE
+              When this  option  is  used  in  conjunction  with
+              --multi-volume,  tar will keep track of which vol‐
+              ume of a multi-volume archive  it  is  working  in
+              FILE. line 703 (press h for help or q to quit)
+
+   Device blocking
+       -b, --blocking-factor=BLOCKS
+              Set record size to BLOCKSx512 bytes.
+
+       -B, --read-full-records
+              When  listing or extracting, accept incomplete in‐
+              put records after end-of-file marker.
+
+       -i, --ignore-zeros
+              Ignore zeroed blocks  in  archive.   Normally  two
+              consecutive 512-blocks filled with zeroes mean EOF
+              and tar stops  reading  after  encountering  them.
+MManual page tar(1) line 717 (press h for help or q to quit)
+M       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -A [OPTIONS] ARCHIVE ARCHIVE
+M   UNIX-style usage
+M
+M       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+M   Traditional usage
+MSYNOPSIS
+M
+M       tar - an archiving utility
+MNAME
+M
+MTAR(1)                   GNU TAR Manual                   TAR(1)
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+...skipping...
+       tered  together  after a single dash, e.g. -vkp.  Options
+       that take arguments (whether mandatory or optional),  can
+       appear at the end of such a cluster, e.g. -vkpf a.tar.
+
+       The  example  command  above  written in the short-option
+       style could look like:
+
+       tar -cvf etc.tar /etc
+       or
+       tar -c -v -f etc.tar /etc
+
+       In GNU or long-option style, each option begins with  two
+       dashes  and  has  a meaningful name, consisting of lower-
+       case letters and dashes.  When used, the long option  can
+       be abbreviated to its initial letters, provided that this
+       does not create ambiguity.  Arguments to long options are
+       supplied  either as a separate command line word, immedi‐
+       ately following the option, or separated from the  option
+       by  an  equals  sign with no intervening whitespace.  Op‐
+       tional arguments must always use the latter method.
+
+       Here are several ways of writing the example  command  in
+       this style:
+
+       tar --create --file etc.tar --verbose /etc
+       or (abbreviating some options):for help or q to quit)
+       tar --cre --file=etc.tar --verb /etc
+
+       The  options  in  all three styles can be intermixed, al‐
+       though doing so with old options is not encouraged.
+
+   Operation mode
+       The options listed in the table below tell GNU  tar  what
+       operation  it is to perform.  Exactly one of them must be
+       given.  Meaning of non-optional arguments depends on  the
+       operation mode requested.
+
+       -A, --catenate, --concatenate
+              Append archive to the end of another archive.  The
+              arguments are treated as the names of archives  to
+              append.   All  archives must be of the same format
+              as the archive they are appended to, otherwise the
+...skipping...ar(1) line 131 (press h for help or q to quit)
+              together with the -v (--verbose) option.
+
+              There  is  no short option equivalent for this op‐
+              tion.
+
+       -u, --update
+              Append files which are newer than the  correspond‐
+              ing  copy in the archive.  Arguments have the same
+              meaning as with -c and -r options.   Notice,  that
+              newer   files  don't  replace  their  old  archive
+              copies, but instead are appended to the end of ar‐
+              chive.   The  resulting  archive  can thus contain
+              several members of the same name, corresponding to
+              various versions of the same file.
+
+       -x, --extract, --get
+...skipping...ar(1) line 193 (press h for help or q to quit)
+       --version
+              Print program version  and  copyright  information
+              and exit.
+
+OPTIONS
+   Operation modifiers
+       --check-device
+              Check device numbers when creating incremental ar‐
+              chives (default).
+
+       -g, --listed-incremental=FILE
+              Handle new GNU-format incremental  backups.   FILE
+              is  the  name of a snapshot file, where tar stores
+              additional information which  is  used  to  decide
+              which files changed since the previous incremental
+              dump and, consequently, must be dumped again.   If
+MESESCOApage tar(1) line 225 (press h for help or q to quit)
+M              arguments allowed.ss h for help or q to quit)
+M              Display  a list of available options and exit.  No
+M       --usager(1) line 222 (press h for help or q to quit)
+MESESCOApage tar(1) line 221 (press h for help or q to quit)
+M              ments allowed.(press h for help or q to quit)
+M              Display a short option summary and exit.  No argu‐
+M       -?, --help) line 218 (press h for help or q to quit)
+MESESCOApage tar(1) line 217 (press h for help or q to quit)
+M              exit.  No arguments are allowed.or q to quit)
+M              Show built-in defaults for various tar options and
+M       --show-defaultse 214 (press h for help or q to quit)
+MESESCOApage tar(1) line 213 (press h for help or q to quit)
+M              chive members to be extracted.p or q to quit)
+M       -x, --extract, --get (press h for help or q to quit)
+M
+M              various versions of the same file.
+M              several members of the same name, corresponding to
+M              chive.   The  resulting  archive  can thus contain
+M              copies, but instead are appended to the end of ar‐
+M              newer   files  don't  replace  their  old  archive
+M              meaning as with -c and -r options.   Notice,  that
+M              ing  copy in the archive.  Arguments have the same
+M              Append files which are newer than the  correspond‐
+M       -u, --update
+M
+M              tion.
+M              There  is  no short option equivalent for this op‐
+M
+M              together with the -v (--verbose) option.
+M              otherwise.  No output is  displayed,  unless  used
+M              with  code  0 if a match is found, and with code 1
+M              the volume label with  each  argument.   It  exits
+M              command  line  arguments  are given.  tar compares
+M              any) and exits with status 0.  When  one  or  more
+M              without  arguments, it prints the volume label (if
+M              Test the archive volume label and exit.  When used
+M       --test-labelline 186 (press h for help or q to quit)
+MESESCOApage tar(1) line 185 (press h for help or q to quit)
+M              the members to list. h for help or q to quit)
+MManual page tar(1) line 183 (press h for help or q to quit)
+M       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+M
+M       tar -A [OPTIONS] ARCHIVE ARCHIVE
+M   UNIX-style usage
+M
+M       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+M   Traditional usage
+MSYNOPSIS
+M
+M       tar - an archiving utility
+MNAME
+M
+MTAR(1)                   GNU TAR Manual                   TAR(1)
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+TAR(1)                   GNU TAR Manual                   TAR(1)
+
+NAME
+       tar - an archiving utility
+
+SYNOPSIS
+   Traditional usage
+       tar {A|c|d|r|t|u|x}[GnSkUWOmpsMBiajJzZhPlRvwo] [ARG...]
+
+   UNIX-style usage
+       tar -A [OPTIONS] ARCHIVE ARCHIVE
+
+       tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+
+       tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
+
+...skipping...
+       -C, --directory=DIR
+              Change to DIR before  performing  any  operations.
+              This  option  is  order-sensitive, i.e. it affects
+              all options that follow.
+
+       --exclude=PATTERN
+              Exclude files matching  PATTERN,  a  glob(3)-style
+              wildcard pattern.
+
+       --exclude-backups
+              Exclude backup and lock files.
+
+       --exclude-caches
+              Exclude  contents  of  directories containing file
+              CACHEDIR.TAG, except for the tag file itself.
+
+>DEVOPS24/lektion4) line 837 (press h for help or q to quit)
+$ docker network create wpnet
+
+docker volume create wordpress-db
+docker volume create wordpress-files
+
+docker run -d --name mysql \
+  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  --network wpnet \apache/www/html \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  wordpress:php8.2-apache/www/html \
+b83ffb830a2533dbc9f757b600b3fc810d8d6909729386dc2e9ca54d82cb0b38
+wordpress-db
+wordpress-files
+docker: Error response from daemon: Conflict. The container name "/mysql" is already in use by container "1216e275a73d4f6bdcda2fb18ca5d72431a442918aa2a4c4e51f24309b3645d3". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docmker rm mysql
+mysql
+DEVOPS24/lektion4
+$ docker volume DEVOPS24/lektion4
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     hittamig
+local     mysql-data
+local     wordpress-db
+local     wordpress-files
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker run -d --name mysql \
+  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \
+  -e WORDPRESS_DB_PASSWORD=wppass \
+  -e WORDPRESS_DB_NAME=wordpress \
+  -v wordpress-files:/var/www/html \
+  wordpress:php8.2-apache
+docker run -d --name mysql \
+  --network wpnet \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=wordpress \
+  -e MYSQL_USER=wpuser \
+  -e MYSQL_PASSWORD=wppass \
+  -v wordpress-db:/var/lib/mysql \
+  mysql:8
+docker run -d --name wordpress \
+  --network wpnet \
+  -p 9090:80 \
+  -e WORDPRESS_DB_HOST=mysql:3306 \
+  -e WORDPRESS_DB_USER=wpuser \
+  -e WORDPRESS_DB_PASSWORD=wppass \
+  -e WORDPRESS_DB_NAME=wordpress \
+  -v wordpress-files:/var/www/html \
+  wordpress:php8.2-apache
+
+1e0e6725c1fa367f7ef8702287566a3dc7df57d63ab72c72526a59faf337934d
+docker: Error response from daemon: Conflict. The container name "/wordpress" is already in use by container "b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+DEVOPS24/lektion4
+$ docker restrart wordpress
+wordpress
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ docker ps
+CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   21 seconds ago   Up 21 seconds   3306/tcp, 33060/tcp                       mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   56 seconds ago   Up 3 seconds    0.0.0.0:9090->80/tcp, [::]:9090->80/tcp   wordpress
+DEVOPS24/lektion4
+$ DEVOPS24/lektion4
+$ man docker/ru-run
+DOCKER(1)              Docker User Manuals             DOCKER(1)
+
+NAME
+       docker-run - Create and run a new container from an image
+
+SYNOPSIS
+       docker  run [-a|--attach[=[]]] [--add-host[=[]]] [--anno‐
+       tation[=[]]] [--blkio-weight[=[BLKIO-WEIGHT]]]  [--blkio-
+       weight-device[=[]]]     [-c|--cpu-shares[=0]]     [--cap-
+       add[=[]]] [--cap-drop[=[]]] [--cgroupns[=[]]]  [--cgroup-
+       parent[=CGROUP-PATH]]    [--cidfile[=CIDFILE]]    [--cpu-
+       count[=0]] [--cpu-percent[=0]] [--cpu-period[=0]] [--cpu-
+       quota[=0]]  [--cpu-rt-period[=0]]  [--cpu-rt-runtime[=0]]
+       [--cpus[=0.0]]  [--cpuset-cpus[=CPUSET-CPUS]]  [--cpuset-
+       mems[=CPUSET-MEMS]]   [-d|--detach]  [--detach-keys[=[]]]
+       [--device[=[]]]  [--device-cgroup-rule[=[]]]   [--device-
+DOCKER(1)              Docker User Manuals             DOCKER(1)
+
+NAME
+       docker-run - Create and run a new container from an image
+
+SYNOPSIS
+       docker  run [-a|--attach[=[]]] [--add-host[=[]]] [--anno‐
+       tation[=[]]] [--blkio-weight[=[BLKIO-WEIGHT]]]  [--blkio-
+       weight-device[=[]]]     [-c|--cpu-shares[=0]]     [--cap-
+       add[=[]]] [--cap-drop[=[]]] [--cgroupns[=[]]]  [--cgroup-
+       parent[=CGROUP-PATH]]    [--cidfile[=CIDFILE]]    [--cpu-
+       count[=0]] [--cpu-percent[=0]] [--cpu-period[=0]] [--cpu-
+       quota[=0]]  [--cpu-rt-period[=0]]  [--cpu-rt-runtime[=0]]
+       [--cpus[=0.0]]  [--cpuset-cpus[=CPUSET-CPUS]]  [--cpuset-
+       mems[=CPUSET-MEMS]]   [-d|--detach]  [--detach-keys[=[]]]
+       [--device[=[]]]  [--device-cgroup-rule[=[]]]   [--device-
+DOCKER(1)              Docker User Manuals             DOCKER(1)
+
+NAME
+       docker-run - Create and run a new container from an image
+
+SYNOPSIS
+       docker  run [-a|--attach[=[]]] [--add-host[=[]]] [--anno‐
+       tation[=[]]] [--blkio-weight[=[BLKIO-WEIGHT]]]  [--blkio-
+       weight-device[=[]]]     [-c|--cpu-shares[=0]]     [--cap-
+       add[=[]]] [--cap-drop[=[]]] [--cgroupns[=[]]]  [--cgroup-
+       parent[=CGROUP-PATH]]    [--cidfile[=CIDFILE]]    [--cpu-
+       count[=0]] [--cpu-percent[=0]] [--cpu-period[=0]] [--cpu-
+       quota[=0]]  [--cpu-rt-period[=0]]  [--cpu-rt-runtime[=0]]
+       [--cpus[=0.0]]  [--cpuset-cpus[=CPUSET-CPUS]]  [--cpuset-
+       mems[=CPUSET-MEMS]]   [-d|--detach]  [--detach-keys[=[]]]
+       [--device[=[]]]  [--device-cgroup-rule[=[]]]   [--device-
+       read-bps[=[]]] [--device-read-iops[=[]]] [--device-write-
+       bps[=[]]] [--device-write-iops[=[]]] [--dns[=[]]] [--dns-
+       option[=[]]]  [--dns-search[=[]]]  [--domainname[=DOMAIN‐
+       NAME]]    [-e|--env[=[]]]     [--entrypoint[=ENTRYPOINT]]
+       [--env-file[=[]]]    [--expose[=[]]]   [--group-add[=[]]]
+       [-h|--hostname[=HOSTNAME]] [--help] [--init] [-i|--inter‐
+       active]    [--ip[=IPv4-ADDRESS]]   [--ip6[=IPv6-ADDRESS]]
+Manual page docker-run(1) line 8 (press h for help or q to quit)
+>DEVOPS24/lektion4-run(1) line 8 (press h for help or q to quit)
+$ man docker-run
+DOCKER(1)              Docker User Manuals             DOCKER(1)
+
+NAME
+       docker-run - Create and run a new container from an image
+
+SYNOPSIS
+       docker  run [-a|--attach[=[]]] [--add-host[=[]]] [--anno‐
+       tation[=[]]] [--blkio-weight[=[BLKIO-WEIGHT]]]  [--blkio-
+       weight-device[=[]]]     [-c|--cpu-shares[=0]]     [--cap-
+       add[=[]]] [--cap-drop[=[]]] [--cgroupns[=[]]]  [--cgroup-
+       parent[=CGROUP-PATH]]    [--cidfile[=CIDFILE]]    [--cpu-
+       count[=0]] [--cpu-percent[=0]] [--cpu-period[=0]] [--cpu-
+       quota[=0]]  [--cpu-rt-period[=0]]  [--cpu-rt-runtime[=0]]
+       [--cpus[=0.0]]  [--cpuset-cpus[=CPUSET-CPUS]]  [--cpuset-
+       mems[=CPUSET-MEMS]]   [-d|--detach]  [--detach-keys[=[]]]
+       [--device[=[]]]  [--device-cgroup-rule[=[]]]   [--device-
+       read-bps[=[]]] [--device-read-iops[=[]]] [--device-write-
+       bps[=[]]] [--device-write-iops[=[]]] [--dns[=[]]] [--dns-
+       option[=[]]]  [--dns-search[=[]]]  [--domainname[=DOMAIN‐
+       NAME]]    [-e|--env[=[]]]     [--entrypoint[=ENTRYPOINT]]
+       [--env-file[=[]]]    [--expose[=[]]]   [--group-add[=[]]]
+       [-h|--hostname[=HOSTNAME]] [--help] [--init] [-i|--inter‐
+       active]    [--ip[=IPv4-ADDRESS]]   [--ip6[=IPv6-ADDRESS]]
+       [--ipc[=IPC]]   [--isolation[=default]]    [--kernel-mem‐
+       ory[=KERNEL-MEMORY]]      [-l|--label[=[]]]     [--label-
+       file[=[]]] [--link[=[]]]  [--link-local-ip[=[]]]  [--log-
+       driver[=[]]]    [--log-opt[=[]]]   [-m|--memory[=MEMORY]]
+       [--mac-address[=MAC-ADDRESS]] [--memory-reservation[=MEM‐
+       ORY-RESERVATION]] [--memory-swap[=LIMIT]] [--memory-swap‐
+       piness[=MEMORY-SWAPPINESS]]           [--mount[=[MOUNT]]]
+       [--name[=NAME]]       [--network-alias[=[]]]      [--net‐
+       work[="bridge"]]    [--oom-kill-disable]    [--oom-score-
+       adj[=0]]      [-P|--publish-all]      [-p|--publish[=[]]]
+       [--pid[=[PID]]]         [--userns[=[]]]          [--pids-
+       limit[=PIDS_LIMIT]]      [--privileged]     [--read-only]
+       [--restart[=RESTART]]    [--rm]     [--security-opt[=[]]]
+       [--storage-opt[=[]]]   [--stop-signal[=SIGNAL]]  [--stop-
+       timeout[=TIMEOUT]] [--shm-size[=[]]] [--sig-proxy[=true]]
+       [--sysctl[=[]]]  [-t|--tty] [--tmpfs[=[CONTAINER-DIR[:OP‐
+       TIONS]]] [-u|--user[=USER]] [--ulimit[=[]]]  [--uts[=[]]]
+       [-v|--volume[=[[HOST-DIR:]CONTAINER-DIR[:OPTIONS]]]]quit)
+       [--volume-driver[=DRIVER]]          [--volumes-from[=[]]]
+       [-w|--workdir[=WORKDIR]] IMAGE [COMMAND] [ARG...]to quit)
+ ESESCOBge docker-run(1) line 28 (press h for help or q to quit)
+DESCRIPTIONdocker-run(1) line 29 (press h for help or q to quit)
+       Run  a  process  in  a new container. docker run starts a
+       process with its own file system, its own networking, and
+       its own isolated process tree. The IMAGE which starts the
+       process may define defaults related to the  process  that
+       will  be  run in the container, the networking to expose,
+       and more, but docker run gives final control to the oper‐
+       ator  or  administrator who starts the container from the
+       image. For that reason docker run has more  options  than
+       any other Docker command. (press h for help or q to quit)
+ ESESCOBge docker-run(1) line 39 (press h for help or q to quit)
+       If  the  IMAGE is not already loaded then docker run will
+       pull the IMAGE, and  all  image  dependencies,  from  the
+       [--volume-driver[=DRIVER]]          [--volumes-from[=[]]]
+       [-w|--workdir[=WORKDIR]] IMAGE [COMMAND] [ARG...]
+
+DESCRIPTION
+       Run  a  process  in  a new container. docker run starts a
+       process with its own file system, its own networking, and
+       its own isolated process tree. The IMAGE which starts the
+       process may define defaults related to the  process  that
+       will  be  run in the container, the networking to expose,
+       and more, but docker run gives final control to the oper‐
+       ator  or  administrator who starts the container from the
+       image. For that reason docker run has more  options  than
+       any other Docker command.
+
+       If  the  IMAGE is not already loaded then docker run will
+       pull the IMAGE, and  all  image  dependencies,  from  the
+       [--volume-driver[=DRIVER]]          [--volumes-from[=[]]]
+       [-w|--workdir[=WORKDIR]] IMAGE [COMMAND] [ARG...]
+
+DESCRIPTION
+       Run  a  process  in  a new container. docker run starts a
+       process with its own file system, its own networking, and
+       its own isolated process tree. The IMAGE which starts the
+       process may define defaults related to the  process  that
+       will  be  run in the container, the networking to expose,
+       and more, but docker run gives final control to the oper‐
+       ator  or  administrator who starts the container from the
+       image. For that reason docker run has more  options  than
+       any other Docker command.
+
+       If  the  IMAGE is not already loaded then docker run will
+       pull the IMAGE, and  all  image  dependencies,  from  the
+       repository in the same way running docker pull IMAGE, be‐
+       fore it starts the container from that image.r q to quit)
+M       [-w|--workdir[=WORKDIR]] IMAGE [COMMAND] [ARG...]o quit)
+M       [--volume-driver[=DRIVER]]          [--volumes-from[=[]]]
+       repository in the same way running docker pull IMAGE, be‐
+...skipping...ker-run(1) line 43 (press h for help or q to quit)
+       --blkio-weight=0
+          Block IO weight (relative  weight)  accepts  a  weight
+       value between 10 and 1000.
+
+       --blkio-weight-device=[]
+          Block  IO  weight (relative device weight, format: DE‐
+       VICE_NAME:WEIGHT).
+
+       -c, --cpu-shares=0
+          CPU shares (relative weight)
+
+       By default, all containers get the same proportion of CPU
+       cycles.  This  proportion can be modified by changing the
+       container's CPU share weighting relative to the weighting
+       of all other running containers.
+
+       To  modify  the  proportion from the default of 1024, use
+       the -c or --cpu-shares flag to set the weighting to 2  or
+       higher.
+
+...skipping...ker-run(1) line 90 (press h for help or q to quit)
+       --device-write-bps=[]
+          Limit  write  rate  to  a device (e.g. --device-write-
+       bps=/dev/sda:1mb)
+
+       --device-write-iops=[]
+          Limit write rate to  a  device  (e.g.  --device-write-
+       iops=/dev/sda:1000)
+
+       --dns-search=[]
+          Set  custom  DNS search domains (Use --dns-search=. if
+       you don't wish to set the search domain)
+
+       --dns-option=[]
+          Set custom DNS options
+
+       --dns=[]
+          Set custom DNS servers (press h for help or q to quit)
+/ual page docker-run(1) line 279 (press h for help or q to quit)
+       This option can be used to override the DNS configuration
+       passed to the container. Typically this is necessary when
+       the host DNS configuration is invalid for  the  container
+...skipping...er-run(1) line 283 (press h for help or q to quit)
+       mounts  a volume in read-only or read-write mode, respec‐
+       tively. By default, volumes  are  mounted  in  read-write
+       mode.   You  can also specify the consistency requirement
+       for the mount, either :consistent (the default), :cached,
+       or :delegated.  Multiple options are separated by commas,
+       e.g. :ro,cached.
+
+       Labeling systems like SELinux require that proper  labels
+       are  placed  on  volume content mounted into a container.
+       Without a label, the security system  might  prevent  the
+       processes  running  inside  the  container from using the
+       content. By default, Docker does not  change  the  labels
+       set by the OS.
+
+       To  change  a label in the container context, you can add
+       either of two suffixes :z or  :Z  to  the  volume  mount.
+       These suffixes tell Docker to relabel file objects on the
+...skipping...er-run(1) line 960 (press h for help or q to quit)
+       (read-write or
+          read-only)  as  it is mounted in the source container.
+       Optionally, you
+          can change this by suffixing the container-id with ei‐
+       ther the :ro or
+          :rw keyword.
+
+       If  the  location of the volume from the source container
+       overlaps with
+          data residing on a target container, then  the  volume
+       hides
+          that data on the target.
+
+       -w, --workdir=""
+          Working directory inside the container
+
+       The default working directory for running binaries within
+       a container is the root directory (/). The developer  can
+       set  a  different default with the Dockerfile WORKDIR in‐
+       struction. The operator can override the  working  direc‐
+       tory by using the -w option.
+
+Exit Status
+       The exit code from docker run gives information about why
+       the container failed to  run  or  why  it  exited.   When
+       docker  run  exits  with  a non-zero code, the exit codes
+       follow the chroot standard, see below:
+
+       125 if the error is with Docker daemon itself
+>DEVOPS24/lektion4n(1) line 1074 (press h for help or q to quit)
+$ exit
+exit
+
+Script done on 2025-08-26 11:32:07+02:00 [COMMAND_EXIT_CODE="0"]
