@@ -1,0 +1,8 @@
+#!/bin/bash
+
+qemu-system-x86_64 \
+	-enable-kvm \
+	-m 2048 \
+	-smp 2 \
+	-drive file=ubuntu.qcow2,format=qcow2 \
+	-monitor stdio
