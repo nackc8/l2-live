@@ -1,0 +1,4 @@
+# Skapa dessa själv, det blir för stora filer för att få plats i repot.
+
+*.vdi
+*.qcow2
