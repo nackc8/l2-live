@@ -1,0 +1,47 @@
+Script started on 2025-09-08 12:41:20+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="54" LINES="14"]
+[?2004h[94mDEVOPS24/lektion10
+(B[m$ rm [K[K[Kcd da[K[K[K../[K[K[K ../da[K[Klektion
+lektion10/ lektion3/  lektion5/  
+lektion2/  lektion4/  lektion6/  
+[94mDEVOPS24/lektion10
+(B[m$ cd ../lektion[K[K[K[K[K[K[K../
+bin/           .gitignore     .shared/
+date/          ITINF24/       .shellcheckrc
+DEVOPS24/      .profiles/     .state
+.git/          README.md      .vscode/
+[94mDEVOPS24/lektion10
+(B[m$ cd ../../date/
+[?2004l[?2004h[94mdate (B[m$ ls /l[K[K-l
+[?2004ltotal 8
+drwxr-xr-x 6 kent kent 4096 Jan  9  2025 d250109
+lrwxrwxrwx 1 kent kent   20 Aug 19 09:12 d250819 -> ../DEVOPS24/lektion2
+lrwxrwxrwx 1 kent kent   20 Aug 31 20:57 d250825 -> ../DEVOPS24/lektion3
+lrwxrwxrwx 1 kent kent   20 Aug 31 20:57 d250826 -> ../DEVOPS24/lektion4
+lrwxrwxrwx 1 kent kent   20 Sep  8 12:36 d250901 -> ../DEVOPS24/lektion5
+lrwxrwxrwx 1 kent kent   20 Sep  2 09:18 d250902 -> ../DEVOPS24/lektion6
+lrwxrwxrwx 1 kent kent   20 Sep  8 12:39 d250908 -> ../DEVOPS24/lektion8
+-rw-r--r-- 1 kent kent  117 Jan  9  2025 TODO.md
+[?2004h[94mdate (B[m$ rm d250908 
+[?2004l[?2004h[94mdate (B[m$ ln ../DEVOPS24/lektion10 d250907[K8
+[?2004lln: ../DEVOPS24/lektion10: hard link not allowed for directory
+[?2004h[94mdate (B[m$ ln ../DEVOPS24/lektion10 d250908[C[C[C[1@-[1@s[1@ 
+[?2004l[?2004h[94mdate (B[m$ [H[2J[94mdate (B[m$ ls
+[?2004ld250109  d250825  d250901  d250908
+d250819  d250826  d250902  TODO.md
+[?2004h[94mdate (B[m$ less TODO.md 
+[?2004l[?1049h[22;0;0t[?1h=
+
+
+apt-get update
+apt-get install -y imagemagick
+convert input.jpg -colorspace Gray output.png
+no_suffix=${file%.gz}
+[7mTODO.md (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mdate (B[m$ rm TODO.md 
+[?2004l[?2004h[94mdate (B[m$ [H[2J[94mdate (B[m$ ls
+[?2004ld250109  d250825  d250901  d250908
+d250819  d250826  d250902
+[?2004h[94mdate (B[m$ cd ..
+[?2004l[?2004h[94m(B[m$ [H[2J[94m(B[m$ exit
+[?2004lexit
+
+Script done on 2025-09-08 12:42:29+02:00 [COMMAND_EXIT_CODE="0"]
