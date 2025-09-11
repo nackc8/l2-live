@@ -889,4 +889,128 @@ WantedBy=multi-user.target
 :[K[K [KESCESC[KOO[KBB[K# Prevent accessing /home, /root and /run/user
 :[K[K [KESCESC[KOO[KBB[KProtectHome=true
 :[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K# Execute pre and post scr
+:[K[K [KESCESC[KOO[KBB[K# Execute pre and post scripts as root, otherwise it does it as User=
+:[K[K [KESCESC[KOO[KBB[KPermissionsStartOnly=true
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Perform automatic wsrep recovery. When server is started without wsrep,
+:[K[K [KESCESC[KOO[KBB[K# galera_recovery simply returns an empty string. In any case, however,
+:[K[K [KESCESC[KOO[KBB[K# the script is not expected to return with a non-zero status.
+:[K[K [KESCESC[KOO[KBB[K# It is always safe to unset _WSREP_START_POSITION environment variable.
+:[K[K [KESCESC[KOO[KBB[K# Do not panic if galera_recovery script is not available. (MDEV-10538)
+:[K[K [KESCESC[KOO[KBB[KExecStartPre=/bin/sh -c "systemctl unset-environment _WSREP_START_POSITION"
+:[K[K [KESCESC[KOO[KBB[KExecStartPre=/bin/sh -c "[ ! -e /usr/bin/galera_recovery ] && VAR= || \
+:[K[K [KESCESC[KOO[KBB[K VAR=`/usr/bin/galera_recovery`; [ $? -eq 0 ] \
+:[K[K [KESCESC[KOO[KBB[K && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1"
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Needed to create system tables etc.
+:[K[K [KESCESC[KOO[KBB[K# ExecStartPre=/usr/bin/mysql_install_db -u mysql
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Start main service
+:[K[K [KESCESC[KOO[KBB[K# MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+:[K[K [KESCESC[KOO[KBB[K# Use the [Service] section and Environment="MYSQLD_OPTS=...".
+:[K[K [KESCESC[KOO[KBB[K# This isn't a replacement for my.cnf.
+:[K[K [KESCESC[KOO[KBB[K# _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+:[K[K [KESCESC[KOO[KAA[K[HM# galera_recovery simply returns an empty string. In any case, however,
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# Perform automatic wsrep recovery. When server is started without wsrep,
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HMExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HMPermissionsStartOnly=true
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# Execute pre and post scripts as root, otherwise it does it as User=
+[17;1H[K:[K[K [KESCESC[KOO[KBB[K# ExecStartPre=/usr/bin/mysql_install_db -u mysql
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Start main service
+:[K[K [KESCESC[KOO[KBB[K# MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+:[K[K [KESCESC[KOO[KBB[K# Use the [Service] section and Environment="MYSQLD_OPTS=...".
+:[K[K [KESCESC[KOO[KBB[K# This isn't a replacement for my.cnf.
+:[K[K [KESCESC[KOO[KBB[K# _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+:[K[K [KESCESC[KOO[KBB[KExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Unset _WSREP_START_POSITION environment variable.
+:[K[K [KESCESC[KOO[KAA[K[HM# Do not panic if galera_recovery script is not available. (MDEV-10538)
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# It is always safe to unset _WSREP_START_POSITION environment variable.
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# the script is not expected to return with a non-zero status.
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# galera_recovery simply returns an empty string. In any case, however,
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM# Perform automatic wsrep recovery. When server is started without wsrep,
+[17;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[17;1H[K:[K[K [KESCESC[KOO[KBB[K# Use the [Service] section and Environment="MYSQLD_OPTS=...".
+:[K[K [KESCESC[KOO[KBB[K# This isn't a replacement for my.cnf.
+:[K[K [KESCESC[KOO[KBB[K# _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+:[K[K [KESCESC[KOO[KBB[KExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Unset _WSREP_START_POSITION environment variable.
+:[K[K [KESCESC[KOO[KBB[KExecStartPost=/bin/sh -c "systemctl unset-environment _WSREP_START_POSITION"
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KExecStartPost=/etc/mysql/debian-start
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KKillSignal=SIGTERM
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Don't want to see an automated SIGKILL ever
+:[K[K [KESCESC[KOO[KBB[KSendSIGKILL=no
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Restart crashed server only, on-failure would also restart, for example, when
+:[K[K [KESCESC[KOO[KBB[K# my.cnf contains unknown option
+:[K[K [KESCESC[KOO[KBB[KRestart=on-abnormal
+:[K[K [KESCESC[KOO[KBB[KRestartSec=5s
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KUMask=007
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K##############################################################################
+:[K[K [KESCESC[KOO[KBB[K## USERs can override
+:[K[K [KESCESC[KOO[KBB[K##
+:[K[K [KESCESC[KOO[KBB[K##
+:[K[K [KESCESC[KOO[KBB[K## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+:[K[K [KESCESC[KOO[KBB[K## and adding/setting the following under [Service] will override this file's
+:[K[K [KESCESC[KOO[KBB[K## settings.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Useful options not previously available in [mysqld_safe]
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Kernels like killing mariadbd when out of memory because its big.
+:[K[K/[KEE[Kxx[Kee[Kcc[KSS[Ktt[Kaa[Krr[Ktt[K[1;1H[KRestart=on-abnormal
+[2;1H[KRestartSec=5s
+[3;1H[K
+[4;1H[KUMask=007
+[5;1H[K
+[6;1H[K##############################################################################
+[7;1H[K## USERs can override
+[8;1H[K##
+[9;1H[K##
+[10;1H[K## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+[11;1H[K## and adding/setting the following under [Service] will override this file's
+[12;1H[K## settings.
+[13;1H[K
+[14;1H[K# Useful options not previously available in [mysqld_safe]
+[15;1H[K
+[16;1H[K# Kernels like killing mariadbd when out of memory because its big.
+[17;1H[1;1H[KRestart=on-abnormal
+[2;1H[KRestartSec=5s
+[3;1H[K
+[4;1H[KUMask=007
+[5;1H[K
+[6;1H[K##############################################################################
+[7;1H[K## USERs can override
+[8;1H[K##
+[9;1H[K##
+[10;1H[K## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+[11;1H[K## and adding/setting the following under [Service] will override this file's
+[12;1H[K## settings.
+[13;1H[K
+[14;1H[K# Useful options not previously available in [mysqld_safe]
+[15;1H[K
+[16;1H[K# Kernels like killing mariadbd when out of memory because its big.
+[17;1H...skipping...
+# [7mExecStart[27mPre=sync
+# [7mExecStart[27mPre=sysctl -q -w vm.drop_caches=3
+
+# numa-interleave=1 equalivant
+# Change [7mExecStart[27m=numactl --interleave=all /usr/sbin/mariadbd......
+
+# crash-script equalivent
+# FailureAction=
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[
