@@ -1,3 +1,4 @@
 FROM ubuntu:25.04
 
-ENTRYPOINT [""]
+ENTRYPOINT ["/bin/echo"]
+CMD ["-e"]
