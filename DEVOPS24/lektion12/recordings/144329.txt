@@ -1171,4 +1171,88 @@ Options:
  -G, --supp-group <group>        specify a supplemental group
 
  -, -l, --login                  make the shell a login shell
- -c, --command <command>         
+ -c, --command <command>         pass a single command to the shell with -c
+ --session-command <command>     pass a single command to the shell with -c
+                                   and do not create a new session
+ -f, --fast                      pass -f to the shell (for csh or tcsh)
+ -s, --shell <shell>             run <shell> if /etc/shells allows it
+ -P, --pty                       create a new pseudo-terminal
+ -T, --no-pty                    do not create a new pseudo-terminal (bad security!)
+
+ -h, --help                      display this help
+ -V, --version                   display version
+
+For more details see su(1).
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# less /etc/p passwd
+[?2004l[?1049h[22;0;0t[17;1H[?1h=root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+[7m/etc/passwd[27m[K[K/[Kmm[Kyy[Kss[Kqq[Kll[K[1;1H[Kroot:x:0:0:root:/root:/bin/bash
+[2;1H[Kdaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+[3;1H[Kbin:x:2:2:bin:/bin:/usr/sbin/nologin
+[4;1H[Ksys:x:3:3:sys:/dev:/usr/sbin/nologin
+[5;1H[Ksync:x:4:65534:sync:/bin:/bin/sync
+[6;1H[Kgames:x:5:60:games:/usr/games:/usr/sbin/nologin
+[7;1H[Kman:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+[8;1H[Klp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+[9;1H[Kmail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+[10;1H[Knews:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+[11;1H[Kuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+[12;1H[Kproxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+[13;1H[Kwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+[14;1H[Kbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+[15;1H[Klist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+[16;1H[Kirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+[17;1H[1;1H[Kroot:x:0:0:root:/root:/bin/bash
+[2;1H[Kdaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+[3;1H[Kbin:x:2:2:bin:/bin:/usr/sbin/nologin
+[4;1H[Ksys:x:3:3:sys:/dev:/usr/sbin/nologin
+[5;1H[Ksync:x:4:65534:sync:/bin:/bin/sync
+[6;1H[Kgames:x:5:60:games:/usr/games:/usr/sbin/nologin
+[7;1H[Kman:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+[8;1H[Klp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+[9;1H[Kmail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+[10;1H[Knews:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+[11;1H[Kuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+[12;1H[Kproxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+[13;1H[Kwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+[14;1H[Kbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+[15;1H[Klist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+[16;1H[Kirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+[17;1H...skipping...
+[7mmysql[27m:x:100:101:MariaDB Server,,,:/nonexistent:/bin/false
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;root@25d454294298: /root@25d454294298:/# man su
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@25d454294298: /root@25d
