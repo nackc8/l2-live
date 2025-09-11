@@ -786,4 +786,107 @@ Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
 /usr/bin/wsrep_sst_rsync_wan
 /usr/lib/systemd/system/mysql.service
 /usr/lib/systemd/system/mysqld.service
-/usr/share/doc/mariadb-server/ch
+/usr/share/doc/mariadb-server/changelog.Debian.gz
+/usr/share/man/man1/mysqld_safe.1.gz
+[?2004h]0;root@25d454294298: /root@25d454294298:/# dpkg -L mariadb-server * | grep service[H[2J]0;root@25d454294298: /root@25d454294298:/# dpkg -L mariadb-server | grep service
+[?2004l/usr/bin/mariadb-[01;31m[Kservice[m[K-convert
+/usr/lib/systemd/system/mariadb.[01;31m[Kservice[m[K
+/usr/lib/systemd/system/mariadb@.[01;31m[Kservice[m[K
+/usr/lib/systemd/system/mariadb@bootstrap.[01;31m[Kservice[m[K.d
+/usr/lib/systemd/system/mariadb@bootstrap.[01;31m[Kservice[m[K.d/use_galera_new_cluster.conf
+/usr/share/man/man1/mariadb-[01;31m[Kservice[m[K-convert.1.gz
+/usr/lib/systemd/system/mysql.[01;31m[Kservice[m[K
+/usr/lib/systemd/system/mysqld.[01;31m[Kservice[m[K
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [Kless [7m/usr/lib/systemd/system/mysqld.service[27m/usr/lib/systemd/system/mysqld.service[H[2J]0;root@25d454294298: /root@25d454294298:/# less /usr/lib/systemd/system/mysqld.service
+[?2004lbash: less: command not found
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [Kapt install less
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                Installing:
+[32m  less
+[0m
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 1
+  Download size: 156 kB
+  Space needed: 350 kB / 13.9 GB available
+
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu plucky/main amd64 less amd64 643-1 [156 kB]
+[33m7% [1 less 14.2 kB/156 kB 9%][0m[33m                             100% [Working][0m              Fetched 156 kB in 1s (227 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 1.)
+debconf: falling back to frontend: Readline
+
+7[0;16r8[1ASelecting previously unselected package less.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8106 files and directories currently installed.)
+Preparing to unpack .../archives/less_643-1_amd64.deb ...
+7[17;0f[42m[30mProgress: [  0%][49m[39m [.................................................................................] 87[17;0f[42m[30mProgress: [ 20%][49m[39m [################.................................................................] 8Unpacking less (643-1) ...
+7[17;0f[42m[30mProgress: [ 40%][49m[39m [################################.................................................] 8Setting up less (643-1) ...
+7[17;0f[42m[30mProgress: [ 60%][49m[39m [################################################.................................] 87[17;0f[42m[30mProgress: [ 80%][49m[39m [################################################################.................] 8
+7[0;17r8[1A[J[?2004h]0;root@25d454294298: /root@25d454294298:/# apt install lessless /usr/lib/systemd/system/mysqld.service[H[2J]0;root@25d454294298: /root@25d454294298:/# less /usr/lib/systemd/system/mysqld.service
+[?2004l[?1049h[22;0;0t[17;1H[?1h=# It's not recommended to modify this file in-place, because it will be
+# overwritten during package upgrades.  If you want to customize, the
+# best way is to create a file "/etc/systemd/system/mariadb.service",
+# containing
+#       .include /usr/lib/systemd/system/mariadb.service
+#       ...make your changes here...
+# or create a file "/etc/systemd/system/mariadb.service.d/foo.conf",
+# which doesn't need to include ".include" call and which will be parsed
+# after the file mariadb.service itself is parsed.
+#
+# For more info about custom unit files, see systemd.unit(5) or
+# https://mariadb.com/kb/en/mariadb/systemd/
+#
+# Copyright notice:
+#
+# This file is free software; you can redistribute it and/or modify it
+[7m/usr/lib/systemd/system/mysqld.service[27m[K[K# under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation; either version 2.1 of the License, or
+# (at your option) any later version.
+
+[Unit]
+Description=MariaDB 11.4.7 database server
+Documentation=man:mariadbd(8)
+Documentation=https://mariadb.com/kb/en/library/systemd/
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+
+[Service]
+
+:[K[K [KESCESC[KOO[KBB[K##############################################################################
+:[K[K [KESCESC[KOO[KBB[K## Core requirements
+:[K[K [KESCESC[KOO[KBB[K##
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KType=notify
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Setting this to true can break replication and the Type=notify settings
+:[K[K [KESCESC[KOO[KBB[K# See also bind-address mariadbd option.
+:[K[K [KESCESC[KOO[KBB[KPrivateNetwork=false
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K##############################################################################
+:[K[K [KESCESC[KOO[KBB[K## Package maintainers
+:[K[K [KESCESC[KOO[KBB[K##
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KUser=mysql
+:[K[K [KESCESC[KOO[KBB[KGroup=mysql
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# CAP_IPC_LOCK To allow memlock to be used as non-root user
+:[K[K [KESCESC[KOO[KBB[K# These are enabled by default
+:[K[K [KESCESC[KOO[KBB[KAmbientCapabilities=CAP_IPC_LOCK
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# PrivateDevices=true implies NoNewPrivileges=true and
+:[K[K [KESCESC[KOO[KBB[K# SUID auth_pam_tool suddenly doesn't do setuid anymore
+:[K[K [KESCESC[KOO[KBB[KPrivateDevices=false
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Prevent writes to /usr, /boot, and /etc
+:[K[K [KESCESC[KOO[KBB[KProtectSystem=full
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Doesn't yet work properly with SELinux enabled
+:[K[K [KESCESC[KOO[KBB[K# NoNewPrivileges=true
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Prevent accessing /home, /root and /run/user
+:[K[K [KESCESC[KOO[KBB[KProtectHome=true
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K# Execute pre and post scr
