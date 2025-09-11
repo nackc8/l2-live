@@ -1800,4 +1800,42 @@ su: Authentication failure
 (B[m$ docker run -it entrypoint [1@d[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
 [?2004l
 [?2004h[94mDEVOPS24/lektion12
-(B[m$ docker logs [K[K[K[K[K[K[K[K[K[K[K[Kdocker run -it entrypoint
+(B[m$ docker logs [K[K[K[K[K[K[K[K[K[K[K[Kdocker run -it entrypoint[C entrypoint- entrypoint- entrypointc entrypointo entrypointn entrypointt entrypoint[1P entrypoint[1P entrypoint[1P entrypoint[1P entrypointn entrypointa entrypointm entrypointe entrypoint[C entrypointe entrypointp entrypoint
+[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker logs ps[K[Kep
+[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ echo
+[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ [H[2J[94mDEVOPS24/lektion12
+(B[m$ echo[C[Cdocker logs eprun -it --name ep entrypoint[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pentrypoint[C[C[C[C[C[C[C[C[Cbuild -t entrypoint .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.3s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (3/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.7s (6/6) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile    

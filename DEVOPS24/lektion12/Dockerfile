@@ -1,4 +1,4 @@
 FROM ubuntu:25.04
 
-ENTRYPOINT ["/bin/echo"]
+ENTRYPOINT ["/bin/echo", "hello"]
 CMD ["-e"]
