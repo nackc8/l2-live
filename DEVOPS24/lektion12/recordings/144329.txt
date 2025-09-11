@@ -104,4 +104,60 @@ amd64
   Mroonga storage engine for MariaDB server
 
 [32mmariadb-plugin-oqgraph[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
-  OQGraph storage engine for MariaDB 
+  OQGraph storage engine for MariaDB server
+
+[32mmariadb-plugin-provider-bzip2[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  BZip2 compression support in the server and storage engines
+
+[7m--More--[27m[32mmariadb-plugin-provider-lz4[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZ4 compression support in the server and storage engines
+
+[32mmariadb-plugin-provider-lzma[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZMA compression support in the server and storage engines
+
+[32mmariadb-plugin-provider-lzo[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZO compression support in the server and storage engines
+
+[32mmariadb-plugin-provider-snappy[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Snappy compression support in the server and storage engines
+
+[32mmariadb-plugin-rocksdb[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  RocksDB storage engine for MariaDB server
+
+[32mmariadb-plugin-s3[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+[7m--More--[27m  Amazon S3 archival storage engine for MariaDB
+
+[32mmariadb-plugin-spider[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Spider storage engine for MariaDB server
+
+[32mmariadb-server[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries
+
+[32mmariadb-server-10.5[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries (transitional dummy package)
+
+[32mmariadb-server-compat[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-server binaries/scripts
+
+[32mmariadb-server-core[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core server files
+[7m--More--[27m[K
+[32mmariadb-test[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database regression test suite
+
+[32mmariadb-test-data[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MariaDB database regression test suite - data files
+
+[32mmycli[0m/plucky 1.29.2-7 all
+  CLI for MySQL/MariaDB with auto-completion and syntax highlighting
+
+[32modbc-mariadb[0m/plucky 3.1.15-3 amd64
+  ODBC driver for MariaDB
+
+[32morthanc-mysql[0m/plucky 5.0+dfsg-1build7 amd64
+  Plugins to use MySQL or MariaDB as a database back-end to Orthanc
+
+[7m--More--[27m[K[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# apt install mariadb
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1;31mError: [0m[1mUnable to locate package mariadb[0m
+[?2004h]0;root@25d454294298: /root@25d454294298:/# apt install mariadb                   apt search mariadb-server
+[?2004lSorting... 0%Sorting... 0%Sorting... 0%              Full Text Search... 50%Full Text Search... 50%         
