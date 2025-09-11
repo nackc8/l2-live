@@ -5,5 +5,6 @@ RUN apt-get install -y mariadb-server
 # Eventuellt optimera bort onödigt som installerades ovan
 RUN /usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
 
-CMD ["sleep", "infinity"]
-# ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+USER mysql
+
+CMD ["/usr/sbin/mysqld"]
