@@ -160,4 +160,471 @@ amd64
 [7m--More--[27m[K[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# apt install mariadb
 [?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1;31mError: [0m[1mUnable to locate package mariadb[0m
 [?2004h]0;root@25d454294298: /root@25d454294298:/# apt install mariadb                   apt search mariadb-server
-[?2004lSorting... 0%Sorting... 0%Sorting... 0%              Full Text Search... 50%Full Text Search... 50%         
+[?2004lSorting... 0%Sorting... 0%Sorting... 0%              Full Text Search... 50%Full Text Search... 50%                        [32mmariadb-server[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries
+
+[32mmariadb-server-10.5[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries (transitional dummy package)
+
+[32mmariadb-server-compat[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-server binaries/scripts
+
+[32mmariadb-server-core[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core server files
+
+[?2004h]0;root@25d454294298: /root@25d454294298:/# apt search mariadb-server[1P[1P[1P[1P[1P[1P[1@i[1@n[1@s[1@t[1@a[1@l[1@l [1@ [1@-[1@yaptapt[1@-[1@g[1@e[1@tapt-get install -y mariadb-server[H[2J]0;root@25d454294298: /root@25d454294298:/# apt-get install -y mariadb-server
+[?2004lReading package lists... 0%\Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  adduser galera-4 gawk iproute2 krb5-locales libbpf1 libcap2-bin libcgi-fast-perl libcgi-pm-perl
+  libclone-perl libconfig-inifiles-perl libdbd-mariadb-perl libdbi-perl libedit2 libelf1t64
+  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0t64 libgdbm-compat4t64 libgdbm6t64 libgpm2
+  libgssapi-krb5-2 libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
+  libhttp-message-perl libio-html-perl libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblsof0
+  liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6 libnuma1 libpam-cap
+  libperl5.40 libpopt0 libreadline8t64 libsigsegv2 libsnappy1v5 libterm-readkey-perl libtimedate-perl
+  libtirpc-common libtirpc3t64 liburi-perl liburing2 libwrap0 libxtables12 lsof mariadb-client
+  mariadb-client-core mariadb-common mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+  mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo mariadb-plugin-provider-snappy
+  mariadb-server-core mysql-common netbase perl perl-modules-5.40 psmisc pv readline-common rsync
+  socat
+Suggested packages:
+  liblocale-gettext-perl cron quota ecryptfs-utils gawk-doc python3:any libmldbm-perl
+  libnet-daemon-perl libsql-statement-perl gdbm-l10n gpm krb5-doc krb5-user libdata-dump-perl
+  libipc-sharedcache-perl libio-compress-brotli-perl libbusiness-isbn-perl libmime-base32-perl
+  libregexp-ipv6-perl libwww-perl mailx mariadb-test netcat-openbsd perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl make libtap-harness-archive-perl doc-base
+  readline-doc openssh-client openssh-server python3 python3-braceexpand
+The following NEW packages will be installed:
+  adduser galera-4 gawk iproute2 krb5-locales libbpf1 libcap2-bin libcgi-fast-perl libcgi-pm-perl
+  libclone-perl libconfig-inifiles-perl libdbd-mariadb-perl libdbi-perl libedit2 libelf1t64
+  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0t64 libgdbm-compat4t64 libgdbm6t64 libgpm2
+  libgssapi-krb5-2 libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
+  libhttp-message-perl libio-html-perl libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblsof0
+  liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6 libnuma1 libpam-cap
+  libperl5.40 libpopt0 libreadline8t64 libsigsegv2 libsnappy1v5 libterm-readkey-perl libtimedate-perl
+  libtirpc-common libtirpc3t64 liburi-perl liburing2 libwrap0 libxtables12 lsof mariadb-client
+  mariadb-client-core mariadb-common mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+  mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo mariadb-plugin-provider-snappy
+  mariadb-server mariadb-server-core mysql-common netbase perl perl-modules-5.40 psmisc pv
+  readline-common rsync socat
+0 upgraded, 75 newly installed, 0 to remove and 1 not upgraded.
+Need to get 31.2 MB of archives.
+After this operation, 189 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu plucky/main amd64 libpopt0 amd64 1.19+dfsg-2 [30.0 kB]
+0% [1 libpopt0 14.2 kB/30.0 kB 47%]                                   0% [Working]            Get:2 http://archive.ubuntu.com/ubuntu plucky/main amd64 rsync amd64 3.4.1+ds1-3 [482 kB]
+0% [2 rsync 2613 B/482 kB 1%]                             Get:3 http://archive.ubuntu.com/ubuntu plucky/main amd64 adduser all 3.137ubuntu2 [101 kB]
+2% [3 adduser 6588 B/101 kB 7%]                               2% [Waiting for headers]                        Get:4 http://archive.ubuntu.com/ubuntu plucky/universe amd64 galera-4 amd64 26.4.21-1 [789 kB]
+2% [4 galera-4 11.6 kB/789 kB 1%]                                 5% [Waiting for headers]                        Get:5 http://archive.ubuntu.com/ubuntu plucky/main amd64 libmpfr6 amd64 4.2.2-1 [361 kB]
+5% [5 libmpfr6 1009 B/361 kB 0%]                                Get:6 http://archive.ubuntu.com/ubuntu plucky/main amd64 readline-common all 8.2-6 [56.5 kB]
+6% [6 readline-common 9855 B/56.5 kB 17%]                                         6% [Waiting for headers]                        Get:7 http://archive.ubuntu.com/ubuntu plucky/main amd64 libreadline8t64 amd64 8.2-6 [162 kB]
+6% [7 libreadline8t64 9548 B/162 kB 6%]                                       7% [Working]            Get:8 http://archive.ubuntu.com/ubuntu plucky/main amd64 libsigsegv2 amd64 2.14-1ubuntu2 [15.0 kB]
+7% [8 libsigsegv2 15.0 kB/15.0 kB 100%]                                       7% [Working]            Get:9 http://archive.ubuntu.com/ubuntu plucky/main amd64 gawk amd64 1:5.2.1-2build3 [463 kB]
+7% [9 gawk 8405 B/463 kB 2%]                            Get:10 http://archive.ubuntu.com/ubuntu plucky/main amd64 mysql-common all 5.8+1.1.1ubuntu1 [6922 B]
+9% [10 mysql-common 6922 B/6922 B 100%]                                       Get:11 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-common all 1:11.4.7-0ubuntu0.25.04.1 [29.2 kB]
+9% [11 mariadb-common 15.6 kB/29.2 kB 54%]                                          9% [Connecting to archive.ubuntu.com]                                     Get:12 http://archive.ubuntu.com/ubuntu plucky/main amd64 libelf1t64 amd64 0.192-4ubuntu1 [58.6 kB]
+9% [12 libelf1t64 14.2 kB/58.6 kB 24%]                                      10% [Working]             Get:13 http://archive.ubuntu.com/ubuntu plucky/main amd64 libbpf1 amd64 1:1.5.0-2 [194 kB]
+10% [13 libbpf1 2604 B/194 kB 1%]                                 11% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu plucky/main amd64 libmnl0 amd64 1.0.5-3 [12.6 kB]
+11% [14 libmnl0 2478 B/12.6 kB 20%]                                   11% [Waiting for headers]                         Get:15 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkrb5support0 amd64 1.21.3-4ubuntu2 [35.8 kB]
+11% [15 libkrb5support0 1134 B/35.8 kB 3%]                                          11% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu plucky/main amd64 libk5crypto3 amd64 1.21.3-4ubuntu2 [90.8 kB]
+11% [16 libk5crypto3 63 B/90.8 kB 0%]                                     12% [Waiting for headers]                         Get:17 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkeyutils1 amd64 1.6.3-4ubuntu2 [9974 B]
+12% [17 libkeyutils1 2707 B/9974 B 27%]                                       12% [Waiting for headers]                         Get:18 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkrb5-3 amd64 1.21.3-4ubuntu2 [387 kB]
+12% [18 libkrb5-3 1129 B/387 kB 0%]                                   13% [Waiting for headers]                         Get:19 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgssapi-krb5-2 amd64 1.21.3-4ubuntu2 [161 kB]
+13% [19 libgssapi-krb5-2 20.7 kB/161 kB 13%]                                            14% [Waiting for headers]                         Get:20 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtirpc-common all 1.3.4+ds-1.3 [8106 B]
+14% [Waiting for headers]                         Get:21 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtirpc3t64 amd64 1.3.4+ds-1.3 [82.5 kB]
+14% [21 libtirpc3t64 18.1 kB/82.5 kB 22%]                                         15% [Working]             Get:22 http://archive.ubuntu.com/ubuntu plucky/main amd64 libxtables12 amd64 1.8.11-2ubuntu1 [36.8 kB]
+15% [22 libxtables12 5502 B/36.8 kB 15%]                                        15% [Waiting for headers]                         Get:23 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcap2-bin amd64 1:2.73-4ubuntu1 [34.9 kB]
+15% [23 libcap2-bin 3140 B/34.9 kB 9%]                                      15% [Waiting for headers]                         Get:24 http://archive.ubuntu.com/ubuntu plucky/main amd64 iproute2 amd64 6.14.0-1ubuntu1 [1279 kB]
+15% [24 iproute2 986 B/1279 kB 0%]                                  19% [Waiting for headers]                         Get:25 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 perl-modules-5.40 all 5.40.1-2ubuntu0.2 [3217 kB]
+19% [25 perl-modules-5.40 14.3 kB/3217 kB 0%]                                             27% [Waiting for headers]                         Get:26 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgdbm6t64 amd64 1.24-2 [35.3 kB]
+28% [26 libgdbm6t64 20.0 kB/35.3 kB 57%]                                        28% [Waiting for headers]                         Get:27 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgdbm-compat4t64 amd64 1.24-2 [6686 B]
+28% [Waiting for headers]                         Get:28 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libperl5.40 amd64 5.40.1-2ubuntu0.2 [4875 kB]
+28% [28 libperl5.40 11.3 kB/4875 kB 0%]41% [28 libperl5.40 4858 kB/4875 kB 100%]                                         41% [Working]             Get:29 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 perl amd64 5.40.1-2ubuntu0.2 [262 kB]
+41% [29 perl 13.2 kB/262 kB 5%]                               42% [Waiting for headers]                         Get:30 http://archive.ubuntu.com/ubuntu plucky/main amd64 libdbi-perl amd64 1.647-1 [832 kB]
+42% [30 libdbi-perl 18.4 kB/832 kB 2%]                                      44% [Waiting for headers]                         Get:31 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblsof0 amd64 4.99.4+dfsg-2 [59.7 kB]
+44% [31 liblsof0 21.8 kB/59.7 kB 37%]                                     45% [Waiting for headers]                         Get:32 http://archive.ubuntu.com/ubuntu plucky/main amd64 lsof amd64 4.99.4+dfsg-2 [245 kB]
+45% [32 lsof 28.0 kB/245 kB 11%]                                46% [Waiting for headers]                         Get:33 http://archive.ubuntu.com/ubuntu plucky/universe amd64 libconfig-inifiles-perl all 3.000003-3 [38.4 kB]
+46% [33 libconfig-inifiles-perl 5054 B/38.4 kB 13%]                                                   46% [Waiting for headers]                         Get:34 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 libmariadb3 amd64 1:11.4.7-0ubuntu0.25.04.1 [197 kB]
+46% [34 libmariadb3 21.5 kB/197 kB 11%]                                       47% [Waiting for headers]                         Get:35 http://archive.ubuntu.com/ubuntu plucky/main amd64 libedit2 amd64 3.1-20250104-1 [110 kB]
+47% [35 libedit2 7058 B/110 kB 6%]                                  47% [Waiting for headers]                         Get:36 http://archive.ubuntu.com/ubuntu plucky/main amd64 libncurses6 amd64 6.5+20250216-2 [126 kB]
+47% [36 libncurses6 14.1 kB/126 kB 11%]                                       48% [Waiting for headers]                         Get:37 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-client-core amd64 1:11.4.7-0ubuntu0.25.04.1 [1135 kB]
+48% [37 mariadb-client-core 5360 B/1135 kB 0%]                                              51% [Waiting for headers]                         Get:38 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-client amd64 1:11.4.7-0ubuntu0.25.04.1 [2054 kB]
+51% [38 mariadb-client 18.1 kB/2054 kB 1%]                                          57% [Waiting for headers]                         Get:39 http://archive.ubuntu.com/ubuntu plucky/main amd64 libnuma1 amd64 2.0.18-1build1 [23.3 kB]
+57% [39 libnuma1 23.3 kB/23.3 kB 100%]                                      57% [Working]             Get:40 http://archive.ubuntu.com/ubuntu plucky/main amd64 liburing2 amd64 2.9-1 [24.9 kB]
+57% [40 liburing2 4096 B/24.9 kB 16%]                                     57% [Waiting for headers]                         Get:41 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-server-core amd64 1:11.4.7-0ubuntu0.25.04.1 [7899 kB]
+57% [41 mariadb-server-core 22.4 kB/7899 kB 0%]67% [41 mariadb-server-core 3703 kB/7899 kB 47%]                                                78% [Waiting for headers]                         Get:42 http://archive.ubuntu.com/ubuntu plucky/main amd64 psmisc amd64 23.7-2 [188 kB]
+78% [42 psmisc 19.3 kB/188 kB 10%]                                  78% [Waiting for headers]                         Get:43 http://archive.ubuntu.com/ubuntu plucky/main amd64 libwrap0 amd64 7.6.q-36 [49.2 kB]
+79% [43 libwrap0 15.8 kB/49.2 kB 32%]                                     79% [Waiting for headers]                         Get:44 http://archive.ubuntu.com/ubuntu plucky/main amd64 socat amd64 1.8.0.2-1 [401 kB]
+79% [44 socat 34.2 kB/401 kB 9%]                                80% [Waiting for headers]                         Get:45 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-server amd64 1:11.4.7-0ubuntu0.25.04.1 [3392 kB]
+80% [45 mariadb-server 30.9 kB/3392 kB 1%]                                          89% [Waiting for headers]                         Get:46 http://archive.ubuntu.com/ubuntu plucky/main amd64 krb5-locales all 1.21.3-4ubuntu2 [14.9 kB]
+89% [46 krb5-locales 14.9 kB/14.9 kB 100%]                                          89% [Working]             Get:47 http://archive.ubuntu.com/ubuntu plucky/main amd64 libpam-cap amd64 1:2.73-4ubuntu1 [12.7 kB]
+89% [47 libpam-cap 3371 B/12.7 kB 27%]                                      90% [Waiting for headers]                         Get:48 http://archive.ubuntu.com/ubuntu plucky/main amd64 netbase all 6.4 [13.1 kB]
+90% [Waiting for headers]                         Get:49 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgpm2 amd64 1.20.7-11 [14.1 kB]
+90% [49 libgpm2 14.1 kB/14.1 kB 100%]                                     90% [Working]             Get:50 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-tagset-perl all 3.24-1 [14.1 kB]
+90% [50 libhtml-tagset-perl 14.1 kB/14.1 kB 100%]                                                 91% [Waiting for headers]                         Get:51 http://archive.ubuntu.com/ubuntu plucky/main amd64 liburi-perl all 5.30-1 [94.4 kB]
+91% [51 liburi-perl 29.8 kB/94.4 kB 32%]                                        91% [Waiting for headers]                         Get:52 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-parser-perl amd64 3.83-1build1 [86.2 kB]
+91% [52 libhtml-parser-perl 23.0 kB/86.2 kB 27%]                                                92% [Waiting for headers]                         Get:53 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcgi-pm-perl all 4.67-1 [185 kB]
+92% [53 libcgi-pm-perl 5638 B/185 kB 3%]                                        92% [Waiting for headers]                         Get:54 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libfcgi0t64 amd64 2.4.2-2.1ubuntu0.25.04.1 [27.1 kB]
+92% [54 libfcgi0t64 12.1 kB/27.1 kB 45%]                                        93% [Waiting for headers]                         Get:55 http://archive.ubuntu.com/ubuntu plucky/main amd64 libfcgi-perl amd64 0.82+ds-3build3 [21.7 kB]
+93% [55 libfcgi-perl 13.4 kB/21.7 kB 62%]                                         93% [Waiting for headers]                         Get:56 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcgi-fast-perl all 1:2.17-1 [10.3 kB]
+93% [56 libcgi-fast-perl 2606 B/10.3 kB 25%]                                            93% [Working]             Get:57 http://archive.ubuntu.com/ubuntu plucky/main amd64 libclone-perl amd64 0.47-1 [10.7 kB]
+94% [Waiting for headers]                         Get:58 http://archive.ubuntu.com/ubuntu plucky/universe amd64 libdbd-mariadb-perl amd64 1.22-1ubuntu1 [96.3 kB]
+94% [58 libdbd-mariadb-perl 17.1 kB/96.3 kB 18%]                                                94% [Waiting for headers]                         Get:59 http://archive.ubuntu.com/ubuntu plucky/main amd64 libencode-locale-perl all 1.05-3 [11.6 kB]
+94% [Waiting for headers]                         Get:60 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libfcgi-bin amd64 2.4.2-2.1ubuntu0.25.04.1 [11.6 kB]
+94% [60 libfcgi-bin 7053 B/11.6 kB 61%]                                       95% [Waiting for headers]                         Get:61 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-template-perl all 2.97-2build1 [58.3 kB]
+95% [61 libhtml-template-perl 24.8 kB/58.3 kB 43%]                                                  95% [Waiting for headers]                         Get:62 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtimedate-perl all 2.3300-2 [34.0 kB]
+95% [62 libtimedate-perl 19.8 kB/34.0 kB 58%]                                             96% [Waiting for headers]                         Get:63 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhttp-date-perl all 6.06-1 [10.2 kB]
+96% [Waiting for headers]                         Get:64 http://archive.ubuntu.com/ubuntu plucky/main amd64 libio-html-perl all 1.004-3 [15.9 kB]
+96% [64 libio-html-perl 3506 B/15.9 kB 22%]                                           96% [Waiting for headers]                         Get:65 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblwp-mediatypes-perl all 6.04-2 [20.1 kB]
+96% [65 liblwp-mediatypes-perl 17.1 kB/20.1 kB 85%]                                                   96% [Waiting for headers]                         Get:66 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhttp-message-perl all 7.00-2ubuntu1 [75.9 kB]
+96% [66 libhttp-message-perl 5501 B/75.9 kB 7%]                                               97% [Waiting for headers]                         Get:67 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblzo2-2 amd64 2.10-3 [54.2 kB]
+97% [67 liblzo2-2 3115 B/54.2 kB 6%]                                    97% [Waiting for headers]                         Get:68 http://archive.ubuntu.com/ubuntu plucky/main amd64 libterm-readkey-perl amd64 2.38-2build5 [23.2 kB]
+97% [68 libterm-readkey-perl 5248 B/23.2 kB 23%]                                                98% [Waiting for headers]                         Get:69 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-bzip2 amd64 1:11.4.7-0ubuntu0.25.04.1 [14.0 kB]
+98% [69 mariadb-plugin-provider-bzip2 10.7 kB/14.0 kB 77%]                                                          98% [Waiting for headers]                         Get:70 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lz4 amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+98% [70 mariadb-plugin-provider-lz4 13.9 kB/13.9 kB 100%]                                                         98% [Working]             Get:71 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lzma amd64 1:11.4.7-0ubuntu0.25.04.1 [14.0 kB]
+98% [71 mariadb-plugin-provider-lzma 8958 B/14.0 kB 64%]                                                        99% [Working]             Get:72 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lzo amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+99% [72 mariadb-plugin-provider-lzo 13.9 kB/13.9 kB 100%]                                                         99% [Working]             Get:73 http://archive.ubuntu.com/ubuntu plucky/main amd64 libsnappy1v5 amd64 1.2.1-1 [30.4 kB]
+99% [73 libsnappy1v5 22.6 kB/30.4 kB 74%]                                         99% [Working]             Get:74 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-snappy amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+99% [74 mariadb-plugin-provider-snappy 13.9 kB/13.9 kB 100%]                                                            99% [Waiting for headers]                         Get:75 http://archive.ubuntu.com/ubuntu plucky/main amd64 pv amd64 1.9.31-1ubuntu1 [94.1 kB]
+100% [75 pv 5501 B/94.1 kB 6%]                              100% [Working]              Fetched 31.2 MB in 5s (6286 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 75.)
+debconf: falling back to frontend: Teletype
+Extracting templates from packages: 40%Extracting templates from packages: 80%Extracting templates from packages: 100%
+Preconfiguring packages ...
+Selecting previously unselected package libpopt0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4258 files and directories currently installed.)
+Preparing to unpack .../libpopt0_1.19+dfsg-2_amd64.deb ...
+Unpacking libpopt0:amd64 (1.19+dfsg-2) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../rsync_3.4.1+ds1-3_amd64.deb ...
+Unpacking rsync (3.4.1+ds1-3) ...
+Selecting previously unselected package adduser.
+Preparing to unpack .../adduser_3.137ubuntu2_all.deb ...
+Unpacking adduser (3.137ubuntu2) ...
+Setting up adduser (3.137ubuntu2) ...
+Selecting previously unselected package galera-4.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4346 files and directories currently installed.)
+Preparing to unpack .../galera-4_26.4.21-1_amd64.deb ...
+Unpacking galera-4 (26.4.21-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../libmpfr6_4.2.2-1_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.2.2-1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../readline-common_8.2-6_all.deb ...
+Unpacking readline-common (8.2-6) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../libreadline8t64_8.2-6_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:amd64 (8.2-6) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.14-1ubuntu2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.14-1ubuntu2) ...
+Setting up libmpfr6:amd64 (4.2.2-1) ...
+Setting up readline-common (8.2-6) ...
+Setting up libreadline8t64:amd64 (8.2-6) ...
+Setting up libsigsegv2:amd64 (2.14-1ubuntu2) ...
+Selecting previously unselected package gawk.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4402 files and directories currently installed.)
+Preparing to unpack .../00-gawk_1%3a5.2.1-2build3_amd64.deb ...
+Unpacking gawk (1:5.2.1-2build3) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../01-mysql-common_5.8+1.1.1ubuntu1_all.deb ...
+Unpacking mysql-common (5.8+1.1.1ubuntu1) ...
+Selecting previously unselected package mariadb-common.
+Preparing to unpack .../02-mariadb-common_1%3a11.4.7-0ubuntu0.25.04.1_all.deb ...
+Unpacking mariadb-common (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../03-libelf1t64_0.192-4ubuntu1_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.192-4ubuntu1) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../04-libbpf1_1%3a1.5.0-2_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.5.0-2) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../05-libmnl0_1.0.5-3_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.5-3) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../06-libkrb5support0_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../07-libk5crypto3_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../08-libkeyutils1_1.6.3-4ubuntu2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-4ubuntu2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../09-libkrb5-3_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../10-libgssapi-krb5-2_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../11-libtirpc-common_1.3.4+ds-1.3_all.deb ...
+Unpacking libtirpc-common (1.3.4+ds-1.3) ...
+Selecting previously unselected package libtirpc3t64:amd64.
+Preparing to unpack .../12-libtirpc3t64_1.3.4+ds-1.3_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3 to /lib/x86_64-linux-gnu/libtirpc.so.3.usr-is-merged by libtirpc3t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3.0.0 to /lib/x86_64-linux-gnu/libtirpc.so.3.0.0.usr-is-merged by libtirpc3t64'
+Unpacking libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../13-libxtables12_1.8.11-2ubuntu1_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.11-2ubuntu1) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../14-libcap2-bin_1%3a2.73-4ubuntu1_amd64.deb ...
+Unpacking libcap2-bin (1:2.73-4ubuntu1) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../15-iproute2_6.14.0-1ubuntu1_amd64.deb ...
+Unpacking iproute2 (6.14.0-1ubuntu1) ...
+Selecting previously unselected package perl-modules-5.40.
+Preparing to unpack .../16-perl-modules-5.40_5.40.1-2ubuntu0.2_all.deb ...
+Unpacking perl-modules-5.40 (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package libgdbm6t64:amd64.
+Preparing to unpack .../17-libgdbm6t64_1.24-2_amd64.deb ...
+Unpacking libgdbm6t64:amd64 (1.24-2) ...
+Selecting previously unselected package libgdbm-compat4t64:amd64.
+Preparing to unpack .../18-libgdbm-compat4t64_1.24-2_amd64.deb ...
+Unpacking libgdbm-compat4t64:amd64 (1.24-2) ...
+Selecting previously unselected package libperl5.40:amd64.
+Preparing to unpack .../19-libperl5.40_5.40.1-2ubuntu0.2_amd64.deb ...
+Unpacking libperl5.40:amd64 (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../20-perl_5.40.1-2ubuntu0.2_amd64.deb ...
+Unpacking perl (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package libdbi-perl:amd64.
+Preparing to unpack .../21-libdbi-perl_1.647-1_amd64.deb ...
+Unpacking libdbi-perl:amd64 (1.647-1) ...
+Selecting previously unselected package liblsof0.
+Preparing to unpack .../22-liblsof0_4.99.4+dfsg-2_amd64.deb ...
+Unpacking liblsof0 (4.99.4+dfsg-2) ...
+Selecting previously unselected package lsof.
+Preparing to unpack .../23-lsof_4.99.4+dfsg-2_amd64.deb ...
+Unpacking lsof (4.99.4+dfsg-2) ...
+Selecting previously unselected package libconfig-inifiles-perl.
+Preparing to unpack .../24-libconfig-inifiles-perl_3.000003-3_all.deb ...
+Unpacking libconfig-inifiles-perl (3.000003-3) ...
+Selecting previously unselected package libmariadb3:amd64.
+Preparing to unpack .../25-libmariadb3_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking libmariadb3:amd64 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libedit2:amd64.
+Preparing to unpack .../26-libedit2_3.1-20250104-1_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20250104-1) ...
+Selecting previously unselected package libncurses6:amd64.
+Preparing to unpack .../27-libncurses6_6.5+20250216-2_amd64.deb ...
+Unpacking libncurses6:amd64 (6.5+20250216-2) ...
+Selecting previously unselected package mariadb-client-core.
+Preparing to unpack .../28-mariadb-client-core_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-client-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-client.
+Preparing to unpack .../29-mariadb-client_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-client (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libnuma1:amd64.
+Preparing to unpack .../30-libnuma1_2.0.18-1build1_amd64.deb ...
+Unpacking libnuma1:amd64 (2.0.18-1build1) ...
+Selecting previously unselected package liburing2:amd64.
+Preparing to unpack .../31-liburing2_2.9-1_amd64.deb ...
+Unpacking liburing2:amd64 (2.9-1) ...
+Selecting previously unselected package mariadb-server-core.
+Preparing to unpack .../32-mariadb-server-core_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-server-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package psmisc.
+Preparing to unpack .../33-psmisc_23.7-2_amd64.deb ...
+Unpacking psmisc (23.7-2) ...
+Selecting previously unselected package libwrap0:amd64.
+Preparing to unpack .../34-libwrap0_7.6.q-36_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-36) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../35-socat_1.8.0.2-1_amd64.deb ...
+Unpacking socat (1.8.0.2-1) ...
+Setting up mysql-common (5.8+1.1.1ubuntu1) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up mariadb-common (1:11.4.7-0ubuntu0.25.04.1) ...
+update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mariadb-server.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7594 files and directories currently installed.)
+Preparing to unpack .../00-mariadb-server_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Unpacking mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../01-krb5-locales_1.21.3-4ubuntu2_all.deb ...
+Unpacking krb5-locales (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../02-libpam-cap_1%3a2.73-4ubuntu1_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.73-4ubuntu1) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../03-netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package libgpm2:amd64.
+Preparing to unpack .../04-libgpm2_1.20.7-11_amd64.deb ...
+Unpacking libgpm2:amd64 (1.20.7-11) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../05-libhtml-tagset-perl_3.24-1_all.deb ...
+Unpacking libhtml-tagset-perl (3.24-1) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../06-liburi-perl_5.30-1_all.deb ...
+Unpacking liburi-perl (5.30-1) ...
+Selecting previously unselected package libhtml-parser-perl:amd64.
+Preparing to unpack .../07-libhtml-parser-perl_3.83-1build1_amd64.deb ...
+Unpacking libhtml-parser-perl:amd64 (3.83-1build1) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../08-libcgi-pm-perl_4.67-1_all.deb ...
+Unpacking libcgi-pm-perl (4.67-1) ...
+Selecting previously unselected package libfcgi0t64:amd64.
+Preparing to unpack .../09-libfcgi0t64_2.4.2-2.1ubuntu0.25.04.1_amd64.deb ...
+Unpacking libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.25.04.1) ...
+Selecting previously unselected package libfcgi-perl.
+Preparing to unpack .../10-libfcgi-perl_0.82+ds-3build3_amd64.deb ...
+Unpacking libfcgi-perl (0.82+ds-3build3) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../11-libcgi-fast-perl_1%3a2.17-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.17-1) ...
+Selecting previously unselected package libclone-perl:amd64.
+Preparing to unpack .../12-libclone-perl_0.47-1_amd64.deb ...
+Unpacking libclone-perl:amd64 (0.47-1) ...
+Selecting previously unselected package libdbd-mariadb-perl.
+Preparing to unpack .../13-libdbd-mariadb-perl_1.22-1ubuntu1_amd64.deb ...
+Unpacking libdbd-mariadb-perl (1.22-1ubuntu1) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../14-libencode-locale-perl_1.05-3_all.deb ...
+Unpacking libencode-locale-perl (1.05-3) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../15-libfcgi-bin_2.4.2-2.1ubuntu0.25.04.1_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2.1ubuntu0.25.04.1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../16-libhtml-template-perl_2.97-2build1_all.deb ...
+Unpacking libhtml-template-perl (2.97-2build1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../17-libtimedate-perl_2.3300-2_all.deb ...
+Unpacking libtimedate-perl (2.3300-2) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../18-libhttp-date-perl_6.06-1_all.deb ...
+Unpacking libhttp-date-perl (6.06-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../19-libio-html-perl_1.004-3_all.deb ...
+Unpacking libio-html-perl (1.004-3) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../20-liblwp-mediatypes-perl_6.04-2_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.04-2) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../21-libhttp-message-perl_7.00-2ubuntu1_all.deb ...
+Unpacking libhttp-message-perl (7.00-2ubuntu1) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../22-liblzo2-2_2.10-3_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.10-3) ...
+Selecting previously unselected package libterm-readkey-perl.
+Preparing to unpack .../23-libterm-readkey-perl_2.38-2build5_amd64.deb ...
+Unpacking libterm-readkey-perl (2.38-2build5) ...
+Selecting previously unselected package mariadb-plugin-provider-bzip2.
+Preparing to unpack .../24-mariadb-plugin-provider-bzip2_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-bzip2 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lz4.
+Preparing to unpack .../25-mariadb-plugin-provider-lz4_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lz4 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lzma.
+Preparing to unpack .../26-mariadb-plugin-provider-lzma_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lzma (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lzo.
+Preparing to unpack .../27-mariadb-plugin-provider-lzo_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lzo (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../28-libsnappy1v5_1.2.1-1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.2.1-1) ...
+Selecting previously unselected package mariadb-plugin-provider-snappy.
+Preparing to unpack .../29-mariadb-plugin-provider-snappy_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-snappy (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package pv.
+Preparing to unpack .../30-pv_1.9.31-1ubuntu1_amd64.deb ...
+Unpacking pv (1.9.31-1ubuntu1) ...
+Setting up libconfig-inifiles-perl (3.000003-3) ...
+Setting up galera-4 (26.4.21-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-4ubuntu2) ...
+Setting up libgpm2:amd64 (1.20.7-11) ...
+Setting up libgdbm6t64:amd64 (1.24-2) ...
+Setting up libgdbm-compat4t64:amd64 (1.24-2) ...
+Setting up gawk (1:5.2.1-2build3) ...
+Setting up psmisc (23.7-2) ...
+Setting up liblsof0 (4.99.4+dfsg-2) ...
+Setting up libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.25.04.1) ...
+Setting up libtirpc-common (1.3.4+ds-1.3) ...
+Setting up libedit2:amd64 (3.1-20250104-1) ...
+Setting up libfcgi-bin (2.4.2-2.1ubuntu0.25.04.1) ...
+Setting up liblzo2-2:amd64 (2.10-3) ...
+Setting up krb5-locales (1.21.3-4ubuntu2) ...
+Setting up libelf1t64:amd64 (0.192-4ubuntu1) ...
+Setting up libsnappy1v5:amd64 (1.2.1-1) ...
+Setting up libkrb5support0:amd64 (1.21.3-4ubuntu2) ...
+Setting up libcap2-bin (1:2.73-4ubuntu1) ...
+Setting up libwrap0:amd64 (7.6.q-36) ...
+Setting up socat (1.8.0.2-1) ...
+Setting up libncurses6:amd64 (6.5+20250216-2) ...
+Setting up libmnl0:amd64 (1.0.5-3) ...
+Setting up libmariadb3:amd64 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libk5crypto3:amd64 (1.21.3-4ubuntu2) ...
+Setting up libxtables12:amd64 (1.8.11-2ubuntu1) ...
+Setting up libnuma1:amd64 (2.0.18-1build1) ...
+Setting up perl-modules-5.40 (5.40.1-2ubuntu0.2) ...
+Setting up pv (1.9.31-1ubuntu1) ...
+Setting up netbase (6.4) ...
+Setting up libkrb5-3:amd64 (1.21.3-4ubuntu2) ...
+Setting up liburing2:amd64 (2.9-1) ...
+Setting up libpam-cap:amd64 (1:2.73-4ubuntu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Setting up libbpf1:amd64 (1:1.5.0-2) ...
+Setting up libpopt0:amd64 (1.19+dfsg-2) ...
+Setting up mariadb-client-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libperl5.40:amd64 (5.40.1-2ubuntu0.2) ...
+Setting up perl (5.40.1-2ubuntu0.2) ...
+Setting up libgssapi-krb5-2:amd64 (1.21.3-4ubuntu2) ...
+Setting up libio-html-perl (1.004-3) ...
+Setting up libtimedate-perl (2.3300-2) ...
+Setting up libfcgi-perl (0.82+ds-3build3) ...
+Setting up mariadb-server-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libterm-readkey-perl (2.38-2build5) ...
+Setting up liburi-perl (5.30-1) ...
+Setting up libdbi-perl:amd64 (1.647-1) ...
+Setting up rsync (3.4.1+ds1-3) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libhttp-date-perl (6.06-1) ...
+Setting up mariadb-client (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Setting up libclone-perl:amd64 (0.47-1) ...
+Setting up iproute2 (6.14.0-1ubuntu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Setting up libhtml-tagset-perl (3.24-1) ...
+Setting up liblwp-mediatypes-perl (6.04-2) ...
+Setting up libencode-locale-perl (1.05-3) ...
+Setting up libdbd-mariadb-perl (1.22-1ubuntu1) ...
+Setting up lsof (4.99.4+dfsg-2) ...
+Setting up libhtml-parser-perl:amd64 (3.83-1build1) ...
+Setting up libhttp-message-perl (7.00-2ubuntu1) ...
+Setting up libcgi-pm-perl (4.67-1) ...
+Setting up libhtml-template-perl (2.97-2build1) ...
+Setting up mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of stop.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up mariadb-plugin-provider-bzip2 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lzma (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lzo (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lz4 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libcgi-fast-perl (1:2.17-1) ...
+Setting up mariadb-plugin-provider-snappy (1:11.4.7-0ubuntu0.25.04.1) ...
+Processing triggers for libc-bin (2.41-6ubuntu1.1) ...
+Processing triggers for mariadb-server (1:11.4.7-0ubuntu0.2
