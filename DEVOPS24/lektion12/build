@@ -3,5 +3,6 @@
 (
 	cd UMariaDB
 	docker build -t umariadb:latest .
-	docker run -dit --rm umariadb:latest
+	docker run -dit --rm --name umariadbcont umariadb:latest
+	read -p ""
 )
