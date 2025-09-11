@@ -3,5 +3,5 @@
 (
 	cd UMariaDB
 	docker build -t umariadb:latest .
-	docker run -dit
+	docker run -dit --rm umariadb:latest
 )
