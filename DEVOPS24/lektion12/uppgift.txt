@@ -1,0 +1,12 @@
+Skapa en Dockerfile för MariaDB som:
+    Använder ubuntu:latest som basimage.
+    Installerar MariaDB-servern och startar tjänsten.
+
+Skapa en Dockerfile för Wordpress som:
+Använder ubuntu:latest som basimage.
+Installerar Apache, PHP och nödvändiga tillägg.
+Laddar ner och konfigurerar Wordpress.
+Skapa en docker-compose.yml-fil som:
+Använder de egna Dockerfilerna för Wordpress och MariaDB.
+Använder två namngivna volymer för att lagra data.
+Starta tjänsterna och verifiera att Wordpress fungerar på http://localhost:8080.
