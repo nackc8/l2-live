@@ -1838,4 +1838,47 @@ su: Authentication failure
 [0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
 [0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
 [0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.7s (6/6) FINISHED                                                        docker:default
-[34m => [internal] load build definition from Dockerfile    
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 101B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:e1720c22c4f280f7e277d7479753dc61023f391faa5f3872b7cca761e0841aa6      0.0s
+[0m[34m => => naming to docker.io/library/entrypoint                                                     0.0s
+[0m[?25h[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker build -t entrypoint .[C[Cecho[K[C[Cdocker logs eprun -it --name ep entrypoint[H[2J[94mDEVOPS24/lektion12
+(B[m$ docker run -it --name ep entrypoint
+[?2004ldocker: Error response from daemon: Conflict. The container name "/ep" is already in use by container "5730d10d7ad3be2df69a6e1028809c45dc386a6b19d98d0b7866b4be77965995". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker rm ep
+[?2004lep
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker rm epun -it --name ep entrypoint[H[2J[94mDEVOPS24/lektion12
+(B[m$ docker run -it --name ep entrypoint[C[C entrypoint
+[?2004lhello -e
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE             COMMAND              CREATED          STATUS          PORTS     NAMES
+2e814d862476   umariadb:latest   "/usr/sbin/mysqld"   19 minutes ago   Up 19 minutes             umariadbcont
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker psrun -it --name ep  entrypoint[C[C[C[C[C[C[C[C[C[Cm ep[Kun -it --name ep entrypoint[C[C[C[C[C[C[C[C[C[7Pbuild -t entrypoint .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 104B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 104B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (5/5) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 104B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04           
