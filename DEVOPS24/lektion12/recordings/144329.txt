@@ -1086,4 +1086,89 @@ WantedBy=multi-user.target
 # Copyright notice:
 #
 # This file is free software; you can redistribute it and/or modify it
-[7m/usr/lib/systemd/system/mysqld.servi
+[7m/usr/lib/systemd/system/mysqld.service[27m[K[K/[Kmm[Kyy[Kss[Kqq[Kll[K[1;1H[K# It's not recommended to modify this file in-place, because it will be
+[2;1H[K# overwritten during package upgrades.  If you want to customize, the
+[3;1H[K# best way is to create a file "/etc/systemd/system/mariadb.service",
+[4;1H[K# containing
+[5;1H[K#       .include /usr/lib/systemd/system/mariadb.service
+[6;1H[K#       ...make your changes here...
+[7;1H[K# or create a file "/etc/systemd/system/mariadb.service.d/foo.conf",
+[8;1H[K# which doesn't need to include ".include" call and which will be parsed
+[9;1H[K# after the file mariadb.service itself is parsed.
+[10;1H[K#
+[11;1H[K# For more info about custom unit files, see systemd.unit(5) or
+[12;1H[K# https://mariadb.com/kb/en/mariadb/systemd/
+[13;1H[K#
+[14;1H[K# Copyright notice:
+[15;1H[K#
+[16;1H[K# This file is free software; you can redistribute it and/or modify it
+[17;1H[1;1H[K# It's not recommended to modify this file in-place, because it will be
+[2;1H[K# overwritten during package upgrades.  If you want to customize, the
+[3;1H[K# best way is to create a file "/etc/systemd/system/mariadb.service",
+[4;1H[K# containing
+[5;1H[K#       .include /usr/lib/systemd/system/mariadb.service
+[6;1H[K#       ...make your changes here...
+[7;1H[K# or create a file "/etc/systemd/system/mariadb.service.d/foo.conf",
+[8;1H[K# which doesn't need to include ".include" call and which will be parsed
+[9;1H[K# after the file mariadb.service itself is parsed.
+[10;1H[K#
+[11;1H[K# For more info about custom unit files, see systemd.unit(5) or
+[12;1H[K# https://mariadb.com/kb/en/mariadb/systemd/
+[13;1H[K#
+[14;1H[K# Copyright notice:
+[15;1H[K#
+[16;1H[K# This file is free software; you can redistribute it and/or modify it
+[17;1H...skipping...
+User=[7mmysql[27m
+Group=[7mmysql[27m
+
+# CAP_IPC_LOCK To allow memlock to be used as non-root user
+# These are enabled by default
+AmbientCapabilities=CAP_IPC_LOCK
+
+# PrivateDevices=true implies NoNewPrivileges=true and
+# SUID auth_pam_tool suddenly doesn't do setuid anymore
+PrivateDevices=false
+
+# Prevent writes to /usr, /boot, and /etc
+ProtectSystem=full
+
+
+
+:[K[K[?1l>[?1049l[23;0;0t[?2004h]0;root@25d454294298: /root@25d454294298:/# [Kuseradd mysql
+[?2004luseradd: user 'mysql' already exists
+[?2004h]0;root@25d454294298: /root@25d454294298:/# su  do -i mysql
+[?2004lbash: sudo: command not found
+[?2004h]0;root@25d454294298: /root@25d454294298:/# su mysql
+[?2004l[?2004h]0;root@25d454294298: /root@25d454294298:/# ech   echo $USER
+[?2004l
+[?2004h]0;root@25d454294298: /root@25d454294298:/# id
+[?2004luid=0(root) gid=0(root) groups=0(root)
+[?2004h]0;root@25d454294298: /root@25d454294298:/# exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker exec -it umariadbcont bash
+[?2004l[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# su mysql
+[?2004l[?2004h]0;root@25d454294298: /root@25d454294298:/# man su
+[?2004lThis system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the 'unminimize'
+command. You will still need to ensure the 'man-db' package is installed.
+[?2004h]0;root@25d454294298: /root@25d454294298:/# su --help[H[2J]0;root@25d454294298: /root@25d454294298:/# su --help
+[?2004l
+Usage:
+ su [options] [-] [<user> [<argument>...]]
+
+Change the effective user ID and group ID to that of <user>.
+A mere - implies -l.  If <user> is not given, root is assumed.
+
+Options:
+ -m, -p, --preserve-environment      do not reset environment variables
+ -w, --whitelist-environment <list>  don't reset specified variables
+
+ -g, --group <group>             specify the primary group
+ -G, --supp-group <group>        specify a supplemental group
+
+ -, -l, --login                  make the shell a login shell
+ -c, --command <command>         
