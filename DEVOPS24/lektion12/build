@@ -1,8 +1,11 @@
 #!/bin/bash
 
-(
-	cd UMariaDB
-	docker build -t umariadb:latest .
-	docker run -dit --rm --name umariadbcont umariadb:latest
-	read -p ""
-)
+while true; do
+	(
+		cd UMariaDB
+		docker build -t umariadb:latest .
+		docker run -dit --rm --name umariadbcont umariadb:latest
+		read -pr "Press ENTER to rebuild..."
+		docker stop umariadbcont
+	)
+done
