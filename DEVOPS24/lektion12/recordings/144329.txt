@@ -27,4 +27,81 @@ Script started on 2025-09-11 14:43:29+02:00 [TERM="xterm-256color" TTY="/dev/pts
 [33m93% [9 Packages store 0 B] [14 Packages 5575 B/34.8 kB 16%][0m[33m                                                           94% [9 Packages store 0 B][0m                          Get:15 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 Packages [391 kB]
 [33m94% [9 Packages store 0 B] [15 Packages 0 B/391 kB 0%][0m[33m                                                      95% [9 Packages store 0 B] [Waiting for headers][0m                                                Get:16 http://archive.ubuntu.com/ubuntu plucky-updates/restricted amd64 Packages [219 kB]
 [33m95% [9 Packages store 0 B] [16 Packages 5883 B/219 kB 3%][0m[33m                                                         96% [9 Packages store 0 B][0m[33m                          96% [Working][0m[33m96% [10 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [11 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [12 Packages store 0 B][0m[33m                           98% [Working][0m[33m98% [13 Packages store 0 B][0m[33m                           98% [Working][0m[33m98% [14 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [15 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [16 Packages store 0 B][0m[33m                           100% [Working][0m              Fetched 24.7 MB in 4s (6792 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%        
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m1 package can be upgraded. Run 'apt list --upgradable' to see it.
+[0m[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# apt search mariadb
+[?2004lSorting... 0%Sorting... 0%Sorting... 0%              Full Text Search... 50%Full Text Search... 50%                        [32mdbconfig-mysql[0m/plucky 2.0.24 all
+  dbconfig-common MySQL/MariaDB support
+
+[32mharlequin-mysql[0m/plucky 1.1.0-2 all
+  database client for the terminal (MySQL/MariaDB adapter)
+
+[32mlibdbd-mariadb-perl[0m/plucky 1.22-1ubuntu1 amd64
+  Perl5 database interface to the MariaDB/MySQL databases
+
+[32mlibdbd-mysql-perl[0m/plucky 4.053-1ubuntu1 amd64
+  Perl5 database interface to the MariaDB/MySQL database
+
+[32mlibmariadb-dev[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database development files
+
+[32mlibmariadb-dev-compat[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+[7m--More--[27m  MariaDB Connector/C, compatibility symlinks
+
+[32mlibmariadb-java[0m/plucky 2.7.6-1 all
+  Java database driver for MariaDB and MySQL
+
+[32mlibmariadb3[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database client library
+
+[32mlibmariadbd-dev[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB embedded database, development files
+
+[32mlibmariadbd19t64[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB embedded database, shared library
+
+[32mlibnss-mysql[0m/plucky 1.6.1-2ubuntu1 amd64
+  NSS module for using MySQL/MariaDB as a naming service
+[7m--More--[27m[K
+[32mlibreoffice-sdbc-mysql[0m/plucky-updates 4:25.2.5-0ubuntu0.25.04.1 amd64
+  MariaDB/MySQL SDBC driver for LibreOffice
+
+[32mmariadb-backup[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Backup tool for MariaDB server
+
+[32mmariadb-client[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database client binaries
+
+[32mmariadb-client-compat[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-client binaries/scripts
+
+[32mmariadb-client-core[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core client binaries
+
+[7m--More--[27m[32mmariadb-common[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MariaDB database common config files (/etc/mysql/mariadb.conf.d/)
+
+[32mmariadb-plugin-connect[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Connect storage engine for MariaDB server
+
+[32mmariadb-plugin-connect-jdbc[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  Connect storage engine JDBC interface for MariaDB server
+
+[32mmariadb-plugin-cracklib-password-check[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 
+amd64
+  CrackLib Password Validation Plugin for MariaDB server
+
+[32mmariadb-plugin-gssapi-client[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  GSSAPI authentication plugin for MariaDB client
+
+[7m--More--[27m[32mmariadb-plugin-gssapi-server[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  GSSAPI authentication plugin for MariaDB server
+
+[32mmariadb-plugin-hashicorp-key-management[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1
+ amd64
+  Hashicorp Key Management plugin for MariaDB
+
+[32mmariadb-plugin-mroonga[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Mroonga storage engine for MariaDB server
+
+[32mmariadb-plugin-oqgraph[0m/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  OQGraph storage engine for MariaDB 
