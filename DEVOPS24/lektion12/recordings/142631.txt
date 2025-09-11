@@ -2513,4 +2513,75 @@ umariadbcont
 [0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
 [0m[34m => [internal] load .dockerignore                                                                 0.0s
 [0m[34m => => transferring context: 2B                                                                   0.0s
-[0m[34m => CACHED [1/4] F
+[0m[34m => CACHED [1/4] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => [2/4] RUN apt update                                                                          4.0s
+[0m[34m => [3/4] RUN apt-get install -y mariadb-server                                                  12.5s
+[0m[34m => [4/4] RUN /usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld                         0.3s
+[0m => exporting to image                                                                            0.6s
+[34m => => exporting layers                                                                           0.6s
+[0m => => writing image sha256:4e2627c08ae7935c04990ec56a3b1bddf0aa95987d6f4b710048d161cbeb7b37      0.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 18.0s (8/8) FINISHED                                                       docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 272B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => [2/4] RUN apt update                                                                          4.0s
+[0m[34m => [3/4] RUN apt-get install -y mariadb-server                                                  12.5s
+[0m[34m => [4/4] RUN /usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld                         0.3s
+[0m[34m => exporting to image                                                                            0.6s
+[0m[34m => => exporting layers                                                                           0.6s
+[0m[34m => => writing image sha256:4e2627c08ae7935c04990ec56a3b1bddf0aa95987d6f4b710048d161cbeb7b37      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25h2e814d862476bae57fb7256d06bada42d308bae802dbd73f4d00129a41567730
+Press ENTER to rebuild...umariadbcont
+[1A[1B[0G[?25l[+] Building 0.0s (1/1)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[?25h[1A[1A[0G[?25l[+] Building 0.2s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.3s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.8s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.9s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.0s (3/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.0s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.0s (10/11)                                                               docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 314B                                                              0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.0s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => [1/6] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  0.0s
+[0m[34m => [internal] load build context                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [2/6] RUN apt update                                                                   0.0s
+[0m[34m => CACHED [3/6] RUN apt-get install -y mariadb-server                                            0.0s
