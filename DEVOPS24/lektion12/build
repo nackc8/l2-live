@@ -1,3 +1,7 @@
 #!/bin/bash
 
-docker build -t umariadb:latest .
+(
+	cd UMariaDB
+	docker build -t umariadb:latest .
+	docker run -dit
+)
