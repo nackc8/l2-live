@@ -1749,4 +1749,55 @@ Version: '11.4.7-MariaDB-0ubuntu0.25.04.1'  socket: '/run/mysqld/mysqld.sock'  p
   51548 pts/0    00:00:01 mysqld
   51783 ?        00:00:00 kworker/5:1
   51990 ?        00:00:00 (udev-worker)
-  51997 pts/2 
+  51997 pts/2    00:00:00 sleep
+  52008 pts/5    00:00:00 ps
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ps -e[C[Cdocker exec umariadbcont bash[H[2J[94mDEVOPS24/lektion12
+(B[m$ docker exec umariadbcont bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@/[1P[1@-[1@i[1@t[1@ 
+[?2004l[?2004hmysql@2e814d862476:/$ ps -e[H[2Jmysql@2e814d862476:/$ ps -e
+[?2004l    PID TTY          TIME CMD
+      1 pts/0    00:00:01 mysqld
+     24 pts/1    00:00:00 bash
+     31 pts/1    00:00:00 ps
+[?2004hmysql@2e814d862476:/$ su
+[?2004lPassword: 
+su: Authentication failure
+[?2004hmysql@2e814d862476:/$ [H[2Jmysql@2e814d862476:/$ ps -e
+[?2004l    PID TTY          TIME CMD
+      1 pts/0    00:00:01 mysqld
+     24 pts/1    00:00:00 bash
+     33 pts/1    00:00:00 ps
+[?2004hmysql@2e814d862476:/$ l exit
+[?2004lexit
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ls /bin/echo 
+[?2004l/bin/echo
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker build -t entryoo[K[Kpoint .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 92B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 92B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (5/5) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 92B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:264f05a43946f0f170e2356ca48a2cade55c78494b21ba07eceda0454fa452c3      0.0s
+[0m[34m => => naming to docker.io/library/entrypoint                                                     0.0s
+[0m[?25h[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker run -it [K[K[K[K[K[K[K[K[K[K[K[K[K[Kocker build -t entrypoint .[C[C[C[Kocker build -t entrypoint .[C[C[15Pls /bin/echo [C[Cdocker build -t entrypoint .[C[C[C[Kco[K[Kocker run -it entrypoint [H[2J[94mDEVOPS24/lektion12
+(B[m$ docker run -it entrypoint [1@d[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ docker logs [K[K[K[K[K[K[K[K[K[K[K[Kdocker run -it entrypoint
