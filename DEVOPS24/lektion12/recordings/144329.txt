@@ -627,4 +627,163 @@ Setting up mariadb-plugin-provider-lz4 (1:11.4.7-0ubuntu0.25.04.1) ...
 Setting up libcgi-fast-perl (1:2.17-1) ...
 Setting up mariadb-plugin-provider-snappy (1:11.4.7-0ubuntu0.25.04.1) ...
 Processing triggers for libc-bin (2.41-6ubuntu1.1) ...
-Processing triggers for mariadb-server (1:11.4.7-0ubuntu0.2
+Processing triggers for mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of restart.
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [K
+[?2004l[?2004h]0;root@25d454294298: /root@25d454294298:/# apt-get install -y mariadb-server                                 [H[2J]0;root@25d454294298: /root@25d454294298:/# apt search mariadb-server      client[1P[1P[1P[1P[1P[1@i[1P[1P[1@i[1@n[1@s[1@t[1@a[1@l[1@l [1@ [1@-[1@y mariadb-clientapt[1@/[1P[1@-[1@g[1@e[1@t
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 7%Reading package lists... 7%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 1%Reading state information... Done
+mariadb-client is already the newest version (1:11.4.7-0ubuntu0.25.04.1).
+mariadb-client set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [K[H[2J]0;root@25d454294298: /root@25d454294298:/# l
+[?2004l[0m[01;36mbin[0m@   [01;34mdev[0m/  [01;34mhome[0m/  [01;36mlib64[0m@  [01;34mmnt[0m/  [01;34mproc[0m/  [01;34mrun[0m/   [01;34msrv[0m/  [30;42mtmp[0m/  [01;34mvar[0m/
+[01;34mboot[0m/  [01;34metc[0m/  [01;36mlib[0m@   [01;34mmedia[0m/  [01;34mopt[0m/  [01;34mroot[0m/  [01;36msbin[0m@  [01;34msys[0m/  [01;34musr[0m/
+[?2004h]0;root@25d454294298: /root@25d454294298:/# [H[2J]0;root@25d454294298: /root@25d454294298:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@25d454294298: /root@25d454294298:/# dpkg
+[?2004l[1mdpkg:[0m [1;31merror:[0m need an action option
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+Use 'apt' or 'aptitude' for user-friendly package management;
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+Type dpkg --force-help for a list of forcing options;
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+[?2004h]0;root@25d454294298: /root@25d454294298:/# dpkg [H[2J]0;root@25d454294298: /root@25d454294298:/# dpkg + -L mariadb-server
+[?2004l/.
+/etc
+/etc/apparmor.d
+/etc/apparmor.d/usr.sbin.mariadbd
+/etc/init.d
+/etc/init.d/mariadb
+/etc/logcheck
+/etc/logcheck/ignore.d.paranoid
+/etc/logcheck/ignore.d.paranoid/mariadb-server
+/etc/logcheck/ignore.d.server
+/etc/logcheck/ignore.d.server/mariadb-server
+/etc/logcheck/ignore.d.workstation
+/etc/logcheck/ignore.d.workstation/mariadb-server
+/etc/logrotate.d
+/etc/logrotate.d/mariadb
+/etc/mysql
+/etc/mysql/debian-start
+/etc/mysql/mariadb.conf.d
+/etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf
+/etc/mysql/mariadb.conf.d/50-server.cnf
+/etc/security
+/etc/security/user_map.conf
+/usr
+/usr/bin
+/usr/bin/aria_chk
+/usr/bin/aria_dump_log
+/usr/bin/aria_ftdump
+/usr/bin/aria_pack
+/usr/bin/aria_read_log
+/usr/bin/galera_new_cluster
+/usr/bin/galera_recovery
+/usr/bin/mariadb-service-convert
+/usr/bin/mariadbd-multi
+/usr/bin/mariadbd-safe
+/usr/bin/mariadbd-safe-helper
+/usr/bin/myisam_ftdump
+/usr/bin/myisamchk
+/usr/bin/myisamlog
+/usr/bin/myisampack
+/usr/bin/wsrep_sst_backup
+/usr/bin/wsrep_sst_common
+/usr/bin/wsrep_sst_mariabackup
+/usr/bin/wsrep_sst_mysqldump
+/usr/bin/wsrep_sst_rsync
+/usr/lib
+/usr/lib/mysql
+/usr/lib/mysql/plugin
+/usr/lib/mysql/plugin/auth_ed25519.so
+/usr/lib/mysql/plugin/auth_pam.so
+/usr/lib/mysql/plugin/auth_pam_tool_dir
+/usr/lib/mysql/plugin/auth_pam_tool_dir/auth_pam_tool
+/usr/lib/mysql/plugin/auth_pam_v1.so
+/usr/lib/mysql/plugin/disks.so
+/usr/lib/mysql/plugin/file_key_management.so
+/usr/lib/mysql/plugin/ha_archive.so
+/usr/lib/mysql/plugin/ha_blackhole.so
+/usr/lib/mysql/plugin/ha_federated.so
+/usr/lib/mysql/plugin/ha_federatedx.so
+/usr/lib/mysql/plugin/ha_sphinx.so
+/usr/lib/mysql/plugin/handlersocket.so
+/usr/lib/mysql/plugin/locales.so
+/usr/lib/mysql/plugin/metadata_lock_info.so
+/usr/lib/mysql/plugin/password_reuse_check.so
+/usr/lib/mysql/plugin/query_cache_info.so
+/usr/lib/mysql/plugin/query_response_time.so
+/usr/lib/mysql/plugin/server_audit.so
+/usr/lib/mysql/plugin/simple_password_check.so
+/usr/lib/mysql/plugin/sql_errlog.so
+/usr/lib/mysql/plugin/type_mysql_json.so
+/usr/lib/mysql/plugin/wsrep_info.so
+/usr/lib/systemd
+/usr/lib/systemd/system
+/usr/lib/systemd/system/mariadb-extra.socket
+/usr/lib/systemd/system/mariadb-extra@.socket
+/usr/lib/systemd/system/mariadb.service
+/usr/lib/systemd/system/mariadb.socket
+/usr/lib/systemd/system/mariadb@.service
+/usr/lib/systemd/system/mariadb@.socket
+/usr/lib/systemd/system/mariadb@bootstrap.service.d
+/usr/lib/systemd/system/mariadb@bootstrap.service.d/use_galera_new_cluster.conf
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/security
+/usr/lib/x86_64-linux-gnu/security/pam_user_map.so
+/usr/share
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_mariadb.py
+/usr/share/doc
+/usr/share/doc/mariadb-server
+/usr/share/doc/mariadb-server/NEWS.Debian.gz
+/usr/share/doc/mariadb-server/README.Debian.gz
+/usr/share/doc/mariadb-server/copyright
+/usr/share/doc/mariadb-server/mariadbd.sym.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/mariadb-server
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/aria_chk.1.gz
+/usr/share/man/man1/aria_dump_log.1.gz
+/usr/share/man/man1/aria_ftdump.1.gz
+/usr/share/man/man1/aria_pack.1.gz
+/usr/share/man/man1/aria_read_log.1.gz
+/usr/share/man/man1/galera_new_cluster.1.gz
+/usr/share/man/man1/galera_recovery.1.gz
+/usr/share/man/man1/mariadb-service-convert.1.gz
+/usr/share/man/man1/mariadbd-multi.1.gz
+/usr/share/man/man1/mariadbd-safe-helper.1.gz
+/usr/share/man/man1/mariadbd-safe.1.gz
+/usr/share/man/man1/myisam_ftdump.1.gz
+/usr/share/man/man1/myisamchk.1.gz
+/usr/share/man/man1/myisamlog.1.gz
+/usr/share/man/man1/myisampack.1.gz
+/usr/share/man/man1/wsrep_sst_backup.1.gz
+/usr/share/man/man1/wsrep_sst_common.1.gz
+/usr/share/man/man1/wsrep_sst_mariabackup.1.gz
+/usr/share/man/man1/wsrep_sst_mysqldump.1.gz
+/usr/share/man/man1/wsrep_sst_rsync.1.gz
+/usr/share/man/man1/wsrep_sst_rsync_wan.1.gz
+/usr/share/mariadb
+/usr/share/mariadb/debian-start.inc.sh
+/usr/share/mariadb/echo_stderr
+/usr/share/mariadb/mini-benchmark
+/usr/share/mariadb/wsrep.cnf
+/usr/share/mariadb/wsrep_notify
+/usr/bin/mysqld_safe
+/usr/bin/wsrep_sst_rsync_wan
+/usr/lib/systemd/system/mysql.service
+/usr/lib/systemd/system/mysqld.service
+/usr/share/doc/mariadb-server/ch
