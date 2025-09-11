@@ -330,4 +330,353 @@ ERROR: failed to build: failed to solve: ubuntu:lts: failed to resolve source me
 [0m[34m => [internal] load .dockerignore                                                                 0.0s
 [0m[34m => => transferring context: 2B                                                                   0.0s
 [0m[34m => [1/1] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  3.5s
-[0m[34m => => resolve docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd7
+[0m[34m => => resolve docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  0.0s
+[0m[34m => => sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd26ff7bd548b1f340f081d7 6.69kB / 6.69kB    0.0s
+[0m[34m => => sha256:4b3789f3610c243d0f400179021d8cdd222ec99b644849d91ddc3ad774f7cf44 424B / 424B        0.0s
+[0m[34m => => sha256:72ff9b0d42b4296ec88a705e7708c22f406ba341327cf70b6858ba0543f1fbd2 2.30kB / 2.30kB    0.0s
+[0m[34m => => sha256:df3646a507d2b3b1b0bde6e6a491ee8926b6961e71b422b45b15dec9c6e2bc9e 29.71MB / 29.71MB  3.0s
+[0m[34m => => extracting sha256:df3646a507d2b3b1b0bde6e6a491ee8926b6961e71b422b45b15dec9c6e2bc9e         0.4s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:8fbb02a81f7a364fe9bc67d51f7006a67902ef6b3b5a8b9f6257aca8b151e74c      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25h[?2004h[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ docker image ls[H[2J[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ docker image ls
+[?2004lREPOSITORY                             TAG             IMAGE ID       CREATED        SIZE
+cowimg                                 latest          70eb4e699fec   2 weeks ago    192MB
+cow                                    latest          9c4816f8ad0c   2 weeks ago    192MB
+jenkins/jenkins                        lts             091ba5742e7e   3 weeks ago    472MB
+gitlab/gitlab-ce                       latest          db5c72135fb3   3 weeks ago    3.75GB
+redis                                  latest          9d1fe3a9a889   3 weeks ago    137MB
+nginx                                  latest          ad5708199ec7   4 weeks ago    192MB
+wordpress                              php8.2-apache   c23b6f0d5357   4 weeks ago    730MB
+debian                                 stable          3ac824b78d56   4 weeks ago    120MB
+debian                                 latest          047bd8d81940   4 weeks ago    120MB
+public.ecr.aws/docker/library/python   3.9.23-trixie   87856a00ca33   4 weeks ago    1.09GB
+umariadb                               latest          8fbb02a81f7a   5 weeks ago    77MB
+ubuntu                                 latest          e0f16e6366fe   6 weeks ago    78.1MB
+mysql                                  8.0             57c7595ac65f   7 weeks ago    781MB
+mysql                                  latest          2c5440daffa8   7 weeks ago    921MB
+mysql                                  8               45f1b9da918e   7 weeks ago    786MB
+alpine                                 latest          9234e8fb04c4   8 weeks ago    8.31MB
+phpmyadmin/phpmyadmin                  latest          0276a66ce322   7 months ago   571MB
+phpmyadmin                             latest          21c6d797c79c   7 months ago   568MB
+[?2004h[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ docker image lsbuild -t umariadb:latest .[K(B[m$ docker build -t umariadb:latest .[K(B[m$ docker build -t umariadb:latest .[K(B[m$ docker build -t umariadb:latest .[K(B[m$ docker build -t umariadb:latest .[K(B[m$ docker build -t umariadb:latest .[H[2J[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ docker build -t umariadb:latest .ch^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ [H[2J[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ chmod _x[K[K?[K`s[K[K+x b[K../build 
+[?2004l[?2004h[94mDEVOPS24/lektion12/UMariaDB
+(B[m$ cd ..
+[?2004l[?2004h[94mDEVOPS24/lektion12
+(B[m$ [H[2J[94mDEVOPS24/lektion12
+(B[m$ ./build 
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.3s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.8s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.9s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (2/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.1s
+[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (3/3)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.1s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.3s (5/6)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.1s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m => [2/2] RUN                                                                                     0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.4s (6/6)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.1s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => [2/2] RUN                                                                                     0.2s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.5s (7/7) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   1.1s
+[0m[34m => [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => CACHED [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+[0m[34m => [2/2] RUN                                                                                     0.2s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25h1efe8f8077330f1b53d48eab3d88cddeb7f5201ff1dc7eb3f4d4ff86e9655e7b
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+umariadbcont
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (6/6) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  0.0s
+[0m[34m => CACHED [2/2] RUN                                                                              0.0s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25h895457cb9703560e42d9780432a6ccd17708ef8f3024bbf693eb24dddf1f6187
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (6/6) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  0.0s
+[0m[34m => CACHED [2/2] RUN                                                                              0.0s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25hdocker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "895457cb9703560e42d9780432a6ccd17708ef8f3024bbf693eb24dddf1f6187". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (6/6) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[34m => [internal] load .dockerignore                                                                 0.0s
+[0m[34m => => transferring context: 2B                                                                   0.0s
+[0m[34m => [1/2] FROM docker.io/library/ubuntu:25.04@sha256:57665ab8178042ef197191fd77d21d8a2f7f535acd2  0.0s
+[0m[34m => CACHED [2/2] RUN                                                                              0.0s
+[0m[34m => exporting to image                                                                            0.0s
+[0m[34m => => exporting layers                                                                           0.0s
+[0m[34m => => writing image sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24      0.0s
+[0m[34m => => naming to docker.io/library/umariadb:latest                                                0.0s
+[0m[?25hdocker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "895457cb9703560e42d9780432a6ccd17708ef8f3024bbf693eb24dddf1f6187". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+[?25h^C[1A[0G[?25l[+] Building 0.1s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.1s (2/2) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.1s
+[0m[?25hERROR: failed to build: failed to solve: Canceled: context canceled
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "895457cb9703560e42d9780432a6ccd17708ef8f3024bbf693eb24dddf1f6187". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h^C[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/2) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.2s
+[0m[?25hERROR: failed to build: failed to solve: Canceled: context canceled
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "895457cb9703560e42d9780432a6ccd17708ef8f3024bbf693eb24dddf1f6187". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+umariadbcont
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+[?25h^C[1A[0G[?25l[+] Building 0.0s (2/2) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.0s
+[0m[?25hERROR: failed to build: failed to solve: Canceled: context canceled
+c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+ => [internal] load build definition from Dockerfile                                              0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.3s
+[?25h^C[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.4s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (2/2) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[33m => CANCELED [internal] load metadata for docker.io/library/ubuntu:25.04                          0.4s
+[0m[?25hERROR: failed to build: failed to solve: Canceled: context canceled
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C^C^Cunknown shorthand flag: 't' in -t
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C^C^Cunknown shorthand flag: 't' in -t
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C^C^Cunknown shorthand flag: 't' in -t
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C^C^Cunknown shorthand flag: 't' in -t
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+docker: Error response from daemon: Conflict. The container name "/umariadbcont" is already in use by container "c7fad3d52447b459c2197b49c9d81c57a9a6aec46496e8cab82b55927db3e757". You have to remove (or rename) that container to be able to reuse that name.
+
+Run 'docker run --help' for more information
+./build: line 8: read: `Press ENTER to rebuild...': not a valid identifier
+^C^Cunknown shorthand flag: 't' in -t
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+^C
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mDEVOPS24/lektion12
+(B[m$ ./build [H[2J[94mDEVOPS24/lektion12
+(B[m$ ./build 
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                 docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (1/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                                                 docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m[34m => [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (6/6) FINISHED                                                        docker:default
+[34m => [internal] load build definition from Dockerfile                                              0.0s
+[0m[34m => => transferring dockerfile: 88B                                                               0.0s
+[0m
