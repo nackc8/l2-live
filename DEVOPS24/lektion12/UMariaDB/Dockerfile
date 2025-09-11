@@ -1,3 +1,3 @@
-FROM ubuntu:lts
+FROM ubuntu:plucky
 
 CMD ["sleep", "infinity"]
