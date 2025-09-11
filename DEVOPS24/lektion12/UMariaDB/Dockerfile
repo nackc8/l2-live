@@ -1,3 +1,3 @@
 FROM ubuntu:lts
 
-CMD ["sleep", ]
+CMD ["sleep", "infinity"]
