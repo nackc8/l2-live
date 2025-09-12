@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+pre {
+  font-family:Courier New;
+  font-size:10pt;
+}
+
+.af_line {
+  color: gray;
+  text-decoration: none;
+}
+
+</style>
+<title>144329.txt</title>
+</head>
+<body>
+<pre>Script started on 2025-09-11 14:43:29+02:00 [TERM=&quot;xterm-256color&quot; TTY=&quot;/dev/pts/4&quot; COLUMNS=&quot;103&quot; LINES=&quot;13&quot;]
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">5c5cff;">DEVOPS24/lektion12
+</span>$ docker ps
+CONTAINER ID   IMAGE             COMMAND            CREATED          STATUS          PORTS     NAMES
+25d454294298   umariadb:latest   &quot;sleep infinity&quot;   32 seconds ago   Up 31 seconds             umariadbcont
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker exec uma
+
+riadbcont bash
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker exec umariadbcont bas-it
+
+
+
+
+
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker exec -it umariadbcont bash
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt update
+Get:1 http://security.ubuntu.com/ubuntu plucky-security InRelease [126 kB]
+Get:2 http://archive.ubuntu.com/ubuntu plucky InRelease [265 kB]n style="color:#cdcd00;">                         </span><span style="color:#cdcd00;">
+Get:3 http://security.ubuntu.com/ubuntu plucky-security/restricted amd64 Packages [202 kB]n>
+Get:4 http://security.ubuntu.com/ubuntu plucky-security/universe amd64 Packages [145 kB]pan>                </span><span style="color:#cdcd00;">
+Get:5 http://security.ubuntu.com/ubuntu plucky-security/main amd64 Packages [255 kB]45 kB 5%]</span>
+Get:6 http://security.ubuntu.com/ubuntu plucky-security/multiverse amd64 Packages [18.8 kB]n>   </span><span style="color:#cdcd00;">yle="color:#cdcd00;">
+Get:7 http://archive.ubuntu.com/ubuntu plucky-updates InRelease [126 kB]"color:#cdcd00;">:#cdcd00;">style="color:#cdcd00;">an><span style="color:#cdcd00;">
+Get:8 http://archive.ubuntu.com/ubuntu plucky-backports InRelease [126 kB];">yle="color:#cdcd00;">
+Get:9 http://archive.ubuntu.com/ubuntu plucky/universe amd64 Packages [20.3 MB]e="color:#cdcd00;">
+Get:10 http://archive.ubuntu.com/ubuntu plucky/multiverse amd64 Packages [322 kB]le="color:#cdcd00;">
+Get:11 http://archive.ubuntu.com/ubuntu plucky/restricted amd64 Packages [66.2 kB]n>    </span><span style="color:#cdcd00;">
+Get:12 http://archive.ubuntu.com/ubuntu plucky/main amd64 Packages [1862 kB]]</span>   </span><span style="color:#cdcd00;">
+Get:13 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 Packages [255 kB]</span><span style="color:#cdcd00;">
+Get:14 http://archive.ubuntu.com/ubuntu plucky-updates/multiverse amd64 Packages [34.8 kB]span><span style="color:#cdcd00;">
+Get:15 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 Packages [391 kB]     </span><span style="color:#cdcd00;">
+Get:16 http://archive.ubuntu.com/ubuntu plucky-updates/restricted amd64 Packages [219 kB]><span style="color:#cdcd00;">
+Fetched 24.7 MB in 4s (6792 kB/s) [Working]</span>      </span><span style="color:#cdcd00;">><span style="color:#cdcd00;">
+<span style="font-weight:bold;color:#7f7f7f;">1 package can be upgraded. Run &apos;apt list --upgradable&apos; to see it.
+</span>0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt search mariadb
+<span style="color:#00cd00;">dbconfig-mysql</span>/plucky 2.0.24 all
+  dbconfig-common MySQL/MariaDB support
+
+<span style="color:#00cd00;">harlequin-mysql</span>/plucky 1.1.0-2 all
+  database client for the terminal (MySQL/MariaDB adapter)
+
+<span style="color:#00cd00;">libdbd-mariadb-perl</span>/plucky 1.22-1ubuntu1 amd64
+  Perl5 database interface to the MariaDB/MySQL databases
+
+<span style="color:#00cd00;">libdbd-mysql-perl</span>/plucky 4.053-1ubuntu1 amd64
+  Perl5 database interface to the MariaDB/MySQL database
+
+<span style="color:#00cd00;">libmariadb-dev</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database development files
+
+<span style="color:#00cd00;">libmariadb-dev-compat</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+<span style="color:#000000;background-color:#000000;">  MariaDB Connector/C, compatibility symlinkskground-color:#000000;">
+
+</span><span style="color:#00cd00;background-color:#000000;">libmariadb-java</span>/plucky 2.7.6-1 all
+  Java database driver for MariaDB and MySQL
+
+<span style="color:#00cd00;">libmariadb3</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database client library
+
+<span style="color:#00cd00;">libmariadbd-dev</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB embedded database, development files
+
+<span style="color:#00cd00;">libmariadbd19t64</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB embedded database, shared library
+
+<span style="color:#00cd00;">libnss-mysql</span>/plucky 1.6.1-2ubuntu1 amd64
+  NSS module for using MySQL/MariaDB as a naming service
+<span style="color:#000000;background-color:#000000;">--More--</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#00cd00;background-color:#000000;">libreoffice-sdbc-mysql</span>/plucky-updates 4:25.2.5-0ubuntu0.25.04.1 amd64
+  MariaDB/MySQL SDBC driver for LibreOffice
+
+<span style="color:#00cd00;">mariadb-backup</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Backup tool for MariaDB server
+
+<span style="color:#00cd00;">mariadb-client</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database client binaries
+
+<span style="color:#00cd00;">mariadb-client-compat</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-client binaries/scripts
+
+<span style="color:#00cd00;">mariadb-client-core</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core client binaries
+
+<span style="color:#000000;background-color:#000000;"></span><span style="color:#00cd00;background-color:#000000;">mariadb-common</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MariaDB database common config files (/etc/mysql/mariadb.conf.d/)
+
+<span style="color:#00cd00;">mariadb-plugin-connect</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Connect storage engine for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-connect-jdbc</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  Connect storage engine JDBC interface for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-cracklib-password-check</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 
+amd64
+  CrackLib Password Validation Plugin for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-gssapi-client</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  GSSAPI authentication plugin for MariaDB client
+
+<span style="color:#000000;background-color:#000000;"></span><span style="color:#00cd00;background-color:#000000;">mariadb-plugin-gssapi-server</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  GSSAPI authentication plugin for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-hashicorp-key-management</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1
+ amd64
+  Hashicorp Key Management plugin for MariaDB
+
+<span style="color:#00cd00;">mariadb-plugin-mroonga</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Mroonga storage engine for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-oqgraph</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  OQGraph storage engine for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-provider-bzip2</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  BZip2 compression support in the server and storage engines
+
+<span style="color:#000000;background-color:#000000;"></span><span style="color:#00cd00;background-color:#000000;">mariadb-plugin-provider-lz4</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZ4 compression support in the server and storage engines
+
+<span style="color:#00cd00;">mariadb-plugin-provider-lzma</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZMA compression support in the server and storage engines
+
+<span style="color:#00cd00;">mariadb-plugin-provider-lzo</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  LZO compression support in the server and storage engines
+
+<span style="color:#00cd00;">mariadb-plugin-provider-snappy</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Snappy compression support in the server and storage engines
+
+<span style="color:#00cd00;">mariadb-plugin-rocksdb</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  RocksDB storage engine for MariaDB server
+
+<span style="color:#00cd00;">mariadb-plugin-s3</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+<span style="color:#000000;background-color:#000000;">  Amazon S3 archival storage engine for MariaDBround-color:#000000;">
+
+</span><span style="color:#00cd00;background-color:#000000;">mariadb-plugin-spider</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  Spider storage engine for MariaDB server
+
+<span style="color:#00cd00;">mariadb-server</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries
+
+<span style="color:#00cd00;">mariadb-server-10.5</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries (transitional dummy package)
+
+<span style="color:#00cd00;">mariadb-server-compat</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-server binaries/scripts
+
+<span style="color:#00cd00;">mariadb-server-core</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core server files
+<span style="color:#000000;background-color:#000000;">--More--</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#00cd00;background-color:#000000;">mariadb-test</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database regression test suite
+
+<span style="color:#00cd00;">mariadb-test-data</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MariaDB database regression test suite - data files
+
+<span style="color:#00cd00;">mycli</span>/plucky 1.29.2-7 all
+  CLI for MySQL/MariaDB with auto-completion and syntax highlighting
+
+<span style="color:#00cd00;">odbc-mariadb</span>/plucky 3.1.15-3 amd64
+  ODBC driver for MariaDB
+
+<span style="color:#00cd00;">orthanc-mysql</span>/plucky 5.0+dfsg-1build7 amd64
+  Plugins to use MySQL or MariaDB as a database back-end to Orthanc
+
+<span style="color:#000000;background-color:#000000;">0;root&#64;25d454294298: /="color:#000000;background-color:#000000;">
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt install mariadb
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#ff0000;background-color:#000000;">Error: </span><span style="font-weight:bold;color:#7f7f7f;">Unable to locate package mariadb</span>
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt install mariad
+
+
+
+
+
+
+
+apt search mariadb-se
+rver
+<span style="color:#00cd00;">mariadb-server</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries
+
+<span style="color:#00cd00;">mariadb-server-10.5</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database server binaries (transitional dummy package)
+
+<span style="color:#00cd00;">mariadb-server-compat</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 all
+  MySQL compatibility links to mariadb-server binaries/scripts
+
+<span style="color:#00cd00;">mariadb-server-core</span>/plucky-updates,plucky-security 1:11.4.7-0ubuntu0.25.04.1 amd64
+  MariaDB database core server files
+
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt search mariadb-serveinstall -
+
+
+
+
+ap
+apt-ge
+
+
+
+
+
+apt-get install -y mariadb-server
+
+
+
+
+
+
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt-get install -y mariadb-server
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  adduser galera-4 gawk iproute2 krb5-locales libbpf1 libcap2-bin libcgi-fast-perl libcgi-pm-perl
+  libclone-perl libconfig-inifiles-perl libdbd-mariadb-perl libdbi-perl libedit2 libelf1t64
+  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0t64 libgdbm-compat4t64 libgdbm6t64 libgpm2
+  libgssapi-krb5-2 libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
+  libhttp-message-perl libio-html-perl libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblsof0
+  liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6 libnuma1 libpam-cap
+  libperl5.40 libpopt0 libreadline8t64 libsigsegv2 libsnappy1v5 libterm-readkey-perl libtimedate-perl
+  libtirpc-common libtirpc3t64 liburi-perl liburing2 libwrap0 libxtables12 lsof mariadb-client
+  mariadb-client-core mariadb-common mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+  mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo mariadb-plugin-provider-snappy
+  mariadb-server-core mysql-common netbase perl perl-modules-5.40 psmisc pv readline-common rsync
+  socat
+Suggested packages:
+  liblocale-gettext-perl cron quota ecryptfs-utils gawk-doc python3:any libmldbm-perl
+  libnet-daemon-perl libsql-statement-perl gdbm-l10n gpm krb5-doc krb5-user libdata-dump-perl
+  libipc-sharedcache-perl libio-compress-brotli-perl libbusiness-isbn-perl libmime-base32-perl
+  libregexp-ipv6-perl libwww-perl mailx mariadb-test netcat-openbsd perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl make libtap-harness-archive-perl doc-base
+  readline-doc openssh-client openssh-server python3 python3-braceexpand
+The following NEW packages will be installed:
+  adduser galera-4 gawk iproute2 krb5-locales libbpf1 libcap2-bin libcgi-fast-perl libcgi-pm-perl
+  libclone-perl libconfig-inifiles-perl libdbd-mariadb-perl libdbi-perl libedit2 libelf1t64
+  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0t64 libgdbm-compat4t64 libgdbm6t64 libgpm2
+  libgssapi-krb5-2 libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
+  libhttp-message-perl libio-html-perl libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblsof0
+  liblwp-mediatypes-perl liblzo2-2 libmariadb3 libmnl0 libmpfr6 libncurses6 libnuma1 libpam-cap
+  libperl5.40 libpopt0 libreadline8t64 libsigsegv2 libsnappy1v5 libterm-readkey-perl libtimedate-perl
+  libtirpc-common libtirpc3t64 liburi-perl liburing2 libwrap0 libxtables12 lsof mariadb-client
+  mariadb-client-core mariadb-common mariadb-plugin-provider-bzip2 mariadb-plugin-provider-lz4
+  mariadb-plugin-provider-lzma mariadb-plugin-provider-lzo mariadb-plugin-provider-snappy
+  mariadb-server mariadb-server-core mysql-common netbase perl perl-modules-5.40 psmisc pv
+  readline-common rsync socat
+0 upgraded, 75 newly installed, 0 to remove and 1 not upgraded.
+Need to get 31.2 MB of archives.
+After this operation, 189 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu plucky/main amd64 libpopt0 amd64 1.19+dfsg-2 [30.0 kB]
+Get:2 http://archive.ubuntu.com/ubuntu plucky/main amd64 rsync amd64 3.4.1+ds1-3 [482 kB]
+Get:3 http://archive.ubuntu.com/ubuntu plucky/main amd64 adduser all 3.137ubuntu2 [101 kB]
+Get:4 http://archive.ubuntu.com/ubuntu plucky/universe amd64 galera-4 amd64 26.4.21-1 [789 kB]
+Get:5 http://archive.ubuntu.com/ubuntu plucky/main amd64 libmpfr6 amd64 4.2.2-1 [361 kB]
+Get:6 http://archive.ubuntu.com/ubuntu plucky/main amd64 readline-common all 8.2-6 [56.5 kB]
+Get:7 http://archive.ubuntu.com/ubuntu plucky/main amd64 libreadline8t64 amd64 8.2-6 [162 kB]
+Get:8 http://archive.ubuntu.com/ubuntu plucky/main amd64 libsigsegv2 amd64 2.14-1ubuntu2 [15.0 kB]
+Get:9 http://archive.ubuntu.com/ubuntu plucky/main amd64 gawk amd64 1:5.2.1-2build3 [463 kB]
+Get:10 http://archive.ubuntu.com/ubuntu plucky/main amd64 mysql-common all 5.8+1.1.1ubuntu1 [6922 B]
+Get:11 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-common all 1:11.4.7-0ubuntu0.25.04.1 [29.2 kB]
+Get:12 http://archive.ubuntu.com/ubuntu plucky/main amd64 libelf1t64 amd64 0.192-4ubuntu1 [58.6 kB]
+Get:13 http://archive.ubuntu.com/ubuntu plucky/main amd64 libbpf1 amd64 1:1.5.0-2 [194 kB]
+Get:14 http://archive.ubuntu.com/ubuntu plucky/main amd64 libmnl0 amd64 1.0.5-3 [12.6 kB]
+Get:15 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkrb5support0 amd64 1.21.3-4ubuntu2 [35.8 kB]
+Get:16 http://archive.ubuntu.com/ubuntu plucky/main amd64 libk5crypto3 amd64 1.21.3-4ubuntu2 [90.8 kB]
+Get:17 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkeyutils1 amd64 1.6.3-4ubuntu2 [9974 B]
+Get:18 http://archive.ubuntu.com/ubuntu plucky/main amd64 libkrb5-3 amd64 1.21.3-4ubuntu2 [387 kB]
+Get:19 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgssapi-krb5-2 amd64 1.21.3-4ubuntu2 [161 kB]
+Get:20 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtirpc-common all 1.3.4+ds-1.3 [8106 B]
+Get:21 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtirpc3t64 amd64 1.3.4+ds-1.3 [82.5 kB]
+Get:22 http://archive.ubuntu.com/ubuntu plucky/main amd64 libxtables12 amd64 1.8.11-2ubuntu1 [36.8 kB]
+Get:23 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcap2-bin amd64 1:2.73-4ubuntu1 [34.9 kB]
+Get:24 http://archive.ubuntu.com/ubuntu plucky/main amd64 iproute2 amd64 6.14.0-1ubuntu1 [1279 kB]
+Get:25 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 perl-modules-5.40 all 5.40.1-2ubuntu0.2 [3217 kB]
+Get:26 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgdbm6t64 amd64 1.24-2 [35.3 kB]
+Get:27 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgdbm-compat4t64 amd64 1.24-2 [6686 B]
+Get:28 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libperl5.40 amd64 5.40.1-2ubuntu0.2 [4875 kB]
+Get:29 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 perl amd64 5.40.1-2ubuntu0.2 [262 kB]
+Get:30 http://archive.ubuntu.com/ubuntu plucky/main amd64 libdbi-perl amd64 1.647-1 [832 kB]
+Get:31 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblsof0 amd64 4.99.4+dfsg-2 [59.7 kB]
+Get:32 http://archive.ubuntu.com/ubuntu plucky/main amd64 lsof amd64 4.99.4+dfsg-2 [245 kB]
+Get:33 http://archive.ubuntu.com/ubuntu plucky/universe amd64 libconfig-inifiles-perl all 3.000003-3 [38.4 kB]
+Get:34 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 libmariadb3 amd64 1:11.4.7-0ubuntu0.25.04.1 [197 kB]
+Get:35 http://archive.ubuntu.com/ubuntu plucky/main amd64 libedit2 amd64 3.1-20250104-1 [110 kB]
+Get:36 http://archive.ubuntu.com/ubuntu plucky/main amd64 libncurses6 amd64 6.5+20250216-2 [126 kB]
+Get:37 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-client-core amd64 1:11.4.7-0ubuntu0.25.04.1 [1135 kB]
+Get:38 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-client amd64 1:11.4.7-0ubuntu0.25.04.1 [2054 kB]
+Get:39 http://archive.ubuntu.com/ubuntu plucky/main amd64 libnuma1 amd64 2.0.18-1build1 [23.3 kB]
+Get:40 http://archive.ubuntu.com/ubuntu plucky/main amd64 liburing2 amd64 2.9-1 [24.9 kB]
+Get:41 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-server-core amd64 1:11.4.7-0ubuntu0.25.04.1 [7899 kB]
+Get:42 http://archive.ubuntu.com/ubuntu plucky/main amd64 psmisc amd64 23.7-2 [188 kB]
+Get:43 http://archive.ubuntu.com/ubuntu plucky/main amd64 libwrap0 amd64 7.6.q-36 [49.2 kB]
+Get:44 http://archive.ubuntu.com/ubuntu plucky/main amd64 socat amd64 1.8.0.2-1 [401 kB]
+Get:45 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-server amd64 1:11.4.7-0ubuntu0.25.04.1 [3392 kB]
+Get:46 http://archive.ubuntu.com/ubuntu plucky/main amd64 krb5-locales all 1.21.3-4ubuntu2 [14.9 kB]
+Get:47 http://archive.ubuntu.com/ubuntu plucky/main amd64 libpam-cap amd64 1:2.73-4ubuntu1 [12.7 kB]
+Get:48 http://archive.ubuntu.com/ubuntu plucky/main amd64 netbase all 6.4 [13.1 kB]
+Get:49 http://archive.ubuntu.com/ubuntu plucky/main amd64 libgpm2 amd64 1.20.7-11 [14.1 kB]
+Get:50 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-tagset-perl all 3.24-1 [14.1 kB]
+Get:51 http://archive.ubuntu.com/ubuntu plucky/main amd64 liburi-perl all 5.30-1 [94.4 kB]
+Get:52 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-parser-perl amd64 3.83-1build1 [86.2 kB]
+Get:53 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcgi-pm-perl all 4.67-1 [185 kB]
+Get:54 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libfcgi0t64 amd64 2.4.2-2.1ubuntu0.25.04.1 [27.1 kB]
+Get:55 http://archive.ubuntu.com/ubuntu plucky/main amd64 libfcgi-perl amd64 0.82+ds-3build3 [21.7 kB]
+Get:56 http://archive.ubuntu.com/ubuntu plucky/main amd64 libcgi-fast-perl all 1:2.17-1 [10.3 kB]
+Get:57 http://archive.ubuntu.com/ubuntu plucky/main amd64 libclone-perl amd64 0.47-1 [10.7 kB]
+Get:58 http://archive.ubuntu.com/ubuntu plucky/universe amd64 libdbd-mariadb-perl amd64 1.22-1ubuntu1 [96.3 kB]
+Get:59 http://archive.ubuntu.com/ubuntu plucky/main amd64 libencode-locale-perl all 1.05-3 [11.6 kB]
+Get:60 http://archive.ubuntu.com/ubuntu plucky-updates/main amd64 libfcgi-bin amd64 2.4.2-2.1ubuntu0.25.04.1 [11.6 kB]
+Get:61 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhtml-template-perl all 2.97-2build1 [58.3 kB]
+Get:62 http://archive.ubuntu.com/ubuntu plucky/main amd64 libtimedate-perl all 2.3300-2 [34.0 kB]
+Get:63 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhttp-date-perl all 6.06-1 [10.2 kB]
+Get:64 http://archive.ubuntu.com/ubuntu plucky/main amd64 libio-html-perl all 1.004-3 [15.9 kB]
+Get:65 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblwp-mediatypes-perl all 6.04-2 [20.1 kB]
+Get:66 http://archive.ubuntu.com/ubuntu plucky/main amd64 libhttp-message-perl all 7.00-2ubuntu1 [75.9 kB]
+Get:67 http://archive.ubuntu.com/ubuntu plucky/main amd64 liblzo2-2 amd64 2.10-3 [54.2 kB]
+Get:68 http://archive.ubuntu.com/ubuntu plucky/main amd64 libterm-readkey-perl amd64 2.38-2build5 [23.2 kB]
+Get:69 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-bzip2 amd64 1:11.4.7-0ubuntu0.25.04.1 [14.0 kB]
+Get:70 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lz4 amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+Get:71 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lzma amd64 1:11.4.7-0ubuntu0.25.04.1 [14.0 kB]
+Get:72 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-lzo amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+Get:73 http://archive.ubuntu.com/ubuntu plucky/main amd64 libsnappy1v5 amd64 1.2.1-1 [30.4 kB]
+Get:74 http://archive.ubuntu.com/ubuntu plucky-updates/universe amd64 mariadb-plugin-provider-snappy amd64 1:11.4.7-0ubuntu0.25.04.1 [13.9 kB]
+Get:75 http://archive.ubuntu.com/ubuntu plucky/main amd64 pv amd64 1.9.31-1ubuntu1 [94.1 kB]
+Fetched 31.2 MB in 5s (6286 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, &lt;STDIN&gt; line 75.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can&apos;t locate Term/ReadLine.pm in &#64;INC (you may need to install the Term::ReadLine module) (&#64;INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, &lt;STDIN&gt; line 75.)
+debconf: falling back to frontend: Teletype
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+Selecting previously unselected package libpopt0:amd64.
+(Reading database ... 4258 files and directories currently installed.)
+Preparing to unpack .../libpopt0_1.19+dfsg-2_amd64.deb ...
+Unpacking libpopt0:amd64 (1.19+dfsg-2) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../rsync_3.4.1+ds1-3_amd64.deb ...
+Unpacking rsync (3.4.1+ds1-3) ...
+Selecting previously unselected package adduser.
+Preparing to unpack .../adduser_3.137ubuntu2_all.deb ...
+Unpacking adduser (3.137ubuntu2) ...
+Setting up adduser (3.137ubuntu2) ...
+Selecting previously unselected package galera-4.
+(Reading database ... 4346 files and directories currently installed.)
+Preparing to unpack .../galera-4_26.4.21-1_amd64.deb ...
+Unpacking galera-4 (26.4.21-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../libmpfr6_4.2.2-1_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.2.2-1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../readline-common_8.2-6_all.deb ...
+Unpacking readline-common (8.2-6) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../libreadline8t64_8.2-6_amd64.deb ...
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64&apos;
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64&apos;
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64&apos;
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64&apos;
+Unpacking libreadline8t64:amd64 (8.2-6) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.14-1ubuntu2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.14-1ubuntu2) ...
+Setting up libmpfr6:amd64 (4.2.2-1) ...
+Setting up readline-common (8.2-6) ...
+Setting up libreadline8t64:amd64 (8.2-6) ...
+Setting up libsigsegv2:amd64 (2.14-1ubuntu2) ...
+Selecting previously unselected package gawk.
+(Reading database ... 4402 files and directories currently installed.)
+Preparing to unpack .../00-gawk_1%3a5.2.1-2build3_amd64.deb ...
+Unpacking gawk (1:5.2.1-2build3) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../01-mysql-common_5.8+1.1.1ubuntu1_all.deb ...
+Unpacking mysql-common (5.8+1.1.1ubuntu1) ...
+Selecting previously unselected package mariadb-common.
+Preparing to unpack .../02-mariadb-common_1%3a11.4.7-0ubuntu0.25.04.1_all.deb ...
+Unpacking mariadb-common (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../03-libelf1t64_0.192-4ubuntu1_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.192-4ubuntu1) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../04-libbpf1_1%3a1.5.0-2_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.5.0-2) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../05-libmnl0_1.0.5-3_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.5-3) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../06-libkrb5support0_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../07-libk5crypto3_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../08-libkeyutils1_1.6.3-4ubuntu2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-4ubuntu2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../09-libkrb5-3_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../10-libgssapi-krb5-2_1.21.3-4ubuntu2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../11-libtirpc-common_1.3.4+ds-1.3_all.deb ...
+Unpacking libtirpc-common (1.3.4+ds-1.3) ...
+Selecting previously unselected package libtirpc3t64:amd64.
+Preparing to unpack .../12-libtirpc3t64_1.3.4+ds-1.3_amd64.deb ...
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libtirpc.so.3 to /lib/x86_64-linux-gnu/libtirpc.so.3.usr-is-merged by libtirpc3t64&apos;
+Adding &apos;diversion of /lib/x86_64-linux-gnu/libtirpc.so.3.0.0 to /lib/x86_64-linux-gnu/libtirpc.so.3.0.0.usr-is-merged by libtirpc3t64&apos;
+Unpacking libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../13-libxtables12_1.8.11-2ubuntu1_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.11-2ubuntu1) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../14-libcap2-bin_1%3a2.73-4ubuntu1_amd64.deb ...
+Unpacking libcap2-bin (1:2.73-4ubuntu1) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../15-iproute2_6.14.0-1ubuntu1_amd64.deb ...
+Unpacking iproute2 (6.14.0-1ubuntu1) ...
+Selecting previously unselected package perl-modules-5.40.
+Preparing to unpack .../16-perl-modules-5.40_5.40.1-2ubuntu0.2_all.deb ...
+Unpacking perl-modules-5.40 (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package libgdbm6t64:amd64.
+Preparing to unpack .../17-libgdbm6t64_1.24-2_amd64.deb ...
+Unpacking libgdbm6t64:amd64 (1.24-2) ...
+Selecting previously unselected package libgdbm-compat4t64:amd64.
+Preparing to unpack .../18-libgdbm-compat4t64_1.24-2_amd64.deb ...
+Unpacking libgdbm-compat4t64:amd64 (1.24-2) ...
+Selecting previously unselected package libperl5.40:amd64.
+Preparing to unpack .../19-libperl5.40_5.40.1-2ubuntu0.2_amd64.deb ...
+Unpacking libperl5.40:amd64 (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../20-perl_5.40.1-2ubuntu0.2_amd64.deb ...
+Unpacking perl (5.40.1-2ubuntu0.2) ...
+Selecting previously unselected package libdbi-perl:amd64.
+Preparing to unpack .../21-libdbi-perl_1.647-1_amd64.deb ...
+Unpacking libdbi-perl:amd64 (1.647-1) ...
+Selecting previously unselected package liblsof0.
+Preparing to unpack .../22-liblsof0_4.99.4+dfsg-2_amd64.deb ...
+Unpacking liblsof0 (4.99.4+dfsg-2) ...
+Selecting previously unselected package lsof.
+Preparing to unpack .../23-lsof_4.99.4+dfsg-2_amd64.deb ...
+Unpacking lsof (4.99.4+dfsg-2) ...
+Selecting previously unselected package libconfig-inifiles-perl.
+Preparing to unpack .../24-libconfig-inifiles-perl_3.000003-3_all.deb ...
+Unpacking libconfig-inifiles-perl (3.000003-3) ...
+Selecting previously unselected package libmariadb3:amd64.
+Preparing to unpack .../25-libmariadb3_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking libmariadb3:amd64 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libedit2:amd64.
+Preparing to unpack .../26-libedit2_3.1-20250104-1_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20250104-1) ...
+Selecting previously unselected package libncurses6:amd64.
+Preparing to unpack .../27-libncurses6_6.5+20250216-2_amd64.deb ...
+Unpacking libncurses6:amd64 (6.5+20250216-2) ...
+Selecting previously unselected package mariadb-client-core.
+Preparing to unpack .../28-mariadb-client-core_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-client-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-client.
+Preparing to unpack .../29-mariadb-client_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-client (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libnuma1:amd64.
+Preparing to unpack .../30-libnuma1_2.0.18-1build1_amd64.deb ...
+Unpacking libnuma1:amd64 (2.0.18-1build1) ...
+Selecting previously unselected package liburing2:amd64.
+Preparing to unpack .../31-liburing2_2.9-1_amd64.deb ...
+Unpacking liburing2:amd64 (2.9-1) ...
+Selecting previously unselected package mariadb-server-core.
+Preparing to unpack .../32-mariadb-server-core_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-server-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package psmisc.
+Preparing to unpack .../33-psmisc_23.7-2_amd64.deb ...
+Unpacking psmisc (23.7-2) ...
+Selecting previously unselected package libwrap0:amd64.
+Preparing to unpack .../34-libwrap0_7.6.q-36_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-36) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../35-socat_1.8.0.2-1_amd64.deb ...
+Unpacking socat (1.8.0.2-1) ...
+Setting up mysql-common (5.8+1.1.1ubuntu1) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up mariadb-common (1:11.4.7-0ubuntu0.25.04.1) ...
+update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mariadb-server.
+(Reading database ... 7594 files and directories currently installed.)
+Preparing to unpack .../00-mariadb-server_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Unpacking mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../01-krb5-locales_1.21.3-4ubuntu2_all.deb ...
+Unpacking krb5-locales (1.21.3-4ubuntu2) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../02-libpam-cap_1%3a2.73-4ubuntu1_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.73-4ubuntu1) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../03-netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package libgpm2:amd64.
+Preparing to unpack .../04-libgpm2_1.20.7-11_amd64.deb ...
+Unpacking libgpm2:amd64 (1.20.7-11) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../05-libhtml-tagset-perl_3.24-1_all.deb ...
+Unpacking libhtml-tagset-perl (3.24-1) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../06-liburi-perl_5.30-1_all.deb ...
+Unpacking liburi-perl (5.30-1) ...
+Selecting previously unselected package libhtml-parser-perl:amd64.
+Preparing to unpack .../07-libhtml-parser-perl_3.83-1build1_amd64.deb ...
+Unpacking libhtml-parser-perl:amd64 (3.83-1build1) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../08-libcgi-pm-perl_4.67-1_all.deb ...
+Unpacking libcgi-pm-perl (4.67-1) ...
+Selecting previously unselected package libfcgi0t64:amd64.
+Preparing to unpack .../09-libfcgi0t64_2.4.2-2.1ubuntu0.25.04.1_amd64.deb ...
+Unpacking libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.25.04.1) ...
+Selecting previously unselected package libfcgi-perl.
+Preparing to unpack .../10-libfcgi-perl_0.82+ds-3build3_amd64.deb ...
+Unpacking libfcgi-perl (0.82+ds-3build3) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../11-libcgi-fast-perl_1%3a2.17-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.17-1) ...
+Selecting previously unselected package libclone-perl:amd64.
+Preparing to unpack .../12-libclone-perl_0.47-1_amd64.deb ...
+Unpacking libclone-perl:amd64 (0.47-1) ...
+Selecting previously unselected package libdbd-mariadb-perl.
+Preparing to unpack .../13-libdbd-mariadb-perl_1.22-1ubuntu1_amd64.deb ...
+Unpacking libdbd-mariadb-perl (1.22-1ubuntu1) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../14-libencode-locale-perl_1.05-3_all.deb ...
+Unpacking libencode-locale-perl (1.05-3) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../15-libfcgi-bin_2.4.2-2.1ubuntu0.25.04.1_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2.1ubuntu0.25.04.1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../16-libhtml-template-perl_2.97-2build1_all.deb ...
+Unpacking libhtml-template-perl (2.97-2build1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../17-libtimedate-perl_2.3300-2_all.deb ...
+Unpacking libtimedate-perl (2.3300-2) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../18-libhttp-date-perl_6.06-1_all.deb ...
+Unpacking libhttp-date-perl (6.06-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../19-libio-html-perl_1.004-3_all.deb ...
+Unpacking libio-html-perl (1.004-3) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../20-liblwp-mediatypes-perl_6.04-2_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.04-2) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../21-libhttp-message-perl_7.00-2ubuntu1_all.deb ...
+Unpacking libhttp-message-perl (7.00-2ubuntu1) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../22-liblzo2-2_2.10-3_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.10-3) ...
+Selecting previously unselected package libterm-readkey-perl.
+Preparing to unpack .../23-libterm-readkey-perl_2.38-2build5_amd64.deb ...
+Unpacking libterm-readkey-perl (2.38-2build5) ...
+Selecting previously unselected package mariadb-plugin-provider-bzip2.
+Preparing to unpack .../24-mariadb-plugin-provider-bzip2_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-bzip2 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lz4.
+Preparing to unpack .../25-mariadb-plugin-provider-lz4_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lz4 (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lzma.
+Preparing to unpack .../26-mariadb-plugin-provider-lzma_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lzma (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package mariadb-plugin-provider-lzo.
+Preparing to unpack .../27-mariadb-plugin-provider-lzo_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-lzo (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../28-libsnappy1v5_1.2.1-1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.2.1-1) ...
+Selecting previously unselected package mariadb-plugin-provider-snappy.
+Preparing to unpack .../29-mariadb-plugin-provider-snappy_1%3a11.4.7-0ubuntu0.25.04.1_amd64.deb ...
+Unpacking mariadb-plugin-provider-snappy (1:11.4.7-0ubuntu0.25.04.1) ...
+Selecting previously unselected package pv.
+Preparing to unpack .../30-pv_1.9.31-1ubuntu1_amd64.deb ...
+Unpacking pv (1.9.31-1ubuntu1) ...
+Setting up libconfig-inifiles-perl (3.000003-3) ...
+Setting up galera-4 (26.4.21-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-4ubuntu2) ...
+Setting up libgpm2:amd64 (1.20.7-11) ...
+Setting up libgdbm6t64:amd64 (1.24-2) ...
+Setting up libgdbm-compat4t64:amd64 (1.24-2) ...
+Setting up gawk (1:5.2.1-2build3) ...
+Setting up psmisc (23.7-2) ...
+Setting up liblsof0 (4.99.4+dfsg-2) ...
+Setting up libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.25.04.1) ...
+Setting up libtirpc-common (1.3.4+ds-1.3) ...
+Setting up libedit2:amd64 (3.1-20250104-1) ...
+Setting up libfcgi-bin (2.4.2-2.1ubuntu0.25.04.1) ...
+Setting up liblzo2-2:amd64 (2.10-3) ...
+Setting up krb5-locales (1.21.3-4ubuntu2) ...
+Setting up libelf1t64:amd64 (0.192-4ubuntu1) ...
+Setting up libsnappy1v5:amd64 (1.2.1-1) ...
+Setting up libkrb5support0:amd64 (1.21.3-4ubuntu2) ...
+Setting up libcap2-bin (1:2.73-4ubuntu1) ...
+Setting up libwrap0:amd64 (7.6.q-36) ...
+Setting up socat (1.8.0.2-1) ...
+Setting up libncurses6:amd64 (6.5+20250216-2) ...
+Setting up libmnl0:amd64 (1.0.5-3) ...
+Setting up libmariadb3:amd64 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libk5crypto3:amd64 (1.21.3-4ubuntu2) ...
+Setting up libxtables12:amd64 (1.8.11-2ubuntu1) ...
+Setting up libnuma1:amd64 (2.0.18-1build1) ...
+Setting up perl-modules-5.40 (5.40.1-2ubuntu0.2) ...
+Setting up pv (1.9.31-1ubuntu1) ...
+Setting up netbase (6.4) ...
+Setting up libkrb5-3:amd64 (1.21.3-4ubuntu2) ...
+Setting up liburing2:amd64 (2.9-1) ...
+Setting up libpam-cap:amd64 (1:2.73-4ubuntu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Setting up libbpf1:amd64 (1:1.5.0-2) ...
+Setting up libpopt0:amd64 (1.19+dfsg-2) ...
+Setting up mariadb-client-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libperl5.40:amd64 (5.40.1-2ubuntu0.2) ...
+Setting up perl (5.40.1-2ubuntu0.2) ...
+Setting up libgssapi-krb5-2:amd64 (1.21.3-4ubuntu2) ...
+Setting up libio-html-perl (1.004-3) ...
+Setting up libtimedate-perl (2.3300-2) ...
+Setting up libfcgi-perl (0.82+ds-3build3) ...
+Setting up mariadb-server-core (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libterm-readkey-perl (2.38-2build5) ...
+Setting up liburi-perl (5.30-1) ...
+Setting up libdbi-perl:amd64 (1.647-1) ...
+Setting up rsync (3.4.1+ds1-3) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libhttp-date-perl (6.06-1) ...
+Setting up mariadb-client (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Setting up libclone-perl:amd64 (0.47-1) ...
+Setting up iproute2 (6.14.0-1ubuntu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+Setting up libhtml-tagset-perl (3.24-1) ...
+Setting up liblwp-mediatypes-perl (6.04-2) ...
+Setting up libencode-locale-perl (1.05-3) ...
+Setting up libdbd-mariadb-perl (1.22-1ubuntu1) ...
+Setting up lsof (4.99.4+dfsg-2) ...
+Setting up libhtml-parser-perl:amd64 (3.83-1build1) ...
+Setting up libhttp-message-perl (7.00-2ubuntu1) ...
+Setting up libcgi-pm-perl (4.67-1) ...
+Setting up libhtml-template-perl (2.97-2build1) ...
+Setting up mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of stop.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up mariadb-plugin-provider-bzip2 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lzma (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lzo (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up mariadb-plugin-provider-lz4 (1:11.4.7-0ubuntu0.25.04.1) ...
+Setting up libcgi-fast-perl (1:2.17-1) ...
+Setting up mariadb-plugin-provider-snappy (1:11.4.7-0ubuntu0.25.04.1) ...
+Processing triggers for libc-bin (2.41-6ubuntu1.1) ...
+Processing triggers for mariadb-server (1:11.4.7-0ubuntu0.25.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of restart.
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt-get install -y mariadb-serve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt search mariadb-serveclieninstall -y mariadb-client
+
+
+
+
+
+
+
+
+
+apt-get
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+mariadb-client is already the newest version (1:11.4.7-0ubuntu0.25.04.1).
+mariadb-client set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# l
+<span style="font-weight:bold;color:#00ffff;">bin</span>&#64;   <span style="font-weight:bold;color:#5c5cff;">dev</span>/  <span style="font-weight:bold;color:#5c5cff;">home</span>/  <span style="font-weight:bold;color:#00ffff;">lib64</span>&#64;  <span style="font-weight:bold;color:#5c5cff;">mnt</span>/  <span style="font-weight:bold;color:#5c5cff;">proc</span>/  <span style="font-weight:bold;color:#5c5cff;">run</span>/   <span style="font-weight:bold;color:#5c5cff;">srv</span>/  <span style="color:#000000;background-color:#00cd00;">tmp</span>/  <span style="font-weight:bold;color:#5c5cff;">var</span>/
+<span style="font-weight:bold;color:#5c5cff;">boot</span>/  <span style="font-weight:bold;color:#5c5cff;">etc</span>/  <span style="font-weight:bold;color:#00ffff;">lib</span>&#64;   <span style="font-weight:bold;color:#5c5cff;">media</span>/  <span style="font-weight:bold;color:#5c5cff;">opt</span>/  <span style="font-weight:bold;color:#5c5cff;">root</span>/  <span style="font-weight:bold;color:#00ffff;">sbin</span>&#64;  <span style="font-weight:bold;color:#5c5cff;">sys</span>/  <span style="font-weight:bold;color:#5c5cff;">usr</span>/
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# ls
+<span style="font-weight:bold;color:#00ffff;">bin</span>  <span style="font-weight:bold;color:#5c5cff;">boot</span>  <span style="font-weight:bold;color:#5c5cff;">dev</span>  <span style="font-weight:bold;color:#5c5cff;">etc</span>  <span style="font-weight:bold;color:#5c5cff;">home</span>  <span style="font-weight:bold;color:#00ffff;">lib</span>  <span style="font-weight:bold;color:#00ffff;">lib64</span>  <span style="font-weight:bold;color:#5c5cff;">media</span>  <span style="font-weight:bold;color:#5c5cff;">mnt</span>  <span style="font-weight:bold;color:#5c5cff;">opt</span>  <span style="font-weight:bold;color:#5c5cff;">proc</span>  <span style="font-weight:bold;color:#5c5cff;">root</span>  <span style="font-weight:bold;color:#5c5cff;">run</span>  <span style="font-weight:bold;color:#00ffff;">sbin</span>  <span style="font-weight:bold;color:#5c5cff;">srv</span>  <span style="font-weight:bold;color:#5c5cff;">sys</span>  <span style="color:#000000;background-color:#00cd00;">tmp</span>  <span style="font-weight:bold;color:#5c5cff;">usr</span>  <span style="font-weight:bold;color:#5c5cff;">var</span>
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# dpkg
+<span style="font-weight:bold;color:#7f7f7f;">dpkg:</span> <span style="font-weight:bold;color:#ff0000;">error:</span> need an action option
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+Use &apos;apt&apos; or &apos;aptitude&apos; for user-friendly package management;
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+Type dpkg --force-help for a list of forcing options;
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+Options marked [*] produce a lot of output - pipe it through &apos;less&apos; or &apos;more&apos; !
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# dpkg 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# dpkg -L mariadb-server
+/.
+/etc
+/etc/apparmor.d
+/etc/apparmor.d/usr.sbin.mariadbd
+/etc/init.d
+/etc/init.d/mariadb
+/etc/logcheck
+/etc/logcheck/ignore.d.paranoid
+/etc/logcheck/ignore.d.paranoid/mariadb-server
+/etc/logcheck/ignore.d.server
+/etc/logcheck/ignore.d.server/mariadb-server
+/etc/logcheck/ignore.d.workstation
+/etc/logcheck/ignore.d.workstation/mariadb-server
+/etc/logrotate.d
+/etc/logrotate.d/mariadb
+/etc/mysql
+/etc/mysql/debian-start
+/etc/mysql/mariadb.conf.d
+/etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf
+/etc/mysql/mariadb.conf.d/50-server.cnf
+/etc/security
+/etc/security/user_map.conf
+/usr
+/usr/bin
+/usr/bin/aria_chk
+/usr/bin/aria_dump_log
+/usr/bin/aria_ftdump
+/usr/bin/aria_pack
+/usr/bin/aria_read_log
+/usr/bin/galera_new_cluster
+/usr/bin/galera_recovery
+/usr/bin/mariadb-service-convert
+/usr/bin/mariadbd-multi
+/usr/bin/mariadbd-safe
+/usr/bin/mariadbd-safe-helper
+/usr/bin/myisam_ftdump
+/usr/bin/myisamchk
+/usr/bin/myisamlog
+/usr/bin/myisampack
+/usr/bin/wsrep_sst_backup
+/usr/bin/wsrep_sst_common
+/usr/bin/wsrep_sst_mariabackup
+/usr/bin/wsrep_sst_mysqldump
+/usr/bin/wsrep_sst_rsync
+/usr/lib
+/usr/lib/mysql
+/usr/lib/mysql/plugin
+/usr/lib/mysql/plugin/auth_ed25519.so
+/usr/lib/mysql/plugin/auth_pam.so
+/usr/lib/mysql/plugin/auth_pam_tool_dir
+/usr/lib/mysql/plugin/auth_pam_tool_dir/auth_pam_tool
+/usr/lib/mysql/plugin/auth_pam_v1.so
+/usr/lib/mysql/plugin/disks.so
+/usr/lib/mysql/plugin/file_key_management.so
+/usr/lib/mysql/plugin/ha_archive.so
+/usr/lib/mysql/plugin/ha_blackhole.so
+/usr/lib/mysql/plugin/ha_federated.so
+/usr/lib/mysql/plugin/ha_federatedx.so
+/usr/lib/mysql/plugin/ha_sphinx.so
+/usr/lib/mysql/plugin/handlersocket.so
+/usr/lib/mysql/plugin/locales.so
+/usr/lib/mysql/plugin/metadata_lock_info.so
+/usr/lib/mysql/plugin/password_reuse_check.so
+/usr/lib/mysql/plugin/query_cache_info.so
+/usr/lib/mysql/plugin/query_response_time.so
+/usr/lib/mysql/plugin/server_audit.so
+/usr/lib/mysql/plugin/simple_password_check.so
+/usr/lib/mysql/plugin/sql_errlog.so
+/usr/lib/mysql/plugin/type_mysql_json.so
+/usr/lib/mysql/plugin/wsrep_info.so
+/usr/lib/systemd
+/usr/lib/systemd/system
+/usr/lib/systemd/system/mariadb-extra.socket
+/usr/lib/systemd/system/mariadb-extra&#64;.socket
+/usr/lib/systemd/system/mariadb.service
+/usr/lib/systemd/system/mariadb.socket
+/usr/lib/systemd/system/mariadb&#64;.service
+/usr/lib/systemd/system/mariadb&#64;.socket
+/usr/lib/systemd/system/mariadb&#64;bootstrap.service.d
+/usr/lib/systemd/system/mariadb&#64;bootstrap.service.d/use_galera_new_cluster.conf
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/security
+/usr/lib/x86_64-linux-gnu/security/pam_user_map.so
+/usr/share
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_mariadb.py
+/usr/share/doc
+/usr/share/doc/mariadb-server
+/usr/share/doc/mariadb-server/NEWS.Debian.gz
+/usr/share/doc/mariadb-server/README.Debian.gz
+/usr/share/doc/mariadb-server/copyright
+/usr/share/doc/mariadb-server/mariadbd.sym.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/mariadb-server
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/aria_chk.1.gz
+/usr/share/man/man1/aria_dump_log.1.gz
+/usr/share/man/man1/aria_ftdump.1.gz
+/usr/share/man/man1/aria_pack.1.gz
+/usr/share/man/man1/aria_read_log.1.gz
+/usr/share/man/man1/galera_new_cluster.1.gz
+/usr/share/man/man1/galera_recovery.1.gz
+/usr/share/man/man1/mariadb-service-convert.1.gz
+/usr/share/man/man1/mariadbd-multi.1.gz
+/usr/share/man/man1/mariadbd-safe-helper.1.gz
+/usr/share/man/man1/mariadbd-safe.1.gz
+/usr/share/man/man1/myisam_ftdump.1.gz
+/usr/share/man/man1/myisamchk.1.gz
+/usr/share/man/man1/myisamlog.1.gz
+/usr/share/man/man1/myisampack.1.gz
+/usr/share/man/man1/wsrep_sst_backup.1.gz
+/usr/share/man/man1/wsrep_sst_common.1.gz
+/usr/share/man/man1/wsrep_sst_mariabackup.1.gz
+/usr/share/man/man1/wsrep_sst_mysqldump.1.gz
+/usr/share/man/man1/wsrep_sst_rsync.1.gz
+/usr/share/man/man1/wsrep_sst_rsync_wan.1.gz
+/usr/share/mariadb
+/usr/share/mariadb/debian-start.inc.sh
+/usr/share/mariadb/echo_stderr
+/usr/share/mariadb/mini-benchmark
+/usr/share/mariadb/wsrep.cnf
+/usr/share/mariadb/wsrep_notify
+/usr/bin/mysqld_safe
+/usr/bin/wsrep_sst_rsync_wan
+/usr/lib/systemd/system/mysql.service
+/usr/lib/systemd/system/mysqld.service
+/usr/share/doc/mariadb-server/changelog.Debian.gz
+/usr/share/man/man1/mysqld_safe.1.gz
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 
+dpkg -L mariadb-server | grep service0;root&#64;25d454294298: /
+root&#64;25d454294298:/# dpkg -L mariadb-server | grep service
+/usr/bin/mariadb-<span style="font-weight:bold;color:#ff0000;">service</span>-convert
+/usr/lib/systemd/system/mariadb.<span style="font-weight:bold;color:#ff0000;">service</span>
+/usr/lib/systemd/system/mariadb&#64;.<span style="font-weight:bold;color:#ff0000;">service</span>
+/usr/lib/systemd/system/mariadb&#64;bootstrap.<span style="font-weight:bold;color:#ff0000;">service</span>.d
+/usr/lib/systemd/system/mariadb&#64;bootstrap.<span style="font-weight:bold;color:#ff0000;">service</span>.d/use_galera_new_cluster.conf
+/usr/share/man/man1/mariadb-<span style="font-weight:bold;color:#ff0000;">service</span>-convert.1.gz
+/usr/lib/systemd/system/mysql.<span style="font-weight:bold;color:#ff0000;">service</span>
+/usr/lib/systemd/system/mysqld.<span style="font-weight:bold;color:#ff0000;">service</span>
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# less <span style="color:#00cd00;background-color:#000000;">/usr/lib/systemd/system/mysqld.service</span><span style="color:#000000;background-color:#00cd00;">
+/usr/lib/systemd/system/mysqld.service0;root&#64;25d454294298: /
+root&#64;25d454294298:/# less /usr/lib/systemd/system/mysqld.service
+<span style="color:#000000;background-color:#00cd00;">bash: less: command not found
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt install less
+<span style="color:#000000;background-color:#00cd00;">Installing:                     
+</span><span style="color:#00cd00;background-color:#00cd00;">  less
+</span>
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 1
+  Download size: 156 kB
+  Space needed: 350 kB / 13.9 GB available
+
+Get:1 http://archive.ubuntu.com/ubuntu plucky/main amd64 less amd64 643-1 [156 kB]
+Fetched 156 kB in 1s (227 kB/s)0% [Working]</span>        </span><span style="color:#cdcd00;">
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, &lt;STDIN&gt; line 1.)
+debconf: falling back to frontend: Readline
+
+Selecting previously unselected package less.
+(Reading database ... 8106 files and directories currently installed.)
+Preparing to unpack .../archives/less_643-1_amd64.deb ...
+<span style="background-color:#00cd00;"></span><span style="color:#000000;background-color:#00cd00;">Progress: [  0%]</span> [.................................................................................] 87<span style="background-color:#00cd00;"></span><span style="color:#000000;background-color:#00cd00;">Progress: [ 20%]</span> [################.................................................................] 8Unpacking less (643-1) ...
+<span style="background-color:#00cd00;"></span><span style="color:#000000;background-color:#00cd00;">Progress: [ 40%]</span> [################################.................................................] 8Setting up less (643-1) ...
+<span style="background-color:#00cd00;"></span><span style="color:#000000;background-color:#00cd00;">Progress: [ 60%]</span> [################################################.................................] 87<span style="background-color:#00cd00;"></span><span style="color:#000000;background-color:#00cd00;">Progress: [ 80%]</span> [################################################################.................] 8
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# apt install lesless /usr/lib/systemd/system/mysqld.service0;root&#64;25d454294298: /
+root&#64;25d454294298:/# less /usr/lib/systemd/system/mysqld.service
+# It&apos;s not recommended to modify this file in-place, because it will be
+# overwritten during package upgrades.  If you want to customize, the
+# best way is to create a file &quot;/etc/systemd/system/mariadb.service&quot;,
+# containing
+#       .include /usr/lib/systemd/system/mariadb.service
+#       ...make your changes here...
+# or create a file &quot;/etc/systemd/system/mariadb.service.d/foo.conf&quot;,
+# which doesn&apos;t need to include &quot;.include&quot; call and which will be parsed
+# after the file mariadb.service itself is parsed.
+#
+# For more info about custom unit files, see systemd.unit(5) or
+# https://mariadb.com/kb/en/mariadb/systemd/
+#
+# Copyright notice:
+#
+# This file is free software; you can redistribute it and/or modify it
+<span style="color:#000000;background-color:#00cd00;"># under the terms of the GNU Lesser General Public License as published byckground-color:#00cd00;">
+# the Free Software Foundation; either version 2.1 of the License, or
+# (at your option) any later version.
+
+[Unit]
+Description=MariaDB 11.4.7 database server
+Documentation=man:mariadbd(8)
+Documentation=https://mariadb.com/kb/en/library/systemd/
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+
+[Service]
+
+<span style="color:#000000;background-color:#00cd00;">##############################################################################
+<span style="color:#000000;background-color:#00cd00;">## Core requirements
+<span style="color:#000000;background-color:#00cd00;">##SESCOB
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">Type=notify
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Setting this to true can break replication and the Type=notify settings
+<span style="color:#000000;background-color:#00cd00;"># See also bind-address mariadbd option.
+<span style="color:#000000;background-color:#00cd00;">PrivateNetwork=false
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">##############################################################################
+<span style="color:#000000;background-color:#00cd00;">## Package maintainers
+<span style="color:#000000;background-color:#00cd00;">##SESCOB
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">User=mysql
+<span style="color:#000000;background-color:#00cd00;">Group=mysql
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># CAP_IPC_LOCK To allow memlock to be used as non-root user
+<span style="color:#000000;background-color:#00cd00;"># These are enabled by default
+<span style="color:#000000;background-color:#00cd00;">AmbientCapabilities=CAP_IPC_LOCK
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># PrivateDevices=true implies NoNewPrivileges=true and
+<span style="color:#000000;background-color:#00cd00;"># SUID auth_pam_tool suddenly doesn&apos;t do setuid anymore
+<span style="color:#000000;background-color:#00cd00;">PrivateDevices=false
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Prevent writes to /usr, /boot, and /etc
+<span style="color:#000000;background-color:#00cd00;">ProtectSystem=full
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Doesn&apos;t yet work properly with SELinux enabled
+<span style="color:#000000;background-color:#00cd00;"># NoNewPrivileges=true
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Prevent accessing /home, /root and /run/user
+<span style="color:#000000;background-color:#00cd00;">ProtectHome=true
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Execute pre and post scripts as root, otherwise it does it as User=
+<span style="color:#000000;background-color:#00cd00;">PermissionsStartOnly=true
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Perform automatic wsrep recovery. When server is started without wsrep,
+<span style="color:#000000;background-color:#00cd00;"># galera_recovery simply returns an empty string. In any case, however,
+<span style="color:#000000;background-color:#00cd00;"># the script is not expected to return with a non-zero status.
+<span style="color:#000000;background-color:#00cd00;"># It is always safe to unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;"># Do not panic if galera_recovery script is not available. (MDEV-10538)
+<span style="color:#000000;background-color:#00cd00;">ExecStartPre=/bin/sh -c &quot;systemctl unset-environment _WSREP_START_POSITION&quot;
+<span style="color:#000000;background-color:#00cd00;">ExecStartPre=/bin/sh -c &quot;[ ! -e /usr/bin/galera_recovery ] &amp;&amp; VAR= || \
+<span style="color:#000000;background-color:#00cd00;"> VAR=`/usr/bin/galera_recovery`; [ $? -eq 0 ] \
+<span style="color:#000000;background-color:#00cd00;"> &amp;&amp; systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1&quot;
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Needed to create system tables etc.
+<span style="color:#000000;background-color:#00cd00;"># ExecStartPre=/usr/bin/mysql_install_db -u mysql
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Start main service
+<span style="color:#000000;background-color:#00cd00;"># MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+<span style="color:#000000;background-color:#00cd00;"># Use the [Service] section and Environment=&quot;MYSQLD_OPTS=...&quot;.
+<span style="color:#000000;background-color:#00cd00;"># This isn&apos;t a replacement for my.cnf.
+<span style="color:#000000;background-color:#00cd00;"># _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+<span style="color:#000000;background-color:#00cd00;">M# galera_recovery simply returns an empty string. In any case, however,
+<span style="color:#000000;background-color:#00cd00;">M# Perform automatic wsrep recovery. When server is started without wsrep,
+<span style="color:#000000;background-color:#00cd00;">MESESCOA
+<span style="color:#000000;background-color:#00cd00;">MExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+<span style="color:#000000;background-color:#00cd00;">MESESCOA
+<span style="color:#000000;background-color:#00cd00;">MPermissionsStartOnly=true
+<span style="color:#000000;background-color:#00cd00;">M# Execute pre and post scripts as root, otherwise it does it as User=
+<span style="color:#000000;background-color:#00cd00;"># ExecStartPre=/usr/bin/mysql_install_db -u mysql
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Start main service
+<span style="color:#000000;background-color:#00cd00;"># MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+<span style="color:#000000;background-color:#00cd00;"># Use the [Service] section and Environment=&quot;MYSQLD_OPTS=...&quot;.
+<span style="color:#000000;background-color:#00cd00;"># This isn&apos;t a replacement for my.cnf.
+<span style="color:#000000;background-color:#00cd00;"># _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+<span style="color:#000000;background-color:#00cd00;">ExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;">M# Do not panic if galera_recovery script is not available. (MDEV-10538)
+<span style="color:#000000;background-color:#00cd00;">M# It is always safe to unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;">M# the script is not expected to return with a non-zero status.
+<span style="color:#000000;background-color:#00cd00;">M# galera_recovery simply returns an empty string. In any case, however,
+<span style="color:#000000;background-color:#00cd00;">M# Perform automatic wsrep recovery. When server is started without wsrep,
+<span style="color:#000000;background-color:#00cd00;">MESESCOA
+<span style="color:#000000;background-color:#00cd00;"># Use the [Service] section and Environment=&quot;MYSQLD_OPTS=...&quot;.
+<span style="color:#000000;background-color:#00cd00;"># This isn&apos;t a replacement for my.cnf.
+<span style="color:#000000;background-color:#00cd00;"># _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+<span style="color:#000000;background-color:#00cd00;">ExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;">ExecStartPost=/bin/sh -c &quot;systemctl unset-environment _WSREP_START_POSITION&quot;
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">ExecStartPost=/etc/mysql/debian-start
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">KillSignal=SIGTERM
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Don&apos;t want to see an automated SIGKILL ever
+<span style="color:#000000;background-color:#00cd00;">SendSIGKILL=no
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Restart crashed server only, on-failure would also restart, for example, when
+<span style="color:#000000;background-color:#00cd00;"># my.cnf contains unknown option
+<span style="color:#000000;background-color:#00cd00;">Restart=on-abnormal
+<span style="color:#000000;background-color:#00cd00;">RestartSec=5s
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">UMask=007
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;">##############################################################################
+<span style="color:#000000;background-color:#00cd00;">## USERs can override
+<span style="color:#000000;background-color:#00cd00;">##SESCOB
+<span style="color:#000000;background-color:#00cd00;">##SESCOB
+<span style="color:#000000;background-color:#00cd00;">## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+<span style="color:#000000;background-color:#00cd00;">## and adding/setting the following under [Service] will override this file&apos;s
+<span style="color:#000000;background-color:#00cd00;">## settings.
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Useful options not previously available in [mysqld_safe]
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"># Kernels like killing mariadbd when out of memory because its big.
+<span style="color:#000000;background-color:#00cd00;">Restart=on-abnormal
+RestartSec=5s
+
+UMask=007
+
+##############################################################################
+## USERs can override
+##
+##
+## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+## and adding/setting the following under [Service] will override this file&apos;s
+## settings.
+
+# Useful options not previously available in [mysqld_safe]
+
+# Kernels like killing mariadbd when out of memory because its big.
+Restart=on-abnormal
+RestartSec=5s
+
+UMask=007
+
+##############################################################################
+## USERs can override
+##
+##
+## by creating a file in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+## and adding/setting the following under [Service] will override this file&apos;s
+## settings.
+
+# Useful options not previously available in [mysqld_safe]
+
+# Kernels like killing mariadbd when out of memory because its big.
+...skipping...
+# </span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=sync
+# </span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=sysctl -q -w vm.drop_caches=3
+
+# numa-interleave=1 equalivant
+# Change </span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">=numactl --interleave=all /usr/sbin/mariadbd......
+
+# crash-script equalivent
+# FailureAction=
+</span><span style="font-weight:bold;color:#7f7f7f;background-color:#00cd00;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="color:#000000;background-color:#00cd00;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#00cd00;">~</span>
+<span style="color:#000000;background-color:#00cd00;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#00cd00;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="color:#000000;background-color:#00cd00;">M# This file is free software; you can redistribute it and/or modify itt found  (press RETURN)</span><span style="color:#000000;background-color:#00cd00;">
+M#
+M# Copyright notice:
+M#
+M# https://mariadb.com/kb/en/mariadb/systemd/
+M# For more info about custom unit files, see systemd.unit(5) or
+M#
+M# after the file mariadb.service itself is parsed.
+M# which doesn&apos;t need to include &quot;.include&quot; call and which will be parsed
+M# or create a file &quot;/etc/systemd/system/mariadb.service.d/foo.conf&quot;,
+M#       ...make your changes here...
+M#       .include /usr/lib/systemd/system/mariadb.service
+M# containing
+M# best way is to create a file &quot;/etc/systemd/system/mariadb.service&quot;,
+M# overwritten during package upgrades.  If you want to customize, the
+M# It&apos;s not recommended to modify this file in-place, because it will be
+<span style="color:#000000;background-color:#00cd00;">...skipping...
+</span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld
+
+# Perform automatic wsrep recovery. When server is started without wsrep,
+# galera_recovery simply returns an empty string. In any case, however,
+# the script is not expected to return with a non-zero status.
+# It is always safe to unset _WSREP_START_POSITION environment variable.
+# Do not panic if galera_recovery script is not available. (MDEV-10538)
+</span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=/bin/sh -c &quot;systemctl unset-environment _WSREP_START_POSITION&quot;
+</span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=/bin/sh -c &quot;[ ! -e /usr/bin/galera_recovery ] &amp;&amp; VAR= || \
+ VAR=`/usr/bin/galera_recovery`; [ $? -eq 0 ] \
+ &amp;&amp; systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1&quot;
+
+# Needed to create system tables etc.
+# </span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Pre=/usr/bin/mysql_install_db -u mysql
+
+# Start main service
+<span style="color:#000000;background-color:#00cd00;"># MYSQLD_OPTS here is for users to set in /etc/systemd/system/mariadb.service.d/MY_SPECIAL.conf
+# Use the [Service] section and Environment=&quot;MYSQLD_OPTS=...&quot;.
+# This isn&apos;t a replacement for my.cnf.
+# _WSREP_NEW_CLUSTER is for the exclusive use of the script galera_new_cluster
+</span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION
+
+# Unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;">M# Do not panic if galera_recovery script is not available. (MDEV-10538)
+<span style="color:#000000;background-color:#00cd00;"># Unset _WSREP_START_POSITION environment variable.
+<span style="color:#000000;background-color:#00cd00;"></span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Post=/bin/sh -c &quot;systemctl unset-environment _WSREP_START_POSITION&quot;
+<span style="color:#000000;background-color:#00cd00;"> ESESCOB
+<span style="color:#000000;background-color:#00cd00;"></span><span style="color:#00cd00;background-color:#000000;">ExecStart</span><span style="color:#000000;background-color:#00cd00;">Post=/etc/mysql/debian-start
+<span style="color:#000000;background-color:#00cd00;">&gt;0;root&#64;25d454294298: /
+root&#64;25d454294298:/# </span><span style="color:#00cd00;background-color:#000000;">/usr/sbin/mariadbd</span><span style="color:#000000;background-color:#00cd00;">
+/usr/sbin/mariadbd
+<span style="color:#000000;background-color:#00cd00;">/usr/sbin/mariadbd: Please consult the Knowledge Base to find out how to run mysqld as root!
+2025-09-11 12:53:09 0 [ERROR] Aborting
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# /usr/sbin/mariadbless /usr/lib/systemd/system/mysqld.service
+<span style="color:#000000;background-color:#00cd00;"># It&apos;s not recommended to modify this file in-place, because it will be
+# overwritten during package upgrades.  If you want to customize, the
+# best way is to create a file &quot;/etc/systemd/system/mariadb.service&quot;,
+# containing
+#       .include /usr/lib/systemd/system/mariadb.service
+#       ...make your changes here...
+# or create a file &quot;/etc/systemd/system/mariadb.service.d/foo.conf&quot;,
+# which doesn&apos;t need to include &quot;.include&quot; call and which will be parsed
+# after the file mariadb.service itself is parsed.
+#
+# For more info about custom unit files, see systemd.unit(5) or
+# https://mariadb.com/kb/en/mariadb/systemd/
+#
+# Copyright notice:
+#
+# This file is free software; you can redistribute it and/or modify it
+<span style="color:#000000;background-color:#00cd00;"># It&apos;s not recommended to modify this file in-place, because it will be00;background-color:#00cd00;">
+# overwritten during package upgrades.  If you want to customize, the
+# best way is to create a file &quot;/etc/systemd/system/mariadb.service&quot;,
+# containing
+#       .include /usr/lib/systemd/system/mariadb.service
+#       ...make your changes here...
+# or create a file &quot;/etc/systemd/system/mariadb.service.d/foo.conf&quot;,
+# which doesn&apos;t need to include &quot;.include&quot; call and which will be parsed
+# after the file mariadb.service itself is parsed.
+#
+# For more info about custom unit files, see systemd.unit(5) or
+# https://mariadb.com/kb/en/mariadb/systemd/
+#
+# Copyright notice:
+#
+# This file is free software; you can redistribute it and/or modify it
+# It&apos;s not recommended to modify this file in-place, because it will be
+# overwritten during package upgrades.  If you want to customize, the
+# best way is to create a file &quot;/etc/systemd/system/mariadb.service&quot;,
+# containing
+#       .include /usr/lib/systemd/system/mariadb.service
+#       ...make your changes here...
+# or create a file &quot;/etc/systemd/system/mariadb.service.d/foo.conf&quot;,
+# which doesn&apos;t need to include &quot;.include&quot; call and which will be parsed
+# after the file mariadb.service itself is parsed.
+#
+# For more info about custom unit files, see systemd.unit(5) or
+# https://mariadb.com/kb/en/mariadb/systemd/
+#
+# Copyright notice:
+#
+# This file is free software; you can redistribute it and/or modify it
+...skipping...
+User=</span><span style="color:#00cd00;background-color:#000000;">mysql</span><span style="color:#000000;background-color:#00cd00;">
+Group=</span><span style="color:#00cd00;background-color:#000000;">mysql</span><span style="color:#000000;background-color:#00cd00;">
+
+# CAP_IPC_LOCK To allow memlock to be used as non-root user
+# These are enabled by default
+AmbientCapabilities=CAP_IPC_LOCK
+
+# PrivateDevices=true implies NoNewPrivileges=true and
+# SUID auth_pam_tool suddenly doesn&apos;t do setuid anymore
+PrivateDevices=false
+
+# Prevent writes to /usr, /boot, and /etc
+ProtectSystem=full
+
+
+
+<span style="color:#000000;background-color:#00cd00;">&gt;0;root&#64;25d454294298: /
+root&#64;25d454294298:/# useradd mysql
+<span style="color:#000000;background-color:#00cd00;">useradd: user &apos;mysql&apos; already exists
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# sudo -i mysql
+<span style="color:#000000;background-color:#00cd00;">bash: sudo: command not found
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su mysql
+<span style="color:#000000;background-color:#00cd00;">0;root&#64;25d454294298: /
+root&#64;25d454294298:/# ececho $USER
+<span style="color:#000000;background-color:#00cd00;">
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# id
+<span style="color:#000000;background-color:#00cd00;">uid=0(root) gid=0(root) groups=0(root)
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# exit
+<span style="color:#000000;background-color:#00cd00;">exit
+<span style="color:#5c5cff;background-color:#00cd00;">cd00;">DEVOPS24/lektion12
+</span>$ docker exec -it umariadbcont bash
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su mysql
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# man su
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the &apos;unminimize&apos;
+command. You will still need to ensure the &apos;man-db&apos; package is installed.
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su --help0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su --help
+
+Usage:
+ su [options] [-] [&lt;user&gt; [&lt;argument&gt;...]]
+
+Change the effective user ID and group ID to that of &lt;user&gt;.
+A mere - implies -l.  If &lt;user&gt; is not given, root is assumed.
+
+Options:
+ -m, -p, --preserve-environment      do not reset environment variables
+ -w, --whitelist-environment &lt;list&gt;  don&apos;t reset specified variables
+
+ -g, --group &lt;group&gt;             specify the primary group
+ -G, --supp-group &lt;group&gt;        specify a supplemental group
+
+ -, -l, --login                  make the shell a login shell
+ -c, --command &lt;command&gt;         pass a single command to the shell with -c
+ --session-command &lt;command&gt;     pass a single command to the shell with -c
+                                   and do not create a new session
+ -f, --fast                      pass -f to the shell (for csh or tcsh)
+ -s, --shell &lt;shell&gt;             run &lt;shell&gt; if /etc/shells allows it
+ -P, --pty                       create a new pseudo-terminal
+ -T, --no-pty                    do not create a new pseudo-terminal (bad security!)
+
+ -h, --help                      display this help
+ -V, --version                   display version
+
+For more details see su(1).
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# less /etc/passw
+d
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+<span style="color:#000000;background-color:#00cd00;">root:x:0:0:root:/root:/bin/bashcolor:#000000;background-color:#00cd00;">
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+...skipping...
+</span><span style="color:#00cd00;background-color:#000000;">mysql</span><span style="color:#000000;background-color:#00cd00;">:x:100:101:MariaDB Server,,,:/nonexistent:/bin/false
+</span><span style="font-weight:bold;color:#7f7f7f;background-color:#00cd00;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="font-weight:bold;color:#7f7f7f;">~</span>
+<span style="color:#000000;background-color:#00cd00;">&gt;0;root&#64;25d454294298: /:#000000;background-color:#00cd00;">
+root&#64;25d454294298:/# man su
+<span style="color:#000000;background-color:#00cd00;">This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, including manpages, you can run the &apos;unminimize&apos;
+command. You will still need to ensure the &apos;man-db&apos; package is installed.
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su
+<span style="color:#000000;background-color:#00cd00;">0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su --helkp
+<span style="color:#000000;background-color:#00cd00;">
+Usage:
+ su [options] [-] [&lt;user&gt; [&lt;argument&gt;...]]
+
+Change the effective user ID and group ID to that of &lt;user&gt;.
+A mere - implies -l.  If &lt;user&gt; is not given, root is assumed.
+
+Options:
+ -m, -p, --preserve-environment      do not reset environment variables
+ -w, --whitelist-environment &lt;list&gt;  don&apos;t reset specified variables
+
+ -g, --group &lt;group&gt;             specify the primary group
+ -G, --supp-group &lt;group&gt;        specify a supplemental group
+
+ -, -l, --login                  make the shell a login shell
+ -c, --command &lt;command&gt;         pass a single command to the shell with -c
+ --session-command &lt;command&gt;     pass a single command to the shell with -c
+                                   and do not create a new session
+ -f, --fast                      pass -f to the shell (for csh or tcsh)
+ -s, --shell &lt;shell&gt;             run &lt;shell&gt; if /etc/shells allows it
+ -P, --pty                       create a new pseudo-terminal
+ -T, --no-pty                    do not create a new pseudo-terminal (bad security!)
+
+ -h, --help                      display this help
+ -V, --version                   display version
+
+For more details see su(1).
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# 0;root&#64;25d454294298: /
+root&#64;25d454294298:/# sch
+
+chage      chcon      chfn       chgrp      chmod      chown      chroot     chsh       
+chattr     chcpu      chgpasswd  chmem      choom      chpasswd   chrt       
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# chg
+
+chgpasswd  chgrp      
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# ch
+
+
+
+
+
+
+
+
+
+chsh
+
+
+
+
+
+
+
+
+su mysq-s bash mysql
+<span style="color:#000000;background-color:#00cd00;">su: failed to execute bash: No such file or directory
+0;root&#64;25d454294298: /
+root&#64;25d454294298:/# su -s bash mysqmysq mysq mysq mysq mysq/ mysqb mysqi mysqn mysq/ mysqb mysqa mysqs mysqh mysq
+<span style="color:#000000;background-color:#00cd00;">mysql&#64;25d454294298:/$ /usr/sbin/mysqldmariadbd mysql&#64;25d454294298:/$ /usr/sbin/mariadbd 
+<span style="color:#000000;background-color:#00cd00;">2025-09-11 12:57:53 0 [Note] Starting MariaDB 11.4.7-MariaDB-0ubuntu0.25.04.1 source revision 118cfcf82107188f2295631193658b2ef94f4f3f server_uid FSwkwvevQmlRc4O90VL+e3Z1bOU= as process 1211
+2025-09-11 12:57:53 0 [Note] InnoDB: Compressed tables use zlib 1.3.1
+2025-09-11 12:57:53 0 [Note] InnoDB: Number of transaction pools: 1
+2025-09-11 12:57:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-09-11 12:57:53 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2025-09-11 12:57:53 0 [Warning] mariadbd: io_uring_queue_init() failed with EPERM: sysctl kernel.io_uring_disabled has the value 2, or 1 and the user of the process is not a member of sysctl kernel.io_uring_group. (see man 2 io_uring_setup).
+2025-09-11 12:57:53 0 [Warning] InnoDB: liburing disabled: falling back to innodb_use_native_aio=OFF
+2025-09-11 12:57:53 0 [Note] InnoDB: innodb_buffer_pool_size_max=128m, innodb_buffer_pool_size=128m
+2025-09-11 12:57:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-09-11 12:57:53 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2025-09-11 12:57:53 0 [Note] InnoDB: End of log at LSN=47763
+2025-09-11 12:57:53 0 [Note] InnoDB: Opened 3 undo tablespaces
+2025-09-11 12:57:53 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2025-09-11 12:57:53 0 [Note] InnoDB: Setting file &apos;./ibtmp1&apos; size to 12.000MiB. Physically writing the file full; Please wait ...
+2025-09-11 12:57:53 0 [Note] InnoDB: File &apos;./ibtmp1&apos; size is now 12.000MiB.
+2025-09-11 12:57:53 0 [Note] InnoDB: log sequence number 47763; transaction id 14
+2025-09-11 12:57:53 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2025-09-11 12:57:53 0 [Note] Plugin &apos;FEEDBACK&apos; is disabled.
+2025-09-11 12:57:53 0 [Note] Plugin &apos;wsrep-provider&apos; is disabled.
+2025-09-11 12:57:53 0 [Note] InnoDB: Buffer pool(s) load completed at 250911 12:57:53
+2025-09-11 12:57:53 0 [Note] Server socket created on IP: &apos;127.0.0.1&apos;.
+2025-09-11 12:57:53 0 [ERROR] Can&apos;t start server : Bind on unix socket: No such file or directory
+2025-09-11 12:57:53 0 [ERROR] Do you already have another server running on socket: /run/mysqld/mysqld.sock ?
+2025-09-11 12:57:53 0 [ERROR] Aborting
+mysql&#64;25d454294298:/$ ls /run/mys
+q
+
+
+
+
+
+
+
+
+
+
+<span style="color:#000000;background-color:#00cd00;">/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld mysql -g root -d /var/run/mysqld</span><span style="color:#000000;background-color:#00cd00;">
+<span style="color:#000000;background-color:#00cd00;">/usr/bin/install: cannot change owner and permissions of ‘/var/run/mysqld’: No such file or directory
+mysql&#64;25d454294298:/$ exit
+<span style="color:#000000;background-color:#00cd00;">exit
+0;root&#64;25d454294298: /
+<span style="color:#000000;background-color:#00cd00;">/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqldmysql -g root -d /var/run/mysqld</span><span style="color:#000000;background-color:#00cd00;">
+<span style="color:#000000;background-color:#00cd00;">0;root&#64;25d454294298: /
+<span style="color:#000000;background-color:#00cd00;">su -s /bin/bash mysql55 -o mysql -g root -d /var/run/mysqld
+<span style="color:#000000;background-color:#00cd00;">mysql&#64;25d454294298:/$ /usrusr/sbin/mysqld mysql&#64;25d454294298:/$ /usr/sbin/mysqld 
+<span style="color:#000000;background-color:#00cd00;">2025-09-11 13:00:50 0 [Note] Starting MariaDB 11.4.7-MariaDB-0ubuntu0.25.04.1 source revision 118cfcf82107188f2295631193658b2ef94f4f3f server_uid FSwkwvevQmlRc4O90VL+e3Z1bOU= as process 1227
+2025-09-11 13:00:50 0 [Note] InnoDB: Compressed tables use zlib 1.3.1
+2025-09-11 13:00:50 0 [Note] InnoDB: Number of transaction pools: 1
+2025-09-11 13:00:50 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2025-09-11 13:00:50 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2025-09-11 13:00:50 0 [Warning] mysqld: io_uring_queue_init() failed with EPERM: sysctl kernel.io_uring_disabled has the value 2, or 1 and the user of the process is not a member of sysctl kernel.io_uring_group. (see man 2 io_uring_setup).
+2025-09-11 13:00:50 0 [Warning] InnoDB: liburing disabled: falling back to innodb_use_native_aio=OFF
+2025-09-11 13:00:50 0 [Note] InnoDB: innodb_buffer_pool_size_max=128m, innodb_buffer_pool_size=128m
+2025-09-11 13:00:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-09-11 13:00:50 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2025-09-11 13:00:50 0 [Note] InnoDB: End of log at LSN=47763
+2025-09-11 13:00:50 0 [Note] InnoDB: Opened 3 undo tablespaces
+2025-09-11 13:00:50 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2025-09-11 13:00:50 0 [Note] InnoDB: Setting file &apos;./ibtmp1&apos; size to 12.000MiB. Physically writing the file full; Please wait ...
+2025-09-11 13:00:50 0 [Note] InnoDB: File &apos;./ibtmp1&apos; size is now 12.000MiB.
+2025-09-11 13:00:50 0 [Note] InnoDB: log sequence number 47763; transaction id 14
+2025-09-11 13:00:50 0 [Note] Plugin &apos;FEEDBACK&apos; is disabled.
+2025-09-11 13:00:50 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2025-09-11 13:00:50 0 [Note] Plugin &apos;wsrep-provider&apos; is disabled.
+2025-09-11 13:00:50 0 [Note] InnoDB: Buffer pool(s) load completed at 250911 13:00:50
+2025-09-11 13:00:50 0 [Note] Server socket created on IP: &apos;127.0.0.1&apos;.
+2025-09-11 13:00:50 0 [Note] mysqld: Event Scheduler: Loaded 0 events
+2025-09-11 13:00:50 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: &apos;11.4.7-MariaDB-0ubuntu0.25.04.1&apos;  socket: &apos;/run/mysqld/mysqld.sock&apos;  port: 3306  Ubuntu 25.04
+^C^C^C^C
+<span style="color:#5c5cff;background-color:#00cd00;">cd00;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">5c5cff;">DEVOPS24/lektion12
+</span>$ docker ps
+CONTAINER ID   IMAGE             COMMAND              CREATED         STATUS         PORTS     NAMES
+2e814d862476   umariadb:latest   &quot;/usr/sbin/mysqld&quot;   8 seconds ago   Up 7 seconds             umariadbcont
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ codocker exec umariadbcont bash
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">5c5cff;">DEVOPS24/lektion12
+</span>$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-events_highpri
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:01 ksoftirqd/0
+     15 ?        00:00:12 rcu_preempt
+     16 ?        00:00:00 migration/0
+     18 ?        00:00:00 cpuhp/0
+     19 ?        00:00:00 cpuhp/1
+     20 ?        00:00:00 migration/1
+     21 ?        00:00:00 ksoftirqd/1
+     23 ?        00:00:00 kworker/1:0H-events_highpri
+     24 ?        00:00:00 cpuhp/2
+     25 ?        00:00:00 migration/2
+     26 ?        00:00:01 ksoftirqd/2
+     28 ?        00:00:00 kworker/2:0H-events_highpri
+     29 ?        00:00:00 cpuhp/3
+     30 ?        00:00:00 migration/3
+     31 ?        00:00:00 ksoftirqd/3
+     33 ?        00:00:00 kworker/3:0H-events_highpri
+     34 ?        00:00:00 cpuhp/4
+     35 ?        00:00:00 migration/4
+     36 ?        00:00:01 ksoftirqd/4
+     38 ?        00:00:00 kworker/4:0H-events_highpri
+     39 ?        00:00:00 cpuhp/5
+     40 ?        00:00:00 migration/5
+     41 ?        00:00:00 ksoftirqd/5
+     43 ?        00:00:00 kworker/5:0H-events_highpri
+     44 ?        00:00:00 cpuhp/6
+     45 ?        00:00:00 migration/6
+     46 ?        00:00:01 ksoftirqd/6
+     48 ?        00:00:00 kworker/6:0H-events_highpri
+     49 ?        00:00:00 cpuhp/7
+     50 ?        00:00:01 migration/7
+     51 ?        00:00:00 ksoftirqd/7
+     53 ?        00:00:00 kworker/7:0H-events_highpri
+     54 ?        00:00:00 cpuhp/8
+     55 ?        00:00:01 migration/8
+     56 ?        00:00:00 ksoftirqd/8
+     58 ?        00:00:00 kworker/8:0H-events_highpri
+     59 ?        00:00:00 cpuhp/9
+     60 ?        00:00:01 migration/9
+     61 ?        00:00:00 ksoftirqd/9
+     63 ?        00:00:00 kworker/9:0H-events_highpri
+     64 ?        00:00:00 cpuhp/10
+     65 ?        00:00:00 migration/10
+     66 ?        00:00:00 ksoftirqd/10
+     68 ?        00:00:00 kworker/10:0H-events_highpri
+     69 ?        00:00:00 cpuhp/11
+     70 ?        00:00:01 migration/11
+     71 ?        00:00:00 ksoftirqd/11
+     73 ?        00:00:00 kworker/11:0H-events_highpri
+     86 ?        00:00:00 kdevtmpfs
+     87 ?        00:00:00 inet_frag_wq
+     88 ?        00:00:00 kauditd
+     89 ?        00:00:00 khungtaskd
+     90 ?        00:00:00 oom_reaper
+     91 ?        00:00:00 writeback
+     92 ?        00:00:04 kcompactd0
+     93 ?        00:00:00 ksmd
+     95 ?        00:00:00 khugepaged
+     96 ?        00:00:00 kintegrityd
+     97 ?        00:00:00 kblockd
+     98 ?        00:00:00 blkcg_punt_bio
+     99 ?        00:00:00 tpm_dev_wq
+    100 ?        00:00:00 edac-poller
+    101 ?        00:00:00 devfreq_wq
+    112 ?        00:00:00 kworker/4:1H-events_highpri
+    113 ?        00:00:48 kswapd0
+    119 ?        00:00:00 kthrotld
+    121 ?        00:00:00 irq/124-pciehp
+    122 ?        00:00:00 irq/125-pciehp
+    123 ?        00:00:00 acpi_thermal_pm
+    124 ?        00:00:00 hwrng
+    126 ?        00:00:00 hfi-updates
+    127 ?        00:00:00 mld
+    128 ?        00:00:00 kworker/0:1H-kblockd
+    129 ?        00:00:00 ipv6_addrconf
+    134 ?        00:00:00 kstrp
+    139 ?        00:00:00 zswap-shrink
+    189 ?        00:00:00 kworker/6:1H-events_highpri
+    203 ?        00:00:00 kworker/8:1H-events_highpri
+    204 ?        00:00:00 kworker/2:1H-events_highpri
+    205 ?        00:00:00 kworker/1:1H-kblockd
+    206 ?        00:00:00 kworker/3:1H-events_highpri
+    208 ?        00:00:00 kworker/5:1H-events_highpri
+    209 ?        00:00:01 kworker/7:1H-events_highpri
+    210 ?        00:00:00 kworker/9:1H-events_highpri
+    211 ?        00:00:00 kworker/10:1H-events_highpri
+    212 ?        00:00:00 kworker/11:1H-kblockd
+    241 ?        00:00:00 cryptd
+    326 ?        00:00:00 nvme-wq
+    328 ?        00:00:00 nvme-reset-wq
+    329 ?        00:00:00 nvme-delete-wq
+    332 ?        00:00:00 irq/161-ELAN050B:00
+    339 ?        00:00:00 card0-crtc0
+    340 ?        00:00:00 card0-crtc1
+    341 ?        00:00:00 card0-crtc2
+    342 ?        00:00:00 card0-crtc3
+    353 ?        00:00:00 md
+    363 ?        00:00:00 raid5wq
+    620 ?        00:00:00 kdmflush/253:0
+    621 ?        00:00:00 kcryptd_io/253:
+    622 ?        00:00:00 kcryptd/253:0
+    623 ?        00:00:05 dmcrypt_write/253:0
+   1153 ?        00:00:00 jbd2/dm-0-8
+   1154 ?        00:00:00 ext4-rsv-conver
+   1214 ?        00:00:00 systemd-journal
+   1228 ?        00:00:00 systemd-udevd
+   1231 ?        00:00:00 rpciod
+   1232 ?        00:00:00 xprtiod
+   1381 ?        00:00:00 watchdogd
+   1410 ?        00:00:00 cfg80211
+   1454 ?        00:00:08 irq/177-iwlwifi:default_queue
+   1455 ?        00:00:01 irq/178-iwlwifi:queue_1
+   1456 ?        00:00:01 irq/179-iwlwifi:queue_2
+   1457 ?        00:00:02 irq/180-iwlwifi:queue_3
+   1458 ?        00:00:01 irq/181-iwlwifi:queue_4
+   1459 ?        00:00:01 irq/182-iwlwifi:queue_5
+   1460 ?        00:00:01 irq/183-iwlwifi:queue_6
+   1461 ?        00:00:01 irq/184-iwlwifi:queue_7
+   1462 ?        00:00:01 irq/185-iwlwifi:queue_8
+   1463 ?        00:00:01 irq/186-iwlwifi:queue_9
+   1464 ?        00:00:00 irq/187-iwlwifi:queue_10
+   1465 ?        00:00:01 irq/188-iwlwifi:queue_11
+   1466 ?        00:00:01 irq/189-iwlwifi:queue_12
+   1467 ?        00:00:00 irq/190-iwlwifi:exception
+   1498 ?        00:00:00 irq/191-AudioDSP
+   1579 ?        00:00:00 jbd2/nvme0n1p5-8
+   1580 ?        00:00:00 ext4-rsv-conver
+   1717 ?        00:00:00 kdmflush/253:1
+   1718 ?        00:00:00 kcryptd_io/253:
+   1719 ?        00:00:00 kcryptd/253:1
+   1720 ?        00:00:02 dmcrypt_write/253:1
+   1728 ?        00:00:01 jbd2/dm-1-8
+   1729 ?        00:00:00 ext4-rsv-conver
+   1763 ?        00:00:00 rpcbind
+   1766 ?        00:00:00 systemd-timesyn
+   1770 ?        00:00:00 blkmapd
+   1772 ?        00:00:00 rpc.idmapd
+   1773 ?        00:00:00 nfsdcld
+   1778 ?        00:00:00 accounts-daemon
+   1783 ?        00:00:54 avahi-daemon
+   1786 ?        00:00:00 bluetoothd
+   1788 ?        00:00:00 cron
+   1790 ?        00:00:03 dbus-daemon
+   1794 ?        00:00:00 low-memory-moni
+   1796 ?        00:00:00 polkitd
+   1797 ?        00:00:00 power-profiles-
+   1799 ?        00:00:00 smartd
+   1802 ?        00:00:00 switcheroo-cont
+   1806 ?        00:00:00 systemd-logind
+   1809 ?        00:00:00 systemd-machine
+   1811 ?        00:00:00 udisksd
+   1817 ?        00:00:00 avahi-daemon
+   1848 ?        00:00:03 NetworkManager
+   1850 ?        00:00:01 wpa_supplicant
+   1862 ?        00:00:00 psimon
+   1896 ?        00:00:00 ModemManager
+   1898 ?        00:00:00 boltd
+   1915 ?        00:00:00 cupsd
+   1927 ?        00:00:07 tailscaled
+   1929 ?        00:00:04 containerd
+   1950 ?        00:00:00 sshd
+   1982 ?        00:00:00 gdm3
+   2277 ?        00:00:00 iprt-VBoxWQueue
+   2288 ?        00:00:00 iprt-VBoxTscThread
+   2302 ?        00:00:00 rtkit-daemon
+   2576 ?        00:00:00 dnsmasq
+   2577 ?        00:00:00 dnsmasq
+   2579 ?        00:00:00 krfcommd
+   2599 ?        00:00:00 upowerd
+   2675 ?        00:00:03 geoclue
+   2691 ?        00:00:00 colord
+   3086 ?        00:00:00 cups-browsed
+   3089 ?        00:00:06 dockerd
+   3110 ?        00:00:00 rpc.statd
+   3111 ?        00:00:00 rpc.mountd
+   3133 ?        00:00:00 lockd
+   3415 ?        00:00:00 nfsd
+   3416 ?        00:00:00 nfsd
+   3417 ?        00:00:00 nfsd
+   3418 ?        00:00:00 nfsd
+   3419 ?        00:00:00 nfsd
+   3420 ?        00:00:00 nfsd
+   3421 ?        00:00:00 nfsd
+   3422 ?        00:00:00 nfsd
+   3692 ?        00:00:00 exim4
+   3773 ?        00:00:00 gdm-session-wor
+   3785 ?        00:00:00 systemd
+   3786 ?        00:00:00 (sd-pam)
+   3824 ?        00:00:05 pipewire
+   3826 ?        00:00:00 wireplumber
+   3828 ?        00:00:05 pipewire-pulse
+   3831 ?        00:00:00 gnome-keyring-d
+   3832 ?        00:38:34 dropbox
+   3833 ?        00:00:00 dbus-daemon
+   3843 ?        00:00:00 gvfsd
+   3848 ?        00:00:00 gvfsd-fuse
+   3902 ?        00:00:02 tracker-miner-f
+   3909 tty2     00:00:00 gdm-wayland-ses
+   3914 tty2     00:00:00 gnome-session-b
+   3946 ?        00:00:00 gvfs-udisks2-vo
+   3965 ?        00:00:00 gcr-ssh-agent
+   3966 ?        00:00:00 gnome-session-c
+   3968 ?        00:00:00 ssh-agent
+   3978 ?        00:00:00 gnome-session-b
+   3979 ?        00:00:00 gvfs-gphoto2-vo
+   3987 ?        00:00:00 gvfs-mtp-volume
+   3993 ?        00:00:00 gvfs-goa-volume
+   3997 ?        00:00:00 goa-daemon
+   4012 ?        00:00:00 at-spi-bus-laun
+   4014 ?        00:04:42 gnome-shell
+   4020 ?        00:00:00 dbus-daemon
+   4031 ?        00:00:00 goa-identity-se
+   4041 ?        00:00:00 xdg-permission-
+   4044 ?        00:00:00 gvfs-afc-volume
+   4200 ?        00:00:00 gnome-shell-cal
+   4207 ?        00:00:00 evolution-sourc
+   4237 ?        00:00:00 evolution-calen
+   4238 ?        00:00:00 gvfsd-metadata
+   4251 ?        00:00:00 evolution-addre
+   4269 ?        00:00:00 gjs
+   4271 ?        00:00:00 at-spi2-registr
+   4301 ?        00:00:00 sh
+   4302 ?        00:00:00 gsd-a11y-settin
+   4304 ?        00:00:01 ibus-daemon
+   4306 ?        00:00:00 gsd-color
+   4308 ?        00:00:00 gsd-datetime
+   4310 ?        00:00:00 gsd-housekeepin
+   4312 ?        00:00:00 gsd-keyboard
+   4315 ?        00:00:00 gsd-media-keys
+   4316 ?        00:00:00 gsd-power
+   4320 ?        00:00:00 gsd-print-notif
+   4321 ?        00:00:00 evolution-alarm
+   4324 ?        00:00:00 gsd-rfkill
+   4325 ?        00:00:00 gsd-screensaver
+   4327 ?        00:00:01 gsd-sharing
+   4331 ?        00:00:00 gsd-smartcard
+   4333 ?        00:00:00 gsd-sound
+   4334 ?        00:00:00 gsd-usb-protect
+   4336 ?        00:00:00 gsd-wacom
+   4337 ?        00:00:00 dconf-service
+   4340 ?        00:00:00 blueman-applet
+   4384 ?        00:00:07 gnome-software
+   4388 ?        00:00:00 ibus-dconf
+   4392 ?        00:00:01 ibus-extension-
+   4393 ?        00:00:00 gsd-disk-utilit
+   4397 ?        00:00:00 ibus-portal
+   4434 ?        00:00:00 gjs
+   4495 ?        00:00:00 ibus-engine-sim
+   4514 ?        00:00:00 gsd-printer
+   4531 ?        00:00:00 xdg-desktop-por
+   4544 ?        00:00:00 xdg-document-po
+   4551 ?        00:00:00 fusermount3
+   4556 ?        00:00:00 xdg-desktop-por
+   4592 ?        00:00:00 obexd
+   4594 ?        00:00:06 blueman-tray
+   4690 ?        00:00:00 uuidd
+   4749 ?        00:00:00 xdg-desktop-por
+   4754 ?        00:00:00 xdg-desktop-por
+   4771 ?        00:00:01 fwupd
+   4994 ?        00:01:35 Xwayland
+   5031 ?        00:00:00 gsd-xsettings
+   5093 ?        00:00:00 ibus-x11
+   7746 ?        00:00:01 kworker/0:3-events
+   7751 ?        00:00:00 kworker/2:2-events
+   7984 ?        00:00:00 kworker/3:1-mm_percpu_wq
+   8017 ?        00:00:00 gnome-calendar
+   8074 ?        00:00:00 gvfsd-trash
+   9141 ?        00:00:00 kworker/9:2-mm_percpu_wq
+   9219 ?        00:00:18 chrome
+   9224 ?        00:00:00 cat
+   9225 ?        00:00:00 cat
+   9227 ?        00:00:00 chrome_crashpad
+   9229 ?        00:00:00 chrome_crashpad
+   9235 ?        00:00:00 chrome
+   9236 ?        00:00:00 chrome
+   9238 ?        00:00:00 chrome
+   9285 ?        00:00:20 chrome
+   9286 ?        00:00:04 chrome
+   9311 ?        00:00:00 chrome
+   9390 ?        00:00:00 chrome
+   9401 ?        00:00:01 chrome
+   9483 ?        00:00:00 chrome
+   9509 ?        00:00:00 chrome
+   9833 ?        00:00:00 irq/160-mei_me
+   9925 ?        00:00:00 kworker/5:0-mm_percpu_wq
+  10053 ?        00:00:00 gnome-terminal-
+  10377 pts/0    00:00:00 bash
+  10701 ?        00:00:03 chrome
+  10712 ?        00:00:13 chrome
+  10752 ?        00:00:00 chrome
+  10791 ?        00:00:08 chrome
+  11042 ?        00:00:00 ssh-agent
+  11100 ?        00:00:26 code
+  11126 ?        00:00:00 code
+  11127 ?        00:00:00 code
+  11129 ?        00:00:00 code
+  11148 ?        00:00:00 chrome_crashpad
+  11163 ?        00:03:37 code
+  11170 ?        00:00:00 code
+  11215 ?        00:04:01 code
+  11232 ?        00:00:03 code
+  11233 ?        00:00:02 code
+  11252 ?        00:00:31 code
+  11285 ?        00:00:11 code
+  11301 pts/1    00:00:00 bash
+  11678 pts/2    00:00:00 autocommit
+  12077 pts/1    00:00:00 script
+  12078 pts/3    00:00:00 bash_noprofile_
+  12079 pts/3    00:00:00 bash
+  13061 ?        00:00:00 kworker/10:2-events
+  13298 ?        00:00:00 kworker/11:3-events
+  13331 ?        00:00:00 code
+  13332 ?        00:00:00 code
+  13333 ?        00:00:00 docker-language
+  13368 ?        00:00:00 docker-language
+  18521 ?        00:00:00 gvfsd-http
+  19740 ?        00:00:00 chrome
+  21041 ?        00:00:00 kworker/8:1-events
+  21147 ?        00:00:03 kworker/u24:3-kcryptd/253:0
+  23713 ?        00:00:08 kworker/7:2-events
+  24499 ?        00:00:04 kworker/u25:1-rb_allocator
+  26165 ?        00:00:00 kworker/1:0-events
+  26215 ?        00:00:00 kworker/6:2-events
+  26234 ?        00:00:03 kworker/u24:2-kcryptd/253:0
+  26290 ?        00:00:02 kworker/u24:4-kcryptd/253:0
+  26480 ?        00:00:02 kworker/u24:6-i915
+  26491 ?        00:00:00 kworker/4:2-events
+  26857 ?        00:00:03 kworker/u24:7-kcryptd/253:0
+  27270 ?        00:00:00 kworker/8:0-events
+  27291 ?        00:00:00 kworker/3:2
+  28069 pts/3    00:00:00 build
+  28815 pts/4    00:00:00 bash
+  29043 pts/4    00:00:00 script
+  29044 pts/5    00:00:00 bash_noprofile_
+  29045 pts/5    00:00:00 bash
+  29812 ?        00:00:00 chrome
+  33326 ?        00:00:02 kworker/u24:8-kcryptd/253:0
+  35375 ?        00:00:00 kworker/11:0-events
+  36194 ?        00:00:00 kworker/9:1-events
+  39265 ?        00:00:00 kworker/1:2-events
+  39930 ?        00:00:02 kworker/u25:0-hci0
+  41194 ?        00:00:00 kworker/u24:0-kcryptd/253:0
+  41455 ?        00:00:00 kworker/7:0-events
+  41926 ?        00:00:00 kworker/10:0-events
+  42973 ?        00:00:00 kworker/0:0-events
+  43223 ?        00:00:00 kworker/5:2
+  43271 ?        00:00:00 kworker/6:1-cgroup_destroy
+  43967 ?        00:00:00 kworker/4:1-events
+  43983 ?        00:00:01 kworker/u25:2-i915_flip
+  44186 ?        00:00:00 kworker/2:1-mm_percpu_wq
+  44681 ?        00:00:00 kworker/3:0
+  44805 ?        00:00:00 kworker/11:1-cgroup_destroy
+  45062 ?        00:00:00 kworker/u24:1-kcryptd/253:0
+  45922 ?        00:00:00 kworker/10:1-events
+  45957 ?        00:00:00 kworker/8:2-events
+  46082 pts/6    00:00:00 bash
+  46310 pts/6    00:00:00 script
+  46311 pts/7    00:00:00 bash_noprofile_
+  46312 pts/7    00:00:00 bash
+  47962 ?        00:00:00 kworker/9:0-events
+  47963 ?        00:00:00 kworker/0:1-cgroup_bpf_destroy
+  48090 ?        00:00:00 kworker/6:0-events
+  48683 ?        00:00:00 kworker/u24:5-i915
+  49369 ?        00:00:00 kworker/u25:3-i915_flip
+  49642 ?        00:00:00 kworker/4:0-events
+  49667 ?        00:00:00 kworker/7:1-events
+  49687 ?        00:00:00 kworker/u24:9-kcryptd/253:0
+  49688 pts/3    00:00:00 build
+  49736 ?        00:00:00 kworker/u24:10-kcryptd/253:0
+  49881 ?        00:00:00 kworker/1:1-events
+  49987 ?        00:00:00 kworker/u24:11-kcryptd/253:0
+  50065 ?        00:00:00 kworker/11:2-rcu_gp
+  51244 ?        00:00:00 kworker/u24:12-kcryptd/253:1
+  51245 ?        00:00:00 kworker/u24:13-kcryptd/253:0
+  51494 ?        00:00:00 kworker/0:2-events
+  51526 ?        00:00:00 containerd-shim
+  51548 pts/0    00:00:01 mysqld
+  51783 ?        00:00:00 kworker/5:1
+  51990 ?        00:00:00 (udev-worker)
+  51997 pts/2    00:00:00 sleep
+  52008 pts/5    00:00:00 ps
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker exec umariadbcont bas-it 
+mysql&#64;2e814d862476:/$ ps -emysql&#64;2e814d862476:/$ ps -e
+    PID TTY          TIME CMD
+      1 pts/0    00:00:01 mysqld
+     24 pts/1    00:00:00 bash
+     31 pts/1    00:00:00 ps
+mysql&#64;2e814d862476:/$ su
+Password: 
+su: Authentication failure
+mysql&#64;2e814d862476:/$ mysql&#64;2e814d862476:/$ ps -e
+    PID TTY          TIME CMD
+      1 pts/0    00:00:01 mysqld
+     24 pts/1    00:00:00 bash
+     33 pts/1    00:00:00 ps
+mysql&#64;2e814d862476:/$ exit
+exit
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ ls /bin/echo 
+/bin/echo
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker build -t entryopoint .
+[+] Building 0.0s (0/1)                                                                 docker:default
+ =&gt; [internal] load build definition from Dockerfile                                              0.0s
+[+] Building 0.2s (1/2)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 92B                                                               0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[+] Building 0.2s (2/2)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 92B                                                               0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+</span>[+] Building 0.3s (5/5) FINISHED                                                        docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 92B                                                               0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+</span><span style="color:#0000ee;"> =&gt; [internal] load .dockerignore                                                                 0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring context: 2B                                                                   0.0s
+</span><span style="color:#0000ee;"> =&gt; CACHED [1/1] FROM docker.io/library/ubuntu:25.04&#64;sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+</span><span style="color:#0000ee;"> =&gt; exporting to image                                                                            0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; exporting layers                                                                           0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; writing image sha256:264f05a43946f0f170e2356ca48a2cade55c78494b21ba07eceda0454fa452c3      0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; naming to docker.io/library/entrypoint                                                     0.0s
+<span style="color:#5c5cff;">5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">an style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it entrypoint
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker logs
+
+
+
+
+
+
+docker run -it entrypoin entrypoin- entrypoin- entrypoinc entrypoino entrypoinn entrypoint entrypoin entrypoin entrypoin entrypoin entrypoinn entrypoina entrypoinm entrypoine entrypoin entrypoine entrypoinp entrypoin
+
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker logs pep
+
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ echo
+
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">5c5cff;">DEVOPS24/lektion12
+build -t entrypoint .--name ep entrypoint
+[+] Building 0.0s (0/1)                                                                 docker:default
+[+] Building 0.2s (2/3)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+<span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span>[+] Building 0.3s (2/3)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.3s
+<span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span>[+] Building 0.5s (2/3)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.5s
+<span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span>[+] Building 0.6s (2/3)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+<span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span>[+] Building 0.6s (3/3)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+</span><span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span>[+] Building 0.7s (6/6) FINISHED                                                        docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 101B                                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.6s
+</span><span style="color:#0000ee;"> =&gt; [auth] library/ubuntu:pull token for registry-1.docker.io                                     0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load .dockerignore                                                                 0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring context: 2B                                                                   0.0s
+</span><span style="color:#0000ee;"> =&gt; CACHED [1/1] FROM docker.io/library/ubuntu:25.04&#64;sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+</span><span style="color:#0000ee;"> =&gt; exporting to image                                                                            0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; exporting layers                                                                           0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; writing image sha256:e1720c22c4f280f7e277d7479753dc61023f391faa5f3872b7cca761e0841aa6      0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; naming to docker.io/library/entrypoint                                                     0.0s
+<span style="color:#5c5cff;">5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">p entrypoint<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep entrypoint
+docker: Error response from daemon: Conflict. The container name &quot;/ep&quot; is already in use by container &quot;5730d10d7ad3be2df69a6e1028809c45dc386a6b19d98d0b7866b4be77965995&quot;. You have to remove (or rename) that container to be able to reuse that name.
+
+Run &apos;docker run --help&apos; for more information
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker rm ep
+ep
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">name ep entrypoint<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep entrypoin entrypoin
+hello -e
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ 
+
+docker ps
+CONTAINER ID   IMAGE             COMMAND              CREATED          STATUS          PORTS     NAMES
+2e814d862476   umariadb:latest   &quot;/usr/sbin/mysqld&quot;   19 minutes ago   Up 19 minutes             umariadbcont
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+build -t entrypoint .entrypoint ep  entrypoint
+[+] Building 0.0s (0/1)                                                                 docker:default
+ =&gt; [internal] load build definition from Dockerfile                                              0.0s
+[+] Building 0.2s (1/2)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 104B                                                              0.0s
+</span> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+[+] Building 0.2s (2/2)                                                                 docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 104B                                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+</span>[+] Building 0.3s (5/5) FINISHED                                                        docker:default
+<span style="color:#0000ee;"> =&gt; [internal] load build definition from Dockerfile                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring dockerfile: 104B                                                              0.0s
+</span><span style="color:#0000ee;"> =&gt; [internal] load metadata for docker.io/library/ubuntu:25.04                                   0.2s
+</span><span style="color:#0000ee;"> =&gt; [internal] load .dockerignore                                                                 0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; transferring context: 2B                                                                   0.0s
+</span><span style="color:#0000ee;"> =&gt; CACHED [1/1] FROM docker.io/library/ubuntu:25.04&#64;sha256:57665ab8178042ef197191fd77d21d8a2f7f  0.0s
+</span><span style="color:#0000ee;"> =&gt; exporting to image                                                                            0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; exporting layers                                                                           0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; writing image sha256:dd0ccc10750695db737a9b09920cccac8c08bd4e993c43fcd13376591e119333      0.0s
+</span><span style="color:#0000ee;"> =&gt; =&gt; naming to docker.io/library/entrypoint                                                     0.0s
+<span style="color:#5c5cff;">5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">nt<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep  entrypoint
+docker: Error response from daemon: Conflict. The container name &quot;/ep&quot; is already in use by container &quot;f828f1c2a872bdc429717786554f20f22c55d39c9e04ba7b224fd94dc11ba91a&quot;. You have to remove (or rename) that container to be able to reuse that name.
+
+Run &apos;docker run --help&apos; for more information
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker rm ep
+ep
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">name ep  entrypoint<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep  entrypoint
+hello world
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep  entrypoint fish
+docker: Error response from daemon: Conflict. The container name &quot;/ep&quot; is already in use by container &quot;805d2b343441668506fa6543bd2cea789f9775005574c43dfdca1240fb752b5c&quot;. You have to remove (or rename) that container to be able to reuse that name.
+
+Run &apos;docker run --help&apos; for more information
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker rm ep
+ep
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+<span style="color:#5c5cff;">name ep  entrypoint fish<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep  entrypoint fish
+hello fish
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ docker run -it --name ep  entrypoint fis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker rm eun -it --name ep  entrypoint fisdebug^C
+<span style="color:#5c5cff;">DEVOPS24/lektion12
+</span>$ exit
+exit
+
+Script done on 2025-09-11 15:30:19+02:00 [COMMAND_EXIT_CODE=&quot;130&quot;]
+</pre>
+</body>
+</html>
+<!--HTML generated by ansifilter 2.18, http://www.andre-simon.de/-->

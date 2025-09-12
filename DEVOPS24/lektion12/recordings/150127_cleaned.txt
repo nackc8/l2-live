@@ -1,0 +1,81 @@
+Script started on 2025-09-11 15:01:27+02:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="103" LINES="17"]
+DEVOPS24/lektion12
+$ docker psDEVOPS24/lektion12
+$ docker ps
+CONTAINER ID   IMAGE             COMMAND            CREATED          STATUS          PORTS     NAMES
+25d454294298   umariadb:latest   "sleep infinity"   18 minutes ago   Up 18 minutes             umariadbcont
+DEVOPS24/lektion12
+$ docker exec umari
+a
+ddbcont bash
+DEVOPS24/lektion12
+$ docker exec umariadbcont bas-itDEVOPS24/lektion12
+$ docker exec -it umariadbcont bas
+0;root@25d454294298: /
+root@25d454294298:/# my
+
+my_print_defaults  myisamlog          mysql_install_db   mysqld             mytop
+myisam_ftdump      myisampack         mysql_upgrade      mysqld_safe        
+myisamchk          mysql              mysqladmin         mysqldump          
+0;root@25d454294298: /
+root@25d454294298:/# mys
+q
+mari
+adb
+
+mariadb                       mariadb-fix-extensions        mariadb-show
+mariadb-access                mariadb-hotcopy               mariadb-slap
+mariadb-admin                 mariadb-import                mariadb-tzinfo-to-sql
+mariadb-analyze               mariadb-install-db            mariadb-upgrade
+mariadb-binlog                mariadb-optimize              mariadb-waitpid
+mariadb-check                 mariadb-plugin                mariadbcheck
+mariadb-conv                  mariadb-repair                mariadbd
+mariadb-convert-table-format  mariadb-report                mariadbd-multi
+mariadb-dump                  mariadb-secure-installation   mariadbd-safe
+mariadb-dumpslow              mariadb-service-convert       mariadbd-safe-helper
+mariadb-find-rows             mariadb-setpermission         
+0;root@25d454294298: /
+root@25d454294298:/# mariadb-c
+
+mariadb-check                 mariadb-conv                  mariadb-convert-table-format
+0;root@25d454294298: /
+root@25d454294298:/# mariadb-0;root@25d454294298: /
+root@25d454294298:/# mariadb
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 3
+Server version: 11.4.7-MariaDB-0ubuntu0.25.04.1 Ubuntu 25.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Support MariaDB developers by giving a star at https://github.com/MariaDB/server
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> ^DBye
+0;root@25d454294298: /
+root@25d454294298:/# mariadb localhost
+ERROR 1049 (42000): Unknown database 'localhost'
+
+0;root@25d454294298: /
+root@25d454294298:/# mariadb
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 5
+Server version: 11.4.7-MariaDB-0ubuntu0.25.04.1 Ubuntu 25.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Support MariaDB developers by giving a star at https://github.com/MariaDB/server
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+ow database;ne)]> MariaDB [(none)]> shwo
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'database' at line 1
+
+s;ow database;)]> 
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.000 se
