@@ -5,4 +5,7 @@ qemu-system-x86_64 \
 	-m 2048 \
 	-smp 2 \
 	-drive file=ubuntu.qcow2,format=qcow2 \
+	-cdrom /shared/kent/Dropbox/c8/iso/ubuntu-24.04-live-server-amd64.iso \
+	-boot d \
+	-vnc :0 \
 	-monitor stdio

@@ -1,0 +1,354 @@
+Script started on 2025-09-02 09:18:36+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="79" LINES="9"]
+DEVOPS24/lektion6
+$ DEVOPS24/lektion6
+$ nmtui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           ┌─┤ NetworkManager TUI ├──┐
+                           │                         │ 
+                           │ Please select an option │ 
+                           │                         │ 
+                           │ Edit a connection       │ 
+                           │ Activate a connection   │ 
+                           │ Set system hostname     │ 
+                           │                         │ 
+                           │ Quit                    │ 
+                           │                         │ 
+                           │                    <OK> │ 
+                           │                         │ 
+                           └─────────────────────────┘ 
+                                                       Edit a connection      Activate a connection  Activate a connection  Set system hostname    Activate a connection  Set system hostname    Edit a connection      Activate a connection  ┌──────────────────────────────────────┐│                                      │ │ ┌────────────────────────┐      │ │ │ Wi-Fi                ↑ │ <Add>     │ │ │   NackademinStudent  ▮ │      │ │ │   farm               ▒ │ <Edit...> │ │ │   Kent               ▒ │           │ │ │   c8                 ▒ │ <Delete>  │ │ │   Qualityguest▒ │      │ │ │   CS-Guest▒ │      │ │ │   farm2g↓ │ <Back>    │ │ └────────────────────────┘           │ │             │ └─────────────┘                NackademinStudent  ▒  farm               ▮  farm               Kent               Kent               c8               ▒▮  c8                 Qualityguest       Qualityguest       CS-Guest           CS-Guest           farm2g             NackademinStudentfarm             Kentc8  ▒Qualityguest▮
+
+                    │ │   farm2g             ▒ │           │ BW Gustaf Wasafarm             Kentc8  QualityguestCS-Guest    
+
+                    │ │   BW Gustaf Wasa     ▒ │           │ Nackademin    c8  QualityguestCS-Guestfarm2g      BW Gustaf Wasa▒Nackademin▮Bridge          docker0   QualityguestCS-Guest    farm2g  BW Gustaf WasaNackademin    Bridge        docker0br-c2d213c508a3CS-Guest    farm2g  BW Gustaf WasaNackademin    Bridge        docker0br-c2d213c508a3b83ffb830a25farm2g  BW Gustaf WasaNackademin    Bridge        docker0
+
+                    │ │   br-b83ffb830a25    ▮ │           │ virbr0         ▮  br-b83ffb830a25    ▒  virbr0             br-c2d213c508a3    br-b83ffb830a25    docker0            br-c2d213c508a3    Nackademin         docker0            ▮▒  BW Gustaf Wasa     Nackademin         farm2g             BW Gustaf Wasa   ▮▒CS-Guestfarm2g        BW Gustaf Wasa  NackademinBridge   
+                    │ │   docker0            ▒ │           │ br-b83ffb830a25QualityguestCS-Guestfarm2g        BW Gustaf Wasa  Nackademin
+                    │ │ Bridge               ▒ │           │ c2d213c508a3c8          QualityguestCS-Guest▮farm2g        ▒BW Gustaf Wasa
+                    │ │   Nackademin         ▒ │           │ docker0        Kentc8          QualityguestCS-Guestfarm2g        
+                    │ │   BW Gustaf Wasa     ▒ │           │ Bridge   farmKentc8          QualityguestCS-Guest
+                    │ │   farm2g             ▒ │           │   NackademinNackademinStudentfarm▮Kent▒c8          Qualityguest
+                    │ │   CS-Guest           ▒ │           │ BW Gustaf WasaWi-Fi                NackademinStudentfarmKentc8          
+                    │ │   Qualityguest       ▒ │           │ farm2g          NackademinStudent  ▒  farm               ▮  farm               Kent               Kent               c8               ▒▮  c8                 Qualityguest       Qualityguest       CS-Guest           CS-Guest           farm2g             NackademinStudentfarm             Kentc8  ▒Qualityguest▮
+
+                    │ │   farm2g             ▒ │           │ BW Gustaf Wasafarm             Kentc8  QualityguestCS-Guest    
+
+                    │ │   BW Gustaf Wasa     ▒ │           │ Nackademin    c8  QualityguestCS-Guestfarm2g      BW Gustaf Wasa▒Nackademin▮Bridge          docker0   QualityguestCS-Guest    farm2g  BW Gustaf WasaNackademin    Bridge        docker0br-c2d213c508a3CS-Guest    farm2g  BW Gustaf WasaNackademin    Bridge        docker0br-c2d213c508a3b83ffb830a25farm2g  BW Gustaf WasaNackademin    Bridge        docker0
+
+                    │ │   br-b83ffb830a25    ▮ │           │ virbr0         ▮  br-b83ffb830a25    ▒  virbr0             br-c2d213c508a3    br-b83ffb830a25    docker0            br-c2d213c508a3    Nackademin         docker0            ▮▒  Nackademin         docker0            ▒▮  Nackademin         docker0            ▮▒  BW Gustaf Wasa     Nackademin         farm2g             BW Gustaf Wasa   ▮▒┌────────────────────────┐│   farm2g             ↑ │ <Add>││││││││││││││└────────────────────────┘<Add><Edit...><Add><Edit...>┌────────────────────────┐│   farm2g             ↑ │ <Add>││││││││││││││└────────────────────────┘  farm2g             BW Gustaf Wasa   ▒▮  farm2g             BW Gustaf Wasa   ▮▒CS-Guestfarm2g        BW Gustaf Wasa  NackademinBridge   
+                    │ │   docker0            ▒ │           │ br-b83ffb830a25QualityguestCS-Guestfarm2g        BW Gustaf Wasa  Nackademin
+                    │ │ Bridge               ▒ │           │ c2d213c508a3c8          QualityguestCS-Guest▮farm2g        ▒BW Gustaf Wasa
+DEVOPS24/lektion6   │ │   Nackademin         ▒ │           │ docker0          c8                 Qualityguest     ▒▮  Qualityguest       CS-Guest           CS-Guest           farm2g             farm2g             ▒  BW Gustaf Wasa     ▮  BW Gustaf Wasa     Nackademin       ▒  Nackademin         ▮  docker0          QualityguestCS-Guest    farm2g  BW Gustaf WasaNackademin    Bridge        docker0br-c2d213c508a3┌────────────────────────┐││ <Add>│││││││││││││   br-c2d213c508a3    ↓ │└────────────────────────┘<Add><Edit...>┌─────────────────┤ Edit Connection ├──────────────────┐│                                  ↑││         Profile name br-c2d213c508a3_________________________          ▮││               Device br-c2d213c508a3_________________________          ▒││                                                  ▒││ ╤ BRIDGE                                         <Hide>   ▒││ │ Slaves                                               ▒││ │                                                             ▒││ │                           <Add>              ▒││ │                                               ▒││ │                                                   <Edit...>          ▒││ │                                                           ▒││                                  ↓│└───────────────────────────────────┘                 ┌───────────────────┐                 ││                  │ ┌────────────────────────┐           │                  │ │   Qualityguest       ↑ │ <Add>     │                  │ │   CS-Guest▒ ││                  │ │   farm2g▒ │ <Edit...> │                  │ │   BW Gustaf Wasa▒ ││                  │ │   Nackademin▒ │ <Delete>  │                  │ │ Bridge▮ │  │                  │ │   docker0▒ ││                  │ │   br-c2d213c508a3    ↓ │ <Back>    │                  │ └────────────────────────┘│                  ││                  └┘                         ┌─┤ NetworkManager TUI ├──┐       │                    │        │ Please select an option │        │         │        │ Edit a connection       │        │ Activate a connection   │        │ Set system hostname     │        │     │        │ Quit   │        │                         │        │                    <OK> │        ││        └┘        Edit a connection      Activate a connection  Activate a connection  Set system hostname    Set system hostname    Quit                   
+$ sudo ps -e | grep qemu
+[sudo] password for kent: 
+DEVOPS24/lektion6
+$ DEVOPS24/lektion6
+$ virsh list
+ Id   Name       State
+--------------------------
+ 1    debian11   running
+
+DEVOPS24/lektion6
+$ virsh list --helpDEVOPS24/lektion6
+$ virsh list --help
+  NAME
+    list - list domains
+
+  SYNOPSIS
+    list [--inactive] [--all] [--transient] [--persistent] [--with-snapshot] [--without-snapshot] [--with-checkpoint] [--without-checkpoint] [--state-running] [--state-paused] [--state-shutoff] [--state-other] [--autostart] [--no-autostart] [--with-managed-save] [--without-managed-save] [--uuid] [--name] [--id] [--table] [--managed-save] [--title]
+
+  DESCRIPTION
+    Returns list of domains.
+
+  OPTIONS
+    --inactive       list inactive domains
+    --all            list inactive & active domains
+    --transient      list transient domains
+    --persistent     list persistent domains
+    --with-snapshot  list domains with existing snapshot
+    --without-snapshot  list domains without a snapshot
+    --with-checkpoint  list domains with existing checkpoint
+    --without-checkpoint  list domains without a checkpoint
+    --state-running  list domains in running state
+    --state-paused   list domains in paused state
+    --state-shutoff  list domains in shutoff state
+    --state-other    list domains in other states
+    --autostart      list domains with autostart enabled
+    --no-autostart   list domains with autostart disabled
+    --with-managed-save  list domains with managed save state
+    --without-managed-save  list domains without managed save
+    --uuid           list uuid's only
+    --name           list domain names only
+    --id             list domain IDs only
+    --table          list table (default)
+    --managed-save   mark inactive domains with managed save state
+    --title          show domain title
+
+
+DEVOPS24/lektion6
+virsh listDEVOPS24/lektion6
+$ virsh list
+ Id   Name       State
+--------------------------
+ 1    debian11   running
+
+DEVOPS24/lektion6
+$ virsh list
+  Id   Name       State
+--------------------------
+ 1    debian11   running
+
+DEVOPS24/lektion6
+$ virsh list --allDEVOPS24/lektion6
+$ virsh list --all
+ Id   Name                      State
+------------------------------------------
+ 1    debian11                  running
+ -    testvm                    shut off
+ -    ubuntu22.10               shut off
+ -    win11                     shut off
+ -    win11-autounattend-test   shut off
+
+DEVOPS24/lektion6
+$ virsh start tesvm
+error: failed to get domain 'tesvm'
+
+DEVOPS24/lektion6
+$ 
+virsh start tesvtv
+Domain 'testvm' started
+
+DEVOPS24/lektion6
+list --allDEVOPS24/lektion6
+$ virsh list --all
+ Id   Name                      State
+------------------------------------------
+ 1    debian11                  running
+ 2    testvm                    running
+ -    ubuntu22.10               shut off
+ -    win11                     shut off
+ -    win11-autounattend-test   shut off
+
+DEVOPS24/lektion6
+$ virsh list --aledit debian11DEVOPS24/lektion6
+$ virsh edit debian11
+  debian11pe='kvm'><name>debian11</name><uuid>29b3cbd1-9dca-48f2-baae-0a1f16dbe10d</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/d><libosinfo:os id="http://debian.org/debian/11"/></libosinfo:libosinfo></metadata><memory unit='KiB'>5120000</memory><currentMemory unit='KiB'>5120000</currentMemory><vcpu placement='static'>3</vcpu><os>
+<type arch='x86_64' machine='pc-q35-7.2'>hvm</type>
+<boot dev='hd'/>
+  512005512000512
+<features>
+<acpi/>
+<apic/>
+<vmport state='off'/>
+</features>
+<cpu mode='host-passthrough' check='none' migratable='on'/>
+<clock offset='utc'>
+<timer name='rtc' tickpolicy='catchup'/>
+<timer name='pit' tickpolicy='delay'/>
+<timer name='hpet' present='no'/>
+</clock>
+<on_poweroff>destroy</on_poweroff>
+  n_reboot>restart</on_reboot>
+<on_crash>destroy</on_crash>
+<pm>
+<suspend-to-mem enabled='no'/>
+<suspend-to-disk enabled='no'/>
+</pm>
+<devices>
+<emulator>/usr/bin/qemu-system-x86_64</emulator>
+<disk type='file' device='disk'>
+<driver name='qemu' type='qcow2' discard='unmap'/>
+<source file='/var/lib/libvirt/images/debian11.qcow2'/>
+<target dev='vda' bus='virtio'/>
+<address type='pci' domain='0x0000' bus='0x04' slot='0x00' function='0x0>
+</disk>
+<disk type='file' device='cdrom'>
+<driver name='qemu' type='raw'/>
+<target dev='sda' bus='sata'/>
+<readonly/>
+<address type='drive' controller='0' bus='0' target='0' unit='0'/>
+</disk>
+<controller type='usb' index='0' model='qemu-xhci' ports='15'>
+<address type='pci' domain='0x0000' bus='0x02' slot='0x00' function='0x0>
+</controller>
+<controller type='pci' index='0' model='pcie-root'/>
+<controller type='pci' index='1' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='1' port='0x10'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0>
+</controller>
+<controller type='pci' index='2' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='2' port='0x11'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x1>
+</controller>
+<controller type='pci' index='3' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='3' port='0x12'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x2>
+</controller>
+<controller type='pci' index='4' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='4' port='0x13'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x3>
+</controller>
+<controller type='pci' index='5' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='5' port='0x14'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x4>
+</controller>
+<controller type='pci' index='6' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='6' port='0x15'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x5>
+</controller>
+<controller type='pci' index='7' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='7' port='0x16'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x6>
+</controller>
+<controller type='pci' index='8' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='8' port='0x17'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x7>
+</controller>
+<controller type='pci' index='9' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='9' port='0x18'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0>
+</controller>
+<controller type='pci' index='10' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='10' port='0x19'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x1>
+</controller>
+<controller type='pci' index='11' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='11' port='0x1a'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x2>
+</controller>
+<controller type='pci' index='12' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='12' port='0x1b'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x3>
+</controller>
+<controller type='pci' index='13' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='13' port='0x1c'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x4>
+</controller>
+<controller type='pci' index='14' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='14' port='0x1d'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x5>
+</controller>
+<controller type='sata' index='0'>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x1f' function='0x2>
+</controller>
+<controller type='virtio-serial' index='0'>
+<address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0>
+</controller>
+<interface type='network'>
+<mac address='52:54:00:e3:09:56'/>
+<source network='default'/>
+<model type='virtio'/>
+<address type='pci' domain='0x0000' bus='0x01' slot='0x00' function='0x0>
+</interface>
+<serial type='pty'>
+<target type='isa-serial' port='0'>
+<model name='isa-serial'/>
+</target>
+</serial>
+<console type='pty'>
+<target type='serial' port='0'/>
+</console>
+<channel type='unix'>
+<target type='virtio' name='org.qemu.guest_agent.0'/>
+<address type='virtio-serial' controller='0' bus='0' port='1'/>
+</channel>
+<channel type='spicevmc'>
+<target type='virtio' name='com.redhat.spice.0'/>
+<address type='virtio-serial' controller='0' bus='0' port='2'/>
+</channel>
+<input type='tablet' bus='usb'>
+<address type='usb' bus='0' port='1'/>
+</input>
+<input type='mouse' bus='ps2'/>
+<input type='keyboard' bus='ps2'/>
+<graphics type='spice' autoport='yes' passwd='hej'>
+<listen type='address'/>
+<image compression='off'/>
+</graphics>
+<sound model='ich9'>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x1b' function='0x0>
+</sound>
+<audio id='1' type='spice'/>
+<video>
+<model type='virtio' heads='1' primary='yes'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x0>
+</video>
+<redirdev bus='usb' type='spicevmc'>
+<address type='usb' bus='0' port='2'/>
+</redirdev>
+<redirdev bus='usb' type='spicevmc'>
+<address type='usb' bus='0' port='3'/>
+</redirdev>
+<memballoon model='virtio'>
+<address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0>
+</memballoon>
+<rng model='virtio'>
+M<target type='virtio' name='org.qemu.guest_agent.0'/>port='1'/>tion='0x0>M<sound model='ich9'> heads='1' primary='yes'/>
+<graphics type='spice' autoport='yes' passwd='hej'>
+<listen type='address'/>
+<image compression='off'/>
+</graphics>
+<sound model='ich9'>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x1b' function='0x0>
+</sound>
+<audio id='1' type='spice'/>
+<video>
+<model type='virtio' heads='1' primary='yes'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x0>
+</video>
+<redirdev bus='usb' type='spicevmc'>
+<address type='usb' bus='0' port='2'/>
+</redirdev>
+<redirdev bus='usb' type='spicevmc'>
+<address type='usb' bus='0' port='3'/>
+</redirdev>
+<memballoon model='virtio'>
+<address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0>
+</memballoon>
+<rng model='virtio'>
+<backend model='random'>/dev/urandom</backend>
+<address type='pci' domain='0x0000' bus='0x06' slot='0x00' function='0x0>
+</rng>
+</devices>
+</domain>
+>Domain 'debian11' XML configuration not changed.
+
+DEVOPS24/lektion6
+$ virsh edit debian11
+>Domain 'debian11' XML configuration not changed.3cbd1-9dca-48f2-baae-0a1f16dbe10d</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/d><libosinfo:os id="http://debian.org/debian/11"/></libosinfo:libosinfo></metadata><memory unit='KiB'>5120000</memory><currentMemory unit='KiB'>5120000</currentMemory><vcpu placement='static'>3</vcpu><os>
+
+DEVOPS24/lektion6
+$ exit
+exit
+
+Script done on 2025-09-02 10:14:50+02:00 [COMMAND_EXIT_CODE="0"]

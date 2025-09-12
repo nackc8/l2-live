@@ -1,0 +1,58 @@
+Script started on 2025-09-08 12:41:20+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="54" LINES="14"]
+DEVOPS24/lektion10
+$ rm
+
+cd da
+.. ../da
+
+
+lektion
+
+lektion10/ lektion3/  lektion5/  
+lektion2/  lektion4/  lektion6/  
+DEVOPS24/lektion10
+$ cd ../lektio../
+
+bin/           .gitignore     .shared/
+date/          ITINF24/       .shellcheckrc
+DEVOPS24/      .profiles/     .state
+.git/          README.md      .vscode/
+DEVOPS24/lektion10
+$ cd ../../date/
+date $ ls /-l
+total 8
+drwxr-xr-x 6 kent kent 4096 Jan  9  2025 d250109
+lrwxrwxrwx 1 kent kent   20 Aug 19 09:12 d250819 -> ../DEVOPS24/lektion2
+lrwxrwxrwx 1 kent kent   20 Aug 31 20:57 d250825 -> ../DEVOPS24/lektion3
+lrwxrwxrwx 1 kent kent   20 Aug 31 20:57 d250826 -> ../DEVOPS24/lektion4
+lrwxrwxrwx 1 kent kent   20 Sep  8 12:36 d250901 -> ../DEVOPS24/lektion5
+lrwxrwxrwx 1 kent kent   20 Sep  2 09:18 d250902 -> ../DEVOPS24/lektion6
+lrwxrwxrwx 1 kent kent   20 Sep  8 12:39 d250908 -> ../DEVOPS24/lektion8
+-rw-r--r-- 1 kent kent  117 Jan  9  2025 TODO.md
+date $ rm d2
+509
+08 
+date $ ln ../DEVOPS24/le
+ktion10 d250908
+ln: ../DEVOPS24/lektion10: hard link not allowed for directory
+date $ ln ../DEVOPS24/lektion10 d25090-s 
+date $ date $ ls
+d250109  d250825  d250901  d250908
+d250819  d250826  d250902  TODO.md
+date $ less TODO.md 
+=
+
+
+apt-get update
+apt-get install -y imagemagick
+convert input.jpg -colorspace Gray output.png
+no_suffix=${file%.gz}
+>date $ rm TODO.md 
+date $ date $ ls
+d250109  d250825  d250901  d250908
+d250819  d250826  d250902
+date $ cd ..
+$ $ exit
+exit
+
+Script done on 2025-09-08 12:42:29+02:00 [COMMAND_EXIT_CODE="0"]
