@@ -1211,4 +1211,27 @@ An inscription on the back of the painting notes that it was part of the royal  
 [19;1H[K[7m Manual page sed(1) line 169/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
 [19;1H[K[7m Manual page sed(1) line 168/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       l      List out the current line in a ``visually unambiguous'' form.[m
 [19;1H[K[7m Manual page sed(1) line 167/306 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
-[19;1H[K[7m Manual page sed(1) line 166/306 53% (press h for help or q
+[19;1H[K[7m Manual page sed(1) line 166/306 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       g G    Copy/append hold space to pattern space.[m
+[19;1H[K[7m Manual page sed(1) line 165/306 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 164/306 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       h H    Copy/append pattern space to hold space.[m
+[19;1H[K[7m Manual page sed(1) line 163/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 162/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              put.[m
+[19;1H[K[7m Manual page sed(1) line 161/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the resultant pattern space, without reading a new line  of  in‐[m
+[19;1H[K[7m Manual page sed(1) line 160/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              pattern  space  up  to the first newline, and restart cycle with[m
+[19;1H[K[7m Manual page sed(1) line 159/306 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              as if the d command was issued.  Otherwise, delete text  in  the[m
+[19;1H[K[7m Manual page sed(1) line 158/306 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 159/306 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       P      Print up to the first embedded newline of  the  current  pattern[m
+[7m Manual page sed(1) line 160/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              space.[m
+[7m Manual page sed(1) line 161/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 162/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       s/[4mregexp[24m/[4mreplacement[24m/[m
+[7m Manual page sed(1) line 163/306 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Attempt  to match [4mregexp[24m against the pattern space.  If success‐[m
+[7m Manual page sed(1) line 164/306 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ful, replace that portion matched  with  [4mreplacement[24m.   The  [4mre‐[0m[m
+[7m Manual page sed(1) line 165/306 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4mplacement[24m  may  contain the special character [1m& [22mto refer to that[m
+[7m Manual page sed(1) line 166/306 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              portion of the pattern space which matched, and the special  es‐[m
+[7m Manual page sed(1) line 167/306 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              capes  \1 through \9 to refer to the corresponding matching sub-[m
+[7m Manual page sed(1) line 168/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              expressions in the [4mregexp[24m.[m
+[7m Manual page sed(1) line 169/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 170/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       t [4mlabel[0m[m
+[7m Manual page sed(1) line 171/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              If a s/// has done a successful substitution since the last  in‐[m
+[7m Manual page sed(1) line 172/306 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              put line was read and since the last t or T command, then branch[m
+[7m Manual page sed(1) line 173/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              to [4mlabel[2
