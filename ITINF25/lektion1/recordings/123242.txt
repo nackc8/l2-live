@@ -1187,4 +1187,28 @@ An inscription on the back of the painting notes that it was part of the royal  
 [19;1H[K[7m Manual page sed(1) line 183/306 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ful, replace that portion matched  with  [4mreplacement[24m.   The  [4mre‐[0m[m
 [19;1H[K[7m Manual page sed(1) line 182/306 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Attempt  to match [4mregexp[24m against the pattern space.  If success‐[m
 [19;1H[K[7m Manual page sed(1) line 181/306 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       s/[4mregexp[24m/[4mreplacement[24m/[m
-[19;1H[K[7m Manual page sed(1) line 180/306 59% (press h for help or q to quit)[27m[K[K [KESCE
+[19;1H[K[7m Manual page sed(1) line 180/306 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 179/306 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              space.[m
+[19;1H[K[7m Manual page sed(1) line 178/306 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       P      Print up to the first embedded newline of  the  current  pattern[m
+[19;1H[K[7m Manual page sed(1) line 177/306 57% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 176/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       p      Print the current pattern space.[m
+[19;1H[K[7m Manual page sed(1) line 175/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 174/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       n N    Read/append the next line of input into the pattern space.[m
+[19;1H[K[7m Manual page sed(1) line 173/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 172/306 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              breaking it at [4mwidth[24m characters.  This is a GNU extension.[m
+[19;1H[K[7m Manual page sed(1) line 171/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              List  out  the  current line in a ``visually unambiguous'' form,[m
+[19;1H[K[7m Manual page sed(1) line 170/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       l [4mwidth[0m[m
+[19;1H[K[7m Manual page sed(1) line 169/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 170/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       t [4mlabel[0m[m
+[7m Manual page sed(1) line 171/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              If a s/// has done a successful substitution since the last  in‐[m
+[7m Manual page sed(1) line 172/306 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              put line was read and since the last t or T command, then branch[m
+[7m Manual page sed(1) line 173/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              to [4mlabel[24m; if [4mlabel[24m is omitted, branch to end of script.[m
+[7m Manual page sed(1) line 174/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       n N    Read/append the next line of input into the pattern space.[m
+[19;1H[K[7m Manual page sed(1) line 173/306 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 172/306 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              breaking it at [4mwidth[24m characters.  This is a GNU extension.[m
+[19;1H[K[7m Manual page sed(1) line 171/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              List  out  the  current line in a ``visually unambiguous'' form,[m
+[19;1H[K[7m Manual page sed(1) line 170/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       l [4mwidth[0m[m
+[19;1H[K[7m Manual page sed(1) line 169/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 168/306 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       l      List out the current line in a ``visually unambiguous'' form.[m
+[19;1H[K[7m Manual page sed(1) line 167/306 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 166/306 53% (press h for help or q
