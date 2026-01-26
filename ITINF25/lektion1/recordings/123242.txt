@@ -556,4 +556,188 @@ sr0     11:0    1 1024M  0 rom
 Background
 Mughal paintings from the reign of the emperor Akbar depicting Hindu subjects a re common, since the emperor commissioned many illuminated manuscripts regardin g Hindu topics. This painting, however, is a late Mughal work, datable to aroun d 1630–35, during the reign of the emperor Shah Jahan. Hindu portrayals during  the art of this period are rare, and a Shaivite image such as this would have b een seen as heretical, and would not have been commissioned for a royal album.[ 2][3]
 
-An inscription on the back of the painting notes that it was part of the royal  collection of the Kingdom of Mewar. This has led to the hypothesis that the wor k might have been commissioned by Shah Jahan as a gift to Jagat Singh I, the ru ler of Mewar, and an important ally of the emperor. It is known that Jagat Sing [7mtext[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mken
+An inscription on the back of the painting notes that it was part of the royal  collection of the Kingdom of Mewar. This has led to the hypothesis that the wor k might have been commissioned by Shah Jahan as a gift to Jagat Singh I, the ru ler of Mewar, and an important ally of the emperor. It is known that Jagat Sing [7mtext[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed ''s'u'b's't'a'[1P'i't'u'e'(')'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'^C[?2004l[?2004h[?2004l
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ man sex[Kd
+[?2004l[?1049h[22;0;0t[19;1H[?1h=[4mSED[24m(1)                           User Commands                          [4mSED[24m(1)[m
+[m
+[1mNAME[0m[m
+       sed - stream editor for filtering and transforming text[m
+[m
+[1mSYNOPSIS[0m[m
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent][m
+           [-l N] [--line-length=N] [-u] [--unbuffered][m
+           [-E] [-r] [--regexp-extended][m
+           [-e script] [--expression=script][m
+           [-f script-file] [--file=script-file][m
+           [script-if-no-other-script][m
+           [file...][m
+[m
+[1mDESCRIPTION[0m[m
+       [4mSed[24m  is a stream editor.  A stream editor is used to perform basic text[m
+       transformations on an input stream (a file or input from  a  pipeline).[m
+       While  in  some  ways similar to an editor which permits scripted edits[m
+[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K       (such as [4med[24m), [4msed[24m works by making only one pass over the input(s),  and[m
+       is consequently more efficient.  But it is [4msed[24m's ability to filter text[m
+       in  a  pipeline which particularly distinguishes it from other types of[m
+       editors.[m
+[m
+       [1m-n[22m, [1m--quiet[22m, [1m--silent[0m[m
+[m
+              suppress automatic printing of pattern space[m
+[m
+       [1m--debug[0m[m
+[m
+              annotate program execution[m
+[m
+       [1m-e [22mscript, [1m--expression[22m=[4mscript[0m[m
+[m
+              add the script to the commands to be executed[m
+[m
+       [1m-f [22mscript-file, [1m--file[22m=[4mscript-file[0m[m
+[7m Manual page sed(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 20 (press h for help or q to quit)[27m[K[K              add the contents of script-file to the commands to be executed[m
+[m
+       [1m--follow-symlinks[0m[m
+[m
+              follow symlinks when processing in place[m
+[m
+       [1m-i[SUFFIX][22m, [1m--in-place[22m[=[4mSUFFIX[24m][m
+[m
+              edit files in place (makes backup if SUFFIX supplied)[m
+[m
+       [1m-l [22mN, [1m--line-length[22m=[4mN[0m[m
+[m
+              specify the desired line-wrap length for the `l' command[m
+[m
+       [1m--posix[0m[m
+[m
+              disable all GNU extensions.[m
+[m
+[7m Manual page sed(1) line 38 (press h for help or q to quit)[27m[K[K       [1m-E[22m, [1m-r[22m, [1m--regexp-extended[0m[m
+[m
+              use extended regular expressions in the script (for  portability[m
+              use POSIX [1m-E[22m).[m
+[m
+       [1m-s[22m, [1m--separate[0m[m
+[m
+              consider  files  as separate rather than as a single, continuous[m
+              long stream.[m
+[m
+       [1m--sandbox[0m[m
+[m
+              operate in sandbox mode (disable e/r/w commands).[m
+[m
+       [1m-u[22m, [1m--unbuffered[0m[m
+[m
+              load minimal amounts of data from the input files and flush  the[m
+              output buffers more often[m
+[7m Manual page sed(1) line 56 (press h for help or q to quit)[27m[K[K[m
+       [1m-z[22m, [1m--null-data[0m[m
+[m
+              separate lines by NUL characters[m
+[m
+       [1m--help[0m[m
+              display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       If  no  [1m-e[22m, [1m--expression[22m, [1m-f[22m, or [1m--file [22moption is given, then the first[m
+       non-option argument is taken as the sed script to interpret.   All  re‐[m
+       maining arguments are names of input files; if no input files are spec‐[m
+       ified, then the standard input is read.[m
+[m
+       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help[m
+       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports[m
+[7m Manual page sed(1) line 74 (press h for help or q to quit)[27m[K[K       to: <bug-sed@gnu.org>.[m
+[m
+       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐[m
+       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐[m
+       censes/gpl.html>.   This  is  free software: you are free to change and[m
+       redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[m
+[1mCOMMAND SYNOPSIS[0m[m
+       This is just a brief synopsis of [4msed[24m commands to serve as a reminder to[m
+       those who already know [4msed[24m; other documentation (such  as  the  texinfo[m
+       document) must be consulted for fuller descriptions.[m
+[m
+   [1mZero-address ``commands''[0m[m
+       : [4mlabel[0m[m
+              Label for [1mb [22mand [1mt [22mcommands.[m
+[m
+       #[4mcomment[0m[m
+              The  comment  extends until the next newline (or the end of a [1m-e[0m[m
+[7m Manual page sed(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              script fragment).[m
+[7m Manual page sed(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       }      The closing bracket of a { } block.[m
+[7m Manual page sed(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mZero- or One- address commands[0m[m
+[7m Manual page sed(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       =      Print the current line number.[m
+[7m Manual page sed(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       a \[m
+[7m Manual page sed(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mtext[24m   Append [4mtext[24m, which has each embedded newline preceded by a back‐[m
+[7m Manual page sed(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              slash.[m
+[7m Manual page sed(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       i \[m
+[7m Manual page sed(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mtext[24m   Insert [4mtext[24m, which has each embedded newline preceded by a back‐[m
+[7m Manual page sed(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              slash.[m
+[7m Manual page sed(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       q [[4mexit-code[24m][m
+[7m Manual page sed(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Immediately quit the [4msed[24m script without processing any more  in‐[m
+[7m Manual page sed(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              put,  except that if auto-print is not disabled the current pat‐[m
+[7m Manual page sed(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              tern space will be printed.  The exit code argument is a GNU ex‐[m
+[7m Manual page sed(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              tension.[m
+[7m Manual page sed(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Q [[4mexit-code[24m][m
+[7m Manual page sed(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Immediately quit the [4msed[24m script without processing any more  in‐[m
+[7m Manual page sed(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              put.  This is a GNU extension.[m
+[7m Manual page sed(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       r [4mfilename[0m[m
+[7m Manual page sed(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append text read from [4mfilename[24m.[m
+[7m Manual page sed(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       R [4mfilename[0m[m
+[7m Manual page sed(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Append  a  line read from [4mfilename[24m.  Each invocation of the com‐[m
+[7m Manual page sed(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mand reads a line from the file.  This is a GNU extension.[m
+[7m Manual page sed(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mCommands which accept address ranges[0m[m
+[7m Manual page sed(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       {      Begin a block of commands (end with a }).[m
+[7m Manual page sed(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       b [4mlabel[0m[m
+[7m Manual page sed(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Branch to [4mlabel[24m; if [4mlabel[24m is omitted, branch to end of script.[m
+[7m Manual page sed(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       c \[m
+[7m Manual page sed(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mtext[24m   Replace the selected lines with [4mtext[24m, which  has  each  embedded[m
+[7m Manual page sed(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              newline preceded by a backslash.[m
+[7m Manual page sed(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       d      Delete pattern space.  Start next cycle.[m
+[7m Manual page sed(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       D      If  pattern  space contains no newline, start a normal new cycle[m
+[7m Manual page sed(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              as if the d command was issued.  Otherwise, delete text  in  the[m
+[7m Manual page sed(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              pattern  space  up  to the first newline, and restart cycle with[m
+[7m Manual page sed(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the resultant pattern space, without reading a new line  of  in‐[m
+[7m Manual page sed(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              put.[m
+[7m Manual page sed(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       h H    Copy/append pattern space to hold space.[m
+[7m Manual page sed(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       g G    Copy/append hold space to pattern space.[m
+[7m Manual page sed(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       l      List out the current line in a ``visually unambiguous'' form.[m
+[7m Manual page sed(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       l [4mwidth[0m[m
+[7m Manual page sed(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              List  out  the  current line in a ``visually unambiguous'' form,[m
+[7m Manual page sed(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              breaking it at [4mwidth[24m characters.  This is a GNU extension.[m
+[7m Manual page sed(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       n N    Read/append the next line of input into the pattern space.[m
+[7m Manual page sed(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       p      Print the current pattern space.[m
+[7m Manual page sed(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       P      Print up to the first embedded newline of  the  current  pattern[m
+[7m Manual page sed(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              space.[m
+[7m Manual page sed(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       s/[4mregexp[24m/[4mreplacement[24m/[m
+[7m Manual page sed(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Attempt  to match [4mregexp[24m against the pattern space.  If success‐[m
+[7m Manual page sed(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ful, replace that portion matched  with  [4mreplacement[24m.   The  [4mre‐[0m[m
+[7m Manual page sed(1) line 165 (p
