@@ -881,4 +881,51 @@ You can:
 --- Type one of the keys in parentheses --- 2
 /home/kent/.zshrc:15: scalar parameter HISTFILE created globally in function zsh-newuser-install
 (eval):1: scalar parameter LS_COLORS created globally in function zsh-newuser-install
-[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004heexit[?1l>[?2004l
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost[H[2J[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 15:36:30 2026 from 10.0.2.2
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004h[H[2J[0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[Klls[?1l>[?2004l
+Desktop    Downloads  Music	Public	   Videos
+Documents  hej.txt    Pictures	Templates
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004hssudo   s  ggrep zsh /etc/passwd[?1l>[?2004l
+kent:x:1000:1000:Kent Larsson,,,:/home/kent:/usr/bin/zsh
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004heecho $HSLL    SHELL[?1l>[?2004l
+/usr/bin/zsh
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004hpps[?1l>[?2004l
+    PID TTY          TIME CMD
+   7403 pts/2    00:00:00 zsh
+   7483 pts/2    00:00:00 ps
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004h
+bck-i-search: _[K[A[1Bfailing bck-i-search: u_[A[9D[1B[8Cs_[A[10D[1B[8C_ [A[10D[1B[8P[14C_         [A[9D[1B[K[A[15C[1Bbck-i-search: _[K[Ap[4ms[24m[1Bs_[Ap[24ms[1Bfailing bck-i-search: su_[A[9D[1B[8Cd_[A[10D[1B[9Co_[A[11D  [1B[K[A[15Cssudop   usermod -s /ec  bin// bash[1m [0m[0m kent[?1l>[?2004l[1B[sudo] password for kent: 
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[J[44mkent@deb13[49m [1m[36m~[37m % [0m[37m[39m[49m[K[?1h=[?2004heexit[?1l>[?2004l
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost[H[2J[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 15:36:52 2026 from 10.0.2.2
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ 
