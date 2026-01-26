@@ -45,4 +45,57 @@ drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mVideos[0m
 [?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ stat hej.txt 
 [?2004l  File: hej.txt
   Size: 7         	Blocks: 8          IO Block: 4096   regular file
-Device: 8,2	Inode: 11803
+Device: 8,2	Inode: 1180365     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:45:05.137802663 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ q[K[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  hej.txt    [01;34mPictures[0m  [01;34mTemplates[0m
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ln [K[K[K[H[2J]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ man ln
+[?2004l[?1049h[22;0;0t[10;1H[?1h=[4mLN[24m(1)              User Commands              [4mLN[24m(1)[m
+[m
+[1mNAME[0m[m
+       ln - make links between files[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mln [22m[[4mOPTION[24m]... [[4m-T[24m] [4mTARGET[24m [4mLINK_NAME[0m[m
+       [1mln [22m[[4mOPTION[24m]... [4mTARGET[0m[m
+       [1mln [22m[[4mOPTION[24m]... [4mTARGET[24m... [4mDIRECTORY[0m[m
+[7mal page ln(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mln [22m[[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mTARGET[24m...[m
+[7mal page ln(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mal page ln(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mDESCRIPTION[0m[m
+[7mal page ln(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In  the  1st  form,  create a link to TARGET[m
+[7mal page ln(1) line 5 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ln ../hej.txt 
+[?2004l[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ls
+[?2004lhej.txt
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ stat hej.txt [H[2J]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ stat hej.txt 
+[?2004l  File: hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:47:34.212936558 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ [H[2J]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ls
+[?2004lhej.txt
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ mv hej.txt ojsan.txt
+[?2004l[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ stat ojsan.txt 
+[?2004l  File: ojsan.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:48:10.881706399 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ [H[2J]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ls
+[?2004lojsan.txt
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ls ../
+[?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  hej.txt    [01;34mPictures[0m  [01;34mTemplates[0m
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb1
