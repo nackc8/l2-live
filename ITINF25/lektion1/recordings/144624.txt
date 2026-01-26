@@ -638,4 +638,135 @@ The blood-red goddess is seated upon a headless corpse. She has four arms, and i
 [1;19r[16;1H[?25l[17d[K[?12l[?25h7[2;17r8
 [1;19r[16;1HThe painting is extended beyond the golden border into cream-colored paper. At(B[0;7m>[16;1H(B[m[?25l[?12l[?25h7[2;17r8[17d
 [1;19r[16;1H[?25l[?12l[?25h7[2;17r8[17d
-[1;19r[16;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;46H(B[0;7m*[78G(B[m[?12l[?25h[16dS[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[17d(B[0;7mS
+[1;19r[16;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;46H(B[0;7m*[78G(B[m[?12l[?25h[16dS[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[17d(B[0;7mSave modified buffer?                                                          [18;1H Y(B[m Yes[K[19d(B[0;7m N(B[m No  [19;16H (B[0;7m^C(B[m Cancel[K[17;23H[?12l[?25h[?25l[18d(B[0;7m^G(B[m Help[18;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[18;58H(B[0;7mM-B(B[m Backup File[19d(B[0;7m^C(B[m Cancel[17G   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[19;58H(B[0;7m^T(B[m Browse[17d(B[0;7mWrite to File: text  (B[m[?12l[?25h[?25l[17;32H[1K (B[0;7m[ Writing... ](B[m[K[1;46H(B[0;7m [78G(B[m[17;31H(B[0;7m[ Wrote 23 lines ](B[m[J[19d[?12l[?25h[19;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ nano text [5@sed '$!d'[C[C[C[C[C[C
+[?2004lSist
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ use[K[K[Kman usermod 
+[?2004l[?1049h[22;0;0t[19;1H[?1h=[4mUSERMOD[24m(8)                System Management Commands                [4mUSERMOD[24m(8)[m
+[m
+[1mNAME[0m[m
+       usermod - modify a user account[m
+[m
+[1mSYNOPSIS[0m[m
+[m
+       [1musermod [22m[[4moptions[24m] [4mLOGIN[0m[m
+[m
+[1mDESCRIPTION[0m[m
+       The [1musermod [22mcommand modifies the system account files.[m
+[m
+[1mOPTIONS[0m[m
+       The options which apply to the [1musermod [22mcommand are:[m
+[m
+       [1m-a[22m, [1m--append[0m[m
+           Add the user to the supplementary group(s). Use only with the [1m-G[0m[m
+           option.[m
+[7m Manual page usermod(8) line 1 (press h for help or q to quit)[27m[K[K[m
+       [1m-b[22m, [1m--badname[0m[m
+           Allow names that do not conform to standards.[m
+[m
+       [1m-c[22m, [1m--comment [4m[22mCOMMENT[0m[m
+           update the comment field of the user in /etc/passwd, which is[m
+           normally modified using the [1mchfn[22m(1) utility.[m
+[m
+       [1m-d[22m, [1m--home [4m[22mHOME_DIR[0m[m
+           The user's new login directory.[m
+[m
+           If the [1m-m [22moption is given, the contents of the current home[m
+           directory will be moved to the new home directory, which is created[m
+           if it does not already exist. If the current home directory does[m
+           not exist the new home directory will not be created.[m
+[m
+       [1m-e[22m, [1m--expiredate [4m[22mEXPIRE_DATE[0m[m
+           The date on which the user account will be disabled. The date is[m
+[7m Manual page usermod(8) line 19 (press h for help or q to quit)[27m[K[K           specified in the format [4mYYYY-MM-DD[24m. Integers as input are[m
+           interpreted as days after 1970-01-01.[m
+[m
+           An input of -1 or an empty string will blank the account expiration[m
+           field in the shadow password file. The account will remain[m
+           available with no date limit.[m
+[m
+           This option requires a /etc/shadow file. A /etc/shadow entry will[m
+           be created if there were none.[m
+[m
+       [1m-f[22m, [1m--inactive [4m[22mINACTIVE[0m[m
+           defines the number of days after the password exceeded its maximum[m
+           age during which the user may still login by immediately replacing[m
+           the password. This grace period before the account becomes inactive[m
+           is stored in the shadow password file. An input of 0 will disable[m
+           an expired password with no delay. An input of -1 will blank the[m
+           respective field in the shadow password file. See [1mshadow[22m(5) for[m
+           more information.[m
+[7m Manual page usermod(8) line 37 (press h for help or q to quit)[27m[K[K[m
+           This option requires a /etc/shadow file. A /etc/shadow entry will[m
+           be created if there were none.[m
+[m
+       [1m-g[22m, [1m--gid [4m[22mGROUP[0m[m
+           The name or numerical ID of the user's new primary group. The group[m
+           must exist.[m
+[m
+           Any file from the user's home directory owned by the previous[m
+           primary group of the user will be owned by this new group.[m
+[m
+           The group ownership of files outside of the user's home directory[m
+           must be fixed manually.[m
+[m
+           The change of the group ownership of files inside of the user's[m
+           home directory is also not done if the home dir owner uid is[m
+           different from the current or new user id. This is a safety measure[m
+           for special home directories such as /.[m
+[7m Manual page usermod(8) line 55 (press h for help or q to quit)[27m[K[K[m
+       [1m-G[22m, [1m--groups [4m[22mGROUP1[24m[[4m,GROUP2,...[24m[[4m,GROUPN[24m]]][m
+           A list of supplementary groups which the user is also a member of.[m
+           Each group is separated from the next by a comma, with no[m
+           intervening whitespace. The groups must exist.[m
+[m
+           If the user is currently a member of a group which is not listed,[m
+           the user will be removed from the group. This behaviour can be[m
+           changed via the [1m-a [22moption, which appends the user to the current[m
+           supplementary group list.[m
+[m
+       [1m-l[22m, [1m--login [4m[22mNEW_LOGIN[0m[m
+           The name of the user will be changed from [4mLOGIN[24m to [4mNEW_LOGIN[24m.[m
+           Nothing else is changed. In particular, the user's home directory[m
+           or mail spool should probably be renamed manually to reflect the[m
+           new login name.[m
+[m
+       [1m-L[22m, [1m--lock[0m[m
+[7m Manual page usermod(8) line 73 (press h for help or q to quit)[27m[K[K           Lock a user's password. This puts a '!' in front of the encrypted[m
+           password, effectively disabling the password. You can't use this[m
+           option with [1m-p [22mor [1m-U[22m.[m
+[m
+           Note: if you wish to lock the account (not only access with a[m
+           password), you should also set the [4mEXPIRE_DATE[24m to [4m1[24m.[m
+[m
+       [1m-m[22m, [1m--move-home[0m[m
+           moves the content of the user's home directory to the new location.[m
+           If the current home directory does not exist the new home directory[m
+           will not be created.[m
+[m
+           This option is only valid in combination with the [1m-d [22m(or [1m--home[22m)[m
+           option.[m
+[m
+           [1musermod [22mwill try to adapt the ownership of the files and to copy[m
+           the modes, ACL and extended attributes, but manual changes might be[m
+           needed afterwards.[m
+[7m Manual page usermod(8) line 91 (press h for help or q to quit)[27m[K[K[m
+       [1m-o[22m, [1m--non-unique[0m[m
+           allows to change the user ID to a non-unique value.[m
+[m
+           This option is only valid in combination with the [1m-u [22moption. As a[m
+           user identity serves as key to map between users on one hand and[m
+           permissions, file ownerships and other aspects that determine the[m
+           system's behavior on the other hand, more than one login name will[m
+           access the account of the given UID.[m
+[m
+       [1m-p[22m, [1m--password [4m[22mPASSWORD[0m[m
+           defines a new password for the user. PASSWORD is expected to be[m
+           encrypted, as returned by [1mcrypt [22m(3).[m
+[m
+           [1mNote: [22mAvoid this option on the command line because the password[m
+           (or encrypted password) will be visible by users listing the[m
+           processes.[m
+[m
+[7m Manual page usermod(8) line 109 (press h for help or q to quit)[27m[K[K           The password will be written in the local /etc/passwd or[m
+           /etc/shadow file. This might differ from the password database[m
+           configured in your PAM configurati
