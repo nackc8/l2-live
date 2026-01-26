@@ -412,4 +412,33 @@ Tackground
 [?2004lThe Goddess Thairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Thairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
 Tackground
 [?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/gp' text[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@w[1@u[1@t[1@.[1@t[1@x[1@t[C[C[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C
-[?2004lThe Goddess Thairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Thairavi along with her consort Shiva, and is set in a cremation ground. It is n
+[?2004lThe Goddess Thairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Thairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+Tackground
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004lnyfil  [0m[01;34mnykat[0m  text  tom1  tom4  tom5  [01;34munderkat[0m  ut.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ less ut.txt [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ less ut.txt 
+[?2004l[?1049h[22;0;0t[19;1H[?1h=The Goddess Thairavi Devi with Shiva is a 17th-century Mughal painting, attribu ted to the artist Payag. It depicts the goddess Thairavi along with her consort  Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum  of Art.[1]
+Tackground
+[7mut.txt (END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ less ut.txt s[Ksed -En '1,3s/B/T/gp w ut.txt' text[1P[C[C[1@2[C[C[C[C[C[C[C[C[C[C
+[?2004lThe Goddess Thairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Thairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+Tackground
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004lnyfil  [0m[01;34mnykat[0m  text  tom1  tom4  tom5  [01;34munderkat[0m  ut2.txt  ut.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ lssed -En '1,3s/B/T/gp wut2.txt' text[C[C[C[C[C[C[C[C[C[C[1@y[1@/[1@a[1@/[1@b[1@c[C[C[1@x[1@/
+[?2004lsed: couldn't open file ut2.txty/ac/bx/: No such file or directory
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/gp wut2.txty/ac/bx/' text[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lsed: -e expression #1, char 12: unknown option to `s'
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/gpy/ac/bx/' text[C[C[C[C[C[C[C[1P
+[?2004lsed: -e expression #1, char 11: unknown option to `s'
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/gy/ac/bx/' text[1@/[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g/y/ac/bx/' text
+[?2004lsed: -e expression #1, char 11: unknown option to `s'
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g/y/ac/bx/' text[1@ 
+[?2004lsed: -e expression #1, char 11: unknown option to `s'
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g/ y/ac/bx/' text[1P
+[?2004lsed: -e expression #1, char 12: unknown option to `s'
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g y/ac/bx/' text[1P[1@;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/' text[1@p
+[?2004lsed: -e expression #1, char 20: extra characters after command
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/p' text[C[1P[1@ [1P[1@;[C[C[C[C[C[C[C[C[C[1P
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/' text[1@;[1@p[C[C[C[C[C[C
+[?2004lThe Goddess Thbirbvi Devi with Shivb is b 17th-xentury Mughbl pbinting, bttributed to the brtist Pbybg. It depixts the goddess Thbirbv
