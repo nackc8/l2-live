@@ -769,4 +769,62 @@ The blood-red goddess is seated upon a headless corpse. She has four arms, and i
 [m
 [7m Manual page usermod(8) line 109 (press h for help or q to quit)[27m[K[K           The password will be written in the local /etc/passwd or[m
            /etc/shadow file. This might differ from the password database[m
-           configured in your PAM configurati
+           configured in your PAM configuration.[m
+[m
+           You should make sure the password respects the system's password[m
+           policy.[m
+[m
+       [1m-r[22m, [1m--remove[0m[m
+           Remove the user from named supplementary group(s). Use only with[m
+           the [1m-G [22moption.[m
+[m
+       [1m-R[22m, [1m--root [4m[22mCHROOT_DIR[0m[m
+           Apply changes in the [4mCHROOT_DIR[24m directory and use the configuration[m
+           files from the [4mCHROOT_DIR[24m directory. Only absolute paths are[m
+           supported.[m
+[m
+       [1m-P[22m, [1m--prefix [4m[22mPREFIX_DIR[0m[m
+           Apply changes within the directory tree starting with [4mPREFIX_DIR[0m[m
+[7m Manual page usermod(8) line 127 (press h for help or q to quit)[27m[K[K           and use as well the configuration files located there. This option[m
+           does not chroot and is intended for preparing a cross-compilation[m
+           target. Some limitations: NIS and LDAP users/groups are not[m
+           verified. PAM authentication is using the host files. No SELINUX[m
+           support.[m
+[m
+       [1m-s[22m, [1m--shell [4m[22mSHELL[0m[m
+           changes the user's login shell. An empty string for SHELL blanks[m
+           the field in /etc/passwd and logs the user into the system's[m
+           default shell.[m
+[m
+       [1m-u[22m, [1m--uid [4m[22mUID[0m[m
+           The new value of the user's ID.[m
+[m
+           This value must be unique, unless the [1m-o [22moption is used. The value[m
+           must be non-negative.[m
+[m
+           The user's mailbox, and any files which the user owns and which are[m
+[7m Manual page usermod(8) line 145 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sudo apt install zsh
+[?2004l[sudo] password for kent: 
+Reading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Installing:
+[32m  zsh
+[0m
+Installing dependencies:
+[32m  zsh-common
+[0m
+Suggested packages:
+  zsh-doc
+
+Summary:
+  Upgrading: 0, Installing: 2, Removing: 0, Not Upgrading: 0
+  Download size: 5 060 kB
+  Space needed: 19,4 MB / 22,4 GB available
+
+Continue? [Y/n] ^[[A^[[B        
+[33m0% [Working][0m            Get:1 http://debian.mirror.su.se/debian trixie/main amd64 zsh-common all 5.9-8 [4 146 kB]
+[33m0% [1 zsh-common 6 952 B/4 146 kB 0%][0m[33m                                         76% [Waiting for headers][0m                         Get:2 http://debian.mirror.su.se/debian trixie/main amd64 zsh amd64 5.9-8+b18 [915 kB]
+[33m76% [2 zsh 5 496 B/915 kB 1%][0m[33m                               100% [Working][0m              Fetched 5 060 kB in 0s (10,6 MB/s)
+
+7[0;18r8[1ASelecting previously unselected package zsh-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 130276 files and directories currently installed.)
+Preparing to unpack .../zsh-common_5.9-8_all.deb ...
+7[19;0f[42m[30mProgress: [  0%][49m[39m [                                                         ] 87[19;0f[42m[30mProgress: [ 11%][49m[39m [██████▎                                               
