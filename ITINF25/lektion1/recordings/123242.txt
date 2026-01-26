@@ -1339,4 +1339,28 @@ An inscription on the back of the painting notes that it was part of the royal  
 [7m Manual page sed(1) line 223/306 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
 [7m Manual page sed(1) line 224/306 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       $      Match the last line.[m
 [7m Manual page sed(1) line 225/306 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7
+[7m Manual page sed(1) line 226/306 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /[4mregexp[24m/[m
+[7m Manual page sed(1) line 227/306 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+[7m Manual page sed(1) line 228/306 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              performed  on  the  current pattern space, which can be modified[m
+[7m Manual page sed(1) line 229/306 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              with commands such as ``s///''.[m
+[7m Manual page sed(1) line 230/306 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 231/306 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 230/306 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 231/306 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \[1mc[4m[22mregexp[24m[1mc[0m[m
+[7m Manual page sed(1) line 232/306 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Match lines matching the regular expression [4mregexp[24m.  The  [1mc  [22mmay[m
+[7m Manual page sed(1) line 233/306 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              be any character.[m
+[7m Manual page sed(1) line 234/306 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 235/306 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU [4msed[24m also supports some special 2-address forms:[m
+[7m Manual page sed(1) line 236/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 237/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       0,[4maddr2[0m[m
+[7m Manual page sed(1) line 238/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Start  out  in  "matched  first  address"  state, until [4maddr2[24m is[m
+[7m Manual page sed(1) line 239/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              found.  This is similar to 1,[4maddr2[24m, except that if [4maddr2[24m matches[m
+[7m Manual page sed(1) line 240/306 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the very first line of input the 0,[4maddr2[24m form will be at the end[m
+[7m Manual page sed(1) line 241/306 83% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of its [7mrange[27m, whereas the 1,[4maddr2[24m form will still be at the  be‐[m
+[7m Manual page sed(1) line 242/306 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ginning  of  its [7mrange[27m.  This works only when [4maddr2[24m is a regular[m
+[7m Manual page sed(1) line 243/306 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              expression.[m
+[7m Manual page sed(1) line 244/306 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 245/306 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,+[4mN[0m[m
+[7m Manual page sed(1) line 246/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m and the [4mN[24m lines following [4maddr1[24m.[m
+[7m Manual page sed(1) line 247/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 248/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,~[4mN[0m[m
