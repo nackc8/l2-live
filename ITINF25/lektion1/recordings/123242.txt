@@ -2130,4 +2130,113 @@ An inscription on the back of the painting notes that it was part of the royal  
 [14;1H[K[m
 [15;1H[K       After the address (or address-range), and before the command, a [1m!   [22mmay[m
 [16;1H[K       be inserted, which specifies that the command shall only be executed if[m
-[17;1H[K       the address (or address-range) does [1
+[17;1H[K       the address (or address-range) does [1mnot [22mmatch.[m
+[18;1H[K[m
+[19;1H[1;1H[K[m
+[2;1H[K[1mAddresses[0m[m
+[3;1H[K       [4mSed[24m  commands can be given with no addresses, in which case the command[m
+[4;1H[K       will be executed for all input lines; with one address, in  which  case[m
+[5;1H[K       the  command will only be executed for input lines which match that ad‐[m
+[6;1H[K       dress; or with two addresses, in which case the command  will  be  exe‐[m
+[7;1H[K       cuted  for  all  input  lines  which match the inclusive range of lines[m
+[8;1H[K       starting from the first address and continuing to the  second  address.[m
+[9;1H[K       Three  things  to  note about address ranges: the syntax is [4maddr1[24m,[4maddr2[0m[m
+[10;1H[K       (i.e., the addresses are separated by a comma); the  line  which  [4maddr1[0m[m
+[11;1H[K       matched will always be accepted, even if [4maddr2[24m selects an earlier line;[m
+[12;1H[K       and  if  [4maddr2[24m is a [4mregexp[24m, it will not be tested against the line that[m
+[13;1H[K       [4maddr1[24m matched.[m
+[14;1H[K[m
+[15;1H[K       After the address (or address-range), and before the command, a [1m!   [22mmay[m
+[16;1H[K       be inserted, which specifies that the command shall only be executed if[m
+[17;1H[K       the address (or address-range) does [1mnot [22mmatch.[m
+[18;1H[K[m
+[19;1H...skipping...
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+              performed  on  the  current pattern space, which can be modified[m
+              with commands such as ``s///''.[m
+[m
+       \[1mc[4m[22mregexp[24m[1mc[0m[m
+              Match lines matching the regular expression [4mregexp[24m.  The  [1mc  [22mmay[m
+              be any character.[m
+[m
+       GNU [4msed[24m also supports some special 2-address forms:[m
+[m
+       0,[4maddr2[0m[m
+              Start  out  in  "matched  first  address"  state, until [4maddr2[24m is[m
+              found.  This is similar to 1,[4maddr2[24m, except that if [4maddr2[24m matches[m
+              the very first line of input the 0,[4maddr2[24m form will be at the end[m
+              of its range, whereas the 1,[4maddr2[24m form will still be at the  be‐[m
+[7m Manual page sed(1) line 242/306 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 241/306 83% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[19;1H[K[7m Manual page sed(1) line 240/306 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+[19;1H[K[7m Manual page sed(1) line 239/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              put  stream,  and  the  address 2~5 will match every fifth line,[m
+[19;1H[K[7m Manual page sed(1) line 238/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+[19;1H[K[7m Manual page sed(1) line 237/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+[19;1H[K[7m Manual page sed(1) line 236/306 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4mfirst[24m~[4mstep[0m[m
+[19;1H[K[7m Manual page sed(1) line 235/306 80% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+              put  stream,  and  the  address 2~5 will match every fifth line,[m
+              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[m
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+              performed  on  the  current pattern space, which can be modified[m
+              with commands such as ``s///''.[m
+[m
+       \[1mc[4m[22mregexp[24m[1mc[0m[m
+[7m Manual page sed(1) line 235/306 79% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+              put  stream,  and  the  address 2~5 will match every fifth line,[m
+              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[m
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+              performed  on  the  current pattern space, which can be modified[m
+              with commands such as ``s///''.[m
+[m
+[7m Manual page sed(1) line 235/306 79% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+              put  stream,  and  the  address 2~5 will match every fifth line,[m
+              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[m
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+              performed  on  the  current pattern space, which can be modified[m
+[7m Manual page sed(1) line 235/306 78% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+              put  stream,  and  the  address 2~5 will match every fifth line,[m
+              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[m
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match lines matching the regular expression [4mregexp[24m.  Matching is[m
+[7m Manual page sed(1) line 235/306 78% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[24m.  For example,[m
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐[m
+              put  stream,  and  the  address 2~5 will match every fifth line,[m
+              starting with the second.  [4mfirst[24m can be zero; in this case,  [4msed[0m[m
+              operates as if it were equal to [4mstep[24m.  (This is an extension.)[m
+[m
+       [7m$[27m      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+[7m Manual page sed(1) line 235/306 77% (press h for help or q to quit)[27m[K[H[2J[H       [4mfirst[24m~[4mstep[0m[m
+              Match every [4mstep[24m'th line starting with line [4mfirst[
