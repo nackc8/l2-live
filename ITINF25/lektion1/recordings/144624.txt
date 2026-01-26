@@ -827,4 +827,58 @@ Continue? [Y/n] ^[[A^[[B        
 7[0;18r8[1ASelecting previously unselected package zsh-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 130276 files and directories currently installed.)
 Preparing to unpack .../zsh-common_5.9-8_all.deb ...
-7[19;0f[42m[30mProgress: [  0%][49m[39m [                                                         ] 87[19;0f[42m[30mProgress: [ 11%][49m[39m [██████▎                                               
+7[19;0f[42m[30mProgress: [  0%][49m[39m [                                                         ] 87[19;0f[42m[30mProgress: [ 11%][49m[39m [██████▎                                                  ] 8Unpacking zsh-common (5.9-8) ...
+7[19;0f[42m[30mProgress: [ 22%][49m[39m [████████████▋                                            ] 8Selecting previously unselected package zsh.
+Preparing to unpack .../zsh_5.9-8+b18_amd64.deb ...
+7[19;0f[42m[30mProgress: [ 33%][49m[39m [██████████████████▉                                      ] 8Unpacking zsh (5.9-8+b18) ...
+7[19;0f[42m[30mProgress: [ 44%][49m[39m [█████████████████████████▎                               ] 8Setting up zsh-common (5.9-8) ...
+7[19;0f[42m[30mProgress: [ 56%][49m[39m [███████████████████████████████▋                         ] 87[19;0f[42m[30mProgress: [ 67%][49m[39m [█████████████████████████████████████▉                   ] 8Setting up zsh (5.9-8+b18) ...
+7[19;0f[42m[30mProgress: [ 78%][49m[39m [████████████████████████████████████████████▎            ] 87[19;0f[42m[30mProgress: [ 89%][49m[39m [██████████████████████████████████████████████████▋      ] 8Processing triggers for debianutils (5.23.2) ...
+Processing triggers for man-db (2.13.1-1) ...
+
+7[0;19r8[1A[J[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ which zsh
+[?2004l/usr/bin/zsh
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ usernmod[K[K[Km[K[Kmod
+[?2004l-bash: usermod: command not found
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ usermod[K[K[K[K[K[K[Ksudo usermd[Kod -s /y[Kusr/bin/zsh kent[K[K[K[K$USER[K[K[K[K[Kkent
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ exit
+[?2004llogout
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost[H[2J[94mITINF25/lektion1
+(B[m$ ssh -p 10022 kent@localhost
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 14:46:47 2026 from 10.0.2.2
+[H[2J[3JThis is the Z Shell configuration function for new users,
+zsh-newuser-install.
+You are seeing this message because you have no zsh startup files
+(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
+~).  This function can help you with a few settings that should
+make your use of the shell easier.
+
+You can:
+
+(q)  Quit and do nothing.  The function will be run again next time.
+
+(0)  Exit, creating the file ~/.zshrc containing just a comment.
+     That will prevent this function being run again.
+
+(1)  Continue to the main menu.
+
+(2)  Populate your ~/.zshrc with the configuration recommended
+     by the system administrator and exit (you will need to edit
+     the file by hand, if so desired).
+
+--- Type one of the keys in parentheses --- 2
+/home/kent/.zshrc:15: scalar parameter HISTFILE created globally in function zsh-newuser-install
+(eval):1: scalar parameter LS_COLORS created globally in function zsh-newuser-install
+[1m[7m%[27m[1m[0m                                                                               [0m[27m[24m[
