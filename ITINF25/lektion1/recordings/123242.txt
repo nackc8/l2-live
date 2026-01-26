@@ -512,4 +512,42 @@ sr0     11:0    1 1024M  0 rom
 [m
               The  re-ordering  of  operations per‐[m
               formed by  the  cost-based  optimizer[m
-              can  result in u
+              can  result in user-visible behaviour[m
+              change.  For example,  the  [1m-readable[0m[m
+              and  [1m-empty  [22mpredicates are sensitive[m
+              to re-ordering.  If they are  run  in[m
+              the  order [1m-empty -readable[22m, an error[m
+[7mage find(1) line 307 (press h for help or q to quit)[27m[K[K              message will be issued for unreadable[m
+              directories.  If they are run in  the[m
+              order  [1m-readable -empty [22mno error mes‐[m
+              sage will be issued. This is the rea‐[m
+              son why such operation re-ordering is[m
+              not performed at the default  optimi‐[m
+              sation level.[m
+[m
+[1mEXPRESSION[0m[m
+[7mage find(1) line 316 (press h for help or q to quit)[27m[K[K       The  part of the command line after the list[m
+       of starting points is the [4mexpression[24m.   This[m
+       is  a kind of query specification describing[m
+       how we match files and what we do  with  the[m
+       files  that  were matched.  An expression is[m
+       composed of a sequence of things:[m
+[m
+       Tests  Tests return a true or  false  value,[m
+              usually on the basis of some property[m
+[7mage find(1) line 325 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ find ~ -iname ''*'*'b*'a*'s*'h*'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l/home/kent/.bash_history
+/home/kent/.bashrc
+/home/kent/.bash_logout
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ umask
+[?2004l0002
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ tocuh [K[K[K[Kuch nyfil
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l nyfil 
+[?2004l-rw-rw-r-- 1 kent kent 0 jan 26 13:51 nyfil
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mkdir nykat
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l nykat/[K[C[C[C[C[Cd nykat[C[C[C[C[C[C/
+[?2004ldrwxrwxr-x 2 kent kent 4096 jan 26 13:53 [0m[01;34mnykat/[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004lnyfil  [0m[01;34mnykat[0m  tom1  tom4  tom5  [01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ man[K[K[Knano text
+[?2004l[?2004h[?1049h[22;0;0t[1;10r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[8;21H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.4            text                      [1;51H(B[m[9d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^F(B[m Where Is  (B[0;7m^K(B[m Cut[10d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[1;32H(B[0;7m*[8d(B[m[K[1;51H[3dThe painting is extended beyond the golden border i(B[0;7m>[5;1H(B[m[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h7[2;8r8M[1;10r[2;1HAlong with the goddess is her consort Shiva, whose (B[0;7m>[2;1H(B[m[?25l[?12l[?25h7[2;8r8M[1;10r[2;1H[?25l[?12l[?25h7[2;8r8M[1;10r[2;1HIn one hand, she holds the freshly decapitated head(B[0;7m>[2;1H(B[m[?25l[?12l[?25h7[2;8r8M[1;10r[2;1H[?25l[?12l[?25h7[2;7r8M[1;10r[2;1HThe four-armed goddess sits upon a headless corpse.(B[0;7m>[2;1H(B[m[?25l[?12l[?25h7[2;8r8M[1;10r[2;1H[?25l[?12l[?25h7[2;7r8M[1;10r[2;1HThe pa
