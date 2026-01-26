@@ -1364,3 +1364,158 @@ An inscription on the back of the painting notes that it was part of the royal  
 [7m Manual page sed(1) line 246/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m and the [4mN[24m lines following [4maddr1[24m.[m
 [7m Manual page sed(1) line 247/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
 [7m Manual page sed(1) line 248/306 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,~[4mN[0m[m
+[7m Manual page sed(1) line 249/306 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m and the lines following [4maddr1[24m  until  the  next[m
+[7m Manual page sed(1) line 250/306 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              line whose input line number is a multiple of [4mN[24m.[m
+[7m Manual page sed(1) line 251/306 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 252/306 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREGULAR EXPRESSIONS[0m[m
+[7m Manual page sed(1) line 253/306 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       POSIX.2 BREs [4mshould[24m be supported, but they aren't completely because of[m
+[7m Manual page sed(1) line 254/306 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       performance  problems.  The [1m\n [22msequence in a regular expression matches[m
+[7m Manual page sed(1) line 255/306 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the newline character, and similarly for [1m\a[22m, [1m\t[22m, and  other  sequences.[m
+[7m Manual page sed(1) line 256/306 89% (press h for help or q to quit)[27m[K[K       The  [4m-E[24m  option switches to using extended regular expressions instead;[m
+       it has been supported for years by GNU sed,  and  is  now  included  in[m
+       POSIX.[m
+[m
+[1mBUGS[0m[m
+       E-mail bug reports to [1mbug-sed@gnu.org[22m.  Also, please include the output[m
+       of ``sed --version'' in the body of your report if at all possible.[m
+[m
+[1mAUTHOR[0m[m
+       Written by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo Bonzini, Jim Mey‐[m
+       ering, and Assaf Gordon.[m
+[m
+       This  sed  program was built with SELinux support.  SELinux is disabled[m
+       on this system.[m
+[m
+       GNU sed home page: <https://www.gnu.org/software/sed/>.   General  help[m
+       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports[m
+       to: <bug-sed@gnu.org>.[m
+[7m Manual page sed(1) line 274/306 95% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ man sed
+[?2004l[?1049h[22;0;0t[19;1H[?1h=[4mSED[24m(1)                           User Commands                          [4mSED[24m(1)[m
+[m
+[1mNAME[0m[m
+       sed - stream editor for filtering and transforming text[m
+[m
+[1mSYNOPSIS[0m[m
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent][m
+           [-l N] [--line-length=N] [-u] [--unbuffered][m
+           [-E] [-r] [--regexp-extended][m
+           [-e script] [--expression=script][m
+           [-f script-file] [--file=script-file][m
+           [script-if-no-other-script][m
+           [file...][m
+[m
+[1mDESCRIPTION[0m[m
+       [4mSed[24m  is a stream editor.  A stream editor is used to perform basic text[m
+       transformations on an input stream (a file or input from  a  pipeline).[m
+       While  in  some  ways similar to an editor which permits scripted edits[m
+[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K       (such as [4med[24m), [4msed[24m works by making only one pass over the input(s),  and[m
+       is consequently more efficient.  But it is [4msed[24m's ability to filter text[m
+       in  a  pipeline which particularly distinguishes it from other types of[m
+       editors.[m
+[m
+       [1m-n[22m, [1m--quiet[22m, [1m--silent[0m[m
+[m
+              suppress automatic printing of pattern space[m
+[m
+       [1m--debug[0m[m
+[m
+              annotate program execution[m
+[m
+       [1m-e [22mscript, [1m--expression[22m=[4mscript[0m[m
+[m
+              add the script to the commands to be executed[m
+[m
+       [1m-f [22mscript-file, [1m--file[22m=[4mscript-file[0m[m
+[7m Manual page sed(1) line 19 (press h for help or q to quit)[27m[K[K[m
+              add the contents of script-file to the commands to be executed[m
+[m
+       [1m--follow-symlinks[0m[m
+[m
+              follow symlinks when processing in place[m
+[m
+       [1m-i[SUFFIX][22m, [1m--in-place[22m[=[4mSUFFIX[24m][m
+[m
+              edit files in place (makes backup if SUFFIX supplied)[m
+[m
+       [1m-l [22mN, [1m--line-length[22m=[4mN[0m[m
+[m
+              specify the desired line-wrap length for the `l' command[m
+[m
+       [1m--posix[0m[m
+[m
+              disable all GNU extensions.[m
+[7m Manual page sed(1) line 37 (press h for help or q to quit)[27m[K[K[m
+       [1m-E[22m, [1m-r[22m, [1m--regexp-extended[0m[m
+[m
+              use extended regular expressions in the script (for  portability[m
+              use POSIX [1m-E[22m).[m
+[m
+       [1m-s[22m, [1m--separate[0m[m
+[m
+              consider  files  as separate rather than as a single, continuous[m
+              long stream.[m
+[m
+       [1m--sandbox[0m[m
+[m
+              operate in sandbox mode (disable e/r/w commands).[m
+[m
+       [1m-u[22m, [1m--unbuffered[0m[m
+[m
+              load minimal amounts of data from the input files and flush  the[m
+[7m Manual page sed(1) line 55 (press h for help or q to quit)[27m[K[K              output buffers more often[m
+[m
+       [1m-z[22m, [1m--null-data[0m[m
+[m
+              separate lines by NUL characters[m
+[m
+       [1m--help[0m[m
+              display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       If  no  [1m-e[22m, [1m--expression[22m, [1m-f[22m, or [1m--file [22moption is given, then the first[m
+       non-option argument is taken as the sed script to interpret.   All  re‐[m
+       maining arguments are names of input files; if no input files are spec‐[m
+       ified, then the standard input is read.[m
+[m
+       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help[m
+[7m Manual page sed(1) line 73 (press h for help or q to quit)[27m[K[K       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports[m
+       to: <bug-sed@gnu.org>.[m
+[m
+       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐[m
+       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐[m
+       censes/gpl.html>.   This  is  free software: you are free to change and[m
+       redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[m
+[1mCOMMAND SYNOPSIS[0m[m
+       This is just a brief synopsis of [4msed[24m commands to serve as a reminder to[m
+       those who already know [4msed[24m; other documentation (such  as  the  texinfo[m
+       document) must be consulted for fuller descriptions.[m
+[m
+   [1mZero-address ``commands''[0m[m
+       : [4mlabel[0m[m
+              Label for [1mb [22mand [1mt [22mcommands.[m
+[m
+       #[4mcomment[0m[m
+[7m Manual page sed(1) line 91 (press h for help or q to quit)[27m[K[K              The  comment  extends until the next newline (or the end of a [1m-e[0m[m
+              script fragment).[m
+[m
+       }      The closing bracket of a { } block.[m
+[m
+   [1mZero- or One- address commands[0m[m
+       =      Print the current line number.[m
+[m
+       a \[m
+[m
+       [4mtext[24m   Append [4mtext[24m, which has each embedded newline preceded by a back‐[m
+              slash.[m
+[m
+       i \[m
+[m
+       [4mtext[24m   Insert [4mtext[24m, which has each embedded newline preceded by a back‐[m
+              slash.[m
+[m
+[7m Manual page sed(1) line 109 (press h for help or q to quit)[27m[K[K       q [[4mexit-code[24m][m
+              Immediately quit the [4msed[24m script without processing any more  in‐[m
+              put,  except that if auto-print is not disabl
