@@ -146,4 +146,42 @@ Change: 2026-01-26 12:52:27.823043264 +0100
  Birth: 2026-01-26 12:45:05.137802663 +0100
 [?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
 [?2004l[0m[01;36mgurka.txt[0m
-[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [0m[01;36mgurka.txt[0m -> ../hej.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ln -s /home/kent/hej.txt ban an.txt
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ln -s /home/kent/hej.txt banan.txt[A]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [Cs -l[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 [0m[01;36mbanan.txt[0m -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [01;36mgurka.txt[0m -> ../hej.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 [0m[01;36mbanan.txt[0m -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [01;36mgurka.txt[0m -> ../hej.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mkdir underkat
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv banan.txt gurka.txt underkat/
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l
+[?2004ltotal 4
+drwxrwxr-x 2 kent kent 4096 jan 26 12:55 [0m[01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ cd underkat/
+[?2004l[?2004h]0;kent@deb13: ~/Documents/underkat[01;32mkent@deb13[00m:[01;34m~/Documents/underkat[00m$ [H[2J]0;kent@deb13: ~/Documents/underkat[01;32mkent@deb13[00m:[01;34m~/Documents/underkat[00m$ cd underkat/[Kcd underkat/[7Pls -l
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 [0m[01;36mbanan.txt[0m -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [40;31;01mgurka.txt[0m -> [40;31;01m../hej.txt[0m
+[?2004h]0;kent@deb13: ~/Documents/underkat[01;32mkent@deb13[00m:[01;34m~/Documents/underkat[00m$ ls ../
+[?2004l[0m[01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents/underkat[01;32mkent@deb13[00m:[01;34m~/Documents/underkat[00m$ [H[2J]0;kent@deb13: ~/Documents/underkat[01;32mkent@deb13[00m:[01;34m~/Documents/underkat[00m$ cd ..
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ lsblk
+[?2004lNAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   30G  0 disk 
+├─sda1   8:1    0  976M  0 part /boot/efi
+├─sda2   8:2    0 27,5G  0 part /
+└─sda3   8:3    0  1,6G  0 part [SWAP]
+sr0     11:0    1 1024M  0 rom  
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -a
+[?2004l[0m[01;34m.[0m  [01;34m..[0m  [01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ tocuh[K[K[Kuch tom1
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ nano tom2
+[?2004l[?2004h[?1049h[22;0;0t[1;10r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[8;21H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.4            tom2                      [1;51H(B[m[9d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^F(B[m Where Is  (B[0;7m^K(B[m Cut[10d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[8d[J[10d[?12l[?25h[10;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ y[Kvim tom3
+[?200
