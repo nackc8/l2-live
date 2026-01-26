@@ -545,4 +545,75 @@ The painting depicts the goddess Bhairavi, a terrible avatar of Parvati. She is 
 The four-armed goddess sits upon a headless corpse. Her body is blood-red, and this color is achieved using cinnabar. She has a fierce expression, and blood pours out from her mouth. She is wearing a skirt made up of skulls and severed heads. Her earrings as well as a garland around her neck are also composed of skulls. She also wears bangles and a necklace, made out of gold, studded with jewels. A divine halo is present around her head, and she is crowned by a crescent moon. Horns in the form of spearheads rise from her jet-black hair, which reach down to her waist.[2][3][5][4]
 In one hand, she holds the freshly decapitated head, possibly of the corpse upon which she sits. This head is held by a tuft of hair, which might be a shikha. This would indicate that the head is of a brahmin, perhaps symbolizing the goddess's power over all beings, including members of the priestly class. In another hand, she is holding a sword, the style of which is typical to the reign of Shah Jahan, and which represents her destructive power. In yet another hand, she holds a trishul. Finally, her fourth hand is raised in a gesture of blessing.[2][3][5][4]
 Along with the goddess is her consort Shiva, whose light-complexioned portrayal displays a European influence. He is depicted in the form of a young sadhu, with ash smeared all over his body. He looks towards the goddess adoringly. Orange flames emanate from his mouth, and this likely indicates that he is uttering a sacred mantra. The fire also may represent prana, a divine breath of life. A halo surrounding Shiva's head is less elaborate than the one possessed by the goddess. A crescent moon floats above his head, constituting a diadem. His golden locks of hair symbolise the flowing waters of the river Ganges, and around his neck, he wears a garland consisting of skulls. Nearby stands Shiva's trident, containing upon it a rumāl and a damaru.[2][3][5][4]
-The painting is extended 
+The painting is extended beyond the golden border into cream-colored paper. At the top of the paper, the name "Śrī Bhairavī Devī" is written in Devanagari. The cream extension contains birds flying overhead, jackals, a lion (the mount of the goddess), and rakshasa figures saluting the goddess.[2]
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ seq 1 10
+[?2004l1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ seq 1 10d 'n;d' text [K[K[K[K[K<()s)e)q) )1) )1)0)[C[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 'n;d' <(seq 1 10)
+[?2004l1
+3
+5
+7
+9
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 'n;d' <(seq 1 10)[1@n[1@;[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l1
+2
+4
+5
+7
+8
+10
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [7msed 's/^/ /'[27m
+
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/^/ /'
+
+[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C <[K<*s[K[K(seq a z[Kf)[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 's/^/ /' <(seq a f)
+[?2004lseq: invalid floating point argument: ‘a’
+Try 'seq --help' for more information.
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 's/^/ /' <(seq a f)[C[1P f)1 f)[C[C[1P)9)
+[?2004l 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 's/^/ /' <(seq 1 9)[C[C[C[1P[1@ [1@ [1@ [1@ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 's/^/    /' <(seq 1 9)
+[?2004l    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [7msed '1!G;h;$!d'[27m
+
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed '1!G;h;$!d'
+
+[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C M[K<()s)e) )q)[1P)[1P)q) )1) )1)9)[1P)[1P)[1P)[1P)[1P)[1P)[1P)[1P)e)c)h)o) )')')-'')e'') '')[Ch')e')j')s')a')n')\')n')h')o')p')p')s')a')n')[C\')n')[C[C
+[?2004l
+hoppsan
+hejsan
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed '1!G;h;$!d' <(echo -e 'hejsan\nhoppsan\n')[Cb')u')r')k')\')n')o')x')e') [A]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\')[A]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn')[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed '1!G;h;$!d' <(echo -e 'hejsan\nhoppsan\nburk\noxe\n')
+[?2004l
+oxe
+burk
+hoppsan
+hejsan
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed 10q text 
+[?2004lThe Goddess Bhairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Bhairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+
+Background
+Mughal paintings from the reign of the emperor Akbar depicting Hindu subjects are common, since the emperor comm
