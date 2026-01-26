@@ -1,0 +1,45 @@
+Script started on 2026-01-26 14:46:24+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="79" LINES="19"]
+[?2004h[94mITINF25/lektion1
+(B[m$ [H[2J[94mITINF25/lektion1
+(B[m$ ls
+[?2004lrecordings
+[?2004h[94mITINF25/lektion1
+(B[m$ ls
+[?2004lrecordings
+[?2004h[94mITINF25/lektion1
+(B[m$ (reverse-i-search)`': s': while true; do clear; figlet $(LC= date "+%s"); [7ms[27mleep 1; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Ps': [7mss[27mh -p 11022 kent@localhost
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@h': [7mssh[27m[23P(B[m$ ssh
+[?2004lssh: connect to host localhost port 11022: Connection refused
+[?2004h[94mITINF25/lektion1
+(B[m$ ssh -p 11022 kent@localhost[1P[C[1@0
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 12:39:00 2026 from 10.0.2.2
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  hej.txt    [01;34mPictures[0m  [01;34mTemplates[0m
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ fin[K[K[Kcd Documents/
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004lnyfil  [0m[01;34mnykat[0m  text  tom1  tom4  tom5  [01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [7mMughal[27mMughal[K[K[K[K[K[Ksed ''j'i'o'e'j'i'o'e'j'o'i'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P's'/'[7mMughal[27m'Mughal'/'B'o's's'e'/'[C twe[K[Kext [K
+[?2004lThe Goddess Bhairavi Devi with Shiva is a 17th-century Bosse painting, attributed to the artist Payag. It depicts the goddess Bhairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+
+Background
+Bosse paintings from the reign of the emperor Akbar depicting Hindu subjects are common, since the emperor commissioned many illuminated manuscripts regarding Hindu topics. This painting, however, is a late Mughal work, datable to around 1630–35, during the reign of the emperor Shah Jahan. Hindu portrayals during the art of this period are rare, and a Shaivite image such as this would have been seen as heretical, and would not have been commissioned for a royal album.[2][3]
+
+An inscription on the back of the painting notes that it was part of the royal collection of the Kingdom of Mewar. This has led to the hypothesis that the work might have been commissioned by Shah Jahan as a gift to Jagat Singh I, the ruler of Mewar, and an important ally of the emperor. It is known that Jagat Singh was a devotee of the goddess Bhairavi.[3][4]
+
+Description
+
+The blood-red goddess is seated upon a headless corpse. She has four arms, and is wearing a skirt made up of skulls.
+
+Shiva is depicted in the form of a light-complexioned naked sadhu, wearing a garland made up of skulls.
+The painting depicts the goddess Bhairavi, a terrible avatar of Parvati. She is seated along wit
