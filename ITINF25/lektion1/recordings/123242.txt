@@ -184,4 +184,332 @@ sr0     11:0    1 1024M  0 rom
 [?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ tocuh[K[K[Kuch tom1
 [?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ nano tom2
 [?2004l[?2004h[?1049h[22;0;0t[1;10r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[8;21H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.4            tom2                      [1;51H(B[m[9d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^F(B[m Where Is  (B[0;7m^K(B[m Cut[10d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[8d[J[10d[?12l[?25h[10;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ y[Kvim tom3
-[?200
+[?2004l-bash: vim: command not found
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ i[Kehco[K[K[Kcho [K
+[?2004l
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ echo >[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ echo >tom1 [K[K4
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ echo >tom4[C >tom4- >tom4n >tom4[C[C[C[C[C[C[K5
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ tee[K[K[Kls
+[?2004ltom1  tom4  tom5  [0m[01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv tom4 underkat/[K[K[K[K[Krkat/[C[K[K[K[K[K[K[K[K[Ktom5/[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv tom4 tom5/
+[?2004lmv: cannot stat 'tom5/': Not a directory
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004ltom1  tom4  tom5  [0m[01;34munderkat[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mkdir a b
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ touch a/innehall
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ rmdir a
+[?2004lrmdir: failed to remove 'a': Directory not empty
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ rmdir a[Kb
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ rm -r[K[Ka[K-r a
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ man find
+[?2004l[?1049h[22;0;0t[10;1H[?1h=[4mFIND[24m(1)       General Commands Manual       [4mFIND[24m(1)[m
+[m
+[1mNAME[0m[m
+       find - search for files in a directory hier‐[m
+       archy[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mfind [22m[-H] [-L] [-P] [-D debugopts] [-Olevel][m
+       [starting-point...] [expression][m
+[7m page find(1) line 1 (press h for help or q to quit)[27m[K[K[m
+[1mDESCRIPTION[0m[m
+       This  manual  page documents the GNU version[m
+       of [1mfind[22m.  GNU [1mfind  [22msearches  the  directory[m
+       tree  rooted at each given starting-point by[m
+       evaluating the given expression from left to[m
+       right, according to the rules of  precedence[m
+       (see  section  OPERATORS), until the outcome[m
+       is known (the left hand side  is  false  for[m
+[7mpage find(1) line 10 (press h for help or q to quit)[27m[K[K       [4mand[24m operations, true for [4mor[24m), at which point[m
+       [1mfind  [22mmoves on to the next file name.  If no[m
+       starting-point is specified, `.' is assumed.[m
+[m
+       If you are  using  [1mfind  [22min  an  environment[m
+       where  security is important (for example if[m
+       you are using it to search directories  that[m
+       are  writable  by  other  users), you should[m
+       read the `Security  Considerations'  chapter[m
+[7mpage find(1) line 19 (press h for help or q to quit)[27m[K[K       of  the  findutils  documentation,  which is[m
+       called [1mFinding Files [22mand comes  with  findu‐[m
+       tils.   That  document  also  includes a lot[m
+       more detail and discussion than this  manual[m
+       page,  so  you  may  find  it  a more useful[m
+       source of information.[m
+[m
+[1mOPTIONS[0m[m
+       The [1m-H[22m, [1m-L [22mand [1m-P [22moptions control the treat‐[m
+[7mpage find(1) line 28 (press h for help or q to quit)[27m[K[K       ment of symbolic links.  Command-line  argu‐[m
+       ments  following these are taken to be names[m
+       of files or directories to be  examined,  up[m
+       to  the first argument that begins with `-',[m
+       or the argument `(' or `!'.   That  argument[m
+       and  any following arguments are taken to be[m
+       the expression  describing  what  is  to  be[m
+       searched  for.   If  no paths are given, the[m
+       current directory is used.  If no expression[m
+[7mpage find(1) line 37 (press h for help or q to quit)[27m[K[K       is given, the expression [1m-print [22mis used (but[m
+       you should probably consider  using  [1m-print0[0m[m
+       instead, anyway).[m
+[m
+       This   manual  page  talks  about  `options'[m
+       within the expression list.   These  options[m
+       control the behaviour of [1mfind [22mbut are speci‐[m
+       fied  immediately  after the last path name.[m
+       The five `real' options [1m-H[22m, [1m-L[22m, [1m-P[22m,  [1m-D  [22mand[m
+[7mpage find(1) line 46 (press h for help or q to quit)[27m[K[K       [1m-O  [22mmust  appear before the first path name,[m
+       if at all.  A double dash [1m-- [22mcould theoreti‐[m
+       cally be used to signal that  any  remaining[m
+       arguments are not options, but this does not[m
+       really  work  due to the way [1mfind [22mdetermines[m
+       the end of the following path arguments:  it[m
+       does that by reading until an expression ar‐[m
+       gument comes (which also starts with a `-').[m
+       Now,  if  a path argument would start with a[m
+[7mpage find(1) line 55 (press h for help or q to quit)[27m[K[K       `-', then [1mfind [22mwould treat it as  expression[m
+       argument  instead.  Thus, to ensure that all[m
+       start points are taken as  such,  and  espe‐[m
+       cially to prevent that wildcard patterns ex‐[m
+       panded  by the calling shell are not mistak‐[m
+       enly treated as expression arguments, it  is[m
+       generally safer to prefix wildcards or dubi‐[m
+       ous  path  names  with either `./' or to use[m
+       absolute path names starting with '/'.   Al‐[m
+[7mpage find(1) line 64 (press h for help or q to quit)[27m[K[K       ternatively,  it  is  generally  safe though[m
+       non-portable   to   use   the   GNU   option[m
+       [1m-files0-from   [22mto  pass  arbitrary  starting[m
+       points to [1mfind[22m.[m
+[m
+       -P     Never follow symbolic links.  This is[m
+              the default behaviour.  When [1mfind [22mex‐[m
+              amines or  prints  information  about[m
+              files,  and  the  file  is a symbolic[m
+[7mpage find(1) line 73 (press h for help or q to quit)[27m[K[K              link, the information used  shall  be[m
+              taken from the properties of the sym‐[m
+              bolic link itself.[m
+[m
+       -L     Follow symbolic links.  When [1mfind [22mex‐[m
+              amines  or  prints  information about[m
+              files, the information used shall  be[m
+              taken from the properties of the file[m
+              to  which  the  link points, not from[m
+[7mpage find(1) line 82 (press h for help or q to quit)[27m[K[K              the link itself (unless it is a  bro‐[m
+              ken  symbolic  link or [1mfind [22mis unable[m
+              to examine the file to which the link[m
+              points).  Use of this option  implies[m
+              [1m-noleaf[22m.  If you later use the [1m-P [22mop‐[m
+              tion,  [1m-noleaf  [22mwill  still be in ef‐[m
+              fect.  If [1m-L [22mis in  effect  and  [1mfind[0m[m
+              discovers a symbolic link to a subdi‐[m
+              rectory during its search, the subdi‐[m
+[7mpage find(1) line 91 (press h for help or q to quit)[27m[K[K              rectory  pointed  to  by the symbolic[m
+              link will be searched.[m
+[m
+              When the [1m-L [22moption is in effect,  the[m
+              [1m-type  [22mpredicate  will  always  match[m
+              against the type of the file  that  a[m
+              symbolic  link  points to rather than[m
+              the link itself (unless the  symbolic[m
+              link  is  broken).   Actions that can[m
+[7mage find(1) line 100 (press h for help or q to quit)[27m[K[K              cause symbolic links to become broken[m
+              while [1mfind [22mis executing (for  example[m
+              [1m-delete[22m)  can  give rise to confusing[m
+              behaviour.   Using  [1m-L   [22mcauses   the[m
+              [1m-lname  [22mand [1m-ilname [22mpredicates always[m
+              to return false.[m
+[m
+       -H     Do not follow symbolic links,  except[m
+              while processing the command line ar‐[m
+[7mage find(1) line 109 (press h for help or q to quit)[27m[K[K              guments.    When   [1mfind  [22mexamines  or[m
+              prints information about  files,  the[m
+              information  used shall be taken from[m
+              the properties of the  symbolic  link[m
+              itself.   The  only exception to this[m
+              behaviour is when a file specified on[m
+              the command line is a symbolic  link,[m
+              and  the  link  can be resolved.  For[m
+              that situation, the information  used[m
+[7mage find(1) line 118 (press h for help or q to quit)[27m[K[K              is   taken  from  whatever  the  link[m
+              points to (that is, the link is  fol‐[m
+              lowed).   The  information  about the[m
+              link itself is used as a fallback  if[m
+              the  file  pointed to by the symbolic[m
+              link cannot be examined.  If [1m-H [22mis in[m
+              effect and one of the paths specified[m
+              on the command  line  is  a  symbolic[m
+              link  to a directory, the contents of[m
+[7mage find(1) line 127 (press h for help or q to quit)[27m[K[K              that  directory  will   be   examined[m
+              (though  of  course [1m-maxdepth 0 [22mwould[m
+              prevent this).[m
+[m
+       If more than one of [1m-H[22m, [1m-L [22mand [1m-P [22mis  speci‐[m
+       fied,  each  overrides  the others; the last[m
+       one appearing on the command line takes  ef‐[m
+       fect.   Since  it is the default, the [1m-P [22mop‐[m
+       tion should be considered to  be  in  effect[m
+[7mage find(1) line 136 (press h for help or q to quit)[27m[K[K       unless either [1m-H [22mor [1m-L [22mis specified.[m
+[m
+       GNU  [1mfind  [22mfrequently stats files during the[m
+       processing of the command line  itself,  be‐[m
+       fore any searching has begun.  These options[m
+       also   affect   how   those   arguments  are[m
+       processed.  Specifically, there are a number[m
+       of tests that compare files  listed  on  the[m
+       command line against a file we are currently[m
+[7mage find(1) line 145 (press h for help or q to quit)[27m[K[K       considering.   In each case, the file speci‐[m
+       fied on the command line will have been  ex‐[m
+       amined  and some of its properties will have[m
+       been saved.  If the named file is in fact  a[m
+       symbolic  link,  and the [1m-P [22moption is in ef‐[m
+       fect (or if neither [1m-H [22mnor  [1m-L  [22mwere  speci‐[m
+       fied), the information used for the compari‐[m
+       son will be taken from the properties of the[m
+       symbolic  link.  Otherwise, it will be taken[m
+[7mage find(1) line 154 (press h for help or q to quit)[27m[K[K       from the properties of  the  file  the  link[m
+       points  to.   If [1mfind [22mcannot follow the link[m
+       (for example  because  it  has  insufficient[m
+       privileges  or the link points to a nonexis‐[m
+       tent file) the properties of the link itself[m
+       will be used.[m
+[m
+       When the [1m-H [22mor [1m-L [22moptions are in effect, any[m
+       symbolic links listed  as  the  argument  of[m
+[7mage find(1) line 163 (press h for help or q to quit)[27m[K[K       [1m-newer  [22mwill  be dereferenced, and the time‐[m
+       stamp will be taken from the file  to  which[m
+       the  symbolic link points.  The same consid‐[m
+       eration applies  to  [1m-newerXY[22m,  [1m-anewer  [22mand[m
+       [1m-cnewer[22m.[m
+[m
+       The  [1m-follow  [22moption has a similar effect to[m
+       [1m-L[22m, though it  takes  effect  at  the  point[m
+       where it appears (that is, if [1m-L [22mis not used[m
+[7mage find(1) line 172 (press h for help or q to quit)[27m[K[K       but [1m-follow [22mis, any symbolic links appearing[m
+       after  [1m-follow  [22mon  the command line will be[m
+       dereferenced, and those before it will not).[m
+[m
+       -D debugopts[m
+              Print  diagnostic  information;  this[m
+              can  be  helpful to diagnose problems[m
+              with why [1mfind [22mis not doing  what  you[m
+              want.   The  list  of  debug  options[m
+[7mage find(1) line 181 (press h for help or q to quit)[27m[K[K              should be comma separated.   Compati‐[m
+              bility  of  the  debug options is not[m
+              guaranteed between releases of findu‐[m
+              tils.  For a complete list  of  valid[m
+              debug options, see the output of [1mfind[0m[m
+              [1m-D help[22m.  Valid debug options include[m
+[m
+              exec   Show   diagnostic  information[m
+                     relating to  -exec,  -execdir,[m
+[7mage find(1) line 190 (press h for help or q to quit)[27m[K[K                     -ok and -okdir[m
+[m
+              opt    Prints  diagnostic information[m
+                     relating to  the  optimisation[m
+                     of  the  expression  tree; see[m
+                     the -O option.[m
+[m
+              rates  Prints  a  summary  indicating[m
+                     how  often each predicate suc‐[m
+[7mage find(1) line 199 (press h for help or q to quit)[27m[K[K                     ceeded or failed.[m
+[m
+              search Navigate  the  directory  tree[m
+                     verbosely.[m
+[m
+              stat   Print  messages  as  files are[m
+                     examined  with  the  [1mstat  [22mand[m
+                     [1mlstat  [22msystem calls.  The [1mfind[0m[m
+                     program tries to minimise such[m
+[7mage find(1) line 208 (press h for help or q to quit)[27m[K[K                     calls.[m
+[m
+              tree   Show the  expression  tree  in[m
+                     its   original  and  optimized[m
+                     form.[m
+[m
+              all    Enable all of the other  debug[m
+                     options (but [1mhelp[22m).[m
+[m
+[7mage find(1) line 217 (press h for help or q to quit)[27m[K[K              help   Explain the debugging options.[m
+[m
+       -Olevel[m
+              Enables query optimisation.  The [1mfind[0m[m
+              program  reorders  tests  to speed up[m
+              execution while preserving the  over‐[m
+              all  effect; that is, predicates with[m
+              side effects are not reordered  rela‐[m
+              tive  to  each  other.  The optimisa‐[m
+[7mage find(1) line 226 (press h for help or q to quit)[27m[K[K              tions performed at each  optimisation[m
+              level are as follows.[m
+[m
+              0      Equivalent   to   optimisation[m
+                     level 1.[m
+[m
+              1      This is the default  optimisa‐[m
+                     tion  level and corresponds to[m
+                     the   traditional   behaviour.[m
+[7mage find(1) line 235 (press h for help or q to quit)[27m[K[K                     Expressions  are  reordered so[m
+                     that tests based only  on  the[m
+                     names  of  files  (for example[m
+                     [1m-name  [22mand  [1m-regex[22m)  are  per‐[m
+                     formed first.[m
+[m
+              2      Any  [1m-type [22mor [1m-xtype [22mtests are[m
+                     performed  after   any   tests[m
+                     based  only  on  the  names of[m
+[7mage find(1) line 244 (press h for help or q to quit)[27m[K[K                     files, but  before  any  tests[m
+                     that  require information from[m
+                     the  inode.   On  many  modern[m
+                     versions  of  Unix, file types[m
+                     are returned by [1mreaddir()  [22mand[m
+                     so these predicates are faster[m
+                     to  evaluate  than  predicates[m
+                     which need to  stat  the  file[m
+                     first.    If   you   use   the[m
+[7mage find(1) line 253 (press h for help or q to quit)[27m[K[K                     [1m-fstype [4m[22mFOO[24m   predicate    and[m
+                     specify  a filesystem type [4mFOO[0m[m
+                     which is not known  (that  is,[m
+                     present in `/etc/mtab') at the[m
+                     time  [1mfind [22mstarts, that predi‐[m
+                     cate is equivalent to [1m-false[22m.[m
+[m
+              3      At  this  optimisation  level,[m
+                     the  full cost-based query op‐[m
+[7mage find(1) line 262 (press h for help or q to quit)[27m[K[K                     timizer is enabled.  The order[m
+                     of tests is modified  so  that[m
+                     cheap  (i.e.  fast)  tests are[m
+                     performed first and  more  ex‐[m
+                     pensive   ones  are  performed[m
+                     later, if  necessary.   Within[m
+                     each cost band, predicates are[m
+                     evaluated earlier or later ac‐[m
+                     cording  to  whether  they are[m
+[7mage find(1) line 271 (press h for help or q to quit)[27m[K[K                     likely to succeed or not.  For[m
+                     [1m-o[22m,   predicates   which   are[m
+                     likely  to  succeed are evalu‐[m
+                     ated  earlier,  and  for   [1m-a[22m,[m
+                     predicates which are likely to[m
+                     fail are evaluated earlier.[m
+[m
+              The  cost-based optimizer has a fixed[m
+              idea of how likely any given test  is[m
+[7mage find(1) line 280 (press h for help or q to quit)[27m[K[K              to succeed.  In some cases the proba‐[m
+              bility  takes account of the specific[m
+              nature  of  the  test  (for  example,[m
+              [1m-type f  [22mis assumed to be more likely[m
+              to succeed than [1m-type c[22m).  The  cost-[m
+              based  optimizer  is  currently being[m
+              evaluated.  If it does  not  actually[m
+              improve  the  performance of [1mfind[22m, it[m
+              will be removed  again.   Conversely,[m
+[7mage find(1) line 289 (press h for help or q to quit)[27m[K[K              optimisations  that prove to be reli‐[m
+              able, robust and effective may be en‐[m
+              abled at  lower  optimisation  levels[m
+              over  time.  However, the default be‐[m
+              haviour (i.e. optimisation  level  1)[m
+              will  not be changed in the 4.3.x re‐[m
+              lease  series.   The  findutils  test[m
+              suite  runs  all the tests on [1mfind [22mat[m
+              each optimisation level  and  ensures[m
+[7mage find(1) line 298 (press h for help or q to quit)[27m[K[K              that the result is the same.[m
+[m
+              The  re-ordering  of  operations per‐[m
+              formed by  the  cost-based  optimizer[m
+              can  result in u
