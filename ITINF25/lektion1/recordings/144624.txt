@@ -524,4 +524,25 @@ In one hand, she holds the freshly decapitated head, possibly of the corpse upon
 
 
 
-Along with the goddess is her consort Shiva, whose light-complexioned portrayal displays a European influence. He is depicted in the form of a young sadhu, with ash smeared a
+Along with the goddess is her consort Shiva, whose light-complexioned portrayal displays a European influence. He is depicted in the form of a young sadhu, with ash smeared all over his body. He looks towards the goddess adoringly. Orange flames emanate from his mouth, and this likely indicates that he is uttering a sacred mantra. The fire also may represent prana, a divine breath of life. A halo surrounding Shiva's head is less elaborate than the one possessed by the goddess. A crescent moon floats above his head, constituting a diadem. His golden locks of hair symbolise the flowing waters of the river Ganges, and around his neck, he wears a garland consisting of skulls. Nearby stands Shiva's trident, containing upon it a rumāl and a damaru.[2][3][5][4]
+
+
+
+The painting is extended beyond the golden border into cream-colored paper. At the top of the paper, the name "Śrī Bhairavī Devī" is written in Devanagari. The cream extension contains birds flying overhead, jackals, a lion (the mount of the goddess), and rakshasa figures saluting the goddess.[2]
+
+
+
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ 
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [7mn-numbered lines are always blank)[27m^C[?2004l[?2004h[?2004l
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed ''n';'d'[C text 
+[?2004lThe Goddess Bhairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Bhairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+Background
+
+
+
+
+The painting depicts the goddess Bhairavi, a terrible avatar of Parvati. She is seated along with her consort Shiva, and is set amidst a cremation ground. There are seven burning funerary pyres, representative of the fire god Agni. The smoke from four of these pyres forms coils in the form of clouds, reaching into the otherwise sunny sky. The ground is littered with human remains in various states of decay, including skulls, bones, and decapitated heads. Carrion-eating jackals are also present.[2][3][5]
+The four-armed goddess sits upon a headless corpse. Her body is blood-red, and this color is achieved using cinnabar. She has a fierce expression, and blood pours out from her mouth. She is wearing a skirt made up of skulls and severed heads. Her earrings as well as a garland around her neck are also composed of skulls. She also wears bangles and a necklace, made out of gold, studded with jewels. A divine halo is present around her head, and she is crowned by a crescent moon. Horns in the form of spearheads rise from her jet-black hair, which reach down to her waist.[2][3][5][4]
+In one hand, she holds the freshly decapitated head, possibly of the corpse upon which she sits. This head is held by a tuft of hair, which might be a shikha. This would indicate that the head is of a brahmin, perhaps symbolizing the goddess's power over all beings, including members of the priestly class. In another hand, she is holding a sword, the style of which is typical to the reign of Shah Jahan, and which represents her destructive power. In yet another hand, she holds a trishul. Finally, her fourth hand is raised in a gesture of blessing.[2][3][5][4]
+Along with the goddess is her consort Shiva, whose light-complexioned portrayal displays a European influence. He is depicted in the form of a young sadhu, with ash smeared all over his body. He looks towards the goddess adoringly. Orange flames emanate from his mouth, and this likely indicates that he is uttering a sacred mantra. The fire also may represent prana, a divine breath of life. A halo surrounding Shiva's head is less elaborate than the one possessed by the goddess. A crescent moon floats above his head, constituting a diadem. His golden locks of hair symbolise the flowing waters of the river Ganges, and around his neck, he wears a garland consisting of skulls. Nearby stands Shiva's trident, containing upon it a rumāl and a damaru.[2][3][5][4]
+The painting is extended 
