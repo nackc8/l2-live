@@ -1140,4 +1140,30 @@ An inscription on the back of the painting notes that it was part of the royal  
 [7m Manual page sed(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              to [4mlabel[24m; if [4mlabel[24m is omitted, branch to end of script.  This is[m
 [7m Manual page sed(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a GNU extension.[m
 [7m Manual page sed(1) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page sed(1) line 181 (press h for he
+[7m Manual page sed(1) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       w [4mfilename[0m[m
+[7m Manual page sed(1) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Write the current pattern space to [4mfilename[24m.[m
+[7m Manual page sed(1) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       W [4mfilename[0m[m
+[7m Manual page sed(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Write  the  first line of the current pattern space to [4mfilename[24m.[m
+[7m Manual page sed(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This is a GNU extension.[m
+[7m Manual page sed(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       x      Exchange the contents of the hold and pattern spaces.[m
+[7m Manual page sed(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       y/[4msource[24m/[4mdest[24m/[m
+[7m Manual page sed(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Transliterate the characters in the pattern space  which  appear[m
+[7m Manual page sed(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in [4msource[24m to the corresponding character in [4mdest[24m.[m
+[7m Manual page sed(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAddresses[0m[m
+[7m Manual page sed(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              If no s/// has done a successful substitution since the last in‐[m
+[19;1H[K[7m Manual page sed(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       T [4mlabel[0m[m
+[19;1H[K[7m Manual page sed(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[19;1H[K[7m Manual page sed(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              to [4mlabel[24m; if [4mlabel[24m is omitted, branch to end of script.[m
+[19;1H[K[7m Manual page sed(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              put line was read and since the last t or T command, then branch[m
+[19;1H[K[7m Manual page sed(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              If a s/// has done a successful substitution since the last  in‐[m
+[19;1H[K[7m Manual page sed(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       y/[4msource[24m/[4mdest[24m/[m
+[7m Manual page sed(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Transliterate the characters in the pattern space  which  appear[m
+[7m Manual page sed(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in [4msource[24m to the corresponding character in [4mdest[24m.[m
+[7m Manual page sed(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAddresses[0m[m
+[7m Manual page sed(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB
