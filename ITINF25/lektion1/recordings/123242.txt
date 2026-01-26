@@ -98,4 +98,52 @@ Change: 2026-01-26 12:48:10.881706399 +0100
 [?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ ls ../
 [?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
 [01;34mDocuments[0m  hej.txt    [01;34mPictures[0m  [01;34mTemplates[0m
-[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb1
+[?2004h]0;kent@deb13: ~/Desktop[01;32mkent@deb13[00m:[01;34m~/Desktop[00m$ cd ..
+[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[01;34mDocuments[0m  hej.txt    [01;34mPictures[0m  [01;34mTemplates[0m
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ cd Documents/
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ln -s ../hej.txt gsgywg[K[K[K[K[K[Kgurka.txt
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls 0[K/[K-l[H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls -l
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [0m[01;36mgurka.txt[0m -> ../hej.txt
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ stat [K[K[K[K[Kcat gurka.txt 
+[?2004lHELLO
+
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv ../hej.txt HEJ[K[K[K../HOJ.txt
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv ../hej.txt ../HOJ.txt[10Pcat gurka.txt [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ cat gurka.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[Kls -0l[K[Kl
+[?2004ltotal 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 [0m[40;31;01mgurka.txt[0m -> [40;31;01m../hej.txt[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ cat gurka.txt 
+[?2004lcat: gurka.txt: No such file or directory
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv ../he[K[KHOJ.txt ../hejk.t[K[K[K.txt
+[?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ mv ../HOJ.txt ../hej.txt[10Pcat gurka.txt 
+[?2004lHELLO
+
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004l[0m[01;36mgurka.txt[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ stat gurka.txt 
+[?2004l  File: gurka.txt -> ../hej.txt
+  Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,2	Inode: 1180364     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:50:27.256546461 +0100
+Modify: 2026-01-26 12:50:05.464095576 +0100
+Change: 2026-01-26 12:50:05.464095576 +0100
+ Birth: 2026-01-26 12:50:05.464095576 +0100
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ stat 
+[?2004lstat: missing operand
+Try 'stat --help' for more information.
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ /[Ksytat[K[K[K[Ktat ../hej.txt [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ stat ../hej.txt 
+[?2004l  File: ../hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:52:39.499285251 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:52:27.823043264 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ ls
+[?2004l[0m[01;36mgurka.txt[0m
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:
