@@ -928,4 +928,15 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Jan 26 15:36:52 2026 from 10.0.2.2
 [?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ 
-[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ l[K[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ echo $VAS[K[K[KBASH
+[?2004l/bin/bash
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ (reverse-i-search)`': [Ks': sudo usermod -s /usr/bin/z[7ms[27mh kent[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u': [7msu[27mdo usermod -s /usr/bin/zs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@d': [7msud[27m[1@o': [7msudo[27m[12P]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C      ^C[?2004l[?2004h[?2004l
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ newgrp sudo[K[K[K[K[K[K[K[K[K[K[K[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [?2004l
+logout
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion1
+(B[m$ [?2004l
+exit
+
+Script done on 2026-01-26 15:50:46+01:00 [COMMAND_EXIT_CODE="130"]

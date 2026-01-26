@@ -1,0 +1,2404 @@
+Script started on 2026-01-26 12:33:07+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="165" LINES="23"]
+ITINF25/lektion1
+$ ITINF25/lektion1
+$ pwd
+/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion1
+ITINF25/lektion1
+$ lsITINF25/lektion1
+$ ls
+recordings
+ITINF25/lektion1
+$ code .
+ITINF25/lektion1
+$ ls -a
+.  ..  recordings
+ITINF25/lektion1
+ls -ITINF25/lektion1
+$ ls -l
+total 4
+drwxr-xr-x 2 kent kent 4096 26 jan 12.33 recordings
+ITINF25/lektion1
+$ ssh -p 11022 kent@localhosts': ssh -p 11022 kent@localhosth': ssh -p 11022 kent@localhost
+
+Warning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 01:39:38 2026 from 10.0.2.2
+0;kent@deb13: ~
+kent@deb13:~$ 0;kent@deb13: ~
+kent@deb13:~$ nano hej.txt
+>0;kent@deb13: ~ej.txt [ Writing... ] [ Wrote 2 lines ]
+kent@deb13:~$ ls -l
+total 36
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Desktop
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Documents
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Downloads
+-rw-rw-r-- 1 kent kent    7 jan 26 12:45 hej.txt
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Music
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Pictures
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Public
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Templates
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 Videos
+0;kent@deb13: ~
+0;kent@deb13: ~
+kent@deb13:~$ 0;kent@deb13: ~
+kent@deb13:~$ stat hej.txt 
+  File: hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:45:05.137802663 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+0;kent@deb13: ~
+kent@deb13:~$ 
+0;kent@deb13: ~
+kent@deb13:~$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  hej.txt    Pictures  Templates
+0;kent@deb13: ~
+kent@deb13:~$ cd Desktop/
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ ln0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ man ln
+LN(1)              User Commands              LN(1)
+
+NAME
+       ln - make links between files
+
+SYNOPSIS
+       ln [OPTION]... [-T] TARGET LINK_NAME
+       ln [OPTION]... TARGET
+       ln [OPTION]... TARGET... DIRECTORY
+       ln [OPTION]... -t DIRECTORY TARGET...to quit)
+ ESESCOBln(1) line 2 (press h for help or q to quit)
+DESCRIPTION1) line 3 (press h for help or q to quit)
+       In  the  1st  form,  create a link to TARGET)
+>0;kent@deb13: ~/Desktopess h for help or q to quit)
+kent@deb13:~/Desktop$ ln ../hej.txt 
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ ls
+hej.txt
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ stat hej.txt 0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ stat hej.txt 
+  File: hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:47:34.212936558 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ 0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ ls
+hej.txt
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ mv hej.txt ojsan.txt
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ stat ojsan.txt 
+  File: ojsan.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:45:05.137802663 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:48:10.881706399 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ 0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ ls
+ojsan.txt
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ ls ../
+Desktop    Downloads  Music     Public     Videos
+Documents  hej.txt    Pictures  Templates
+0;kent@deb13: ~/Desktop
+kent@deb13:~/Desktop$ cd ..
+0;kent@deb13: ~
+kent@deb13:~$ 0;kent@deb13: ~
+kent@deb13:~$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  hej.txt    Pictures  Templates
+0;kent@deb13: ~
+kent@deb13:~$ cd Documents/
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ln -s ../hej.txt gsgywgurka.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l
+total 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ stat
+
+
+
+
+
+cat gurka.txt 
+HELLO
+
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv ../hej.txt HE../HOJ.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv ../hej.txt ../HOJ.txcat gurka.txt 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ cat gurka.txt
+
+
+
+
+
+ls -0l
+total 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ cat gurka.txt 
+cat: gurka.txt: No such file or directory
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv ../h
+e
+HOJ.txt ../hejk..txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv ../HOJ.txt ../hej.txcat gurka.txt 
+HELLO
+
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls
+gurka.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ stat gurka.txt 
+  File: gurka.txt -> ../hej.txt
+  Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,2	Inode: 1180364     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:50:27.256546461 +0100
+Modify: 2026-01-26 12:50:05.464095576 +0100
+Change: 2026-01-26 12:50:05.464095576 +0100
+ Birth: 2026-01-26 12:50:05.464095576 +0100
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ stat 
+stat: missing operand
+Try 'stat --help' for more information.
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ /
+
+sytatat ../hej.txt 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ stat ../hej.txt 
+  File: ../hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 1180365     Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/    kent)   Gid: ( 1000/    kent)
+Access: 2026-01-26 12:52:39.499285251 +0100
+Modify: 2026-01-26 12:45:05.137802663 +0100
+Change: 2026-01-26 12:52:27.823043264 +0100
+ Birth: 2026-01-26 12:45:05.137802663 +0100
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls
+gurka.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l
+total 0
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents
+an.txteb13:~/Documents$ ln -s /home/kent/hej.txt ban 
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documentsn -s /home/kent/hej.txt banan.txt
+kent@deb13:~/Documents$ s -l
+
+total 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 banan.txt -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l
+total 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 banan.txt -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mkdir underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv banan.txt gurka.txt underkat/
+
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l
+total 4
+drwxrwxr-x 2 kent kent 4096 jan 26 12:55 underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ cd underkat/
+0;kent@deb13: ~/Documents/underkat
+kent@deb13:~/Documents/underkat$ 0;kent@deb13: ~/Documents/underkat
+kent@deb13:~/Documents/underkat$ cd underkatcd underkatls -l
+total 0
+lrwxrwxrwx 1 kent kent 18 jan 26 12:54 banan.txt -> /home/kent/hej.txt
+lrwxrwxrwx 1 kent kent 10 jan 26 12:50 gurka.txt -> ../hej.txt
+0;kent@deb13: ~/Documents/underkat
+kent@deb13:~/Documents/underkat$ ls ../
+underkat
+0;kent@deb13: ~/Documents/underkat
+kent@deb13:~/Documents/underkat$ 0;kent@deb13: ~/Documents/underkat
+kent@deb13:~/Documents/underkat$ cd ..
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   30G  0 disk 
+├─sda1   8:1    0  976M  0 part /boot/efi
+├─sda2   8:2    0 27,5G  0 part /
+└─sda3   8:3    0  1,6G  0 part [SWAP]
+sr0     11:0    1 1024M  0 rom  
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -a
+.  ..  underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ tocuuch tom1
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ nano tom2
+>0;kent@deb13: ~/Documentslace   ^U Pasteom2                      
+kent@deb13:~/Documents$ vim tom3
+-bash: vim: command not found
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ehccho
+
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ echo >0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ echo >tom1 
+4
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ echo >tom >tom- >tomn >tom
+5
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ te
+ls
+tom1  tom4  tom5  underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv tom4 underkatrkat
+tom5/0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mv tom4 tom5/
+mv: cannot stat 'tom5/': Not a directory
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls
+tom1  tom4  tom5  underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mkdir a b
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ touch a/innehall
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ rmdir a
+rmdir: failed to remove 'a': Directory not empty
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ rmdir b
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ rm --r a
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ man find
+FIND(1)       General Commands Manual       FIND(1)
+
+NAME
+       find - search for files in a directory hier‐
+       archy
+
+SYNOPSIS
+       find [-H] [-L] [-P] [-D debugopts] [-Olevel]
+       [starting-point...] [expression]
+ page find(1) line 1 (press h for help or q to quit)
+DESCRIPTION
+       This  manual  page documents the GNU version
+       of find.  GNU find  searches  the  directory
+       tree  rooted at each given starting-point by
+       evaluating the given expression from left to
+       right, according to the rules of  precedence
+       (see  section  OPERATORS), until the outcome
+       is known (the left hand side  is  false  for
+       and operations, true for or), at which point)
+       find  moves on to the next file name.  If no
+       starting-point is specified, `.' is assumed.
+
+       If you are  using  find  in  an  environment
+       where  security is important (for example if
+       you are using it to search directories  that
+       are  writable  by  other  users), you should
+       read the `Security  Considerations'  chapter
+       of  the  findutils  documentation,  which is)
+       called Finding Files and comes  with  findu‐
+       tils.   That  document  also  includes a lot
+       more detail and discussion than this  manual
+       page,  so  you  may  find  it  a more useful
+       source of information.
+
+OPTIONS
+       The -H, -L and -P options control the treat‐
+       ment of symbolic links.  Command-line  argu‐
+       ments  following these are taken to be names
+       of files or directories to be  examined,  up
+       to  the first argument that begins with `-',
+       or the argument `(' or `!'.   That  argument
+       and  any following arguments are taken to be
+       the expression  describing  what  is  to  be
+       searched  for.   If  no paths are given, the
+       current directory is used.  If no expression
+       is given, the expression -print is used (but)
+       you should probably consider  using  -print0
+       instead, anyway).
+
+       This   manual  page  talks  about  `options'
+       within the expression list.   These  options
+       control the behaviour of find but are speci‐
+       fied  immediately  after the last path name.
+       The five `real' options -H, -L, -P,  -D  and
+       -O  must  appear before the first path name,)
+       if at all.  A double dash -- could theoreti‐
+       cally be used to signal that  any  remaining
+       arguments are not options, but this does not
+       really  work  due to the way find determines
+       the end of the following path arguments:  it
+       does that by reading until an expression ar‐
+       gument comes (which also starts with a `-').
+       Now,  if  a path argument would start with a
+       `-', then find would treat it as  expression)
+       argument  instead.  Thus, to ensure that all
+       start points are taken as  such,  and  espe‐
+       cially to prevent that wildcard patterns ex‐
+       panded  by the calling shell are not mistak‐
+       enly treated as expression arguments, it  is
+       generally safer to prefix wildcards or dubi‐
+       ous  path  names  with either `./' or to use
+       absolute path names starting with '/'.   Al‐
+       ternatively,  it  is  generally  safe though)
+       non-portable   to   use   the   GNU   option
+       -files0-from   to  pass  arbitrary  starting
+       points to find.
+
+       -P     Never follow symbolic links.  This is
+              the default behaviour.  When find ex‐
+              amines or  prints  information  about
+              files,  and  the  file  is a symbolic
+              link, the information used  shall  be)
+              taken from the properties of the sym‐
+              bolic link itself.
+
+       -L     Follow symbolic links.  When find ex‐
+              amines  or  prints  information about
+              files, the information used shall  be
+              taken from the properties of the file
+              to  which  the  link points, not from
+              the link itself (unless it is a  bro‐
+              ken  symbolic  link or find is unable
+              to examine the file to which the link
+              points).  Use of this option  implies
+              -noleaf.  If you later use the -P op‐
+              tion,  -noleaf  will  still be in ef‐
+              fect.  If -L is in  effect  and  find
+              discovers a symbolic link to a subdi‐
+              rectory during its search, the subdi‐
+              rectory  pointed  to  by the symbolic)
+              link will be searched.
+
+              When the -L option is in effect,  the
+              -type  predicate  will  always  match
+              against the type of the file  that  a
+              symbolic  link  points to rather than
+              the link itself (unless the  symbolic
+              link  is  broken).   Actions that can
+              cause symbolic links to become broken)
+              while find is executing (for  example
+              -delete)  can  give rise to confusing
+              behaviour.   Using  -L   causes   the
+              -lname  and -ilname predicates always
+              to return false.
+
+       -H     Do not follow symbolic links,  except
+              while processing the command line ar‐
+              guments.    When   find  examines  or)
+              prints information about  files,  the
+              information  used shall be taken from
+              the properties of the  symbolic  link
+              itself.   The  only exception to this
+              behaviour is when a file specified on
+              the command line is a symbolic  link,
+              and  the  link  can be resolved.  For
+              that situation, the information  used
+              is   taken  from  whatever  the  link)
+              points to (that is, the link is  fol‐
+              lowed).   The  information  about the
+              link itself is used as a fallback  if
+              the  file  pointed to by the symbolic
+              link cannot be examined.  If -H is in
+              effect and one of the paths specified
+              on the command  line  is  a  symbolic
+              link  to a directory, the contents of
+              that  directory  will   be   examined)
+              (though  of  course -maxdepth 0 would
+              prevent this).
+
+       If more than one of -H, -L and -P is  speci‐
+       fied,  each  overrides  the others; the last
+       one appearing on the command line takes  ef‐
+       fect.   Since  it is the default, the -P op‐
+       tion should be considered to  be  in  effect
+       unless either -H or -L is specified. to quit)
+
+       GNU  find  frequently stats files during the
+       processing of the command line  itself,  be‐
+       fore any searching has begun.  These options
+       also   affect   how   those   arguments  are
+       processed.  Specifically, there are a number
+       of tests that compare files  listed  on  the
+       command line against a file we are currently
+       considering.   In each case, the file speci‐
+       fied on the command line will have been  ex‐
+       amined  and some of its properties will have
+       been saved.  If the named file is in fact  a
+       symbolic  link,  and the -P option is in ef‐
+       fect (or if neither -H nor  -L  were  speci‐
+       fied), the information used for the compari‐
+       son will be taken from the properties of the
+       symbolic  link.  Otherwise, it will be taken
+       from the properties of  the  file  the  link)
+       points  to.   If find cannot follow the link
+       (for example  because  it  has  insufficient
+       privileges  or the link points to a nonexis‐
+       tent file) the properties of the link itself
+       will be used.
+
+       When the -H or -L options are in effect, any
+       symbolic links listed  as  the  argument  of
+       -newer  will  be dereferenced, and the time‐
+       stamp will be taken from the file  to  which
+       the  symbolic link points.  The same consid‐
+       eration applies  to  -newerXY,  -anewer  and
+       -cnewer.
+
+       The  -follow  option has a similar effect to
+       -L, though it  takes  effect  at  the  point
+       where it appears (that is, if -L is not used
+       but -follow is, any symbolic links appearing)
+       after  -follow  on  the command line will be
+       dereferenced, and those before it will not).
+
+       -D debugopts
+              Print  diagnostic  information;  this
+              can  be  helpful to diagnose problems
+              with why find is not doing  what  you
+              want.   The  list  of  debug  options
+              should be comma separated.   Compati‐
+              bility  of  the  debug options is not
+              guaranteed between releases of findu‐
+              tils.  For a complete list  of  valid
+              debug options, see the output of find
+              -D help.  Valid debug options include
+
+              exec   Show   diagnostic  information
+                     relating to  -exec,  -execdir,
+                     -ok and -okdirelp or q to quit)
+
+              opt    Prints  diagnostic information
+                     relating to  the  optimisation
+                     of  the  expression  tree; see
+                     the -O option.
+
+              rates  Prints  a  summary  indicating
+                     how  often each predicate suc‐
+                     ceeded or failed. or q to quit)
+
+              search Navigate  the  directory  tree
+                     verbosely.
+
+              stat   Print  messages  as  files are
+                     examined  with  the  stat  and
+                     lstat  system calls.  The find
+                     program tries to minimise such
+                     calls. h for help or q to quit)
+
+              tree   Show the  expression  tree  in
+                     its   original  and  optimized
+                     form.
+
+              all    Enable all of the other  debug
+                     options (but help).
+
+              help   Explain the debugging options.)
+
+       -Olevel
+              Enables query optimisation.  The find
+              program  reorders  tests  to speed up
+              execution while preserving the  over‐
+              all  effect; that is, predicates with
+              side effects are not reordered  rela‐
+              tive  to  each  other.  The optimisa‐
+              tions performed at each  optimisation)
+              level are as follows.
+
+              0      Equivalent   to   optimisation
+                     level 1.
+
+              1      This is the default  optimisa‐
+                     tion  level and corresponds to
+                     the   traditional   behaviour.
+                     Expressions  are  reordered so)
+                     that tests based only  on  the
+                     names  of  files  (for example
+                     -name  and  -regex)  are  per‐
+                     formed first.
+
+              2      Any  -type or -xtype tests are
+                     performed  after   any   tests
+                     based  only  on  the  names of
+                     files, but  before  any  tests)
+                     that  require information from
+                     the  inode.   On  many  modern
+                     versions  of  Unix, file types
+                     are returned by readdir()  and
+                     so these predicates are faster
+                     to  evaluate  than  predicates
+                     which need to  stat  the  file
+                     first.    If   you   use   the
+                     -fstype FOO   predicate    and)
+                     specify  a filesystem type FOO
+                     which is not known  (that  is,
+                     present in `/etc/mtab') at the
+                     time  find starts, that predi‐
+                     cate is equivalent to -false.
+
+              3      At  this  optimisation  level,
+                     the  full cost-based query op‐
+                     timizer is enabled.  The order)
+                     of tests is modified  so  that
+                     cheap  (i.e.  fast)  tests are
+                     performed first and  more  ex‐
+                     pensive   ones  are  performed
+                     later, if  necessary.   Within
+                     each cost band, predicates are
+                     evaluated earlier or later ac‐
+                     cording  to  whether  they are
+                     likely to succeed or not.  For)
+                     -o,   predicates   which   are
+                     likely  to  succeed are evalu‐
+                     ated  earlier,  and  for   -a,
+                     predicates which are likely to
+                     fail are evaluated earlier.
+
+              The  cost-based optimizer has a fixed
+              idea of how likely any given test  is
+              to succeed.  In some cases the proba‐
+              bility  takes account of the specific
+              nature  of  the  test  (for  example,
+              -type f  is assumed to be more likely
+              to succeed than -type c).  The  cost-
+              based  optimizer  is  currently being
+              evaluated.  If it does  not  actually
+              improve  the  performance of find, it
+              will be removed  again.   Conversely,
+              optimisations  that prove to be reli‐
+              able, robust and effective may be en‐
+              abled at  lower  optimisation  levels
+              over  time.  However, the default be‐
+              haviour (i.e. optimisation  level  1)
+              will  not be changed in the 4.3.x re‐
+              lease  series.   The  findutils  test
+              suite  runs  all the tests on find at
+              each optimisation level  and  ensures
+              that the result is the same.q to quit)
+
+              The  re-ordering  of  operations per‐
+              formed by  the  cost-based  optimizer
+              can  result in user-visible behaviour
+              change.  For example,  the  -readable
+              and  -empty  predicates are sensitive
+              to re-ordering.  If they are  run  in
+              the  order -empty -readable, an error
+              message will be issued for unreadable)
+              directories.  If they are run in  the
+              order  -readable -empty no error mes‐
+              sage will be issued. This is the rea‐
+              son why such operation re-ordering is
+              not performed at the default  optimi‐
+              sation level.
+
+EXPRESSION
+       The  part of the command line after the list)
+       of starting points is the expression.   This
+       is  a kind of query specification describing
+       how we match files and what we do  with  the
+       files  that  were matched.  An expression is
+       composed of a sequence of things:
+
+       Tests  Tests return a true or  false  value,
+              usually on the basis of some property
+>0;kent@deb13: ~/Documentss h for help or q to quit)
+kent@deb13:~/Documents$ find ~ -iname '**b*a*s*h*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/home/kent/.bash_history
+/home/kent/.bashrc
+/home/kent/.bash_logout
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ umask
+0002
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ tocuhuch nyfil
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l nyfil 
+-rw-rw-r-- 1 kent kent 0 jan 26 13:51 nyfil
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ mkdir nykat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls -l ny
+katd nyka
+/
+drwxrwxr-x 2 kent kent 4096 jan 26 13:53 nykat/
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ls
+nyfil  nykat  tom1  tom4  tom5  underkat
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ ma
+nano text
+>0;kent@deb13: ~/Documentsting... ] [ Wrote 22 lines ]l    M-M Mac FormaM-P Prepend  ^T Browse             Y Yeskground she holds the freshly decapitated head>MMThe four-armed goddess sits upon a headless corpse.>MMThe painting depicts the goddess Bhairavi, a terrib>MShiva is depicted in the form of a light-complexion>MMThe blood-red goddess is seated upon a headless cor>MMDescription
+kent@deb13:~/Documents$ 
+
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ less text 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ less text 
+The Goddess Bhairavi Devi with Shiva is a 17th-century Mughal painting, attributed to the artist Payag. It depicts the goddess Bhairavi along with her consort Shiva, and is set in a cremation ground. It is now in the Metropolitan Museum of Art.[1]
+
+Background
+Mughal paintings from the reign of the emperor Akbar depicting Hindu subjects are common, since the emperor commissioned many illuminated manuscripts regarding Hindu topics. This painting, however, is a late Mughal work, datable to around 1630–35, during the reign of the emperor Shah Jahan. Hindu portrayals during the art of this period are rare, and a Shaivite image such as this would have been seen as heretical, and would not have been commissioned for a royal album.[2][3]
+
+>0;kent@deb13: ~/Documents of the painting notes that it was part of the royal collection of the Kingdom of Mewar. This has led to the hypothesis that the work might have been commissioned by Shah Jahan as a gift to Jagat Singh I, the ruler of Mewar, and an important ally of the emperor. It is known that Jagat Singtext
+kent@deb13:~/Documents$ sed 'substaitue()^C
+0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ 0;kent@deb13: ~/Documents
+kent@deb13:~/Documents$ man sed
+SED(1)                           User Commands                          SED(1)
+
+NAME
+       sed - stream editor for filtering and transforming text
+
+SYNOPSIS
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent]
+           [-l N] [--line-length=N] [-u] [--unbuffered]
+           [-E] [-r] [--regexp-extended]
+           [-e script] [--expression=script]
+           [-f script-file] [--file=script-file]
+           [script-if-no-other-script]
+           [file...]
+
+DESCRIPTION
+       Sed  is a stream editor.  A stream editor is used to perform basic text
+       transformations on an input stream (a file or input from  a  pipeline).
+       While  in  some  ways similar to an editor which permits scripted edits
+ ESESCOApage sed(1) line 1 (press h for help or q to quit)
+       (such as ed), sed works by making only one pass over the input(s),  and
+       is consequently more efficient.  But it is sed's ability to filter text
+       in  a  pipeline which particularly distinguishes it from other types of
+       editors.
+
+       -n, --quiet, --silent
+
+              suppress automatic printing of pattern space
+
+       --debug
+
+              annotate program execution
+
+       -e script, --expression=script
+
+              add the script to the commands to be executed
+
+       -f script-file, --file=script-file
+ ESESCOBpage sed(1) line 19 (press h for help or q to quit)
+              add the contents of script-file to the commands to be executed
+
+       --follow-symlinks
+
+              follow symlinks when processing in place
+
+       -i[SUFFIX], --in-place[=SUFFIX]
+
+              edit files in place (makes backup if SUFFIX supplied)
+
+       -l N, --line-length=N
+
+              specify the desired line-wrap length for the `l' command
+
+       --posix
+
+              disable all GNU extensions.
+
+       -E, -r, --regexp-extendedss h for help or q to quit)
+
+              use extended regular expressions in the script (for  portability
+              use POSIX -E).
+
+       -s, --separate
+
+              consider  files  as separate rather than as a single, continuous
+              long stream.
+
+       --sandbox
+
+              operate in sandbox mode (disable e/r/w commands).
+
+       -u, --unbuffered
+
+              load minimal amounts of data from the input files and flush  the
+              output buffers more often
+ Manual page sed(1) line 56 (press h for help or q to quit)
+       -z, --null-data
+
+              separate lines by NUL characters
+
+       --help
+              display this help and exit
+
+       --version
+              output version information and exit
+
+       If  no  -e, --expression, -f, or --file option is given, then the first
+       non-option argument is taken as the sed script to interpret.   All  re‐
+       maining arguments are names of input files; if no input files are spec‐
+       ified, then the standard input is read.
+
+       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help
+       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports
+       to: <bug-sed@gnu.org>.press h for help or q to quit)
+
+       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐
+       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐
+       censes/gpl.html>.   This  is  free software: you are free to change and
+       redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+COMMAND SYNOPSIS
+       This is just a brief synopsis of sed commands to serve as a reminder to
+       those who already know sed; other documentation (such  as  the  texinfo
+       document) must be consulted for fuller descriptions.
+
+   Zero-address ``commands''
+       : label
+              Label for b and t commands.
+
+       #comment
+              The  comment  extends until the next newline (or the end of a -e
+              script fragment).ess h for help or q to quit)
+ ESESCOBpage sed(1) line 93 (press h for help or q to quit)
+       }      The closing bracket of a { } block.q to quit)
+ ESESCOBpage sed(1) line 95 (press h for help or q to quit)
+   Zero- or One- address commandss h for help or q to quit)
+       =      Print the current line number.p or q to quit)
+ ESESCOBpage sed(1) line 98 (press h for help or q to quit)
+       a \ge sed(1) line 99 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 100 (press h for help or q to quit)
+       text   Append text, which has each embedded newline preceded by a back‐
+              slash.line 102 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 103 (press h for help or q to quit)
+       i \ge sed(1) line 104 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 105 (press h for help or q to quit)
+       text   Insert text, which has each embedded newline preceded by a back‐
+              slash.line 107 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 108 (press h for help or q to quit)
+       q [exit-code]line 109 (press h for help or q to quit)
+              Immediately quit the sed script without processing any more  in‐
+              put,  except that if auto-print is not disabled the current pat‐
+              tern space will be printed.  The exit code argument is a GNU ex‐
+              tension.ne 113 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 114 (press h for help or q to quit)
+       Q [exit-code]line 115 (press h for help or q to quit)
+              Immediately quit the sed script without processing any more  in‐
+              put.  This is a GNU extension.lp or q to quit)
+ ESESCOBpage sed(1) line 118 (press h for help or q to quit)
+       r filename1) line 119 (press h for help or q to quit)
+              Append text read from filename.p or q to quit)
+ ESESCOBpage sed(1) line 121 (press h for help or q to quit)
+       R filename1) line 122 (press h for help or q to quit)
+              Append  a  line read from filename.  Each invocation of the com‐
+              mand reads a line from the file.  This is a GNU extension.
+ ESESCOBpage sed(1) line 125 (press h for help or q to quit)
+   Commands which accept address rangesor help or q to quit)
+       {      Begin a block of commands (end with a }).quit)
+ ESESCOBpage sed(1) line 128 (press h for help or q to quit)
+       b labeled(1) line 129 (press h for help or q to quit)
+              Branch to label; if label is omitted, branch to end of script.
+ ESESCOBpage sed(1) line 131 (press h for help or q to quit)
+       c \ge sed(1) line 132 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 133 (press h for help or q to quit)
+       text   Replace the selected lines with text, which  has  each  embedded
+              newline preceded by a backslash. or q to quit)
+ ESESCOBpage sed(1) line 136 (press h for help or q to quit)
+       d      Delete pattern space.  Start next cycle. quit)
+ ESESCOBpage sed(1) line 138 (press h for help or q to quit)
+       D      If  pattern  space contains no newline, start a normal new cycle
+              as if the d command was issued.  Otherwise, delete text  in  the
+              pattern  space  up  to the first newline, and restart cycle with
+              the resultant pattern space, without reading a new line  of  in‐
+              put.) line 143 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 144 (press h for help or q to quit)
+       h H    Copy/append pattern space to hold space. quit)
+ ESESCOBpage sed(1) line 146 (press h for help or q to quit)
+       g G    Copy/append hold space to pattern space. quit)
+ ESESCOBpage sed(1) line 148 (press h for help or q to quit)
+       l      List out the current line in a ``visually unambiguous'' form.
+ ESESCOBpage sed(1) line 150 (press h for help or q to quit)
+       l widthed(1) line 151 (press h for help or q to quit)
+              List  out  the  current line in a ``visually unambiguous'' form,
+              breaking it at width characters.  This is a GNU extension.
+ ESESCOBpage sed(1) line 154 (press h for help or q to quit)
+       n N    Read/append the next line of input into the pattern space.
+ ESESCOBpage sed(1) line 156 (press h for help or q to quit)
+       p      Print the current pattern space. or q to quit)
+ ESESCOBpage sed(1) line 158 (press h for help or q to quit)
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.line 160 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 161 (press h for help or q to quit)
+       s/regexp/replacement/ (press h for help or q to quit)
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+              placement  may  contain the special character & to refer to that
+              portion of the pattern space which matched, and the special  es‐
+              capes  \1 through \9 to refer to the corresponding matching sub-
+              expressions in the regexp.r help or q to quit)
+ ESESCOBpage sed(1) line 169 (press h for help or q to quit)
+       t labeled(1) line 170 (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+M              breaking it at width characters.  This is a GNU extension.
+M              List  out  the  current line in a ``visually unambiguous'' form,
+M       l widthd(1) line 170 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 169 (press h for help or q to quit)
+       t labeled(1) line 170 (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+ ESESCOBpage sed(1) line 174 (press h for help or q to quit)
+       T labeled(1) line 175 (press h for help or q to quit)
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.press h for help or q to quit)
+ ESESCOBpage sed(1) line 180 (press h for help or q to quit)
+       w filename1) line 181 (press h for help or q to quit)
+              Write the current pattern space to filename.t)
+ ESESCOBpage sed(1) line 183 (press h for help or q to quit)
+       W filename1) line 184 (press h for help or q to quit)
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.for help or q to quit)
+ ESESCOBpage sed(1) line 187 (press h for help or q to quit)
+       x      Exchange the contents of the hold and pattern spaces.
+ ESESCOBpage sed(1) line 189 (press h for help or q to quit)
+       y/source/dest/ine 190 (press h for help or q to quit)
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+ ESESCOBpage sed(1) line 193 (press h for help or q to quit)
+M       T labeld(1) line 194 (press h for help or q to quit)
+MESESCOApage sed(1) line 193 (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.
+M              put line was read and since the last t or T command, then branch
+M              If a s/// has done a successful substitution since the last  in‐
+M       t labeld(1) line 189 (press h for help or q to quit)
+MESESCOApage sed(1) line 188 (press h for help or q to quit)
+M              expressions in the regexp. help or q to quit)
+M              capes  \1 through \9 to refer to the corresponding matching sub-
+M              portion of the pattern space which matched, and the special  es‐
+M              placement  may  contain the special character & to refer to that
+M              ful, replace that portion matched  with  replacement.   The  re‐
+M              Attempt  to match regexp against the pattern space.  If success‐
+M       s/regexp/replacement/(press h for help or q to quit)
+MESESCOApage sed(1) line 180 (press h for help or q to quit)
+M              space.ine 179 (press h for help or q to quit)
+M       P      Print up to the first embedded newline of  the  current  pattern
+MESESCOApage sed(1) line 177 (press h for help or q to quit)
+M       p      Print the current pattern space.or q to quit)
+MESESCOApage sed(1) line 175 (press h for help or q to quit)
+M       n N    Read/append the next line of input into the pattern space.
+MESESCOApage sed(1) line 173 (press h for help or q to quit)
+M              breaking it at width characters.  This is a GNU extension.
+M              List  out  the  current line in a ``visually unambiguous'' form,
+M       l widthd(1) line 170 (press h for help or q to quit)
+MESESCOApage sed(1) line 169 (press h for help or q to quit)
+M       l      List out the current line in a ``visually unambiguous'' form.
+MESESCOApage sed(1) line 167 (press h for help or q to quit)
+M       g G    Copy/append hold space to pattern space.quit)
+MESESCOApage sed(1) line 165 (press h for help or q to quit)
+M       h H    Copy/append pattern space to hold space.quit)
+MESESCOApage sed(1) line 163 (press h for help or q to quit)
+M              put. line 162 (press h for help or q to quit)
+M              the resultant pattern space, without reading a new line  of  in‐
+M              pattern  space  up  to the first newline, and restart cycle with
+M              as if the d command was issued.  Otherwise, delete text  in  the
+M       D      If  pattern  space contains no newline, start a normal new cycle
+MESESCOApage sed(1) line 157 (press h for help or q to quit)
+M       d      Delete pattern space.  Start next cycle.quit)
+MESESCOApage sed(1) line 155 (press h for help or q to quit)
+M              newline preceded by a backslash.or q to quit)
+M       text   Replace the selected lines with text, which  has  each  embedded
+MESESCOApage sed(1) line 152 (press h for help or q to quit)
+M       c \e sed(1) line 151 (press h for help or q to quit)
+MESESCOApage sed(1) line 150 (press h for help or q to quit)
+M              Branch to label; if label is omitted, branch to end of script.
+M       b labeld(1) line 148 (press h for help or q to quit)
+MESESCOApage sed(1) line 147 (press h for help or q to quit)
+M       {      Begin a block of commands (end with a }).uit)
+M   Commands which accept address rangesr help or q to quit)
+MESESCOApage sed(1) line 144 (press h for help or q to quit)
+M              mand reads a line from the file.  This is a GNU extension.
+M              Append  a  line read from filename.  Each invocation of the com‐
+M       R filename) line 141 (press h for help or q to quit)
+MESESCOApage sed(1) line 140 (press h for help or q to quit)
+M              Append text read from filename. or q to quit)
+M       r filename) line 138 (press h for help or q to quit)
+MESESCOApage sed(1) line 137 (press h for help or q to quit)
+M              put.  This is a GNU extension.p or q to quit)
+M              Immediately quit the sed script without processing any more  in‐
+M       Q [exit-code]ine 134 (press h for help or q to quit)
+MESESCOApage sed(1) line 133 (press h for help or q to quit)
+M              tension.e 132 (press h for help or q to quit)
+M              tern space will be printed.  The exit code argument is a GNU ex‐
+M              put,  except that if auto-print is not disabled the current pat‐
+M              Immediately quit the sed script without processing any more  in‐
+M       q [exit-code]ine 128 (press h for help or q to quit)
+MESESCOApage sed(1) line 127 (press h for help or q to quit)
+M              slash.ine 126 (press h for help or q to quit)
+M       text   Insert text, which has each embedded newline preceded by a back‐
+MESESCOApage sed(1) line 124 (press h for help or q to quit)
+M       i \e sed(1) line 123 (press h for help or q to quit)
+MESESCOApage sed(1) line 122 (press h for help or q to quit)
+M              slash.ine 121 (press h for help or q to quit)
+M       text   Append text, which has each embedded newline preceded by a back‐
+MESESCOApage sed(1) line 119 (press h for help or q to quit)
+M       a \e sed(1) line 118 (press h for help or q to quit)
+MESESCOApage sed(1) line 117 (press h for help or q to quit)
+M       =      Print the current line number.p or q to quit)
+M   Zero- or One- address commandss h for help or q to quit)
+MESESCOApage sed(1) line 114 (press h for help or q to quit)
+M       }      The closing bracket of a { } block.q to quit)
+MESESCOApage sed(1) line 112 (press h for help or q to quit)
+M              script fragment).ess h for help or q to quit)
+M              The  comment  extends until the next newline (or the end of a -e
+M       #comment(1) line 109 (press h for help or q to quit)
+MESESCOApage sed(1) line 108 (press h for help or q to quit)
+M              Label for b and t commands.help or q to quit)
+M       : labeld(1) line 106 (press h for help or q to quit)
+M   Zero-address ``commands''(press h for help or q to quit)
+MESESCOApage sed(1) line 104 (press h for help or q to quit)
+M       document) must be consulted for fuller descriptions.
+M       those who already know sed; other documentation (such  as  the  texinfo
+M       This is just a brief synopsis of sed commands to serve as a reminder to
+MCOMMAND SYNOPSIS1) line 100 (press h for help or q to quit)
+MESESCOApage sed(1) line 99 (press h for help or q to quit)
+M       redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+M       censes/gpl.html>.   This  is  free software: you are free to change and
+M       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐
+M       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐
+MESESCOApage sed(1) line 94 (press h for help or q to quit)
+M       to: <bug-sed@gnu.org>.ress h for help or q to quit)
+M       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports
+M       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help
+MESESCOApage sed(1) line 90 (press h for help or q to quit)
+M       ified, then the standard input is read.r q to quit)
+M       maining arguments are names of input files; if no input files are spec‐
+M       non-option argument is taken as the sed script to interpret.   All  re‐
+M       If  no  -e, --expression, -f, or --file option is given, then the first
+MESESCOApage sed(1) line 85 (press h for help or q to quit)
+M              output version information and exit to quit)
+M       --version1) line 83 (press h for help or q to quit)
+MESESCOApage sed(1) line 82 (press h for help or q to quit)
+M              display this help and exithelp or q to quit)
+M       --helped(1) line 80 (press h for help or q to quit)
+MESESCOApage sed(1) line 79 (press h for help or q to quit)
+M              separate lines by NUL charactersr q to quit)
+MESESCOApage sed(1) line 77 (press h for help or q to quit)
+M       -z, --null-datae 76 (press h for help or q to quit)
+MESESCOApage sed(1) line 75 (press h for help or q to quit)
+M              output buffers more often help or q to quit)
+M              load minimal amounts of data from the input files and flush  the
+MESESCOApage sed(1) line 72 (press h for help or q to quit)
+M       -u, --unbuffered 71 (press h for help or q to quit)
+MESESCOApage sed(1) line 70 (press h for help or q to quit)
+M              operate in sandbox mode (disable e/r/w commands).
+MESESCOApage sed(1) line 68 (press h for help or q to quit)
+M       --sandbox1) line 67 (press h for help or q to quit)
+MESESCOApage sed(1) line 66 (press h for help or q to quit)
+M              long stream. (press h for help or q to quit)
+M              consider  files  as separate rather than as a single, continuous
+MESESCOApage sed(1) line 63 (press h for help or q to quit)
+M       -s, --separatene 62 (press h for help or q to quit)
+MESESCOApage sed(1) line 61 (press h for help or q to quit)
+M              use POSIX -E).press h for help or q to quit)
+M              use extended regular expressions in the script (for  portability
+MESESCOApage sed(1) line 58 (press h for help or q to quit)
+M       -E, -r, --regexp-extendeds h for help or q to quit)
+MESESCOApage sed(1) line 56 (press h for help or q to quit)
+M              disable all GNU extensions.elp or q to quit)
+MESESCOApage sed(1) line 54 (press h for help or q to quit)
+M       --posixd(1) line 53 (press h for help or q to quit)
+MESESCOApage sed(1) line 52 (press h for help or q to quit)
+M              specify the desired line-wrap length for the `l' command
+MESESCOApage sed(1) line 50 (press h for help or q to quit)
+M       -l N, --line-length=Npress h for help or q to quit)
+MESESCOApage sed(1) line 48 (press h for help or q to quit)
+M              edit files in place (makes backup if SUFFIX supplied)
+MESESCOApage sed(1) line 46 (press h for help or q to quit)
+M       -i[SUFFIX], --in-place[=SUFFIX]r help or q to quit)
+MESESCOApage sed(1) line 44 (press h for help or q to quit)
+M              follow symlinks when processing in placeuit)
+MESESCOApage sed(1) line 42 (press h for help or q to quit)
+M       --follow-symlinks41 (press h for help or q to quit)
+MESESCOApage sed(1) line 40 (press h for help or q to quit)
+M              add the contents of script-file to the commands to be executed
+MESESCOApage sed(1) line 38 (press h for help or q to quit)
+M       -f script-file, --file=script-fileelp or q to quit)
+MESESCOApage sed(1) line 36 (press h for help or q to quit)
+M              add the script to the commands to be executed
+MESESCOApage sed(1) line 34 (press h for help or q to quit)
+M       -e script, --expression=scriptor help or q to quit)
+              specify the desired line-wrap length for the `l' command
+ ESESCOBpage sed(1) line 33 (press h for help or q to quit)
+       --posixed(1) line 34 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 35 (press h for help or q to quit)
+              disable all GNU extensions.help or q to quit)
+ ESESCOBpage sed(1) line 37 (press h for help or q to quit)
+       -E, -r, --regexp-extendedss h for help or q to quit)
+ ESESCOBpage sed(1) line 39 (press h for help or q to quit)
+              use extended regular expressions in the script (for  portability
+              use POSIX -E).(press h for help or q to quit)
+ ESESCOBpage sed(1) line 42 (press h for help or q to quit)
+       -s, --separateine 43 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 44 (press h for help or q to quit)
+              consider  files  as separate rather than as a single, continuous
+              long stream.6 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 47 (press h for help or q to quit)
+       --sandbox(1) line 48 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 49 (press h for help or q to quit)
+              operate in sandbox mode (disable e/r/w commands).
+ ESESCOBpage sed(1) line 51 (press h for help or q to quit)
+       -u, --unbufferede 52 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 53 (press h for help or q to quit)
+              load minimal amounts of data from the input files and flush  the
+              output buffers more oftenr help or q to quit)
+ ESESCOBpage sed(1) line 56 (press h for help or q to quit)
+       -z, --null-datane 57 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 58 (press h for help or q to quit)
+              separate lines by NUL charactersor q to quit)
+ ESESCOBpage sed(1) line 60 (press h for help or q to quit)
+       --helpsed(1) line 61 (press h for help or q to quit)
+              display this help and exit help or q to quit)
+ ESESCOBpage sed(1) line 63 (press h for help or q to quit)
+       --version(1) line 64 (press h for help or q to quit)
+              output version information and exitq to quit)
+ ESESCOBpage sed(1) line 66 (press h for help or q to quit)
+       If  no  -e, --expression, -f, or --file option is given, then the first
+       non-option argument is taken as the sed script to interpret.   All  re‐
+       maining arguments are names of input files; if no input files are spec‐
+       ified, then the standard input is read.or q to quit)
+/rangel page sed(1) line 71 (press h for help or q to quit)
+              load minimal amounts of data from the input files and flush  the
+              output buffers more often
+
+       -z, --null-data
+
+              separate lines by NUL characters
+
+       --help
+              display this help and exit
+
+       --version
+              output version information and exit
+
+       If  no  -e, --expression, -f, or --file option is given, then the first
+       non-option argument is taken as the sed script to interpret.   All  re‐
+       maining arguments are names of input files; if no input files are spec‐
+       ified, then the standard input is read.
+
+              load minimal amounts of data from the input files and flush  the
+              output buffers more often
+
+       -z, --null-data
+
+              separate lines by NUL characters
+
+       --help
+              display this help and exit
+
+       --version
+              output version information and exit
+
+       If  no  -e, --expression, -f, or --file option is given, then the first
+       non-option argument is taken as the sed script to interpret.   All  re‐
+       maining arguments are names of input files; if no input files are spec‐
+       ified, then the standard input is read.
+...skipping...
+   Commands which accept address ranges
+       {      Begin a block of commands (end with a }).
+
+       b label
+              Branch to label; if label is omitted, branch to end of script.
+
+       c \
+
+       text   Replace the selected lines with text, which  has  each  embedded
+              newline preceded by a backslash.
+
+       d      Delete pattern space.  Start next cycle.
+
+       D      If  pattern  space contains no newline, start a normal new cycle
+              as if the d command was issued.  Otherwise, delete text  in  the
+              pattern  space  up  to the first newline, and restart cycle with
+              the resultant pattern space, without reading a new line  of  in‐
+              put.
+MESESCOApage sed(1) line 144 (press h for help or q to quit)
+M              mand reads a line from the file.  This is a GNU extension.
+              the resultant pattern space, without reading a new line  of  in‐
+              put.) line 143 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 144 (press h for help or q to quit)
+       h H    Copy/append pattern space to hold space. quit)
+ ESESCOBpage sed(1) line 146 (press h for help or q to quit)
+       g G    Copy/append hold space to pattern space. quit)
+ ESESCOBpage sed(1) line 148 (press h for help or q to quit)
+       l      List out the current line in a ``visually unambiguous'' form.
+ ESESCOBpage sed(1) line 150 (press h for help or q to quit)
+       l widthed(1) line 151 (press h for help or q to quit)
+              List  out  the  current line in a ``visually unambiguous'' form,
+              breaking it at width characters.  This is a GNU extension.
+ ESESCOBpage sed(1) line 154 (press h for help or q to quit)
+       n N    Read/append the next line of input into the pattern space.
+ ESESCOBpage sed(1) line 156 (press h for help or q to quit)
+       p      Print the current pattern space. or q to quit)
+ ESESCOBpage sed(1) line 158 (press h for help or q to quit)
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.line 160 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 161 (press h for help or q to quit)
+       s/regexp/replacement/ (press h for help or q to quit)
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+MESESCOApage sed(1) line 165 (press h for help or q to quit)
+M       h H    Copy/append pattern space to hold space.quit)
+MESESCOApage sed(1) line 163 (press h for help or q to quit)
+M              put. line 162 (press h for help or q to quit)
+M              the resultant pattern space, without reading a new line  of  in‐
+M              pattern  space  up  to the first newline, and restart cycle with
+M              as if the d command was issued.  Otherwise, delete text  in  the
+M       D      If  pattern  space contains no newline, start a normal new cycle
+MESESCOApage sed(1) line 157 (press h for help or q to quit)
+M       d      Delete pattern space.  Start next cycle.quit)
+MESESCOApage sed(1) line 155 (press h for help or q to quit)
+M              newline preceded by a backslash.or q to quit)
+M       text   Replace the selected lines with text, which  has  each  embedded
+MESESCOApage sed(1) line 152 (press h for help or q to quit)
+M       c \e sed(1) line 151 (press h for help or q to quit)
+MESESCOApage sed(1) line 150 (press h for help or q to quit)
+M              Branch to label; if label is omitted, branch to end of script.
+M       b labeld(1) line 148 (press h for help or q to quit)
+MESESCOApage sed(1) line 147 (press h for help or q to quit)
+M       {      Begin a block of commands (end with a }).uit)
+M   Commands which accept address rangesr help or q to quit)
+MESESCOApage sed(1) line 144 (press h for help or q to quit)
+M              mand reads a line from the file.  This is a GNU extension.
+M              Append  a  line read from filename.  Each invocation of the com‐
+M       R filename) line 141 (press h for help or q to quit)
+MESESCOApage sed(1) line 140 (press h for help or q to quit)
+M              Append text read from filename. or q to quit)
+M       r filename) line 138 (press h for help or q to quit)
+MESESCOApage sed(1) line 137 (press h for help or q to quit)
+M              put.  This is a GNU extension.p or q to quit)
+M              Immediately quit the sed script without processing any more  in‐
+M       Q [exit-code]ine 134 (press h for help or q to quit)
+MESESCOApage sed(1) line 133 (press h for help or q to quit)
+M              tension.e 132 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 131 (press h for help or q to quit)
+       c \ge sed(1) line 132 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 133 (press h for help or q to quit)
+       text   Replace the selected lines with text, which  has  each  embedded
+              newline preceded by a backslash. or q to quit)
+ ESESCOBpage sed(1) line 136 (press h for help or q to quit)
+       d      Delete pattern space.  Start next cycle. quit)
+ ESESCOBpage sed(1) line 138 (press h for help or q to quit)
+       D      If  pattern  space contains no newline, start a normal new cycle
+              as if the d command was issued.  Otherwise, delete text  in  the
+              pattern  space  up  to the first newline, and restart cycle with
+              the resultant pattern space, without reading a new line  of  in‐
+              put.) line 143 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 144 (press h for help or q to quit)
+       h H    Copy/append pattern space to hold space. quit)
+ ESESCOBpage sed(1) line 146 (press h for help or q to quit)
+       g G    Copy/append hold space to pattern space. quit)
+ ESESCOBpage sed(1) line 148 (press h for help or q to quit)
+       l      List out the current line in a ``visually unambiguous'' form.
+ ESESCOBpage sed(1) line 150 (press h for help or q to quit)
+       l widthed(1) line 151 (press h for help or q to quit)
+              List  out  the  current line in a ``visually unambiguous'' form,
+              breaking it at width characters.  This is a GNU extension.
+ ESESCOBpage sed(1) line 154 (press h for help or q to quit)
+       n N    Read/append the next line of input into the pattern space.
+ ESESCOBpage sed(1) line 156 (press h for help or q to quit)
+       p      Print the current pattern space. or q to quit)
+ ESESCOBpage sed(1) line 158 (press h for help or q to quit)
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.line 160 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 161 (press h for help or q to quit)
+       s/regexp/replacement/ (press h for help or q to quit)
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+              placement  may  contain the special character & to refer to that
+              portion of the pattern space which matched, and the special  es‐
+              capes  \1 through \9 to refer to the corresponding matching sub-
+              expressions in the regexp.r help or q to quit)
+ ESESCOBpage sed(1) line 169 (press h for help or q to quit)
+       t labeled(1) line 170 (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+ ESESCOBpage sed(1) line 174 (press h for help or q to quit)
+       T labeled(1) line 175 (press h for help or q to quit)
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.press h for help or q to quit)
+ ESESCOBpage sed(1) line 180 (press h for help or q to quit)
+       w filename1) line 181 (press h for help or q to quit)
+              Write the current pattern space to filename.t)
+ ESESCOBpage sed(1) line 183 (press h for help or q to quit)
+       W filename1) line 184 (press h for help or q to quit)
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.for help or q to quit)
+ ESESCOBpage sed(1) line 187 (press h for help or q to quit)
+       x      Exchange the contents of the hold and pattern spaces.
+ ESESCOBpage sed(1) line 189 (press h for help or q to quit)
+       y/source/dest/ine 190 (press h for help or q to quit)
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+ ESESCOBpage sed(1) line 193 (press h for help or q to quit)
+Addressesage sed(1) line 194 (press h for help or q to quit)
+M              If no s/// has done a successful substitution since the last in‐
+M       T labeld(1) line 194 (press h for help or q to quit)
+MESESCOApage sed(1) line 193 (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.
+M              put line was read and since the last t or T command, then branch
+M              If a s/// has done a successful substitution since the last  in‐
+ ESESCOBpage sed(1) line 189 (press h for help or q to quit)
+       y/source/dest/ine 190 (press h for help or q to quit)
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+ ESESCOBpage sed(1) line 193 (press h for help or q to quit)
+Addressesage sed(1) line 194 (press h for help or q to quit)
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+M              a GNU extension.6 65% (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.  This is
+M              put line was read and since the last t or T command, then branch
+M              If no s/// has done a successful substitution since the last in‐
+M       T labeld(1) line 194/306 62% (press h for help or q to quit)
+MESESCOApage sed(1) line 193/306 62% (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.
+M              put line was read and since the last t or T command, then branch
+M              If a s/// has done a successful substitution since the last  in‐
+M       t labeld(1) line 189/306 61% (press h for help or q to quit)
+MESESCOApage sed(1) line 188/306 60% (press h for help or q to quit)
+M              expressions in the regexp.ss h for help or q to quit)
+M              capes  \1 through \9 to refer to the corresponding matching sub-
+M              portion of the pattern space which matched, and the special  es‐
+M              placement  may  contain the special character & to refer to that
+M              ful, replace that portion matched  with  replacement.   The  re‐
+M              Attempt  to match regexp against the pattern space.  If success‐
+M       s/regexp/replacement/306 59% (press h for help or q to quit)
+MESESCOApage sed(1) line 180/306 59% (press h for help or q to quit)
+M              space.ine 179/306 58% (press h for help or q to quit)
+M       P      Print up to the first embedded newline of  the  current  pattern
+MESESCOApage sed(1) line 177/306 57% (press h for help or q to quit)
+M       p      Print the current pattern space.or help or q to quit)
+MESESCOApage sed(1) line 175/306 56% (press h for help or q to quit)
+M       n N    Read/append the next line of input into the pattern space.
+MESESCOApage sed(1) line 173/306 56% (press h for help or q to quit)
+M              breaking it at width characters.  This is a GNU extension.
+M              List  out  the  current line in a ``visually unambiguous'' form,
+M       l widthd(1) line 170/306 54% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 169/306 54% (press h for help or q to quit)
+       t labeled(1) line 170/306 54% (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+M       n N    Read/append the next line of input into the pattern space.
+MESESCOApage sed(1) line 173/306 56% (press h for help or q to quit)
+M              breaking it at width characters.  This is a GNU extension.
+M              List  out  the  current line in a ``visually unambiguous'' form,
+M       l widthd(1) line 170/306 54% (press h for help or q to quit)
+MESESCOApage sed(1) line 169/306 54% (press h for help or q to quit)
+M       l      List out the current line in a ``visually unambiguous'' form.
+MESESCOApage sed(1) line 167/306 53% (press h for help or q to quit)
+M       g G    Copy/append hold space to pattern space.or q to quit)
+MESESCOApage sed(1) line 165/306 52% (press h for help or q to quit)
+M       h H    Copy/append pattern space to hold space.or q to quit)
+MESESCOApage sed(1) line 163/306 50% (press h for help or q to quit)
+M              put. line 162/306 50% (press h for help or q to quit)
+M              the resultant pattern space, without reading a new line  of  in‐
+M              pattern  space  up  to the first newline, and restart cycle with
+M              as if the d command was issued.  Otherwise, delete text  in  the
+ ESESCOBpage sed(1) line 158/306 49% (press h for help or q to quit)
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.line 160/306 50% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 161/306 50% (press h for help or q to quit)
+       s/regexp/replacement//306 50% (press h for help or q to quit)
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+              placement  may  contain the special character & to refer to that
+              portion of the pattern space which matched, and the special  es‐
+              capes  \1 through \9 to refer to the corresponding matching sub-
+              expressions in the regexp.ess h for help or q to quit)
+ ESESCOBpage sed(1) line 169/306 54% (press h for help or q to quit)
+       t labeled(1) line 170/306 54% (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+ ESESCOBpage sed(1) line 174/306 56% (press h for help or q to quit)
+       T labeled(1) line 175/306 56% (press h for help or q to quit)
+M       p      Print the current pattern space.or help or q to quit)
+MESESCOApage sed(1) line 175/306 56% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 174/306 56% (press h for help or q to quit)
+       T labeled(1) line 175/306 56% (press h for help or q to quit)
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.06 58% (press h for help or q to quit)
+ Manual page sed(1) line 180/306 59% (press h for help or q to quit)
+       w filename
+              Write the current pattern space to filename.
+
+       W filename
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.
+
+       x      Exchange the contents of the hold and pattern spaces.
+
+       y/source/dest/
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+
+Addresses
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+       The following address types are supported:
+
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line).
+
+       first~step1) line 217/306 73% (press h for help or q to quit)
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''.
+
+       \cregexpc
+              Match lines matching the regular expression regexp.  The  c  may
+              be any character.
+
+MESESCOApage sed(1) line 235/306 80% (press h for help or q to quit)
+M              command line).306 80% (press h for help or q to quit)
+M              tively across files, unless the -s option is  specified  on  the
+M       number Match  only  the specified line number (which increments cumula‐
+MESESCOApage sed(1) line 231/306 79% (press h for help or q to quit)
+M       The following address types are supported:help or q to quit)
+MESESCOApage sed(1) line 229/306 78% (press h for help or q to quit)
+M       the address (or address-range) does not match. or q to quit)
+M       be inserted, which specifies that the command shall only be executed if
+M       After the address (or address-range), and before the command, a !   may
+MESESCOApage sed(1) line 225/306 77% (press h for help or q to quit)
+M       addr1 matched.ne 224/306 77% (press h for help or q to quit)
+M       and  if  addr2 is a regexp, it will not be tested against the line that
+M       matched will always be accepted, even if addr2 selects an earlier line;
+M       (i.e., the addresses are separated by a comma); the  line  which  addr1
+M       Three  things  to  note about address ranges: the syntax is addr1,addr2
+M       starting from the first address and continuing to the  second  address.
+M       cuted  for  all  input  lines  which match the inclusive range of lines
+M       dress; or with two addresses, in which case the command  will  be  exe‐
+M       the  command will only be executed for input lines which match that ad‐
+M       will be executed for all input lines; with one address, in  which  case
+M       Sed  commands can be given with no addresses, in which case the command
+MAddressesge sed(1) line 213/306 71% (press h for help or q to quit)
+MESESCOApage sed(1) line 212/306 71% (press h for help or q to quit)
+       The following address types are supported: help or q to quit)
+ ESESCOBpage sed(1) line 212/306 71% (press h for help or q to quit)
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line)./306 73% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 216/306 73% (press h for help or q to quit)
+       first~step1) line 217/306 73% (press h for help or q to quit)
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+ ESESCOBpage sed(1) line 223/306 77% (press h for help or q to quit)
+       $      Match the last line.7% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 225/306 77% (press h for help or q to quit)
+       /regexp/d(1) line 226/306 77% (press h for help or q to quit)
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''. for help or q to quit)
+ ESESCOBpage sed(1) line 230/306 79% (press h for help or q to quit)
+MESESCOApage sed(1) line 231/306 79% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 230/306 79% (press h for help or q to quit)
+       \cregexpc(1) line 231/306 79% (press h for help or q to quit)
+              Match lines matching the regular expression regexp.  The  c  may
+              be any character.6 80% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 234/306 80% (press h for help or q to quit)
+       GNU sed also supports some special 2-address forms:q to quit)
+ ESESCOBpage sed(1) line 236/306 81% (press h for help or q to quit)
+       0,addr2ed(1) line 237/306 81% (press h for help or q to quit)
+              Start  out  in  "matched  first  address"  state, until addr2 is
+              found.  This is similar to 1,addr2, except that if addr2 matches
+              the very first line of input the 0,addr2 form will be at the end
+              of its range, whereas the 1,addr2 form will still be at the  be‐
+              ginning  of  its range.  This works only when addr2 is a regular
+              expression.243/306 84% (press h for help or q to quit)
+ ESESCOBpage sed(1) line 244/306 84% (press h for help or q to quit)
+       addr1,+Nd(1) line 245/306 84% (press h for help or q to quit)
+              Will match addr1 and the N lines following addr1.quit)
+ ESESCOBpage sed(1) line 247/306 85% (press h for help or q to quit)
+       addr1,~Nd(1) line 248/306 85% (press h for help or q to quit)
+              Will match addr1 and the lines following addr1  until  the  next
+              line whose input line number is a multiple of N. quit)
+ ESESCOBpage sed(1) line 251/306 87% (press h for help or q to quit)
+REGULAR EXPRESSIONS line 252/306 87% (press h for help or q to quit)
+       POSIX.2 BREs should be supported, but they aren't completely because of
+       performance  problems.  The \n sequence in a regular expression matches
+       the newline character, and similarly for \a, \t, and  other  sequences.
+       The  -E  option switches to using extended regular expressions instead;
+       it has been supported for years by GNU sed,  and  is  now  included  in
+       POSIX.
+
+BUGS
+       E-mail bug reports to bug-sed@gnu.org.  Also, please include the output
+       of ``sed --version'' in the body of your report if at all possible.
+
+AUTHOR
+       Written by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo Bonzini, Jim Mey‐
+       ering, and Assaf Gordon.
+
+       This  sed  program was built with SELinux support.  SELinux is disabled
+       on this system.
+
+       GNU sed home page: <https://www.gnu.org/software/sed/>.   General  help
+       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports
+       to: <bug-sed@gnu.org>.
+>0;kent@deb13: ~/Documents74/306 95% (press h for help or q to quit)
+kent@deb13:~/Documents$ man sed
+SED(1)                           User Commands                          SED(1)
+
+NAME
+       sed - stream editor for filtering and transforming text
+
+SYNOPSIS
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent]
+           [-l N] [--line-length=N] [-u] [--unbuffered]
+           [-E] [-r] [--regexp-extended]
+           [-e script] [--expression=script]
+           [-f script-file] [--file=script-file]
+           [script-if-no-other-script]
+           [file...]
+
+DESCRIPTION
+       Sed  is a stream editor.  A stream editor is used to perform basic text
+       transformations on an input stream (a file or input from  a  pipeline).
+       While  in  some  ways similar to an editor which permits scripted edits
+       (such as ed), sed works by making only one pass over the input(s),  and
+       is consequently more efficient.  But it is sed's ability to filter text
+       in  a  pipeline which particularly distinguishes it from other types of
+       editors.
+
+       -n, --quiet, --silent
+
+              suppress automatic printing of pattern space
+
+       --debug
+
+              annotate program execution
+
+       -e script, --expression=script
+
+              add the script to the commands to be executed
+
+       -f script-file, --file=script-file
+ Manual page sed(1) line 19 (press h for help or q to quit)
+              add the contents of script-file to the commands to be executed
+
+       --follow-symlinks
+
+              follow symlinks when processing in place
+
+       -i[SUFFIX], --in-place[=SUFFIX]
+
+              edit files in place (makes backup if SUFFIX supplied)
+
+       -l N, --line-length=N
+
+              specify the desired line-wrap length for the `l' command
+
+       --posix
+
+              disable all GNU extensions.
+ Manual page sed(1) line 37 (press h for help or q to quit)
+       -E, -r, --regexp-extended
+
+              use extended regular expressions in the script (for  portability
+              use POSIX -E).
+
+       -s, --separate
+
+              consider  files  as separate rather than as a single, continuous
+              long stream.
+
+       --sandbox
+
+              operate in sandbox mode (disable e/r/w commands).
+
+       -u, --unbuffered
+
+              load minimal amounts of data from the input files and flush  the
+              output buffers more oftenr help or q to quit)
+
+       -z, --null-data
+
+              separate lines by NUL characters
+
+       --help
+              display this help and exit
+
+       --version
+              output version information and exit
+
+       If  no  -e, --expression, -f, or --file option is given, then the first
+       non-option argument is taken as the sed script to interpret.   All  re‐
+       maining arguments are names of input files; if no input files are spec‐
+       ified, then the standard input is read.
+
+       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help
+       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports
+       to: <bug-sed@gnu.org>.
+
+       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐
+       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐
+       censes/gpl.html>.   This  is  free software: you are free to change and
+       redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+
+COMMAND SYNOPSIS
+       This is just a brief synopsis of sed commands to serve as a reminder to
+       those who already know sed; other documentation (such  as  the  texinfo
+       document) must be consulted for fuller descriptions.
+
+   Zero-address ``commands''
+       : label
+              Label for b and t commands.
+
+       #comment
+              The  comment  extends until the next newline (or the end of a -e
+              script fragment).
+
+       }      The closing bracket of a { } block.
+
+   Zero- or One- address commands
+       =      Print the current line number.
+
+       a \
+
+       text   Append text, which has each embedded newline preceded by a back‐
+              slash.
+
+       i \
+
+       text   Insert text, which has each embedded newline preceded by a back‐
+              slash.
+
+       q [exit-code]line 109 (press h for help or q to quit)
+              Immediately quit the sed script without processing any more  in‐
+              put,  except that if auto-print is not disabled the current pat‐
+              tern space will be printed.  The exit code argument is a GNU ex‐
+              tension.
+
+       Q [exit-code]
+              Immediately quit the sed script without processing any more  in‐
+              put.  This is a GNU extension.
+
+       r filename
+              Append text read from filename.
+
+       R filename
+              Append  a  line read from filename.  Each invocation of the com‐
+              mand reads a line from the file.  This is a GNU extension.
+
+   Commands which accept address ranges
+       {      Begin a block of commands (end with a }).quit)
+
+       b label
+              Branch to label; if label is omitted, branch to end of script.
+
+       c \
+
+       text   Replace the selected lines with text, which  has  each  embedded
+              newline preceded by a backslash.
+
+       d      Delete pattern space.  Start next cycle.
+
+       D      If  pattern  space contains no newline, start a normal new cycle
+              as if the d command was issued.  Otherwise, delete text  in  the
+              pattern  space  up  to the first newline, and restart cycle with
+              the resultant pattern space, without reading a new line  of  in‐
+              put.
+
+       h H    Copy/append pattern space to hold space. quit)
+
+       g G    Copy/append hold space to pattern space.
+
+       l      List out the current line in a ``visually unambiguous'' form.
+
+       l width
+              List  out  the  current line in a ``visually unambiguous'' form,
+              breaking it at width characters.  This is a GNU extension.
+
+       n N    Read/append the next line of input into the pattern space.
+
+       p      Print the current pattern space.
+
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.
+
+       s/regexp/replacement/
+MESESCOApage sed(1) line 163 (press h for help or q to quit)
+M              put. line 162 (press h for help or q to quit)
+M              the resultant pattern space, without reading a new line  of  in‐
+M              pattern  space  up  to the first newline, and restart cycle with
+M              as if the d command was issued.  Otherwise, delete text  in  the
+M       D      If  pattern  space contains no newline, start a normal new cycle
+MESESCOApage sed(1) line 157 (press h for help or q to quit)
+M       d      Delete pattern space.  Start next cycle.quit)
+MESESCOApage sed(1) line 155 (press h for help or q to quit)
+M              newline preceded by a backslash.or q to quit)
+M       text   Replace the selected lines with text, which  has  each  embedded
+MESESCOApage sed(1) line 152 (press h for help or q to quit)
+M       c \e sed(1) line 151 (press h for help or q to quit)
+MESESCOApage sed(1) line 150 (press h for help or q to quit)
+M              Branch to label; if label is omitted, branch to end of script.
+M       b labeld(1) line 148 (press h for help or q to quit)
+MESESCOApage sed(1) line 147 (press h for help or q to quit)
+M       {      Begin a block of commands (end with a }).uit)
+M   Commands which accept address rangesr help or q to quit)
+MESESCOApage sed(1) line 144 (press h for help or q to quit)
+M              mand reads a line from the file.  This is a GNU extension.
+M              Append  a  line read from filename.  Each invocation of the com‐
+M       R filename) line 141 (press h for help or q to quit)
+MESESCOApage sed(1) line 140 (press h for help or q to quit)
+M              Append text read from filename. or q to quit)
+M       r filename) line 138 (press h for help or q to quit)
+MESESCOApage sed(1) line 137 (press h for help or q to quit)
+M              put.  This is a GNU extension.p or q to quit)
+M              Immediately quit the sed script without processing any more  in‐
+M       Q [exit-code]ine 134 (press h for help or q to quit)
+MESESCOApage sed(1) line 133 (press h for help or q to quit)
+M              tension.e 132 (press h for help or q to quit)
+M              tern space will be printed.  The exit code argument is a GNU ex‐
+M              put,  except that if auto-print is not disabled the current pat‐
+M              Immediately quit the sed script without processing any more  in‐
+M       q [exit-code]ine 128 (press h for help or q to quit)
+MESESCOApage sed(1) line 127 (press h for help or q to quit)
+M              slash.ine 126 (press h for help or q to quit)
+M       text   Insert text, which has each embedded newline preceded by a back‐
+MESESCOApage sed(1) line 124 (press h for help or q to quit)
+M       i \e sed(1) line 123 (press h for help or q to quit)
+MESESCOApage sed(1) line 122 (press h for help or q to quit)
+M              slash.ine 121 (press h for help or q to quit)
+M       text   Append text, which has each embedded newline preceded by a back‐
+MESESCOApage sed(1) line 119 (press h for help or q to quit)
+M       a \e sed(1) line 118 (press h for help or q to quit)
+MESESCOApage sed(1) line 117 (press h for help or q to quit)
+M       =      Print the current line number.p or q to quit)
+M   Zero- or One- address commandss h for help or q to quit)
+MESESCOApage sed(1) line 114 (press h for help or q to quit)
+M       }      The closing bracket of a { } block.q to quit)
+MESESCOApage sed(1) line 112 (press h for help or q to quit)
+M              script fragment).ess h for help or q to quit)
+M              The  comment  extends until the next newline (or the end of a -e
+M       #comment(1) line 109 (press h for help or q to quit)
+MESESCOApage sed(1) line 108 (press h for help or q to quit)
+M              Label for b and t commands.help or q to quit)
+M       : labeld(1) line 106 (press h for help or q to quit)
+M   Zero-address ``commands''(press h for help or q to quit)
+MESESCOApage sed(1) line 104 (press h for help or q to quit)
+M       document) must be consulted for fuller descriptions.
+M       those who already know sed; other documentation (such  as  the  texinfo
+M       This is just a brief synopsis of sed commands to serve as a reminder to
+MCOMMAND SYNOPSIS1) line 100 (press h for help or q to quit)
+MESESCOApage sed(1) line 99 (press h for help or q to quit)
+M       redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+M       censes/gpl.html>.   This  is  free software: you are free to change and
+M       cense  GPLv3+:  GNU  GPL  version  3  or   later   <https://gnu.org/li‐
+M       Packaged by Debian Copyright © 2022 Free Software Foundation, Inc.  Li‐
+MESESCOApage sed(1) line 94 (press h for help or q to quit)
+M       to: <bug-sed@gnu.org>.ress h for help or q to quit)
+M       using GNU software: <https://www.gnu.org/gethelp/>.  E-mail bug reports
+M       GNU  sed  home page: <https://www.gnu.org/software/sed/>.  General help
+MESESCOApage sed(1) line 90 (press h for help or q to quit)
+M       ified, then the standard input is read.r q to quit)
+M       maining arguments are names of input files; if no input files are spec‐
+M       non-option argument is taken as the sed script to interpret.   All  re‐
+M       If  no  -e, --expression, -f, or --file option is given, then the first
+ ESESCOBpage sed(1) line 85 (press h for help or q to quit)
+   Zero-address ``commands''(press h for help or q to quit)
+       : labeled(1) line 87 (press h for help or q to quit)
+              Label for b and t commands.help or q to quit)
+ ESESCOBpage sed(1) line 89 (press h for help or q to quit)
+       #commentd(1) line 90 (press h for help or q to quit)
+              The  comment  extends until the next newline (or the end of a -e
+              script fragment).ess h for help or q to quit)
+ ESESCOBpage sed(1) line 93 (press h for help or q to quit)
+       }      The closing bracket of a { } block.q to quit)
+ ESESCOBpage sed(1) line 95 (press h for help or q to quit)
+   Zero- or One- address commandss h for help or q to quit)
+       =      Print the current line number.p or q to quit)
+ ESESCOBpage sed(1) line 98 (press h for help or q to quit)
+       a \ge sed(1) line 99 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 100 (press h for help or q to quit)
+       text   Append text, which has each embedded newline preceded by a back‐
+              slash.line 102 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 103 (press h for help or q to quit)
+       i \ge sed(1) line 104 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 105 (press h for help or q to quit)
+       text   Insert text, which has each embedded newline preceded by a back‐
+              slash.line 107 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 108 (press h for help or q to quit)
+       q [exit-code]line 109 (press h for help or q to quit)
+              Immediately quit the sed script without processing any more  in‐
+              put,  except that if auto-print is not disabled the current pat‐
+              tern space will be printed.  The exit code argument is a GNU ex‐
+              tension.ne 113 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 114 (press h for help or q to quit)
+       Q [exit-code]line 115 (press h for help or q to quit)
+              Immediately quit the sed script without processing any more  in‐
+              put.  This is a GNU extension.lp or q to quit)
+ ESESCOBpage sed(1) line 118 (press h for help or q to quit)
+       r filename1) line 119 (press h for help or q to quit)
+              Append text read from filename.p or q to quit)
+ ESESCOBpage sed(1) line 121 (press h for help or q to quit)
+       R filename1) line 122 (press h for help or q to quit)
+              Append  a  line read from filename.  Each invocation of the com‐
+              mand reads a line from the file.  This is a GNU extension.
+ ESESCOBpage sed(1) line 125 (press h for help or q to quit)
+   Commands which accept address rangesor help or q to quit)
+       {      Begin a block of commands (end with a }).quit)
+ ESESCOBpage sed(1) line 128 (press h for help or q to quit)
+       b labeled(1) line 129 (press h for help or q to quit)
+              Branch to label; if label is omitted, branch to end of script.
+ ESESCOBpage sed(1) line 131 (press h for help or q to quit)
+       c \ge sed(1) line 132 (press h for help or q to quit)
+ ESESCOBpage sed(1) line 133 (press h for help or q to quit)
+       text   Replace the selected lines with text, which  has  each  embedded
+              newline preceded by a backslash.
+
+       d      Delete pattern space.  Start next cycle.
+
+       D      If  pattern  space contains no newline, start a normal new cycle
+              as if the d command was issued.  Otherwise, delete text  in  the
+              pattern  space  up  to the first newline, and restart cycle with
+              the resultant pattern space, without reading a new line  of  in‐
+              put.
+
+       h H    Copy/append pattern space to hold space.
+
+       g G    Copy/append hold space to pattern space.
+
+       l      List out the current line in a ``visually unambiguous'' form.
+
+       l width
+              List  out  the  current line in a ``visually unambiguous'' form,
+              breaking it at width characters.  This is a GNU extension.
+
+       n N    Read/append the next line of input into the pattern space.
+
+       p      Print the current pattern space.
+
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.
+
+       s/regexp/replacement/
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+              placement  may  contain the special character & to refer to that
+              portion of the pattern space which matched, and the special  es‐
+              capes  \1 through \9 to refer to the corresponding matching sub-
+              expressions in the regexp.
+
+       t labeled(1) line 170 (press h for help or q to quit)
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+
+       T label
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.
+
+       w filename
+              Write the current pattern space to filename.
+
+       W filename
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.
+
+Non-match /e sed(1) line 188 (press h for help or q to quit)
+       t label
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+
+       T label
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.
+
+       w filename
+              Write the current pattern space to filename.
+
+       W filename
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.
+
+Non-match /e sed(1) line 188 (press h for help or q to quit)
+       t label
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+
+       T label
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.
+
+       w filename
+              Write the current pattern space to filename.
+
+       W filename
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.
+
+       x      Exchange the contents of the hold and pattern spaces.
+
+       y/source/dest/
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+
+Addresses
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+ Manual page sed(1) line 206 (press h for help or q to quit)
+       x      Exchange the contents of the hold and pattern spaces.
+
+       y/source/dest/
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+
+Addresses
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+ Manual page sed(1) line 206 (press h for help or q to quit)
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+       The following address types are supported:
+
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line).
+
+       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+/\!nual page sed(1) line 224 (press h for help or q to quit)
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+       The following address types are supported:
+
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line).
+
+       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+       The following address types are supported:
+
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line).
+
+       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+MESESCOApage sed(1) line 225/306 77% (press h for help or q to quit)
+M       addr1 matched.ne 224/306 77% (press h for help or q to quit)
+M       and  if  addr2 is a regexp, it will not be tested against the line that
+M       matched will always be accepted, even if addr2 selects an earlier line;
+M       (i.e., the addresses are separated by a comma); the  line  which  addr1
+M       Three  things  to  note about address ranges: the syntax is addr1,addr2
+M       starting from the first address and continuing to the  second  address.
+M       cuted  for  all  input  lines  which match the inclusive range of lines
+M       dress; or with two addresses, in which case the command  will  be  exe‐
+M       the  command will only be executed for input lines which match that ad‐
+M       will be executed for all input lines; with one address, in  which  case
+M       Sed  commands can be given with no addresses, in which case the command
+MAddressesge sed(1) line 213/306 71% (press h for help or q to quit)
+MESESCOApage sed(1) line 212/306 71% (press h for help or q to quit)
+M              in source to the corresponding character in dest.uit)
+ ESESCOBpage sed(1) line 210/306 71% (press h for help or q to quit)
+       The following address types are supported: help or q to quit)
+ ESESCOBpage sed(1) line 212/306 71% (press h for help or q to quit)
+       number Match  only  the specified line number (which increments cumula‐
+              tively across files, unless the -s option is  specified  on  the
+              command line).
+
+       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''.
+
+       \cregexpc(1) line 231/306 79% (press h for help or q to quit)
+              Match lines matching the regular expression regexp.  The  c  may
+              be any character.
+
+       GNU sed also supports some special 2-address forms:
+
+       0,addr2
+              Start  out  in  "matched  first  address"  state, until addr2 is
+              found.  This is similar to 1,addr2, except that if addr2 matches
+              the very first line of input the 0,addr2 form will be at the end
+              of its range, whereas the 1,addr2 form will still be at the  be‐
+              ginning  of  its range.  This works only when addr2 is a regular
+              expression.
+
+       addr1,+N
+              Will match addr1 and the N lines following addr1.
+
+       addr1,~N
+              Will match addr1 and the lines following addr1  until  the  next
+              line whose input line number is a multiple of N.
+
+REGULAR EXPRESSIONS
+       POSIX.2 BREs should be supported, but they aren't completely because of
+       performance  problems.  The \n sequence in a regular expression matches
+       the newline character, and similarly for \a, \t, and  other  sequences.
+       The  -E  option switches to using extended regular expressions instead;
+       it has been supported for years by GNU sed,  and  is  now  included  in
+       POSIX.
+
+BUGS
+       E-mail bug reports to bug-sed@gnu.org.  Also, please include the output
+       of ``sed --version'' in the body of your report if at all possible.
+
+AUTHOR
+       Written by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo Bonzini, Jim Mey‐
+       ering, and Assaf Gordon.
+M       addr1,~N(1) line 267/306 93% (press h for help or q to quit)
+MESESCOApage sed(1) line 266/306 93% (press h for help or q to quit)
+M              Will match addr1 and the N lines following addr1.uit)
+M       addr1,+N(1) line 264/306 92% (press h for help or q to quit)
+MESESCOApage sed(1) line 263/306 92% (press h for help or q to quit)
+M              expression.62/306 91% (press h for help or q to quit)
+M              ginning  of  its range.  This works only when addr2 is a regular
+M              of its range, whereas the 1,addr2 form will still be at the  be‐
+M              the very first line of input the 0,addr2 form will be at the end
+M              found.  This is similar to 1,addr2, except that if addr2 matches
+M              Start  out  in  "matched  first  address"  state, until addr2 is
+M       0,addr2d(1) line 256/306 89% (press h for help or q to quit)
+MESESCOApage sed(1) line 255/306 88% (press h for help or q to quit)
+M       GNU sed also supports some special 2-address forms: to quit)
+MESESCOApage sed(1) line 253/306 87% (press h for help or q to quit)
+M              be any character. 87% (press h for help or q to quit)
+M              Match lines matching the regular expression regexp.  The  c  may
+M       \cregexpc1) line 250/306 86% (press h for help or q to quit)
+MESESCOApage sed(1) line 249/306 86% (press h for help or q to quit)
+M              with commands such as ``s///''.for help or q to quit)
+M              performed  on  the  current pattern space, which can be modified
+M              Match lines matching the regular expression regexp.  Matching is
+M       /regexp/(1) line 245/306 84% (press h for help or q to quit)
+MESESCOApage sed(1) line 244/306 84% (press h for help or q to quit)
+M       $      Match the last line.% (press h for help or q to quit)
+MESESCOApage sed(1) line 242/306 84% (press h for help or q to quit)
+M              operates as if it were equal to step.  (This is an extension.)
+M              starting with the second.  first can be zero; in this case,  sed
+M              put  stream,  and  the  address 2~5 will match every fifth line,
+M              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+M              Match every step'th line starting with line first.  For example,
+M       first~step) line 236/306 81% (press h for help or q to quit)
+MESESCOApage sed(1) line 235/306 80% (press h for help or q to quit)
+M              command line).306 80% (press h for help or q to quit)
+M              tively across files, unless the -s option is  specified  on  the
+M       number Match  only  the specified line number (which increments cumula‐
+MESESCOApage sed(1) line 231/306 79% (press h for help or q to quit)
+M       The following address types are supported:help or q to quit)
+MESESCOApage sed(1) line 229/306 78% (press h for help or q to quit)
+M       the address (or address-range) does not match. or q to quit)
+M       be inserted, which specifies that the command shall only be executed if
+M       After the address (or address-range), and before the command, a !   may
+MESESCOApage sed(1) line 225/306 77% (press h for help or q to quit)
+M       addr1 matched.ne 224/306 77% (press h for help or q to quit)
+M       and  if  addr2 is a regexp, it will not be tested against the line that
+M       matched will always be accepted, even if addr2 selects an earlier line;
+M       (i.e., the addresses are separated by a comma); the  line  which  addr1
+M       Three  things  to  note about address ranges: the syntax is addr1,addr2
+M       starting from the first address and continuing to the  second  address.
+M       cuted  for  all  input  lines  which match the inclusive range of lines
+M       dress; or with two addresses, in which case the command  will  be  exe‐
+M       the  command will only be executed for input lines which match that ad‐
+M       will be executed for all input lines; with one address, in  which  case
+M       Sed  commands can be given with no addresses, in which case the command
+MAddressesge sed(1) line 213/306 71% (press h for help or q to quit)
+MESESCOApage sed(1) line 212/306 71% (press h for help or q to quit)
+M              in source to the corresponding character in dest.uit)
+M              Transliterate the characters in the pattern space  which  appear
+M       y/source/dest/ne 209/306 71% (press h for help or q to quit)
+MESESCOApage sed(1) line 208/306 70% (press h for help or q to quit)
+M       x      Exchange the contents of the hold and pattern spaces.
+MESESCOApage sed(1) line 206/306 69% (press h for help or q to quit)
+M              This is a GNU extension.ress h for help or q to quit)
+M              Write  the  first line of the current pattern space to filename.
+M       W filename) line 203/306 68% (press h for help or q to quit)
+MESESCOApage sed(1) line 202/306 67% (press h for help or q to quit)
+M              Write the current pattern space to filename. to quit)
+M       w filename) line 200/306 66% (press h for help or q to quit)
+MESESCOApage sed(1) line 199/306 65% (press h for help or q to quit)
+M              a GNU extension.6 65% (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.  This is
+M              put line was read and since the last t or T command, then branch
+M              If no s/// has done a successful substitution since the last in‐
+M       T labeld(1) line 194/306 62% (press h for help or q to quit)
+MESESCOApage sed(1) line 193/306 62% (press h for help or q to quit)
+M              to label; if label is omitted, branch to end of script.
+M              put line was read and since the last t or T command, then branch
+M              If a s/// has done a successful substitution since the last  in‐
+M       t labeld(1) line 189/306 61% (press h for help or q to quit)
+MESESCOApage sed(1) line 188/306 60% (press h for help or q to quit)
+M              expressions in the regexp.ss h for help or q to quit)
+M              capes  \1 through \9 to refer to the corresponding matching sub-
+M              portion of the pattern space which matched, and the special  es‐
+M              placement  may  contain the special character & to refer to that
+M              ful, replace that portion matched  with  replacement.   The  re‐
+M              Attempt  to match regexp against the pattern space.  If success‐
+M       s/regexp/replacement/306 59% (press h for help or q to quit)
+MESESCOApage sed(1) line 180/306 59% (press h for help or q to quit)
+M              space.ine 179/306 58% (press h for help or q to quit)
+M       P      Print up to the first embedded newline of  the  current  pattern
+MESESCOApage sed(1) line 177/306 57% (press h for help or q to quit)
+M       p      Print the current pattern space.or help or q to quit)
+MESESCOApage sed(1) line 175/306 56% (press h for help or q to quit)
+M       n N    Read/append the next line of input into the pattern space.
+MESESCOApage sed(1) line 173/306 56% (press h for help or q to quit)
+M              breaking it at width characters.  This is a GNU extension.
+M              List  out  the  current line in a ``visually unambiguous'' form,
+M       l widthd(1) line 170/306 54% (press h for help or q to quit)
+MESESCOApage sed(1) line 169/306 54% (press h for help or q to quit)
+M       l      List out the current line in a ``visually unambiguous'' form.
+MESESCOApage sed(1) line 167/306 53% (press h for help or q to quit)
+M       g G    Copy/append hold space to pattern space.or q to quit)
+MESESCOApage sed(1) line 165/306 52% (press h for help or q to quit)
+M       h H    Copy/append pattern space to hold space.or q to quit)
+MESESCOApage sed(1) line 163/306 50% (press h for help or q to quit)
+M              put. line 162/306 50% (press h for help or q to quit)
+M              the resultant pattern space, without reading a new line  of  in‐
+M              pattern  space  up  to the first newline, and restart cycle with
+M              as if the d command was issued.  Otherwise, delete text  in  the
+ Manual page sed(1) line 158/306 49% (press h for help or q to quit)
+       P      Print up to the first embedded newline of  the  current  pattern
+              space.
+
+       s/regexp/replacement/
+              Attempt  to match regexp against the pattern space.  If success‐
+              ful, replace that portion matched  with  replacement.   The  re‐
+              placement  may  contain the special character & to refer to that
+              portion of the pattern space which matched, and the special  es‐
+              capes  \1 through \9 to refer to the corresponding matching sub-
+              expressions in the regexp.
+
+       t label
+              If a s/// has done a successful substitution since the last  in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.
+
+       T label
+              If no s/// has done a successful substitution since the last in‐
+              put line was read and since the last t or T command, then branch
+              to label; if label is omitted, branch to end of script.  This is
+              a GNU extension.
+
+       w filename
+              Write the current pattern space to filename.
+
+       W filename
+              Write  the  first line of the current pattern space to filename.
+              This is a GNU extension.
+
+       x      Exchange the contents of the hold and pattern spaces.
+
+       y/source/dest/
+              Transliterate the characters in the pattern space  which  appear
+              in source to the corresponding character in dest.
+
+Addressesage sed(1) line 194/306 62% (press h for help or q to quit)
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+       The following address types are supported:
+MESESCOApage sed(1) line 212/306 71% (press h for help or q to quit)
+/\$nual page sed(1) line 211/306 71% (press h for help or q to quit)
+Addresses
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+
+Addresses
+       Sed  commands can be given with no addresses, in which case the command
+       will be executed for all input lines; with one address, in  which  case
+       the  command will only be executed for input lines which match that ad‐
+       dress; or with two addresses, in which case the command  will  be  exe‐
+       cuted  for  all  input  lines  which match the inclusive range of lines
+       starting from the first address and continuing to the  second  address.
+       Three  things  to  note about address ranges: the syntax is addr1,addr2
+       (i.e., the addresses are separated by a comma); the  line  which  addr1
+       matched will always be accepted, even if addr2 selects an earlier line;
+       and  if  addr2 is a regexp, it will not be tested against the line that
+       addr1 matched.
+
+       After the address (or address-range), and before the command, a !   may
+       be inserted, which specifies that the command shall only be executed if
+       the address (or address-range) does not match.
+
+...skipping...
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''.
+
+       \cregexpc
+              Match lines matching the regular expression regexp.  The  c  may
+              be any character.
+
+       GNU sed also supports some special 2-address forms:
+
+       0,addr2
+              Start  out  in  "matched  first  address"  state, until addr2 is
+              found.  This is similar to 1,addr2, except that if addr2 matches
+              the very first line of input the 0,addr2 form will be at the end
+              of its range, whereas the 1,addr2 form will still be at the  be‐
+MESESCOApage sed(1) line 242/306 84% (press h for help or q to quit)
+M              operates as if it were equal to step.  (This is an extension.)
+M              starting with the second.  first can be zero; in this case,  sed
+M              put  stream,  and  the  address 2~5 will match every fifth line,
+M              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+M              Match every step'th line starting with line first.  For example,
+M       first~step) line 236/306 81% (press h for help or q to quit)
+ Manual page sed(1) line 235/306 80% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''.
+
+       \cregexpc
+ Manual page sed(1) line 235/306 79% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+              with commands such as ``s///''.
+
+ Manual page sed(1) line 235/306 79% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+              performed  on  the  current pattern space, which can be modified
+ Manual page sed(1) line 235/306 78% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+              Match lines matching the regular expression regexp.  Matching is
+ Manual page sed(1) line 235/306 78% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first.  For example,
+              ``sed -n 1~2p'' will print all the odd-numbered lines in the in‐
+              put  stream,  and  the  address 2~5 will match every fifth line,
+              starting with the second.  first can be zero; in this case,  sed
+              operates as if it were equal to step.  (This is an extension.)
+
+       $      Match the last line.
+
+       /regexp/
+ Manual page sed(1) line 235/306 77% (press h for help or q to quit)       first~step
+              Match every step'th line starting with line first[
