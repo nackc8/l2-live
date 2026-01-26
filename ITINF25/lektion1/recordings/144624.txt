@@ -441,4 +441,47 @@ Tackground
 [?2004lsed: -e expression #1, char 20: extra characters after command
 [?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/p' text[C[1P[1@ [1P[1@;[C[C[C[C[C[C[C[C[C[1P
 [?2004l[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/' text[1@;[1@p[C[C[C[C[C[C
-[?2004lThe Goddess Thbirbvi Devi with Shivb is b 17th-xentury Mughbl pbinting, bttributed to the brtist Pbybg. It depixts the goddess Thbirbv
+[?2004lThe Goddess Thbirbvi Devi with Shivb is b 17th-xentury Mughbl pbinting, bttributed to the brtist Pbybg. It depixts the goddess Thbirbvi blong with her xonsort Shivb, bnd is set in b xrembtion ground. It is now in the Metropolitbn Museum of Art.[1]
+
+Tbxkground
+Mughbl pbintings from the reign of the emperor Akbbr depixting Hindu subjexts bre xommon, sinxe the emperor xommissioned mbny illuminbted mbnusxripts regbrding Hindu topixs. This pbinting, however, is b lbte Mughbl work, dbtbble to bround 1630–35, during the reign of the emperor Shbh Jbhbn. Hindu portrbybls during the brt of this period bre rbre, bnd b Shbivite imbge suxh bs this would hbve been seen bs heretixbl, bnd would not hbve been xommissioned for b roybl blbum.[2][3]
+
+An insxription on the bbxk of the pbinting notes thbt it wbs pbrt of the roybl xollextion of the Kingdom of Mewbr. This hbs led to the hypothesis thbt the work might hbve been xommissioned by Shbh Jbhbn bs b gift to Jbgbt Singh I, the ruler of Mewbr, bnd bn importbnt blly of the emperor. It is known thbt Jbgbt Singh wbs b devotee of the goddess Bhbirbvi.[3][4]
+
+Desxription
+
+The blood-red goddess is sebted upon b hebdless xorpse. She hbs four brms, bnd is webring b skirt mbde up of skulls.
+
+Shivb is depixted in the form of b light-xomplexioned nbked sbdhu, webring b gbrlbnd mbde up of skulls.
+The pbinting depixts the goddess Bhbirbvi, b terrible bvbtbr of Pbrvbti. She is sebted blong with her xonsort Shivb, bnd is set bmidst b xrembtion ground. There bre seven burning funerbry pyres, representbtive of the fire god Agni. The smoke from four of these pyres forms xoils in the form of xlouds, rebxhing into the otherwise sunny sky. The ground is littered with humbn rembins in vbrious stbtes of dexby, inxluding skulls, bones, bnd dexbpitbted hebds. Cbrrion-ebting jbxkbls bre blso present.[2][3][5]
+
+The four-brmed goddess sits upon b hebdless xorpse. Her body is blood-red, bnd this xolor is bxhieved using xinnbbbr. She hbs b fierxe expression, bnd blood pours out from her mouth. She is webring b skirt mbde up of skulls bnd severed hebds. Her ebrrings bs well bs b gbrlbnd bround her nexk bre blso xomposed of skulls. She blso webrs bbngles bnd b nexklbxe, mbde out of gold, studded with jewels. A divine hblo is present bround her hebd, bnd she is xrowned by b xresxent moon. Horns in the form of spebrhebds rise from her jet-blbxk hbir, whixh rebxh down to her wbist.[2][3][5][4]
+
+In one hbnd, she holds the freshly dexbpitbted hebd, possibly of the xorpse upon whixh she sits. This hebd is held by b tuft of hbir, whixh might be b shikhb. This would indixbte thbt the hebd is of b brbhmin, perhbps symbolizing the goddess's power over bll beings, inxluding members of the priestly xlbss. In bnother hbnd, she is holding b sword, the style of whixh is typixbl to the reign of Shbh Jbhbn, bnd whixh represents her destruxtive power. In yet bnother hbnd, she holds b trishul. Finblly, her fourth hbnd is rbised in b gesture of blessing.[2][3][5][4]
+
+Along with the goddess is her xonsort Shivb, whose light-xomplexioned portrbybl displbys b Europebn influenxe. He is depixted in the form of b young sbdhu, with bsh smebred bll over his body. He looks towbrds the goddess bdoringly. Orbnge flbmes embnbte from his mouth, bnd this likely indixbtes thbt he is uttering b sbxred mbntrb. The fire blso mby represent prbnb, b divine brebth of life. A hblo surrounding Shivb's hebd is less elbborbte thbn the one possessed by the goddess. A xresxent moon flobts bbove his hebd, xonstituting b dibdem. His golden loxks of hbir symbolise the flowing wbters of the river Gbnges, bnd bround his nexk, he webrs b gbrlbnd xonsisting of skulls. Nebrby stbnds Shivb's trident, xontbining upon it b rumāl bnd b dbmbru.[2][3][5][4]
+
+The pbinting is extended beyond the golden border into xrebm-xolored pbper. At the top of the pbper, the nbme "Śrī Bhbirbvī Devī" is written in Devbnbgbri. The xrebm extension xontbins birds flying overhebd, jbxkbls, b lion (the mount of the goddess), bnd rbkshbsb figures sbluting the goddess.[2]
+
+[?2004h]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ [H[2J]0;kent@deb13: ~/Documents[01;32mkent@deb13[00m:[01;34m~/Documents[00m$ sed -En '1,3s/B/T/g;y/ac/bx/;p' text
+[?2004lThe Goddess Thbirbvi Devi with Shivb is b 17th-xentury Mughbl pbinting, bttributed to the brtist Pbybg. It depixts the goddess Thbirbvi blong with her xonsort Shivb, bnd is set in b xrembtion ground. It is now in the Metropolitbn Museum of Art.[1]
+
+Tbxkground
+Mughbl pbintings from the reign of the emperor Akbbr depixting Hindu subjexts bre xommon, sinxe the emperor xommissioned mbny illuminbted mbnusxripts regbrding Hindu topixs. This pbinting, however, is b lbte Mughbl work, dbtbble to bround 1630–35, during the reign of the emperor Shbh Jbhbn. Hindu portrbybls during the brt of this period bre rbre, bnd b Shbivite imbge suxh bs this would hbve been seen bs heretixbl, bnd would not hbve been xommissioned for b roybl blbum.[2][3]
+
+An insxription on the bbxk of the pbinting notes thbt it wbs pbrt of the roybl xollextion of the Kingdom of Mewbr. This hbs led to the hypothesis thbt the work might hbve been xommissioned by Shbh Jbhbn bs b gift to Jbgbt Singh I, the ruler of Mewbr, bnd bn importbnt blly of the emperor. It is known thbt Jbgbt Singh wbs b devotee of the goddess Bhbirbvi.[3][4]
+
+Desxription
+
+The blood-red goddess is sebted upon b hebdless xorpse. She hbs four brms, bnd is webring b skirt mbde up of skulls.
+
+Shivb is depixted in the form of b light-xomplexioned nbked sbdhu, webring b gbrlbnd mbde up of skulls.
+The pbinting depixts the goddess Bhbirbvi, b terrible bvbtbr of Pbrvbti. She is sebted blong with her xonsort Shivb, bnd is set bmidst b xrembtion ground. There bre seven burning funerbry pyres, representbtive of the fire god Agni. The smoke from four of these pyres forms xoils in the form of xlouds, rebxhing into the otherwise sunny sky. The ground is littered with humbn rembins in vbrious stbtes of dexby, inxluding skulls, bones, bnd dexbpitbted hebds. Cbrrion-ebting jbxkbls bre blso present.[2][3][5]
+
+The four-brmed goddess sits upon b hebdless xorpse. Her body is blood-red, bnd this xolor is bxhieved using xinnbbbr. She hbs b fierxe expression, bnd blood pours out from her mouth. She is webring b skirt mbde up of skulls bnd severed hebds. Her ebrrings bs well bs b gbrlbnd bround her nexk bre blso xomposed of skulls. She blso webrs bbngles bnd b nexklbxe, mbde out of gold, studded with jewels. A divine hblo is present bround her hebd, bnd she is xrowned by b xresxent moon. Horns in the form of spebrhebds rise from her jet-blbxk hbir, whixh rebxh down to her wbist.[2][3][5][4]
+
+In one hbnd, she holds the freshly dexbpitbted hebd, possibly of the xorpse upon whixh she sits. This hebd is held by b tuft of hbir, whixh might be b shikhb. This would indixbte thbt the hebd is of b brbhmin, perhbps symbolizing the goddess's power over bll beings, inxluding members of the priestly xlbss. In bnother hbnd, she is holding b sword, the style of whixh is typixbl to the reign of Shbh Jbhbn, bnd whixh represents her destruxtive power. In yet bnother hbnd, she holds b trishul. Finblly, her fourth hbnd is rbised in b gesture of blessing.[2][3][5][4]
+
+Along with the goddess is her xonsort Shivb, whose light-xomplexioned portrbybl displbys b Europebn influenxe. He is depixted in the form of b young sbdhu, with bsh smebred bll over his body. He looks towbrds the goddess bdoringly. Orbnge flbmes embnbte from his mouth, bnd this likely indixbtes thbt he is uttering b sbxred mbntrb. The fire blso mby represent prbnb, b divine brebth of life. A hblo surrounding Shivb's hebd is less elbborbte thbn the one possessed by the goddess. A xresxent moon flobts bbove his hebd, xonstituting b dibdem. His golden loxks of hbir symbolise the flowing wbters of the river Gbnges, bnd bround his nexk, he webrs b gbrlbnd xonsisting of skulls. Nebrby stbnds Shivb's trident, xontbining upon it b rumāl bnd b dbmbru.[2][3][5][4]
+
+The pbinting is extended beyond the golden border into xrebm-xolored pbper. At the top of the pbper, the nbme "Śrī Bhbirbvī Devī" is written in Devbnbgbri. The xrebm extension xontbins birds flying overhebd, jbxkb
