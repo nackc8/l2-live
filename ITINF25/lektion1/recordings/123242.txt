@@ -1,0 +1,48 @@
+Script started on 2026-01-26 12:33:07+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="165" LINES="23"]
+[?2004h[94mITINF25/lektion1
+(B[m$ [H[2J[94mITINF25/lektion1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ pwd
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion1
+[?2004h[94mITINF25/lektion1
+(B[m$ ls[H[2J[94mITINF25/lektion1
+(B[m$ ls
+[?2004lrecordings
+[?2004h[94mITINF25/lektion1
+(B[m$ code .[C[C[K[H[2J[94mITINF25/lektion1
+(B[m$ ls +[K-a
+[?2004l.  ..  recordings
+[?2004h[94mITINF25/lektion1
+(B[m$ ls -a[C[C[Kls -a[K[H[2J[94mITINF25/lektion1
+(B[m$ ls -l
+[?2004ltotal 4
+drwxr-xr-x 2 kent kent 4096 26 jan 12.33 recordings
+[?2004h[94mITINF25/lektion1
+(B[m$ (reverse-i-search)`': s': l[7ms[27m -ls': [7mss[27mh -p 11022 kent@localhost[A[C[C[C[C[C[C[C[C[Ch': [7mssh[27m -p 11022 kent@localhost[A[C[C[C[C[C[C[C[C[C[7P(B[m$ ssh -p 11022 kent@localhost
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[1@0
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 01:39:38 2026 from 10.0.2.2
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ nano hej.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;10r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[8;13H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.4   hej.txt            [1;35H(B[m[9d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^F(B[m Where Is[10d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace[2d[?12l[?25h[?25l[1;26H(B[0;7m*[35G(B[m[?12l[?25h[2dH[?25l[?12l[?25hE[?25l[?12l[?25hL[?25l[?12l[?25hL[?25l[?12l[?25hO[?25l[3d[?12l[?25h[?25l[8d(B[0;7mSave modified buffer?               [9;1H Y(B[m Yes[K[10d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[8;23H[?12l[?25h[?25l[9d(B[0;7m^G(B[m Help     (B[0;7mM-D(B[m DOS Form(B[0;7mM-A(B[m Append[10d(B[0;7m^C(B[m Cancel   (B[0;7mM-M(B[m Mac Form(B[0;7mM-P(B[m Prepend[8d(B[0;7mWrite to File: hej.txt(B[m[?12l[?25h[?25l[8;11H[1K (B[0;7m[ Writing... ](B[m[K[1d(B[0;7m [35G(B[m[8;10H(B[0;7m[ Wrote 2 lines ](B[m[J[10d[?12l[?25h[10;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ ls -l
+[?2004ltotal 36
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mDocuments[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mDownloads[0m
+-rw-rw-r-- 1 kent kent    7 jan 26 12:45 hej.txt
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mMusic[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mPictures[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mPublic[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mTemplates[0m
+drwxr-xr-x 2 kent kent 4096 jan 26 00:02 [01;34mVideos[0m
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ stat hej.txt 
+[?2004l  File: hej.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,2	Inode: 11803
