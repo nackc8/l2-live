@@ -24,7 +24,9 @@ qemu-system-x86_64 \
 	-device virtio-gpu-pci \
 	-drive file=arch-disk1.qcow2,format=qcow2 \
 	-drive file=arch-disk2.qcow2,format=qcow2 \
-	-machine q35
+	-machine q35 \
+	-drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd \
+	-drive if=pflash,format=raw,file=Rocky10_UEFI_OVMF_VARS_4M.fd
 
 # -device usb-ehci
 #     Use usb 2.0 chip
