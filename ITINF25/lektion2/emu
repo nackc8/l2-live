@@ -4,3 +4,6 @@ qemu-system-x86_64 \
 	-cdrom ./TinyCore-current.iso \
 	-device usb-ehci \
 	-device usb-tablet
+
+# -device usb-ehci
+#     Use usb 2.0 chip
