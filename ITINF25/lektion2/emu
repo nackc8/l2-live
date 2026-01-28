@@ -10,7 +10,10 @@ fi
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
 	-device usb-ehci \
-	-device usb-tablet
+	-device usb-tablet \
+	-smp 2
 
 # -device usb-ehci
 #     Use usb 2.0 chip
+# -smp 2
+#	  Use 2 cores
