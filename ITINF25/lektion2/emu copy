@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ISO="$1"
+
+if test "$1" = ""; then
+	echo "Error: Provide an iso file!!!" >&2
+	exit 1
+fi
+
+qemu-system-x86_64 \
+	-cdrom "$ISO" \
+	-device usb-ehci \
+	-device usb-tablet \
+	-smp 2 \
+	-m 4G \
+	-daemonize \
+	-enable-kvm
+
+# -device usb-ehci
+#     Use usb 2.0 chip
+# -smp 2
+#	  Use 2 cores
