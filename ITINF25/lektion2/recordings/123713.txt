@@ -1,0 +1,75 @@
+Script started on 2026-01-28 12:37:13+01:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="58" LINES="14"]
+[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ./emu [H[2J[94mITINF25/lektion2
+(B[m$ ./emu 
+emu                   recordings/
+qemu-kommandon.md     TinyCore-current.iso
+[94mITINF25/lektion2
+(B[m$ ./emu Tu[KinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [1@-[1@o[1P[1@n[4@okvm
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu-nokvm TinyCore-current.iso [1P[1P[1P[1P[1P[1P
+[?2004lioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
+qemu-system-x86_64: failed to initialize kvm: Device or resource busy
+[?2004h[94mITINF25/lektion2
+(B[m$ (reverse-i-search)`': p': git [7mp[27mush -fs': cd devo[7mps[27m25/ ': [7mps [27m-ef | grep GradleDaemon[1@-': [7mps -[27m[1@e': [7mps -e[27m[25P(B[m$ ps -e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K-i emu
+[?2004lkent      136191  124712  0 12:54 pts/14   00:00:00 grep -i emu
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ps -ef | grep -i emu[C[C./emu TinyCore-current.iso [C[C[C[C[C[C[C[6@-nokvm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu-nokvm TinyCore-current.iso [1P[1P[1P[1P[1P[1P
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8i[K/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+--More--[Kubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso .
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004larch				 qemu-kommandon.md
+archlinux-2026.01.01-x86_64.iso  recordings
+emu				 TinyCore-current.iso
+emu-nokvm
+[?2004h[94mITINF25/lektion2
+(B[m$ mv archi[Klinux-2026.01.01-x86_64.iso arch.iso
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004larch	  emu-nokvm	     TinyCore-current.iso
+arch.iso  qemu-kommandon.md
+emu	  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ./cp[K[K[K[Kcp emu arch
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [7mqemu-img[27m[C[Cqem

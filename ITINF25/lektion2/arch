@@ -7,6 +7,9 @@ if test "$1" = ""; then
 	exit 1
 fi
 
+# Skapa arch-disk1.qcow2 30G
+# Skapa arch-disk2.qcow2 30G
+
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
 	-device usb-ehci \
