@@ -14,6 +14,8 @@ fi
 #	qemu-img info arch-disk1.qcow2
 # Behövs firmware-kod för UEFI boot
 #   sudo apt install ovmf
+# Kopiera en mall, som sedan vi kommer att skriva till också
+#   cp /usr/share/OVMF/OVMF_VARS_4M.fd arch-ovmf-vars.fd
 
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
