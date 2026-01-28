@@ -3,7 +3,7 @@
 ISO=./TinyCore-current.iso
 
 qemu-system-x86_64 \
-	-cdrom $ISO \
+	-cdrom "$ISO" \
 	-device usb-ehci \
 	-device usb-tablet
 
