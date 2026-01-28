@@ -12,6 +12,8 @@ fi
 # Skapa arch-disk2.qcow2 30G
 # Info om en disk
 #	qemu-img info arch-disk1.qcow2
+# Behövs firmware-kod för UEFI boot
+#   sudo apt install ovmf
 
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
