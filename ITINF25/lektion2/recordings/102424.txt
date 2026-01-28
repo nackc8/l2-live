@@ -1,0 +1,27 @@
+Script started on 2026-01-28 10:24:31+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="79" LINES="11"]
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ (reverse-i-search)`': s': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,di[7ms[27mable-ticketing=on[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device[9P usb-tablet -display none -spice port=8000,pa[7mss[27mword=p[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Ph': [7mssh[27m -p 10022 kent@localhost
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23P(B[m$ ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 01:33:23 2026 from 10.0.2.2
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu
+[?2004l-bash: qemu: command not found
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ l[K[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu[K[K[K[Ksudo apt update
+[?2004l[sudo] password for kent: 
+[33m0% [Working][0m            Hit:1 http://debian.mirror.su.se/debian trixie InRelease
+[33m0% [Waiting for headers][0m                        Get:2 http://debian.mirror.su.se/debian trixie-updates InRelease [47,3 kB]
+[33m                        0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m            Get:3 http://security.debian.org/debian-security trixie-security InRelease [43,4 kB]
+[33m0% [3 InRelease 0 B/43,4 kB 0%][0m[33m                               0% [Working][0m[33m43% [Working][0m             Get:4 http://security.debian.org/debian-security trixie-security/main Sources [119 kB]
+[33m43% [4 Sources 0 B/119 kB 0%][0m[33m                             74% [Working][0m[33m74% [4 Sources store 0 B] [Waiting for headers][0m[33m                                               74% [Waiting for headers][0m                         Get:5 http://security.debian.org/debian-security trixie-security/main amd64 Packages [97,9 kB]
+[33m78% [5 Packages 14,4 kB/97,9 kB 15%][0m[33m                                    100% [Working][0m[33m100% [5 Packages store 0 B][0m[33m                           100% [Working][0m              Fetched 308 kB in 1s (489 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 60%Reading package lists... 60%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                
