@@ -1,0 +1,150 @@
+Script started on 2026-01-28 12:37:13+01:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="58" LINES="14"]
+ITINF25/lektion2
+$ 
+./emu ITINF25/lektion2
+$ ./emu 
+
+emu                   recordings/
+qemu-kommandon.md     TinyCore-current.iso
+ITINF25/lektion2
+$ ./emu Tu
+inyCore-current.iso ITINF25/lektion2
+$ ./emu TinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu TinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu TinyCore-current.iso ITINF25/lektion2
+$ ./emu TinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu TinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu TinyCore-current.iso ITINF25/lektion2
+$ ./emu TinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu TinyCore-current.iso-o
+nokvm
+ITINF25/lektion2
+$ ./emu-nokvm TinyCore-current.iso
+ioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
+qemu-system-x86_64: failed to initialize kvm: Device or resource busy
+ITINF25/lektion2
+$ ps -ee-i-search)`':p': git push -s': cd devops25 ': ps -ef | grep GradleDaemo-': ps -e': ps -e
+
+
+-i emu
+kent      136191  124712  0 12:54 pts/14   00:00:00 grep -i emu
+ITINF25/lektion2
+$ ITINF25/lektion2
+-nokvmTinyCore-current.iso 
+ITINF25/lektion2
+$ ./emu-nokvm TinyCore-current.iso
+ITINF25/lektion2
+$ cp ~/Dropbox/c8
+/iso/
+
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+ITINF25/lektion2
+$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso ITINF25/lektion2
+$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso .
+ITINF25/lektion2
+$ ITINF25/lektion2
+$ ls
+arch				 qemu-kommandon.md
+archlinux-2026.01.01-x86_64.iso  recordings
+emu				 TinyCore-current.iso
+emu-nokvm
+ITINF25/lektion2
+$ mv ar
+chi
+linux-2026.01.01-x86_64.iso arch.iso
+ITINF25/lektion2
+$ 
+
+ITINF25/lektion2
+$ ls
+arch	  emu-nokvm	     TinyCore-current.iso
+arch.iso  qemu-kommandon.md
+emu	  recordings
+ITINF25/lektion2
+$ ./c
+cp
+ em
+u arch
+ITINF25/lektion2
+$ ITINF25/lektion2
+$ qemu-img
+qemu-img cre
+ate -f qcow2
+-f qcow2 arch-disk1.qcow2
+arch-disk1.qcow2
+qemu-img: arch-disk1.qcow2: Image creation needs a size parameter
+ITINF25/lektion2
+$ qemu-img create -f qcow2 arch-disk1.qcow2ITINF25/lektion2
+$ qemu-img create -f qcow2 arch-disk1.qcow2 30G
+Formatting 'arch-disk1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+ITINF25/lektion2
+$ ITINF25/lektion2
+$ qemu-img create -f qcow2 arch-disk1.qcow2 30inf
+o 
+
+arch                  emu-nokvm
+arch-disk1.qcow2      qemu-kommandon.md
+arch.iso              recordings/
+emu                   TinyCore-current.iso
+ITINF25/lektion2
+$ qemu-img info ar
+ch-disk1.qcow2 ITINF25/lektion2
+$ qemu-img info arch-disk1.qcow2 
+image: arch-disk1.qcow2
+file format: qcow2
+virtual size: 30 GiB (32212254720 bytes)
+disk size: 196 KiB
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    compression type: zlib
+    lazy refcounts: false
+    refcount bits: 16
+    corrupt: false
+    extended l2: false
+ITINF25/lektion2
+$ qemu-img create -f qcow2 arch-disk1.qcow2 30G
+qemu-img create -f qcow2 arch-disk1.qcow2 302ITINF25/lektion2
+$ qemu-img create -f qcow2 arch-disk2.qcow2 30
+Formatting 'arch-disk2.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+ITINF25/lektion2
+$ ITINF25/lektion2
+$ dpkg -S /usr/share/OVMF/OVMF_CODE_4M.fd
+/usr/share/OVMF/OVMF_CODE_4M.fd
+ovmf: /usr/share/OVMF/OVMF_CODE_4M.fd
+ITINF25/lektion2
+$ sudo apt install ovfm  mf     ^C
+ITINF25/lektion2
+/usr/share/OVMF/OVMF_CODE_4M.fITINF25/lektion2
+$ /usr/share/OVMF/OVMF_CODE_4M.fl/usr/share/OVMF/OVMF_CODE_4M.fs/usr/share/OVMF/OVMF_CODE_4M.f /usr/share/OVMF/OVMF_CODE_4M.f
+/usr/share/OVMF/OVMF_CODE_4M.fd
+ITINF25/lektion2
+$ nano Â..-./../.gi
+tignore 
+#8 Custom   ^R Read File^\ Replace  ^U Paste    ^J Justify  ../../.gitignore                     
+8gnored*
+8ignored*
+8.iso
+8.qcow2
+;8
