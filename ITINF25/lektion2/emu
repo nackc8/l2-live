@@ -2,6 +2,8 @@
 
 ISO=$1
 
+
+
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
 	-device usb-ehci \
