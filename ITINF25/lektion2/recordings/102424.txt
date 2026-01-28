@@ -336,4 +336,81 @@ bin  .git      ITINF25	   .shared    .vscode
 [?2004h[94mITINF25/lektion2
 (B[m$ ls -a ../..
 [?2004l.    date      .gitignore  .profiles  .shellcheckrc
-..   DEVOPS24  ITINF24	  
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ../../.gitignore [H[2J[94mITINF25/lektion2
+(B[m$ ls -a ../../.gitignore [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@c[1@o[1@d[1@e
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ code ../../.gitignore [C[C[C[C[1P[1P[1P[1P[1@l[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K
+[?2004lbin  date  DEVOPS24  ITINF24  ITINF25  README.md
+[?2004h[94mITINF25/lektion2
+(B[m$ ls ../../-../../a../../ ../../[H[2J[94mITINF25/lektion2
+(B[m$ ls -a ../../
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ rm .gitignore [H[2J[94mITINF25/lektion2
+(B[m$ rm .gitignore 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ (reverse-i-search)`': [23@c': [7mc[27mode ../../.gitignore[C[8@failed reverse-i-search)`cp': c^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+--More--[KTUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+--More--[KWindows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso .
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004lqemu-kommandon.txt  recordings	TinyCore-current.iso
+[?2004h[94mITINF25/lektion2
+(B[m$ qe[H[2J[94mITINF25/lektion2
+(B[m$ qemu-system-
+qemu-system-aarch64         qemu-system-ppc
+qemu-system-alpha           qemu-system-ppc64
+qemu-system-arm             qemu-system-ppc64le
+qemu-system-avr             qemu-system-riscv32
+qemu-system-cris            qemu-system-riscv64
+qemu-system-hppa            qemu-system-rx
+qemu-system-i386            qemu-system-s390x
+qemu-system-loongarch64     qemu-system-sh4
+--More--[Kqemu-system-m68k            qemu-system-sh4eb
+qemu-system-microblaze      qemu-system-sparc
+qemu-system-microblazeel    qemu-system-sparc64
+qemu-system-mips            qemu-system-tricore
+qemu-system-mips64          qemu-system-x86_64
+qemu-system-mips64el        qemu-system-x86_64-microvm
+qemu-system-mipsel          qemu-system-xtensa
+qemu-system-nios2           qemu-system-xtensaeb
+--More--[Kqemu-system-or1k            
+[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64[H[2J[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64b[K -cdrom ./TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64 -cdrom ./TinyCore-current.iso [7m-device[27m[7m [27m[7musb-ehci \ [27m
+[7m-device usb-tablet[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-device usb-ehci \
+-device usb-tablet[A[C[C[C[C[C[C[C[C[C[C[C-device usb-tablet
+[K[A[C[C[C
