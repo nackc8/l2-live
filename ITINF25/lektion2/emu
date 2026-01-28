@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ISO=./TinyCore-current.iso
+ISO=$1
 
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
