@@ -265,4 +265,75 @@ Unpacking qemu-system-modules-spice (1:10.0.7+ds-0+deb13u1+b1) ...
 7[14;0f[42m[30mProgress: [ 97%][49m[39m [███████████████████████████████████ ] 8Setting up qemu-block-extra (1:10.0.7+ds-0+deb13u1+b1) ...
 7[14;0f[42m[30mProgress: [ 99%][49m[39m [███████████████████████████████████▌] 87[14;0f[42m[30mProgress: [ 99%][49m[39m [███████████████████████████████████▊] 8Processing triggers for hicolor-icon-theme (0.18-2) ...
 Processing triggers for gnome-menus (3.36.0-3) ...
-Processing triggers for libc-bin (2.41-12+
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for mailcap (3.74) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+
+7[0;14r8[1A[J[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu-
+qemu-img                    qemu-system-amd64
+qemu-io                     qemu-system-i386
+qemu-nbd                    qemu-system-x86_64
+qemu-pr-helper              qemu-system-x86_64-microvm
+qemu-storage-daemon         qemu-vmsr-helper
+]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu-[K[K[K[K[Kexit
+[?2004llogout
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls [K[K[Kls
+[?2004lqemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ nano .gitignore
+[?2004l[?2004h[?1049h[22;0;0t[1;14r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[12;24H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2            .gitignore                      [1;57H(B[m[13d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[14d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[1;38H(B[0;7m*[57G(B[m[?12l[?25h[2d*[?25l[?12l[?25h.[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[3d[?12l[?25h[?25l[12d(B[0;7mSave modified buffer?                                     [13;1H Y(B[m Yes[K[14d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[12;23H[?12l[?25h[?25l[13d(B[0;7m^G(B[m Help[15G(B[0;7mM-D(B[m DOS Format(B[0;7mM-A(B[m Append    (B[0;7mM-B(B[m Backup File[14d(B[0;7m^C(B[m Cancel     (B[0;7mM-M(B[m Mac Format(B[0;7mM-P(B[m Prepend   (B[0;7m^T(B[m Browse[12d(B[0;7mFile Name to Write: .gitignore(B[m[?12l[?25h[?25l[12;22H[1K (B[0;7m[ Writing... ](B[m[K[1;38H(B[0;7m [57G(B[m[12;21H(B[0;7m[ Wrote 2 lines ](B[m[J[14d[?12l[?25h[14;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8
+c8/                       c8 - economy/
+c8 - contracts/           c8 - future blog-entries/
+c8 - cv/                  c8 - timestamps/
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/[H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+--More--[Kubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso  ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ p[Kpwd
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion2
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ..
+[?2004l.  ..  lektion1  lektion2
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ...[K/..
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ../..
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	  
