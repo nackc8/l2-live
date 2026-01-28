@@ -24,4 +24,98 @@ Last login: Mon Jan 26 01:33:23 2026 from 10.0.2.2
 [33m0% [3 InRelease 0 B/43,4 kB 0%][0m[33m                               0% [Working][0m[33m43% [Working][0m             Get:4 http://security.debian.org/debian-security trixie-security/main Sources [119 kB]
 [33m43% [4 Sources 0 B/119 kB 0%][0m[33m                             74% [Working][0m[33m74% [4 Sources store 0 B] [Waiting for headers][0m[33m                                               74% [Waiting for headers][0m                         Get:5 http://security.debian.org/debian-security trixie-security/main amd64 Packages [97,9 kB]
 [33m78% [5 Packages 14,4 kB/97,9 kB 15%][0m[33m                                    100% [Working][0m[33m100% [5 Packages store 0 B][0m[33m                           100% [Working][0m              Fetched 308 kB in 1s (489 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 60%Reading package lists... 60%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 60%Reading package lists... 60%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[0m[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ u[Ksudo apt install qe
+qelectrotech                qemu-system-misc
+qelectrotech-data           qemu-system-modules-opengl
+qelectrotech-examples       qemu-system-modules-spice
+qemu-block-extra            qemu-system-ppc
+qemubuilder                 qemu-system-riscv
+qemu-efi-aarch64            qemu-system-s390x
+qemu-efi-arm                qemu-system-sparc
+qemu-efi-loongarch64        qemu-system-x86
+qemu-efi-riscv64            qemu-system-xen
+qemu-guest-agent            qemu-user
+qemu-system                 qemu-user-binfmt
+qemu-system-arm             qemu-user-static
+qemu-system-common          qemu-utils
+qemu-system-data            qemu-web-desktop
+--More--[Kqemu-system-gui             qepcad
+qemu-system-mips            
+]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qe[K[K[7mqemu-utils qemu-system-x86 qemu-system-gui[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqemu-utils qemu-system-x86 qemu-system-gui[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui 
+[?2004lReading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Installing:
+[32m  qemu-system-gui  qemu-system-x86  qemu-utils
+[0m
+Installing dependencies:
+[32m  ibverbs-providers  libpmem1
+  ipxe-qemu          librados2
+  libaio1t64         librbd1
+  libblkio1          librdmacm1t64
+  libcacard0         libslirp0
+  libcapstone5       libspice-server1
+  libdaxctl1         liburing2
+  libexecs1          libusbredirparser1t64
+  libfdt1            libvdeplug2t64
+  libfmt10           libvirglrenderer1
+  libgfapi0          ovmf
+  libgfrpc0          qemu-block-extra
+  libgfxdr0          qemu-system-common
+  libglusterfs0      qemu-system-data
+  libibverbs1        qemu-system-modules-opengl
+  libiscsi7          qemu-system-modules-spice
+  libndctl6          seabios
+[0m
+Suggested packages:
+  samba  vde2
+
+Summary:
+  Upgrading: 0, Installing: 37, Removing: 0, Not Upgrading: 7
+  Download size: 45,4 MB
+  Space needed: 180 MB / 22,4 GB available
+
+Continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://debian.mirror.su.se/debian trixie/main amd64 libibverbs1 amd64 56.1-1 [62,4 kB]
+[33m0% [1 libibverbs1 55,1 kB/62,4 kB 88%][0m[33m                                      1% [Working][0m            Get:2 http://debian.mirror.su.se/debian trixie/main amd64 ibverbs-providers amd64 56.1-1 [357 kB]
+[33m1% [2 ibverbs-providers 63,4 kB/357 kB 18%][0m[33m                                           2% [Waiting for headers][0m                        Get:3 http://debian.mirror.su.se/debian trixie/main amd64 ipxe-qemu all 1.21.1+git20250501.dad20602+dfsg-1 [1 225 kB]
+[33m2% [3 ipxe-qemu 32,8 kB/1 225 kB 3%][0m                                      Get:4 http://debian.mirror.su.se/debian trixie/main amd64 libaio1t64 amd64 0.3.113-8+b1 [14,9 kB]
+                                      Get:5 http://debian.mirror.su.se/debian trixie/main amd64 libblkio1 amd64 1.5.0-2 [250 kB]
+[33m                                      5% [5 libblkio1 88,7 kB/250 kB 35%][0m[33m                                   6% [Waiting for headers][0m                        Get:6 http://debian.mirror.su.se/debian trixie/main amd64 libcacard0 amd64 1:2.8.0-3+b2 [90,9 kB]
+[33m6% [6 libcacard0 90,9 kB/90,9 kB 100%][0m[33m                                      7% [Waiting for headers][0m                        Get:7 http://debian.mirror.su.se/debian trixie/main amd64 libcapstone5 amd64 5.0.6-1 [780 kB]
+[33m7% [7 libcapstone5 6 944 B/780 kB 1%][0m                                       Get:8 http://debian.mirror.su.se/debian trixie/main amd64 libdaxctl1 amd64 81-1 [22,2 kB]
+[33m                                       9% [8 libdaxctl1 22,2 kB/22,2 kB 100%][0m                                      Get:9 http://debian.mirror.su.se/debian trixie/main amd64 libexecs1 amd64 1.4-2+b2 [7 820 B]
+[33m9% [9 libexecs1 7 820 B/7 820 B 100%][0m                                         Get:10 http://debian.mirror.su.se/debian trixie/main amd64 libfdt1 amd64 1.7.2-2+b1 [20,0 kB]
+[33m                                         10% [10 libfdt1 14,2 kB/20,0 kB 71%][0m[33m                                    10% [Waiting for headers][0m                         Get:11 http://debian.mirror.su.se/debian trixie/main amd64 libfmt10 amd64 10.1.1+ds1-4 [127 kB]
+[33m11% [11 libfmt10 91,2 kB/127 kB 72%][0m[33m                                    11% [Waiting for headers][0m                         Get:12 http://debian.mirror.su.se/debian trixie/main amd64 libgfxdr0 amd64 11.1-6 [3 181 kB]
+[33m11% [12 libgfxdr0 0 B/3 181 kB 0%][0m                                    Get:13 http://debian.mirror.su.se/debian trixie/main amd64 libglusterfs0 amd64 11.1-6 [3 417 kB]
+[33m17% [13 libglusterfs0 43,1 kB/3 417 kB 1%][0m[33m                                            24% [Waiting for headers][0m                         Get:14 http://debian.mirror.su.se/debian trixie/main amd64 libgfrpc0 amd64 11.1-6 [3 206 kB]
+[33m24% [14 libgfrpc0 74,2 kB/3 206 kB 2%][0m[33m                                        30% [Waiting for headers][0m                         Get:15 http://debian.mirror.su.se/debian trixie/main amd64 libgfapi0 amd64 11.1-6 [3 243 kB]
+[33m30% [15 libgfapi0 13,6 kB/3 243 kB 0%][0m[33m                                        36% [Waiting for headers][0m                         Get:16 http://debian.mirror.su.se/debian trixie/main amd64 librdmacm1t64 amd64 56.1-1 [70,4 kB]
+[33m36% [16 librdmacm1t64 38,5 kB/70,4 kB 55%][0m[33m                                          37% [Waiting for headers][0m                         Get:17 http://debian.mirror.su.se/debian trixie/main amd64 libiscsi7 amd64 1.20.0-4 [69,7 kB]
+[33m37% [17 libiscsi7 41,0 kB/69,7 kB 59%][0m[33m                                      38% [Waiting for headers][0m                         Get:18 http://debian.mirror.su.se/debian trixie/main amd64 libndctl6 amd64 81-1 [62,3 kB]
+[33m38% [18 libndctl6 37,5 kB/62,3 kB 60%][0m[33m                                      38% [Waiting for headers][0m                         Get:19 http://debian.mirror.su.se/debian trixie/main amd64 libpmem1 amd64 1.13.1-1.1+b1 [91,7 kB]
+[33m38% [19 libpmem1 28,7 kB/91,7 kB 31%][0m[33m                                     39% [Working][0m             Get:20 http://debian.mirror.su.se/debian trixie/main amd64 librados2 amd64 18.2.7+ds-1 [3 586 kB]
+[33m39% [20 librados2 22,9 kB/3 586 kB 1%][0m[33m42% [20 librados2 1 827 kB/3 586 kB 51%][0m[33m                                            46% [Waiting for headers][0m                         Get:21 http://debian.mirror.su.se/debian trixie/main amd64 librbd1 amd64 18.2.7+ds-1 [2 507 kB]
+[33m46% [21 librbd1 32,6 kB/2 507 kB 1%][0m[33m                                      51% [Waiting for headers][0m                         Get:22 http://debian.mirror.su.se/debian trixie/main amd64 libslirp0 amd64 4.8.0-1+b1 [66,4 kB]
+[33m51% [22 libslirp0 66,4 kB/66,4 kB 100%][0m[33m                                       51% [Working][0m             Get:23 http://debian.mirror.su.se/debian trixie/main amd64 libspice-server1 amd64 0.15.2-1+b1 [349 kB]
+[33m52% [23 libspice-server1 44,6 kB/349 kB 13%][0m[33m                                            53% [Waiting for headers][0m                         Get:24 http://debian.mirror.su.se/debian trixie/main amd64 liburing2 amd64 2.9-1 [26,4 kB]
+[33m53% [24 liburing2 26,4 kB/26,4 kB 100%][0m[33m                                       53% [Working][0m             Get:25 http://debian.mirror.su.se/debian trixie/main amd64 libusbredirparser1t64 amd64 0.15.0-1 [19,6 kB]
+[33m53% [25 libusbredirparser1t64 19,6 kB/19,6 kB 100%][0m[33m                                                   54% [Waiting for headers][0m                         Get:26 http://debian.mirror.su.se/debian trixie/main amd64 libvdeplug2t64 amd64 4.0.1-5.1+b1 [28,5 kB]
+                         Get:27 http://debian.mirror.su.se/debian trixie/main amd64 libvirglrenderer1 amd64 1.1.0-2 [410 kB]
+[33m55% [27 libvirglrenderer1 92,8 kB/410 kB 23%][0m[33m                                             56% [Waiting for headers][0m                         Get:28 http://debian.mirror.su.se/debian trixie/main amd64 ovmf all 2025.02-8+deb13u1 [5 780 kB]
+[33m56% [28 ovmf 33,0 kB/5 780 kB 1%][0m[33m                                   66% [Waiting for headers][0m                         Get:29 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-common amd64 1:10.0.7+ds-0+deb13u1+b1 [989 kB]
+[33m66% [29 qemu-system-common 20,5 kB/989 kB 2%][0m[33m                                             69% [Waiting for headers][0m                         Get:30 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-data all 1:10.0.7+ds-0+deb13u1 [2 129 kB]
+[33m69% [30 qemu-system-data 37,4 kB/2 129 kB 2%][0m[33m                                               73% [Waiting for headers][0m                         Get:31 http://debian.mirror.su.se/debian trixie/main amd64 seabios all 1.16.3-2 [163 kB]
+[33m73% [31 seabios 104 kB/163 kB 64%][0m[33m                                  74% [Waiting for headers][0m                         Get:32 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-x86 amd64 1:10.0.7+ds-0+deb13u1+b1 [10,3 MB]
+[33m74% [32 qemu-system-x86 69,7 kB/10,3 MB 1%][0m[33m90% [32 qemu-system-x86 9 227 kB/10,3 MB 90%][0m[33m                                               92% [Waiting for headers][0m                         Get:33 http://debian.mirror.su.se/debian trixie/main amd64 qemu-utils amd64 1:10.0.7+ds-0+deb13u1+b1 [2 005 kB]
+[33m93% [33 qemu-utils 262 kB/2 005 kB 13%][0m[33m                                         96% [Waiting for headers][0m                         Get:34 http://debian.mirror.su.se/debian trixie/main amd64 qemu-block-extra amd64 1:10.0.7+ds-0+deb13u1+b1 [124 kB]
+[33m97% [34 qemu-block-extra 46,4 kB/124 kB 37%][0m[33m                                            97% [Waiting for headers][0m                         Get:35 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-modules-opengl amd64 1:10.0.7+ds-0+deb13u1+b1 [183 kB]
+[33m97% [35 qemu-system-modules-opengl 5 496 B/183 kB 3%][0m[33m                                                       98% [Waiting for headers][0m                         Get:36 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-gui amd64 1:10.0.7+ds-0+deb13u1+b1 [348 kB]
+[33m98% [36 qemu-system-gui 79,7 kB/348 kB 23%][0m[33m                                           99% [Waiting for headers][0m                         Get:37 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-modules-spice amd64 1:10.0.7+ds-0+deb13u1+b1 [115 kB]
+[33m99% [37 qemu-system-modules-spice 35,9 kB/115 kB 31%][0m[33m                                                     100% [Working][0m              Fetched 45,4 MB in 3s (14,0 MB/s)
+Extracting templates from packages: 81%Extracting templates from packages: 100%
+
+7[0;13r8[1ASelecting previously unselected package libibverbs1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 130276 files and directories currently installed.)
+Preparing to unpack .../00-libibverbs1_56.1-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [  0%][49m[39m [                                    ] 8Unpacking libibverbs1:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [  1%][49m[39m [▍   
