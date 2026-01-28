@@ -3,7 +3,7 @@
 ISO=$1
 
 if test "$1" = ""; then
-	echo "Error: Provide an iso file!!!"
+	echo "Error: Provide an iso file!!!" >
 fi
 
 qemu-system-x86_64 \
