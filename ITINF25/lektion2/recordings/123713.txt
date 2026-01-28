@@ -1,0 +1,124 @@
+Script started on 2026-01-28 12:37:13+01:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="58" LINES="14"]
+[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ./emu [H[2J[94mITINF25/lektion2
+(B[m$ ./emu 
+emu                   recordings/
+qemu-kommandon.md     TinyCore-current.iso
+[94mITINF25/lektion2
+(B[m$ ./emu Tu[KinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso [K(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu TinyCore-current.iso [1@-[1@o[1P[1@n[4@okvm
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu-nokvm TinyCore-current.iso [1P[1P[1P[1P[1P[1P
+[?2004lioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
+qemu-system-x86_64: failed to initialize kvm: Device or resource busy
+[?2004h[94mITINF25/lektion2
+(B[m$ (reverse-i-search)`': p': git [7mp[27mush -fs': cd devo[7mps[27m25/ ': [7mps [27m-ef | grep GradleDaemon[1@-': [7mps -[27m[1@e': [7mps -e[27m[25P(B[m$ ps -e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K-i emu
+[?2004lkent      136191  124712  0 12:54 pts/14   00:00:00 grep -i emu
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ps -ef | grep -i emu[C[C./emu TinyCore-current.iso [C[C[C[C[C[C[C[6@-nokvm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ ./emu-nokvm TinyCore-current.iso [1P[1P[1P[1P[1P[1P
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8i[K/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+--More--[Kubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso .
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004larch				 qemu-kommandon.md
+archlinux-2026.01.01-x86_64.iso  recordings
+emu				 TinyCore-current.iso
+emu-nokvm
+[?2004h[94mITINF25/lektion2
+(B[m$ mv archi[Klinux-2026.01.01-x86_64.iso arch.iso
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004larch	  emu-nokvm	     TinyCore-current.iso
+arch.iso  qemu-kommandon.md
+emu	  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ./cp[K[K[K[Kcp emu arch
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [7mqemu-img[27m[C[Cqemu-img create [7m-f qcow2[27m-f qcow2 [7march-disk1.qcow2[27march-disk1.qcow2
+[?2004lqemu-img: arch-disk1.qcow2: Image creation needs a size parameter
+[?2004h[94mITINF25/lektion2
+(B[m$ qemu-img create -f qcow2 arch-disk1.qcow2[H[2J[94mITINF25/lektion2
+(B[m$ qemu-img create -f qcow2 arch-disk1.qcow2 30G
+[?2004lFormatting 'arch-disk1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ qemu-img create -f qcow2 arch-disk1.qcow2 30G[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kinfo 
+arch                  emu-nokvm
+arch-disk1.qcow2      qemu-kommandon.md
+arch.iso              recordings/
+emu                   TinyCore-current.iso
+[94mITINF25/lektion2
+(B[m$ qemu-img info arch-disk1.qcow2 [H[2J[94mITINF25/lektion2
+(B[m$ qemu-img info arch-disk1.qcow2 
+[?2004limage: arch-disk1.qcow2
+file format: qcow2
+virtual size: 30 GiB (32212254720 bytes)
+disk size: 196 KiB
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    compression type: zlib
+    lazy refcounts: false
+    refcount bits: 16
+    corrupt: false
+    extended l2: false
+[?2004h[94mITINF25/lektion2
+(B[m$ [7mqemu-img create -f qcow2 arch-disk1.qcow2 30G[27m[C[Cqemu-img create -f qcow2 arch-disk1.qcow2 30G[1P[1@2[H[2J[94mITINF25/lektion2
+(B[m$ qemu-img create -f qcow2 arch-disk2.qcow2 30G[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lFormatting 'arch-disk2.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ dpkg -S [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C[C[C[C[C[C[C[C[C/usr/share/OVMF/OVMF_CODE_4M.fd
+[?2004lovmf: /usr/share/OVMF/OVMF_CODE_4M.fd
+[?2004h[94mITINF25/lektion2
+(B[m$ sudo apt install ovfm   [K[K[K[K[Kmf     ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion2
+(B[m$ [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C/usr/share/OVMF/OVMF_CODE_4M.fd[H[2J[94mITINF25/lektion2
+(B[m$ /usr/share/OVMF/OVMF_CODE_4M.fd[C[Cl/usr/share/OVMF/OVMF_CODE_4M.fds/usr/share/OVMF/OVMF_CODE_4M.fd /usr/share/OVMF/OVMF_CODE_4M.fd
+[?2004l/usr/share/OVMF/OVMF_CODE_4M.fd
+[?2004h[94mITINF25/lektion2
+(B[m$ nano ½[K..-..[K[K[K/../.gitignore 
+[?2004l[?2004h[?1049h[22;0;0t[1;8r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[6;25H(B[0;7m[ Reading... ](B[m[6;23H(B[0;7m[ Read 483 lines ](B[m[H(B[0;7m  GNU nano 7.2            ../../.gitignore                     [1;62H(B[m[7d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[8d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[36m#[3d# Custom[4d#[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h7[2;5r8
+[1;8r[5;1Hignored*[?25l[?12l[?25h7[2;5r8
+[1;8r[5;1H.ignored*[?25l[?12l[?25h7[2;5r8
+[1;8r[5;1H*.iso[?25l[?12l[?25h7[2;5r8
+[1;8r[5;1H*.qcow2[?25l[?12l[?25h7[2;5r8
+[1;8r[5;1H[?25l[?12l[?25h[4;8

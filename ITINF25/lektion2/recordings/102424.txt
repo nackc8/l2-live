@@ -1,0 +1,416 @@
+Script started on 2026-01-28 10:24:31+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="79" LINES="11"]
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ (reverse-i-search)`': s': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,di[7ms[27mable-ticketing=on[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device[9P usb-tablet -display none -spice port=8000,pa[7mss[27mword=p[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Ph': [7mssh[27m -p 10022 kent@localhost
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23P(B[m$ ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lWarning: Permanently added '[localhost]:10022' (ED25519) to the list of known hosts.
+kent@localhost's password: 
+Linux deb13 6.12.63+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.63-1 (2025-12-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jan 26 01:33:23 2026 from 10.0.2.2
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu
+[?2004l-bash: qemu: command not found
+[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ l[K[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu[K[K[K[Ksudo apt update
+[?2004l[sudo] password for kent: 
+[33m0% [Working][0m            Hit:1 http://debian.mirror.su.se/debian trixie InRelease
+[33m0% [Waiting for headers][0m                        Get:2 http://debian.mirror.su.se/debian trixie-updates InRelease [47,3 kB]
+[33m                        0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m            Get:3 http://security.debian.org/debian-security trixie-security InRelease [43,4 kB]
+[33m0% [3 InRelease 0 B/43,4 kB 0%][0m[33m                               0% [Working][0m[33m43% [Working][0m             Get:4 http://security.debian.org/debian-security trixie-security/main Sources [119 kB]
+[33m43% [4 Sources 0 B/119 kB 0%][0m[33m                             74% [Working][0m[33m74% [4 Sources store 0 B] [Waiting for headers][0m[33m                                               74% [Waiting for headers][0m                         Get:5 http://security.debian.org/debian-security trixie-security/main amd64 Packages [97,9 kB]
+[33m78% [5 Packages 14,4 kB/97,9 kB 15%][0m[33m                                    100% [Working][0m[33m100% [5 Packages store 0 B][0m[33m                           100% [Working][0m              Fetched 308 kB in 1s (489 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 60%Reading package lists... 60%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[0m[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ u[Ksudo apt install qe
+qelectrotech                qemu-system-misc
+qelectrotech-data           qemu-system-modules-opengl
+qelectrotech-examples       qemu-system-modules-spice
+qemu-block-extra            qemu-system-ppc
+qemubuilder                 qemu-system-riscv
+qemu-efi-aarch64            qemu-system-s390x
+qemu-efi-arm                qemu-system-sparc
+qemu-efi-loongarch64        qemu-system-x86
+qemu-efi-riscv64            qemu-system-xen
+qemu-guest-agent            qemu-user
+qemu-system                 qemu-user-binfmt
+qemu-system-arm             qemu-user-static
+qemu-system-common          qemu-utils
+qemu-system-data            qemu-web-desktop
+--More--[Kqemu-system-gui             qepcad
+qemu-system-mips            
+]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qe[K[K[7mqemu-utils qemu-system-x86 qemu-system-gui[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqemu-utils qemu-system-x86 qemu-system-gui[H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui [K[A[K]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ sudo apt install qemu-utils qemu-system-x86 qemu-system-gui 
+[?2004lReading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Installing:
+[32m  qemu-system-gui  qemu-system-x86  qemu-utils
+[0m
+Installing dependencies:
+[32m  ibverbs-providers  libpmem1
+  ipxe-qemu          librados2
+  libaio1t64         librbd1
+  libblkio1          librdmacm1t64
+  libcacard0         libslirp0
+  libcapstone5       libspice-server1
+  libdaxctl1         liburing2
+  libexecs1          libusbredirparser1t64
+  libfdt1            libvdeplug2t64
+  libfmt10           libvirglrenderer1
+  libgfapi0          ovmf
+  libgfrpc0          qemu-block-extra
+  libgfxdr0          qemu-system-common
+  libglusterfs0      qemu-system-data
+  libibverbs1        qemu-system-modules-opengl
+  libiscsi7          qemu-system-modules-spice
+  libndctl6          seabios
+[0m
+Suggested packages:
+  samba  vde2
+
+Summary:
+  Upgrading: 0, Installing: 37, Removing: 0, Not Upgrading: 7
+  Download size: 45,4 MB
+  Space needed: 180 MB / 22,4 GB available
+
+Continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://debian.mirror.su.se/debian trixie/main amd64 libibverbs1 amd64 56.1-1 [62,4 kB]
+[33m0% [1 libibverbs1 55,1 kB/62,4 kB 88%][0m[33m                                      1% [Working][0m            Get:2 http://debian.mirror.su.se/debian trixie/main amd64 ibverbs-providers amd64 56.1-1 [357 kB]
+[33m1% [2 ibverbs-providers 63,4 kB/357 kB 18%][0m[33m                                           2% [Waiting for headers][0m                        Get:3 http://debian.mirror.su.se/debian trixie/main amd64 ipxe-qemu all 1.21.1+git20250501.dad20602+dfsg-1 [1 225 kB]
+[33m2% [3 ipxe-qemu 32,8 kB/1 225 kB 3%][0m                                      Get:4 http://debian.mirror.su.se/debian trixie/main amd64 libaio1t64 amd64 0.3.113-8+b1 [14,9 kB]
+                                      Get:5 http://debian.mirror.su.se/debian trixie/main amd64 libblkio1 amd64 1.5.0-2 [250 kB]
+[33m                                      5% [5 libblkio1 88,7 kB/250 kB 35%][0m[33m                                   6% [Waiting for headers][0m                        Get:6 http://debian.mirror.su.se/debian trixie/main amd64 libcacard0 amd64 1:2.8.0-3+b2 [90,9 kB]
+[33m6% [6 libcacard0 90,9 kB/90,9 kB 100%][0m[33m                                      7% [Waiting for headers][0m                        Get:7 http://debian.mirror.su.se/debian trixie/main amd64 libcapstone5 amd64 5.0.6-1 [780 kB]
+[33m7% [7 libcapstone5 6 944 B/780 kB 1%][0m                                       Get:8 http://debian.mirror.su.se/debian trixie/main amd64 libdaxctl1 amd64 81-1 [22,2 kB]
+[33m                                       9% [8 libdaxctl1 22,2 kB/22,2 kB 100%][0m                                      Get:9 http://debian.mirror.su.se/debian trixie/main amd64 libexecs1 amd64 1.4-2+b2 [7 820 B]
+[33m9% [9 libexecs1 7 820 B/7 820 B 100%][0m                                         Get:10 http://debian.mirror.su.se/debian trixie/main amd64 libfdt1 amd64 1.7.2-2+b1 [20,0 kB]
+[33m                                         10% [10 libfdt1 14,2 kB/20,0 kB 71%][0m[33m                                    10% [Waiting for headers][0m                         Get:11 http://debian.mirror.su.se/debian trixie/main amd64 libfmt10 amd64 10.1.1+ds1-4 [127 kB]
+[33m11% [11 libfmt10 91,2 kB/127 kB 72%][0m[33m                                    11% [Waiting for headers][0m                         Get:12 http://debian.mirror.su.se/debian trixie/main amd64 libgfxdr0 amd64 11.1-6 [3 181 kB]
+[33m11% [12 libgfxdr0 0 B/3 181 kB 0%][0m                                    Get:13 http://debian.mirror.su.se/debian trixie/main amd64 libglusterfs0 amd64 11.1-6 [3 417 kB]
+[33m17% [13 libglusterfs0 43,1 kB/3 417 kB 1%][0m[33m                                            24% [Waiting for headers][0m                         Get:14 http://debian.mirror.su.se/debian trixie/main amd64 libgfrpc0 amd64 11.1-6 [3 206 kB]
+[33m24% [14 libgfrpc0 74,2 kB/3 206 kB 2%][0m[33m                                        30% [Waiting for headers][0m                         Get:15 http://debian.mirror.su.se/debian trixie/main amd64 libgfapi0 amd64 11.1-6 [3 243 kB]
+[33m30% [15 libgfapi0 13,6 kB/3 243 kB 0%][0m[33m                                        36% [Waiting for headers][0m                         Get:16 http://debian.mirror.su.se/debian trixie/main amd64 librdmacm1t64 amd64 56.1-1 [70,4 kB]
+[33m36% [16 librdmacm1t64 38,5 kB/70,4 kB 55%][0m[33m                                          37% [Waiting for headers][0m                         Get:17 http://debian.mirror.su.se/debian trixie/main amd64 libiscsi7 amd64 1.20.0-4 [69,7 kB]
+[33m37% [17 libiscsi7 41,0 kB/69,7 kB 59%][0m[33m                                      38% [Waiting for headers][0m                         Get:18 http://debian.mirror.su.se/debian trixie/main amd64 libndctl6 amd64 81-1 [62,3 kB]
+[33m38% [18 libndctl6 37,5 kB/62,3 kB 60%][0m[33m                                      38% [Waiting for headers][0m                         Get:19 http://debian.mirror.su.se/debian trixie/main amd64 libpmem1 amd64 1.13.1-1.1+b1 [91,7 kB]
+[33m38% [19 libpmem1 28,7 kB/91,7 kB 31%][0m[33m                                     39% [Working][0m             Get:20 http://debian.mirror.su.se/debian trixie/main amd64 librados2 amd64 18.2.7+ds-1 [3 586 kB]
+[33m39% [20 librados2 22,9 kB/3 586 kB 1%][0m[33m42% [20 librados2 1 827 kB/3 586 kB 51%][0m[33m                                            46% [Waiting for headers][0m                         Get:21 http://debian.mirror.su.se/debian trixie/main amd64 librbd1 amd64 18.2.7+ds-1 [2 507 kB]
+[33m46% [21 librbd1 32,6 kB/2 507 kB 1%][0m[33m                                      51% [Waiting for headers][0m                         Get:22 http://debian.mirror.su.se/debian trixie/main amd64 libslirp0 amd64 4.8.0-1+b1 [66,4 kB]
+[33m51% [22 libslirp0 66,4 kB/66,4 kB 100%][0m[33m                                       51% [Working][0m             Get:23 http://debian.mirror.su.se/debian trixie/main amd64 libspice-server1 amd64 0.15.2-1+b1 [349 kB]
+[33m52% [23 libspice-server1 44,6 kB/349 kB 13%][0m[33m                                            53% [Waiting for headers][0m                         Get:24 http://debian.mirror.su.se/debian trixie/main amd64 liburing2 amd64 2.9-1 [26,4 kB]
+[33m53% [24 liburing2 26,4 kB/26,4 kB 100%][0m[33m                                       53% [Working][0m             Get:25 http://debian.mirror.su.se/debian trixie/main amd64 libusbredirparser1t64 amd64 0.15.0-1 [19,6 kB]
+[33m53% [25 libusbredirparser1t64 19,6 kB/19,6 kB 100%][0m[33m                                                   54% [Waiting for headers][0m                         Get:26 http://debian.mirror.su.se/debian trixie/main amd64 libvdeplug2t64 amd64 4.0.1-5.1+b1 [28,5 kB]
+                         Get:27 http://debian.mirror.su.se/debian trixie/main amd64 libvirglrenderer1 amd64 1.1.0-2 [410 kB]
+[33m55% [27 libvirglrenderer1 92,8 kB/410 kB 23%][0m[33m                                             56% [Waiting for headers][0m                         Get:28 http://debian.mirror.su.se/debian trixie/main amd64 ovmf all 2025.02-8+deb13u1 [5 780 kB]
+[33m56% [28 ovmf 33,0 kB/5 780 kB 1%][0m[33m                                   66% [Waiting for headers][0m                         Get:29 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-common amd64 1:10.0.7+ds-0+deb13u1+b1 [989 kB]
+[33m66% [29 qemu-system-common 20,5 kB/989 kB 2%][0m[33m                                             69% [Waiting for headers][0m                         Get:30 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-data all 1:10.0.7+ds-0+deb13u1 [2 129 kB]
+[33m69% [30 qemu-system-data 37,4 kB/2 129 kB 2%][0m[33m                                               73% [Waiting for headers][0m                         Get:31 http://debian.mirror.su.se/debian trixie/main amd64 seabios all 1.16.3-2 [163 kB]
+[33m73% [31 seabios 104 kB/163 kB 64%][0m[33m                                  74% [Waiting for headers][0m                         Get:32 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-x86 amd64 1:10.0.7+ds-0+deb13u1+b1 [10,3 MB]
+[33m74% [32 qemu-system-x86 69,7 kB/10,3 MB 1%][0m[33m90% [32 qemu-system-x86 9 227 kB/10,3 MB 90%][0m[33m                                               92% [Waiting for headers][0m                         Get:33 http://debian.mirror.su.se/debian trixie/main amd64 qemu-utils amd64 1:10.0.7+ds-0+deb13u1+b1 [2 005 kB]
+[33m93% [33 qemu-utils 262 kB/2 005 kB 13%][0m[33m                                         96% [Waiting for headers][0m                         Get:34 http://debian.mirror.su.se/debian trixie/main amd64 qemu-block-extra amd64 1:10.0.7+ds-0+deb13u1+b1 [124 kB]
+[33m97% [34 qemu-block-extra 46,4 kB/124 kB 37%][0m[33m                                            97% [Waiting for headers][0m                         Get:35 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-modules-opengl amd64 1:10.0.7+ds-0+deb13u1+b1 [183 kB]
+[33m97% [35 qemu-system-modules-opengl 5 496 B/183 kB 3%][0m[33m                                                       98% [Waiting for headers][0m                         Get:36 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-gui amd64 1:10.0.7+ds-0+deb13u1+b1 [348 kB]
+[33m98% [36 qemu-system-gui 79,7 kB/348 kB 23%][0m[33m                                           99% [Waiting for headers][0m                         Get:37 http://debian.mirror.su.se/debian trixie/main amd64 qemu-system-modules-spice amd64 1:10.0.7+ds-0+deb13u1+b1 [115 kB]
+[33m99% [37 qemu-system-modules-spice 35,9 kB/115 kB 31%][0m[33m                                                     100% [Working][0m              Fetched 45,4 MB in 3s (14,0 MB/s)
+Extracting templates from packages: 81%Extracting templates from packages: 100%
+
+7[0;13r8[1ASelecting previously unselected package libibverbs1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 130276 files and directories currently installed.)
+Preparing to unpack .../00-libibverbs1_56.1-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [  0%][49m[39m [                                    ] 8Unpacking libibverbs1:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [  1%][49m[39m [▍                                   ] 8Selecting previously unselected package ibverbs-providers:amd64.
+Preparing to unpack .../01-ibverbs-providers_56.1-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [  2%][49m[39m [▋                                   ] 8Unpacking ibverbs-providers:amd64 (56.1-1) ...
+Selecting previously unselected package ipxe-qemu.
+Preparing to unpack .../02-ipxe-qemu_1.21.1+git20250501.dad20602+dfsg-1_all.deb ...
+7[14;0f[42m[30mProgress: [  3%][49m[39m [█▏                                  ] 8Unpacking ipxe-qemu (1.21.1+git20250501.dad20602+dfsg-1) ...
+7[14;0f[42m[30mProgress: [  4%][49m[39m [█▍                                  ] 8Selecting previously unselected package libaio1t64:amd64.
+Preparing to unpack .../03-libaio1t64_0.3.113-8+b1_amd64.deb ...
+Unpacking libaio1t64:amd64 (0.3.113-8+b1) ...
+7[14;0f[42m[30mProgress: [  5%][49m[39m [█▉                                  ] 8Selecting previously unselected package libblkio1:amd64.
+Preparing to unpack .../04-libblkio1_1.5.0-2_amd64.deb ...
+7[14;0f[42m[30mProgress: [  6%][49m[39m [██▏                                 ] 8Unpacking libblkio1:amd64 (1.5.0-2) ...
+Selecting previously unselected package libcacard0:amd64.
+Preparing to unpack .../05-libcacard0_1%3a2.8.0-3+b2_amd64.deb ...
+7[14;0f[42m[30mProgress: [  7%][49m[39m [██▋                                 ] 8Unpacking libcacard0:amd64 (1:2.8.0-3+b2) ...
+7[14;0f[42m[30mProgress: [  8%][49m[39m [██▉                                 ] 8Selecting previously unselected package libcapstone5:amd64.
+Preparing to unpack .../06-libcapstone5_5.0.6-1_amd64.deb ...
+Unpacking libcapstone5:amd64 (5.0.6-1) ...
+7[14;0f[42m[30mProgress: [  9%][49m[39m [███▍                                ] 8Selecting previously unselected package libdaxctl1:amd64.
+Preparing to unpack .../07-libdaxctl1_81-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 10%][49m[39m [███▌                                ] 8Unpacking libdaxctl1:amd64 (81-1) ...
+Selecting previously unselected package libexecs1:amd64.
+Preparing to unpack .../08-libexecs1_1.4-2+b2_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 11%][49m[39m [████                                ] 8Unpacking libexecs1:amd64 (1.4-2+b2) ...
+7[14;0f[42m[30mProgress: [ 12%][49m[39m [████▎                               ] 8Selecting previously unselected package libfdt1:amd64.
+Preparing to unpack .../09-libfdt1_1.7.2-2+b1_amd64.deb ...
+Unpacking libfdt1:amd64 (1.7.2-2+b1) ...
+7[14;0f[42m[30mProgress: [ 13%][49m[39m [████▊                               ] 8Selecting previously unselected package libfmt10:amd64.
+Preparing to unpack .../10-libfmt10_10.1.1+ds1-4_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 14%][49m[39m [█████                               ] 8Unpacking libfmt10:amd64 (10.1.1+ds1-4) ...
+Selecting previously unselected package libgfxdr0:amd64.
+Preparing to unpack .../11-libgfxdr0_11.1-6_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 15%][49m[39m [█████▌                              ] 8Unpacking libgfxdr0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 16%][49m[39m [█████▊                              ] 8Selecting previously unselected package libglusterfs0:amd64.
+Preparing to unpack .../12-libglusterfs0_11.1-6_amd64.deb ...
+Unpacking libglusterfs0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 17%][49m[39m [██████▎                             ] 8Selecting previously unselected package libgfrpc0:amd64.
+Preparing to unpack .../13-libgfrpc0_11.1-6_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 18%][49m[39m [██████▌                             ] 8Unpacking libgfrpc0:amd64 (11.1-6) ...
+Selecting previously unselected package libgfapi0:amd64.
+Preparing to unpack .../14-libgfapi0_11.1-6_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 19%][49m[39m [███████                             ] 8Unpacking libgfapi0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 20%][49m[39m [███████▏                            ] 8Selecting previously unselected package librdmacm1t64:amd64.
+Preparing to unpack .../15-librdmacm1t64_56.1-1_amd64.deb ...
+Unpacking librdmacm1t64:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [ 21%][49m[39m [███████▋                            ] 8Selecting previously unselected package libiscsi7:amd64.
+Preparing to unpack .../16-libiscsi7_1.20.0-4_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 22%][49m[39m [███████▉                            ] 8Unpacking libiscsi7:amd64 (1.20.0-4) ...
+Selecting previously unselected package libndctl6:amd64.
+Preparing to unpack .../17-libndctl6_81-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 23%][49m[39m [████████▍                           ] 8Unpacking libndctl6:amd64 (81-1) ...
+7[14;0f[42m[30mProgress: [ 24%][49m[39m [████████▋                           ] 8Selecting previously unselected package libpmem1:amd64.
+Preparing to unpack .../18-libpmem1_1.13.1-1.1+b1_amd64.deb ...
+Unpacking libpmem1:amd64 (1.13.1-1.1+b1) ...
+7[14;0f[42m[30mProgress: [ 26%][49m[39m [█████████▏                          ] 8Selecting previously unselected package librados2.
+Preparing to unpack .../19-librados2_18.2.7+ds-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 26%][49m[39m [█████████▍                          ] 8Unpacking librados2 (18.2.7+ds-1) ...
+Selecting previously unselected package librbd1.
+Preparing to unpack .../20-librbd1_18.2.7+ds-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 28%][49m[39m [█████████▉                          ] 8Unpacking librbd1 (18.2.7+ds-1) ...
+7[14;0f[42m[30mProgress: [ 28%][49m[39m [██████████▏                         ] 8Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../21-libslirp0_4.8.0-1+b1_amd64.deb ...
+Unpacking libslirp0:amd64 (4.8.0-1+b1) ...
+7[14;0f[42m[30mProgress: [ 30%][49m[39m [██████████▋                         ] 8Selecting previously unselected package libspice-server1:amd64.
+Preparing to unpack .../22-libspice-server1_0.15.2-1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 30%][49m[39m [██████████▊                         ] 8Unpacking libspice-server1:amd64 (0.15.2-1+b1) ...
+Selecting previously unselected package liburing2:amd64.
+Preparing to unpack .../23-liburing2_2.9-1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 32%][49m[39m [███████████▎                        ] 8Unpacking liburing2:amd64 (2.9-1) ...
+7[14;0f[42m[30mProgress: [ 32%][49m[39m [███████████▌                        ] 8Selecting previously unselected package libusbredirparser1t64:amd64.
+Preparing to unpack .../24-libusbredirparser1t64_0.15.0-1_amd64.deb ...
+Unpacking libusbredirparser1t64:amd64 (0.15.0-1) ...
+7[14;0f[42m[30mProgress: [ 34%][49m[39m [████████████                        ] 8Selecting previously unselected package libvdeplug2t64:amd64.
+Preparing to unpack .../25-libvdeplug2t64_4.0.1-5.1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 34%][49m[39m [████████████▎                       ] 8Unpacking libvdeplug2t64:amd64 (4.0.1-5.1+b1) ...
+Selecting previously unselected package libvirglrenderer1:amd64.
+Preparing to unpack .../26-libvirglrenderer1_1.1.0-2_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 36%][49m[39m [████████████▊                       ] 8Unpacking libvirglrenderer1:amd64 (1.1.0-2) ...
+7[14;0f[42m[30mProgress: [ 36%][49m[39m [█████████████                       ] 8Selecting previously unselected package ovmf.
+Preparing to unpack .../27-ovmf_2025.02-8+deb13u1_all.deb ...
+Unpacking ovmf (2025.02-8+deb13u1) ...
+7[14;0f[42m[30mProgress: [ 38%][49m[39m [█████████████▌                      ] 8Selecting previously unselected package qemu-system-common.
+Preparing to unpack .../28-qemu-system-common_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 38%][49m[39m [█████████████▊                      ] 8Unpacking qemu-system-common (1:10.0.7+ds-0+deb13u1+b1) ...
+Selecting previously unselected package qemu-system-data.
+Preparing to unpack .../29-qemu-system-data_1%3a10.0.7+ds-0+deb13u1_all.deb ...
+7[14;0f[42m[30mProgress: [ 40%][49m[39m [██████████████▎                     ] 8Unpacking qemu-system-data (1:10.0.7+ds-0+deb13u1) ...
+7[14;0f[42m[30mProgress: [ 40%][49m[39m [██████████████▍                     ] 8Selecting previously unselected package seabios.
+Preparing to unpack .../30-seabios_1.16.3-2_all.deb ...
+Unpacking seabios (1.16.3-2) ...
+7[14;0f[42m[30mProgress: [ 42%][49m[39m [██████████████▉                     ] 8Selecting previously unselected package qemu-system-x86.
+Preparing to unpack .../31-qemu-system-x86_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 42%][49m[39m [███████████████▏                    ] 8Unpacking qemu-system-x86 (1:10.0.7+ds-0+deb13u1+b1) ...
+Selecting previously unselected package qemu-utils.
+Preparing to unpack .../32-qemu-utils_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 44%][49m[39m [███████████████▋                    ] 8Unpacking qemu-utils (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 44%][49m[39m [███████████████▉                    ] 8Selecting previously unselected package qemu-block-extra.
+Preparing to unpack .../33-qemu-block-extra_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+Unpacking qemu-block-extra (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 46%][49m[39m [████████████████▍                   ] 8Selecting previously unselected package qemu-system-modules-opengl.
+Preparing to unpack .../34-qemu-system-modules-opengl_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 46%][49m[39m [████████████████▋                   ] 8Unpacking qemu-system-modules-opengl (1:10.0.7+ds-0+deb13u1+b1) ...
+Selecting previously unselected package qemu-system-gui.
+Preparing to unpack .../35-qemu-system-gui_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+7[14;0f[42m[30mProgress: [ 48%][49m[39m [█████████████████▏                  ] 8Unpacking qemu-system-gui (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 48%][49m[39m [█████████████████▍                  ] 8Selecting previously unselected package qemu-system-modules-spice.
+Preparing to unpack .../36-qemu-system-modules-spice_1%3a10.0.7+ds-0+deb13u1+b1_amd64.deb ...
+Unpacking qemu-system-modules-spice (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 50%][49m[39m [█████████████████▉                  ] 8Setting up libibverbs1:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [ 50%][49m[39m [██████████████████                  ] 87[14;0f[42m[30mProgress: [ 51%][49m[39m [██████████████████▎                 ] 8Setting up ibverbs-providers:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [ 52%][49m[39m [██████████████████▊                 ] 8Setting up libspice-server1:amd64 (0.15.2-1+b1) ...
+7[14;0f[42m[30mProgress: [ 53%][49m[39m [███████████████████                 ] 8Setting up libfdt1:amd64 (1.7.2-2+b1) ...
+7[14;0f[42m[30mProgress: [ 54%][49m[39m [███████████████████▌                ] 87[14;0f[42m[30mProgress: [ 55%][49m[39m [███████████████████▊                ] 8Setting up libexecs1:amd64 (1.4-2+b2) ...
+7[14;0f[42m[30mProgress: [ 56%][49m[39m [████████████████████▎               ] 8Setting up libcacard0:amd64 (1:2.8.0-3+b2) ...
+7[14;0f[42m[30mProgress: [ 57%][49m[39m [████████████████████▌               ] 8Setting up ovmf (2025.02-8+deb13u1) ...
+7[14;0f[42m[30mProgress: [ 58%][49m[39m [█████████████████████               ] 87[14;0f[42m[30mProgress: [ 59%][49m[39m [█████████████████████▎              ] 8Setting up libglusterfs0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 60%][49m[39m [█████████████████████▋              ] 8Setting up libvirglrenderer1:amd64 (1.1.0-2) ...
+7[14;0f[42m[30mProgress: [ 61%][49m[39m [█████████████████████▉              ] 8Setting up libcapstone5:amd64 (5.0.6-1) ...
+7[14;0f[42m[30mProgress: [ 62%][49m[39m [██████████████████████▍             ] 87[14;0f[42m[30mProgress: [ 63%][49m[39m [██████████████████████▋             ] 8Setting up libdaxctl1:amd64 (81-1) ...
+7[14;0f[42m[30mProgress: [ 64%][49m[39m [███████████████████████▏            ] 8Setting up qemu-system-data (1:10.0.7+ds-0+deb13u1) ...
+7[14;0f[42m[30mProgress: [ 65%][49m[39m [███████████████████████▍            ] 8Setting up seabios (1.16.3-2) ...
+7[14;0f[42m[30mProgress: [ 66%][49m[39m [███████████████████████▉            ] 87[14;0f[42m[30mProgress: [ 67%][49m[39m [████████████████████████▏           ] 8Setting up libslirp0:amd64 (4.8.0-1+b1) ...
+7[14;0f[42m[30mProgress: [ 68%][49m[39m [████████████████████████▋           ] 8Setting up libaio1t64:amd64 (0.3.113-8+b1) ...
+7[14;0f[42m[30mProgress: [ 69%][49m[39m [████████████████████████▉           ] 8Setting up libblkio1:amd64 (1.5.0-2) ...
+7[14;0f[42m[30mProgress: [ 70%][49m[39m [█████████████████████████▎          ] 87[14;0f[42m[30mProgress: [ 71%][49m[39m [█████████████████████████▌          ] 8Setting up libusbredirparser1t64:amd64 (0.15.0-1) ...
+7[14;0f[42m[30mProgress: [ 72%][49m[39m [██████████████████████████          ] 8Setting up ipxe-qemu (1.21.1+git20250501.dad20602+dfsg-1) ...
+7[14;0f[42m[30mProgress: [ 73%][49m[39m [██████████████████████████▎         ] 8Setting up libndctl6:amd64 (81-1) ...
+7[14;0f[42m[30mProgress: [ 74%][49m[39m [██████████████████████████▊         ] 87[14;0f[42m[30mProgress: [ 75%][49m[39m [███████████████████████████         ] 8Setting up librdmacm1t64:amd64 (56.1-1) ...
+7[14;0f[42m[30mProgress: [ 77%][49m[39m [███████████████████████████▌        ] 8Setting up libvdeplug2t64:amd64 (4.0.1-5.1+b1) ...
+7[14;0f[42m[30mProgress: [ 77%][49m[39m [███████████████████████████▊        ] 8Setting up liburing2:amd64 (2.9-1) ...
+7[14;0f[42m[30mProgress: [ 79%][49m[39m [████████████████████████████▎       ] 87[14;0f[42m[30mProgress: [ 79%][49m[39m [████████████████████████████▌       ] 8Setting up libiscsi7:amd64 (1.20.0-4) ...
+7[14;0f[42m[30mProgress: [ 81%][49m[39m [████████████████████████████▉       ] 8Setting up libpmem1:amd64 (1.13.1-1.1+b1) ...
+7[14;0f[42m[30mProgress: [ 81%][49m[39m [█████████████████████████████▏      ] 8Setting up libfmt10:amd64 (10.1.1+ds1-4) ...
+7[14;0f[42m[30mProgress: [ 83%][49m[39m [█████████████████████████████▋      ] 87[14;0f[42m[30mProgress: [ 83%][49m[39m [█████████████████████████████▉      ] 8Setting up libgfxdr0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 85%][49m[39m [██████████████████████████████▍     ] 8Setting up librados2 (18.2.7+ds-1) ...
+7[14;0f[42m[30mProgress: [ 85%][49m[39m [██████████████████████████████▋     ] 8Setting up qemu-system-common (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 87%][49m[39m [███████████████████████████████▏    ] 87[14;0f[42m[30mProgress: [ 87%][49m[39m [███████████████████████████████▍    ] 8Setting up qemu-system-x86 (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 89%][49m[39m [███████████████████████████████▉    ] 8Setting up librbd1 (18.2.7+ds-1) ...
+7[14;0f[42m[30mProgress: [ 89%][49m[39m [████████████████████████████████▏   ] 8Setting up qemu-utils (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 91%][49m[39m [████████████████████████████████▌   ] 87[14;0f[42m[30mProgress: [ 91%][49m[39m [████████████████████████████████▊   ] 8Setting up libgfrpc0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 93%][49m[39m [█████████████████████████████████▎  ] 8Setting up qemu-system-modules-opengl (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 93%][49m[39m [█████████████████████████████████▌  ] 8Setting up qemu-system-gui (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 95%][49m[39m [██████████████████████████████████  ] 87[14;0f[42m[30mProgress: [ 95%][49m[39m [██████████████████████████████████▎ ] 8Setting up libgfapi0:amd64 (11.1-6) ...
+7[14;0f[42m[30mProgress: [ 97%][49m[39m [██████████████████████████████████▊ ] 8Setting up qemu-system-modules-spice (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 97%][49m[39m [███████████████████████████████████ ] 8Setting up qemu-block-extra (1:10.0.7+ds-0+deb13u1+b1) ...
+7[14;0f[42m[30mProgress: [ 99%][49m[39m [███████████████████████████████████▌] 87[14;0f[42m[30mProgress: [ 99%][49m[39m [███████████████████████████████████▊] 8Processing triggers for hicolor-icon-theme (0.18-2) ...
+Processing triggers for gnome-menus (3.36.0-3) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for mailcap (3.74) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+
+7[0;14r8[1A[J[?2004h]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ [H[2J]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu-
+qemu-img                    qemu-system-amd64
+qemu-io                     qemu-system-i386
+qemu-nbd                    qemu-system-x86_64
+qemu-pr-helper              qemu-system-x86_64-microvm
+qemu-storage-daemon         qemu-vmsr-helper
+]0;kent@deb13: ~[01;32mkent@deb13[00m:[01;34m~[00m$ qemu-[K[K[K[K[Kexit
+[?2004llogout
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls [K[K[Kls
+[?2004lqemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ nano .gitignore
+[?2004l[?2004h[?1049h[22;0;0t[1;14r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[12;24H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2            .gitignore                      [1;57H(B[m[13d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[14d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[1;38H(B[0;7m*[57G(B[m[?12l[?25h[2d*[?25l[?12l[?25h.[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[3d[?12l[?25h[?25l[12d(B[0;7mSave modified buffer?                                     [13;1H Y(B[m Yes[K[14d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[12;23H[?12l[?25h[?25l[13d(B[0;7m^G(B[m Help[15G(B[0;7mM-D(B[m DOS Format(B[0;7mM-A(B[m Append    (B[0;7mM-B(B[m Backup File[14d(B[0;7m^C(B[m Cancel     (B[0;7mM-M(B[m Mac Format(B[0;7mM-P(B[m Prepend   (B[0;7m^T(B[m Browse[12d(B[0;7mFile Name to Write: .gitignore(B[m[?12l[?25h[?25l[12;22H[1K (B[0;7m[ Writing... ](B[m[K[1;38H(B[0;7m [57G(B[m[12;21H(B[0;7m[ Wrote 2 lines ](B[m[J[14d[?12l[?25h[14;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8
+c8/                       c8 - economy/
+c8 - contracts/           c8 - future blog-entries/
+c8 - cv/                  c8 - timestamps/
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/[H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+--More--[Kubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso  ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ p[Kpwd
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion2
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ..
+[?2004l.  ..  lektion1  lektion2
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ...[K/..
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ../..
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ ls -a ../../.gitignore [H[2J[94mITINF25/lektion2
+(B[m$ ls -a ../../.gitignore [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@c[1@o[1@d[1@e
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ code ../../.gitignore [C[C[C[C[1P[1P[1P[1P[1@l[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K
+[?2004lbin  date  DEVOPS24  ITINF24  ITINF25  README.md
+[?2004h[94mITINF25/lektion2
+(B[m$ ls ../../-../../a../../ ../../[H[2J[94mITINF25/lektion2
+(B[m$ ls -a ../../
+[?2004l.    date      .gitignore  .profiles  .shellcheckrc
+..   DEVOPS24  ITINF24	   README.md  .state
+bin  .git      ITINF25	   .shared    .vscode
+[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls -a
+[?2004l.  ..  .gitignore  qemu-kommandon.txt  recordings
+[?2004h[94mITINF25/lektion2
+(B[m$ rm .gitignore [H[2J[94mITINF25/lektion2
+(B[m$ rm .gitignore 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ (reverse-i-search)`': [23@c': [7mc[27mode ../../.gitignore[C[8@failed reverse-i-search)`cp': c^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+--More--[KTUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+--More--[KWindows11_Ent_Eval.iso
+[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso [H[2J[94mITINF25/lektion2
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso .
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ [H[2J[94mITINF25/lektion2
+(B[m$ ls
+[?2004lqemu-kommandon.txt  recordings	TinyCore-current.iso
+[?2004h[94mITINF25/lektion2
+(B[m$ qe[H[2J[94mITINF25/lektion2
+(B[m$ qemu-system-
+qemu-system-aarch64         qemu-system-ppc
+qemu-system-alpha           qemu-system-ppc64
+qemu-system-arm             qemu-system-ppc64le
+qemu-system-avr             qemu-system-riscv32
+qemu-system-cris            qemu-system-riscv64
+qemu-system-hppa            qemu-system-rx
+qemu-system-i386            qemu-system-s390x
+qemu-system-loongarch64     qemu-system-sh4
+--More--[Kqemu-system-m68k            qemu-system-sh4eb
+qemu-system-microblaze      qemu-system-sparc
+qemu-system-microblazeel    qemu-system-sparc64
+qemu-system-mips            qemu-system-tricore
+qemu-system-mips64          qemu-system-x86_64
+qemu-system-mips64el        qemu-system-x86_64-microvm
+qemu-system-mipsel          qemu-system-xtensa
+qemu-system-nios2           qemu-system-xtensaeb
+--More--[Kqemu-system-or1k            
+[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64[H[2J[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64[K(B[m$ qemu-system-x86_64b[K -cdrom ./TinyCore-current.iso 
+[?2004l[?2004h[94mITINF25/lektion2
+(B[m$ qemu-system-x86_64 -cdrom ./TinyCore-current.iso [7m-device[27m[7m [27m[7musb-ehci \ [27m
+[7m-device usb-tablet[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-device usb-ehci \
+-device usb-tablet[A[C[C[C[C[C[C[C[C[C[C[C-device usb-tablet
+[K[A[C[C[C

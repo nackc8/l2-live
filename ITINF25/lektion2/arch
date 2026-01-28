@@ -1,0 +1,38 @@
+#!/bin/bash
+
+ISO="$1"
+
+if test "$1" = ""; then
+	echo "Error: Provide an iso file!!!" >&2
+	exit 1
+fi
+
+# Skapa arch-disk1.qcow2 30G
+#   qemu-img create -f qcow2 arch-disk1.qcow2 30G
+# Skapa arch-disk2.qcow2 30G
+# Info om en disk
+#	qemu-img info arch-disk1.qcow2
+# Behövs firmware-kod för UEFI boot
+#   sudo apt install ovmf
+# Kopiera en mall, som sedan vi kommer att skriva till också
+#   cp /usr/share/OVMF/OVMF_VARS_4M.fd arch-ovmf-vars.fd
+
+qemu-system-x86_64 \
+	-cdrom "$ISO" \
+	-device usb-ehci \
+	-device usb-tablet \
+	-smp 2 \
+	-m 4G \
+	-daemonize \
+	-enable-kvm \
+	-device virtio-gpu-pci \
+	-drive file=arch-disk1.qcow2,format=qcow2 \
+	-drive file=arch-disk2.qcow2,format=qcow2 \
+	-machine q35 \
+	-drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd \
+	-drive if=pflash,format=raw,file=arch-ovmf-vars.fd
+
+# -device usb-ehci
+#     Use usb 2.0 chip
+# -smp 2
+#	  Use 2 cores
