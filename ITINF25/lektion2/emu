@@ -14,7 +14,7 @@ qemu-system-x86_64 \
 	-smp 2 \
 	-m 4G \
 	-daemonize \
-	-
+	-enable-kvm
 
 # -device usb-ehci
 #     Use usb 2.0 chip
