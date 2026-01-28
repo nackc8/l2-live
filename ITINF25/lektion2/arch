@@ -8,6 +8,7 @@ if test "$1" = ""; then
 fi
 
 # Skapa arch-disk1.qcow2 30G
+#   qemu-img create -f qcow2 arch-disk1.qcow2 30G
 # Skapa arch-disk2.qcow2 30G
 
 qemu-system-x86_64 \
