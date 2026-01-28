@@ -23,7 +23,8 @@ qemu-system-x86_64 \
 	-enable-kvm \
 	-device virtio-gpu-pci \
 	-drive file=arch-disk1.qcow2,format=qcow2 \
-	-drive file=arch-disk2.qcow2,format=qcow2
+	-drive file=arch-disk2.qcow2,format=qcow2 \
+	-machine q35
 
 # -device usb-ehci
 #     Use usb 2.0 chip
