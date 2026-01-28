@@ -13,7 +13,8 @@ qemu-system-x86_64 \
 	-device usb-tablet \
 	-smp 2 \
 	-m 4G \
-	-daemonize
+	-daemonize \
+	-
 
 # -device usb-ehci
 #     Use usb 2.0 chip
