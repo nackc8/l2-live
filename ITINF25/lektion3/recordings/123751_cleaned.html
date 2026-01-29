@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+pre {
+  font-family:Courier New;
+  font-size:10pt;
+}
+
+.af_line {
+  color: gray;
+  text-decoration: none;
+}
+
+</style>
+<title>123751.txt</title>
+</head>
+<body>
+<pre>Script started on 2026-01-29 12:37:51+01:00 [TERM=&quot;xterm-256color&quot; TTY=&quot;/dev/pts/1&quot; COLUMNS=&quot;61&quot; LINES=&quot;7&quot;]
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">">ITINF25/lektion3
+</span>$ ls
+disk1.qcow2	 recordings
+disk2.qcow2	 tiny.iso
+emu		 ubuntu-24.04.3-desktop-amd64.iso
+OVMF_VARS_4M.fd
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ socat
+2026/01/29 12:38:02 socat[90938] E exactly 2 addresses required (there are 0); use option &quot;-h&quot; for help
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ wh
+dpkg -S $(which socat)
+socat: /usr/bin/socat
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ dpkg -S $(which socat)
+socat: /usr/bin/socat
+<span style="color:#5c5cff;">ITINF25/lektion3
+dpkg -S $(which socat)box/c8/iso/TinyCore-current.iso 
+<span style="color:#5c5cff;">cff;">ITINF25/lektion3
+</span>$ ./emu 
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+QEMU 7.2.22 monitor - type &apos;help&apos; for more information
+<span style="color:#5c5cff;">5cff;">ITINF25/lektion3
+</span>$ ^C
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ <span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/lin</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">u</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">x2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#000000;background-color:#000000;">QEMU 7.2.22 monitor - type &apos;help&apos; for more information
+(qemu) savevm snap1
+<span style="color:#000000;background-color:#000000;">asavevm snapsavevm snap1
+<span style="color:#000000;background-color:#000000;"> not support snapshots
+<span style="color:#5c5cff;background-color:#000000;">lor:#000000;">ITINF25/lektion3
+</span>$ nano  ../../.gitignore 
+8ignored*le="color:#00cdcd;">#</span>ignored*   ^J JustifyReading... ]</span>[ Read 484 lines ]  GNU nano 7.2           ../../.gitignore                    
+8.iso
+*.qcow2
+*.fd
+<span style="color:#5c5cff;">f;">ITINF25/lektion3 ] [ Wrote 485 lines ]
+</span>$ cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;"></span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion3
+</span>$ <span style="color:#000000;background-color:#000000;">qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">4</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">M.qcow2</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">qemu-img: Could not open &apos;OVMF_VARS_4M.fd&apos;: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion3
+</span>$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ r
+./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+qemu-img: Could not open &apos;OVMF_VARS_4M.fd&apos;: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion3
+</span>$ ls
+disk1.qcow2	     OVMF_VARS_4M.qcow2
+disk2.qcow2	     recordings
+emu		     tiny.iso
+OVMF_VARS_4M.fd      ubuntu-24.04.3-desktop-amd64.iso
+OVMF_VARS_4M.fd.bak
+<span style="color:#5c5cff;">ITINF25/lektion3
+./emu mg convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+qemu-img: Could not open &apos;OVMF_VARS_4M.fd&apos;: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+qemu-img: Could not open &apos;OVMF_VARS_4M.fd&apos;: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+qemu-img: OVMF_VARS_4M.qcow2: error while converting qcow2: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.qcow2]?
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;"><span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ ps -e | grep -i qemu
+<span style="color:#5c5cff;">ITINF25/lektion3
+(reverse-i-search)`&apos;:c&apos;: qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.q<span style="color:#000000;background-color:#000000;">c</span><span style="color:#000000;background-color:#000000;">owp&apos;: </span><span style="color:#000000;background-color:#000000;">cp</span><span style="color:#000000;background-color:#000000;"> OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak-r ~/Documents/nackademin/databashantering/d1-report/.basetests/ .
+<span style="color:#000000;background-color:#000000;">mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/
+<span style="color:#000000;background-color:#000000;">github/ /shared/kent/Documents/nackademin/linux2/l2-archlinux/~/Documents/nackademin/databashantering/d1-report/.markdownlint-cli2.jsonc /shared/kent/Documents/nackademin/linux2/l2-archlinux/^C
+
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion3
+</span>$ cp <span style="color:#000000;background-color:#000000;">/usr/share/OVMF/OVMF_VARS_4M.fd</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">/usr/share/OVMF/OVMF_VARS_4M.fd .
+<span style="color:#5c5cff;background-color:#000000;"></span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion3
+<span style="color:#000000;background-color:#000000;"></span>$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2#000000;background-color:#000000;"> qemm&apos;: qemu-</span><span style="color:#000000;background-color:#000000;">im</span><span style="color:#000000;background-color:#000000;">g convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2g&apos;: qemu-</span><span style="color:#000000;background-color:#000000;">img</span><span style="color:#000000;background-color:#000000;"> convert -f raw -O qcow2 OVMF_
+
+<span style="color:#5c5cff;">ITINF25/lektion3
+cp /usr/share/OVMF/OVMF_VARS_4M.fd .qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+<span style="color:#5c5cff;">cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+qemu-img: OVMF_VARS_4M.qcow2: error while converting qcow2: Failed to get shared &quot;write&quot; lock
+Is another process using the image [OVMF_VARS_4M.qcow2]?
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+qemu-system-x86_64: -drive if=pflash,format=qcow2,file=/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/OVMF_VARS_4M.qcow2: Could not open &apos;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/OVMF_VARS_4M.qcow2&apos;: No such file or directory
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#5c5cff;">ITINF25/lektion3
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ <span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/lin</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">u</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">x2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#000000;background-color:#000000;">QEMU 7.2.22 monitor - type &apos;help&apos; for more information
+(qemu) savevm snap1
+<span style="color:#000000;background-color:#000000;">asavevm snapsavevm snap1
+(qemu) info snapshots
+<span style="color:#000000;background-color:#000000;">sinfo snapshinfo snapshoinfo snapshotinfo snapshots
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">E     VM CLOCK     ICOUNT
+<span style="color:#000000;background-color:#000000;">3 00:00:21.971           
+(qemu) ^[[A^[[
+<span style="color:#000000;background-color:#000000;">
+(qemu) loafvdvm snap1
+<span style="color:#000000;background-color:#000000;">aloadvm snaploadvm snap1
+<span style="color:#5c5cff;background-color:#000000;">lor:#000000;">ITINF25/lektion3
+./emu >$ socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+
+qemu-system-x86_64: -drive file=/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2,format=qcow2: Failed to get &quot;write&quot; lock
+Is another process using the image [/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2]?
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ ./emu 
+<span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/lin</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">u</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">x2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#000000;background-color:#000000;">2026/01/29 13:00:45 socat[101467] E connect(, AF=1 &quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;, 81): Connection refused
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion3
+</span>$ ^C
+<span style="color:#5c5cff;">ITINF25/lektion3
+./emu >$ socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+
+Connect with:
+socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#5c5cff;">ITINF25/lektion3
+</span>$ <span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/lin</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">u</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">x2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">socat - UNIX-CONNECT:&quot;/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock&quot;
+<span style="color:#000000;background-color:#000000;">QEMU 7.2.22 monitor - type &apos;help&apos; for more information
+<span style="color:#5c5cff;background-color:#000000;">color:#000000;">ITINF25/lektion3
+</span>$ 
+exit
+
+Script done on 2026-01-29 13:03:28+01:00 [COMMAND_EXIT_CODE=&quot;0&quot;]
+</pre>
+</body>
+</html>
+<!--HTML generated by ansifilter 2.18, http://www.andre-simon.de/-->

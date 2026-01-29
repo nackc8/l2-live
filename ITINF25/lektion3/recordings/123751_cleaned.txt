@@ -1,0 +1,175 @@
+Script started on 2026-01-29 12:37:51+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="61" LINES="7"]
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+disk1.qcow2	 recordings
+disk2.qcow2	 tiny.iso
+emu		 ubuntu-24.04.3-desktop-amd64.iso
+OVMF_VARS_4M.fd
+ITINF25/lektion3
+$ socat
+2026/01/29 12:38:02 socat[90938] E exactly 2 addresses required (there are 0); use option "-h" for help
+ITINF25/lektion3
+$ wh
+dpkg -S $(which socat)
+socat: /usr/bin/socat
+ITINF25/lektion3
+$ dpkg -S $(which socat)
+socat: /usr/bin/socat
+ITINF25/lektion3
+dpkg -S $(which socat)box/c8/iso/TinyCore-current.iso 
+./emu ITINF25/lektion3
+$ ./emu 
+ITINF25/lektion3
+$ ./emu 
+Connect with:
+QEMU 7.2.22 monitor - type 'help' for more information
+(qemu) ITINF25/lektion3
+$ ^C
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+ITINF25/lektion3
+$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+QEMU 7.2.22 monitor - type 'help' for more information
+(qemu) savevm snap1
+ssasavsavesavevsavevmsavevm savevm ssavevm snsavevm snasavevm snapsavevm snap1
+Error: Device 'pflash1' is writable but does not support snapshots
+(qemu) ITINF25/lektion3
+$ nano  ../../.gitignore 
+8ignored*   ^R Read File^\ Replace  ^U Paste    ^J Justify ../../.gitignore                    
+8.iso
+*.qcow2
+*.fd
+>ITINF25/lektion3e: ../../.gitignore [ Writing... ] [ Wrote 485 lines ]
+$ cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak
+
+cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak
+
+ITINF25/lektion3
+$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+
+qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+
+qemu-img: Could not open 'OVMF_VARS_4M.fd': Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+ITINF25/lektion3
+$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+ITINF25/lektion3
+$ r
+./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+qemu-img: Could not open 'OVMF_VARS_4M.fd': Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+disk1.qcow2	     OVMF_VARS_4M.qcow2
+disk2.qcow2	     recordings
+emu		     tiny.iso
+OVMF_VARS_4M.fd      ubuntu-24.04.3-desktop-amd64.iso
+OVMF_VARS_4M.fd.bak
+ITINF25/lektion3
+./emu mg convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+qemu-img: Could not open 'OVMF_VARS_4M.fd': Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+qemu-img: Could not open 'OVMF_VARS_4M.fd': Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+qemu-img: OVMF_VARS_4M.qcow2: error while converting qcow2: Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.qcow2]?
+ITINF25/lektion3
+$ ps -e | grep -i qemuITINF25/lektion3
+$ ps -e | grep -i qemu
+ITINF25/lektion3
+(reverse-i-search)`':c': qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcowp': cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak-r ~/Documents/nackademin/databashantering/d1-report/.basetests/ .
+mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/
+github/ /shared/kent/Documents/nackademin/linux2/l2-archlinux/~/Documents/nackademin/databashantering/d1-report/.markdownlint-cli2.jsonc /shared/kent/Documents/nackademin/linux2/l2-archlinux/^C
+
+
+ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_VARS_4M.fd
+/usr/share/OVMF/OVMF_VARS_4M.fd .
+ITINF25/lektion3
+$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2aw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2g': qemu-img convert -f raw -O qcow2 OVMF_
+
+ITINF25/lektion3
+cp /usr/share/OVMF/OVMF_VARS_4M.fd .VMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+./emu ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+qemu-img: OVMF_VARS_4M.qcow2: error while converting qcow2: Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.qcow2]?
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+qemu-system-x86_64: -drive if=pflash,format=qcow2,file=/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/OVMF_VARS_4M.qcow2: Could not open '/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/OVMF_VARS_4M.qcow2': No such file or directory
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+ITINF25/lektion3
+$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+QEMU 7.2.22 monitor - type 'help' for more information
+(qemu) savevm snap1
+ssasavsavesavevsavevmsavevm savevm ssavevm snsavevm snasavevm snapsavevm snap1
+(qemu) info snapshots
+iininfinfoinfo info sinfo sninfo snainfo snapinfo snapsinfo snapshinfo snapshoinfo snapshotinfo snapshots
+List of snapshots present on all disks:
+ID        TAG               VM SIZE                DATE     VM CLOCK     ICOUNT
+--        snap1             757 MiB 2026-01-29 12:56:53 00:00:21.971           
+(qemu) ^[[A^[[
+
+(qemu) loafvdvm snap1
+lloloaloadloadvloadvmloadvm loadvm sloadvm snloadvm snaloadvm snaploadvm snap1
+(qemu) ITINF25/lektion3
+./emu t - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+
+qemu-system-x86_64: -drive file=/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2,format=qcow2: Failed to get "write" lock
+Is another process using the image [/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2]?
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+ITINF25/lektion3
+$ ./emu 
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+2026/01/29 13:00:45 socat[101467] E connect(, AF=1 "/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock", 81): Connection refused
+ITINF25/lektion3
+$ ^C
+ITINF25/lektion3
+./emu t - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+ITINF25/lektion3
+$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+QEMU 7.2.22 monitor - type 'help' for more information
+(qemu) ssITINF25/lektion3
+$ 
+exit
+
+Script done on 2026-01-29 13:03:28+01:00 [COMMAND_EXIT_CODE="0"]
