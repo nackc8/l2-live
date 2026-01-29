@@ -10,6 +10,7 @@ OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
 ISO="$SCRIPT_DIR/tiny.iso"
 
 qemu-system-x86_64 \
+	-boot d \
 	-cdrom "$ISO" \
 	-daemonize \
 	-device usb-ehci \
