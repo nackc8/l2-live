@@ -17,8 +17,8 @@ qemu-system-x86_64 \
 	-device virtio-gpu-pci \
 	-drive file=arch-disk1.qcow2,format=qcow2 \
 	-drive file=arch-disk2.qcow2,format=qcow2 \
-	-drive if=pflash,format=raw,file=arch-ovmf-vars.fd \
-	-drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd \
+	-drive if=pflash,format=raw,file="$OVMF_VARS" \
+	-drive if=pflash,format=raw,readonly=on,file="$OVMF_CODE" \
 	-enable-kvm \
 	-m 4G \
 	-machine q35 \
