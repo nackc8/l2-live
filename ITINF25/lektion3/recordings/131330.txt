@@ -669,4 +669,50 @@ Is another process using the image [OVMF_VARS_4M.fd]?
 [K[A[C[C
 [?2004l[?2004h[94mITINF25/lektion3
 (B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .[C[Cqemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd [H[2J[94mITINF25/lektion3
-(B[m$ 
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd 
+[?2004lqemu-img: OVMF_VARS_4M.fd: error while converting qcow2: Failed to get "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd [C[C[C[C[C[C[C[C[K[K[Kqcow2[H[2J[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu-total-ignored
+data.txt			 OVMF_VARS_4M.fd
+disk1.qcow2			 OVMF_VARS_4M.qcow2
+disk2.qcow2			 recordings
+emu1				 script_dir
+emu2
+[?2004h[94mITINF25/lektion3
+(B[m$ [7mOVMF_VARS_4M.fd[27m[C[COVMF_VARS_4M.fdrOVMF_VARS_4M.fdmOVMF_VARS_4M.fd OVMF_VARS_4M.fd
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu2
+data.txt			 emu-total-ignored
+disk1.qcow2			 OVMF_VARS_4M.qcow2
+disk2.qcow2			 recordings
+emu1				 script_dir
+[?2004h[94mITINF25/lektion3
+(B[m$ rm OVMF_VARS_4M.fd[C[C[K./emu2 [H[2J[94mITINF25/lektion3
+(B[m$ ./emu2 
+[?2004lConnect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004h[94mITINF25/lektion3
+(B[m$ ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ [7msocat - UNIX-CONNECT:"/shared/kent/Documents/nackademi[27m[7mn[27m[7m/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[27m[A[C[Csocat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[H[2J[94mITINF25/lektion3
+(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004lQEMU 7.2.22 monitor - type 'help' for more information
+(qemu) svae    sab vevm test1
+s[K[Dsa[K[D[Dsav[K[D[D[Dsave[K[D[D[D[Dsavev[K[D[D[D[D[Dsavevm[K[D[D[D[D[D[Dsavevm [K[D[D[D[D[D[D[Dsavevm t[K[D[D[D[D[D[D[D[Dsavevm te[K[D[D[D[D[D[D[D[D[Dsavevm tes[K[D[D[D[D[D[D[D[D[D[Dsavevm test[K[D[D[D[D[D[D[D[D[D[D[Dsavevm test1[K
+(qemu) ^L  info snapshots
+i[K[Din[K[D[Dinf[K[D[D[Dinfo[K[D[D[D[Dinfo [K[D[D[D[D[Dinfo s[K[D[D[D[D[D[Dinfo sn[K[D[D[D[D[D[D[Dinfo sna[K[D[D[D[D[D[D[D[Dinfo snap[K[D[D[D[D[D[D[D[D[Dinfo snaps[K[D[D[D[D[D[D[D[D[D[Dinfo snapsh[K[D[D[D[D[D[D[D[D[D[D[Dinfo snapsho[K[D[D[D[D[D[D[D[D[D[D[D[Dinfo snapshot[K[D[D[D[D[D[D[D[D[D[D[D[D[Dinfo snapshots[K
+List of snapshots present on all disks:
+ID        TAG               VM SIZE                DATE     VM CLOCK     ICOUNT
+--        test1            1.11 GiB 2026-01-29 13:59:32 00:01:46.562           
+(qemu) savevm parts
+s[K[Dsa[K[D[Dsav[K[D[D[Dsave[K[D[D[D[Dsavev[K[D[D[D[D[Dsavevm[K[D[D[D[D[D[Dsavevm [K[D[D[D[D[D[D[Dsavevm p[K[D[D[D[D[D[D[D[Dsavevm pa[K[D[D[D[D[D[D[D[D[Dsavevm par[K[D[D[D[D[D[D[D[D[D[Dsavevm part[K[D[D[D[D[D[D[D[D[D[D[
