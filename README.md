@@ -1,4 +1,4 @@
-# Programmering 3 - "Live"-exempel
+# Linux 2 - "Live"-exempel
 
 Detta Git-repositorium innehåller exempel från terminalen och filer för varje lektion. Det är en samlad plats för flera versioner av kursen.
 
