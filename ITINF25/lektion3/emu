@@ -23,7 +23,7 @@ qemu-system-x86_64 \
 	-drive file="$DISK1",format=qcow2 \
 	-drive file="$DISK2",format=qcow2 \
 	-drive if=pflash,format=raw,readonly=on,file="$OVMF_CODE" \
-	-drive if=pflash,format=qcow2,file="$OVMF_VARS" \
+	-drive if=pflash,format=raw,file="$OVMF_VARS" \
 	-enable-kvm \
 	-m 4G \
 	-machine q35 \
