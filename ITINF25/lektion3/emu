@@ -1,5 +1,9 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(basename -- $0)"
+
+OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
+
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
 	-device usb-ehci \
