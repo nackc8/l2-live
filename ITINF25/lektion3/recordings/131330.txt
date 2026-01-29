@@ -715,4 +715,43 @@ List of snapshots present on all disks:
 ID        TAG               VM SIZE                DATE     VM CLOCK     ICOUNT
 --        test1            1.11 GiB 2026-01-29 13:59:32 00:01:46.562           
 (qemu) savevm parts
-s[K[Dsa[K[D[Dsav[K[D[D[Dsave[K[D[D[D[Dsavev[K[D[D[D[D[Dsavevm[K[D[D[D[D[D[Dsavevm [K[D[D[D[D[D[D[Dsavevm p[K[D[D[D[D[D[D[D[Dsavevm pa[K[D[D[D[D[D[D[D[D[Dsavevm par[K[D[D[D[D[D[D[D[D[D[Dsavevm part[K[D[D[D[D[D[D[D[D[D[D[
+s[K[Dsa[K[D[Dsav[K[D[D[Dsave[K[D[D[D[Dsavev[K[D[D[D[D[Dsavevm[K[D[D[D[D[D[Dsavevm [K[D[D[D[D[D[D[Dsavevm p[K[D[D[D[D[D[D[D[Dsavevm pa[K[D[D[D[D[D[D[D[D[Dsavevm par[K[D[D[D[D[D[D[D[D[D[Dsavevm part[K[D[D[D[D[D[D[D[D[D[D[Dsavevm parts[K
+(qemu) infp s   o snap	shots
+i[K[Din[K[D[Dinf[K[D[D[Dinfo[K[D[D[D[Dinfo [K[D[D[D[D[Dinfo s[K[D[D[D[D[D[Dinfo sn[K[D[D[D[D[D[D[Dinfo sna[K[D[D[D[D[D[D[D[Dinfo snap[K[D[D[D[D[D[D[D[D[Dinfo snaps[K[D[D[D[D[D[D[D[D[D[Dinfo snapsh[K[D[D[D[D[D[D[D[D[D[D[Dinfo snapsho[K[D[D[D[D[D[D[D[D[D[D[D[Dinfo snapshot[K[D[D[D[D[D[D[D[D[D[D[D[D[Dinfo snapshots[K
+List of snapshots present on all disks:
+ID        TAG               VM SIZE                DATE     VM CLOCK     ICOUNT
+--        test1            1.11 GiB 2026-01-29 13:59:32 00:01:46.562           
+--        parts            1.11 GiB 2026-01-29 14:02:56 00:05:09.544           
+(qemu) loadvm test1
+l[K[Dlo[K[D[Dloa[K[D[D[Dload[K[D[D[D[Dloadv[K[D[D[D[D[Dloadvm[K[D[D[D[D[D[Dloadvm [K[D[D[D[D[D[D[Dloadvm t[K[D[D[D[D[D[D[D[Dloadvm te[K[D[D[D[D[D[D[D[D[Dloadvm tes[K[D[D[D[D[D[D[D[D[D[Dloadvm test[K[D[D[D[D[D[D[D[D[D[D[Dloadvm test1[K
+(qemu) ^[[A    loadvm parts
+l[K[Dlo[K[D[Dloa[K[D[D[Dload[K[D[D[D[Dloadv[K[D[D[D[D[Dloadvm[K[D[D[D[D[D[Dloadvm [K[D[D[D[D[D[D[Dloadvm p[K[D[D[D[D[D[D[D[Dloadvm pa[K[D[D[D[D[D[D[D[D[Dloadvm par[K[D[D[D[D[D[D[D[D[D[Dloadvm part[K[D[D[D[D[D[D[D[D[D[D[Dloadvm parts[K
+(qemu) ^[[A^[[A        loadvm test1
+l[K[Dlo[K[D[Dloa[K[D[D[Dload[K[D[D[D[Dloadv[K[D[D[D[D[Dloadvm[K[D[D[D[D[D[Dloadvm [K[D[D[D[D[D[D[Dloadvm t[K[D[D[D[D[D[D[D[Dloadvm te[K[D[D[D[D[D[D[D[D[Dloadvm tes[K[D[D[D[D[D[D[D[D[D[Dloadvm test[K[D[D[D[D[D[D[D[D[D[D[Dloadvm test1[K
+(qemu) [?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[A[C[C[K
+[K[A[C[C[H[2J[94mITINF25/lektion3
+(B[m$ ./emu3 [H[2J[94mITINF25/lektion3
+(B[m$ ./emu3 
+[?2004lConnect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ssh -p 2222 root@localhost
+[?2004lWarning: Permanently added '[localhost]:2222' (ED25519) to the list of known hosts.
+root@localhost's password: 
+To install [38;2;23;147;209mArch Linux[0m follow the installation guide:
+https://wiki.archlinux.org/title/Installation_guide
+
+For Wi-Fi, authenticate to the wireless network using the [35miwctl[0m utility.
+For mobile broadband (WWAN) modems, connect with the [35mmmcli[0m utility.
+Ethernet, WLAN and WWAN interfaces using DHCP should work automatically.
+
+After connecting to the internet, the installation guide can be accessed
+via the convenience script [35mInstallation_guide[0m.
+
+[41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
+[1m[7m#[27m[1m[0m                                                        ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h[H[2J[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?2004l
+Connection to localhost closed.
+[?2004h[94mITINF25/lektion3
+(B[m$ ssh -p 2222 root@localhost[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C < eiei[K[K[K[K[K[K[K[C[C[Kssh -p 2222 root@localhost[C[C./emu3 [K[C[Csocat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektio
