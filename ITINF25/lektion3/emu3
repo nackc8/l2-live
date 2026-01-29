@@ -28,6 +28,7 @@ qemu-system-x86_64 \
 	-m 4G \
 	-machine q35 \
 	-monitor unix:"$SCRIPT_DIR/qemu-mon.sock",server,nowait \
+	-nic user,model=virtio-net-pci,hostfwd=tcp::2222-:22 \
 	-smp 2
 
 # Install package socat to use the command.
