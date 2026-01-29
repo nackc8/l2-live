@@ -136,4 +136,246 @@ OVMF_CODE.ms.fd		  OVMF_VARS.ms.fd
 (B[m$ qemu-img create -f qcow2 disk1 30G[1P 30G2 30G[C[C[C[C
 [?2004lFormatting 'disk2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
 [?2004h[94mITINF25/lektion3
-(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ./emu-total-ignored [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu
+data.txt			 emu-total-ignored
+disk1				 recordings
+disk2				 script_dir
+[?2004h[94mITINF25/lektion3
+(B[m$ chmod 
+[?2004lchmod: missing operand
+Try 'chmod --help' for more information.
+[?2004h[94mITINF25/lektion3
+(B[m$ =[Kchmod +x emu
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ mv emu{,1}
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu1
+data.txt			 emu-total-ignored
+disk1				 recordings
+disk2				 script_dir
+[?2004h[94mITINF25/lektion3
+(B[m$ code emu1
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ cp [7m/usr/share/OVMF/OVMF_VARS_4M.fd[27m[C[C[C[C[C/usr/share/OVMF/OVMF_VARS_4M.fd /[K.
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu-total-ignored
+data.txt			 OVMF_VARS_4M.fd
+disk1				 recordings
+disk2				 script_dir
+emu1
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ./emu1 
+[?2004lqemu-system-x86_64: -drive file=/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2,format=qcow2: Could not open '/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/disk1.qcow2': No such file or directory
+Connect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu-total-ignored
+data.txt			 OVMF_VARS_4M.fd
+disk1				 recordings
+disk2				 script_dir
+emu1
+[?2004h[94mITINF25/lektion3
+(B[m$ mv disk1{,/[K.qcow2}
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv disk1{,.qcow2}[1P{,.qcow2}2{,.qcow2}
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu-total-ignored
+data.txt			 OVMF_VARS_4M.fd
+disk1.qcow2			 recordings
+disk2.qcow2			 script_dir
+emu1
+[?2004h[94mITINF25/lektion3
+(B[m$ mv disk2{,.qcow2}1{,.qcow2}[C[C[10P./emu1 [H[2J[94mITINF25/lektion3
+(B[m$ ./emu1 
+[?2004lConnect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ./emu1 [H[2J[94mITINF25/lektion3
+(B[m$ ./emu1 
+[?2004lConnect with:
+socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [7msocat - UNIX-CONNECT:"/shared/kent/Documents/nackademi[27m[7mn[27m[7m/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[27m[A[C[Csocat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[K[A[K(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"[H[2J[94mITINF25/lektion3
+(B[m$ socat - UNIX-CONNECT:"/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/qemu-mon.sock"
+[?2004lQEMU 7.2.22 monitor - type 'help' for more information
+(qemu) help
+h[K[Dhe[K[D[Dhel[K[D[D[Dhelp[K
+announce_self [interfaces] [id] -- Trigger GARP/RARP announcements
+balloon target -- request VM to change its memory allocation (in MB)
+block_job_cancel [-f] device -- stop an active background block operation (use -f
+			 if you want to abort the operation immediately
+			 instead of keep running until data is in sync)
+block_job_complete device -- stop an active background block operation
+block_job_pause device -- pause an active background block operation
+block_job_resume device -- resume a paused background block operation
+block_job_set_speed device speed -- set maximum speed for a background block operation
+block_resize device size -- resize a block image
+block_set_io_throttle device bps bps_rd bps_wr iops iops_rd iops_wr -- change I/O throttle limits for a block drive
+block_stream device [speed [base]] -- copy data from a backing file into a block device
+boot_set bootdevice -- define new values for the boot device list
+calc_dirty_rate [-r] [-b] second [sample_pages_per_GB] -- start a round of guest dirty rate measurement (using -r to
+			 specify dirty ring as the method of calculation and
+			 -b to specify dirty bitmap as method of calculation)
+cancel_vcpu_dirty_limit [cpu_index] -- cancel dirty page rate limit, use cpu_index to cancel
+					 limit on a specified virtual cpu
+change device [-f] filename [format [read-only-mode]] -- change a removable medium, optional format, use -f to force the operation
+chardev-add args -- add chardev
+chardev-change id args -- change chardev
+chardev-remove id -- remove chardev
+chardev-send-break id -- send a break on chardev
+client_migrate_info protocol hostname port tls-port cert-subject -- set migration information for remote display
+closefd closefd name -- close a file descriptor previously passed via SCM rights
+commit device|all -- commit changes to the disk images (if -snapshot is used) or backing files
+cont|c  -- resume emulation
+cpu index -- set the default CPU
+delvm tag -- delete a VM snapshot from its tag
+device_add driver[,prop=value][,...] -- add device, like -device on the command line
+device_del device -- remove device
+drive_add [-n] [[<domain>:]<bus>:]<slot>
+[file=file][,if=type][,bus=n]
+[,unit=m][,media=d][,index=i]
+[,snapshot=on|off][,cache=on|off]
+[,readonly=on|off][,copy-on-read=on|off] -- add drive to PCI storage controller
+drive_backup [-n] [-f] [-c] device target [format] -- initiates a point-in-time
+			copy for a device. The device's contents are
+			copied to the new image file, excluding data that
+			is written after the command is started.
+			The -n flag requests QEMU to reuse the image found
+			in new-image-file, instead of recreating it from scratch.
+			The -f flag requests QEMU to copy the whole disk,
+			so that the result does not need a backing file.
+			The -c flag requests QEMU to compress backup data
+			(if the target format supports it).
+			
+drive_del device -- remove host block device
+drive_mirror [-n] [-f] device target [format] -- initiates live storage
+			migration for a device. The device's contents are
+			copied to the new image file, including data that
+			is written after the command is started.
+			The -n flag requests QEMU to reuse the image found
+			in new-image-file, instead of recreating it from scratch.
+			The -f flag requests QEMU to copy the whole disk,
+			so that the result does not need a backing file.
+			
+dump-guest-memory [-p] [-d] [-z|-l|-s|-w] filename [begin length] -- dump guest memory into file 'filename'.
+			-p: do paging to get guest's memory mapping.
+			-d: return immediately (do not wait for completion).
+			-z: dump in kdump-compressed format, with zlib compression.
+			-l: dump in kdump-compressed format, with lzo compression.
+			-s: dump in kdump-compressed format, with snappy compression.
+			-w: dump in Windows crashdump format (can be used instead of ELF-dump converting),
+			    for Windows x86 and x64 guests with vmcoreinfo driver only.
+			begin: the starting physical address.
+			length: the memory size, in bytes.
+dumpdtb filename -- dump the FDT in dtb format to 'filename'
+eject [-f] device -- eject a removable medium (use -f to force it)
+exit_preconfig  -- exit the preconfig state
+expire_password protocol time [-d display] -- set spice/vnc password expire-time
+gdbserver [device] -- start gdbserver on given device (default 'tcp::1234'), stop with 'none'
+getfd getfd name -- receive a file descriptor via SCM rights and assign it a name
+gpa2hpa addr -- print the host physical address corresponding to a guest physical address
+gpa2hva addr -- print the host virtual address corresponding to a guest physical address
+gva2gpa addr -- print the guest physical address corresponding to a guest virtual address
+help|? [cmd] -- show the help
+hostfwd_add [netdev_id] [tcp|udp]:[hostaddr]:hostport-[guestaddr]:guestport -- redirect TCP or UDP connections from host to guest (requires -net user)
+hostfwd_remove [netdev_id] [tcp|udp]:[hostaddr]:hostport -- remove host-to-guest TCP or UDP redirection
+i /fmt addr -- I/O port read
+info [subcommand] -- show various information about the system state
+loadvm tag -- restore a VM snapshot from its tag
+log item1[,...] -- activate logging of the specified items
+logfile filename -- output logs to 'filename'
+mce [-b] cpu bank status mcgstatus addr misc -- inject a MCE on the given CPU [and broadcast to other CPUs with -b option]
+memsave addr size file -- save to disk virtual memory dump starting at 'addr' of size 'size'
+migrate [-d] [-b] [-i] [-r] uri -- migrate to URI (using -d to not wait for completion)
+			 -b for migration without shared storage with full copy of disk
+			 -i for migration without shared storage with incremental copy of disk (base image shared between src and destination)
+			 -r to resume a paused migration
+migrate_cancel  -- cancel the current VM migration
+migrate_continue state -- Continue migration from the given paused state
+migrate_incoming uri -- Continue an incoming migration from an -incoming defer
+migrate_pause  -- Pause an ongoing migration (postcopy-only)
+migrate_recover uri -- Continue a paused incoming postcopy migration
+migrate_set_capability capability state -- Enable/Disable the usage of a capability for migration
+migrate_set_parameter parameter value -- Set the parameter for migration
+migrate_start_postcopy  -- Followup to a migration command to switch the migration to postcopy mode. The postcopy-ram capability must be set on both source and destination before the original migration command .
+mouse_button state -- change mouse button state (1=L, 2=M, 4=R)
+mouse_move dx dy [dz] -- send mouse move events
+mouse_set index -- set which mouse device receives events
+nbd_server_add nbd_server_add [-w] device [name] -- export a block device via NBD
+nbd_server_remove nbd_server_remove [-f] name -- remove an export previously exposed via NBD
+nbd_server_start nbd_server_start [-a] [-w] host:port -- serve block devices on the given host and port
+nbd_server_stop nbd_server_stop -- stop serving block devices using the NBD protocol
+netdev_add [user|tap|socket|stream|dgram|vde|bridge|hubport|netmap|vhost-user],id=str[,prop=value][,...] -- add host network device
+netdev_del id -- remove host network device
+nmi  -- inject an NMI
+o /fmt addr value -- I/O port write
+object_add [qom-type=]type,id=str[,prop=value][,...] -- create QOM object
+object_del id -- destroy QOM object
+pcie_aer_inject_error [-a] [-c] id <error_status> [<tlp header> [<tlp header prefix>]] -- inject pcie aer error
+			 -a for advisory non fatal error
+			 -c for correctable error
+			<id> = qdev device id
+			<error_status> = error string or 32bit
+			<tlp header> = 32bit x 4
+			<tlp header prefix> = 32bit x 4
+pmemsave addr size file -- save to disk physical memory dump starting at 'addr' of size 'size'
+print|p /fmt expr -- print expression value (use $reg for CPU register access)
+qemu-io [-d] [device] "[command]" -- run a qemu-io command on a block device
+			-d: [device] is a device ID rather than a drive ID or node name
+qom-get path property -- print QOM property
+qom-list path -- list QOM properties
+qom-set [-j] path property value -- set QOM property.
+			-j: the value is specified in json format.
+quit|q  -- quit the emulator
+replay_break icount -- set breakpoint at the specified instruction count
+replay_delete_break  -- remove replay breakpoint
+replay_seek icount -- replay execution to the specified instruction count
+ringbuf_read device size -- Read from a ring buffer character device
+ringbuf_write device data -- Write to a ring buffer character device
+savevm tag -- save a VM snapshot. If no tag is provided, a new snapshot is created
+screendump filename [-f format] [device [head]] -- save screen from head 'head' of display device 'device'in specified format 'format' as image 'filename'.Currently only 'png' and 'ppm' formats are supported.
+sendkey keys [hold_ms] -- send keys to the VM (e.g. 'sendkey ctrl-alt-f1', default hold time=100 ms)
+set_link name on|off -- change the link status of a network adapter
+set_password protocol password [-d display] [action-if-connected] -- set spice/vnc password
+set_vcpu_dirty_limit dirty_rate [cpu_index] -- set dirty page rate limit, use cpu_index to set limit
+					 on a specified virtual cpu
+singlestep [on|off] -- run emulation in singlestep mode or switch to normal mode
+snapshot_blkdev [-n] device [new-image-file] [format] -- initiates a live snapshot
+			of device. If a new image file is specified, the
+			new image file will become the new root image.
+			If format is specified, the snapshot file will
+			be created in that format.
+			The default format is qcow2.  The -n flag requests QEMU
+			to reuse the image found in new-image-file, instead of
+			recreating it from scratch.
+snapshot_blkdev_internal device name -- take an internal snapshot of device.
+			The format of the image used by device must
+			support it, such as qcow2.
+			
+snapshot_delete_blkdev_internal device name [id] -- delete an internal snapshot of device.
+			If id is specified, qemu will try delete
+			the snapshot matching both id and name.
+			The format of the image used by device must
+			support it, such as qcow2.
+			
+stopcapture capture index -- stop capture
+stop|s  -- stop emulation
+sum addr size -- compute the checksum of a memory region
+sync-profile [on|off|reset] -- enable, disable or reset synchronization profiling. With no arguments, prints whether profiling is on or off.
+system_powerdown  -- send system power down event
+system_reset  -- reset the system
+system_wakeup  -- wakeup guest from suspend
+trace-event name on|off [vcpu] -- changes status of a specific trace event (vcpu: vCPU to set, default is all)
+watchdog_action [reset|shutdown|poweroff|pause|debug|none] -- change watchdog action
+wavcapture path audiodev [frequency [bits [channels]]] -- captu
