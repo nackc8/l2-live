@@ -25,4 +25,147 @@ Script started on 2026-01-29 12:03:34+01:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004larch-disk1.qcow2  emu		   recordings
 arch-disk2.qcow2  OVMF_CODE_4M.fd
 [?2004h[94mITINF25/lektion3
-(B[m$ [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C/usr/share/OVMF/OVMF_CODE_4M.fd[K[K[K[K[K[K[K[K[K[KVA[K[K[K[K[K[K[Kc/usr/share/OVMF/
+(B[m$ [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C/usr/share/OVMF/OVMF_CODE_4M.fd[K[K[K[K[K[K[K[K[K[KVA[K[K[K[K[K[K[Kc/usr/share/OVMF/p/usr/share/OVMF/ /usr/share/OVMF/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COVMF_
+OVMF_CODE_4M.fd           OVMF_CODE.secboot.fd
+OVMF_CODE_4M.ms.fd        OVMF_VARS_4M.fd
+OVMF_CODE_4M.secboot.fd   OVMF_VARS_4M.ms.fd
+OVMF_CODE_4M.snakeoil.fd  OVMF_VARS_4M.snakeoil.fd
+OVMF_CODE.fd              OVMF_VARS.fd
+OVMF_CODE.ms.fd           OVMF_VARS.ms.fd
+[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_Va[KARS
+OVMF_VARS_4M.fd           OVMF_VARS.fd
+OVMF_VARS_4M.ms.fd        OVMF_VARS.ms.fd
+OVMF_VARS_4M.snakeoil.fd  
+[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.d[Kfd [H[2J[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd 
+[?2004lcp: missing destination file operand after '/usr/share/OVMF/OVMF_VARS_4M.fd'
+Try 'cp --help' for more information.
+[?2004h[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/
+abooks/
+Apps/
+.backups/
+bgavideo/
+Bildframkallning/
+c8/
+--More--[Kc8 - contracts/
+c8 - cv/
+c8 - economy/
+c8 - future blog-entries/
+c8 - timestamps/
+Camera Uploads/
+--More--[Kcpuinfo_jenny
+devops23linux1/
+devops24linux1/
+devops24linux1-ten2/
+devops24linux2/
+devops24linux2-ten2/
+--More--[Kdevops25foton/
+dockerplay/
+.dropbox
+.dropbox.cache/
+fakturaexempel.avif
+Familjen/
+--More--[KFotobok_Tor_1-2_år/
+From_old_computer/
+fun/
+humblebundlemath/
+IMG20260109132743.jpg
+IMG20260109132811.jpg
+--More--[Kinsc_bga_foto/
+itinf24linux1/
+itinf24linux2/
+itinf25linux1/
+.kb/
+kents-deklaration-2024.pdf
+--More--[Kklad-before-switch-to-kltd/
+Making_Games_For_The_Commodore_64_In_Assembly_Language_eBook.pdf
+media - audiobooks/
+media - documentary/
+media - documents/
+media - drive clones from new computers/
+--More--[Kmedia - drivers and isos/
+media - ebooks/
+media - movies/
+media - music/
+media - phoenix point/
+media - podcast/
+--More--[Kmedia - software/
+media - tv shows/
+media - windows 7 profile/
+MonoLisa-Complete-2.016.zip
+MonoLisa-Complete-stable.zip
+MonoLisa-Static-Complete-stable.zip
+--More--[Kmonolisa-webfont.css
+monolisa-webfont.zip
+MSPaint.png
+oldcicd/
+ovmf/
+ovmf-files/
+--More--[Kpersonal - health/
+personal - organization/
+personal - os/
+personal - shared with ylva/
+personal - studies/
+Photos/
+--More--[Kpingurl-end/
+play-qemu/
+powershell/
+Public/
+retrobat/
+Revolution.OS.2001.DVDRip.FFV1.AC3-LiNUX.mp4
+--More--[Krootfiler/
+school - archived/
+school - degree/
+Sent files/
+signature.png
+sirius16gen2windriversfromtuxedo.zip
+--More--[K[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c9[K8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu_des[K[K[K[K[K[K[K[K[K[K
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.
