@@ -9,7 +9,8 @@ OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
 OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
 
 ISO="$SCRIPT_DIR/archlinux-2026.01.01-x86_64.iso"
-
+# Created with:
+#    qemu-img create -f qcow2 disk1 30G
 DISK1="$SCRIPT_DIR/disk1.qcow2"
 DISK2="$SCRIPT_DIR/disk2.qcow2"
 
