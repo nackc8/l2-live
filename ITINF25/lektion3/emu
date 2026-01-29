@@ -7,7 +7,7 @@ OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
 # Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
 OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
 
-ISO="$SCRIPT_DIR/ubuntu-24.04.3-desktop-amd64.iso"
+ISO="$SCRIPT_DIR/archlinux-2026.01.01-x86_64.iso"
 
 DISK1="$SCRIPT_DIR/disk1.qcow2"
 DISK2="$SCRIPT_DIR/disk2.qcow2"
