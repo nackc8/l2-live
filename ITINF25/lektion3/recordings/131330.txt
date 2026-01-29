@@ -59,4 +59,81 @@ ubuntu-24.04.3-desktop-amd64.iso
 [?2004h[94mITINF25/lektion3
 (B[m$ ./s[K[K[Kp[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ pwd[H[2J[94mITINF25/lektion3
 (B[m$ pwd
-[?2004l/shared/kent/Documents/nac
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ [7m/shared/kent/Documents/nackademin/linux2/l2-live/ITINF[27m[7m2[27m[7m5/lektion3[27m[A[C[C/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ code s
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./s[H[2J[94mITINF25/lektion3
+(B[m$ ./s
+[?2004l.
+[?2004h[94mITINF25/lektion3
+(B[m$ ./scode s[C[C/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ /shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s[H[2J[94mITINF25/lektion3
+(B[m$ /shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s
+[?2004lx: /shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ pwd
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ /shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3/s[A[C[C./s[K
+[K[A[C[C[C[C[C[H[2J[94mITINF25/lektion3
+(B[m$ ./s
+[?2004lSCRIPT_DIR: 
+[?2004h[94mITINF25/lektion3
+(B[m$ pwd
+[?2004l/shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ echo ''D'E'T'T'A' '"'R'[1P'[1P'Ä'R' 'D'A'T'A'[C > data.txt
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./s [H[2J[94mITINF25/lektion3
+(B[m$ ./s 
+[?2004lDETTA ÄR DATA
+SCRIPT_DIR: /shared/kent/Documents/nackademin/linux2/l2-live/ITINF25/lektion3
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ mv s script_dir
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso
+data.txt
+emu
+emu-total-ignored
+recordings
+script_dir
+ubuntu-24.04.3-desktop-amd64.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ rm ubuntu-24.04.3-desktop-amd64.iso 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls /usr/share/OVMF/
+[?2004lOVMF_CODE_4M.fd		  OVMF_CODE.secboot.fd
+OVMF_CODE_4M.ms.fd	  OVMF_VARS_4M.fd
+OVMF_CODE_4M.secboot.fd   OVMF_VARS_4M.ms.fd
+OVMF_CODE_4M.snakeoil.fd  OVMF_VARS_4M.snakeoil.fd
+OVMF_CODE.fd		  OVMF_VARS.fd
+OVMF_CODE.ms.fd		  OVMF_VARS.ms.fd
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ls archlinux-2026.01.01-x86_64.iso 
+[?2004larchlinux-2026.01.01-x86_64.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ qemu-img create -f qcow2[K[K[K[K[Kqcow2 disk1 30G
+[?2004lFormatting 'disk1', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img create -f qcow2 disk1 30G[1P 30G2 30G[C[C[C[C
+[?2004lFormatting 'disk2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[
