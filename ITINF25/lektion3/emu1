@@ -27,6 +27,7 @@ qemu-system-x86_64 \
 	-enable-kvm \
 	-m 4G \
 	-machine q35 \
+	-monitor unix:"$SCRIPT_DIR/qemu-mon.sock",server,nowait \
 	-smp 2
 
 # Install package socat to use the command.
