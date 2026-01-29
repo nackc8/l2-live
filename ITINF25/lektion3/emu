@@ -3,20 +3,21 @@
 SCRIPT_DIR="$(basename -- $0)"
 
 OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
-OVMF_VARS=/usr/share/OVMF/OVMF_CODE_4M.fd
 
+# Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
+OVMF_VARS=/usr/share/OVMF/OVMF_VARS_4M.fd
 
 qemu-system-x86_64 \
 	-cdrom "$ISO" \
+	-daemonize \
 	-device usb-ehci \
 	-device usb-tablet \
-	-smp 2 \
-	-m 4G \
-	-daemonize \
-	-enable-kvm \
 	-device virtio-gpu-pci \
 	-drive file=arch-disk1.qcow2,format=qcow2 \
 	-drive file=arch-disk2.qcow2,format=qcow2 \
-	-machine q35 \
+	-drive if=pflash,format=raw,file=arch-ovmf-vars.fd \
 	-drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.fd \
-	-drive if=pflash,format=raw,file=arch-ovmf-vars.fd
+	-enable-kvm \
+	-m 4G \
+	-machine q35 \
+	-smp 2
