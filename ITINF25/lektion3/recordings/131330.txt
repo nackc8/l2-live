@@ -1,0 +1,62 @@
+Script started on 2026-01-29 13:13:30+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="56" LINES="10"]
+[?2004h[94mITINF25/lektion3
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004ldisk1.qcow2	 OVMF_VARS_4M.fd.bak
+disk2.qcow2	 OVMF_VARS_4M.qcow2
+emu		 recordings
+emu-ignored	 tiny.iso
+OVMF_VARS_4M.fd  ubuntu-24.04.3-desktop-amd64.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso /
+[?2004lcp: cannot create regular file '/archlinux-2026.01.01-x86_64.iso': Permission denied
+[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/archlinux-2026.01.01-x86_64.iso /[K.
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ lls
+[?2004lbash: lls: command not found
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso
+disk1.qcow2
+disk2.qcow2
+emu
+emu-total-ignored
+OVMF_VARS_4M.fd
+OVMF_VARS_4M.fd.bak
+OVMF_VARS_4M.qcow2
+recordings
+tiny.iso
+ubuntu-24.04.3-desktop-amd64.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ ./[K[Krm OVMF_VARS_4M.&[K* tiny.iso disk1.qcow2 disk2.qcow2 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso
+emu
+emu-total-ignored
+recordings
+ubuntu-24.04.3-desktop-amd64.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ tocuh [K[K[K[Kuch [H[2J[94mITINF25/lektion3
+(B[m$ touch s
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ chmod +_x[K[Kx s
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ nano s 
+[?2004l[?2004h[?1049h[22;0;0t[1;5r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[5;22H(B[0;7m[ Reading... ](B[m[5;21H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                s                         [1;55H(B[m[2d[?12l[?25h[?25l[1;33H(B[0;7m*[55G(B[m[?12l[?25h[2de[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h$[?25l[?12l[?25h0[?25l[3d[?12l[?25h[?25l[5d(B[0;7mSave modified buffer?                                  [?7l [?7h[5;23H(B[m[?12l[?25h[?25l(B[0;7mFile Name to Write: s(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;33H(B[0;7m [55G(B[m[5;20H(B[0;7m[ Wrote 2 lines ](B[m[J[?12l[?25h[5;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ nano s 
+[?2004l[?2004h[?1049h[22;0;0t[1;5r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[5;22H(B[0;7m[ Reading... ](B[m[5;21H(B[0;7m[ Read 2 lines ](B[m[H(B[0;7m  GNU nano 7.2                s                         [1;55H(B[m[2decho $0[?12l[?25h[?25l[1;33H(B[0;7m*[55G(B[m[2d[K[3decho $0[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m![39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36mi[39m(B[m[?25l[?12l[?25h[36mn[39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[?12l[?25h[36ms[39m(B[m[?25l[?12l[?25h[36mh[39m(B[m[?25l[?12l[?25h[3d[?25l[K[4decho $0[?12l[?25h[?25l[5d(B[0;7mSave modified buffer?                                  [?7l [?7h[5;23H(B[m[?12l[?25h[?25l(B[0;7mFile Name to Write: s(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;33H(B[0;7m [55G(B[m[5;20H(B[0;7m[ Wrote 4 lines ](B[m[J[?12l[?25h[5;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./s[H[2J[94mITINF25/lektion3
+(B[m$ ./s
+[?2004l./s
+[?2004h[94mITINF25/lektion3
+(B[m$ ./s[K[K[Kp[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ p[K(B[m$ pwd[H[2J[94mITINF25/lektion3
+(B[m$ pwd
+[?2004l/shared/kent/Documents/nac
