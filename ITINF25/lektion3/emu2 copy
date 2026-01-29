@@ -1,0 +1,61 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname -- "$0")" && pwd)"
+
+# Behöver: apt install ovmf
+OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
+
+# Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
+OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
+
+ISO="$SCRIPT_DIR/archlinux-2026.01.01-x86_64.iso"
+# Created with:
+#    qemu-img create -f qcow2 disk1 30G
+DISK1="$SCRIPT_DIR/disk1.qcow2"
+DISK2="$SCRIPT_DIR/disk2.qcow2"
+
+qemu-system-x86_64 \
+	-boot d \
+	-cdrom "$ISO" \
+	-daemonize \
+	-device usb-ehci \
+	-device usb-tablet \
+	-drive file="$DISK1",format=qcow2 \
+	-drive file="$DISK2",format=qcow2 \
+	-drive if=pflash,format=raw,readonly=on,file="$OVMF_CODE" \
+	-drive if=pflash,format=qcow2,file="$SCRIPT_DIR/OVMF_VARS_4M.qcow2" \
+	-enable-kvm \
+	-m 4G \
+	-machine q35 \
+	-monitor unix:"$SCRIPT_DIR/qemu-mon.sock",server,nowait \
+	-smp 2
+
+# Install package socat to use the command.
+echo "Connect with:"
+echo "socat - UNIX-CONNECT:\"$SCRIPT_DIR/qemu-mon.sock\""
+
+# Genomgång:
+# 1:
+#   Endast -monitor unix:"$SCRIPT_DIR/qemu-mon.sock",server,nowait
+#   Anslut med socat
+#   savevm snap1
+#   -> error
+# 2:
+#    Byt
+#       -drive if=pflash,format=raw,file="$OVMF_VARS" \
+#    Till
+#       -drive if=pflash,format=qcow2,file="$SCRIPT_DIR/OVMF_VARS_4M.qcow2"
+#    Konvertera vars till qcow2
+#       qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
+#   Anslut med socat
+#   savevm snap1
+#   info snapshots
+#    < change stuff, want to revert >
+#   loadvm snap1
+# 3:
+#   Endast -nic user,model=virtio-net-pci,hostfwd=tcp::2222-:22
+#   Sätt root lösenord
+#   Anslut med SSH
+
+#cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak
+# qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
