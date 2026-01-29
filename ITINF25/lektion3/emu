@@ -5,7 +5,7 @@ SCRIPT_DIR="$(dirname -- $0)"
 OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
 
 # Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
-OVMF_VARS=/usr/share/OVMF/OVMF_VARS_4M.fd
+OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
 
 ISO="$SCRIPT_DIR/tiny.iso"
 
