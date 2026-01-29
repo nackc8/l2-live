@@ -2,6 +2,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname -- "$0")" && pwd)"
 
+# Behöver: apt install ovmf
 OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
 
 # Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
