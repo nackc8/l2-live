@@ -632,4 +632,41 @@ Parameters to dd subcommand:
   'of=FILE' write to FILE
   'skip=N' skip N bs-sized blocks at the start of input
 
-Supported formats: blkdebug blklogwrites blkverify bochs cloop compress copy-before-write copy-on-read dmg file ftp ftps gluster host_cdrom hos
+Supported formats: blkdebug blklogwrites blkverify bochs cloop compress copy-before-write copy-on-read dmg file ftp ftps gluster host_cdrom host_device http https iscsi iser luks nbd nfs null-aio null-co nvme parallels preallocate qcow qcow2 qed quorum raw rbd replication snapshot-access ssh throttle vdi vhdx vmdk vpc vvfat
+
+See <https://qemu.org/contribute/report-a-bug> for how to report bugs.
+More information on the QEMU project at <https://qemu.org>.
+[?2004h[94mITINF25/lektion3
+(B[m$ l[H[2J[94mITINF25/lektion3
+(B[m$ l[K(reverse-i-search)`': q': [7mq[27memu-img convert --help[1@e': [7mqe[27m[1@m': [7mqem[27m[1@u': [7mqemu[27m[1@-': [7mqemu-[27m[1@i': [7mqemu-i[27m[1@m': [7mqemu-im[27m[1@g': [7mqemu-img[27m[C[C[C[C[C[C[C[C[C[8P--help[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[Ccreate -f qcow2 disk2 30G[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2[A(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C    ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larchlinux-2026.01.01-x86_64.iso  emu-total-ignored
+data.txt			 OVMF_VARS_4M.fd
+disk1.qcow2			 qemu-mon.sock
+disk2.qcow2			 recordings
+emu1				 script_dir
+emu2
+[?2004h[94mITINF25/lektion3
+(B[m$ [7mqemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_[27m 
+[7mVARS_4M.qcow2[27m[A[A[C[Cqemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_ 
+VARS_4M.qcow2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C) [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_ VARS_4M.fd [H[2J[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd 
+[?2004lqemu-img: Could not open 'OVMF_VARS_4M.fd': Failed to get shared "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd [H[2J[94mITINF25/lektion3
+(B[m$ qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd 
+[?2004lqemu-img: OVMF_VARS_4M.fd: error while converting qcow2: Failed to get "write" lock
+Is another process using the image [OVMF_VARS_4M.fd]?
+[?2004h[94mITINF25/lektion3
+(B[m$ (reverse-i-search)`': c': qemu-img convert -f raw -O q[7mc[27mow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp': [7mcp[27m /usr/share/OVMF/OVMF_VARS_4M.fd .[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .
+[K[A[C[C
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .[C[Cqemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.fd [H[2J[94mITINF25/lektion3
+(B[m$ 
