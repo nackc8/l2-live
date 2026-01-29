@@ -1,0 +1,28 @@
+Script started on 2026-01-29 12:03:34+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="56" LINES="5"]
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ www[K[K[K[K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ chmod +x emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ (reverse-i-search)`': [14@c': [7mc[27mhmod +x emur': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-se[7mcr[27met=hej[A[Ae': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-se[7mcre[27mt=hej[A[Aa': qemu-img [7mcrea[27mte -f qcow2 arch-disk2.qcow2 30G[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct': qemu-img [7mcreat[27me -f qcow2 arch-[1@d[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce': qemu-img [7mcreate[27m -f qcow2 arch[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P(B[m$ qemu-img create -f qcow2 arch-disk2.qcow2 30G
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lFormatting 'arch-disk2.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img create -f qcow2 arch-disk2.qcow2 30G[C[C[1P[1@1
+[?2004lFormatting 'arch-disk1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  arch-disk2.qcow2  emu  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ cp (reverse-i-search)`': cp /': du -hs ~/Dropbox/c8/iso[7m/[27mTinyCore-current.iso [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/s[27mhared/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ah': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/sh[27mared/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Aa': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/sha[27mred/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ar': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/shar[27med/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ae': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/share[27md/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ad': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/shared[27m/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[A': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/share[27md/kent/Documents/n[1Packademin/linux2/l2-archlinux/[A[C[C^C
+[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ cp [7m/usr/share/OVMF/OVMF_CODE_4M.fd \[27m[C[C[C[C[C/usr/share/OVMF/OVMF_CODE_4M.fd \[K[K .
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_CODE_4M.fd
+[?2004h[94mITINF25/lektion3
+(B[m$ [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C/usr/share/OVMF/OVMF_CODE_4M.fd[K[K[K[K[K[K[K[K[K[KVA[K[K[K[K[K[K[Kc/usr/share/OVMF/
