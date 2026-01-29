@@ -45,6 +45,8 @@ echo "socat - UNIX-CONNECT:\"$SCRIPT_DIR/qemu-mon.sock\""
 #       -drive if=pflash,format=raw,file="$OVMF_VARS" \
 #    Till
 #       -drive if=pflash,format=qcow2,file="$SCRIPT_DIR/OVMF_VARS_4M.qcow2"
+qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_
+VARS_4M.qcow2
 #   Anslut med socat
 #   savevm snap1
 #   info snapshots
