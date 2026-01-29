@@ -1,13 +1,13 @@
 #!/bin/bash
 
-SCRIPT_DIR="$(dirname -- $0)"
+SCRIPT_DIR="$(cd $(dirname -- $0) && pwd)"
 
 OVMF_CODE=/usr/share/OVMF/OVMF_CODE_4M.fd
 
 # Copied from /usr/share/OVMF/OVMF_VARS_4M.fd
 OVMF_VARS="$SCRIPT_DIR/OVMF_VARS_4M.fd"
 
-ISO="$SCRIPT_DIR/tiny.iso"
+ISO="$SCRIPT_DIR/ubuntu-24.04.3-desktop-amd64.iso"
 
 DISK1="$SCRIPT_DIR/disk1.qcow2"
 DISK2="$SCRIPT_DIR/disk2.qcow2"
@@ -18,11 +18,10 @@ qemu-system-x86_64 \
 	-daemonize \
 	-device usb-ehci \
 	-device usb-tablet \
-	-device virtio-gpu-pci \
 	-drive file="$DISK1",format=qcow2 \
 	-drive file="$DISK2",format=qcow2 \
-	-drive if=pflash,format=raw,file="$OVMF_VARS" \
 	-drive if=pflash,format=raw,readonly=on,file="$OVMF_CODE" \
+	-drive if=pflash,format=raw,file="$OVMF_VARS" \
 	-enable-kvm \
 	-m 4G \
 	-machine q35 \

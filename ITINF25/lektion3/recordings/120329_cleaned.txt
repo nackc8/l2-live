@@ -1,0 +1,365 @@
+Script started on 2026-01-29 12:03:34+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="56" LINES="5"]
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ww
+
+$ chmod +x emu 
+ITINF25/lektion3
+(reverse-i-search)`':c': chmod +x emr': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-secret=hee': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-secret=hea': qemu-img create -f qcow2 arch-disk2.qcow2 30G
+$ qemu-img create -f qcow2 arch-disk2.qcow2 30G create -f qcow2 arch-
+
+Formatting 'arch-disk2.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+ITINF25/lektion3
+$ qemu-img create -f qcow2 arch-disk2.qcow2 301
+Formatting 'arch-disk1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+arch-disk1.qcow2  arch-disk2.qcow2  emu  recordings
+ITINF25/lektion3
+s': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/h': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/a': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/r': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/e': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/d': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl /shared/kent/Documents/nackademin/linux2/l2-archlinux/^C
+
+ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_CODE_4M.fd \
+/usr/share/OVMF/OVMF_CODE_4M.fd  .
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+arch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_CODE_4M.fd
+ITINF25/lektion3
+$ /usr/share/OVMF/OVMF_CODE_4M.fd
+/usr/share/OVMF/OVMF_CODE_4M.fVA
+
+
+c/usr/share/OVMFp/usr/share/OVMF /usr/share/OVMF
+OVMF_
+
+OVMF_CODE_4M.fd           OVMF_CODE.secboot.fd
+OVMF_CODE_4M.ms.fd        OVMF_VARS_4M.fd
+OVMF_CODE_4M.secboot.fd   OVMF_VARS_4M.ms.fd
+OVMF_CODE_4M.snakeoil.fd  OVMF_VARS_4M.snakeoil.fd
+OVMF_CODE.fd              OVMF_VARS.fd
+OVMF_CODE.ms.fd           OVMF_VARS.ms.fd
+ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_Va
+
+ARS
+
+OVMF_VARS_4M.fd           OVMF_VARS.fd
+OVMF_VARS_4M.ms.fd        OVMF_VARS.ms.fd
+OVMF_VARS_4M.snakeoil.fd  
+ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_VARS_4M
+.d
+fd ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_VARS_4M.fd 
+cp: missing destination file operand after '/usr/share/OVMF/OVMF_VARS_4M.fd'
+Try 'cp --help' for more information.
+ITINF25/lektion3
+$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .
+ITINF25/lektion3
+$ cp ~/Dropbox/
+
+abooks/
+Apps/
+.backups/
+bgavideo/
+Bildframkallning/
+c8/
+c8 - contracts/
+c8 - cv/
+c8 - economy/
+c8 - future blog-entries/
+c8 - timestamps/
+Camera Uploads/
+cpuinfo_jenny
+devops23linux1/
+devops24linux1/
+devops24linux1-ten2/
+devops24linux2/
+devops24linux2-ten2/
+devops25foton/
+dockerplay/
+.dropbox
+.dropbox.cache/
+fakturaexempel.avif
+Familjen/
+Fotobok_Tor_1-2_år/
+From_old_computer/
+fun/
+humblebundlemath/
+IMG20260109132743.jpg
+IMG20260109132811.jpg
+insc_bga_foto/
+itinf24linux1/
+itinf24linux2/
+itinf25linux1/
+.kb/
+kents-deklaration-2024.pdf
+klad-before-switch-to-kltd/
+Making_Games_For_The_Commodore_64_In_Assembly_Language_eBook.pdf
+media - audiobooks/
+media - documentary/
+media - documents/
+media - drive clones from new computers/
+media - drivers and isos/
+media - ebooks/
+media - movies/
+media - music/
+media - phoenix point/
+media - podcast/
+media - software/
+media - tv shows/
+media - windows 7 profile/
+MonoLisa-Complete-2.016.zip
+MonoLisa-Complete-stable.zip
+MonoLisa-Static-Complete-stable.zip
+monolisa-webfont.css
+monolisa-webfont.zip
+MSPaint.png
+oldcicd/
+ovmf/
+ovmf-files/
+personal - health/
+personal - organization/
+personal - os/
+personal - shared with ylva/
+personal - studies/
+Photos/
+pingurl-end/
+play-qemu/
+powershell/
+Public/
+retrobat/
+Revolution.OS.2001.DVDRip.FFV1.AC3-LiNUX.mp4
+rootfiler/
+school - archived/
+school - degree/
+Sent files/
+signature.png
+sirius16gen2windriversfromtuxedo.zip
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/
+
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ub
+untu
+
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu_de
+s
+
+
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/TinyCore-current.iso somelinux.iso 
+cxlive 
+tiny.islo
+ITINF25/lektion3
+$ chmod +x Tin
+./emu ITINF25/lektion3
+$ chmod +x ./emu 
+ITINF25/lektion3
+$ mv emu superememuv
+
+
+
+
+
+
+ITINF25/lektion3
+$ ls
+arch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+qemu-system-x86_64: -cdrom emu/tiny.iso: Could not open 'emu/tiny.iso': Not a directory
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+qemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+arch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+ITINF25/lektion3
+$ rm OV
+MF_CODE_4M.fd 
+ITINF25/lektion3
+./emu ITINF25/lektion3
+$ ./emu 
+qemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+ITINF25/lektion3
+$ ./emu 
+ITINF25/lektion3
+$ ITINF25/lektion3
+$ ls
+arch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_VARS_4M.fd  tiny.iso
+ITINF25/lektion3
+$ mv ar
+ch-disk1.qcow2{,
+ITINF25/lektion3
+$ mv {arch-,}disk1.qcow22
+ITINF25/lektion3
+./emu ITINF25/lektion3w21
+$ ./emu 
+ITINF25/lektion3
+$ cp ~/Dropbox/c8
+i
+/iso/i
+
+
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+SQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/u
+buntu-d
+
+24.04
+
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu-24.04-de
+s
+
+
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu-24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu-24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu-24.0
+u
+
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubunt
+untu
+
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+ITINF25/lektion3
+$ cp ~/Dropbox/c8/iso/ubuntu-24
+.04.3
+-desktop-amd64.iso . 
+/ 
+. 
+
+ITINF25/lektion3
+$ 
+ITINF25/lektion3
+$ git status
+On branch 260129
+Your branch is up to date with 'origin/260129'.
+
+nothing to commit, working tree clean
+ITINF25/lektion3
+$ nano ../../gi.git
+ignore 
+>ITINF25/lektion3ad File^\ Replace  ^U Paste    ^J Justify ../../.gitignore                    
+$ ITINF25/lektion3
+./emu ropbox/c8/iso/ubuntu-24.04.3-desktop-amd64.iso .
+ITINF25/lektion3
+$ ./emu ITINF25/lektion3
+$ ./emu 
+ITINF25/lektion3
+$ ./emu 
+qemu-system-x86_64: s: drive with bus=0, unit=0 (index=0)
