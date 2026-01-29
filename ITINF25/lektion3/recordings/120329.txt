@@ -168,4 +168,86 @@ ubuntu-24.04.3-live-server-amd64.iso
 ubuntu_flavors/
 virtio-win-0.1.271.iso
 Win11_Multiver_Needs_Activation_x64.iso
-Windows11_Ent_Eval.
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso .[Ksomelinux.iso [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Ke[Kuxlive cd[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Ktiny.s[Kislo[K[Ko
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ chmod +x t[KTin[K[K[K./emu [H[2J[94mITINF25/lektion3
+(B[m$ chmod +x ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv emu superemu[K[K[K[K[K[K[K[Kemuv2[K[K[Kv[Ku[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -cdrom emu/tiny.iso: Could not open 'emu/tiny.iso': Not a directory
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ rm OVMF_CODE_4M.fd 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ rm OVMF_CODE_4M.fd [C[C./emu [K[H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_VARS_4M.fd  tiny.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ mv arch-disk1.qcow2 [1@{[C[C[C[C[C[1@}[1@,
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv {arch-,}disk1.qcow2 [C[1P[1@2
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv {arch-,}disk2.qcow2 1[C[C[C[C[C[C[C[C[C./emu [K[H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8i[K/iso/i[K
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-d[K24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04-des[K[K[K[K
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/
