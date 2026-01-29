@@ -55,8 +55,8 @@ echo "socat - UNIX-CONNECT:\"$SCRIPT_DIR/qemu-mon.sock\""
 #   loadvm snap1
 # 3:
 #   Endast -nic user,model=virtio-net-pci,hostfwd=tcp::2222-:22
-#   Sätt root lösenord
-#   Anslut med SSH
+#   Sätt root lösenord med passwd
+#   Anslut med SSH: ssh -p 2222 root@localhost
 
 #cp OVMF_VARS_4M.fd OVMF_VARS_4M.fd.bak
 # qemu-img convert -f raw -O qcow2 OVMF_VARS_4M.fd OVMF_VARS_4M.qcow2
