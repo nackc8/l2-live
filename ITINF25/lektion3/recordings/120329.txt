@@ -1,0 +1,316 @@
+Script started on 2026-01-29 12:03:34+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="56" LINES="5"]
+[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ www[K[K[K[K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ chmod +x emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ (reverse-i-search)`': [14@c': [7mc[27mhmod +x emur': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-se[7mcr[27met=hej[A[Ae': qemu-system-x86_64 -cdrom $TISO -device usb-ehci -device usb-tablet -display none -spice port=8000,password-se[7mcre[27mt=hej[A[Aa': qemu-img [7mcrea[27mte -f qcow2 arch-disk2.qcow2 30G[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct': qemu-img [7mcreat[27me -f qcow2 arch-[1@d[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce': qemu-img [7mcreate[27m -f qcow2 arch[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P(B[m$ qemu-img create -f qcow2 arch-disk2.qcow2 30G
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lFormatting 'arch-disk2.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ qemu-img create -f qcow2 arch-disk2.qcow2 30G[C[C[1P[1@1
+[?2004lFormatting 'arch-disk1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=32212254720 lazy_refcounts=off refcount_bits=16
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  arch-disk2.qcow2  emu  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ cp (reverse-i-search)`': cp /': du -hs ~/Dropbox/c8/iso[7m/[27mTinyCore-current.iso [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/s[27mhared/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ah': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/sh[27mared/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Aa': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/sha[27mred/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ar': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/shar[27med/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ae': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/share[27md/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[Ad': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/shared[27m/kent/Documents/nackademin/linux2/l2-archlinux/[A[C[C[A': cp -r ~/Documents/nackademin/databashantering/d1-report/.mdl [7m/share[27md/kent/Documents/n[1Packademin/linux2/l2-archlinux/[A[C[C^C
+[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ cp [7m/usr/share/OVMF/OVMF_CODE_4M.fd \[27m[C[C[C[C[C/usr/share/OVMF/OVMF_CODE_4M.fd \[K[K .
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_CODE_4M.fd
+[?2004h[94mITINF25/lektion3
+(B[m$ [7m/usr/share/OVMF/OVMF_CODE_4M.fd[27m[C[C/usr/share/OVMF/OVMF_CODE_4M.fd[K[K[K[K[K[K[K[K[K[KVA[K[K[K[K[K[K[Kc/usr/share/OVMF/p/usr/share/OVMF/ /usr/share/OVMF/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COVMF_
+OVMF_CODE_4M.fd           OVMF_CODE.secboot.fd
+OVMF_CODE_4M.ms.fd        OVMF_VARS_4M.fd
+OVMF_CODE_4M.secboot.fd   OVMF_VARS_4M.ms.fd
+OVMF_CODE_4M.snakeoil.fd  OVMF_VARS_4M.snakeoil.fd
+OVMF_CODE.fd              OVMF_VARS.fd
+OVMF_CODE.ms.fd           OVMF_VARS.ms.fd
+[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_Va[KARS
+OVMF_VARS_4M.fd           OVMF_VARS.fd
+OVMF_VARS_4M.ms.fd        OVMF_VARS.ms.fd
+OVMF_VARS_4M.snakeoil.fd  
+[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.d[Kfd [H[2J[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd 
+[?2004lcp: missing destination file operand after '/usr/share/OVMF/OVMF_VARS_4M.fd'
+Try 'cp --help' for more information.
+[?2004h[94mITINF25/lektion3
+(B[m$ cp /usr/share/OVMF/OVMF_VARS_4M.fd .
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/
+abooks/
+Apps/
+.backups/
+bgavideo/
+Bildframkallning/
+c8/
+--More--[Kc8 - contracts/
+c8 - cv/
+c8 - economy/
+c8 - future blog-entries/
+c8 - timestamps/
+Camera Uploads/
+--More--[Kcpuinfo_jenny
+devops23linux1/
+devops24linux1/
+devops24linux1-ten2/
+devops24linux2/
+devops24linux2-ten2/
+--More--[Kdevops25foton/
+dockerplay/
+.dropbox
+.dropbox.cache/
+fakturaexempel.avif
+Familjen/
+--More--[KFotobok_Tor_1-2_år/
+From_old_computer/
+fun/
+humblebundlemath/
+IMG20260109132743.jpg
+IMG20260109132811.jpg
+--More--[Kinsc_bga_foto/
+itinf24linux1/
+itinf24linux2/
+itinf25linux1/
+.kb/
+kents-deklaration-2024.pdf
+--More--[Kklad-before-switch-to-kltd/
+Making_Games_For_The_Commodore_64_In_Assembly_Language_eBook.pdf
+media - audiobooks/
+media - documentary/
+media - documents/
+media - drive clones from new computers/
+--More--[Kmedia - drivers and isos/
+media - ebooks/
+media - movies/
+media - music/
+media - phoenix point/
+media - podcast/
+--More--[Kmedia - software/
+media - tv shows/
+media - windows 7 profile/
+MonoLisa-Complete-2.016.zip
+MonoLisa-Complete-stable.zip
+MonoLisa-Static-Complete-stable.zip
+--More--[Kmonolisa-webfont.css
+monolisa-webfont.zip
+MSPaint.png
+oldcicd/
+ovmf/
+ovmf-files/
+--More--[Kpersonal - health/
+personal - organization/
+personal - os/
+personal - shared with ylva/
+personal - studies/
+Photos/
+--More--[Kpingurl-end/
+play-qemu/
+powershell/
+Public/
+retrobat/
+Revolution.OS.2001.DVDRip.FFV1.AC3-LiNUX.mp4
+--More--[Krootfiler/
+school - archived/
+school - degree/
+Sent files/
+signature.png
+sirius16gen2windriversfromtuxedo.zip
+--More--[K[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c9[K8/iso/
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu_des[K[K[K[K[K[K[K[K[K[K
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/TinyCore-current.iso .[Ksomelinux.iso [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Ke[Kuxlive cd[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Ktiny.s[Kislo[K[Ko
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ chmod +x t[KTin[K[K[K./emu [H[2J[94mITINF25/lektion3
+(B[m$ chmod +x ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv emu superemu[K[K[K[K[K[K[K[Kemuv2[K[K[Kv[Ku[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -cdrom emu/tiny.iso: Could not open 'emu/tiny.iso': Not a directory
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  OVMF_CODE_4M.fd  tiny.iso
+arch-disk2.qcow2  OVMF_VARS_4M.fd
+emu		  recordings
+[?2004h[94mITINF25/lektion3
+(B[m$ rm OVMF_CODE_4M.fd 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ rm OVMF_CODE_4M.fd [C[C./emu [K[H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: -drive if=pflash,format=raw,file=arch-ovmf-vars.fd: Could not open 'arch-ovmf-vars.fd': No such file or directory
+[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ ls
+[?2004larch-disk1.qcow2  emu		   recordings
+arch-disk2.qcow2  OVMF_VARS_4M.fd  tiny.iso
+[?2004h[94mITINF25/lektion3
+(B[m$ mv arch-disk1.qcow2 [1@{[C[C[C[C[C[1@}[1@,
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv {arch-,}disk1.qcow2 [C[1P[1@2
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ mv {arch-,}disk2.qcow2 1[C[C[C[C[C[C[C[C[C./emu [K[H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8i[K/iso/i[K
+archlinux-2026.01.01-x86_64.iso
+debian-13.3.0-amd64-DVD-1.iso
+Fedora-Server-dvd-x86_64-40-1.14.iso
+proxmox-ve_8.2-1.iso
+Rocky-9.4-x86_64-dvd.iso
+SERVER_EVAL_x64FRE_en-us.iso
+--More--[KSQL2022-SSEI-Eval.exe
+TinyCore-current.iso
+TUXEDO-OS-202506201700.iso
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+--More--[Kubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+virtio-win-0.1.271.iso
+Win11_Multiver_Needs_Activation_x64.iso
+Windows11_Ent_Eval.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-d[K24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04-des[K[K[K[K
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04[K[K[K[K[K[K[Ku
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu[K[K[K[Kuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu
+ubuntu-24.04.1-desktop-amd64.iso
+ubuntu-24.04.3-desktop-amd64.iso
+ubuntu-24.04.3-live-server-amd64.iso
+ubuntu-24.04-live-server-amd64.iso
+ubuntu_flavors/
+[94mITINF25/lektion3
+(B[m$ cp ~/Dropbox/c8/iso/ubuntu-24.04.3-desktop-amd64.iso . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. /[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+[?2004l
+[?2004h[94mITINF25/lektion3
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [K(B[m$ git status
+[?2004lOn branch 260129
+Your branch is up to date with 'origin/260129'.
+
+nothing to commit, working tree clean
+[?2004h[94mITINF25/lektion3
+(B[m$ nano ../../git[K[K[K.gitignore 
+[?2004l[?2004h[?1049h[22;0;0t[1;7r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[5;24H(B[0;7m[ Reading... ](B[m[5;22H(B[0;7m[ Read 484 lines ](B[m[H(B[0;7m  GNU nano 7.2           ../../.gitignore                    [1;60H(B[m[6d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[7d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[36m#[3d# Custom[4d#[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[2;2H[36m Custom[3d#[39m(B[m[K[4d[K[?25l[?12l[?25h[2;2H[K[3d[K[4dignored*[?25l[?12l[?25h[2d[K[3dignored*[4d.ignored*[?25l[?12l[?25h[2dignored*[3d.ignored*[4d*.iso[K[?25l[?12l[?25h[2d.ignored*[3d*.iso[K[4;3Hqcow2[?25l[?12l[?25h[2d*.iso[K[3;3Hqcow2[4;3Hfd[K[?25l[5d[J[7d[?12l[?25h[7;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ [H[2J[94mITINF25/lektion3
+(B[m$ nano ../../.gitignore [C[C[12Pgit status[C[Ccp ~/Dropbox/c8/iso/ubuntu-24.04.3-desktop-amd64.iso .[C[C./emu [K
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./emu [H[2J[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004l[?2004h[94mITINF25/lektion3
+(B[m$ ./emu 
+[?2004lqemu-system-x86_64: s: drive with bus=0, unit=0 (index=0)

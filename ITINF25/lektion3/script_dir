@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Innehåller katalogen som skriptet ligger i
+SCRIPT_DIR=$(
+	cd "$(dirname "$0")"
+	pwd
+)
+
+cat "$SCRIPT_DIR"/data.txt
+
+echo "SCRIPT_DIR: $SCRIPT_DIR"
