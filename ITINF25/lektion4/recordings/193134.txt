@@ -1895,4 +1895,42 @@ Old situation:
 /dev/vda2  2099200  6293503 4194304   2G Linux filesystem
 /dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
 
->>> Created a new GPT disklabel (GUID: D99D14E1-0A45-4710-
+>>> Created a new GPT disklabel (GUID: D99D14E1-0A45-4710-AB05-97B93E563A0C).
+/dev/vda1: Created a new partition 1 of type 'EFI System' and of size 1 GiB.
+/dev/vda2: Created a new partition 2 of type 'Linux filesystem' and of size 2 GiB.
+/dev/vda3: Created a new partition 3 of type 'Linux root (x86-64)' and of size 4 GiB.
+/dev/vda4: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: D99D14E1-0A45-4710-AB05-97B93E563A0C
+
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G EFI System
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+mke2fs 1.47.3 (8-Jul-2025)
+mkfs.ext4: invalid blocks '/dev/vda1' on device '32'
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m1 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[76C:([78D[?1h=[?2004hllsblk[?1l>[?2004l[K
+]0;root@archiso: lsblkNAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0 971.9M  1 loop /run/archiso/airootfs
+sr0     11:0    1   1.4G  0 rom  /run/archiso/bootmnt
+vda    254:0    0     7G  0 disk 
+├─vda1 254:1    0     1G  0 part 
+├─vda2 254:2    0     2G  0 part 
+└─vda3 254:3    0     4G  0 part 
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hmmkfs
+[0;31mcompleting [1mexternal command[0m[0m
+[0mmkfs           mkfs.cramfs    mkfs.ext4      mkfs.minix     mkfs.udf                    
+mkfs.bcachefs  mkfs.exfat     mkfs.f2fs      mkfs.msdos     mkfs.vfat                   
+mkfs.bfs       mkfs.ext2      mkfs.fat       mkfs.nilfs2    mkfs.xfs                    
+[Jmkfs.btrfs     [Jmkfs.ext3      [Jmkfs.jfs       [Jmkfs.ntfs      [J                          [5A[0m[27m[24m[0m[39m[17Cmkfs[K[0m[39m.e    m  
+[J[A[17Clsblk./partitionerings_exempel[25Dlsblk                    [20D     
+bck-i-search: _[K[A[2C./partitionerings_exe[4mm[24mpel[1B[28Dm_[A[22C[21D[4mm[4mo[24munt /dev/vda1 /mnt [24m    [1B[27Do_[A[4mm[4mo[4mu[24m[1Bu_[A[2C[4mu[4mn[24m[1Bn_[A[3C[4mn[4mt[24m[1Bt_[A[24mm[24mo[24mu[24mn[24mt[1B[K[A[18C[1C[1C[1C[1C[1C /dev/vda1 /mnt[15D- /dev/vda1 /mnt[15DF /dev/vda1 /mnt[15D[1C /dev/vda1 /mnt[15DF /dev/vda1 /mnt[15DA /dev/vda1 /mnt[15DT /dev/vda1 /mnt[15D3 /dev/vda1 /mnt[15D2 /dev/vda1 /mnt[15D[?1l>[?2004l[1B[J]0;root@archiso: mount -F FAT32 /dev/vda1 /mntmount: bad usage
+Try 'mount --help' for more information.
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m1 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[76C:([78D[?1h=[?2004hbbabi  b  nnano pra  artitionerings_exempel[1m [0m[H[2J[0m[27m[24m[J[1m[31m1 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# nano partitionerings_exempel[1m [0m[K[47C:([49D[0m [?1l>[?2004l[K
+]0;root@archiso: nano partitionerings_exempel[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;43H(B[0;7m[ Reading... ](B[m[18;41H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 8.7                         partitionerings_exempel                                    [1;97H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81
