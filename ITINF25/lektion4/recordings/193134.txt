@@ -1829,4 +1829,52 @@ vda    254:0    0     7G  0 disk
 └─vda1 254:1    0     7G  0 part 
 [1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h## Nu 'r d   är det EN partition på hela disken. Vi vill se att[?1l>[?2004l
 [1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h## den skrivs över med det korrekta[?1l>[?2004l
-[1m[7m#[27m[1m[0m          
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h..-. ./partitionerings_exempel[1m [0m[0m [?1l>[?2004l
+]0;root@archiso: ./partitionerings_exempelChecking that no-one is using this disk right now ... OK
+
+[1mDisk /dev/vda: 7 GiB, 7516192768 bytes, 14680064 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 86C6EA49-A53D-4331-9218-1F392CE6CA41
+
+Old situation:
+
+[1mDevice    [0m [1mStart[0m [1m     End[0m [1m Sectors[0m [1mSize[0m [1mType[0m
+/dev/vda1   2048 14678015 14675968   7G Linux filesystem
+
+>>> Created a new GPT disklabel (GUID: 80575FF0-1EFD-4AE6-ACB7-41DCD0567612).
+/dev/vda1: Created a new partition 1 of type 'EFI System' and of size 1 GiB.
+/dev/vda2: Created a new partition 2 of type 'Linux filesystem' and of size 2 GiB.
+/dev/vda3: Created a new partition 3 of type 'Linux root (x86-64)' and of size 4 GiB.
+/dev/vda4: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: 80575FF0-1EFD-4AE6-ACB7-41DCD0567612
+
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G EFI System
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+mke2fs 1.47.3 (8-Jul-2025)
+mkfs.ext4: invalid blocks '/dev/vda' on device '32'
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m1 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[76C:([78D[?1h=[?2004hllsblk[?1l>[?2004l[K
+]0;root@archiso: lsblkNAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0 971.9M  1 loop /run/archiso/airootfs
+sr0     11:0    1   1.4G  0 rom  /run/archiso/bootmnt
+vda    254:0    0     7G  0 disk 
+├─vda1 254:1    0     1G  0 part 
+├─vda2 254:2    0     2G  0 part 
+└─vda3 254:3    0     4G  0 part 
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hmmkdir    m  mmount /dev/vda1 /mnt[1m/[0m[0m [?1l>[?2004l
+]0;root@archiso: mount /dev/vda1 /mntmount: /mnt: fsconfig() failed: Can't find a SQUASHFS superblock on vda1.
+       dmesg(1) may have more information after failed mount system call.
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m32 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[75C:([77D[?1h=[?2004h## n[g  ågot fel?[?1l>[?2004l[K
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m32 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[75C:([77D[?1h=[?2004hnnano partitionerings_exempel[1m [0m[0m [?1l>[?2004l[K
+]0;root@archiso: nano partitionerings_exempel[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[18;43H(B[0;7m[ Reading... ](B[m[18;41H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 8.7                         partitionerings_exempel                                    [1;97H(B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace
