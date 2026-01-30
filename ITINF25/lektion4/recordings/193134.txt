@@ -1946,4 +1946,41 @@ Disk identifier: D99D14E1-0A45-4710-AB05-97B93E563A0C
 
 Old situation:
 
-[1mDevice    [0m [1m  Start[0m [1m     End[0m 
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G EFI System
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
+
+>>> Created a new GPT disklabel (GUID: A0726675-AFDB-4503-BFF9-CE155349EF5F).
+/dev/vda1: Created a new partition 1 of type 'EFI System' and of size 1 GiB.
+/dev/vda2: Created a new partition 2 of type 'Linux filesystem' and of size 2 GiB.
+/dev/vda3: Created a new partition 3 of type 'Linux root (x86-64)' and of size 4 GiB.
+/dev/vda4: Done.
+
+New situation:
+Disklabel type: gpt
+Disk identifier: A0726675-AFDB-4503-BFF9-CE155349EF5F
+
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G EFI System
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
+
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+mkfs.fat 4.2 (2021-01-31)
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hmmount /dev/sda
+[J[0;31mNo matches for:[0m `dev or dir', `host', `device or mount point', or `file'[A[0m[27m[24m[0m[39m[17Cmount /dev/sda[K[0m[39m1
+[J[J[0;31mNo matches for:[0m `dev or dir', `host', `device or mount point', or `file'[A[0m[27m[24m[0m[39m[17Cmount /dev/sda1[K[0m[39m /mnt[1m/[0m[0m [?1l>[?2004l
+[J]0;root@archiso: mount /dev/sda1 /mntmount: /mnt: fsconfig() failed: /dev/sda1: Can't lookup blockdev.
+       dmesg(1) may have more information after failed mount system call.
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m32 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[75C:([77D[?1h=[?2004h## TR:TT   ÖTT[?1l>[?2004l[K
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m32 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[75C:([77D[?1h=[?2004hmmount -dev    /dev/cd  vda1 /mnt[1m/[0m[0m [?1l>[?2004l[K
+]0;root@archiso: mount /dev/vda1 /mnt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h## NU S{!!    SÅ!!!![?1l>[?2004l
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h[H[2J[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [Keecho FFFFFFIIIIILLLL : > /m,n
+[J[0;31mNo matches for:[0m `file'[A[0m[27m[24m[0m[39m[17Cecho FFFFFFIIIIILLLL > /m,n[K[0m[39m  nt[1m/[0m[0m/funkadefil.t  _u i_efi.txt[?1l>[?2004l
+[J]0;root@archiso: echo FFFFFFIIIIILLLL > /mnt/funkadefil_i_efi.txt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004huumount mn
+[J[0;31mNo matches for:[0m `dev or dir', `device label', `device path', `mount point', or `file'[A[0m[27m[24m[0m[39m[17Cumount mn[K[0m[39mt
+[J[J[0;31mNo matches for:[0m `dev or dir', `device label', `device path', `mount point', or `file'[A[0m[27m[24m[0m[39m[17Cumount mnt[K[0m[39m   /mnt[1m [0m[0m [?1l>[?2004l
+[J]0;root@archiso: umount /mnt[1m[7m#[27m[1m[0m                     
