@@ -715,4 +715,322 @@ Changed type of partition 'EFI System' to 'EFI System'.
 173 Solaris reserved 5             6A8D2AC7-1DD2-11B2-99A6-080020736631[m
 174 NetBSD swap                    49F48D32-B10E-11DC-B99B-0019D1879648[m
 175 NetBSD FFS                     49F48D5A-B10E-11DC-B99B-0019D1879648[m
-176 NetBSD LFS 
+176 NetBSD LFS                     49F48D82-B10E-11DC-B99B-0019D1879648[m
+177 NetBSD concatenated            2DB519C4-B10F-11DC-B99B-0019D1879648[m
+178 NetBSD encrypted               2DB519EC-B10F-11DC-B99B-0019D1879648[m
+179 NetBSD RAID                    49F48DAA-B10E-11DC-B99B-0019D1879648[m
+180 ChromeOS kernel                FE3A2A5D-4F32-41A7-B725-ACCC3285A309[m
+181 ChromeOS root fs               3CB8E202-3B7E-47DD-8A3C-7FF2A13CFCEC[m
+182 ChromeOS reserved              2E0A753D-9E48-43B0-8337-B15192CB1B5E[m
+183 ChromeOS firmware              CAB6E88E-ABF3-4102-A07A-D4BB9BE3C1D3[m
+184 ChromeOS miniOS                09845860-705F-4BB5-B16C-8A8A099CAF52[m
+185 ChromeOS hibernate             3F0F8318-F146-4E6B-8222-C28C8F02E0D5[m
+186 MidnightBSD data               85D5E45A-237C-11E1-B4B3-E89A8F7FC3A7[m
+187 MidnightBSD boot               85D5E45E-237C-11E1-B4B3-E89A8F7FC3A7[m
+188 MidnightBSD swap               85D5E45B-237C-11E1-B4B3-E89A8F7FC3A7[m
+189 MidnightBSD UFS                0394EF8B-237E-11E1-B4B3-E89A8F7FC3A7[m
+190 MidnightBSD ZFS                85D5E45D-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K[?1l>[?2004hPartition type or alias (type L to list all): # öh[K[Käh, vi vill ha standard på denna[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004hPartition type or alias (type L to list all): x
+[?2004l
+Type of partition 2 is unchanged: Linux filesystem.
+
+[?2004hCommand (m for help): # Linux filesystem är rt[Kätt för okrypterad ext4 som inte är root[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K# den sista är krypterad med luks/DM-Crypt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K3
+[?2004l[31m3: unknown command[0m
+
+[?2004hCommand (m for help): m
+[?2004l
+Help:
+[1m
+  GPT
+[0m   M   enter protective/hybrid MBR
+[1m
+  Generic
+[0m   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+   e   resize a partition
+   T   discard (trim) sectors
+[1m
+  Misc
+[0m   m   print this menu
+   x   extra functionality (experts only)
+[1m
+  Script
+[0m   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+[1m
+  Save & Exit
+[0m   w   write table to disk and exit
+   q   quit without saving changes
+[1m
+  Create a new label
+[0m   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty MBR (DOS) partition table
+   s   create a new empty Sun partition table
+
+
+[?2004hCommand (m for help): t
+[?2004l[?2004hPartition number (1-3, default 3): 3
+[?2004l[?2004hPartition type or alias (type L to list all): L
+[?2004l[?1h=  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+ 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+ 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+ 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+ 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+ 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+ 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+ 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+ 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+ 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+ 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+:[K[K-[K[01;44;33mThere is no -/ option  (press RETURN)[0m[20;1H[K[K-[K:[K[K/[KLL[KUU[KKK[KSS[K[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[K[01;44;33mPattern not found  (press RETURN)[0m[20;1H[K[K/[KCC[KRR[KYY[KPP[KTT[K[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[K[01;44;33mPattern not found  (press RETURN)[0m[20;1H[K[K/[Kcc[Krr[Kyy[Kpp[Ktt[K[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H...skipping...
+178 NetBSD en[01;44;33mcrypt[0med               2DB519EC-B10F-11DC-B99B-0019D1879648[m
+179 NetBSD RAID                    49F48DAA-B10E-11DC-B99B-0019D1879648[m
+180 ChromeOS kernel                FE3A2A5D-4F32-41A7-B725-ACCC3285A309[m
+181 ChromeOS root fs               3CB8E202-3B7E-47DD-8A3C-7FF2A13CFCEC[m
+182 ChromeOS reserved              2E0A753D-9E48-43B0-8337-B15192CB1B5E[m
+183 ChromeOS firmware              CAB6E88E-ABF3-4102-A07A-D4BB9BE3C1D3[m
+184 ChromeOS miniOS                09845860-705F-4BB5-B16C-8A8A099CAF52[m
+185 ChromeOS hibernate             3F0F8318-F146-4E6B-8222-C28C8F02E0D5[m
+186 MidnightBSD data               85D5E45A-237C-11E1-B4B3-E89A8F7FC3A7[m
+187 MidnightBSD boot               85D5E45E-237C-11E1-B4B3-E89A8F7FC3A7[m
+188 MidnightBSD swap               85D5E45B-237C-11E1-B4B3-E89A8F7FC3A7[m
+189 MidnightBSD UFS                0394EF8B-237E-11E1-B4B3-E89A8F7FC3A7[m
+190 MidnightBSD ZFS                85D5E45D-237C-11E1-B4B3-E89A8F7FC3A7[m
+191 MidnightBSD Vinum              85D5E45C-237C-11E1-B4B3-E89A8F7FC3A7[m
+192 Ceph Journal                   45B0969E-9B03-4F30-B4C6-B4B80CEFF106[m
+193 Ceph En[01;44;33mcrypt[0med Journal         45B0969E-9B03-4F30-B4C6-5EC00CEFF106[m
+194 Ceph OSD                       4FBD7E29-9D25-41B8-AFD0-062C0CEFF05D[m
+195 Ceph [01;44;33mcrypt[0m OSD                 4FBD7E29-9D25-41B8-AFD0-5EC00CEFF05D[m
+196 Ceph disk in creation          89C57F98-2FE5-4DC0-89C1-F3AD0CEFF2BE[m
+:[K[K/[K197 Ceph [01;44;33mcrypt[0m disk in creation    89C57F98-2FE5-4DC0-89C1-5EC00CEFF2BE[m
+198 VMware VMFS                    AA31E02A-400F-11DB-9590-000C2911D1B8[m
+199 VMware Diagnostic              9D275380-40AD-11DB-BF97-000C2911D1B8[m
+200 VMware Virtual SAN             381CFCCC-7288-11E0-92EE-000C2911D0B2[m
+201 VMware Virsto                  77719A0C-A4A0-11E3-A47E-000C29745A24[m
+202 VMware Reserved                9198EFFC-31C0-11DB-8F78-000C2911D1B8[m
+203 OpenBSD data                   824CC7A0-36A8-11E3-890A-952519AD3F61[m
+204 QNX6 file system               CEF5A9AD-73BC-4601-89F3-CDEEEEE321A1[m
+205 Plan 9 partition               C91818F9-8025-47AF-89D2-F030D7000C2C[m
+206 HiFive FSBL                    5B193300-FC78-40CD-8002-E86C45580B47[m
+207 HiFive BBL                     2E54B353-1271-4842-806F-E436D6AF6985[m
+208 Haiku BFS                      42465331-3BA3-10F1-802A-4861696B7521[m
+209 Marvell Armada 3700 Boot partition 6828311A-BA55-42A4-BCDE-A89BB5EDECAE[m
+210 DragonFlyBSD Label32           9D087404-1CA5-11DC-8817-01301BB8A9F5[m
+211 DragonFlyBSD Swap              9D58FDBD-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K/[K212 DragonFlyBSD UFS1              9D94CE7C-1CA5-11DC-8817-01301BB8A9F5[m
+213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K/[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+:[K[K/[K[K[01;44;33mPattern not found  (press RETURN)[0m[20;1H[K[K [KESCESC[KOO[KBB[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+:[K[K [KESCESC[KOO[KBB[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+:[K[K [KESCESC[KOO[KBB[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+:[K[K [KESCESC[KOO[KBB[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KAliases:[m
+:[K[K [KESCESC[KOO[KBB[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+:[K[K [KESCESC[KOO[KBB[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+:[K[K [KESCESC[KOO[KBB[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+:[K[K [KESCESC[KOO[KBB[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+:[K[K [KESCESC[KOO[KBB[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+:[K[K [KESCESC[KOO[KBB[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+:[K[K [KESCESC[KOO[KBB[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KAA[K[HM212 DragonFlyBSD UFS1              9D94CE7C-1CA5-11DC-8817-01301BB8A9F5[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM211 DragonFlyBSD Swap              9D58FDBD-1CA5-11DC-8817-01301BB8A9F5[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM210 DragonFlyBSD Label32           9D087404-1CA5-11DC-8817-01301BB8A9F5[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM209 Marvell Armada 3700 Boot partition 6828311A-BA55-42A4-BCDE-A89BB5EDECAE[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM208 Haiku BFS                      42465331-3BA3-10F1-802A-4861696B7521[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM207 HiFive BBL                     2E54B353-1271-4842-806F-E436D6AF6985[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM206 HiFive FSBL                    5B193300-FC78-40CD-8002-E86C45580B47[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM205 Plan 9 partition               C91818F9-8025-47AF-89D2-F030D7000C2C[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM204 QNX6 file system               CEF5A9AD-73BC-4601-89F3-CDEEEEE321A1[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM203 OpenBSD data                   824CC7A0-36A8-11E3-890A-952519AD3F61[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM202 VMware Reserved                9198EFFC-31C0-11DB-8F78-000C2911D1B8[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM201 VMware Virsto                  77719A0C-A4A0-11E3-A47E-000C29745A24[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM200 VMware Virtual SAN             381CFCCC-7288-11E0-92EE-000C2911D0B2[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM199 VMware Diagnostic              9D275380-40AD-11DB-BF97-000C2911D1B8[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM198 VMware VMFS                    AA31E02A-400F-11DB-9590-000C2911D1B8[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM197 Ceph [01;44;33mcrypt[0m disk in creation    89C57F98-2FE5-4DC0-89C1-5EC00CEFF2BE[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM196 Ceph disk in creation          89C57F98-2FE5-4DC0-89C1-F3AD0CEFF2BE[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM195 Ceph [01;44;33mcrypt[0m OSD                 4FBD7E29-9D25-41B8-AFD0-5EC00CEFF05D[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM194 Ceph OSD                       4FBD7E29-9D25-41B8-AFD0-062C0CEFF05D[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM193 Ceph En[01;44;33mcrypt[0med Journal         45B0969E-9B03-4F30-B4C6-5EC00CEFF106[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM192 Ceph Journal                   45B0969E-9B03-4F30-B4C6-B4B80CEFF106[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM191 MidnightBSD Vinum              85D5E45C-237C-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM190 MidnightBSD ZFS                85D5E45D-237C-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM189 MidnightBSD UFS                0394EF8B-237E-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM188 MidnightBSD swap               85D5E45B-237C-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM187 MidnightBSD boot               85D5E45E-237C-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM186 MidnightBSD data               85D5E45A-237C-11E1-B4B3-E89A8F7FC3A7[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM185 ChromeOS hibernate             3F0F8318-F146-4E6B-8222-C28C8F02E0D5[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM184 ChromeOS miniOS                09845860-705F-4BB5-B16C-8A8A099CAF52[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM183 ChromeOS firmware              CAB6E88E-ABF3-4102-A07A-D4BB9BE3C1D3[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM182 ChromeOS reserved              2E0A753D-9E48-43B0-8337-B15192CB1B5E[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM181 ChromeOS root fs               3CB8E202-3B7E-47DD-8A3C-7FF2A13CFCEC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM180 ChromeOS kernel                FE3A2A5D-4F32-41A7-B725-ACCC3285A309[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM179 NetBSD RAID                    49F48DAA-B10E-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM178 NetBSD en[01;44;33mcrypt[0med               2DB519EC-B10F-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM177 NetBSD concatenated            2DB519C4-B10F-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM176 NetBSD LFS                     49F48D82-B10E-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM175 NetBSD FFS                     49F48D5A-B10E-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM174 NetBSD swap                    49F48D32-B10E-11DC-B99B-0019D1879648[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM173 Solaris reserved 5             6A8D2AC7-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM172 Solaris reserved 4             6A96237F-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM171 Solaris reserved 3             6A980767-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM170 Solaris reserved 2             6A9630D1-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM169 Solaris reserved 1             6A945A3B-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM168 Solaris alternate sector       6A9283A5-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM167 Solaris /home                  6A90BA39-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM166 Solaris /var                   6A8EF2E9-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM165 Solaris backup                 6A8B642B-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM164 Solaris swap                   6A87C46F-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM163 Solaris /usr & Apple ZFS       6A898CC3-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM162 Solaris root                   6A85CF4D-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM161 Solaris boot                   6A82CB45-1DD2-11B2-99A6-080020736631[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM160 Apple Silicon recovery         52637672-7900-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM159 Apple Silicon boot             69646961-6700-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM158 Apple Core storage             53746F72-6167-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM157 Apple TV recovery              5265636F-7665-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM156 Apple label                    4C616265-6C00-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM155 Apple boot                     426F6F74-0000-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM154 Apple RAID offline             52414944-5F4F-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM153 Apple RAID                     52414944-0000-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM152 Apple UFS                      55465300-0000-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM151 Apple APFS                     7C3457EF-0000-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM150 Apple HFS/HFS+                 48465300-0000-11AA-AA11-00306543ECAC[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM149 FreeBSD Vinum                  516E7CB8-6ECF-11D6-8FF8-00022D09712B[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM148 FreeBSD ZFS                    516E7CBA-6ECF-11D6-8FF8-00022D09712B[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM147 FreeBSD UFS                    516E7CB6-6ECF-11D6-8FF8-00022D09712B[m
+[20;1H[K:[K
