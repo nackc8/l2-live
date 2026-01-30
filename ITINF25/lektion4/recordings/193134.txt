@@ -1561,4 +1561,86 @@ Help:
  49 Linux /usr (Alpha)             E18CF08C-33EC-4C0D-8246-C6C6FB3DA024[m
  50 Linux /usr (ARC)               7978A683-6316-4922-BBEE-38BFF5A2FECC[m
  51 Linux /usr (ARM)               7D0359A3-02B3-4F0A-865C-654403E70625[m
- 52 Linux /usr (ARM-64)            B0E01050-EE5F-4390-949A-9101B17104E9
+ 52 Linux /usr (ARM-64)            B0E01050-EE5F-4390-949A-9101B17104E9[m
+ 53 Linux /usr (IA-64)             4301D2A6-4E3B-4B2A-BB94-9E0B2C4225EA[m
+ 54 Linux /usr (LoongArch-64)      E611C702-575C-4CBE-9A46-434FA0BF7E3F[m
+ 55 Linux /usr (MIPS-32 LE)        0F4868E9-9952-4706-979F-3ED3A473E947[m
+ 56 Linux /usr (MIPS-64 LE)        C97C1F32-BA06-40B4-9F22-236061B08AA8[m
+ 57 Linux /usr (HPPA/PARISC)       DC4A4480-6917-4262-A4EC-DB9384949F25[m
+ 58 Linux /usr (PPC)               7D14FEC5-CC71-415D-9D6C-06BF0B3C3EAF[m
+ 59 Linux /usr (PPC64)             2C9739E2-F068-46B3-9FD0-01C5A9AFBCCA[m
+ 60 Linux /usr (PPC64LE)           15BB03AF-77E7-4D4A-B12B-C0D084F7491C[m
+:[K[K[?1l>[?2004hPartition type or alias (type L to list all): 23
+[?2004l
+Changed type of partition 'Linux filesystem' to 'Linux root (x86-64)'.
+
+[?2004hCommand (m for help): m
+[?2004l
+Help:
+[1m
+  GPT
+[0m   M   enter protective/hybrid MBR
+[1m
+  Generic
+[0m   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+   e   resize a partition
+   T   discard (trim) sectors
+[1m
+  Misc
+[0m   m   print this menu
+   x   extra functionality (experts only)
+[1m
+  Script
+[0m   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+[1m
+  Save & Exit
+[0m   w   write table to disk and exit
+   q   quit without saving changes
+[1m
+  Create a new label
+[0m   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty MBR (DOS) partition table
+   s   create a new empty Sun partition table
+
+
+[?2004hCommand (m for help): p
+[?2004l[1mDisk /dev/vda: 7 GiB, 7516192768 bytes, 14680064 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 66F60069-C51C-4835-927E-7A5163758E1B
+
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G EFI System
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux root (x86-64)
+
+[?2004hCommand (m for help): # I denna VM 'r [K[K[Kär 4G allt som är kvar, dt[Ket är mer i grp upg[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kw
+[?2004lThe partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hssfdisk ++  --dump /dev/d vda[?1l>[?2004l
+]0;root@archiso: sfdisk --dump /dev/vdalabel: gpt
+label-id: 66F60069-C51C-4835-927E-7A5163758E1B
+device: /dev/vda
+unit: sectors
+first-lba: 2048
+last-lba: 14680030
+sector-size: 512
+
+/dev/vda1 : start=        2048, size=     2097152, type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, uuid=8E70F702-BE72-42C1-8DFB-802CE64D5393
+/dev/vda2 : start=     2099200, size=     4194304, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=76C55C17-AAA6-45B8-A789-FF85250DCC96
+/dev/vda3 : start=     6293504, size=     8384512, type=4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709, uuid=6C85AA74-CCF9-448F-B1B3-B40E6061AF67
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h## Man tar allt detta[?1l>[?2004l
+[1m[7m#[27m[1m[0m                                                                     
