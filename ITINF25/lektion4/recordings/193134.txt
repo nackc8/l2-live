@@ -149,4 +149,289 @@ Help:
   Generic
 [0m   d   delete a partition
    F   list free unpartitioned space
-   l   list known partit
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+   e   resize a partition
+   T   discard (trim) sectors
+[1m
+  Misc
+[0m   m   print this menu
+   x   extra functionality (experts only)
+[1m
+  Script
+[0m   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+[1m
+  Save & Exit
+[0m   w   write table to disk and exit
+   q   quit without saving changes
+[1m
+  Create a new label
+[0m   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty MBR (DOS) partition table
+   s   create a new empty Sun partition table
+
+
+[?2004hCommand (m for help): p
+[?2004l[1m
+Disk /dev/vda: 7 GiB, 7516192768 bytes, 14680064 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 66F60069-C51C-4835-927E-7A5163758E1B
+
+[1mDevice    [0m [1m  Start[0m [1m     End[0m [1mSectors[0m [1mSize[0m [1mType[0m
+/dev/vda1     2048  2099199 2097152   1G Linux filesystem
+/dev/vda2  2099200  6293503 4194304   2G Linux filesystem
+/dev/vda3  6293504 14678015 8384512   4G Linux filesystem
+
+[?2004hCommand (m for help): t
+[?2004l[?2004hPartition number (1-3, default 3): 1 # ska vara efi[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004hPartition type or alias (type L to list all): L
+[?2004l[?1h=  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+ 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+ 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+ 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+ 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+ 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+ 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+ 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+ 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+ 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+ 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+:[K[K 20 Linux filesystem               0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+ 21 Linux server data              3B8F8425-20E0-4F3B-907F-1A25A76F98E8[m
+ 22 Linux root (x86)               44479540-F297-41B2-9AF7-D131D5F0458A[m
+ 23 Linux root (x86-64)            4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709[m
+ 24 Linux root (Alpha)             6523F8AE-3EB1-4E2A-A05A-18B695AE656F[m
+ 25 Linux root (ARC)               D27F46ED-2919-4CB8-BD25-9531F3C16534[m
+ 26 Linux root (ARM)               69DAD710-2CE4-4E3C-B16C-21A1D49ABED3[m
+ 27 Linux root (ARM-64)            B921B045-1DF0-41C3-AF44-4C6F280D3FAE[m
+ 28 Linux root (IA-64)             993D8D3D-F80E-4225-855A-9DAF8ED7EA97[m
+ 29 Linux root (LoongArch-64)      77055800-792C-4F94-B39A-98C91B762BB6[m
+ 30 Linux root (MIPS-32 LE)        37C58C8A-D913-4156-A25F-48B1B64E07F0[m
+ 31 Linux root (MIPS-64 LE)        700BDA43-7A34-4507-B179-EEB93D7A7CA3[m
+ 32 Linux root (HPPA/PARISC)       1AACDB3B-5444-4138-BD9E-E5C2239B2346[m
+ 33 Linux root (PPC)               1DE3F1EF-FA98-47B5-8DCD-4A860A654D78[m
+ 34 Linux root (PPC64)             912ADE1D-A839-4913-8964-A10EEE08FBD2[m
+ 35 Linux root (PPC64LE)           C31C45E6-3F39-412E-80FB-4809C4980599[m
+ 36 Linux root (RISC-V-32)         60D5A7FE-8E7D-435C-B714-3DD8162144E1[m
+ 37 Linux root (RISC-V-64)         72EC70A6-CF74-40E6-BD49-4BDA08E8F224[m
+ 38 Linux root (S390)              08A7ACEA-624C-4A20-91E8-6E0FA67D23F9[m
+:[K[K 39 Linux root (S390X)             5EEAD9A9-FE09-4A1E-A1D7-520D00531306[m
+ 40 Linux root (TILE-Gx)           C50CDD70-3862-4CC3-90E1-809A8C93EE2C[m
+ 41 Linux reserved                 8DA63339-0007-60C0-C436-083AC8230908[m
+ 42 Linux home                     933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+ 43 Linux RAID                     A19D880F-05FC-4D3B-A006-743F0F84911E[m
+ 44 Linux LVM                      E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+ 45 Linux variable data            4D21B016-B534-45C2-A9FB-5C16E091FD2D[m
+ 46 Linux temporary data           7EC6F557-3BC5-4ACA-B293-16EF5DF639D1[m
+ 47 Linux /usr (x86)               75250D76-8CC6-458E-BD66-BD47CC81A812[m
+ 48 Linux /usr (x86-64)            8484680C-9521-48C6-9C11-B0720656F69E[m
+ 49 Linux /usr (Alpha)             E18CF08C-33EC-4C0D-8246-C6C6FB3DA024[m
+ 50 Linux /usr (ARC)               7978A683-6316-4922-BBEE-38BFF5A2FECC[m
+ 51 Linux /usr (ARM)               7D0359A3-02B3-4F0A-865C-654403E70625[m
+ 52 Linux /usr (ARM-64)            B0E01050-EE5F-4390-949A-9101B17104E9[m
+ 53 Linux /usr (IA-64)             4301D2A6-4E3B-4B2A-BB94-9E0B2C4225EA[m
+ 54 Linux /usr (LoongArch-64)      E611C702-575C-4CBE-9A46-434FA0BF7E3F[m
+ 55 Linux /usr (MIPS-32 LE)        0F4868E9-9952-4706-979F-3ED3A473E947[m
+ 56 Linux /usr (MIPS-64 LE)        C97C1F32-BA06-40B4-9F22-236061B08AA8[m
+ 57 Linux /usr (HPPA/PARISC)       DC4A4480-6917-4262-A4EC-DB9384949F25[m
+:[K[K 58 Linux /usr (PPC)               7D14FEC5-CC71-415D-9D6C-06BF0B3C3EAF[m
+ 59 Linux /usr (PPC64)             2C9739E2-F068-46B3-9FD0-01C5A9AFBCCA[m
+ 60 Linux /usr (PPC64LE)           15BB03AF-77E7-4D4A-B12B-C0D084F7491C[m
+ 61 Linux /usr (RISC-V-32)         B933FB22-5C3F-4F91-AF90-E2BB0FA50702[m
+ 62 Linux /usr (RISC-V-64)         BEAEC34B-8442-439B-A40B-984381ED097D[m
+ 63 Linux /usr (S390)              CD0F869B-D0FB-4CA0-B141-9EA87CC78D66[m
+ 64 Linux /usr (S390X)             8A4F5770-50AA-4ED3-874A-99B710DB6FEA[m
+ 65 Linux /usr (TILE-Gx)           55497029-C7C1-44CC-AA39-815ED1558630[m
+ 66 Linux root verity (x86)        D13C5D3B-B5D1-422A-B29F-9454FDC89D76[m
+ 67 Linux root verity (x86-64)     2C7357ED-EBD2-46D9-AEC1-23D437EC2BF5[m
+ 68 Linux root verity (Alpha)      FC56D9E9-E6E5-4C06-BE32-E74407CE09A5[m
+ 69 Linux root verity (ARC)        24B2D975-0F97-4521-AFA1-CD531E421B8D[m
+ 70 Linux root verity (ARM)        7386CDF2-203C-47A9-A498-F2ECCE45A2D6[m
+ 71 Linux root verity (ARM-64)     DF3300CE-D69F-4C92-978C-9BFB0F38D820[m
+ 72 Linux root verity (IA-64)      86ED10D5-B607-45BB-8957-D350F23D0571[m
+ 73 Linux root verity (LoongArch-64) F3393B22-E9AF-4613-A948-9D3BFBD0C535[m
+ 74 Linux root verity (MIPS-32 LE) D7D150D2-2A04-4A33-8F12-16651205FF7B[m
+ 75 Linux root verity (MIPS-64 LE) 16B417F8-3E06-4F57-8DD2-9B5232F41AA6[m
+ 76 Linux root verity (HPPA/PARISC) D212A430-FBC5-49F9-A983-A7FEEF2B8D0E[m
+:[K[K 77 Linux root verity (PPC)        98CFE649-1588-46DC-B2F0-ADD147424925[m
+ 78 Linux root verity (PPC64)      9225A9A3-3C19-4D89-B4F6-EEFF88F17631[m
+ 79 Linux root verity (PPC64LE)    906BD944-4589-4AAE-A4E4-DD983917446A[m
+ 80 Linux root verity (RISC-V-32)  AE0253BE-1167-4007-AC68-43926C14C5DE[m
+ 81 Linux root verity (RISC-V-64)  B6ED5582-440B-4209-B8DA-5FF7C419EA3D[m
+ 82 Linux root verity (S390)       7AC63B47-B25C-463B-8DF8-B4A94E6C90E1[m
+ 83 Linux root verity (S390X)      B325BFBE-C7BE-4AB8-8357-139E652D2F6B[m
+ 84 Linux root verity (TILE-Gx)    966061EC-28E4-4B2E-B4A5-1F0A825A1D84[m
+ 85 Linux /usr verity (x86)        8F461B0D-14EE-4E81-9AA9-049B6FB97ABD[m
+ 86 Linux /usr verity (x86-64)     77FF5F63-E7B6-4633-ACF4-1565B864C0E6[m
+ 87 Linux /usr verity (Alpha)      8CCE0D25-C0D0-4A44-BD87-46331BF1DF67[m
+ 88 Linux /usr verity (ARC)        FCA0598C-D880-4591-8C16-4EDA05C7347C[m
+ 89 Linux /usr verity (ARM)        C215D751-7BCD-4649-BE90-6627490A4C05[m
+ 90 Linux /usr verity (ARM-64)     6E11A4E7-FBCA-4DED-B9E9-E1A512BB664E[m
+ 91 Linux /usr verity (IA-64)      6A491E03-3BE7-4545-8E38-83320E0EA880[m
+ 92 Linux /usr verity (LoongArch-64) F46B2C26-59AE-48F0-9106-C50ED47F673D[m
+ 93 Linux /usr verity (MIPS-32 LE) 46B98D8D-B55C-4E8F-AAB3-37FCA7F80752[m
+ 94 Linux /usr verity (MIPS-64 LE) 3C3D61FE-B5F3-414D-BB71-8739A694A4EF[m
+ 95 Linux /usr verity (HPPA/PARISC) 5843D618-EC37-48D7-9F12-CEA8E08768B2[m
+:[K[K 96 Linux /usr verity (PPC)        DF765D00-270E-49E5-BC75-F47BB2118B09[m
+ 97 Linux /usr verity (PPC64)      BDB528A5-A259-475F-A87D-DA53FA736A07[m
+ 98 Linux /usr verity (PPC64LE)    EE2B9983-21E8-4153-86D9-B6901A54D1CE[m
+ 99 Linux /usr verity (RISC-V-32)  CB1EE4E3-8CD0-4136-A0A4-AA61A32E8730[m
+100 Linux /usr verity (RISC-V-64)  8F1056BE-9B05-47C4-81D6-BE53128E5B54[m
+101 Linux /usr verity (S390)       B663C618-E7BC-4D6D-90AA-11B756BB1797[m
+102 Linux /usr verity (S390X)      31741CC4-1A2A-4111-A581-E00B447D2D06[m
+103 Linux /usr verity (TILE-Gx)    2FB4BF56-07FA-42DA-8132-6B139F2026AE[m
+104 Linux root verity sign. (x86)  5996FC05-109C-48DE-808B-23FA0830B676[m
+105 Linux root verity sign. (x86-64) 41092B05-9FC8-4523-994F-2DEF0408B176[m
+106 Linux root verity sign. (Alpha) D46495B7-A053-414F-80F7-700C99921EF8[m
+107 Linux root verity sign. (ARC)  143A70BA-CBD3-4F06-919F-6C05683A78BC[m
+108 Linux root verity sign. (ARM)  42B0455F-EB11-491D-98D3-56145BA9D037[m
+109 Linux root verity sign. (ARM-64) 6DB69DE6-29F4-4758-A7A5-962190F00CE3[m
+110 Linux root verity sign. (IA-64) E98B36EE-32BA-4882-9B12-0CE14655F46A[m
+111 Linux root verity sign. (LoongArch-64) 5AFB67EB-ECC8-4F85-AE8E-AC1E7C50E7D0[m
+112 Linux root verity sign. (MIPS-32 LE) C919CC1F-4456-4EFF-918C-F75E94525CA5[m
+113 Linux root verity sign. (MIPS-64 LE) 904E58EF-5C65-4A31-9C57-6AF5FC7C5DE7[m
+114 Linux root verity sign. (HPPA/PARISC) 15DE6170-65D3-431C-916E-B0DCD8393F25[m
+:[K[K115 Linux root verity sign. (PPC)  1B31B5AA-ADD9-463A-B2ED-BD467FC857E7[m
+116 Linux root verity sign. (PPC64) F5E2C20C-45B2-4FFA-BCE9-2A60737E1AAF[m
+117 Linux root verity sign. (PPC64LE) D4A236E7-E873-4C07-BF1D-BF6CF7F1C3C6[m
+118 Linux root verity sign. (RISC-V-32) 3A112A75-8729-4380-B4CF-764D79934448[m
+119 Linux root verity sign. (RISC-V-64) EFE0F087-EA8D-4469-821A-4C2A96A8386A[m
+120 Linux root verity sign. (S390) 3482388E-4254-435A-A241-766A065F9960[m
+121 Linux root verity sign. (S390X) C80187A5-73A3-491A-901A-017C3FA953E9[m
+122 Linux root verity sign. (TILE-Gx) B3671439-97B0-4A53-90F7-2D5A8F3AD47B[m
+123 Linux /usr verity sign. (x86)  974A71C0-DE41-43C3-BE5D-5C5CCD1AD2C0[m
+124 Linux /usr verity sign. (x86-64) E7BB33FB-06CF-4E81-8273-E543B413E2E2[m
+125 Linux /usr verity sign. (Alpha) 5C6E1C76-076A-457A-A0FE-F3B4CD21CE6E[m
+126 Linux /usr verity sign. (ARC)  94F9A9A1-9971-427A-A400-50CB297F0F35[m
+127 Linux /usr verity sign. (ARM)  D7FF812F-37D1-4902-A810-D76BA57B975A[m
+128 Linux /usr verity sign. (ARM-64) C23CE4FF-44BD-4B00-B2D4-B41B3419E02A[m
+129 Linux /usr verity sign. (IA-64) 8DE58BC2-2A43-460D-B14E-A76E4A17B47F[m
+130 Linux /usr verity sign. (LoongArch-64) B024F315-D330-444C-8461-44BBDE524E99[m
+131 Linux /usr verity sign. (MIPS-32 LE) 3E23CA0B-A4BC-4B4E-8087-5AB6A26AA8A9[m
+132 Linux /usr verity sign. (MIPS-64 LE) F2C2C7EE-ADCC-4351-B5C6-EE9816B66E16[m
+133 Linux /usr verity sign. (HPPA/PARISC) 450DD7D1-3224-45EC-9CF2-A43A346D71EE[m
+:[K[K134 Linux /usr verity sign. (PPC)  7007891D-D371-4A80-86A4-5CB875B9302E[m
+135 Linux /usr verity sign. (PPC64) 0B888863-D7F8-4D9E-9766-239FCE4D58AF[m
+136 Linux /usr verity sign. (PPC64LE) C8BFBD1E-268E-4521-8BBA-BF314C399557[m
+137 Linux /usr verity sign. (RISC-V-32) C3836A13-3137-45BA-B583-B16C50FE5EB4[m
+138 Linux /usr verity sign. (RISC-V-64) D2F9000A-7A18-453F-B5CD-4D32F77A7B32[m
+139 Linux /usr verity sign. (S390) 17440E4F-A8D0-467F-A46E-3912AE6EF2C5[m
+140 Linux /usr verity sign. (S390X) 3F324816-667B-46AE-86EE-9B0C0C6C11B4[m
+141 Linux /usr verity sign. (TILE-Gx) 4EDE75E2-6CCC-4CC8-B9C7-70334B087510[m
+142 Linux extended boot            BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+143 Linux user's home              773f91ef-66d4-49b5-bd83-d683bf40ad16[m
+144 FreeBSD data                   516E7CB4-6ECF-11D6-8FF8-00022D09712B[m
+145 FreeBSD boot                   83BD6B9D-7F41-11DC-BE0B-001560B84F0F[m
+146 FreeBSD swap                   516E7CB5-6ECF-11D6-8FF8-00022D09712B[m
+147 FreeBSD UFS                    516E7CB6-6ECF-11D6-8FF8-00022D09712B[m
+148 FreeBSD ZFS                    516E7CBA-6ECF-11D6-8FF8-00022D09712B[m
+149 FreeBSD Vinum                  516E7CB8-6ECF-11D6-8FF8-00022D09712B[m
+150 Apple HFS/HFS+                 48465300-0000-11AA-AA11-00306543ECAC[m
+151 Apple APFS                     7C3457EF-0000-11AA-AA11-00306543ECAC[m
+152 Apple UFS                      55465300-0000-11AA-AA11-00306543ECAC[m
+:[K[K153 Apple RAID                     52414944-0000-11AA-AA11-00306543ECAC[m
+154 Apple RAID offline             52414944-5F4F-11AA-AA11-00306543ECAC[m
+155 Apple boot                     426F6F74-0000-11AA-AA11-00306543ECAC[m
+156 Apple label                    4C616265-6C00-11AA-AA11-00306543ECAC[m
+157 Apple TV recovery              5265636F-7665-11AA-AA11-00306543ECAC[m
+158 Apple Core storage             53746F72-6167-11AA-AA11-00306543ECAC[m
+159 Apple Silicon boot             69646961-6700-11AA-AA11-00306543ECAC[m
+160 Apple Silicon recovery         52637672-7900-11AA-AA11-00306543ECAC[m
+161 Solaris boot                   6A82CB45-1DD2-11B2-99A6-080020736631[m
+162 Solaris root                   6A85CF4D-1DD2-11B2-99A6-080020736631[m
+163 Solaris /usr & Apple ZFS       6A898CC3-1DD2-11B2-99A6-080020736631[m
+164 Solaris swap                   6A87C46F-1DD2-11B2-99A6-080020736631[m
+165 Solaris backup                 6A8B642B-1DD2-11B2-99A6-080020736631[m
+166 Solaris /var                   6A8EF2E9-1DD2-11B2-99A6-080020736631[m
+167 Solaris /home                  6A90BA39-1DD2-11B2-99A6-080020736631[m
+168 Solaris alternate sector       6A9283A5-1DD2-11B2-99A6-080020736631[m
+169 Solaris reserved 1             6A945A3B-1DD2-11B2-99A6-080020736631[m
+170 Solaris reserved 2             6A9630D1-1DD2-11B2-99A6-080020736631[m
+171 Solaris reserved 3             6A980767-1DD2-11B2-99A6-080020736631[m
+:[K[K172 Solaris reserved 4             6A96237F-1DD2-11B2-99A6-080020736631[m
+173 Solaris reserved 5             6A8D2AC7-1DD2-11B2-99A6-080020736631[m
+174 NetBSD swap                    49F48D32-B10E-11DC-B99B-0019D1879648[m
+175 NetBSD FFS                     49F48D5A-B10E-11DC-B99B-0019D1879648[m
+176 NetBSD LFS                     49F48D82-B10E-11DC-B99B-0019D1879648[m
+177 NetBSD concatenated            2DB519C4-B10F-11DC-B99B-0019D1879648[m
+178 NetBSD encrypted               2DB519EC-B10F-11DC-B99B-0019D1879648[m
+179 NetBSD RAID                    49F48DAA-B10E-11DC-B99B-0019D1879648[m
+180 ChromeOS kernel                FE3A2A5D-4F32-41A7-B725-ACCC3285A309[m
+181 ChromeOS root fs               3CB8E202-3B7E-47DD-8A3C-7FF2A13CFCEC[m
+182 ChromeOS reserved              2E0A753D-9E48-43B0-8337-B15192CB1B5E[m
+183 ChromeOS firmware              CAB6E88E-ABF3-4102-A07A-D4BB9BE3C1D3[m
+184 ChromeOS miniOS                09845860-705F-4BB5-B16C-8A8A099CAF52[m
+185 ChromeOS hibernate             3F0F8318-F146-4E6B-8222-C28C8F02E0D5[m
+186 MidnightBSD data               85D5E45A-237C-11E1-B4B3-E89A8F7FC3A7[m
+187 MidnightBSD boot               85D5E45E-237C-11E1-B4B3-E89A8F7FC3A7[m
+188 MidnightBSD swap               85D5E45B-237C-11E1-B4B3-E89A8F7FC3A7[m
+189 MidnightBSD UFS                0394EF8B-237E-11E1-B4B3-E89A8F7FC3A7[m
+190 MidnightBSD ZFS                85D5E45D-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K191 MidnightBSD Vinum              85D5E45C-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K[?1l>[?2004hPartition type or alias (type L to list all): L
+[?2004l[?1h=  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+ 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+ 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+ 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+ 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+ 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+ 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+ 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+ 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+ 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+ 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+:[K[K-[K:[K[K/[Kee[Kff[Kii[K[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
