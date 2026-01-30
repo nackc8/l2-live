@@ -1336,4 +1336,39 @@ Help:
 :[K[K [KESCESC[KOO[KBB[K174 NetBSD swap                    49F48D32-B10E-11DC-B99B-0019D1879648[m
 :[K[K [KESCESC[KOO[KBB[K175 NetBSD FFS                     49F48D5A-B10E-11DC-B99B-0019D1879648[m
 :[K[K [KESCESC[KOO[KBB[K176 NetBSD LFS                     49F48D82-B10E-11DC-B99B-0019D1879648[m
-:[K[K [KESCESC[KOO[KBB[
+:[K[K [KESCESC[KOO[KBB[K177 NetBSD concatenated            2DB519C4-B10F-11DC-B99B-0019D1879648[m
+:[K[K [KESCESC[KOO[KBB[K178 NetBSD en[01;44;33mcrypt[0med               2DB519EC-B10F-11DC-B99B-0019D1879648[m
+:[K[K [KESCESC[KOO[KBB[K179 NetBSD RAID                    49F48DAA-B10E-11DC-B99B-0019D1879648[m
+:[K[K [KESCESC[KOO[KBB[K180 ChromeOS kernel                FE3A2A5D-4F32-41A7-B725-ACCC3285A309[m
+:[K[K [KESCESC[KOO[KBB[K181 ChromeOS root fs               3CB8E202-3B7E-47DD-8A3C-7FF2A13CFCEC[m
+:[K[K [KESCESC[KOO[KBB[K182 ChromeOS reserved              2E0A753D-9E48-43B0-8337-B15192CB1B5E[m
+:[K[K [KESCESC[KOO[KBB[K183 ChromeOS firmware              CAB6E88E-ABF3-4102-A07A-D4BB9BE3C1D3[m
+:[K[K [KESCESC[KOO[KBB[K184 ChromeOS miniOS                09845860-705F-4BB5-B16C-8A8A099CAF52[m
+:[K[K [KESCESC[KOO[KBB[K185 ChromeOS hibernate             3F0F8318-F146-4E6B-8222-C28C8F02E0D5[m
+:[K[K [KESCESC[KOO[KBB[K186 MidnightBSD data               85D5E45A-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K187 MidnightBSD boot               85D5E45E-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K188 MidnightBSD swap               85D5E45B-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K189 MidnightBSD UFS                0394EF8B-237E-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K190 MidnightBSD ZFS                85D5E45D-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K191 MidnightBSD Vinum              85D5E45C-237C-11E1-B4B3-E89A8F7FC3A7[m
+:[K[K [KESCESC[KOO[KBB[K192 Ceph Journal                   45B0969E-9B03-4F30-B4C6-B4B80CEFF106[m
+:[K[K [KESCESC[KOO[KBB[K193 Ceph En[01;44;33mcrypt[0med Journal         45B0969E-9B03-4F30-B4C6-5EC00CEFF106[m
+:[K[K [KESCESC[KOO[KBB[K194 Ceph OSD                       4FBD7E29-9D25-41B8-AFD0-062C0CEFF05D[m
+:[K[K [KESCESC[KOO[KBB[K195 Ceph [01;44;33mcrypt[0m OSD                 4FBD7E29-9D25-41B8-AFD0-5EC00CEFF05D[m
+:[K[K [KESCESC[KOO[KBB[K196 Ceph disk in creation          89C57F98-2FE5-4DC0-89C1-F3AD0CEFF2BE[m
+:[K[K [KESCESC[KOO[KBB[K197 Ceph [01;44;33mcrypt[0m disk in creation    89C57F98-2FE5-4DC0-89C1-5EC00CEFF2BE[m
+:[K[K [KESCESC[KOO[KBB[K198 VMware VMFS                    AA31E02A-400F-11DB-9590-000C2911D1B8[m
+:[K[K [KESCESC[KOO[KBB[K199 VMware Diagnostic              9D275380-40AD-11DB-BF97-000C2911D1B8[m
+:[K[K [KESCESC[KOO[KBB[K200 VMware Virtual SAN             381CFCCC-7288-11E0-92EE-000C2911D0B2[m
+:[K[K [KESCESC[KOO[KBB[K201 VMware Virsto                  77719A0C-A4A0-11E3-A47E-000C29745A24[m
+:[K[K [KESCESC[KOO[KBB[K202 VMware Reserved                9198EFFC-31C0-11DB-8F78-000C2911D1B8[m
+:[K[K [KESCESC[KOO[KBB[K203 OpenBSD data                   824CC7A0-36A8-11E3-890A-952519AD3F61[m
+:[K[K [KESCESC[KOO[KBB[K204 QNX6 file system               CEF5A9AD-73BC-4601-89F3-CDEEEEE321A1[m
+:[K[K [KESCESC[KOO[KBB[K205 Plan 9 partition               C91818F9-8025-47AF-89D2-F030D7000C2C[m
+:[K[K [KESCESC[KOO[KBB[K206 HiFive FSBL                    5B193300-FC78-40CD-8002-E86C45580B47[m
+:[K[K [KESCESC[KOO[KBB[K207 HiFive BBL                     2E54B353-1271-4842-806F-E436D6AF6985[m
+:[K[K [KESCESC[KOO[KBB[K208 Haiku BFS                      42465331-3BA3-10F1-802A-4861696B7521[m
+:[K[K [KESCESC[KOO[KBB[K209 Marvell Armada 3700 Boot partition 6828311A-BA55-42A4-BCDE-A89BB5EDECAE[m
+:[K[K [KESCESC[KOO[KBB[K210 DragonFlyBSD Label32           9D087404-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K211 DragonFlyBSD Swap              9D58FDBD-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K212 DragonFlyBSD UFS1              9D94CE7C-1CA5-11DC-8817-01301BB8A9F5[m
