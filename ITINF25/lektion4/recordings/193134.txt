@@ -1983,4 +1983,19 @@ mkfs.fat 4.2 (2021-01-31)
 [J]0;root@archiso: echo FFFFFFIIIIILLLL > /mnt/funkadefil_i_efi.txt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004huumount mn
 [J[0;31mNo matches for:[0m `dev or dir', `device label', `device path', `mount point', or `file'[A[0m[27m[24m[0m[39m[17Cumount mn[K[0m[39mt
 [J[J[0;31mNo matches for:[0m `dev or dir', `device label', `device path', `mount point', or `file'[A[0m[27m[24m[0m[39m[17Cumount mnt[K[0m[39m   /mnt[1m [0m[0m [?1l>[?2004l
-[J]0;root@archiso: umount /mnt[1m[7m#[27m[1m[0m                     
+[J]0;root@archiso: umount /mnt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h
+bck-i-search: _[K[A[2Cumount /[4mm[24mnt[1B[14Dm_[A[9C[8Du[4mm[4mo[24m[5C[24mm[1B[11Do_[A[1C[1C[4mo[4mu[24m[1Bu_[A[2C[4mu[4mn[24m[1Bn_[A[3C[4mn[4mt[24m[1Bt_[A[4mm[4mo[4mu[4mn[4mt[24m[24m /dev/vda1 /mnt[20D[24mm[24mo[24mu[24mn[24mt[1B[K[A[17C[?1l>[?2004l[1B]0;root@archiso: mount /dev/vda1 /mnt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hlls /mnt[1m/[0m[0m [?1l>[?2004l
+]0;root@archiso: command ls --color=auto -v /mnt[0m[01;32mfunkadefil_i_efi.txt[0m
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hdddd  uumount /mnt[1m [0m[0m [?1l>[?2004l
+]0;root@archiso: umount /mnt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hlls /,mn
+[J[0;31mNo matches for:[0m `file'[A[0m[27m[24m[0m[39m[17Cls /,mn[K[0m[39m   mnt[1m/[0m[0m [?1l>[?2004l
+[J]0;root@archiso: command ls --color=auto -v /mnt[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h@@  ## bra, ska vara borta efter umount[?1l>[?2004l
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hZZU ENDE![?1l>[?2004l
+]0;root@archiso: ZU ENDE!zsh: command not found: ZU
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m127 [39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[74C:([76D[?1h=[?2004heexit[?1l>[?2004l[K
+]0;root@archiso: exitConnection to 192.168.122.198 closed.
+[?2004h[94mITINF25/lektion4
+(B[m$ [?2004l
+exit
+
+Script done on 2026-01-30 20:00:05+01:00 [COMMAND_EXIT_CODE="127"]
