@@ -1,0 +1,48 @@
+Script started on 2026-01-30 19:31:34+01:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="72" LINES="1"]
+[?2004h[94mITINF25/lektion4
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ git branch
+[?2004l[?1h=  250109[m[m
+  250113[m[m
+  250819[m[m
+  250825[m[m
+  250826[m[m
+  250901[m[m
+  250902[m[m
+  250908[m[m
+  250911[m[m
+  260126[m[m
+  260128[m[m
+:[K[K  260129[m[m
+:[K[K[?1l>[?2004h[94mITINF25/lektion4
+(B[m$ [H[2J[94mITINF25/lektion4
+(B[m$ ls
+[?2004lrecordings  TODO.txt
+[?2004h[94mITINF25/lektion4
+(B[m$ git branch | grep ''\'*'
+[?2004l* 260130
+[?2004h[94mITINF25/lektion4
+(B[m$ [H[2J[94mITINF25/lektion4
+(B[m$ ls
+[?2004lrecordings  TODO.txt
+[?2004h[94mITINF25/lektion4
+(B[m$ (reverse-i-search)`': s': vir[7ms[27mhs': ps -ef | le[7mss[27mh': code ~/.[7mssh[27m/config [7mssh[27m -p 2222 root@localhost[23P(B[m$ ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssh 192.17y8[K[K[K68.122.198@192.168.122.198r@192.168.122.198o@192.168.122.198o@192.168.122.198t@192.168.122.198
+[?2004lroot@192.168.122.198's password: 
+To install [38;2;23;147;209mArch Linux[0m follow the installation guide:
+https://wiki.archlinux.org/title/Installation_guide
+
+For Wi-Fi, authenticate to the wireless network using the [35miwctl[0m utility.
+For mobile broadband (WWAN) modems, connect with the [35mmmcli[0m utility.
+Ethernet, WLAN and WWAN interfaces using DHCP should work automatically.
+
+After connecting to the internet, the installation guide can be accessed
+via the convenience script [35mInstallation_guide[0m.
+
+[41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# llsblk[?1l>[?2004l
+]0;root@archiso: lsblkNAME  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0   7:0    0 971.9M  1 loop /run/archiso/airootfs
+sr0    11:0    1   1.4G  0 rom  /run/archiso/bootmnt
+vda   254:0    0     7G  0 disk 
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004h## vad ä   da är det som normalt kallas sda [?1l>[?2004l
+[1m[7m#[27m[1m[0m                                                                                                  ]0;root@archiso: ~[0m[27m[24m[J[1m[31m[39m[0m[1m[31mroot[39m[0m@archiso [1m~ [0m# [K[?1h=[?2004hffdusj   isk [?1l>[?2004l
+]0;root@archiso: fdiskfdisk: bad usa
