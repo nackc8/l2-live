@@ -1515,4 +1515,50 @@ Help:
 [8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
 [9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
 [10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
-[11;1H[K 11 Microsoft
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H...skipping...
+ 22 Linux [01;44;33mroot[0m (x86)               44479540-F297-41B2-9AF7-D131D5F0458A[m
+ 23 Linux [01;44;33mroot[0m (x86-64)            4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709[m
+ 24 Linux [01;44;33mroot[0m (Alpha)             6523F8AE-3EB1-4E2A-A05A-18B695AE656F[m
+ 25 Linux [01;44;33mroot[0m (ARC)               D27F46ED-2919-4CB8-BD25-9531F3C16534[m
+ 26 Linux [01;44;33mroot[0m (ARM)               69DAD710-2CE4-4E3C-B16C-21A1D49ABED3[m
+ 27 Linux [01;44;33mroot[0m (ARM-64)            B921B045-1DF0-41C3-AF44-4C6F280D3FAE[m
+ 28 Linux [01;44;33mroot[0m (IA-64)             993D8D3D-F80E-4225-855A-9DAF8ED7EA97[m
+ 29 Linux [01;44;33mroot[0m (LoongArch-64)      77055800-792C-4F94-B39A-98C91B762BB6[m
+ 30 Linux [01;44;33mroot[0m (MIPS-32 LE)        37C58C8A-D913-4156-A25F-48B1B64E07F0[m
+ 31 Linux [01;44;33mroot[0m (MIPS-64 LE)        700BDA43-7A34-4507-B179-EEB93D7A7CA3[m
+ 32 Linux [01;44;33mroot[0m (HPPA/PARISC)       1AACDB3B-5444-4138-BD9E-E5C2239B2346[m
+ 33 Linux [01;44;33mroot[0m (PPC)               1DE3F1EF-FA98-47B5-8DCD-4A860A654D78[m
+ 34 Linux [01;44;33mroot[0m (PPC64)             912ADE1D-A839-4913-8964-A10EEE08FBD2[m
+ 35 Linux [01;44;33mroot[0m (PPC64LE)           C31C45E6-3F39-412E-80FB-4809C4980599[m
+ 36 Linux [01;44;33mroot[0m (RISC-V-32)         60D5A7FE-8E7D-435C-B714-3DD8162144E1[m
+ 37 Linux [01;44;33mroot[0m (RISC-V-64)         72EC70A6-CF74-40E6-BD49-4BDA08E8F224[m
+ 38 Linux [01;44;33mroot[0m (S390)              08A7ACEA-624C-4A20-91E8-6E0FA67D23F9[m
+ 39 Linux [01;44;33mroot[0m (S390X)             5EEAD9A9-FE09-4A1E-A1D7-520D00531306[m
+ 40 Linux [01;44;33mroot[0m (TILE-Gx)           C50CDD70-3862-4CC3-90E1-809A8C93EE2C[m
+:[K[K [KESCESC[KOO[KAA[K[HM 21 Linux server data              3B8F8425-20E0-4F3B-907F-1A25A76F98E8[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 20 Linux filesystem               0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[K:[K[K:[K22[K33[K 38 Linux [01;44;33mroot[0m (S390)              08A7ACEA-624C-4A20-91E8-6E0FA67D23F9[m
+ 39 Linux [01;44;33mroot[0m (S390X)             5EEAD9A9-FE09-4A1E-A1D7-520D00531306[m
+ 40 Linux [01;44;33mroot[0m (TILE-Gx)           C50CDD70-3862-4CC3-90E1-809A8C93EE2C[m
+ 41 Linux reserved                 8DA63339-0007-60C0-C436-083AC8230908[m
+ 42 Linux home                     933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+ 43 Linux RAID                     A19D880F-05FC-4D3B-A006-743F0F84911E[m
+ 44 Linux LVM                      E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+ 45 Linux variable data            4D21B016-B534-45C2-A9FB-5C16E091FD2D[m
+ 46 Linux temporary data           7EC6F557-3BC5-4ACA-B293-16EF5DF639D1[m
+ 47 Linux /usr (x86)               75250D76-8CC6-458E-BD66-BD47CC81A812[m
+ 48 Linux /usr (x86-64)            8484680C-9521-48C6-9C11-B0720656F69E[m
+ 49 Linux /usr (Alpha)             E18CF08C-33EC-4C0D-8246-C6C6FB3DA024[m
+ 50 Linux /usr (ARC)               7978A683-6316-4922-BBEE-38BFF5A2FECC[m
+ 51 Linux /usr (ARM)               7D0359A3-02B3-4F0A-865C-654403E70625[m
+ 52 Linux /usr (ARM-64)            B0E01050-EE5F-4390-949A-9101B17104E9
