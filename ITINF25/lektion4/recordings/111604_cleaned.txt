@@ -1,0 +1,82 @@
+Script started on 2026-01-30 11:16:04+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="98" LINES="14"]
+ITINF25/lektion4
+$ ITINF25/lektion4
+$ virsh list
+ Id   Name                   State
+--------------------------------------
+ 1    libvirt-rules-ubuntu   running
+
+ITINF25/lektion4
+$ virsh define 1
+error: Failed to open file '1': No such file or directory
+
+ITINF25/lektion4
+$ virsh define 
+
+ITINF25/lektion4
+$ virsh
+Welcome to virsh, the virtualization interactive terminal.
+
+Type:  'help' for help with commands
+       'quit' to quit
+
+virsh # ^C
+ITINF25/lektion4
+$ virsh edit 
+
+recordings/ TODO.txt    
+ITINF25/lektion4
+$ virsh edit 1
+
+>104ain type='kvm'><name>libvirt-rules-ubuntu</name><uuid>79ad18f4-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory>
+>104xit^R Read File    ^\ Replace^U Paste^J Justify^/ Go To Lineon-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory><vcpu placement='static'>2</vcpu>
+>104xit^R Read File    ^\ Replace^U Paste^J Justify^/ Go To Lineon==<os>                          <domain type='kvm'><name>libvirt-rules-ubuntu</name><uuid>79ad18f4-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory><vcpu placement='static'>2</vcpu>
+>104xit^R Read File    ^\ Replace^U Paste^J Justify^/ Go To Lineon==<type arch='x86_64' machine='pc-q35-7.2'>hvm</type>ame>libvirt-rules-ubuntu</name><uuid>79ad18f4-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory><vcpu placement='static'>2</vcpu><os>
+>104xit^R Read File    ^\ Replace^U Paste^J Justify^/ Go To Lineon==<boot dev='hd'/>              <domain type='kvm'><name>libvirt-rules-ubuntu</name><uuid>79ad18f4-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory><vcpu placement='static'>2</vcpu><os><type arch='x86_64' machine='pc-q35-7.2'>hvm</type>
+^X Exit^R Read File    ^\ Replace^U Paste^J Justify^/ Go To Lineon==                              <domain type='kvm'><name>libvirt-rules-ubuntu</name><uuid>79ad18f4-0e09-4e66-a90b-f904b211873f</uuid><metadata><libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0"><libosinfo:os id="http://ubuntu.com/ubuntu/22.10"/></libosinfo:libosinfo></metadata><memory unit='KiB'>4194304</memory><currentMemory unit='KiB'>4194304</currentMemory><vcpu placement='static'>2</vcpu><os><type arch='x86_64' machine='pc-q35-7.2'>hvm</type><boot dev='hd'/>
+<apic/>
+<vmport state='off'/>
+</features>
+<cpu mode='host-passthrough' check='none' migratable='on'/>
+<clock offset='utc'>
+<timer name='rtc' tickpolicy='catchup'/>
+<timer name='pit' tickpolicy='delay'/>
+<timer name='hpet' present='no'/>
+</clock>
+<on_poweroff>destroy</on_poweroff>
+<on_reboot>restart</on_reboot>
+*on_crash>destroy</on_crash>
+    pi/>
+<pm>
+<suspend-to-mem enabled='no'/>
+<suspend-to-disk enabled='no'/>
+</pm>
+<devices>
+<emulator>/usr/bin/qemu-system-x86_64</emulator>
+<disk type='file' device='disk'>
+<driver name='qemu' type='qcow2' discard='unmap'/>
+<source file='/var/lib/libvirt/images/libvirt-rules-ubuntu.qcow2'/>
+<target dev='vda' bus='virtio'/>
+<address type='pci' domain='0x0000' bus='0x04' slot='0x00' function='0x0'/>
+</disk>
+<disk type='file' device='cdrom'>
+<driver name='qemu' type='raw'/>
+<target dev='sda' bus='sata'/>
+<readonly/>
+<address type='drive' controller='0' bus='0' target='0' unit='0'/>
+</disk>
+<controller type='usb' index='0' model='qemu-xhci' ports='15'>
+<address type='pci' domain='0x0000' bus='0x02' slot='0x00' function='0x0'/>
+</controller>
+<controller type='pci' index='0' model='pcie-root'/>
+<controller type='pci' index='1' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='1' port='0x10'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0' multifunction='on>
+</controller>
+<controller type='pci' index='2' model='pcie-root-port'>
+<model name='pcie-root-port'/>
+<target chassis='2' port='0x11'/>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x1'/>
+</controller>
+[controller type='pci' index='3' model='pcie-root-port'>

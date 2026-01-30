@@ -1,0 +1,2 @@
+Kolla: virsh list --all
+Kolla: Presentationen klipper några slides

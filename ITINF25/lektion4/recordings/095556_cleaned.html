@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+pre {
+  font-family:Courier New;
+  font-size:10pt;
+}
+
+.af_line {
+  color: gray;
+  text-decoration: none;
+}
+
+</style>
+<title>095556.txt</title>
+</head>
+<body>
+<pre>Script started on 2026-01-30 09:56:01+01:00 [TERM=&quot;xterm-256color&quot; TTY=&quot;/dev/pts/1&quot; COLUMNS=&quot;60&quot; LINES=&quot;11&quot;]
+<span style="color:#5c5cff;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">ip link add br0 type bridge</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">ip link add br0 type bridg
+
+
+
+
+
+
+
+$ idn style="color:#000000;background-color:#000000;"></span>$ 
+uid=1000(kent) gid=1000(kent) groups=1000(kent),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),104(kvm),106(netdev),112(bluetooth),114(lpadmin),117(scanner),123(vboxusers),127(libvirt),994(docker),64055(libvirt-qemu)
+<span style="color:#5c5cff;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">egrep -c &apos;(vmx|svm)&apos; /proc/cpuinfo</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+egrep -c &apos;(vmx|svm)&apos; /proc/cpuinfo
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">24
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+</span>$ id
+uid=1000(kent) gid=1000(kent) groups=1000(kent),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),104(kvm),106(netdev),112(bluetooth),114(lpadmin),117(scanner),123(vboxusers),127(libvirt),994(docker),64055(libvirt-qemu)
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">104</span><span style="color:#000000;background-color:#000000;">1
+</span><span style="color:#000000;background-color:#000000;">sudo usermod -aG kvm $USER</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+sudo usermod -aG kvm $USER
+<span style="color:#5c5cff;background-color:#000000;"></span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion4
+</span>$ sudo usermod -aG kvm $USER
+[sudo] password for kent: 
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">sudo apt install virt-manager virtinst libvirt-daemon-syst</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">e</span><span style="color:#000000;background-color:#000000;"></span><span style="color:#000000;background-color:#000000;">m libvirt-clients bridge-utils virt-viewer</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">^C
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">sudo usermod -aG libvirt $USER</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+sudo usermod -aG libvirt $USER
+<span style="color:#5c5cff;background-color:#000000;"></span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion4
+</span>$ sudo usermod -aG libvirt $USER
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ echo $LI
+
+$LIBVIRT_DEFAULT_URI  $LINES
+$LINENO               
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ echo $LIBVIRT_DEFAULT_URI 
+qemu:///system
+<span style="color:#5c5cff;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+</span>$ ls .bashr
+c
+.d
+
+
+
+
+<span style="color:#000000;background-color:#000000;">virsh list --all</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+virsh list --all
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"> Id   Name   State
+--------------------
+
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion4
+</span>$ <span style="color:#000000;background-color:#000000;">virsh net-define /usr/share/libvirt/networks/default.xml</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">
+virsh net-define /usr/share/libvirt/networks/default.xml
+<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">error: Failed to define network from /usr/share/libvirt/networks/default.xml
+error: operation failed: network &apos;default&apos; already exists with uuid 13faf1e8-1b95-40bf-b313-11b718839e0e
+
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion4
+net-define /usr/share/libvirt/networks/default.xmlrks/default.xml
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ echo &apos;<span style="color:#000000;background-color:#000000;">virsh list --all</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">virsh list --all&apos;
+<span style="color:#000000;background-color:#000000;">Kpolla&gt;:  &gt;&gt;TODO.txt
+<span style="color:#5c5cff;background-color:#000000;"></span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion4
+$ s&apos; &gt;&gt;TODO.txt virsh list --all&apos; &gt;&gt;TODO.txPresentationen klip[per n[gågra slid&apos; &gt;&gt;TODO.txt 
+
+<span style="color:#5c5cff;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+$ ps -e$ 
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-events_highpri
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:00 ksoftirqd/0
+     15 ?        00:00:07 rcu_preempt
+     16 ?        00:00:00 migration/0
+     18 ?        00:00:00 cpuhp/0
+     19 ?        00:00:00 cpuhp/1
+     20 ?        00:00:02 migration/1
+     21 ?        00:00:00 ksoftirqd/1
+     23 ?        00:00:00 kworker/1:0H-events_highpri
+     24 ?        00:00:00 cpuhp/2
+     25 ?        00:00:00 migration/2
+     26 ?        00:00:00 ksoftirqd/2
+     28 ?        00:00:00 kworker/2:0H-events_highpri
+     29 ?        00:00:00 cpuhp/3
+     30 ?        00:00:02 migration/3
+     31 ?        00:00:00 ksoftirqd/3
+     33 ?        00:00:00 kworker/3:0H-events_highpri
+     34 ?        00:00:00 cpuhp/4
+     35 ?        00:00:00 migration/4
+     36 ?        00:00:00 ksoftirqd/4
+     38 ?        00:00:00 kworker/4:0H-events_highpri
+     39 ?        00:00:00 cpuhp/5
+     40 ?        00:00:03 migration/5
+     41 ?        00:00:00 ksoftirqd/5
+     43 ?        00:00:00 kworker/5:0H-events_highpri
+     44 ?        00:00:00 cpuhp/6
+     45 ?        00:00:00 migration/6
+     46 ?        00:00:00 ksoftirqd/6
+     48 ?        00:00:00 kworker/6:0H-events_highpri
+     49 ?        00:00:00 cpuhp/7
+     50 ?        00:00:06 migration/7
+     51 ?        00:00:00 ksoftirqd/7
+     53 ?        00:00:00 kworker/7:0H-events_highpri
+     54 ?        00:00:00 cpuhp/8
+     55 ?        00:00:01 migration/8
+     56 ?        00:00:00 ksoftirqd/8
+     58 ?        00:00:00 kworker/8:0H-events_highpri
+     59 ?        00:00:00 cpuhp/9
+     60 ?        00:00:01 migration/9
+     61 ?        00:00:00 ksoftirqd/9
+     63 ?        00:00:00 kworker/9:0H-events_highpri
+     64 ?        00:00:00 cpuhp/10
+     65 ?        00:00:02 migration/10
+     66 ?        00:00:00 ksoftirqd/10
+     68 ?        00:00:00 kworker/10:0H-events_highpri
+     69 ?        00:00:00 cpuhp/11
+     70 ?        00:00:04 migration/11
+     71 ?        00:00:00 ksoftirqd/11
+     73 ?        00:00:00 kworker/11:0H-events_highpri
+     84 ?        00:00:00 kdevtmpfs
+     85 ?        00:00:00 inet_frag_wq
+     86 ?        00:00:00 kauditd
+     87 ?        00:00:00 khungtaskd
+     88 ?        00:00:00 oom_reaper
+     89 ?        00:00:00 writeback
+     90 ?        00:00:00 kcompactd0
+     91 ?        00:00:00 ksmd
+     93 ?        00:00:00 khugepaged
+     94 ?        00:00:00 kintegrityd
+     95 ?        00:00:00 kblockd
+     96 ?        00:00:00 blkcg_punt_bio
+     97 ?        00:00:00 tpm_dev_wq
+     98 ?        00:00:00 edac-poller
+     99 ?        00:00:00 devfreq_wq
+    110 ?        00:00:00 kworker/6:1H-events_highpri
+    111 ?        00:00:02 kswapd0
+    117 ?        00:00:00 kthrotld
+    119 ?        00:00:00 irq/124-pciehp
+    120 ?        00:00:00 irq/125-pciehp
+    121 ?        00:00:00 acpi_thermal_pm
+    122 ?        00:00:00 hwrng
+    124 ?        00:00:00 hfi-updates
+    125 ?        00:00:00 mld
+    126 ?        00:00:00 ipv6_addrconf
+    131 ?        00:00:00 kstrp
+    136 ?        00:00:00 zswap-shrink
+    186 ?        00:00:00 kworker/4:1H-events_highpri
+    197 ?        00:00:00 kworker/0:1H-events_highpri
+    198 ?        00:00:01 kworker/7:1H-events_highpri
+    199 ?        00:00:00 kworker/9:1H-events_highpri
+    200 ?        00:00:00 kworker/1:1H-events_highpri
+    201 ?        00:00:00 kworker/3:1H-events_highpri
+    203 ?        00:00:00 kworker/8:1H-events_highpri
+    204 ?        00:00:00 kworker/10:1H-events_highpri
+    205 ?        00:00:00 kworker/11:1H-events_highpri
+    206 ?        00:00:00 kworker/2:1H-events_highpri
+    237 ?        00:00:00 kworker/5:1H-kblockd
+    239 ?        00:00:00 cryptd
+    323 ?        00:00:00 nvme-wq
+    324 ?        00:00:00 nvme-reset-wq
+    325 ?        00:00:00 nvme-delete-wq
+    328 ?        00:00:00 irq/161-ELAN050B:00
+    334 ?        00:00:00 card0-crtc0
+    335 ?        00:00:00 card0-crtc1
+    336 ?        00:00:00 card0-crtc2
+    337 ?        00:00:00 card0-crtc3
+    347 ?        00:00:00 md
+    358 ?        00:00:00 raid5wq
+    615 ?        00:00:00 kdmflush/253:0
+    617 ?        00:00:00 kcryptd_io/253:
+    618 ?        00:00:00 kcryptd/253:0
+    619 ?        00:00:00 dmcrypt_write/253:0
+    963 ?        00:00:00 jbd2/dm-0-8
+    964 ?        00:00:00 ext4-rsv-conver
+   1028 ?        00:00:00 systemd-journal
+   1042 ?        00:00:00 systemd-udevd
+   1045 ?        00:00:00 rpciod
+   1046 ?        00:00:00 xprtiod
+   1187 ?        00:00:00 watchdogd
+   1195 ?        00:00:00 irq/175-mei_me
+   1236 ?        00:00:00 cfg80211
+   1254 ?        00:00:07 irq/177-iwlwifi:default_queue
+   1255 ?        00:00:01 irq/178-iwlwifi:queue_1
+   1256 ?        00:00:01 irq/179-iwlwifi:queue_2
+   1257 ?        00:00:02 irq/180-iwlwifi:queue_3
+   1258 ?        00:00:01 irq/181-iwlwifi:queue_4
+   1259 ?        00:00:01 irq/182-iwlwifi:queue_5
+   1260 ?        00:00:01 irq/183-iwlwifi:queue_6
+   1261 ?        00:00:02 irq/184-iwlwifi:queue_7
+   1262 ?        00:00:02 irq/185-iwlwifi:queue_8
+   1263 ?        00:00:01 irq/186-iwlwifi:queue_9
+   1265 ?        00:00:01 irq/187-iwlwifi:queue_10
+   1266 ?        00:00:01 irq/188-iwlwifi:queue_11
+   1281 ?        00:00:02 irq/189-iwlwifi:queue_12
+   1282 ?        00:00:00 irq/190-iwlwifi:exception
+   1327 ?        00:00:00 irq/191-AudioDSP
+   1407 ?        00:00:00 jbd2/nvme0n1p5-8
+   1408 ?        00:00:00 ext4-rsv-conver
+   1544 ?        00:00:00 kdmflush/253:1
+   1545 ?        00:00:00 kcryptd_io/253:
+   1546 ?        00:00:00 kcryptd/253:1
+   1547 ?        00:00:00 dmcrypt_write/253:1
+   1555 ?        00:00:00 jbd2/dm-1-8
+   1556 ?        00:00:00 ext4-rsv-conver
+   1595 ?        00:00:00 rpcbind
+   1596 ?        00:00:00 systemd-timesyn
+   1601 ?        00:00:00 blkmapd
+   1602 ?        00:00:00 rpc.idmapd
+   1603 ?        00:00:00 nfsdcld
+   1608 ?        00:00:00 accounts-daemon
+   1613 ?        00:01:51 avahi-daemon
+   1616 ?        00:00:00 bluetoothd
+   1618 ?        00:00:00 cron
+   1620 ?        00:00:03 dbus-daemon
+   1624 ?        00:00:00 low-memory-moni
+   1627 ?        00:00:00 polkitd
+   1628 ?        00:00:00 power-profiles-
+   1631 ?        00:00:00 smartd
+   1632 ?        00:00:00 switcheroo-cont
+   1637 ?        00:00:00 systemd-logind
+   1640 ?        00:00:00 systemd-machine
+   1645 ?        00:00:00 udisksd
+   1649 ?        00:00:00 avahi-daemon
+   1683 ?        00:00:07 NetworkManager
+   1687 ?        00:00:00 psimon
+   1688 ?        00:00:01 wpa_supplicant
+   1718 ?        00:00:00 ModemManager
+   1722 ?        00:00:00 boltd
+   1747 ?        00:00:00 cupsd
+   1760 ?        00:00:08 tailscaled
+   1762 ?        00:00:13 containerd
+   1780 ?        00:00:00 sshd
+   1820 ?        00:00:00 gdm3
+   2107 ?        00:00:00 iprt-VBoxWQueue
+   2108 ?        00:00:00 iprt-VBoxTscThread
+   2133 ?        00:00:00 rtkit-daemon
+   2407 ?        00:00:00 dnsmasq
+   2408 ?        00:00:00 dnsmasq
+   2410 ?        00:00:00 krfcommd
+   2432 ?        00:00:00 upowerd
+   2513 ?        00:00:00 colord
+   2901 ?        00:00:00 cups-browsed
+   2903 ?        00:00:02 dockerd
+   2924 ?        00:00:00 rpc.statd
+   2926 ?        00:00:00 rpc.mountd
+   2954 ?        00:00:00 lockd
+   3012 ?        00:00:00 tor
+   3228 ?        00:00:00 nfsd
+   3229 ?        00:00:00 nfsd
+   3230 ?        00:00:00 nfsd
+   3231 ?        00:00:00 nfsd
+   3232 ?        00:00:00 nfsd
+   3233 ?        00:00:00 nfsd
+   3234 ?        00:00:00 nfsd
+   3235 ?        00:00:00 nfsd
+   3422 ?        00:00:00 exim4
+   3570 ?        00:00:00 containerd-shim
+   3593 ?        00:00:01 mariadbd
+   3647 ?        00:00:00 docker-proxy
+   3653 ?        00:00:00 docker-proxy
+   3806 ?        00:00:00 gdm-session-wor
+   3821 ?        00:00:00 systemd
+   3823 ?        00:00:00 (sd-pam)
+   3851 ?        00:03:47 dropbox
+   3852 ?        00:00:03 pipewire
+   3854 ?        00:00:08 wireplumber
+   3857 ?        00:00:07 pipewire-pulse
+   3863 ?        00:00:00 gnome-keyring-d
+   3865 ?        00:00:01 dbus-daemon
+   3870 ?        00:00:00 gvfsd
+   3876 ?        00:00:00 gvfsd-fuse
+   3928 ?        00:00:00 tracker-miner-f
+   3939 ?        00:00:00 gvfs-udisks2-vo
+   3943 tty2     00:00:00 gdm-wayland-ses
+   3950 tty2     00:00:00 gnome-session-b
+   3959 ?        00:00:00 gvfs-gphoto2-vo
+   3967 ?        00:00:00 gvfs-mtp-volume
+   3977 ?        00:00:00 gvfs-goa-volume
+   3984 ?        00:00:00 goa-daemon
+   4019 ?        00:00:00 gcr-ssh-agent
+   4023 ?        00:00:00 goa-identity-se
+   4031 ?        00:00:00 gnome-session-c
+   4033 ?        00:00:00 ssh-agent
+   4040 ?        00:00:00 gvfs-afc-volume
+   4050 ?        00:00:00 gnome-session-b
+   4075 ?        00:00:00 at-spi-bus-laun
+   4076 ?        00:07:36 gnome-shell
+   4083 ?        00:00:02 dbus-daemon
+   4096 ?        00:00:00 xdg-permission-
+   4255 ?        00:00:00 gnome-shell-cal
+   4262 ?        00:00:00 evolution-sourc
+   4272 ?        00:00:03 geoclue
+   4274 ?        00:00:00 dconf-service
+   4297 ?        00:00:00 gvfsd-metadata
+   4300 ?        00:00:00 evolution-calen
+   4317 ?        00:00:00 evolution-addre
+   4321 ?        00:00:00 gjs
+   4323 ?        00:00:00 at-spi2-registr
+   4344 ?        00:00:00 sh
+   4346 ?        00:00:00 gsd-a11y-settin
+   4348 ?        00:00:02 ibus-daemon
+   4349 ?        00:00:00 gsd-color
+   4350 ?        00:00:00 gsd-datetime
+   4354 ?        00:00:00 gsd-housekeepin
+   4357 ?        00:00:00 gsd-keyboard
+   4358 ?        00:00:00 gsd-media-keys
+   4361 ?        00:00:00 gsd-power
+   4363 ?        00:00:00 gsd-print-notif
+   4368 ?        00:00:00 gsd-rfkill
+   4369 ?        00:00:00 gsd-screensaver
+   4371 ?        00:00:01 gsd-sharing
+   4374 ?        00:00:00 gsd-smartcard
+   4376 ?        00:00:00 gsd-sound
+   4382 ?        00:00:00 gsd-usb-protect
+   4386 ?        00:00:00 gsd-wacom
+   4402 ?        00:00:00 evolution-alarm
+   4412 ?        00:00:00 blueman-applet
+   4434 ?        00:00:10 gnome-software
+   4436 ?        00:00:00 gsd-disk-utilit
+   4441 ?        00:00:00 ibus-dconf
+   4442 ?        00:00:01 ibus-extension-
+   4469 ?        00:00:00 ibus-portal
+   4488 ?        00:00:00 gjs
+   4497 ?        00:00:00 gsd-printer
+   4580 ?        00:00:00 ibus-engine-sim
+   4609 ?        00:00:00 xdg-desktop-por
+   4620 ?        00:00:00 xdg-document-po
+   4627 ?        00:00:00 fusermount3
+   4636 ?        00:00:01 xdg-desktop-por
+   4713 ?        00:00:00 xdg-desktop-por
+   4736 ?        00:00:00 xdg-desktop-por
+   4754 ?        00:00:00 uuidd
+   4804 ?        00:00:01 fwupd
+   4818 ?        00:00:00 obexd
+   4820 ?        00:00:09 blueman-tray
+   5062 ?        00:00:00 Xwayland
+   5115 ?        00:00:00 gsd-xsettings
+   5178 ?        00:00:00 ibus-x11
+   6454 ?        00:00:00 gvfsd-trash
+   6474 ?        00:00:00 gvfsd-network
+   6493 ?        00:00:00 gvfsd-dnssd
+   6529 ?        00:00:00 gnome-calendar
+   6709 ?        00:03:45 okular
+   6792 ?        00:00:00 kworker/8:0-events
+   6938 ?        00:00:00 kworker/11:0-mm_percpu_wq
+   7135 ?        00:00:00 kworker/11:2-mm_percpu_wq
+   7140 ?        00:00:04 kworker/7:2-events
+   7148 ?        00:00:00 kworker/1:2-events
+   8366 ?        00:00:15 code
+   8392 ?        00:00:00 code
+   8393 ?        00:00:00 code
+   8395 ?        00:00:00 code
+   8420 ?        00:00:00 chrome_crashpad
+   8444 ?        00:00:16 code
+   8454 ?        00:00:01 code
+   8492 ?        00:00:30 code
+   8513 ?        00:00:03 code
+   8514 ?        00:00:03 code
+   8543 ?        00:00:51 code
+   8581 ?        00:00:15 code
+   9020 ?        00:00:00 codex
+   9230 ?        00:00:00 code
+   9255 ?        00:00:00 ssh-agent
+  10062 pts/1    00:00:00 bash
+  10563 pts/1    00:00:00 script
+  10564 pts/2    00:00:00 bash_noprofile_
+  10565 pts/2    00:00:00 bash
+  12172 ?        00:00:00 kworker/3:2-events
+  14085 ?        00:00:00 kworker/4:2-pm
+  17185 ?        00:00:12 kworker/u25:3-hci0
+  17268 ?        00:00:02 kworker/u24:5-kcryptd/253:0
+  17275 ?        00:00:01 kworker/0:0-events
+  17526 ?        00:00:50 chrome
+  17532 ?        00:00:00 cat
+  17533 ?        00:00:00 cat
+  17535 ?        00:00:00 chrome_crashpad
+  17537 ?        00:00:00 chrome_crashpad
+  17543 ?        00:00:00 chrome
+  17544 ?        00:00:00 chrome
+  17546 ?        00:00:00 chrome
+  17592 ?        00:00:32 chrome
+  17593 ?        00:00:05 chrome
+  17608 ?        00:00:00 chrome
+  17709 ?        00:00:04 chrome
+  18045 ?        00:00:03 kworker/u24:12-kcryptd/253:0
+  18742 ?        00:00:02 kworker/u24:14-kcryptd/253:0
+  18828 ?        00:00:00 kworker/3:1-mm_percpu_wq
+  18936 ?        00:00:00 kworker/1:0-cgroup_destroy
+  19867 ?        00:00:00 kworker/9:1-mm_percpu_wq
+  20068 ?        00:00:00 kworker/6:2-cgroup_destroy
+  21071 ?        00:00:00 kworker/2:1-events
+  21741 ?        00:00:10 kworker/u25:4-rb_allocator
+  23677 ?        00:00:01 kworker/u24:0-kcryptd/253:0
+  23971 ?        00:00:25 chrome
+  24044 ?        00:00:59 chrome
+  24431 ?        00:00:00 kworker/10:2-mm_percpu_wq
+  24442 ?        00:00:00 chrome
+  24478 ?        00:00:00 kworker/2:0-events
+  24501 ?        00:00:01 kworker/u24:2-events_unbound
+  25483 ?        00:00:01 kworker/u24:6-kcryptd/253:1
+  27637 ?        00:00:00 kworker/4:0-events
+  28248 ?        00:00:03 kworker/u25:1+i915_flip
+  30132 ?        00:00:00 kworker/6:1-events_freezable
+  30199 ?        00:00:00 kworker/5:0-mm_percpu_wq
+  30446 ?        00:00:00 kworker/7:0
+  30467 ?        00:00:00 kworker/9:2
+  31753 ?        00:00:22 virt-manager
+  31767 ?        00:00:01 libvirtd
+  32076 ?        00:00:02 libvirtd
+  32129 ?        00:00:00 kworker/0:2-events
+  32307 ?        00:00:00 kworker/8:2
+  32367 ?        00:00:01 kworker/u24:10-kcryptd/253:0
+  32962 ?        00:00:00 kworker/5:2
+  33637 ?        00:00:01 kworker/u25:0+i915_flip
+  34126 ?        00:00:00 kworker/10:0-events
+  35232 ?        00:00:00 kworker/9:0-events
+  35564 ?        00:00:00 kworker/u25:2-rb_allocator
+  35670 ?        00:00:00 virtlogd
+  35705 ?        00:00:00 kworker/u24:1-kcryptd/253:0
+  35717 ?        00:00:00 kworker/4:1-rcu_gp
+  35720 ?        00:01:58 qemu-system-x86
+  35732 ?        00:00:00 kvm-nx-lpage-recovery-35720
+  35733 ?        00:00:00 vhost-35720
+  35737 ?        00:00:00 kvm-pit/35720
+  35835 ?        00:00:00 kworker/6:0
+  35836 ?        00:00:00 kworker/10:1
+  36025 ?        00:00:00 kworker/u24:3-kcryptd/253:0
+  36636 pts/2    00:00:00 ps
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion4
+ps -efapos;Kolla: Presentationen klipper några slides&apos; &gt;&gt;TODO.txt
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:01 ?        00:00:01 /sbin/init spla
+root           2       0  0 09:01 ?        00:00:00 [kthreadd]
+root           3       2  0 09:01 ?        00:00:00 [rcu_gp]
+root           4       2  0 09:01 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 09:01 ?        00:00:00 [slub_flushwq]
+root           6       2  0 09:01 ?        00:00:00 [netns]
+root           8       2  0 09:01 ?        00:00:00 [kworker/0:0H-e
+root          10       2  0 09:01 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 09:01 ?        00:00:00 [rcu_tasks_kthr
+root          12       2  0 09:01 ?        00:00:00 [rcu_tasks_rude
+root          13       2  0 09:01 ?        00:00:00 [rcu_tasks_trac
+root          14       2  0 09:01 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 09:01 ?        00:00:07 [rcu_preempt]
+root          16       2  0 09:01 ?        00:00:00 [migration/0]
+root          18       2  0 09:01 ?        00:00:00 [cpuhp/0]
+root          19       2  0 09:01 ?        00:00:00 [cpuhp/1]
+root          20       2  0 09:01 ?        00:00:02 [migration/1]
+root          21       2  0 09:01 ?        00:00:00 [ksoftirqd/1]
+root          23       2  0 09:01 ?        00:00:00 [kworker/1:0H-e
+root          24       2  0 09:01 ?        00:00:00 [cpuhp/2]
+root          25       2  0 09:01 ?        00:00:00 [migration/2]
+root          26       2  0 09:01 ?        00:00:00 [ksoftirqd/2]
+root          28       2  0 09:01 ?        00:00:00 [kworker/2:0H-e
+root          29       2  0 09:01 ?        00:00:00 [cpuhp/3]
+root          30       2  0 09:01 ?        00:00:02 [migration/3]
+root          31       2  0 09:01 ?        00:00:00 [ksoftirqd/3]
+root          33       2  0 09:01 ?        00:00:00 [kworker/3:0H-e
+root          34       2  0 09:01 ?        00:00:00 [cpuhp/4]
+root          35       2  0 09:01 ?        00:00:00 [migration/4]
+root          36       2  0 09:01 ?        00:00:00 [ksoftirqd/4]
+root          38       2  0 09:01 ?        00:00:00 [kworker/4:0H-e
+root          39       2  0 09:01 ?        00:00:00 [cpuhp/5]
+root          40       2  0 09:01 ?        00:00:03 [migration/5]
+root          41       2  0 09:01 ?        00:00:00 [ksoftirqd/5]
+root          43       2  0 09:01 ?        00:00:00 [kworker/5:0H-e
+root          44       2  0 09:01 ?        00:00:00 [cpuhp/6]
+root          45       2  0 09:01 ?        00:00:00 [migration/6]
+root          46       2  0 09:01 ?        00:00:00 [ksoftirqd/6]
+root          48       2  0 09:01 ?        00:00:00 [kworker/6:0H-e
+root          49       2  0 09:01 ?        00:00:00 [cpuhp/7]
+root          50       2  0 09:01 ?        00:00:06 [migration/7]
+root          51       2  0 09:01 ?        00:00:00 [ksoftirqd/7]
+root          53       2  0 09:01 ?        00:00:00 [kworker/7:0H-e
+root          54       2  0 09:01 ?        00:00:00 [cpuhp/8]
+root          55       2  0 09:01 ?        00:00:01 [migration/8]
+root          56       2  0 09:01 ?        00:00:00 [ksoftirqd/8]
+root          58       2  0 09:01 ?        00:00:00 [kworker/8:0H-e
+root          59       2  0 09:01 ?        00:00:00 [cpuhp/9]
+root          60       2  0 09:01 ?        00:00:01 [migration/9]
+root          61       2  0 09:01 ?        00:00:00 [ksoftirqd/9]
+root          63       2  0 09:01 ?        00:00:00 [kworker/9:0H-e
+root          64       2  0 09:01 ?        00:00:00 [cpuhp/10]
+root          65       2  0 09:01 ?        00:00:02 [migration/10]
+root          66       2  0 09:01 ?        00:00:00 [ksoftirqd/10]
+root          68       2  0 09:01 ?        00:00:00 [kworker/10:0H-
+root          69       2  0 09:01 ?        00:00:00 [cpuhp/11]
+root          70       2  0 09:01 ?        00:00:04 [migration/11]
+root          71       2  0 09:01 ?        00:00:00 [ksoftirqd/11]
+root          73       2  0 09:01 ?        00:00:00 [kworker/11:0H-
+root          84       2  0 09:01 ?        00:00:00 [kdevtmpfs]
+root          85       2  0 09:01 ?        00:00:00 [inet_frag_wq]
+root          86       2  0 09:01 ?        00:00:00 [kauditd]
+root          87       2  0 09:01 ?        00:00:00 [khungtaskd]
+root          88       2  0 09:01 ?        00:00:00 [oom_reaper]
+root          89       2  0 09:01 ?        00:00:00 [writeback]
+root          90       2  0 09:01 ?        00:00:00 [kcompactd0]
+root          91       2  0 09:01 ?        00:00:00 [ksmd]
+root          93       2  0 09:01 ?        00:00:00 [khugepaged]
+root          94       2  0 09:01 ?        00:00:00 [kintegrityd]
+root          95       2  0 09:01 ?        00:00:00 [kblockd]
+root          96       2  0 09:01 ?        00:00:00 [blkcg_punt_bio
+root          97       2  0 09:01 ?        00:00:00 [tpm_dev_wq]
+root          98       2  0 09:01 ?        00:00:00 [edac-poller]
+root          99       2  0 09:01 ?        00:00:00 [devfreq_wq]
+root         110       2  0 09:01 ?        00:00:00 [kworker/6:1H-e
+root         111       2  0 09:01 ?        00:00:02 [kswapd0]
+root         117       2  0 09:01 ?        00:00:00 [kthrotld]
+root         119       2  0 09:01 ?        00:00:00 [irq/124-pciehp
+root         120       2  0 09:01 ?        00:00:00 [irq/125-pciehp
+root         121       2  0 09:01 ?        00:00:00 [acpi_thermal_p
+root         122       2  0 09:01 ?        00:00:00 [hwrng]
+root         124       2  0 09:01 ?        00:00:00 [hfi-updates]
+root         125       2  0 09:01 ?        00:00:00 [mld]
+root         126       2  0 09:01 ?        00:00:00 [ipv6_addrconf]
+root         131       2  0 09:01 ?        00:00:00 [kstrp]
+root         136       2  0 09:01 ?        00:00:00 [zswap-shrink]
+root         186       2  0 09:01 ?        00:00:00 [kworker/4:1H-e
+root         197       2  0 09:01 ?        00:00:00 [kworker/0:1H-e
+root         198       2  0 09:01 ?        00:00:01 [kworker/7:1H-e
+root         199       2  0 09:01 ?        00:00:00 [kworker/9:1H-e
+root         200       2  0 09:01 ?        00:00:00 [kworker/1:1H-k
+root         201       2  0 09:01 ?        00:00:00 [kworker/3:1H-e
+root         203       2  0 09:01 ?        00:00:00 [kworker/8:1H-e
+root         204       2  0 09:01 ?        00:00:00 [kworker/10:1H-
+root         205       2  0 09:01 ?        00:00:00 [kworker/11:1H-
+root         206       2  0 09:01 ?        00:00:00 [kworker/2:1H-e
+root         237       2  0 09:01 ?        00:00:00 [kworker/5:1H-k
+root         239       2  0 09:01 ?        00:00:00 [cryptd]
+root         323       2  0 09:01 ?        00:00:00 [nvme-wq]
+root         324       2  0 09:01 ?        00:00:00 [nvme-reset-wq]
+root         325       2  0 09:01 ?        00:00:00 [nvme-delete-wq
+root         328       2  0 09:01 ?        00:00:00 [irq/161-ELAN05
+root         334       2  0 09:01 ?        00:00:00 [card0-crtc0]
+root         335       2  0 09:01 ?        00:00:00 [card0-crtc1]
+root         336       2  0 09:01 ?        00:00:00 [card0-crtc2]
+root         337       2  0 09:01 ?        00:00:00 [card0-crtc3]
+root         347       2  0 09:01 ?        00:00:00 [md]
+root         358       2  0 09:01 ?        00:00:00 [raid5wq]
+root         615       2  0 09:02 ?        00:00:00 [kdmflush/253:0
+root         617       2  0 09:02 ?        00:00:00 [kcryptd_io/253
+root         618       2  0 09:02 ?        00:00:00 [kcryptd/253:0]
+root         619       2  0 09:02 ?        00:00:00 [dmcrypt_write/
+root         963       2  0 09:02 ?        00:00:00 [jbd2/dm-0-8]
+root         964       2  0 09:02 ?        00:00:00 [ext4-rsv-conve
+root        1028       1  0 09:02 ?        00:00:00 /lib/systemd/sy
+root        1042       1  0 09:02 ?        00:00:00 /lib/systemd/sy
+root        1045       2  0 09:02 ?        00:00:00 [rpciod]
+root        1046       2  0 09:02 ?        00:00:00 [xprtiod]
+root        1187       2  0 09:02 ?        00:00:00 [watchdogd]
+root        1195       2  0 09:02 ?        00:00:00 [irq/175-mei_me
+root        1236       2  0 09:02 ?        00:00:00 [cfg80211]
+root        1254       2  0 09:02 ?        00:00:07 [irq/177-iwlwif
+root        1255       2  0 09:02 ?        00:00:01 [irq/178-iwlwif
+root        1256       2  0 09:02 ?        00:00:01 [irq/179-iwlwif
+root        1257       2  0 09:02 ?        00:00:02 [irq/180-iwlwif
+root        1258       2  0 09:02 ?        00:00:01 [irq/181-iwlwif
+root        1259       2  0 09:02 ?        00:00:01 [irq/182-iwlwif
+root        1260       2  0 09:02 ?        00:00:01 [irq/183-iwlwif
+root        1261       2  0 09:02 ?        00:00:02 [irq/184-iwlwif
+root        1262       2  0 09:02 ?        00:00:02 [irq/185-iwlwif
+root        1263       2  0 09:02 ?        00:00:01 [irq/186-iwlwif
+root        1265       2  0 09:02 ?        00:00:01 [irq/187-iwlwif
+root        1266       2  0 09:02 ?        00:00:01 [irq/188-iwlwif
+root        1281       2  0 09:02 ?        00:00:02 [irq/189-iwlwif
+root        1282       2  0 09:02 ?        00:00:00 [irq/190-iwlwif
+root        1327       2  0 09:02 ?        00:00:00 [irq/191-AudioD
+root        1407       2  0 09:02 ?        00:00:00 [jbd2/nvme0n1p5
+root        1408       2  0 09:02 ?        00:00:00 [ext4-rsv-conve
+root        1544       2  0 09:02 ?        00:00:00 [kdmflush/253:1
+root        1545       2  0 09:02 ?        00:00:00 [kcryptd_io/253
+root        1546       2  0 09:02 ?        00:00:00 [kcryptd/253:1]
+root        1547       2  0 09:02 ?        00:00:00 [dmcrypt_write/
+root        1555       2  0 09:02 ?        00:00:00 [jbd2/dm-1-8]
+root        1556       2  0 09:02 ?        00:00:00 [ext4-rsv-conve
+_rpc        1595       1  0 09:02 ?        00:00:00 /sbin/rpcbind -
+systemd+    1596       1  0 09:02 ?        00:00:00 /lib/systemd/sy
+root        1601       1  0 09:02 ?        00:00:00 /usr/sbin/blkma
+root        1602       1  0 09:02 ?        00:00:00 /usr/sbin/rpc.i
+root        1603       1  0 09:02 ?        00:00:00 /usr/sbin/nfsdc
+root        1608       1  0 09:02 ?        00:00:00 /usr/libexec/ac
+avahi       1613       1  1 09:02 ?        00:01:52 avahi-daemon: r
+root        1616       1  0 09:02 ?        00:00:00 /usr/libexec/bl
+root        1618       1  0 09:02 ?        00:00:00 /usr/sbin/cron 
+message+    1620       1  0 09:02 ?        00:00:03 /usr/bin/dbus-d
+root        1624       1  0 09:02 ?        00:00:00 /usr/libexec/lo
+polkitd     1627       1  0 09:02 ?        00:00:00 /usr/lib/polkit
+root        1628       1  0 09:02 ?        00:00:00 /usr/libexec/po
+root        1631       1  0 09:02 ?        00:00:00 /usr/sbin/smart
+root        1632       1  0 09:02 ?        00:00:00 /usr/libexec/sw
+root        1637       1  0 09:02 ?        00:00:00 /lib/systemd/sy
+root        1640       1  0 09:02 ?        00:00:00 /lib/systemd/sy
+root        1645       1  0 09:02 ?        00:00:00 /usr/libexec/ud
+avahi       1649    1613  0 09:02 ?        00:00:00 avahi-daemon: c
+root        1683       1  0 09:02 ?        00:00:07 /usr/sbin/Netwo
+root        1687       2  0 09:02 ?        00:00:00 [psimon]
+root        1688       1  0 09:02 ?        00:00:01 /sbin/wpa_suppl
+root        1718       1  0 09:02 ?        00:00:00 /usr/sbin/Modem
+root        1722       1  0 09:02 ?        00:00:00 /usr/libexec/bo
+root        1747       1  0 09:02 ?        00:00:00 /usr/sbin/cupsd
+root        1760       1  0 09:02 ?        00:00:08 /usr/sbin/tails
+root        1762       1  0 09:02 ?        00:00:13 /usr/bin/contai
+root        1780       1  0 09:02 ?        00:00:00 sshd: /usr/sbin
+root        1820       1  0 09:02 ?        00:00:00 /usr/sbin/gdm3
+root        2107       2  0 09:03 ?        00:00:00 [iprt-VBoxWQueu
+root        2108       2  0 09:03 ?        00:00:00 [iprt-VBoxTscTh
+rtkit       2133       1  0 09:03 ?        00:00:00 /usr/libexec/rt
+nobody      2407       1  0 09:03 ?        00:00:00 /usr/sbin/dnsma
+root        2408    2407  0 09:03 ?        00:00:00 /usr/sbin/dnsma
+root        2410       2  0 09:03 ?        00:00:00 [krfcommd]
+root        2432       1  0 09:03 ?        00:00:00 /usr/libexec/up
+colord      2513       1  0 09:03 ?        00:00:00 /usr/libexec/co
+root        2901       1  0 09:03 ?        00:00:00 /usr/sbin/cups-
+root        2903       1  0 09:03 ?        00:00:02 /usr/bin/docker
+statd       2924       1  0 09:03 ?        00:00:00 /sbin/rpc.statd
+root        2926       1  0 09:03 ?        00:00:00 /usr/sbin/rpc.m
+root        2954       2  0 09:03 ?        00:00:00 [lockd]
+debian-+    3012       1  0 09:03 ?        00:00:00 /usr/bin/tor --
+root        3228       2  0 09:03 ?        00:00:00 [nfsd]
+root        3229       2  0 09:03 ?        00:00:00 [nfsd]
+root        3230       2  0 09:03 ?        00:00:00 [nfsd]
+root        3231       2  0 09:03 ?        00:00:00 [nfsd]
+root        3232       2  0 09:03 ?        00:00:00 [nfsd]
+root        3233       2  0 09:03 ?        00:00:00 [nfsd]
+root        3234       2  0 09:03 ?        00:00:00 [nfsd]
+root        3235       2  0 09:03 ?        00:00:00 [nfsd]
+Debian-+    3422       1  0 09:03 ?        00:00:00 /usr/sbin/exim4
+root        3570       1  0 09:03 ?        00:00:00 /usr/bin/contai
+999         3593    3570  0 09:03 ?        00:00:01 mariadbd
+root        3647    2903  0 09:03 ?        00:00:00 /usr/bin/docker
+root        3653    2903  0 09:03 ?        00:00:00 /usr/bin/docker
+root        3806    1820  0 09:05 ?        00:00:00 gdm-session-wor
+kent        3821       1  0 09:05 ?        00:00:00 /lib/systemd/sy
+kent        3823    3821  0 09:05 ?        00:00:00 (sd-pam)
+kent        3851    3821  3 09:05 ?        00:03:47 /home/kent/.dro
+kent        3852    3821  0 09:05 ?        00:00:03 /usr/bin/pipewi
+kent        3854    3821  0 09:05 ?        00:00:08 /usr/bin/wirepl
+kent        3857    3821  0 09:05 ?        00:00:07 /usr/bin/pipewi
+kent        3863    3821  0 09:05 ?        00:00:00 /usr/bin/gnome-
+kent        3865    3821  0 09:05 ?        00:00:01 /usr/bin/dbus-d
+kent        3870    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3876    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3928    3821  0 09:05 ?        00:00:00 /usr/libexec/tr
+kent        3939    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3943    3806  0 09:05 tty2     00:00:00 /usr/libexec/gd
+kent        3950    3943  0 09:05 tty2     00:00:00 /usr/libexec/gn
+kent        3959    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3967    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3977    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        3984    3821  0 09:05 ?        00:00:00 /usr/libexec/go
+kent        4019    3821  0 09:05 ?        00:00:00 /usr/libexec/gc
+kent        4023    3821  0 09:05 ?        00:00:00 /usr/libexec/go
+kent        4031    3821  0 09:05 ?        00:00:00 /usr/libexec/gn
+kent        4033    3821  0 09:05 ?        00:00:00 ssh-agent -D -a
+kent        4040    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        4050    3821  0 09:05 ?        00:00:00 /usr/libexec/gn
+kent        4075    4050  0 09:05 ?        00:00:00 /usr/libexec/at
+kent        4076    3821  6 09:05 ?        00:07:38 /usr/bin/gnome-
+kent        4083    4075  0 09:05 ?        00:00:02 /usr/bin/dbus-d
+kent        4096    3821  0 09:05 ?        00:00:00 /usr/libexec/xd
+kent        4255    3821  0 09:05 ?        00:00:00 /usr/libexec/gn
+kent        4262    3821  0 09:05 ?        00:00:00 /usr/libexec/ev
+geoclue     4272       1  0 09:05 ?        00:00:03 /usr/libexec/ge
+kent        4274    3821  0 09:05 ?        00:00:00 /usr/libexec/dc
+kent        4297    3821  0 09:05 ?        00:00:00 /usr/libexec/gv
+kent        4300    3821  0 09:05 ?        00:00:00 /usr/libexec/ev
+kent        4317    3821  0 09:05 ?        00:00:00 /usr/libexec/ev
+kent        4321    3821  0 09:05 ?        00:00:00 /usr/bin/gjs /u
+kent        4323    3821  0 09:05 ?        00:00:00 /usr/libexec/at
+kent        4344    3821  0 09:05 ?        00:00:00 sh -c /usr/bin/
+kent        4346    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4348    4344  0 09:05 ?        00:00:02 /usr/bin/ibus-d
+kent        4349    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4350    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4354    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4357    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4358    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4361    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4363    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4368    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4369    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4371    3821  0 09:05 ?        00:00:01 /usr/libexec/gs
+kent        4374    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4376    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4382    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4386    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4402    4050  0 09:05 ?        00:00:00 /usr/libexec/ev
+kent        4412    4050  0 09:05 ?        00:00:00 /usr/bin/python
+kent        4434    4050  0 09:05 ?        00:00:10 /usr/bin/gnome-
+kent        4436    4050  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4441    4348  0 09:05 ?        00:00:00 /usr/libexec/ib
+kent        4442    4348  0 09:05 ?        00:00:01 /usr/libexec/ib
+kent        4469    3821  0 09:05 ?        00:00:00 /usr/libexec/ib
+kent        4488    3821  0 09:05 ?        00:00:00 /usr/bin/gjs /u
+kent        4497    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        4580    4348  0 09:05 ?        00:00:00 /usr/libexec/ib
+kent        4609    3821  0 09:05 ?        00:00:00 /usr/libexec/xd
+kent        4620    3821  0 09:05 ?        00:00:00 /usr/libexec/xd
+root        4627    4620  0 09:05 ?        00:00:00 fusermount3 -o 
+kent        4636    3821  0 09:05 ?        00:00:01 /usr/libexec/xd
+kent        4713    3821  0 09:05 ?        00:00:00 /usr/libexec/xd
+kent        4736    3821  0 09:05 ?        00:00:00 /usr/lib/x86_64
+uuidd       4754       1  0 09:05 ?        00:00:00 /usr/sbin/uuidd
+root        4804       1  0 09:05 ?        00:00:01 /usr/libexec/fw
+kent        4818    3821  0 09:05 ?        00:00:00 /usr/libexec/bl
+kent        4820    3821  0 09:05 ?        00:00:09 /usr/bin/python
+kent        5062    4076  0 09:05 ?        00:00:00 /usr/bin/Xwayla
+kent        5115    3821  0 09:05 ?        00:00:00 /usr/libexec/gs
+kent        5178    3821  0 09:05 ?        00:00:00 /usr/libexec/ib
+kent        6454    3870  0 09:07 ?        00:00:00 /usr/libexec/gv
+kent        6474    3870  0 09:07 ?        00:00:00 /usr/libexec/gv
+kent        6493    3870  0 09:07 ?        00:00:00 /usr/libexec/gv
+kent        6529    3821  0 09:07 ?        00:00:00 /usr/bin/gnome-
+kent        6709    4076  3 09:07 ?        00:03:46 okular
+root        6792       2  0 09:08 ?        00:00:00 [kworker/8:0-ev
+root        6938       2  0 09:15 ?        00:00:00 [kworker/11:0-m
+root        7135       2  0 09:46 ?        00:00:00 [kworker/11:2-m
+root        7140       2  0 09:47 ?        00:00:04 [kworker/7:2-ev
+root        7148       2  0 09:51 ?        00:00:00 [kworker/1:2-ev
+kent        8366    3821  0 09:55 ?        00:00:16 /usr/share/code
+kent        8392    8366  0 09:55 ?        00:00:00 /usr/share/code
+kent        8393    8366  0 09:55 ?        00:00:00 /usr/share/code
+kent        8395    8393  0 09:55 ?        00:00:00 /usr/share/code
+kent        8420    3821  0 09:55 ?        00:00:00 /usr/share/code
+kent        8444    8392  0 09:55 ?        00:00:18 /usr/share/code
+kent        8454    8366  0 09:55 ?        00:00:01 /proc/self/exe 
+kent        8492    8395  0 09:55 ?        00:00:34 /usr/share/code
+kent        8513    8366  0 09:55 ?        00:00:03 /proc/self/exe 
+kent        8514    8366  0 09:55 ?        00:00:03 /proc/self/exe 
+kent        8543    8366  1 09:55 ?        00:00:51 /proc/self/exe 
+kent        8581    8366  0 09:55 ?        00:00:16 /proc/self/exe 
+kent        9020    8543  0 09:55 ?        00:00:00 /home/kent/.vsc
+kent        9230    8543  0 09:55 ?        00:00:00 /usr/share/code
+kent        9255    3863  0 09:55 ?        00:00:00 /usr/bin/ssh-ag
+kent       10062    8581  0 09:55 pts/1    00:00:00 /usr/bin/bash -
+kent       10563   10062  0 09:56 pts/1    00:00:00 script -q --ret
+kent       10564   10563  0 09:56 pts/2    00:00:00 /bin/bash /shar
+kent       10565   10564  0 09:56 pts/2    00:00:00 bash --noprofil
+root       12172       2  0 10:00 ?        00:00:00 [kworker/3:2-mm
+root       14085       2  0 10:07 ?        00:00:00 [kworker/4:2-pm
+root       17185       2  0 10:17 ?        00:00:12 [kworker/u25:3-
+root       17268       2  0 10:17 ?        00:00:02 [kworker/u24:5-
+root       17275       2  0 10:17 ?        00:00:01 [kworker/0:0-ev
+kent       17526    4076  1 10:18 ?        00:00:50 /opt/google/chr
+kent       17532   17526  0 10:18 ?        00:00:00 cat
+kent       17533   17526  0 10:18 ?        00:00:00 cat
+kent       17535    3821  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17537    3821  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17543   17526  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17544   17526  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17546   17544  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17592   17543  1 10:18 ?        00:00:32 /opt/google/chr
+kent       17593   17526  0 10:18 ?        00:00:05 /opt/google/chr
+kent       17608   17546  0 10:18 ?        00:00:00 /opt/google/chr
+kent       17709   17546  0 10:18 ?        00:00:04 /opt/google/chr
+root       18045       2  0 10:18 ?        00:00:03 [kworker/u24:12
+root       18742       2  0 10:19 ?        00:00:02 [kworker/u24:14
+root       18828       2  0 10:19 ?        00:00:00 [kworker/3:1-mm
+root       18936       2  0 10:19 ?        00:00:00 [kworker/1:0-cg
+root       19867       2  0 10:21 ?        00:00:00 [kworker/9:1-ev
+root       20068       2  0 10:22 ?        00:00:00 [kworker/6:2-cg
+root       21071       2  0 10:25 ?        00:00:00 [kworker/2:1-ev
+root       21741       2  0 10:27 ?        00:00:10 [kworker/u25:4-
+root       23677       2  0 10:33 ?        00:00:01 [kworker/u24:0-
+kent       23971   17546  1 10:34 ?        00:00:25 /opt/google/chr
+kent       24044   17546  2 10:34 ?        00:00:59 /opt/google/chr
+root       24431       2  0 10:35 ?        00:00:00 [kworker/10:2-m
+kent       24442   17546  0 10:35 ?        00:00:00 /opt/google/chr
+root       24478       2  0 10:35 ?        00:00:00 [kworker/2:0-ev
+root       24501       2  0 10:35 ?        00:00:01 [kworker/u24:2-
+root       25483       2  0 10:39 ?        00:00:01 [kworker/u24:6-
+root       27637       2  0 10:45 ?        00:00:00 [kworker/4:0-ev
+root       28248       2  0 10:47 ?        00:00:03 [kworker/u25:1+
+root       30132       2  0 10:52 ?        00:00:00 [kworker/6:1-ev
+root       30199       2  0 10:52 ?        00:00:00 [kworker/5:0-ev
+root       30446       2  0 10:52 ?        00:00:00 [kworker/7:0]
+root       30467       2  0 10:52 ?        00:00:00 [kworker/9:2]
+kent       31753    3821  2 10:55 ?        00:00:22 /usr/bin/python
+kent       31767    3821  0 10:55 ?        00:00:01 /usr/sbin/libvi
+root       32076       1  0 10:55 ?        00:00:02 /usr/sbin/libvi
+root       32129       2  0 10:55 ?        00:00:00 [kworker/0:2-ev
+root       32307       2  0 10:55 ?        00:00:00 [kworker/8:2]
+root       32367       2  0 10:56 ?        00:00:01 [kworker/u24:10
+root       32962       2  0 10:58 ?        00:00:00 [kworker/5:2]
+root       33637       2  0 11:00 ?        00:00:01 [kworker/u25:0-
+root       34126       2  0 11:01 ?        00:00:00 [kworker/10:0-e
+root       35232       2  0 11:05 ?        00:00:00 [kworker/9:0-ev
+root       35564       2  0 11:06 ?        00:00:00 [kworker/u25:2-
+root       35670       1  0 11:07 ?        00:00:00 /usr/sbin/virtl
+root       35705       2  0 11:07 ?        00:00:00 [kworker/u24:1-
+root       35717       2  0 11:07 ?        00:00:00 [kworker/4:1-rc
+libvirt+   35720       1 70 11:07 ?        00:01:58 /usr/bin/qemu-s
+root       35732       2  0 11:07 ?        00:00:00 [kvm-nx-lpage-r
+root       35733       2  0 11:07 ?        00:00:00 [vhost-35720]
+root       35737       2  0 11:07 ?        00:00:00 [kvm-pit/35720]
+root       35835       2  0 11:07 ?        00:00:00 [kworker/6:0]
+root       35836       2  0 11:07 ?        00:00:00 [kworker/10:1]
+root       36025       2  0 11:07 ?        00:00:00 [kworker/u24:3-
+kent       36820    8581  0 11:09 ?        00:00:00 /bin/sh -c &quot;/us
+kent       36821   36820  0 11:09 ?        00:00:00 /bin/bash /usr/
+kent       36827   36821  0 11:09 ?        00:00:00 sleep 1
+kent       36838   10565 99 11:09 pts/2    00:00:00 ps -ef
+<span style="color:#5c5cff;">ITINF25/lektion4
+$ span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:01 ?        00:00:01 /sbin/init splash
+root           2       0  0 09:01 ?        00:00:00 [kthreadd]
+root           3       2  0 09:01 ?        00:00:00 [rcu_gp]
+root           4       2  0 09:01 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 09:01 ?        00:00:00 [slub_flushwq]
+root           6       2  0 09:01 ?        00:00:00 [netns]
+root           8       2  0 09:01 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 09:01 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 09:01 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 09:01 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 09:01 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 09:01 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 09:01 ?        00:00:07 [rcu_preempt]
+root          16       2  0 09:01 ?        00:00:00 [migration/0]
+root          18       2  0 09:01 ?        00:00:00 [cpuhp/0]
+root          19       2  0 09:01 ?        00:00:00 [cpuhp/1]
+root          20       2  0 09:01 ?        00:00:02 [migration/1]
+root          21       2  0 09:01 ?        00:00:00 [ksoftirqd/1]
+root          23       2  0 09:01 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          24       2  0 09:01 ?        00:00:00 [cpuhp/2]
+root          25       2  0 09:01 ?        00:00:00 [migration/2]
+root          26       2  0 09:01 ?        00:00:00 [ksoftirqd/2]
+root          28       2  0 09:01 ?        00:00:00 [kworker/2:0H-events_highpri]
+root          29       2  0 09:01 ?        00:00:00 [cpuhp/3]
+root          30       2  0 09:01 ?        00:00:02 [migration/3]
+root          31       2  0 09:01 ?        00:00:00 [ksoftirqd/3]
+root          33       2  0 09:01 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          34       2  0 09:01 ?        00:00:00 [cpuhp/4]
+root          35       2  0 09:01 ?        00:00:00 [migration/4]
+root          36       2  0 09:01 ?        00:00:00 [ksoftirqd/4]
+root          38       2  0 09:01 ?        00:00:00 [kworker/4:0H-events_highpri]
+root          39       2  0 09:01 ?        00:00:00 [cpuhp/5]
+root          40       2  0 09:01 ?        00:00:03 [migration/5]
+root          41       2  0 09:01 ?        00:00:00 [ksoftirqd/5]
+root          43       2  0 09:01 ?        00:00:00 [kworker/5:0H-events_highpri]
+root          44       2  0 09:01 ?        00:00:00 [cpuhp/6]
+root          45       2  0 09:01 ?        00:00:00 [migration/6]
+root          46       2  0 09:01 ?        00:00:00 [ksoftirqd/6]
+root          48       2  0 09:01 ?        00:00:00 [kworker/6:0H-events_highpri]
+root          49       2  0 09:01 ?        00:00:00 [cpuhp/7]
+root          50       2  0 09:01 ?        00:00:06 [migration/7]
+root          51       2  0 09:01 ?        00:00:00 [ksoftirqd/7]
+root          53       2  0 09:01 ?        00:00:00 [kworker/7:0H-events_highpri]
+root          54       2  0 09:01 ?        00:00:00 [cpuhp/8]
+root          55       2  0 09:01 ?        00:00:01 [migration/8]
+root          56       2  0 09:01 ?        00:00:00 [ksoftirqd/8]
+root          58       2  0 09:01 ?        00:00:00 [kworker/8:0H-events_highpri]
+root          59       2  0 09:01 ?        00:00:00 [cpuhp/9]
+root          60       2  0 09:01 ?        00:00:01 [migration/9]
+root          61       2  0 09:01 ?        00:00:00 [ksoftirqd/9]
+root          63       2  0 09:01 ?        00:00:00 [kworker/9:0H-events_highpri]
+root          64       2  0 09:01 ?        00:00:00 [cpuhp/10]
+root          65       2  0 09:01 ?        00:00:02 [migration/10]
+root          66       2  0 09:01 ?        00:00:00 [ksoftirqd/10]
+root          68       2  0 09:01 ?        00:00:00 [kworker/10:0H-events_highpri]
+root          69       2  0 09:01 ?        00:00:00 [cpuhp/11]
+root          70       2  0 09:01 ?        00:00:04 [migration/11]
+root          71       2  0 09:01 ?        00:00:00 [ksoftirqd/11]
+root          73       2  0 09:01 ?        00:00:00 [kworker/11:0H-events_highpri]
+root          84       2  0 09:01 ?        00:00:00 [kdevtmpfs]
+root          85       2  0 09:01 ?        00:00:00 [inet_frag_wq]
+root          86       2  0 09:01 ?        00:00:00 [kauditd]
+root          87       2  0 09:01 ?        00:00:00 [khungtaskd]
+root          88       2  0 09:01 ?        00:00:00 [oom_reaper]
+root          89       2  0 09:01 ?        00:00:00 [writeback]
+root          90       2  0 09:01 ?        00:00:00 [kcompactd0]
+root          91       2  0 09:01 ?        00:00:00 [ksmd]
+root          93       2  0 09:01 ?        00:00:00 [khugepaged]
+root          94       2  0 09:01 ?        00:00:00 [kintegrityd]
+root          95       2  0 09:01 ?        00:00:00 [kblockd]
+root          96       2  0 09:01 ?        00:00:00 [blkcg_punt_bio]
+root          97       2  0 09:01 ?        00:00:00 [tpm_dev_wq]
+root          98       2  0 09:01 ?        00:00:00 [edac-poller]
+root          99       2  0 09:01 ?        00:00:00 [devfreq_wq]
+root         110       2  0 09:01 ?        00:00:00 [kworker/6:1H-events_highpri]
+root         111       2  0 09:01 ?        00:00:02 [kswapd0]
+root         117       2  0 09:01 ?        00:00:00 [kthrotld]
+root         119       2  0 09:01 ?        00:00:00 [irq/124-pciehp]
+root         120       2  0 09:01 ?        00:00:00 [irq/125-pciehp]
+root         121       2  0 09:01 ?        00:00:00 [acpi_thermal_pm]
+root         122       2  0 09:01 ?        00:00:00 [hwrng]
+root         124       2  0 09:01 ?        00:00:00 [hfi-updates]
+root         125       2  0 09:01 ?        00:00:00 [mld]
+root         126       2  0 09:01 ?        00:00:00 [ipv6_addrconf]
+root         131       2  0 09:01 ?        00:00:00 [kstrp]
+root         136       2  0 09:01 ?        00:00:00 [zswap-shrink]
+root         186       2  0 09:01 ?        00:00:00 [kworker/4:1H-events_highpri]
+root         197       2  0 09:01 ?        00:00:00 [kworker/0:1H-kblockd]
+root         198       2  0 09:01 ?        00:00:01 [kworker/7:1H-events_highpri]
+root         199       2  0 09:01 ?        00:00:00 [kworker/9:1H-events_highpri]
+root         200       2  0 09:01 ?        00:00:00 [kworker/1:1H-events_highpri]
+root         201       2  0 09:01 ?        00:00:00 [kworker/3:1H-kblockd]
+root         203       2  0 09:01 ?        00:00:00 [kworker/8:1H-events_highpri]
+root         204       2  0 09:01 ?        00:00:00 [kworker/10:1H-kblockd]
+root         205       2  0 09:01 ?        00:00:00 [kworker/11:1H-events_highpri]
+root         206       2  0 09:01 ?        00:00:00 [kworker/2:1H-events_highpri]
+root         237       2  0 09:01 ?        00:00:00 [kworker/5:1H-events_highpri]
+root         239       2  0 09:01 ?        00:00:00 [cryptd]
+root         323       2  0 09:01 ?        00:00:00 [nvme-wq]
+root         324       2  0 09:01 ?        00:00:00 [nvme-reset-wq]
+root         325       2  0 09:01 ?        00:00:00 [nvme-delete-wq]
+root         328       2  0 09:01 ?        00:00:00 [irq/161-ELAN050B:00]
+root         334       2  0 09:01 ?        00:00:00 [card0-crtc0]
+root         335       2  0 09:01 ?        00:00:00 [card0-crtc1]
+root         336       2  0 09:01 ?        00:00:00 [card0-crtc2]
+root         337       2  0 09:01 ?        00:00:00 [card0-crtc3]
+root         347       2  0 09:01 ?        00:00:00 [md]
+root         358       2  0 09:01 ?        00:00:00 [raid5wq]
+root         615       2  0 09:02 ?        00:00:00 [kdmflush/253:0]
+root         617       2  0 09:02 ?        00:00:00 [kcryptd_io/253:]
+root         618       2  0 09:02 ?        00:00:00 [kcryptd/253:0]
+root         619       2  0 09:02 ?        00:00:00 [dmcrypt_write/253:0]
+root         963       2  0 09:02 ?        00:00:00 [jbd2/dm-0-8]
+root         964       2  0 09:02 ?        00:00:00 [ext4-rsv-conver]
+root        1028       1  0 09:02 ?        00:00:00 /lib/systemd/systemd-journald
+root        1042       1  0 09:02 ?        00:00:00 /lib/systemd/systemd-udevd
+root        1045       2  0 09:02 ?        00:00:00 [rpciod]
+root        1046       2  0 09:02 ?        00:00:00 [xprtiod]
+root        1187       2  0 09:02 ?        00:00:00 [watchdogd]
+root        1195       2  0 09:02 ?        00:00:00 [irq/175-mei_me]
+root        1236       2  0 09:02 ?        00:00:00 [cfg80211]
+root        1254       2  0 09:02 ?        00:00:07 [irq/177-iwlwifi:default_queue]
+root        1255       2  0 09:02 ?        00:00:01 [irq/178-iwlwifi:queue_1]
+root        1256       2  0 09:02 ?        00:00:01 [irq/179-iwlwifi:queue_2]
+root        1257       2  0 09:02 ?        00:00:02 [irq/180-iwlwifi:queue_3]
+root        1258       2  0 09:02 ?        00:00:01 [irq/181-iwlwifi:queue_4]
+root        1259       2  0 09:02 ?        00:00:01 [irq/182-iwlwifi:queue_5]
+root        1260       2  0 09:02 ?        00:00:01 [irq/183-iwlwifi:queue_6]
+root        1261       2  0 09:02 ?        00:00:02 [irq/184-iwlwifi:queue_7]
+root        1262       2  0 09:02 ?        00:00:02 [irq/185-iwlwifi:queue_8]
+root        1263       2  0 09:02 ?        00:00:01 [irq/186-iwlwifi:queue_9]
+root        1265       2  0 09:02 ?        00:00:01 [irq/187-iwlwifi:queue_10]
+root        1266       2  0 09:02 ?        00:00:01 [irq/188-iwlwifi:queue_11]
+root        1281       2  0 09:02 ?        00:00:02 [irq/189-iwlwifi:queue_12]
+root        1282       2  0 09:02 ?        00:00:00 [irq/190-iwlwifi:exception]
+root        1327       2  0 09:02 ?        00:00:00 [irq/191-AudioDSP]
+root        1407       2  0 09:02 ?        00:00:00 [jbd2/nvme0n1p5-8]
+root        1408       2  0 09:02 ?        00:00:00 [ext4-rsv-conver]
+root        1544       2  0 09:02 ?        00:00:00 [kdmflush/253:1]
+root        1545       2  0 09:02 ?        00:00:00 [kcryptd_io/253:]
+root        1546       2  0 09:02 ?        00:00:00 [kcryptd/253:1]
+root        1547       2  0 09:02 ?        00:00:00 [dmcrypt_write/253:1]
+root        1555       2  0 09:02 ?        00:00:00 [jbd2/dm-1-8]
+root        1556       2  0 09:02 ?        00:00:00 [ext4-rsv-conver]
+_rpc        1595       1  0 09:02 ?        00:00:00 /sbin/rpcbind -f -w
+systemd+    1596       1  0 09:02 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root        1601       1  0 09:02 ?        00:00:00 /usr/sbin/blkmapd
+root        1602       1  0 09:02 ?        00:00:00 /usr/sbin/rpc.idmapd
+root        1603       1  0 09:02 ?        00:00:00 /usr/sbin/nfsdcld
+root        1608       1  0 09:02 ?        00:00:00 /usr/libexec/accounts-daemon
+avahi       1613       1  1 09:02 ?        00:01:52 avahi-daemon: running [klad.loca
+root        1616       1  0 09:02 ?        00:00:00 /usr/libexec/bluetooth/bluetooth
+root        1618       1  0 09:02 ?        00:00:00 /usr/sbin/cron -f
+message+    1620       1  0 09:02 ?        00:00:03 /usr/bin/dbus-daemon --system --
+root        1624       1  0 09:02 ?        00:00:00 /usr/libexec/low-memory-monitor
+polkitd     1627       1  0 09:02 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-d
+root        1628       1  0 09:02 ?        00:00:00 /usr/libexec/power-profiles-daem
+root        1631       1  0 09:02 ?        00:00:00 /usr/sbin/smartd -n
+root        1632       1  0 09:02 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1637       1  0 09:02 ?        00:00:00 /lib/systemd/systemd-logind
+root        1640       1  0 09:02 ?        00:00:00 /lib/systemd/systemd-machined
+root        1645       1  0 09:02 ?        00:00:00 /usr/libexec/udisks2/udisksd
+avahi       1649    1613  0 09:02 ?        00:00:00 avahi-daemon: chroot helper
+root        1683       1  0 09:02 ?        00:00:07 /usr/sbin/NetworkManager --no-da
+root        1687       2  0 09:02 ?        00:00:00 [psimon]
+root        1688       1  0 09:02 ?        00:00:01 /sbin/wpa_supplicant -u -s -O DI
+root        1718       1  0 09:02 ?        00:00:00 /usr/sbin/ModemManager
+root        1722       1  0 09:02 ?        00:00:00 /usr/libexec/boltd
+root        1747       1  0 09:02 ?        00:00:00 /usr/sbin/cupsd -l
+root        1760       1  0 09:02 ?        00:00:08 /usr/sbin/tailscaled --state=/va
+root        1762       1  0 09:02 ?        00:00:13 /usr/bin/containerd
+root        1780       1  0 09:02 ?        00:00:00 sshd: /usr/sbin/sshd -D [listene
+root        1820       1  0 09:02 ?        00:00:00 /usr/sbin/gdm3
+root        2107       2  0 09:03 ?        00:00:00 [iprt-VBoxWQueue]
+root        2108       2  0 09:03 ?        00:00:00 [iprt-VBoxTscThread]
+rtkit       2133       1  0 09:03 ?        00:00:00 /usr/libexec/rtkit-daemon
+nobody      2407       1  0 09:03 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/v
+root        2408    2407  0 09:03 ?        00:00:00 /usr/sbin/dnsmasq --conf-file=/v
+root        2410       2  0 09:03 ?        00:00:00 [krfcommd]
+root        2432       1  0 09:03 ?        00:00:00 /usr/libexec/upowerd
+colord      2513       1  0 09:03 ?        00:00:00 /usr/libexec/colord
+root        2901       1  0 09:03 ?        00:00:00 /usr/sbin/cups-browsed
+root        2903       1  0 09:03 ?        00:00:02 /usr/bin/dockerd -H fd:// --cont
+statd       2924       1  0 09:03 ?        00:00:00 /sbin/rpc.statd
+root        2926       1  0 09:03 ?        00:00:00 /usr/sbin/rpc.mountd
+root        2954       2  0 09:03 ?        00:00:00 [lockd]
+debian-+    3012       1  0 09:03 ?        00:00:00 /usr/bin/tor --defaults-torrc /u
+root        3228       2  0 09:03 ?        00:00:00 [nfsd]
+root        3229       2  0 09:03 ?        00:00:00 [nfsd]
+root        3230       2  0 09:03 ?        00:00:00 [nfsd]
+root        3231       2  0 09:03 ?        00:00:00 [nfsd]
+root        3232       2  0 09:03 ?        00:00:00 [nfsd]
+root        3233       2  0 09:03 ?        00:00:00 [nfsd]
+root        3234       2  0 09:03 ?        00:00:00 [nfsd]
+root        3235       2  0 09:03 ?        00:00:00 [nfsd]
+Debian-+    3422       1  0 09:03 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root        3570       1  0 09:03 ?        00:00:00 /usr/bin/containerd-shim-runc-v2
+999         3593    3570  0 09:03 ?        00:00:01 mariadbd
+root        3647    2903  0 09:03 ?        00:00:00 /usr/bin/docker-proxy -proto tcp
+root        3653    2903  0 09:03 ?        00:00:00 /usr/bin/docker-proxy -proto tcp
+root        3806    1820  0 09:05 ?        00:00:00 gdm-session-worker [pam/gdm-pass
+kent        3821       1  0 09:05 ?        00:00:00 /lib/systemd/systemd --user
+kent        3823    3821  0 09:05 ?        00:00:00 (sd-pam)
+kent        3851    3821  3 09:05 ?        00:03:47 /home/kent/.dropbox-dist/dropbox
+kent        3852    3821  0 09:05 ?        00:00:03 /usr/bin/pipewire
+kent        3854    3821  0 09:05 ?        00:00:08 /usr/bin/wireplumber
+kent        3857    3821  0 09:05 ?        00:00:07 /usr/bin/pipewire-pulse
+kent        3863    3821  0 09:05 ?        00:00:00 /usr/bin/gnome-keyring-daemon --
+kent        3865    3821  0 09:05 ?        00:00:01 /usr/bin/dbus-daemon --session -
+kent        3870    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfsd
+kent        3876    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/use
+kent        3928    3821  0 09:05 ?        00:00:00 /usr/libexec/tracker-miner-fs-3
+kent        3939    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume
+kent        3943    3806  0 09:05 tty2     00:00:00 /usr/libexec/gdm-wayland-session
+kent        3950    3943  0 09:05 tty2     00:00:00 /usr/libexec/gnome-session-binar
+kent        3959    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume
+kent        3967    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-mon
+kent        3977    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfs-goa-volume-mon
+kent        3984    3821  0 09:05 ?        00:00:00 /usr/libexec/goa-daemon
+kent        4019    3821  0 09:05 ?        00:00:00 /usr/libexec/gcr-ssh-agent /run/
+kent        4023    3821  0 09:05 ?        00:00:00 /usr/libexec/goa-identity-servic
+kent        4031    3821  0 09:05 ?        00:00:00 /usr/libexec/gnome-session-ctl -
+kent        4033    3821  0 09:05 ?        00:00:00 ssh-agent -D -a /run/user/1000/o
+kent        4040    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfs-afc-volume-mon
+kent        4050    3821  0 09:05 ?        00:00:00 /usr/libexec/gnome-session-binar
+kent        4075    4050  0 09:05 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+kent        4076    3821  6 09:05 ?        00:07:40 /usr/bin/gnome-shell
+kent        4083    4075  0 09:05 ?        00:00:02 /usr/bin/dbus-daemon --config-fi
+kent        4096    3821  0 09:05 ?        00:00:00 /usr/libexec/xdg-permission-stor
+kent        4255    3821  0 09:05 ?        00:00:00 /usr/libexec/gnome-shell-calenda
+kent        4262    3821  0 09:05 ?        00:00:00 /usr/libexec/evolution-source-re
+geoclue     4272       1  0 09:05 ?        00:00:03 /usr/libexec/geoclue
+kent        4274    3821  0 09:05 ?        00:00:00 /usr/libexec/dconf-service
+kent        4297    3821  0 09:05 ?        00:00:00 /usr/libexec/gvfsd-metadata
+kent        4300    3821  0 09:05 ?        00:00:00 /usr/libexec/evolution-calendar-
+kent        4317    3821  0 09:05 ?        00:00:00 /usr/libexec/evolution-addressbo
+kent        4321    3821  0 09:05 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-sh
+kent        4323    3821  0 09:05 ?        00:00:00 /usr/libexec/at-spi2-registryd -
+kent        4344    3821  0 09:05 ?        00:00:00 sh -c /usr/bin/ibus-daemon --pan
+kent        4346    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+kent        4348    4344  0 09:05 ?        00:00:02 /usr/bin/ibus-daemon --panel dis
+kent        4349    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-color
+kent        4350    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-datetime
+kent        4354    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-housekeeping
+kent        4357    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-keyboard
+kent        4358    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-media-keys
+kent        4361    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-power
+kent        4363    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-print-notificat
+kent        4368    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-rfkill
+kent        4369    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-screensaver-pro
+kent        4371    3821  0 09:05 ?        00:00:01 /usr/libexec/gsd-sharing
+kent        4374    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-smartcard
+kent        4376    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-sound
+kent        4382    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-usb-protection
+kent        4386    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-wacom
+kent        4402    4050  0 09:05 ?        00:00:00 /usr/libexec/evolution-data-serv
+kent        4412    4050  0 09:05 ?        00:00:00 /usr/bin/python3 /usr/bin/bluema
+kent        4434    4050  0 09:05 ?        00:00:10 /usr/bin/gnome-software --gappli
+kent        4436    4050  0 09:05 ?        00:00:00 /usr/libexec/gsd-disk-utility-no
+kent        4441    4348  0 09:05 ?        00:00:00 /usr/libexec/ibus-dconf
+kent        4442    4348  0 09:05 ?        00:00:01 /usr/libexec/ibus-extension-gtk3
+kent        4469    3821  0 09:05 ?        00:00:00 /usr/libexec/ibus-portal
+kent        4488    3821  0 09:05 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-sh
+kent        4497    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-printer
+kent        4580    4348  0 09:05 ?        00:00:00 /usr/libexec/ibus-engine-simple
+kent        4609    3821  0 09:05 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+kent        4620    3821  0 09:05 ?        00:00:00 /usr/libexec/xdg-document-portal
+root        4627    4620  0 09:05 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,f
+kent        4636    3821  0 09:05 ?        00:00:01 /usr/libexec/xdg-desktop-portal-
+kent        4713    3821  0 09:05 ?        00:00:00 /usr/libexec/xdg-desktop-portal-
+kent        4736    3821  0 09:05 ?        00:00:00 /usr/lib/x86_64-linux-gnu/libexe
+uuidd       4754       1  0 09:05 ?        00:00:00 /usr/sbin/uuidd --socket-activat
+root        4804       1  0 09:05 ?        00:00:01 /usr/libexec/fwupd/fwupd
+kent        4818    3821  0 09:05 ?        00:00:00 /usr/libexec/bluetooth/obexd
+kent        4820    3821  0 09:05 ?        00:00:09 /usr/bin/python3 /usr/bin/bluema
+kent        5062    4076  0 09:05 ?        00:00:00 /usr/bin/Xwayland :0 -rootless -
+kent        5115    3821  0 09:05 ?        00:00:00 /usr/libexec/gsd-xsettings
+kent        5178    3821  0 09:05 ?        00:00:00 /usr/libexec/ibus-x11
+kent        6454    3870  0 09:07 ?        00:00:00 /usr/libexec/gvfsd-trash --spawn
+kent        6474    3870  0 09:07 ?        00:00:00 /usr/libexec/gvfsd-network --spa
+kent        6493    3870  0 09:07 ?        00:00:00 /usr/libexec/gvfsd-dnssd --spawn
+kent        6529    3821  0 09:07 ?        00:00:00 /usr/bin/gnome-calendar --gappli
+kent        6709    4076  3 09:07 ?        00:03:46 okular
+root        6792       2  0 09:08 ?        00:00:00 [kworker/8:0-events]
+root        6938       2  0 09:15 ?        00:00:00 [kworker/11:0-mm_percpu_wq]
+root        7135       2  0 09:46 ?        00:00:00 [kworker/11:2-events]
+root        7140       2  0 09:47 ?        00:00:04 [kworker/7:2-events]
+root        7148       2  0 09:51 ?        00:00:00 [kworker/1:2-mm_percpu_wq]
+kent        8366    3821  0 09:55 ?        00:00:18 /usr/share/code/code .
+kent        8392    8366  0 09:55 ?        00:00:00 /usr/share/code/code --type=zygo
+kent        8393    8366  0 09:55 ?        00:00:00 /usr/share/code/code --type=zygo
+kent        8395    8393  0 09:55 ?        00:00:00 /usr/share/code/code --type=zygo
+kent        8420    3821  0 09:55 ?        00:00:00 /usr/share/code/chrome_crashpad_
+kent        8444    8392  0 09:55 ?        00:00:19 /usr/share/code/code --type=zygo
+kent        8454    8366  0 09:55 ?        00:00:01 /proc/self/exe --type=utility --
+kent        8492    8395  0 09:55 ?        00:00:38 /usr/share/code/code --type=zygo
+kent        8513    8366  0 09:55 ?        00:00:03 /proc/self/exe --type=utility --
+kent        8514    8366  0 09:55 ?        00:00:04 /proc/self/exe --type=utility --
+kent        8543    8366  1 09:55 ?        00:00:51 /proc/self/exe --type=utility --
+kent        8581    8366  0 09:55 ?        00:00:16 /proc/self/exe --type=utility --
+kent        9020    8543  0 09:55 ?        00:00:00 /home/kent/.vscode/extensions/op
+kent        9230    8543  0 09:55 ?        00:00:00 /usr/share/code/code /home/kent/
+kent        9255    3863  0 09:55 ?        00:00:00 /usr/bin/ssh-agent -D -a /run/us
+kent       10062    8581  0 09:55 pts/1    00:00:00 /usr/bin/bash --rcfile ./.profil
+kent       10563   10062  0 09:56 pts/1    00:00:00 script -q --return recordings/09
+kent       10564   10563  0 09:56 pts/2    00:00:00 /bin/bash /shared/kent/Documents
+kent       10565   10564  0 09:56 pts/2    00:00:00 bash --noprofile --norc -i
+root       12172       2  0 10:00 ?        00:00:00 [kworker/3:2-mm_percpu_wq]
+root       14085       2  0 10:07 ?        00:00:00 [kworker/4:2-pm]
+root       17185       2  0 10:17 ?        00:00:12 [kworker/u25:3-i915_flip]
+root       17268       2  0 10:17 ?        00:00:02 [kworker/u24:5-kcryptd/253:0]
+root       17275       2  0 10:17 ?        00:00:01 [kworker/0:0-events]
+kent       17526    4076  1 10:18 ?        00:00:50 /opt/google/chrome/chrome
+kent       17532   17526  0 10:18 ?        00:00:00 cat
+kent       17533   17526  0 10:18 ?        00:00:00 cat
+kent       17535    3821  0 10:18 ?        00:00:00 /opt/google/chrome/chrome_crashp
+kent       17537    3821  0 10:18 ?        00:00:00 /opt/google/chrome/chrome_crashp
+kent       17543   17526  0 10:18 ?        00:00:00 /opt/google/chrome/chrome --type
+kent       17544   17526  0 10:18 ?        00:00:00 /opt/google/chrome/chrome --type
+kent       17546   17544  0 10:18 ?        00:00:00 /opt/google/chrome/chrome --type
+kent       17592   17543  1 10:18 ?        00:00:32 /opt/google/chrome/chrome --type
+kent       17593   17526  0 10:18 ?        00:00:05 /opt/google/chrome/chrome --type
+kent       17608   17546  0 10:18 ?        00:00:00 /opt/google/chrome/chrome --type
+kent       17709   17546  0 10:18 ?        00:00:04 /opt/google/chrome/chrome --type
+root       18045       2  0 10:18 ?        00:00:03 [kworker/u24:12-kcryptd/253:0]
+root       18742       2  0 10:19 ?        00:00:02 [kworker/u24:14-kcryptd/253:0]
+root       18828       2  0 10:19 ?        00:00:00 [kworker/3:1-mm_percpu_wq]
+root       18936       2  0 10:19 ?        00:00:00 [kworker/1:0-cgroup_destroy]
+root       19867       2  0 10:21 ?        00:00:00 [kworker/9:1-events]
+root       20068       2  0 10:22 ?        00:00:00 [kworker/6:2-cgroup_destroy]
+root       21071       2  0 10:25 ?        00:00:00 [kworker/2:1-events]
+root       21741       2  0 10:27 ?        00:00:10 [kworker/u25:4-rb_allocator]
+root       23677       2  0 10:33 ?        00:00:01 [kworker/u24:0-flush-253:0]
+kent       23971   17546  1 10:34 ?        00:00:25 /opt/google/chrome/chrome --type
+kent       24044   17546  2 10:34 ?        00:00:59 /opt/google/chrome/chrome --type
+root       24431       2  0 10:35 ?        00:00:00 [kworker/10:2-events]
+kent       24442   17546  0 10:35 ?        00:00:00 /opt/google/chrome/chrome --type
+root       24478       2  0 10:35 ?        00:00:00 [kworker/2:0-events]
+root       24501       2  0 10:35 ?        00:00:01 [kworker/u24:2-events_unbound]
+root       25483       2  0 10:39 ?        00:00:01 [kworker/u24:6-kcryptd/253:1]
+root       27637       2  0 10:45 ?        00:00:00 [kworker/4:0-events]
+root       28248       2  0 10:47 ?        00:00:03 [kworker/u25:1+i915_flip]
+root       30132       2  0 10:52 ?        00:00:00 [kworker/6:1-events]
+root       30199       2  0 10:52 ?        00:00:00 [kworker/5:0-mm_percpu_wq]
+root       30446       2  0 10:52 ?        00:00:00 [kworker/7:0]
+root       30467       2  0 10:52 ?        00:00:00 [kworker/9:2]
+kent       31753    3821  2 10:55 ?        00:00:22 /usr/bin/python3 /usr/bin/virt-m
+kent       31767    3821  0 10:55 ?        00:00:01 /usr/sbin/libvirtd --timeout=120
+root       32076       1  0 10:55 ?        00:00:02 /usr/sbin/libvirtd --timeout 120
+root       32129       2  0 10:55 ?        00:00:00 [kworker/0:2-events]
+root       32307       2  0 10:55 ?        00:00:00 [kworker/8:2]
+root       32367       2  0 10:56 ?        00:00:01 [kworker/u24:10-kcryptd/253:0]
+root       32962       2  0 10:58 ?        00:00:00 [kworker/5:2]
+root       33637       2  0 11:00 ?        00:00:01 [kworker/u25:0-hci0]
+root       34126       2  0 11:01 ?        00:00:00 [kworker/10:0-events]
+root       35232       2  0 11:05 ?        00:00:00 [kworker/9:0-events]
+root       35564       2  0 11:06 ?        00:00:00 [kworker/u25:2-rb_allocator]
+root       35670       1  0 11:07 ?        00:00:00 /usr/sbin/virtlogd
+root       35705       2  0 11:07 ?        00:00:00 [kworker/u24:1-kcryptd/253:0]
+root       35717       2  0 11:07 ?        00:00:00 [kworker/4:1-rcu_gp]
+libvirt+   35720       1 60 11:07 ?        00:01:59 /usr/bin/qemu-system-x86_64 -nam
+root       35732       2  0 11:07 ?        00:00:00 [kvm-nx-lpage-recovery-35720]
+root       35733       2  0 11:07 ?        00:00:00 [vhost-35720]
+root       35737       2  0 11:07 ?        00:00:00 [kvm-pit/35720]
+root       35835       2  0 11:07 ?        00:00:00 [kworker/6:0]
+root       35836       2  0 11:07 ?        00:00:00 [kworker/10:1]
+root       36025       2  0 11:07 ?        00:00:00 [kworker/u24:3-kcryptd/253:0]
+kent       37112    8581  0 11:10 ?        00:00:00 /bin/sh -c &quot;/usr/share/code/reso
+kent       37113   37112  0 11:10 ?        00:00:00 /bin/bash /usr/share/code/resour
+kent       37119   37113  0 11:10 ?        00:00:00 sleep 1
+kent       37120   10565  0 11:10 pts/2    00:00:00 ps -ef
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef | less
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:01 ?        00:00:01 /sbin/init splash
+root           2       0  0 09:01 ?        00:00:00 [kthreadd]
+root           3       2  0 09:01 ?        00:00:00 [rcu_gp]
+root           4       2  0 09:01 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 09:01 ?        00:00:00 [slub_flushwq]
+root           6       2  0 09:01 ?        00:00:00 [netns]
+root           8       2  0 09:01 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 09:01 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 09:01 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 09:01 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 09:01 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 09:01 ?        00:00:00 [ksoftirqd/0]
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:01 ?        00:00:01 /sbin/init splash
+root           2       0  0 09:01 ?        00:00:00 [kthreadd]
+root           3       2  0 09:01 ?        00:00:00 [rcu_gp]
+root           4       2  0 09:01 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 09:01 ?        00:00:00 [slub_flushwq]
+root           6       2  0 09:01 ?        00:00:00 [netns]
+root           8       2  0 09:01 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 09:01 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 09:01 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 09:01 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 09:01 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 09:01 ?        00:00:00 [ksoftirqd/0]
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 09:01 ?        00:00:01 /sbin/init splash
+root           2       0  0 09:01 ?        00:00:00 [kthreadd]
+root           3       2  0 09:01 ?        00:00:00 [rcu_gp]
+root           4       2  0 09:01 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 09:01 ?        00:00:00 [slub_flushwq]
+root           6       2  0 09:01 ?        00:00:00 [netns]
+root           8       2  0 09:01 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 09:01 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 09:01 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 09:01 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 09:01 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 09:01 ?        00:00:00 [ksoftirqd/0]
+...skipping...
+<span style="color:#000000;background-color:#000000;">evateprivileges=deny,spawn=deny,resourcecontrol=deny -msg timestamp=onuot;bus&quot;:&quot;pci.6&quot;,&quot;addr&quot;:&quot;0x0&quot;} -sandbox on,obsolete=deny,el:ot;virtio:uot;:uot;:olor:#000000;">.guest_agent.0&quot;} -chardev spicevmc,id=charchan:ot;bus&quot;:&quot;pci.2&quot;,&quot;addr&quot;:&quot;:aw&quot;,&quot;file&quot;:&quot;/var/lib/libvirt/</span><span style="color:#000000;background-color:#000000;">qemu</span><span style="color:#000000;background-color:#000000;">/domain-1-libvirt-rules-ubuntu/master-key.aes&quot;} -machine pc-q35-7.2,usb=off,vmport=off,dump-guest-core=off,memory-backend=pc.ram -accel kvm -cpu host,migratable=on -m 4096 -object {&quot;qom-type&quot;:&quot;memory-backend-ram&quot;,&quot;id&quot;:&quot;pc.ram&quot;,&quot;size&quot;:4294967296} -overcommit mem-lock=off -smp 2,sockets=2,cores=1,threads=1 -uuid 79ad18f4-0e09-4e66-a90b-f904b211873f -no-user-config -nodefaults -chardev socket,id=charmonitor,fd=34,server=on,wait=off -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc,driftfix=slew -global kvm-pit.lost_tick_policy=delay -no-hpet -no-shutdown -global ICH9-LPC.disable_s3=1 -global ICH9-LPC.disable_s4=1 -boot strict=on -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:16,&quot;chassis&quot;:1,&quot;id&quot;:&quot;pci.1&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:17,&quot;chassis&quot;:2,&quot;id&quot;:&quot;pci.2&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x1&quot;:
+<span style="color:#000000;background-color:#000000;">root       35732       2  0 11:07 ?        00:00:00 [kvm-nx-lpage-recovery-35720]
+<span style="color:#000000;background-color:#000000;">root       35733       2  0 11:07 ?        00:00:00 [vhost-35720]
+<span style="color:#000000;background-color:#000000;">root       35737       2  0 11:07 ?        00:00:00 [kvm-pit/35720]
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion4><span style="color:#000000;background-color:#000000;">qemu</span><span style="color:#000000;background-color:#000000;">.guest_agent.0&quot;} -chardev spicevmc,id=charchan
+</span>$ ps -ef | lesgrep qemu
+libvirt+   35720       1 38 11:07 ?        00:02:01 /usr/bin/qemu-system-x86_64 -name guest=libvirt-rules-ubuntu,debug-threads=on -S -object {&quot;qom-type&quot;:&quot;secret&quot;,&quot;id&quot;:&quot;masterKey0&quot;,&quot;format&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;/var/lib/libvirt/qemu/domain-1-libvirt-rules-ubuntu/master-key.aes&quot;} -machine pc-q35-7.2,usb=off,vmport=off,dump-guest-core=off,memory-backend=pc.ram -accel kvm -cpu host,migratable=on -m 4096 -object {&quot;qom-type&quot;:&quot;memory-backend-ram&quot;,&quot;id&quot;:&quot;pc.ram&quot;,&quot;size&quot;:4294967296} -overcommit mem-lock=off -smp 2,sockets=2,cores=1,threads=1 -uuid 79ad18f4-0e09-4e66-a90b-f904b211873f -no-user-config -nodefaults -chardev socket,id=charmonitor,fd=34,server=on,wait=off -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc,driftfix=slew -global kvm-pit.lost_tick_policy=delay -no-hpet -no-shutdown -global ICH9-LPC.disable_s3=1 -global ICH9-LPC.disable_s4=1 -boot strict=on -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:16,&quot;chassis&quot;:1,&quot;id&quot;:&quot;pci.1&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:17,&quot;chassis&quot;:2,&quot;id&quot;:&quot;pci.2&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:18,&quot;chassis&quot;:3,&quot;id&quot;:&quot;pci.3&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:19,&quot;chassis&quot;:4,&quot;id&quot;:&quot;pci.4&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:20,&quot;chassis&quot;:5,&quot;id&quot;:&quot;pci.5&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:21,&quot;chassis&quot;:6,&quot;id&quot;:&quot;pci.6&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x5&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:22,&quot;chassis&quot;:7,&quot;id&quot;:&quot;pci.7&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x6&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:23,&quot;chassis&quot;:8,&quot;id&quot;:&quot;pci.8&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x7&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:24,&quot;chassis&quot;:9,&quot;id&quot;:&quot;pci.9&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:25,&quot;chassis&quot;:10,&quot;id&quot;:&quot;pci.10&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:26,&quot;chassis&quot;:11,&quot;id&quot;:&quot;pci.11&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:27,&quot;chassis&quot;:12,&quot;id&quot;:&quot;pci.12&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:28,&quot;chassis&quot;:13,&quot;id&quot;:&quot;pci.13&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:29,&quot;chassis&quot;:14,&quot;id&quot;:&quot;pci.14&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x5&quot;} -device {&quot;driver&quot;:&quot;qemu-xhci&quot;,&quot;p2&quot;:15,&quot;p3&quot;:15,&quot;id&quot;:&quot;usb&quot;,&quot;bus&quot;:&quot;pci.2&quot;,&quot;addr&quot;:&quot;0x0&quot;} -device {&quot;driver&quot;:&quot;virtio-serial-pci&quot;,&quot;id&quot;:&quot;virtio-serial0&quot;,&quot;bus&quot;:&quot;pci.3&quot;,&quot;addr&quot;:&quot;0x0&quot;} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/var/lib/libvirt/images/libvirt-rules-ubuntu.qcow2&quot;,&quot;node-name&quot;:&quot;libvirt-2-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-2-format&quot;,&quot;read-only&quot;:false,&quot;discard&quot;:&quot;unmap&quot;,&quot;driver&quot;:&quot;qcow2&quot;,&quot;file&quot;:&quot;libvirt-2-storage&quot;,&quot;backing&quot;:null} -device {&quot;driver&quot;:&quot;virtio-blk-pci&quot;,&quot;bus&quot;:&quot;pci.4&quot;,&quot;addr&quot;:&quot;0x0&quot;,&quot;drive&quot;:&quot;libvirt-2-format&quot;,&quot;id&quot;:&quot;virtio-disk0&quot;,&quot;bootindex&quot;:2} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/home/kent/Dropbox/c8/iso/ubuntu-24.04.1-desktop-amd64.iso&quot;,&quot;node-name&quot;:&quot;libvirt-1-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-1-format&quot;,&quot;read-only&quot;:true,&quot;driver&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;libvirt-1-storage&quot;} -device {&quot;driver&quot;:&quot;ide-cd&quot;,&quot;bus&quot;:&quot;ide.0&quot;,&quot;drive&quot;:&quot;libvirt-1-format&quot;,&quot;id&quot;:&quot;sata0-0-0&quot;,&quot;bootindex&quot;:1} -netdev {&quot;type&quot;:&quot;tap&quot;,&quot;fd&quot;:&quot;35&quot;,&quot;vhost&quot;:true,&quot;vhostfd&quot;:&quot;37&quot;,&quot;id&quot;:&quot;hostnet0&quot;} -device {&quot;driver&quot;:&quot;virtio-net-pci&quot;,&quot;netdev&quot;:&quot;hostnet0&quot;,&quot;id&quot;:&quot;net0&quot;,&quot;mac&quot;:&quot;52:54:00:9b:be:b7&quot;,&quot;bus&quot;:&quot;pci.1&quot;,&quot;addr&quot;:&quot;0x0&quot;} -chardev pty,id=charserial0 -device {&quot;driver&quot;:&quot;isa-serial&quot;,&quot;chardev&quot;:&quot;charserial0&quot;,&quot;id&quot;:&quot;serial0&quot;,&quot;index&quot;:0} -chardev socket,id=charchannel0,fd=31,server=on,wait=off -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:1,&quot;chardev&quot;:&quot;charchannel0&quot;,&quot;id&quot;:&quot;channel0&quot;,&quot;name&quot;:&quot;org.qemu.guest_agent.0&quot;} -chardev spicevmc,id=charchannel1,name=vdagent -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:2,&quot;chardev&quot;:&quot;charchannel1&quot;,&quot;id&quot;:&quot;channel1&quot;,&quot;name&quot;:&quot;com.redhat.spice.0&quot;} -device {&quot;driver&quot;:&quot;usb-tablet&quot;,&quot;id&quot;:&quot;input0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;1&quot;} -audiodev {&quot;id&quot;:&quot;audio1&quot;,&quot;driver&quot;:&quot;spice&quot;} -spice port=5900,addr=127.0.0.1,disable-ticketing=on,image-compression=off,seamless-migration=on -device {&quot;driver&quot;:&quot;qxl-vga&quot;,&quot;id&quot;:&quot;video0&quot;,&quot;max_outputs&quot;:1,&quot;ram_size&quot;:67108864,&quot;vram_size&quot;:67108864,&quot;vram64_size_mb&quot;:0,&quot;vgamem_mb&quot;:16,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1&quot;} -device {&quot;driver&quot;:&quot;ich9-intel-hda&quot;,&quot;id&quot;:&quot;sound0&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1b&quot;} -device {&quot;driver&quot;:&quot;hda-duplex&quot;,&quot;id&quot;:&quot;sound0-codec0&quot;,&quot;bus&quot;:&quot;sound0.0&quot;,&quot;cad&quot;:0,&quot;audiodev&quot;:&quot;audio1&quot;} -chardev spicevmc,id=charredir0,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir0&quot;,&quot;id&quot;:&quot;redir0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;2&quot;} -chardev spicevmc,id=charredir1,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir1&quot;,&quot;id&quot;:&quot;redir1&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;3&quot;} -device {&quot;driver&quot;:&quot;virtio-balloon-pci&quot;,&quot;id&quot;:&quot;balloon0&quot;,&quot;bus&quot;:&quot;pci.5&quot;,&quot;addr&quot;:&quot;0x0&quot;} -object {&quot;qom-type&quot;:&quot;rng-random&quot;,&quot;id&quot;:&quot;objrng0&quot;,&quot;filename&quot;:&quot;/dev/urandom&quot;} -device {&quot;driver&quot;:&quot;virtio-rng-pci&quot;,&quot;rng&quot;:&quot;objrng0&quot;,&quot;id&quot;:&quot;rng0&quot;,&quot;bus&quot;:&quot;pci.6&quot;,&quot;addr&quot;:&quot;0x0&quot;} -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny -msg timestamp=on
+kent       38270   10565  0 11:12 pts/2    00:00:00 grep qemu
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef | grep qemu | grep -v &apos;grep
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef | grep qemu | grep -v &apos;grep&apos;
+libvirt+   35720       1 36 11:07 ?        00:02:01 /usr/bin/qemu-system-x86_64 -name guest=libvirt-rules-ubuntu,debug-threads=on -S -object {&quot;qom-type&quot;:&quot;secret&quot;,&quot;id&quot;:&quot;masterKey0&quot;,&quot;format&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;/var/lib/libvirt/qemu/domain-1-libvirt-rules-ubuntu/master-key.aes&quot;} -machine pc-q35-7.2,usb=off,vmport=off,dump-guest-core=off,memory-backend=pc.ram -accel kvm -cpu host,migratable=on -m 4096 -object {&quot;qom-type&quot;:&quot;memory-backend-ram&quot;,&quot;id&quot;:&quot;pc.ram&quot;,&quot;size&quot;:4294967296} -overcommit mem-lock=off -smp 2,sockets=2,cores=1,threads=1 -uuid 79ad18f4-0e09-4e66-a90b-f904b211873f -no-user-config -nodefaults -chardev socket,id=charmonitor,fd=34,server=on,wait=off -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc,driftfix=slew -global kvm-pit.lost_tick_policy=delay -no-hpet -no-shutdown -global ICH9-LPC.disable_s3=1 -global ICH9-LPC.disable_s4=1 -boot strict=on -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:16,&quot;chassis&quot;:1,&quot;id&quot;:&quot;pci.1&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:17,&quot;chassis&quot;:2,&quot;id&quot;:&quot;pci.2&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:18,&quot;chassis&quot;:3,&quot;id&quot;:&quot;pci.3&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:19,&quot;chassis&quot;:4,&quot;id&quot;:&quot;pci.4&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:20,&quot;chassis&quot;:5,&quot;id&quot;:&quot;pci.5&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:21,&quot;chassis&quot;:6,&quot;id&quot;:&quot;pci.6&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x5&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:22,&quot;chassis&quot;:7,&quot;id&quot;:&quot;pci.7&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x6&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:23,&quot;chassis&quot;:8,&quot;id&quot;:&quot;pci.8&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x7&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:24,&quot;chassis&quot;:9,&quot;id&quot;:&quot;pci.9&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:25,&quot;chassis&quot;:10,&quot;id&quot;:&quot;pci.10&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:26,&quot;chassis&quot;:11,&quot;id&quot;:&quot;pci.11&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:27,&quot;chassis&quot;:12,&quot;id&quot;:&quot;pci.12&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:28,&quot;chassis&quot;:13,&quot;id&quot;:&quot;pci.13&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:29,&quot;chassis&quot;:14,&quot;id&quot;:&quot;pci.14&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x5&quot;} -device {&quot;driver&quot;:&quot;qemu-xhci&quot;,&quot;p2&quot;:15,&quot;p3&quot;:15,&quot;id&quot;:&quot;usb&quot;,&quot;bus&quot;:&quot;pci.2&quot;,&quot;addr&quot;:&quot;0x0&quot;} -device {&quot;driver&quot;:&quot;virtio-serial-pci&quot;,&quot;id&quot;:&quot;virtio-serial0&quot;,&quot;bus&quot;:&quot;pci.3&quot;,&quot;addr&quot;:&quot;0x0&quot;} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/var/lib/libvirt/images/libvirt-rules-ubuntu.qcow2&quot;,&quot;node-name&quot;:&quot;libvirt-2-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-2-format&quot;,&quot;read-only&quot;:false,&quot;discard&quot;:&quot;unmap&quot;,&quot;driver&quot;:&quot;qcow2&quot;,&quot;file&quot;:&quot;libvirt-2-storage&quot;,&quot;backing&quot;:null} -device {&quot;driver&quot;:&quot;virtio-blk-pci&quot;,&quot;bus&quot;:&quot;pci.4&quot;,&quot;addr&quot;:&quot;0x0&quot;,&quot;drive&quot;:&quot;libvirt-2-format&quot;,&quot;id&quot;:&quot;virtio-disk0&quot;,&quot;bootindex&quot;:2} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/home/kent/Dropbox/c8/iso/ubuntu-24.04.1-desktop-amd64.iso&quot;,&quot;node-name&quot;:&quot;libvirt-1-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-1-format&quot;,&quot;read-only&quot;:true,&quot;driver&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;libvirt-1-storage&quot;} -device {&quot;driver&quot;:&quot;ide-cd&quot;,&quot;bus&quot;:&quot;ide.0&quot;,&quot;drive&quot;:&quot;libvirt-1-format&quot;,&quot;id&quot;:&quot;sata0-0-0&quot;,&quot;bootindex&quot;:1} -netdev {&quot;type&quot;:&quot;tap&quot;,&quot;fd&quot;:&quot;35&quot;,&quot;vhost&quot;:true,&quot;vhostfd&quot;:&quot;37&quot;,&quot;id&quot;:&quot;hostnet0&quot;} -device {&quot;driver&quot;:&quot;virtio-net-pci&quot;,&quot;netdev&quot;:&quot;hostnet0&quot;,&quot;id&quot;:&quot;net0&quot;,&quot;mac&quot;:&quot;52:54:00:9b:be:b7&quot;,&quot;bus&quot;:&quot;pci.1&quot;,&quot;addr&quot;:&quot;0x0&quot;} -chardev pty,id=charserial0 -device {&quot;driver&quot;:&quot;isa-serial&quot;,&quot;chardev&quot;:&quot;charserial0&quot;,&quot;id&quot;:&quot;serial0&quot;,&quot;index&quot;:0} -chardev socket,id=charchannel0,fd=31,server=on,wait=off -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:1,&quot;chardev&quot;:&quot;charchannel0&quot;,&quot;id&quot;:&quot;channel0&quot;,&quot;name&quot;:&quot;org.qemu.guest_agent.0&quot;} -chardev spicevmc,id=charchannel1,name=vdagent -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:2,&quot;chardev&quot;:&quot;charchannel1&quot;,&quot;id&quot;:&quot;channel1&quot;,&quot;name&quot;:&quot;com.redhat.spice.0&quot;} -device {&quot;driver&quot;:&quot;usb-tablet&quot;,&quot;id&quot;:&quot;input0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;1&quot;} -audiodev {&quot;id&quot;:&quot;audio1&quot;,&quot;driver&quot;:&quot;spice&quot;} -spice port=5900,addr=127.0.0.1,disable-ticketing=on,image-compression=off,seamless-migration=on -device {&quot;driver&quot;:&quot;qxl-vga&quot;,&quot;id&quot;:&quot;video0&quot;,&quot;max_outputs&quot;:1,&quot;ram_size&quot;:67108864,&quot;vram_size&quot;:67108864,&quot;vram64_size_mb&quot;:0,&quot;vgamem_mb&quot;:16,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1&quot;} -device {&quot;driver&quot;:&quot;ich9-intel-hda&quot;,&quot;id&quot;:&quot;sound0&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1b&quot;} -device {&quot;driver&quot;:&quot;hda-duplex&quot;,&quot;id&quot;:&quot;sound0-codec0&quot;,&quot;bus&quot;:&quot;sound0.0&quot;,&quot;cad&quot;:0,&quot;audiodev&quot;:&quot;audio1&quot;} -chardev spicevmc,id=charredir0,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir0&quot;,&quot;id&quot;:&quot;redir0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;2&quot;} -chardev spicevmc,id=charredir1,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir1&quot;,&quot;id&quot;:&quot;redir1&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;3&quot;} -device {&quot;driver&quot;:&quot;virtio-balloon-pci&quot;,&quot;id&quot;:&quot;balloon0&quot;,&quot;bus&quot;:&quot;pci.5&quot;,&quot;addr&quot;:&quot;0x0&quot;} -object {&quot;qom-type&quot;:&quot;rng-random&quot;,&quot;id&quot;:&quot;objrng0&quot;,&quot;filename&quot;:&quot;/dev/urandom&quot;} -device {&quot;driver&quot;:&quot;virtio-rng-pci&quot;,&quot;rng&quot;:&quot;objrng0&quot;,&quot;id&quot;:&quot;rng0&quot;,&quot;bus&quot;:&quot;pci.6&quot;,&quot;addr&quot;:&quot;0x0&quot;} -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny -msg timestamp=on
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef | grep qemu | grep -v &apos;grep&apos; | sed &apos;a/ -/\n /-/g
+libvirt+   35720       1 30 11:07 ?        00:02:02 /usr/bin/qemu-system-x86_64 -name guest=libvirt-rules-ubuntu,debug-threads=on -S -object {&quot;qom-type&quot;:&quot;secret&quot;,&quot;id&quot;:&quot;masterKey0&quot;,&quot;format&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;/var/lib/libvirt/qemu/domain-1-libvirt-rules-ubuntu/master-key.aes&quot;} -machine pc-q35-7.2,usb=off,vmport=off,dump-guest-core=off,memory-backend=pc.ram -accel kvm -cpu host,migratable=on -m 4096 -object {&quot;qom-type&quot;:&quot;memory-backend-ram&quot;,&quot;id&quot;:&quot;pc.ram&quot;,&quot;size&quot;:4294967296} -overcommit mem-lock=off -smp 2,sockets=2,cores=1,threads=1 -uuid 79ad18f4-0e09-4e66-a90b-f904b211873f -no-user-config -nodefaults -chardev socket,id=charmonitor,fd=34,server=on,wait=off -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc,driftfix=slew -global kvm-pit.lost_tick_policy=delay -no-hpet -no-shutdown -global ICH9-LPC.disable_s3=1 -global ICH9-LPC.disable_s4=1 -boot strict=on -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:16,&quot;chassis&quot;:1,&quot;id&quot;:&quot;pci.1&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:17,&quot;chassis&quot;:2,&quot;id&quot;:&quot;pci.2&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:18,&quot;chassis&quot;:3,&quot;id&quot;:&quot;pci.3&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:19,&quot;chassis&quot;:4,&quot;id&quot;:&quot;pci.4&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:20,&quot;chassis&quot;:5,&quot;id&quot;:&quot;pci.5&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:21,&quot;chassis&quot;:6,&quot;id&quot;:&quot;pci.6&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x5&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:22,&quot;chassis&quot;:7,&quot;id&quot;:&quot;pci.7&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x6&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:23,&quot;chassis&quot;:8,&quot;id&quot;:&quot;pci.8&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x7&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:24,&quot;chassis&quot;:9,&quot;id&quot;:&quot;pci.9&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:25,&quot;chassis&quot;:10,&quot;id&quot;:&quot;pci.10&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x1&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:26,&quot;chassis&quot;:11,&quot;id&quot;:&quot;pci.11&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x2&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:27,&quot;chassis&quot;:12,&quot;id&quot;:&quot;pci.12&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x3&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:28,&quot;chassis&quot;:13,&quot;id&quot;:&quot;pci.13&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x4&quot;} -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:29,&quot;chassis&quot;:14,&quot;id&quot;:&quot;pci.14&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x5&quot;} -device {&quot;driver&quot;:&quot;qemu-xhci&quot;,&quot;p2&quot;:15,&quot;p3&quot;:15,&quot;id&quot;:&quot;usb&quot;,&quot;bus&quot;:&quot;pci.2&quot;,&quot;addr&quot;:&quot;0x0&quot;} -device {&quot;driver&quot;:&quot;virtio-serial-pci&quot;,&quot;id&quot;:&quot;virtio-serial0&quot;,&quot;bus&quot;:&quot;pci.3&quot;,&quot;addr&quot;:&quot;0x0&quot;} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/var/lib/libvirt/images/libvirt-rules-ubuntu.qcow2&quot;,&quot;node-name&quot;:&quot;libvirt-2-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-2-format&quot;,&quot;read-only&quot;:false,&quot;discard&quot;:&quot;unmap&quot;,&quot;driver&quot;:&quot;qcow2&quot;,&quot;file&quot;:&quot;libvirt-2-storage&quot;,&quot;backing&quot;:null} -device {&quot;driver&quot;:&quot;virtio-blk-pci&quot;,&quot;bus&quot;:&quot;pci.4&quot;,&quot;addr&quot;:&quot;0x0&quot;,&quot;drive&quot;:&quot;libvirt-2-format&quot;,&quot;id&quot;:&quot;virtio-disk0&quot;,&quot;bootindex&quot;:2} -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/home/kent/Dropbox/c8/iso/ubuntu-24.04.1-desktop-amd64.iso&quot;,&quot;node-name&quot;:&quot;libvirt-1-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;} -blockdev {&quot;node-name&quot;:&quot;libvirt-1-format&quot;,&quot;read-only&quot;:true,&quot;driver&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;libvirt-1-storage&quot;} -device {&quot;driver&quot;:&quot;ide-cd&quot;,&quot;bus&quot;:&quot;ide.0&quot;,&quot;drive&quot;:&quot;libvirt-1-format&quot;,&quot;id&quot;:&quot;sata0-0-0&quot;,&quot;bootindex&quot;:1} -netdev {&quot;type&quot;:&quot;tap&quot;,&quot;fd&quot;:&quot;35&quot;,&quot;vhost&quot;:true,&quot;vhostfd&quot;:&quot;37&quot;,&quot;id&quot;:&quot;hostnet0&quot;} -device {&quot;driver&quot;:&quot;virtio-net-pci&quot;,&quot;netdev&quot;:&quot;hostnet0&quot;,&quot;id&quot;:&quot;net0&quot;,&quot;mac&quot;:&quot;52:54:00:9b:be:b7&quot;,&quot;bus&quot;:&quot;pci.1&quot;,&quot;addr&quot;:&quot;0x0&quot;} -chardev pty,id=charserial0 -device {&quot;driver&quot;:&quot;isa-serial&quot;,&quot;chardev&quot;:&quot;charserial0&quot;,&quot;id&quot;:&quot;serial0&quot;,&quot;index&quot;:0} -chardev socket,id=charchannel0,fd=31,server=on,wait=off -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:1,&quot;chardev&quot;:&quot;charchannel0&quot;,&quot;id&quot;:&quot;channel0&quot;,&quot;name&quot;:&quot;org.qemu.guest_agent.0&quot;} -chardev spicevmc,id=charchannel1,name=vdagent -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:2,&quot;chardev&quot;:&quot;charchannel1&quot;,&quot;id&quot;:&quot;channel1&quot;,&quot;name&quot;:&quot;com.redhat.spice.0&quot;} -device {&quot;driver&quot;:&quot;usb-tablet&quot;,&quot;id&quot;:&quot;input0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;1&quot;} -audiodev {&quot;id&quot;:&quot;audio1&quot;,&quot;driver&quot;:&quot;spice&quot;} -spice port=5900,addr=127.0.0.1,disable-ticketing=on,image-compression=off,seamless-migration=on -device {&quot;driver&quot;:&quot;qxl-vga&quot;,&quot;id&quot;:&quot;video0&quot;,&quot;max_outputs&quot;:1,&quot;ram_size&quot;:67108864,&quot;vram_size&quot;:67108864,&quot;vram64_size_mb&quot;:0,&quot;vgamem_mb&quot;:16,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1&quot;} -device {&quot;driver&quot;:&quot;ich9-intel-hda&quot;,&quot;id&quot;:&quot;sound0&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1b&quot;} -device {&quot;driver&quot;:&quot;hda-duplex&quot;,&quot;id&quot;:&quot;sound0-codec0&quot;,&quot;bus&quot;:&quot;sound0.0&quot;,&quot;cad&quot;:0,&quot;audiodev&quot;:&quot;audio1&quot;} -chardev spicevmc,id=charredir0,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir0&quot;,&quot;id&quot;:&quot;redir0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;2&quot;} -chardev spicevmc,id=charredir1,name=usbredir -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir1&quot;,&quot;id&quot;:&quot;redir1&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;3&quot;} -device {&quot;driver&quot;:&quot;virtio-balloon-pci&quot;,&quot;id&quot;:&quot;balloon0&quot;,&quot;bus&quot;:&quot;pci.5&quot;,&quot;addr&quot;:&quot;0x0&quot;} -object {&quot;qom-type&quot;:&quot;rng-random&quot;,&quot;id&quot;:&quot;objrng0&quot;,&quot;filename&quot;:&quot;/dev/urandom&quot;} -device {&quot;driver&quot;:&quot;virtio-rng-pci&quot;,&quot;rng&quot;:&quot;objrng0&quot;,&quot;id&quot;:&quot;rng0&quot;,&quot;bus&quot;:&quot;pci.6&quot;,&quot;addr&quot;:&quot;0x0&quot;} -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny -msg timestamp=on
+/ -/
+ -/g
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ ps -ef | grep qemu | grep -v &apos;grep&apos; | sed &apos;a/ -/\n -/gs
+libvirt+   35720       1 30 11:07 ?        00:02:02 /usr/bin/qemu-system-x86_64
+ -name guest=libvirt-rules-ubuntu,debug-threads=on
+ -S
+ -object {&quot;qom-type&quot;:&quot;secret&quot;,&quot;id&quot;:&quot;masterKey0&quot;,&quot;format&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;/var/lib/libvirt/qemu/domain-1-libvirt-rules-ubuntu/master-key.aes&quot;}
+ -machine pc-q35-7.2,usb=off,vmport=off,dump-guest-core=off,memory-backend=pc.ram
+ -accel kvm
+ -cpu host,migratable=on
+ -m 4096
+ -object {&quot;qom-type&quot;:&quot;memory-backend-ram&quot;,&quot;id&quot;:&quot;pc.ram&quot;,&quot;size&quot;:4294967296}
+ -overcommit mem-lock=off
+ -smp 2,sockets=2,cores=1,threads=1
+ -uuid 79ad18f4-0e09-4e66-a90b-f904b211873f
+ -no-user-config
+ -nodefaults
+ -chardev socket,id=charmonitor,fd=34,server=on,wait=off
+ -mon chardev=charmonitor,id=monitor,mode=control
+ -rtc base=utc,driftfix=slew
+ -global kvm-pit.lost_tick_policy=delay
+ -no-hpet
+ -no-shutdown
+ -global ICH9-LPC.disable_s3=1
+ -global ICH9-LPC.disable_s4=1
+ -boot strict=on
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:16,&quot;chassis&quot;:1,&quot;id&quot;:&quot;pci.1&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x2&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:17,&quot;chassis&quot;:2,&quot;id&quot;:&quot;pci.2&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x1&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:18,&quot;chassis&quot;:3,&quot;id&quot;:&quot;pci.3&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x2&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:19,&quot;chassis&quot;:4,&quot;id&quot;:&quot;pci.4&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x3&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:20,&quot;chassis&quot;:5,&quot;id&quot;:&quot;pci.5&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x4&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:21,&quot;chassis&quot;:6,&quot;id&quot;:&quot;pci.6&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x5&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:22,&quot;chassis&quot;:7,&quot;id&quot;:&quot;pci.7&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x6&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:23,&quot;chassis&quot;:8,&quot;id&quot;:&quot;pci.8&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x2.0x7&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:24,&quot;chassis&quot;:9,&quot;id&quot;:&quot;pci.9&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;multifunction&quot;:true,&quot;addr&quot;:&quot;0x3&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:25,&quot;chassis&quot;:10,&quot;id&quot;:&quot;pci.10&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x1&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:26,&quot;chassis&quot;:11,&quot;id&quot;:&quot;pci.11&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x2&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:27,&quot;chassis&quot;:12,&quot;id&quot;:&quot;pci.12&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x3&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:28,&quot;chassis&quot;:13,&quot;id&quot;:&quot;pci.13&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x4&quot;}
+ -device {&quot;driver&quot;:&quot;pcie-root-port&quot;,&quot;port&quot;:29,&quot;chassis&quot;:14,&quot;id&quot;:&quot;pci.14&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x3.0x5&quot;}
+ -device {&quot;driver&quot;:&quot;qemu-xhci&quot;,&quot;p2&quot;:15,&quot;p3&quot;:15,&quot;id&quot;:&quot;usb&quot;,&quot;bus&quot;:&quot;pci.2&quot;,&quot;addr&quot;:&quot;0x0&quot;}
+ -device {&quot;driver&quot;:&quot;virtio-serial-pci&quot;,&quot;id&quot;:&quot;virtio-serial0&quot;,&quot;bus&quot;:&quot;pci.3&quot;,&quot;addr&quot;:&quot;0x0&quot;}
+ -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/var/lib/libvirt/images/libvirt-rules-ubuntu.qcow2&quot;,&quot;node-name&quot;:&quot;libvirt-2-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;}
+ -blockdev {&quot;node-name&quot;:&quot;libvirt-2-format&quot;,&quot;read-only&quot;:false,&quot;discard&quot;:&quot;unmap&quot;,&quot;driver&quot;:&quot;qcow2&quot;,&quot;file&quot;:&quot;libvirt-2-storage&quot;,&quot;backing&quot;:null}
+ -device {&quot;driver&quot;:&quot;virtio-blk-pci&quot;,&quot;bus&quot;:&quot;pci.4&quot;,&quot;addr&quot;:&quot;0x0&quot;,&quot;drive&quot;:&quot;libvirt-2-format&quot;,&quot;id&quot;:&quot;virtio-disk0&quot;,&quot;bootindex&quot;:2}
+ -blockdev {&quot;driver&quot;:&quot;file&quot;,&quot;filename&quot;:&quot;/home/kent/Dropbox/c8/iso/ubuntu-24.04.1-desktop-amd64.iso&quot;,&quot;node-name&quot;:&quot;libvirt-1-storage&quot;,&quot;auto-read-only&quot;:true,&quot;discard&quot;:&quot;unmap&quot;}
+ -blockdev {&quot;node-name&quot;:&quot;libvirt-1-format&quot;,&quot;read-only&quot;:true,&quot;driver&quot;:&quot;raw&quot;,&quot;file&quot;:&quot;libvirt-1-storage&quot;}
+ -device {&quot;driver&quot;:&quot;ide-cd&quot;,&quot;bus&quot;:&quot;ide.0&quot;,&quot;drive&quot;:&quot;libvirt-1-format&quot;,&quot;id&quot;:&quot;sata0-0-0&quot;,&quot;bootindex&quot;:1}
+ -netdev {&quot;type&quot;:&quot;tap&quot;,&quot;fd&quot;:&quot;35&quot;,&quot;vhost&quot;:true,&quot;vhostfd&quot;:&quot;37&quot;,&quot;id&quot;:&quot;hostnet0&quot;}
+ -device {&quot;driver&quot;:&quot;virtio-net-pci&quot;,&quot;netdev&quot;:&quot;hostnet0&quot;,&quot;id&quot;:&quot;net0&quot;,&quot;mac&quot;:&quot;52:54:00:9b:be:b7&quot;,&quot;bus&quot;:&quot;pci.1&quot;,&quot;addr&quot;:&quot;0x0&quot;}
+ -chardev pty,id=charserial0
+ -device {&quot;driver&quot;:&quot;isa-serial&quot;,&quot;chardev&quot;:&quot;charserial0&quot;,&quot;id&quot;:&quot;serial0&quot;,&quot;index&quot;:0}
+ -chardev socket,id=charchannel0,fd=31,server=on,wait=off
+ -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:1,&quot;chardev&quot;:&quot;charchannel0&quot;,&quot;id&quot;:&quot;channel0&quot;,&quot;name&quot;:&quot;org.qemu.guest_agent.0&quot;}
+ -chardev spicevmc,id=charchannel1,name=vdagent
+ -device {&quot;driver&quot;:&quot;virtserialport&quot;,&quot;bus&quot;:&quot;virtio-serial0.0&quot;,&quot;nr&quot;:2,&quot;chardev&quot;:&quot;charchannel1&quot;,&quot;id&quot;:&quot;channel1&quot;,&quot;name&quot;:&quot;com.redhat.spice.0&quot;}
+ -device {&quot;driver&quot;:&quot;usb-tablet&quot;,&quot;id&quot;:&quot;input0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;1&quot;}
+ -audiodev {&quot;id&quot;:&quot;audio1&quot;,&quot;driver&quot;:&quot;spice&quot;}
+ -spice port=5900,addr=127.0.0.1,disable-ticketing=on,image-compression=off,seamless-migration=on
+ -device {&quot;driver&quot;:&quot;qxl-vga&quot;,&quot;id&quot;:&quot;video0&quot;,&quot;max_outputs&quot;:1,&quot;ram_size&quot;:67108864,&quot;vram_size&quot;:67108864,&quot;vram64_size_mb&quot;:0,&quot;vgamem_mb&quot;:16,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1&quot;}
+ -device {&quot;driver&quot;:&quot;ich9-intel-hda&quot;,&quot;id&quot;:&quot;sound0&quot;,&quot;bus&quot;:&quot;pcie.0&quot;,&quot;addr&quot;:&quot;0x1b&quot;}
+ -device {&quot;driver&quot;:&quot;hda-duplex&quot;,&quot;id&quot;:&quot;sound0-codec0&quot;,&quot;bus&quot;:&quot;sound0.0&quot;,&quot;cad&quot;:0,&quot;audiodev&quot;:&quot;audio1&quot;}
+ -chardev spicevmc,id=charredir0,name=usbredir
+ -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir0&quot;,&quot;id&quot;:&quot;redir0&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;2&quot;}
+ -chardev spicevmc,id=charredir1,name=usbredir
+ -device {&quot;driver&quot;:&quot;usb-redir&quot;,&quot;chardev&quot;:&quot;charredir1&quot;,&quot;id&quot;:&quot;redir1&quot;,&quot;bus&quot;:&quot;usb.0&quot;,&quot;port&quot;:&quot;3&quot;}
+ -device {&quot;driver&quot;:&quot;virtio-balloon-pci&quot;,&quot;id&quot;:&quot;balloon0&quot;,&quot;bus&quot;:&quot;pci.5&quot;,&quot;addr&quot;:&quot;0x0&quot;}
+ -object {&quot;qom-type&quot;:&quot;rng-random&quot;,&quot;id&quot;:&quot;objrng0&quot;,&quot;filename&quot;:&quot;/dev/urandom&quot;}
+ -device {&quot;driver&quot;:&quot;virtio-rng-pci&quot;,&quot;rng&quot;:&quot;objrng0&quot;,&quot;id&quot;:&quot;rng0&quot;,&quot;bus&quot;:&quot;pci.6&quot;,&quot;addr&quot;:&quot;0x0&quot;}
+ -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny
+ -msg timestamp=on
+<span style="color:#5c5cff;">ITINF25/lektion4
+</span>$ 
+$ 
+<span style="color:#5c5cff;">ITINF25/lektion4
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion4
+</span>$ virsh
+Welcome to virsh, the virtualization interactive terminal.
+
+Type:  &apos;help&apos; for help with commands
+       &apos;quit&apos; to quit
+
+virsh # helpvirsh # help
+Grouped commands:
+
+ Domain Management (help keyword &apos;domain&apos;):
+    attach-device                  attach device from an XML file
+    attach-disk                    attach disk device
+    attach-interface               attach network interface
+    autostart                      autostart a domain
+    blkdeviotune                   Set or query a block device I/O tuning parameters.
+    blkiotune                      Get or set blkio parameters
+    blockcommit                    Start a block commit operation.
+    blockcopy                      Start a block copy operation.
+    blockjob                       Manage active block operations
+    blockpull                      Populate a disk from its backing image.
+    blockresize                    Resize block device of domain.
+    change-media                   Change media of CD or floppy drive
+    console                        connect to the guest console
+    cpu-stats                      show domain cpu statistics
+    create                         create a domain from an XML file
+    define                         define (but don&apos;t start) a domain from an XML file
+    desc                           show or set domain&apos;s description or title
+    destroy                        destroy (stop) a domain
+    detach-device                  detach device from an XML file
+    detach-device-alias            detach device from an alias
+    detach-disk                    detach disk device
+    detach-interface               detach network interface
+    domdisplay                     domain display connection URI
+    domfsfreeze                    Freeze domain&apos;s mounted filesystems.
+    domfsthaw                      Thaw domain&apos;s mounted filesystems.
+    domfsinfo                      Get information of domain&apos;s mounted filesystems.
+    domfstrim                      Invoke fstrim on domain&apos;s mounted filesystems.
+    domhostname                    print the domain&apos;s hostname
+    domid                          convert a domain name or UUID to domain id
+    domif-setlink                  set link state of a virtual interface
+    domiftune                      get/set parameters of a virtual interface
+    domjobabort                    abort active domain job
+    domjobinfo                     domain job information
+    domlaunchsecinfo               Get domain launch security info
+    domsetlaunchsecstate           Set domain launch security state
+    domname                        convert a domain id or UUID to domain name
+    domrename                      rename a domain
+    dompmsuspend                   suspend a domain gracefully using power management functions
+    dompmwakeup                    wakeup a domain from pmsuspended state
+    domuuid                        convert a domain name or id to domain UUID
+    domxml-from-native             Convert native config to domain XML
+    domxml-to-native               Convert domain XML to native config
+    dump                           dump the core of a domain to a file for analysis
+    dumpxml                        domain information in XML
+    edit                           edit XML configuration for a domain
+    get-user-sshkeys               list authorized SSH keys for given user (via agent)
+    inject-nmi                     Inject NMI to the guest
+    iothreadinfo                   view domain IOThreads
+    iothreadpin                    control domain IOThread affinity
+    iothreadadd                    add an IOThread to the guest domain
+    iothreadset                    modifies an existing IOThread of the guest domain
+    iothreaddel                    delete an IOThread from the guest domain
+    send-key                       Send keycodes to the guest
+    send-process-signal            Send signals to processes
+    lxc-enter-namespace            LXC Guest Enter Namespace
+    managedsave                    managed save of a domain state
+    managedsave-remove             Remove managed save of a domain
+    managedsave-edit               edit XML for a domain&apos;s managed save state file
+    managedsave-dumpxml            Domain information of managed save state file in XML
+    managedsave-define             redefine the XML for a domain&apos;s managed save state file
+    memtune                        Get or set memory parameters
+    perf                           Get or set perf event
+    metadata                       show or set domain&apos;s custom XML metadata
+    migrate                        migrate domain to another host
+    migrate-setmaxdowntime         set maximum tolerable downtime
+    migrate-getmaxdowntime         get maximum tolerable downtime
+    migrate-compcache              get/set compression cache size
+    migrate-setspeed               Set the maximum migration bandwidth
+    migrate-getspeed               Get the maximum migration bandwidth
+    migrate-postcopy               Switch running migration from pre-copy to post-copy
+    numatune                       Get or set numa parameters
+    qemu-attach                    QEMU Attach
+    qemu-monitor-command           QEMU Monitor Command
+    qemu-monitor-event             QEMU Monitor Events
+    qemu-agent-command             QEMU Guest Agent Command
+    guest-agent-timeout            Set the guest agent timeout
+    reboot                         reboot a domain
+    reset                          reset a domain
+    restore                        restore a domain from a saved state in a file
+    resume                         resume a domain
+    save                           save a domain state to a file
+    save-image-define              redefine the XML for a domain&apos;s saved state file
+    save-image-dumpxml             saved state domain information in XML
+    save-image-edit                edit XML for a domain&apos;s saved state file
+    schedinfo                      show/set scheduler parameters
+    screenshot                     take a screenshot of a current domain console and store it into a file
+    set-lifecycle-action           change lifecycle actions
+    set-user-sshkeys               manipulate authorized SSH keys file for given user (via agent)
+    set-user-password              set the user password inside the domain
+    setmaxmem                      change maximum memory limit
+    setmem                         change memory allocation
+    setvcpus                       change number of virtual CPUs
+    shutdown                       gracefully shutdown a domain
+    start                          start a (previously defined) inactive domain
+    suspend                        suspend a domain
+    ttyconsole                     tty console
+    undefine                       undefine a domain
+    update-device                  update device from an XML file
+    update-memory-device           update memory device of a domain
+    vcpucount                      domain vcpu counts
+    vcpuinfo                       detailed domain vcpu information
+    vcpupin                        control or query domain vcpu affinity
+    emulatorpin                    control or query domain emulator affinity
+    vncdisplay                     vnc display
+    guestvcpus                     query or modify state of vcpu in the guest (via agent)
+    setvcpu                        attach/detach vcpu or groups of threads
+    domblkthreshold                set the threshold for block-threshold event for a given block device or it&apos;s backing chain element
+    guestinfo                      query information about the guest (via agent)
+    domdirtyrate-calc              Calculate a vm&apos;s memory dirty rate
+    dom-fd-associate               associate a FD with a domain
+
+ Domain Monitoring (help keyword &apos;monitor&apos;):
+    domblkerror                    Show errors on block devices
+    domblkinfo                     domain block device size information
+    domblklist                     list all domain blocks
+    domblkstat                     get device block stats for a domain
+    domcontrol                     domain control interface state
+    domif-getlink                  get link state of a virtual interface
+    domifaddr                      Get network interfaces&apos; addresses for a running domain
+    domiflist                      list all domain virtual interfaces
+    domifstat                      get network interface stats for a domain
+    dominfo                        domain information
+    dommemstat                     get memory statistics for a domain
+    domstate                       domain state
+    domstats                       get statistics about one or multiple domains
+    domtime                        domain time
+    list                           list domains
+
+ Domain Events (help keyword &apos;events&apos;):
+    event                          Domain Events
+
+ Host and Hypervisor (help keyword &apos;host&apos;):
+    allocpages                     Manipulate pages pool size
+    capabilities                   capabilities
+    cpu-baseline                   compute baseline CPU
+    cpu-compare                    compare host CPU with a CPU described by an XML file
+    cpu-models                     CPU models
+    domcapabilities                domain capabilities
+    freecell                       NUMA free memory
+    freepages                      NUMA free pages
+    hostname                       print the hypervisor hostname
+    hypervisor-cpu-baseline        compute baseline CPU usable by a specific hypervisor
+    hypervisor-cpu-compare         compare a CPU with the CPU created by a hypervisor on the host
+    maxvcpus                       connection vcpu maximum
+    node-memory-tune               Get or set node memory parameters
+    nodecpumap                     node cpu map
+    nodecpustats                   Prints cpu stats of the node.
+    nodeinfo                       node information
+    nodememstats                   Prints memory stats of the node.
+    nodesevinfo                    node SEV information
+    nodesuspend                    suspend the host node for a given time duration
+    sysinfo                        print the hypervisor sysinfo
+    uri                            print the hypervisor canonical URI
+    version                        show version
+
+ Checkpoint (help keyword &apos;checkpoint&apos;):
+    checkpoint-create              Create a checkpoint from XML
+    checkpoint-create-as           Create a checkpoint from a set of args
+    checkpoint-delete              Delete a domain checkpoint
+    checkpoint-dumpxml             Dump XML for a domain checkpoint
+    checkpoint-edit                edit XML for a checkpoint
+    checkpoint-info                checkpoint information
+    checkpoint-list                List checkpoints for a domain
+    checkpoint-parent              Get the name of the parent of a checkpoint
+
+ Interface (help keyword &apos;interface&apos;):
+    iface-begin                    create a snapshot of current interfaces settings, which can be later committed (iface-commit) or restored (iface-rollback)
+    iface-bridge                   create a bridge device and attach an existing network device to it
+    iface-commit                   commit changes made since iface-begin and free restore point
+    iface-define                   define an inactive persistent physical host interface or modify an existing persistent one from an XML file
+    iface-destroy                  destroy a physical host interface (disable it / &quot;if-down&quot;)
+    iface-dumpxml                  interface information in XML
+    iface-edit                     edit XML configuration for a physical host interface
+    iface-list                     list physical host interfaces
+    iface-mac                      convert an interface name to interface MAC address
+    iface-name                     convert an interface MAC address to interface name
+    iface-rollback                 rollback to previous saved configuration created via iface-begin
+    iface-start                    start a physical host interface (enable it / &quot;if-up&quot;)
+    iface-unbridge                 undefine a bridge device after detaching its device(s)
+    iface-undefine                 undefine a physical host interface (remove it from configuration)
+
+ Network Filter (help keyword &apos;filter&apos;):
+    nwfilter-define                define or update a network filter from an XML file
+    nwfilter-dumpxml               network filter information in XML
+    nwfilter-edit                  edit XML configuration for a network filter
+    nwfilter-list                  list network filters
+    nwfilter-undefine              undefine a network filter
+    nwfilter-binding-create        create a network filter binding from an XML file
+    nwfilter-binding-delete        delete a network filter binding
+    nwfilter-binding-dumpxml       network filter information in XML
+    nwfilter-binding-list          list network filter bindings
+
+ Networking (help keyword &apos;network&apos;):
+    net-autostart                  autostart a network
+    net-create                     create a network from an XML file
+    net-define                     define an inactive persistent virtual network or modify an existing persistent one from an XML file
+    net-destroy                    destroy (stop) a network
+    net-dhcp-leases                print lease info for a given network
+    net-dumpxml                    network information in XML
+    net-edit                       edit XML configuration for a network
+    net-event                      Network Events
+    net-info                       network information
+    net-list                       list networks
+    net-name                       convert a network UUID to network name
+    net-start                      start a (previously defined) inactive network
+    net-undefine                   undefine a persistent network
+    net-update                     update parts of an existing network&apos;s configuration
+    net-uuid                       convert a network name to network UUID
+    net-port-list                  list network ports
+    net-port-create                create a network port from an XML file
+    net-port-dumpxml               network port information in XML
+    net-port-delete                delete the specified network port
+
+ Node Device (help keyword &apos;nodedev&apos;):
+    nodedev-create                 create a device defined by an XML file on the node
+    nodedev-destroy                destroy (stop) a device on the node
+    nodedev-detach                 detach node device from its device driver
+    nodedev-dumpxml                node device details in XML
+    nodedev-list                   enumerate devices on this host
+    nodedev-reattach               reattach node device to its device driver
+    nodedev-reset                  reset node device
+    nodedev-event                  Node Device Events
+    nodedev-define                 Define a device by an xml file on a node
+    nodedev-undefine               Undefine an inactive node device
+    nodedev-start                  Start an inactive node device
+    nodedev-autostart              autostart a defined node device
+    nodedev-info                   node device information
+
+ Secret (help keyword &apos;secret&apos;):
+    secret-define                  define or modify a secret from an XML file
+    secret-dumpxml                 secret attributes in XML
+    secret-event                   Secret Events
+    secret-get-value               Output a secret value
+    secret-list                    list secrets
+    secret-set-value               set a secret value
+    secret-undefine                undefine a secret
+
+ Snapshot (help keyword &apos;snapshot&apos;):
+    snapshot-create                Create a snapshot from XML
+    snapshot-create-as             Create a snapshot from a set of args
+    snapshot-current               Get or set the current snapshot
+    snapshot-delete                Delete a domain snapshot
+    snapshot-dumpxml               Dump XML for a domain snapshot
+    snapshot-edit                  edit XML for a snapshot
+    snapshot-info                  snapshot information
+    snapshot-list                  List snapshots for a domain
+    snapshot-parent                Get the name of the parent of a snapshot
+    snapshot-revert                Revert a domain to a snapshot
+
+ Backup (help keyword &apos;backup&apos;):
+    backup-begin                   Start a disk backup of a live domain
+    backup-dumpxml                 Dump XML for an ongoing domain block backup job
+
+ Storage Pool (help keyword &apos;pool&apos;):
+    find-storage-pool-sources-as   find potential storage pool sources
+    find-storage-pool-sources      discover potential storage pool sources
+    pool-autostart                 autostart a pool
+    pool-build                     build a pool
+    pool-create-as                 create a pool from a set of args
+    pool-create                    create a pool from an XML file
+    pool-define-as                 define a pool from a set of args
+    pool-define                    define an inactive persistent storage pool or modify an existing persistent one from an XML file
+    pool-delete                    delete a pool
+    pool-destroy                   destroy (stop) a pool
+    pool-dumpxml                   pool information in XML
+    pool-edit                      edit XML configuration for a storage pool
+    pool-info                      storage pool information
+    pool-list                      list pools
+    pool-name                      convert a pool UUID to pool name
+    pool-refresh                   refresh a pool
+    pool-start                     start a (previously defined) inactive pool
+    pool-undefine                  undefine an inactive pool
+    pool-uuid                      convert a pool name to pool UUID
+    pool-event                     Storage Pool Events
+    pool-capabilities              storage pool capabilities
+
+ Storage Volume (help keyword &apos;volume&apos;):
+    vol-clone                      clone a volume.
+    vol-create-as                  create a volume from a set of args
+    vol-create                     create a vol from an XML file
+    vol-create-from                create a vol, using another volume as input
+    vol-delete                     delete a vol
+    vol-download                   download volume contents to a file
+    vol-dumpxml                    vol information in XML
+    vol-info                       storage vol information
+    vol-key                        returns the volume key for a given volume name or path
+    vol-list                       list vols
+    vol-name                       returns the volume name for a given volume key or path
+    vol-path                       returns the volume path for a given volume name or key
+    vol-pool                       returns the storage pool for a given volume key or path
+    vol-resize                     resize a vol
+    vol-upload                     upload file contents to a volume
+    vol-wipe                       wipe a vol
+
+ Virsh itself (help keyword &apos;virsh&apos;):
+    cd                             change the current directory
+    echo                           echo arguments. Used fo
+</pre>
+</body>
+</html>
+<!--HTML generated by ansifilter 2.18, http://www.andre-simon.de/-->
