@@ -1372,3 +1372,147 @@ Help:
 :[K[K [KESCESC[KOO[KBB[K210 DragonFlyBSD Label32           9D087404-1CA5-11DC-8817-01301BB8A9F5[m
 :[K[K [KESCESC[KOO[KBB[K211 DragonFlyBSD Swap              9D58FDBD-1CA5-11DC-8817-01301BB8A9F5[m
 :[K[K [KESCESC[KOO[KBB[K212 DragonFlyBSD UFS1              9D94CE7C-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+:[K[K [KESCESC[KOO[KBB[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+:[K[K [KESCESC[KOO[KBB[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+:[K[K [KESCESC[KOO[KBB[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+:[K[K [KESCESC[KOO[KBB[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[KAliases:[m
+:[K[K [KESCESC[KOO[KBB[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+:[K[K [KESCESC[KOO[KBB[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+:[K[K [KESCESC[KOO[KBB[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+:[K[K [KESCESC[KOO[KBB[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+:[K[K [KESCESC[KOO[KBB[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+:[K[K [KESCESC[KOO[KBB[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+:[K[K [KESCESC[KOO[KBB[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K [KESCESC[KOO[KBB[K[K[01;44;33m(END)[0m[K[K/[Krr[Koo[Ktt[K[Koo[Ktt[K[1;1H[K213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+[2;1H[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+[3;1H[K215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+[4;1H[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+[5;1H[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+[6;1H[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+[7;1H[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+[8;1H[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+[9;1H[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+[10;1H[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+[11;1H[K[m
+[12;1H[KAliases:[m
+[13;1H[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+[14;1H[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[15;1H[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+[16;1H[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[17;1H[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+[18;1H[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+[19;1H[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[20;1H[1;1H[K213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+[2;1H[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+[3;1H[K215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+[4;1H[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+[5;1H[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+[6;1H[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+[7;1H[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+[8;1H[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+[9;1H[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+[10;1H[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+[11;1H[K[m
+[12;1H[KAliases:[m
+[13;1H[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+[14;1H[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[15;1H[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+[16;1H[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[17;1H[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+[18;1H[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+[19;1H[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[20;1H[K[01;44;33mPattern not found  (press RETURN)[0m[20;1H[K[K/[KRR[Koo[Koo[Ktt[K[1;1H[K213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+[2;1H[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+[3;1H[K215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+[4;1H[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+[5;1H[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+[6;1H[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+[7;1H[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+[8;1H[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+[9;1H[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+[10;1H[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+[11;1H[K[m
+[12;1H[KAliases:[m
+[13;1H[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+[14;1H[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[15;1H[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+[16;1H[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[17;1H[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+[18;1H[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+[19;1H[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[20;1H[1;1H[K213 DragonFlyBSD Vinum             9DD4478F-1CA5-11DC-8817-01301BB8A9F5[m
+[2;1H[K214 DragonFlyBSD CCD               DBD5211B-1CA5-11DC-8817-01301BB8A9F5[m
+[3;1H[K215 DragonFlyBSD Label64           3D48CE54-1D16-11DC-8696-01301BB8A9F5[m
+[4;1H[K216 DragonFlyBSD Legacy            BD215AB2-1D16-11DC-8696-01301BB8A9F5[m
+[5;1H[K217 DragonFlyBSD HAMMER            61DC63AC-6E38-11DC-8513-01301BB8A9F5[m
+[6;1H[K218 DragonFlyBSD HAMMER2           5CBB9AD1-862D-11DC-A94D-01301BB8A9F5[m
+[7;1H[K219 U-Boot environment             3DE21764-95BD-54BD-A5C3-4ABE786F38A8[m
+[8;1H[K220 Atari TOS basic data           734E5AFE-F61A-11E6-BC64-92361F002671[m
+[9;1H[K221 Atari TOS raw data (XHDI)      35540011-B055-499F-842D-C69AECA357B7[m
+[10;1H[K222 Minix filesystem               481B2A38-0561-420B-B72A-F1C4988EFC16[m
+[11;1H[K[m
+[12;1H[KAliases:[m
+[13;1H[K   linux          - 0FC63DAF-8483-4772-8E79-3D69D8477DE4[m
+[14;1H[K   swap           - 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[15;1H[K   home           - 933AC7E1-2EB4-4F13-B844-0E14E2AEF915[m
+[16;1H[K   uefi           - C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[17;1H[K   raid           - A19D880F-05FC-4D3B-A006-743F0F84911E[m
+[18;1H[K   lvm            - E6D6D379-F507-44C2-A23C-238F2A3DF928[m
+[19;1H[K   xbootldr       - BC13C2FF-59E6-4262-A352-B275FD6F7172[m
+[20;1H[K[01;44;33mPattern not found  (press RETURN)[0m[20;1H[K[K[H[2J[HM 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[HM 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[HM 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[HM 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[HM 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[HM 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[HM 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[HM 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[HM 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[HM 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[HM  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[HM  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[HM  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[HM  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[HM  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[HM  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[HM  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[HM  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[HM  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[20;1H[K:[K[K/[Krr[Koo[Koo[Ktt[K[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft basic data           EBD0A0A2-B9E5-4433-87C0-68B6B72699C7[m
+[12;1H[K 12 Microsoft LDM metadata         5808C8AA-7E8F-42E0-85D2-E1E90434CFB3[m
+[13;1H[K 13 Microsoft LDM data             AF9B60A0-1431-4F62-BC68-3311714A69AD[m
+[14;1H[K 14 Windows recovery environment   DE94BBA4-06D1-4D40-A16A-BFD50179D6AC[m
+[15;1H[K 15 IBM General Parallel Fs        37AFFC90-EF7D-4E96-91C3-2D7AE055B174[m
+[16;1H[K 16 Microsoft Storage Spaces       E75CAF8F-F680-4CEE-AFA3-B001E56EFC2D[m
+[17;1H[K 17 HP-UX data                     75894C1E-3AEB-11D3-B7C1-7B03A0000000[m
+[18;1H[K 18 HP-UX service                  E2A1E728-32E3-11D6-A682-7B03A0000000[m
+[19;1H[K 19 Linux swap                     0657FD6D-A4AB-43C4-84E5-0933C84B4F4F[m
+[20;1H[1;1H[K  1 EFI System                     C12A7328-F81F-11D2-BA4B-00A0C93EC93B[m
+[2;1H[K  2 MBR partition scheme           024DEE41-33E7-11D3-9D69-0008C781F39F[m
+[3;1H[K  3 Intel Fast Flash               D3BFE2DE-3DAF-11DF-BA40-E3A556D89593[m
+[4;1H[K  4 BIOS boot                      21686148-6449-6E6F-744E-656564454649[m
+[5;1H[K  5 Sony boot partition            F4019732-066E-4E12-8273-346C5641494F[m
+[6;1H[K  6 Lenovo boot partition          BFBFAFE7-A34F-448A-9A5B-6213EB736C22[m
+[7;1H[K  7 PowerPC PReP boot              9E1A2D38-C612-4316-AA26-8B49521E5A8B[m
+[8;1H[K  8 ONIE boot                      7412F7D5-A156-4B13-81DC-867174929325[m
+[9;1H[K  9 ONIE config                    D4E6E2CD-4469-46F3-B5CB-1BFF57AFC149[m
+[10;1H[K 10 Microsoft reserved             E3C9E316-0B5C-4DB8-817D-F92DF00215AE[m
+[11;1H[K 11 Microsoft
