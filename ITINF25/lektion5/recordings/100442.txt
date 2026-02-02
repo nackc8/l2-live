@@ -180,4 +180,44 @@ More information: https://docs.docker.com/reference/cli/docker/.
 [0m[0m[?2004h[94mITINF25/lektion5
 (B[m$ tldr docker[C[C[Ktldr docker[C[C[K[H[2J[94mITINF25/lektion5
 (B[m$ hueiheiuhe[K[K[K[K[K[K[K[K[K[Kuhiuhiuhiui[K[K[K[K[K[K[K[K[K[K[Kiuooijoi[K[K[K[K[K[K[K[Knano
-[?2004l[?2004h[?10
+[?2004l[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J(B[0;7m  GNU nano 7.2                                New Buffer                                          [1;97H(B[m[18;25H(B[0;7m[ Welcome to nano.  For basic help, type Ctrl+G. ](B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;58H(B[0;7m*[97G(B[m[?12l[?25h[2dj[?25l[?12l[?25he[?25l[?12l[?25hj[?25l[?12l[?25he[?25l[?12l[?25he[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25h[A[?25l[?12l[?25h[Aje[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4dee[?25l[?12l[?25h[5d[?25l[18d(B[0;7mSave modified buffer?                                                                             [19;1H Y(B[m Yes[K[20d(B[0;7m N(B[m No  [20;18H(B[0;7mC(B[m Cancel[K[18;23H[?12l[?25h[?25l[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ mkdir Tes[K[K[Ktest[K[K[K[Kstdoutbytfil[K[K[Kfildel
+[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ cd d[Kstdoutbytfildel/
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub
+[?2004l# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.reset i8042.nomux"
+GRUB_CMDLINE_LINUX="i8042.kbdreset=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_
