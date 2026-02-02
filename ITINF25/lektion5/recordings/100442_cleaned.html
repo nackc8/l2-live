@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+pre {
+  font-family:Courier New;
+  font-size:10pt;
+}
+
+.af_line {
+  color: gray;
+  text-decoration: none;
+}
+
+</style>
+<title>100442.txt</title>
+</head>
+<body>
+<pre>Script started on 2026-02-02 10:04:42+01:00 [TERM=&quot;xterm-256color&quot; TTY=&quot;/dev/pts/0&quot; COLUMNS=&quot;115&quot; LINES=&quot;30&quot;]
+<span style="color:#5c5cff;">ITINF25/lektion5
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5
+</span>$ doc
+ke
+
+
+
+
+
+
+$ man docker
+DOCKER(1)                             Docker User Manuals                             DOCKER(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker - Docker image and container command line interface
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> [OPTIONS] COMMAND [ARG...]
+
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> [--help|-v|--version]
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> is a client for interacting with the daemon (see <span style="font-weight:bold;color:#7f7f7f;">dockerd(8)</span>) through the CLI.
+
+       The  Docker CLI has over 30 commands. The commands are listed below and each has its own
+       man page which explains usage and arguments.
+
+       To see the man page for a command run <span style="font-weight:bold;color:#7f7f7f;">man</span> <span style="font-weight:bold;color:#7f7f7f;">docker</span> .
+
+<span style="font-weight:bold;color:#7f7f7f;">OPTIONS</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--help</span>kground-color:#000000;">
+<span style="color:#000000;background-color:#000000;">         Print usage statement</span>h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 3 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--config</span>=&quot;&quot;000000;">
+<span style="color:#000000;background-color:#000000;">         Specifies the location of the  Docker  client  configuration  files.  The  default  is</span>und-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       &apos;~/.docker&apos;.</span> h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 7 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-D</span>, <span style="font-weight:bold;color:#7f7f7f;">--debug</span>=<span style="text-decoration:underline;">true</span>|<span style="text-decoration:underline;">false</span>
+<span style="color:#000000;background-color:#000000;">         Enable debug mode. Default is false.</span> to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 10 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-H</span>,   <span style="font-weight:bold;color:#7f7f7f;">--host</span>=[<span style="text-decoration:underline;">unix:///var/run/docker.sock</span>]:   tcp://[host]:[port][path]   to   bind   or
+<span style="color:#000000;background-color:#000000;">       unix://[/path/to/socket] to use.</span>lp or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">         The socket(s) to bind to in daemon mode specified using one or more</span>olor:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">         tcp://host:port/path, unix:///path/to/socket, fd://* or fd://socketfd.</span>r:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">         If the tcp port is not specified, then it will default to either </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">2375</span> when
+<span style="color:#000000;background-color:#000000;">         </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tls</span> is off, or <span style="font-weight:bold;color:#7f7f7f;">2376</span> when <span style="font-weight:bold;color:#7f7f7f;">--tls</span> is on, or <span style="font-weight:bold;color:#7f7f7f;">--tlsverify</span> is specified.
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 17 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-l</span>, <span style="font-weight:bold;color:#7f7f7f;">--log-level</span>=&quot;<span style="text-decoration:underline;">debug</span>|<span style="text-decoration:underline;">info</span>|<span style="text-decoration:underline;">warn</span>|<span style="text-decoration:underline;">error</span>|<span style="text-decoration:underline;">fatal</span>&quot;
+<span style="color:#000000;background-color:#000000;">         Set the logging level. Default is </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">info</span>.
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 20 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tls</span>=<span style="text-decoration:underline;">true</span>|<span style="text-decoration:underline;">false</span>
+<span style="color:#000000;background-color:#000000;">         Use TLS; implied by --tlsverify. Default is false.</span>an><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 23 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tlscacert</span>=<span style="text-decoration:underline;">~/.docker/ca.pem</span>
+<span style="color:#000000;background-color:#000000;">         Trust certs signed only by this CA.</span> q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 26 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tlscert</span>=<span style="text-decoration:underline;">~/.docker/cert.pem</span>
+<span style="color:#000000;background-color:#000000;">         Path to TLS certificate file.</span>elp or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 29 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tlskey</span>=<span style="text-decoration:underline;">~/.docker/key.pem</span>
+<span style="color:#000000;background-color:#000000;">         Path to TLS key file.</span> h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 32 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--tlsverify</span>=<span style="text-decoration:underline;">true</span>|<span style="text-decoration:underline;">false</span>
+<span style="color:#000000;background-color:#000000;">         Use TLS and verify the remote (daemon: verify client, client: verify daemon).</span>00;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">         Default is false.</span>ress h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 36 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-v</span>, <span style="font-weight:bold;color:#7f7f7f;">--version</span>=<span style="text-decoration:underline;">true</span>|<span style="text-decoration:underline;">false</span>
+<span style="color:#000000;background-color:#000000;">         Print version information and quit. Default is false.</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 39 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">COMMANDS</span>00;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       Use &quot;docker help&quot; or &quot;docker --help&quot; to get an overview of available commands.</span>:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 42 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">EXAMPLES</span>00;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       For specific client examples see the man page for the specific Docker command. For exam‐</span>nd-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       ple:</span>r(1) line 45 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 46 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       man docker-run</span>47 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 48 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">HISTORY</span>000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       April  2014,  Originally  compiled  by William Henry (whenry at redhat dot com) based on</span>ound-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       docker.com source material and internal work.</span>it)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker(1) line 52 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">Docker Community                           APRIL 2014                                 DOCKER(1)</span>ound-color:#000000;">
+<span style="color:#000000;background-color:#000000;"> ESESCOBpage docker(1) line 54 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"> ESESCOBspan style="color:#000000;background-color:#000000;"> Manual page docker(1) line 54/72 (END) (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion51) line 54/72 (END) (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5
+</span>$ man doc
+ker-pull
+DOCKER(1)                             Docker User Manuals                             DOCKER(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker-pull - Download an image from a registry
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">pull</span> <span style="font-weight:bold;color:#7f7f7f;">[OPTIONS]</span> <span style="font-weight:bold;color:#7f7f7f;">NAME[:TAG|&#64;DIGEST]</span>
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       Alias for <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">image</span> <span style="font-weight:bold;color:#7f7f7f;">pull</span>.
+
+<span style="font-weight:bold;color:#7f7f7f;">OPTIONS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all-tags</span>[=false]      Download all tagged images in the repository
+
+       <span style="font-weight:bold;color:#7f7f7f;">--platform</span>=&quot;&quot;      Set platform if server is multi-platform capable
+
+       <span style="font-weight:bold;color:#7f7f7f;">-q</span>, <span style="font-weight:bold;color:#7f7f7f;">--quiet</span>[=false]      Suppress verbose output
+
+<span style="font-weight:bold;color:#7f7f7f;">SEE</span> <span style="font-weight:bold;color:#7f7f7f;">ALSO</span>
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5yle="color:#000000;background-color:#000000;">
+</span>$ git lgog
+<span style="color:#cdcd00;">commit 2d11b894bef8e5fc33968a6e238bb97ded8c5e55</span><span style="color:#cdcd00;"> (</span><span style="font-weight:bold;color:#00ffff;">HEAD -&gt; </span><span style="font-weight:bold;color:#00ff00;">260202</span><span style="color:#cdcd00;">, </span><span style="font-weight:bold;color:#ff0000;">origin/260202</span><span style="color:#cdcd00;">)</span>
+Author: Kent Larsson &lt;kent&#64;c8.se&gt;
+Date:   Mon Feb 2 10:05:30 2026 +0100
+
+    autocommit complete 1005 (30)
+
+<span style="color:#cdcd00;">commit 1f3162fd0fdb17fd836608e01a37c9417f40228f</span>
+Author: Kent Larsson &lt;kent&#64;c8.se&gt;
+Date:   Mon Feb 2 10:05:13 2026 +0100
+
+    autocommit complete 1005 (13)
+
+<span style="color:#cdcd00;">commit 00dd0adb84cafc7b200f5cc3d860a46b323d13cc</span>
+Author: Kent Larsson &lt;kent&#64;c8.se&gt;
+Date:   Mon Feb 2 10:04:57 2026 +0100
+
+    autocommit complete 1004 (57)
+
+<span style="color:#cdcd00;">commit 33c0dc9a9f3fdc625e4e0995d3bcb441f0d08333</span>
+<span style="color:#5c5cff;">f;">ITINF25/lektion5
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5
+</span>$ man docker-pull
+DOCKER(1)                             Docker User Manuals                             DOCKER(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker-pull - Download an image from a registry
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">pull</span> <span style="font-weight:bold;color:#7f7f7f;">[OPTIONS]</span> <span style="font-weight:bold;color:#7f7f7f;">NAME[:TAG|&#64;DIGEST]</span>
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       Alias for <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">image</span> <span style="font-weight:bold;color:#7f7f7f;">pull</span>.
+
+<span style="font-weight:bold;color:#7f7f7f;">OPTIONS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all-tags</span>[=false]      Download all tagged images in the repository
+
+       <span style="font-weight:bold;color:#7f7f7f;">--platform</span>=&quot;&quot;      Set platform if server is multi-platform capable
+
+       <span style="font-weight:bold;color:#7f7f7f;">-q</span>, <span style="font-weight:bold;color:#7f7f7f;">--quiet</span>[=false]      Suppress verbose output
+
+<span style="font-weight:bold;color:#7f7f7f;">SEE</span> <span style="font-weight:bold;color:#7f7f7f;">ALSO</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">docker(1)</span>ackground-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage docker-pull(1) line 2 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">Docker Community                            Jan 2026                                  DOCKER(1)</span>ckground-color:#000000;">
+<span style="color:#000000;background-color:#000000;"> ESESCOBpage docker-pull(1) line 4 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">NAME</span>ine 4/22 (END) (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page docker-pull(1) line 3/22 89% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">MDOCKER(1)                             Docker User Manuals                             DOCKER(1)</span>000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"> ESESCOApage docker-pull(1) line 1/22 85% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5pull(1) line 1/22 85% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5
+</span>$ tldr docker
+docker
+
+Manage Docker containers and images.
+Some subcommands such as run have their own usage documentation.
+More information: https://docs.docker.com/reference/cli/docker/.
+
+ - <span style="color:#00cd00;">List all Docker containers (running and stopped):
+   </span><span style="color:#cdcd00;">docker ps </span>[-a|--all]
+
+ - <span style="color:#00cd00;">Start a container from an image, with a custom name:
+   </span><span style="color:#cdcd00;">docker run --name </span>container_name<span style="color:#cdcd00;"> </span>image
+
+ - <span style="color:#00cd00;">Start or stop an existing container:
+   </span><span style="color:#cdcd00;">docker </span>start|stop<span style="color:#cdcd00;"> </span>container_name
+
+ - <span style="color:#00cd00;">Pull an image from a Docker registry:
+   </span><span style="color:#cdcd00;">docker pull </span>image
+
+ - <span style="color:#00cd00;">Display the list of already downloaded images:
+   </span><span style="color:#cdcd00;">docker images</span>
+
+ - <span style="color:#00cd00;">Open an interactive tty with Bourne shell (sh) inside a running container:
+   </span><span style="color:#cdcd00;">docker exec </span>[-it|--interactive --tty]<span style="color:#cdcd00;"> </span>container_name<span style="color:#cdcd00;"> </span>sh
+
+ - <span style="color:#00cd00;">Remove stopped containers:
+   </span><span style="color:#cdcd00;">docker rm </span>container1 container2 ...
+
+ - <span style="color:#00cd00;">Fetch and follow the logs of a container:
+   </span><span style="color:#cdcd00;">docker logs </span>[-f|--follow]<span style="color:#cdcd00;"> </span>container_name
+<span style="color:#5c5cff;">ITINF25/lektion5
+<span style="color:#5c5cff;">ITINF25/lektion5
+</span>$ hueiheiuh
+
+uhiuhiuhiu
+
+
+iuooijonano
+<span style="color:#5c5cff;">f;">ITINF25/lektion5                                                  Y Yesw Buffer                                          </span>[ Welcome to nano.  For basic help, type Ctrl+G. ]
+<span style="color:#5c5cff;">:#5c5cff;">ITINF25/lektion5
+</span>$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   &quot;docker-entrypoint.s…&quot;   7 weeks ago   Up 3 hours   0.0.0.0:3306-&gt;3306/tcp, [::]:3306-&gt;3306/tcp   mariadb-db-1
+<span style="color:#5c5cff;">ITINF25/lektion5
+</span>$ 
+<span style="color:#5c5cff;">">ITINF25/lektion5
+</span>$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   &quot;docker-entrypoint.s…&quot;   7 weeks ago   Up 3 hours   0.0.0.0:3306-&gt;3306/tcp, [::]:3306-&gt;3306/tcp   mariadb-db-1
+<span style="color:#5c5cff;">ITINF25/lektion5
+<span style="color:#5c5cff;">:#5c5cff;">ITINF25/lektion5
+</span>$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   &quot;docker-entrypoint.s…&quot;   7 weeks ago   Up 3 hours   0.0.0.0:3306-&gt;3306/tcp, [::]:3306-&gt;3306/tcp   mariadb-db-1
+<span style="color:#5c5cff;">ITINF25/lektion5
+</span>$ 
+$ mkdir Tetesstdoutbytfifildel
+<span style="color:#5c5cff;">ITINF25/lektion5
+</span>$ cd stdoutbytfildel/
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ls
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cat /etc/default/gr
+ub
+# If you change this file, run &apos;update-grub&apos; afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n &apos;Simple configuration&apos;
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2&gt; /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash i8042.reset i8042.nomux&quot;
+GRUB_CMDLINE_LINUX=&quot;i8042.kbdreset=1&quot;
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM=&quot;0x01234567,0xfefefefe,0x89abcdef,0xefefefef&quot;
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo&apos;
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don&apos;t want GRUB to pass &quot;root=UUID=xxx&quot; parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY=&quot;true&quot;
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE=&quot;480 440 1&quot;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">b | grep -i vcrypt<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cat /etc/default/grub | grep -i crypt
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cat /etc/default/grub | grep -i cryp
+b
+# If you change this file, run &apos;update-grub&apos; afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n &apos;Simple configuration&apos;
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2&gt; /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash i8042.reset i8042.nomux&quot;
+GRUB_CMDLINE_LINUX=&quot;i8042.kbdreset=1&quot;
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM=&quot;0x01234567,0xfefefefe,0x89abcdef,0xefefefef&quot;
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo&apos;
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don&apos;t want GRUB to pass &quot;root=UUID=xxx&quot; parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY=&quot;true&quot;
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE=&quot;480 440 1&quot;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ LS
+bash: LS: command not found
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ls
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ nano minconfig.conf
+<span style="color:#5c5cff;">f;">ITINF25/lektion5/stdoutbytfildel ]es        
+</span>$ sed minconfig.conf-E&apos;s
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=
+MORE=NO
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -E &apos;&apos; minconfig.conf^ENCRYPT_UUID= 
+sed: -e expression #1, char 1: unknown command: `^&apos;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">T_UUID= &apos; minconfig.confs/$/12345/<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -E &apos;^ENCRYPT_UUID= s/$/12345/&apos; minconfig.conf
+sed: -e expression #1, char 1: unknown command: `^&apos;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -E &apos;^ENCRYPT_UUID= s/$/12345/&apos; minconfig.conf//
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=12345
+MORE=NO
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -E &apos;/^ENCRYPT_UUID=/ s/$/12345/&apos; minconfig.conf/UUID/
+sed: -e expression #1, char 12: unknown command: `/&apos;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -E &apos;/^ENCRYPT/ /UUID/ s/$/12345/&apos; minconfig.conf
+sed: -e expression #1, char 12: unknown command: `/&apos;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ man sed
+SED(1)                  User Commands                  SED(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       sed  -  stream  editor  for filtering and transforming
+       text
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent]
+           [-l N] [--line-length=N] [-u] [--unbuffered]
+           [-E] [-r] [--regexp-extended]
+           [-e script] [--expression=script]
+           [-f script-file] [--file=script-file]
+           [script-if-no-other-script]
+           [file...]
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">Sed</span><span style="color:#000000;background-color:#000000;"> is a stream editor.  A stream editor  is  used  to</span>
+       perform  basic text transformations on an input stream
+       (a file or input from a pipeline).  While in some ways
+       similar  to  an  editor  which  permits scripted edits
+       (such as <span style="text-decoration:underline;">ed</span>), <span style="text-decoration:underline;">sed</span> works by making only one  pass  over
+       the input(s), and is consequently more efficient.  But
+       it is <span style="text-decoration:underline;">sed</span>&apos;s ability to filter text in a pipeline which
+       particularly distinguishes it from other types of edi‐
+       tors.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-n</span>, <span style="font-weight:bold;color:#7f7f7f;">--quiet</span>, <span style="font-weight:bold;color:#7f7f7f;">--silent</span>
+
+              suppress automatic printing of pattern space
+
+       <span style="font-weight:bold;color:#7f7f7f;">--debug</span>
+
+<span style="color:#000000;background-color:#000000;">              annotate program execution</span>r q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+       <span style="font-weight:bold;color:#7f7f7f;">-e</span> script, <span style="font-weight:bold;color:#7f7f7f;">--expression</span>=<span style="text-decoration:underline;">script</span>
+
+              add the script to the commands to be executed
+
+       <span style="font-weight:bold;color:#7f7f7f;">-f</span> script-file, <span style="font-weight:bold;color:#7f7f7f;">--file</span>=<span style="text-decoration:underline;">script-file</span>
+
+              add the contents of script-file to the commands
+              to be executed
+
+       <span style="font-weight:bold;color:#7f7f7f;">--follow-symlinks</span>
+
+              follow symlinks when processing in place
+
+       <span style="font-weight:bold;color:#7f7f7f;">-i[SUFFIX]</span>, <span style="font-weight:bold;color:#7f7f7f;">--in-place</span>[=<span style="text-decoration:underline;">SUFFIX</span>]
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 33 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+              edit  files  in  place  (makes backup if SUFFIX
+              supplied)
+
+       <span style="font-weight:bold;color:#7f7f7f;">-l</span> N, <span style="font-weight:bold;color:#7f7f7f;">--line-length</span>=<span style="text-decoration:underline;">N</span>
+
+              specify the desired line-wrap  length  for  the
+              `l&apos; command
+
+       <span style="font-weight:bold;color:#7f7f7f;">--posix</span>
+
+              disable all GNU extensions.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-E</span>, <span style="font-weight:bold;color:#7f7f7f;">-r</span>, <span style="font-weight:bold;color:#7f7f7f;">--regexp-extended</span>
+
+              use  extended regular expressions in the script
+<span style="color:#000000;background-color:#000000;">              (for portability use POSIX </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-E</span>).
+
+       <span style="font-weight:bold;color:#7f7f7f;">-s</span>, <span style="font-weight:bold;color:#7f7f7f;">--separate</span>
+
+              consider files as separate  rather  than  as  a
+              single, continuous long stream.
+
+       <span style="font-weight:bold;color:#7f7f7f;">--sandbox</span>
+
+              operate  in  sandbox  mode  (disable e/r/w com‐
+              mands).
+
+       <span style="font-weight:bold;color:#7f7f7f;">-u</span>, <span style="font-weight:bold;color:#7f7f7f;">--unbuffered</span>
+
+              load minimal amounts of  data  from  the  input
+              files and flush the output buffers more often
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 65 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       <span style="font-weight:bold;color:#7f7f7f;">-z</span>, <span style="font-weight:bold;color:#7f7f7f;">--null-data</span>
+
+              separate lines by NUL characters
+
+       <span style="font-weight:bold;color:#7f7f7f;">--help</span>
+              display this help and exit
+
+       <span style="font-weight:bold;color:#7f7f7f;">--version</span>
+              output version information and exit
+
+       If no <span style="font-weight:bold;color:#7f7f7f;">-e</span>, <span style="font-weight:bold;color:#7f7f7f;">--expression</span>, <span style="font-weight:bold;color:#7f7f7f;">-f</span>, or <span style="font-weight:bold;color:#7f7f7f;">--file</span> option is given,
+       then the first non-option argument is taken as the sed
+       script  to  interpret.   All  remaining  arguments are
+       names of input files; if no input files are specified,
+       then the standard input is read.
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 81 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       GNU    sed   home   page:   &lt;https://www.gnu.org/soft‐
+       ware/sed/&gt;.   General   help   using   GNU   software:
+       &lt;https://www.gnu.org/gethelp/&gt;.   E-mail  bug  reports
+       to: &lt;bug-sed&#64;gnu.org&gt;.
+
+       Packaged by Debian  Copyright  ©  2022  Free  Software
+       Foundation, Inc.  License GPLv3+: GNU GPL version 3 or
+       later  &lt;https://gnu.org/licenses/gpl.html&gt;.   This  is
+       free software: you are free to change and redistribute
+       it.  There is NO WARRANTY, to the extent permitted  by
+       law.
+
+<span style="font-weight:bold;color:#7f7f7f;">COMMAND</span> <span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       This is just a brief synopsis of <span style="text-decoration:underline;">sed</span> commands to serve
+       as a reminder to those who  already  know  <span style="text-decoration:underline;">sed</span>;  other
+<span style="color:#000000;background-color:#000000;">       documentation  (such  as the texinfo document) must be</span>pan style="color:#000000;background-color:#000000;">
+       consulted for fuller descriptions.
+
+   <span style="font-weight:bold;color:#7f7f7f;">Zero-address</span> <span style="font-weight:bold;color:#7f7f7f;">``commands&apos;&apos;</span>
+       : <span style="text-decoration:underline;">label</span>
+              Label for <span style="font-weight:bold;color:#7f7f7f;">b</span> and <span style="font-weight:bold;color:#7f7f7f;">t</span> commands.
+
+       #<span style="text-decoration:underline;">comment</span>
+              The comment extends until the next newline  (or
+              the end of a <span style="font-weight:bold;color:#7f7f7f;">-e</span> script fragment).
+
+       }      The closing bracket of a { } block.
+
+   <span style="font-weight:bold;color:#7f7f7f;">Zero-</span> <span style="font-weight:bold;color:#7f7f7f;">or</span> <span style="font-weight:bold;color:#7f7f7f;">One-</span> <span style="font-weight:bold;color:#7f7f7f;">address</span> <span style="font-weight:bold;color:#7f7f7f;">commands</span>
+       =      Print the current line number.
+
+<span style="color:#000000;background-color:#000000;">       a \</span>1) line 113 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+       <span style="text-decoration:underline;">text</span>   Append  <span style="text-decoration:underline;">text</span>,  which  has each embedded newline
+              preceded by a backslash.
+
+       i \
+
+       <span style="text-decoration:underline;">text</span>   Insert <span style="text-decoration:underline;">text</span>, which has  each  embedded  newline
+              preceded by a backslash.
+
+       q [<span style="text-decoration:underline;">exit-code</span>]
+              Immediately  quit  the  <span style="text-decoration:underline;">sed</span> script without pro‐
+              cessing any more input, except  that  if  auto-
+              print is not disabled the current pattern space
+              will be printed.  The exit code argument  is  a
+              GNU extension.
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 129 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       Q [<span style="text-decoration:underline;">exit-code</span>]
+              Immediately  quit  the  <span style="text-decoration:underline;">sed</span> script without pro‐
+              cessing any more input.  This is a  GNU  exten‐
+              sion.
+
+       r <span style="text-decoration:underline;">filename</span>
+              Append text read from <span style="text-decoration:underline;">filename</span>.
+
+       R <span style="text-decoration:underline;">filename</span>
+              Append a line read from <span style="text-decoration:underline;">filename</span>.  Each invoca‐
+              tion of the command reads a line from the file.
+              This is a GNU extension.
+
+   <span style="font-weight:bold;color:#7f7f7f;">Commands</span> <span style="font-weight:bold;color:#7f7f7f;">which</span> <span style="font-weight:bold;color:#7f7f7f;">accept</span> <span style="font-weight:bold;color:#7f7f7f;">address</span> <span style="font-weight:bold;color:#7f7f7f;">ranges</span>
+       {      Begin a block of commands (end with a }).
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 145 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       b <span style="text-decoration:underline;">label</span>
+              Branch to <span style="text-decoration:underline;">label</span>; if <span style="text-decoration:underline;">label</span> is omitted, branch to
+              end of script.
+
+       c \
+
+       <span style="text-decoration:underline;">text</span>   Replace the selected lines with <span style="text-decoration:underline;">text</span>, which has
+              each embedded newline preceded by a backslash.
+
+       d      Delete pattern space.  Start next cycle.
+
+       D      If  pattern  space contains no newline, start a
+              normal new cycle as if the d  command  was  is‐
+              sued.   Otherwise,  delete  text in the pattern
+              space up to the first newline, and restart  cy‐
+<span style="color:#000000;background-color:#000000;">              cle  with  the resultant pattern space, without</span>span style="color:#000000;background-color:#000000;">
+              reading a new line of input.
+
+       h H    Copy/append pattern space to hold space.
+
+       g G    Copy/append hold space to pattern space.
+
+       l      List out the current line in a ``visually unam‐
+              biguous&apos;&apos; form.
+
+       l <span style="text-decoration:underline;">width</span>
+              List out the current line in a ``visually unam‐
+              biguous&apos;&apos; form, breaking it  at  <span style="text-decoration:underline;">width</span>  charac‐
+              ters.  This is a GNU extension.
+
+       n N    Read/append  the  next  line  of input into the
+<span style="color:#000000;background-color:#000000;">              pattern space.</span> h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+       p      Print the current pattern space.
+
+       P      Print up to the first embedded newline  of  the
+              current pattern space.
+
+       s/<span style="text-decoration:underline;">regexp</span>/<span style="text-decoration:underline;">replacement</span>/
+              Attempt  to  match  <span style="text-decoration:underline;">regexp</span>  against the pattern
+              space.  If  successful,  replace  that  portion
+              matched  with <span style="text-decoration:underline;">replacement</span>.  The <span style="text-decoration:underline;">replacement</span> may
+              contain the special character  <span style="font-weight:bold;color:#7f7f7f;">&amp;</span>  to  refer  to
+              that   portion   of  the  pattern  space  which
+              matched, and the special escapes \1 through  \9
+              to  refer to the corresponding matching sub-ex‐
+              pressions in the <span style="text-decoration:underline;">regexp</span>.
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 193 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       t <span style="text-decoration:underline;">label</span>
+              If a s/// has done  a  successful  substitution
+              since  the  last  input line was read and since
+              the last t or T command, then branch to  <span style="text-decoration:underline;">label</span>;
+              if <span style="text-decoration:underline;">label</span> is omitted, branch to end of script.
+
+       T <span style="text-decoration:underline;">label</span>
+              If  no  s/// has done a successful substitution
+              since the last input line was  read  and  since
+              the  last t or T command, then branch to <span style="text-decoration:underline;">label</span>;
+              if <span style="text-decoration:underline;">label</span> is omitted, branch to end  of  script.
+              This is a GNU extension.
+
+       w <span style="text-decoration:underline;">filename</span>
+              Write the current pattern space to <span style="text-decoration:underline;">filename</span>.
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 209 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       W <span style="text-decoration:underline;">filename</span>
+              Write  the  first  line  of the current pattern
+              space to <span style="text-decoration:underline;">filename</span>.  This is a GNU extension.
+
+       x      Exchange the contents of the hold  and  pattern
+              spaces.
+
+       y/<span style="text-decoration:underline;">source</span>/<span style="text-decoration:underline;">dest</span>/
+              Transliterate  the  characters  in  the pattern
+              space which appear in <span style="text-decoration:underline;">source</span> to the correspond‐
+              ing character in <span style="text-decoration:underline;">dest</span>.
+
+<span style="font-weight:bold;color:#7f7f7f;">Addresses</span>
+       <span style="text-decoration:underline;">Sed</span>  commands can be given with no addresses, in which
+       case the command will be executed for all input lines;
+<span style="color:#000000;background-color:#000000;">       with  one address, in which case the command will only</span>span style="color:#000000;background-color:#000000;">
+       be executed for input lines which match that  address;
+       or  with two addresses, in which case the command will
+       be executed for all input lines which match the inclu‐
+       sive  range  of  lines starting from the first address
+       and continuing to the second address.  Three things to
+       note  about  address ranges: the syntax is <span style="text-decoration:underline;">addr1</span>,<span style="text-decoration:underline;">addr2</span>
+       (i.e., the addresses are separated by  a  comma);  the
+       line which <span style="text-decoration:underline;">addr1</span> matched will always be accepted, even
+       if <span style="text-decoration:underline;">addr2</span> selects an earlier line; and if  <span style="text-decoration:underline;">addr2</span>  is  a
+       <span style="text-decoration:underline;">regexp</span>,  it  will  not be tested against the line that
+       <span style="text-decoration:underline;">addr1</span> matched.
+
+       After the address (or address-range), and  before  the
+       command,  a  <span style="font-weight:bold;color:#7f7f7f;">!</span>   may be inserted, which specifies that
+       the command shall only be executed if the address  (or
+<span style="color:#000000;background-color:#000000;">       address-range) does </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">not</span> match.
+
+       The following address types are supported:
+
+       <span style="text-decoration:underline;">number</span> Match only the specified line <span style="text-decoration:underline;">number</span> (which in‐
+              crements cumulatively across files, unless  the
+              <span style="font-weight:bold;color:#7f7f7f;">-s</span> option is specified on the command line).
+
+       <span style="text-decoration:underline;">first</span>~<span style="text-decoration:underline;">step</span>
+              Match  every  <span style="text-decoration:underline;">step</span>&apos;th  line  starting with line
+              <span style="text-decoration:underline;">first</span>.  For example, ``sed -n 1~2p&apos;&apos; will print
+              all the odd-numbered lines in the input stream,
+              and the address  2~5  will  match  every  fifth
+              line,  starting  with the second.  <span style="text-decoration:underline;">first</span> can be
+              zero; in this case, <span style="text-decoration:underline;">sed</span> operates as if it  were
+              equal to <span style="text-decoration:underline;">step</span>.  (This is an extension.)
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 257 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       address-range) does </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">not</span> match.
+<span style="color:#000000;background-color:#000000;"></span> page sed(1) line 257 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       $      Match the last line.
+
+       /<span style="text-decoration:underline;">regexp</span>/
+              Match  lines  matching  the  regular expression
+              <span style="text-decoration:underline;">regexp</span>.  Matching is performed on  the  current
+              pattern  space, which can be modified with com‐
+              mands such as ``s///&apos;&apos;.
+
+       \<span style="font-weight:bold;color:#7f7f7f;">c</span><span style="text-decoration:underline;">regexp</span><span style="font-weight:bold;color:#7f7f7f;">c</span>
+              Match lines  matching  the  regular  expression
+              <span style="text-decoration:underline;">regexp</span>.  The <span style="font-weight:bold;color:#7f7f7f;">c</span> may be any character.
+
+       GNU <span style="text-decoration:underline;">sed</span> also supports some special 2-address forms:
+
+       0,<span style="text-decoration:underline;">addr2</span>
+<span style="color:#000000;background-color:#000000;">              Start out in &quot;matched first address&quot; state, un‐</span>color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              til  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  found.   This  is  similar   to</span>
+<span style="color:#000000;background-color:#000000;">              1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">,  except that if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> matches the very</span>
+<span style="color:#000000;background-color:#000000;">              first line of input the 0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form will be at</span>
+<span style="color:#000000;background-color:#000000;">              the  end of its range, whereas the 1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form</span>
+<span style="color:#000000;background-color:#000000;">              will still be at the beginning  of  its  range.</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              This works only when </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> is a regular expres‐</span>
+<span style="color:#000000;background-color:#000000;">              sion.</span>80 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 281 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,+</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Will match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">  and  the  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">  lines  following</span>
+<span style="color:#000000;background-color:#000000;">              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 285 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Will  match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> and the lines following </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              until the next line whose input line number  is</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              a multiple of </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 290 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">REGULAR</span> <span style="font-weight:bold;color:#7f7f7f;">EXPRESSIONS</span>
+<span style="color:#000000;background-color:#000000;">       POSIX.2 BREs </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">should</span><span style="color:#000000;background-color:#000000;"> be supported, but they aren&apos;t com‐</span>
+<span style="color:#000000;background-color:#000000;">       pletely because of performance problems.  The  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\n</span>  se‐
+<span style="color:#000000;background-color:#000000;">       quence  in  a  regular  expression matches the newline</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       character, and similarly for </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\a</span>,  <span style="font-weight:bold;color:#7f7f7f;">\t</span>,  and  other  se‐
+<span style="color:#000000;background-color:#000000;">M              This works only when </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> is a regular expres‐</span>
+<span style="color:#000000;background-color:#000000;">M              will still be at the beginning  of  its  range.</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              the  end of its range, whereas the 1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form</span>
+<span style="color:#000000;background-color:#000000;">M              first line of input the 0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form will be at</span>
+<span style="color:#000000;background-color:#000000;">M              1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">,  except that if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> matches the very</span>
+<span style="color:#000000;background-color:#000000;">M              til  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  found.   This  is  similar   to</span>
+<span style="color:#000000;background-color:#000000;">M              Start out in &quot;matched first address&quot; state, un‐</span>olor:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 288 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       GNU </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">sed</span><span style="color:#000000;background-color:#000000;"> also supports some special 2-address forms:</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 286 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 285 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Will  match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> and the lines following </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              until the next line whose input line number  is</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              a multiple of </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 290 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">REGULAR</span> <span style="font-weight:bold;color:#7f7f7f;">EXPRESSIONS</span>
+<span style="color:#000000;background-color:#000000;">       POSIX.2 BREs </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">should</span><span style="color:#000000;background-color:#000000;"> be supported, but they aren&apos;t com‐</span>
+<span style="color:#000000;background-color:#000000;">       pletely because of performance problems.  The  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\n</span>  se‐
+<span style="color:#000000;background-color:#000000;">       quence  in  a  regular  expression matches the newline</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       character, and similarly for </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\a</span>,  <span style="font-weight:bold;color:#7f7f7f;">\t</span>,  and  other  se‐
+<span style="color:#000000;background-color:#000000;">       quences.   The  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">-E</span><span style="color:#000000;background-color:#000000;">  option  switches to using extended</span>
+<span style="color:#000000;background-color:#000000;">       regular expressions instead; it has been supported for</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       years by GNU sed, and is now included in POSIX.</span>/span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 299 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">BUGS</span>0000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       E-mail  bug  reports to </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">bug-sed&#64;gnu.org</span>.  Also, please
+<span style="color:#000000;background-color:#000000;">       include the output of ``sed --version&apos;&apos; in the body of</span>="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       your report if at all possible.</span>p or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 304 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">AUTHOR</span>00;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       Written  by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       Bonzini, Jim Meyering, and Assaf Gordon.</span> quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 308 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       This sed  program  was  built  with  SELinux  support.</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       SELinux is disabled on this system.</span> q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 311 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       GNU    sed   home   page:   &lt;https://www.gnu.org/soft‐</span>style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       quences.   The  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">-E</span><span style="color:#000000;background-color:#000000;">  option  switches to using extended</span>
+<span style="color:#000000;background-color:#000000;">M       character, and similarly for </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\a</span>,  <span style="font-weight:bold;color:#7f7f7f;">\t</span>,  and  other  se‐
+<span style="color:#000000;background-color:#000000;">M       quence  in  a  regular  expression matches the newline</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       pletely because of performance problems.  The  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\n</span>  se‐
+<span style="color:#000000;background-color:#000000;">M       POSIX.2 BREs </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">should</span><span style="color:#000000;background-color:#000000;"> be supported, but they aren&apos;t com‐</span>
+<span style="color:#000000;background-color:#000000;">M</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">REGULAR</span> <span style="font-weight:bold;color:#7f7f7f;">EXPRESSIONS</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 307 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              a multiple of </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;">M              until the next line whose input line number  is</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              Will  match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> and the lines following </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 302 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;">M              Will match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">  and  the  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">  lines  following</span>
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,+</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 298 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              sion.</span>7 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              This works only when </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> is a regular expres‐</span>
+<span style="color:#000000;background-color:#000000;">M              will still be at the beginning  of  its  range.</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              the  end of its range, whereas the 1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form</span>
+<span style="color:#000000;background-color:#000000;">M              first line of input the 0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form will be at</span>
+<span style="color:#000000;background-color:#000000;">M              1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">,  except that if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> matches the very</span>
+<span style="color:#000000;background-color:#000000;">M              til  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  found.   This  is  similar   to</span>
+<span style="color:#000000;background-color:#000000;">M              Start out in &quot;matched first address&quot; state, un‐</span>olor:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 288 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       GNU </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">sed</span><span style="color:#000000;background-color:#000000;"> also supports some special 2-address forms:</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 286 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">.  The </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">c</span> may be any character.
+<span style="color:#000000;background-color:#000000;">M              Match lines  matching  the  regular  expression</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       \</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">c</span><span style="text-decoration:underline;">regexp</span><span style="font-weight:bold;color:#7f7f7f;">c</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 282 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              mands such as ``s///&apos;&apos;.</span>quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              pattern  space, which can be modified with com‐</span>n style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">.  Matching is performed on  the  current</span>
+<span style="color:#000000;background-color:#000000;">M              Match  lines  matching  the  regular expression</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       /</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">/</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 276 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       $      Match the last line.</span>help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 274 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              equal to </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;">.  (This is an extension.)</span>
+<span style="color:#000000;background-color:#000000;">M              zero; in this case, </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">sed</span><span style="color:#000000;background-color:#000000;"> operates as if it  were</span>
+<span style="color:#000000;background-color:#000000;">M              line,  starting  with the second.  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;"> can be</span>
+<span style="color:#000000;background-color:#000000;">M              and the address  2~5  will  match  every  fifth</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              all the odd-numbered lines in the input stream,</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;">.  For example, ``sed -n 1~2p&apos;&apos; will print</span>
+<span style="color:#000000;background-color:#000000;">M              Match  every  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;">&apos;th  line  starting with line</span>
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;">~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 265 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-s</span> option is specified on the command line).
+<span style="color:#000000;background-color:#000000;">M              crements cumulatively across files, unless  the</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">number</span><span style="color:#000000;background-color:#000000;"> Match only the specified line </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">number</span><span style="color:#000000;background-color:#000000;"> (which in‐</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 261 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       The following address types are supported:</span>it)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 259 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       address-range) does </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">not</span> match.
+<span style="color:#000000;background-color:#000000;">M       the command shall only be executed if the address  (or</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       command,  a  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">!</span>   may be inserted, which specifies that
+<span style="color:#000000;background-color:#000000;">M       After the address (or address-range), and  before  the</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 254 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> matched.</span>
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">,  it  will  not be tested against the line that</span>
+<span style="color:#000000;background-color:#000000;">M       if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> selects an earlier line; and if  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  a</span>
+<span style="color:#000000;background-color:#000000;">M       line which </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> matched will always be accepted, even</span>
+<span style="color:#000000;background-color:#000000;">M       (i.e., the addresses are separated by  a  comma);  the</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       note  about  address ranges: the syntax is </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">M       and continuing to the second address.  Three things to</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       sive  range  of  lines starting from the first address</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       be executed for all input lines which match the inclu‐</span>n style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       or  with two addresses, in which case the command will</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       be executed for input lines which match that  address;</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       with  one address, in which case the command will only</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       case the command will be executed for all input lines;</span>pan style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">Sed</span><span style="color:#000000;background-color:#000000;">  commands can be given with no addresses, in which</span>
+<span style="color:#000000;background-color:#000000;">M</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">Addresses</span>ackground-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 238 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 237 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       After the address (or address-range), and  before  the</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       command,  a  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">!</span>   may be inserted, which specifies that
+<span style="color:#000000;background-color:#000000;">       the command shall only be executed if the address  (or</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       address-range) does </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">not</span> match.
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 242 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       The following address types are supported:</span>uit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 244 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">number</span><span style="color:#000000;background-color:#000000;"> Match only the specified line </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">number</span><span style="color:#000000;background-color:#000000;"> (which in‐</span>
+<span style="color:#000000;background-color:#000000;">              crements cumulatively across files, unless  the</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-s</span> option is specified on the command line).
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 248 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;">~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Match  every  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;">&apos;th  line  starting with line</span>
+<span style="color:#000000;background-color:#000000;">              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;">.  For example, ``sed -n 1~2p&apos;&apos; will print</span>
+<span style="color:#000000;background-color:#000000;">              all the odd-numbered lines in the input stream,</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              and the address  2~5  will  match  every  fifth</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              line,  starting  with the second.  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">first</span><span style="color:#000000;background-color:#000000;"> can be</span>
+<span style="color:#000000;background-color:#000000;">              zero; in this case, </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">sed</span><span style="color:#000000;background-color:#000000;"> operates as if it  were</span>
+<span style="color:#000000;background-color:#000000;">              equal to </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">step</span><span style="color:#000000;background-color:#000000;">.  (This is an extension.)</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 257 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       $      Match the last line.</span> help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 259 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       /</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">/</span>
+<span style="color:#000000;background-color:#000000;">              Match  lines  matching  the  regular expression</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">.  Matching is performed on  the  current</span>
+<span style="color:#000000;background-color:#000000;">              pattern  space, which can be modified with com‐</span>an style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              mands such as ``s///&apos;&apos;.</span> quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 265 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       \</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">c</span><span style="text-decoration:underline;">regexp</span><span style="font-weight:bold;color:#7f7f7f;">c</span>
+<span style="color:#000000;background-color:#000000;">              Match lines  matching  the  regular  expression</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">regexp</span><span style="color:#000000;background-color:#000000;">.  The </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">c</span> may be any character.
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 269 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       GNU </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">sed</span><span style="color:#000000;background-color:#000000;"> also supports some special 2-address forms:</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 271 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Start out in &quot;matched first address&quot; state, un‐</span>color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              til  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  found.   This  is  similar   to</span>
+<span style="color:#000000;background-color:#000000;">              1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">,  except that if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> matches the very</span>
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 276 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       $      Match the last line.</span>help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>page sed(1) line 274 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              Start out in &quot;matched first address&quot; state, un‐</span>color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              til  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">  is  found.   This  is  similar   to</span>
+<span style="color:#000000;background-color:#000000;">              1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;">,  except that if </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> matches the very</span>
+<span style="color:#000000;background-color:#000000;">              first line of input the 0,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form will be at</span>
+<span style="color:#000000;background-color:#000000;">              the  end of its range, whereas the 1,</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> form</span>
+<span style="color:#000000;background-color:#000000;">              will still be at the beginning  of  its  range.</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              This works only when </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr2</span><span style="color:#000000;background-color:#000000;"> is a regular expres‐</span>
+<span style="color:#000000;background-color:#000000;">              sion.</span>80 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 281 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,+</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Will match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">  and  the  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">  lines  following</span>
+<span style="color:#000000;background-color:#000000;">              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 285 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">,~</span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              Will  match </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"> and the lines following </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;"></span>
+<span style="color:#000000;background-color:#000000;">              until the next line whose input line number  is</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">              a multiple of </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">N</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 290 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">REGULAR</span> <span style="font-weight:bold;color:#7f7f7f;">EXPRESSIONS</span>
+<span style="color:#000000;background-color:#000000;">       POSIX.2 BREs </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">should</span><span style="color:#000000;background-color:#000000;"> be supported, but they aren&apos;t com‐</span>
+<span style="color:#000000;background-color:#000000;">       pletely because of performance problems.  The  </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\n</span>  se‐
+<span style="color:#000000;background-color:#000000;">       quence  in  a  regular  expression matches the newline</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       character, and similarly for </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">\a</span>,  <span style="font-weight:bold;color:#7f7f7f;">\t</span>,  and  other  se‐
+<span style="color:#000000;background-color:#000000;">       quences.   The  </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">-E</span><span style="color:#000000;background-color:#000000;">  option  switches to using extended</span>
+<span style="color:#000000;background-color:#000000;">       regular expressions instead; it has been supported for</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       years by GNU sed, and is now included in POSIX.</span>/span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 299 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">BUGS</span>0000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M              </span><span style="text-decoration:underline;color:#000000;background-color:#000000;">addr1</span><span style="color:#000000;background-color:#000000;">.</span>
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">BUGS</span>0000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       E-mail  bug  reports to </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">bug-sed&#64;gnu.org</span>.  Also, please
+<span style="color:#000000;background-color:#000000;">       include the output of ``sed --version&apos;&apos; in the body of</span>="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       your report if at all possible.</span>p or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 304 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">AUTHOR</span>00;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       Written  by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo</span>span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">       Bonzini, Jim Meyering, and Assaf Gordon.</span> quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;"></span>Bpage sed(1) line 308 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5/stdoutbytfildelkground-color:#000000;">
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">; minconfig.conf minconfig.conf<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed &apos;/UUID&apos; minconfig.conf
+sed: -e expression #1, char 5: unterminated address regex
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">; minconfig.con/<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed &apos;/UUID/&apos; minconfig.con
+sed: -e expression #1, char 6: missing command
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed &apos;/UUID/&apos; minconfig.con p
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=
+ENCRYPT_UUID=
+MORE=NO
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">pos; minconfig.con-n <span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/UUID/ p&apos; minconfig.con
+ENCRYPT_UUID=
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/UUID/ p&apos; minconfig.con/UUID
+sed: -e expression #1, char 8: unknown command: `/&apos;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/UUID/ /UUID/ p&apos; minconfig.con{  }
+ENCRYPT_UUID=
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">{ /UUID/ p }&apos; minconfig.conENCRYPT<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /UUID/ p }&apos; minconfig.con
+ENCRYPT_UUID=
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /UUID/ p }&apos; minconfig.con/!
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">T/ { /UUID/! p }&apos; minconfig.con12345<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /12345/! p }&apos; minconfig.con
+ENCRYPT_UUID=
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /12345/! p }&apos; minconfig.con
+ENCRYPT_UUID=
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /12345/! p }&apos; minconfig.cons/$/HEJ/
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed -n &apos;/ENCRYPT/ { /12345/! s/$/HEJ/ }&apos; minconfig.con
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">T/ { /12345/! s/$/HEJ/ }&apos; minconfig.con<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed &apos;/ENCRYPT/ { /12345/! s/$/HEJ/ }&apos; minconfig.con
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sed &apos;/ENCRYPT/ { /12345/! s/$/HEJ/ }&apos; minconfig.con
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ blkid 
+bash: blkid: command not found
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ blkid
+
+
+
+
+
+
+sudo blkid
+[sudo] password for kent: 
+/dev/nvme0n1p11: UUID=&quot;723aff47-6e78-4d68-90b9-7b369954a351&quot; TYPE=&quot;crypto_LUKS&quot; PARTLABEL=&quot;DataCrypt&quot; PARTUUID=&quot;f553107a-d654-4765-bd3f-59be7ce3b283&quot;
+/dev/nvme0n1p5: UUID=&quot;01825a8c-41eb-4713-a016-12f7b6bab902&quot; BLOCK_SIZE=&quot;4096&quot; TYPE=&quot;ext4&quot; PARTLABEL=&quot;DebBoot&quot; PARTUUID=&quot;57437187-849e-4d33-86ed-b7fe88065076&quot;
+/dev/nvme0n1p3: BLOCK_SIZE=&quot;512&quot; UUID=&quot;D46A79F16A79D12A&quot; TYPE=&quot;ntfs&quot; PARTLABEL=&quot;Basic data partition&quot; PARTUUID=&quot;33ee2485-3997-4009-bc40-28543898bdf5&quot;
+/dev/nvme0n1p1: UUID=&quot;2E64-153F&quot; BLOCK_SIZE=&quot;512&quot; TYPE=&quot;vfat&quot; PARTLABEL=&quot;EFI system partition&quot; PARTUUID=&quot;dcb08ef8-28e2-4f12-8eba-274b1294d1a2&quot;
+/dev/nvme0n1p6: UUID=&quot;6f516c51-cb2c-4737-8007-7e8ebc6b8bb8&quot; TYPE=&quot;crypto_LUKS&quot; PARTLABEL=&quot;DebCrypt&quot; PARTUUID=&quot;c3db2a61-4a5a-45f6-9f01-f8229656805d&quot;
+/dev/nvme0n1p4: BLOCK_SIZE=&quot;512&quot; UUID=&quot;2E5E7BB45E7B7405&quot; TYPE=&quot;ntfs&quot; PARTUUID=&quot;4f9e5899-d6f4-4f25-9e5b-c8cc4e9b6ffb&quot;
+/dev/mapper/root_decrypt: LABEL=&quot;DebDecrypt&quot; UUID=&quot;161a00c3-26c1-4611-8ebe-c6b3a55f485e&quot; BLOCK_SIZE=&quot;4096&quot; TYPE=&quot;ext4&quot;
+/dev/mapper/shared_decrypt: UUID=&quot;dc5ea6e0-79bd-4a45-9cd2-57414047b355&quot; BLOCK_SIZE=&quot;4096&quot; TYPE=&quot;ext4&quot;
+/dev/nvme0n1p2: PARTLABEL=&quot;Microsoft reserved partition&quot; PARTUUID=&quot;0fe2620f-c0b3-47f0-a289-11971be0440d&quot;
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -
+
+
+
+
+
+
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ man blkdid
+BLKID(8)            System Administration            BLKID(8)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       blkid - locate/print block device attributes
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">blkid</span> <span style="font-weight:bold;color:#7f7f7f;">--label</span> <span style="text-decoration:underline;">label</span> | <span style="font-weight:bold;color:#7f7f7f;">--uuid</span> <span style="text-decoration:underline;">uuid</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">blkid</span> [<span style="font-weight:bold;color:#7f7f7f;">--no-encoding</span> <span style="font-weight:bold;color:#7f7f7f;">--garbage-collect</span> <span style="font-weight:bold;color:#7f7f7f;">--list-one</span>
+       <span style="font-weight:bold;color:#7f7f7f;">--cache-file</span> <span style="text-decoration:underline;">file</span>] [<span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="text-decoration:underline;">format</span>] [<span style="font-weight:bold;color:#7f7f7f;">--match-tag</span> <span style="text-decoration:underline;">tag</span>]
+       [<span style="font-weight:bold;color:#7f7f7f;">--match-token</span> <span style="text-decoration:underline;">NAME=value</span>] [<span style="text-decoration:underline;">device</span>...]
+
+       <span style="font-weight:bold;color:#7f7f7f;">blkid</span> <span style="font-weight:bold;color:#7f7f7f;">--probe</span> [<span style="font-weight:bold;color:#7f7f7f;">--offset</span> <span style="text-decoration:underline;">offset</span>] [<span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="text-decoration:underline;">format</span>]
+       [<span style="font-weight:bold;color:#7f7f7f;">--size</span> <span style="text-decoration:underline;">size</span>] [<span style="font-weight:bold;color:#7f7f7f;">--match-tag</span> <span style="text-decoration:underline;">tag</span>] [<span style="font-weight:bold;color:#7f7f7f;">--match-types</span> <span style="text-decoration:underline;">list</span>]
+       [<span style="font-weight:bold;color:#7f7f7f;">--usages</span> <span style="text-decoration:underline;">list</span>] [<span style="font-weight:bold;color:#7f7f7f;">--no-part-details</span>] <span style="text-decoration:underline;">device</span>...
+
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">blkid</span> <span style="font-weight:bold;color:#7f7f7f;">--info</span> [<span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="font-weight:bold;color:#7f7f7f;">format</span>] [<span style="font-weight:bold;color:#7f7f7f;">--match-tag</span> <span style="text-decoration:underline;">tag</span>]
+       <span style="text-decoration:underline;">device</span>...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       The <span style="font-weight:bold;color:#7f7f7f;">blkid</span> program is the command-line interface to
+       working with the <span style="font-weight:bold;color:#7f7f7f;">libblkid</span>(3) library. It can determine
+       the type of content (e.g., filesystem or swap) that a
+       block device holds, and also the attributes (tokens,
+       NAME=value pairs) from the content metadata (e.g.,
+       LABEL or UUID fields).
+
+       <span style="font-weight:bold;color:#7f7f7f;">It</span> <span style="font-weight:bold;color:#7f7f7f;">is</span> <span style="font-weight:bold;color:#7f7f7f;">recommended</span> <span style="font-weight:bold;color:#7f7f7f;">to</span> <span style="font-weight:bold;color:#7f7f7f;">use</span> <span style="font-weight:bold;color:#7f7f7f;">lsblk</span>(8) <span style="font-weight:bold;color:#7f7f7f;">command</span> <span style="font-weight:bold;color:#7f7f7f;">to</span> <span style="font-weight:bold;color:#7f7f7f;">get</span>
+       <span style="font-weight:bold;color:#7f7f7f;">information</span> <span style="font-weight:bold;color:#7f7f7f;">about</span> <span style="font-weight:bold;color:#7f7f7f;">block</span> <span style="font-weight:bold;color:#7f7f7f;">devices,</span> <span style="font-weight:bold;color:#7f7f7f;">or</span> <span style="font-weight:bold;color:#7f7f7f;">lsblk</span> <span style="font-weight:bold;color:#7f7f7f;">--fs</span> <span style="font-weight:bold;color:#7f7f7f;">to</span> <span style="font-weight:bold;color:#7f7f7f;">get</span>
+       <span style="font-weight:bold;color:#7f7f7f;">an</span> <span style="font-weight:bold;color:#7f7f7f;">overview</span> <span style="font-weight:bold;color:#7f7f7f;">of</span> <span style="font-weight:bold;color:#7f7f7f;">filesystems,</span> <span style="font-weight:bold;color:#7f7f7f;">or</span> <span style="font-weight:bold;color:#7f7f7f;">findmnt</span>(8) <span style="font-weight:bold;color:#7f7f7f;">to</span> <span style="font-weight:bold;color:#7f7f7f;">search</span> <span style="font-weight:bold;color:#7f7f7f;">in</span>
+       <span style="font-weight:bold;color:#7f7f7f;">already</span> <span style="font-weight:bold;color:#7f7f7f;">mounted</span> <span style="font-weight:bold;color:#7f7f7f;">filesystems.</span>
+
+<span style="color:#000000;background-color:#000000;">          </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">lsblk</span>(8) provides more information, better
+          control on output formatting, easy to use in
+          scripts and it does not require root
+          permissions to get actual information. <span style="font-weight:bold;color:#7f7f7f;">blkid</span>
+          reads information directly from devices and
+          for non-root users it returns cached
+          unverified information. <span style="font-weight:bold;color:#7f7f7f;">blkid</span> is mostly
+          designed for system services and to test
+          <span style="font-weight:bold;color:#7f7f7f;">libblkid</span>(3) functionality.
+
+       When <span style="text-decoration:underline;">device</span> is specified, tokens from only this device
+       are displayed. It is possible to specify multiple
+       <span style="text-decoration:underline;">device</span> arguments on the command line. If none is
+       given, all partitions or unpartitioned devices which
+       appear in <span style="text-decoration:underline;">/proc/partitions</span> are shown, if they are
+       recognized.
+<span style="color:#000000;background-color:#000000;"></span> page blkid(8) line 33 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       <span style="font-weight:bold;color:#7f7f7f;">blkid</span> has two main forms of operation: either
+       searching for a device with a specific NAME=value
+       pair, or displaying NAME=value pairs for one or more
+       specified devices.
+
+       For security reasons <span style="font-weight:bold;color:#7f7f7f;">blkid</span> silently ignores all
+       devices where the probing result is ambivalent
+       (multiple colliding filesystems are detected). The
+       low-level probing mode (<span style="font-weight:bold;color:#7f7f7f;">-p</span>) provides more information
+       and extra exit status in this case. It’s recommended
+       to use <span style="font-weight:bold;color:#7f7f7f;">wipefs</span>(8) to get a detailed overview and to
+       erase obsolete stuff (magic strings) from the device.
+
+<span style="font-weight:bold;color:#7f7f7f;">OPTIONS</span>
+       The <span style="text-decoration:underline;">size</span> and <span style="text-decoration:underline;">offset</span> arguments may be followed by the
+<span style="color:#000000;background-color:#000000;">       multiplicative suffixes like KiB (=1024), MiB</span>t)</span><span style="color:#000000;background-color:#000000;">
+       (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB
+       and YiB (the &quot;iB&quot; is optional, e.g., &quot;K&quot; has the same
+       meaning as &quot;KiB&quot;), or the suffixes KB (=1000), MB
+       (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-c</span>, <span style="font-weight:bold;color:#7f7f7f;">--cache-file</span> <span style="text-decoration:underline;">cachefile</span>
+           Read from <span style="text-decoration:underline;">cachefile</span> instead of reading from the
+           default cache file (see the <span style="font-weight:bold;color:#7f7f7f;">CONFIGURATION</span> <span style="font-weight:bold;color:#7f7f7f;">FILE</span>
+           section for more details). If you want to start
+           with a clean cache (i.e., don’t report devices
+           previously scanned but not necessarily available
+           at this time), specify <span style="text-decoration:underline;">/dev/null</span>.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-d</span>, <span style="font-weight:bold;color:#7f7f7f;">--no-encoding</span>
+           Don’t encode non-printing characters. The
+<span style="color:#000000;background-color:#000000;">           non-printing characters are encoded by ^ and M-</span>an><span style="color:#000000;background-color:#000000;">
+           notation by default. Note that the <span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="font-weight:bold;color:#7f7f7f;">udev</span>
+           output format uses a different encoding which
+           cannot be disabled.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-D</span>, <span style="font-weight:bold;color:#7f7f7f;">--no-part-details</span>
+           Don’t print information (PART_ENTRY_* tags) from
+           partition table in low-level probing mode.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-g</span>, <span style="font-weight:bold;color:#7f7f7f;">--garbage-collect</span>
+           Perform a garbage collection pass on the blkid
+           cache to remove devices which no longer exist.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-H</span>, <span style="font-weight:bold;color:#7f7f7f;">--hint</span> <span style="text-decoration:underline;">setting</span>
+           Set probing hint. The hints are an optional way to
+           force probing functions to check, for example,
+<span style="color:#000000;background-color:#000000;">           another location. The currently supported is</span>/span><span style="color:#000000;background-color:#000000;">
+           &quot;session_offset=<span style="text-decoration:underline;">number</span>&quot; to set session offset on
+           multi-session UDF.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-i</span>, <span style="font-weight:bold;color:#7f7f7f;">--info</span>
+           Display information about I/O Limits (aka I/O
+           topology). The &apos;export&apos; output format is
+           automatically enabled. This option can be used
+           together with the <span style="font-weight:bold;color:#7f7f7f;">--probe</span> option.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-k</span>, <span style="font-weight:bold;color:#7f7f7f;">--list-filesystems</span>
+           List all known filesystems and RAIDs and exit.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-l</span>, <span style="font-weight:bold;color:#7f7f7f;">--list-one</span>
+           Look up only one device that matches the search
+           parameter specified with the <span style="font-weight:bold;color:#7f7f7f;">--match-token</span> option.
+<span style="color:#000000;background-color:#000000;">           If there are multiple devices that match the</span>/span><span style="color:#000000;background-color:#000000;">
+           specified search parameter, then the device with
+           the highest priority is returned, and/or the first
+           device found at a given priority (but see below
+           note about udev). Device types in order of
+           decreasing priority are: Device Mapper, EVMS, LVM,
+           MD, and finally regular block devices. If this
+           option is not specified, <span style="font-weight:bold;color:#7f7f7f;">blkid</span> will print all of
+           the devices that match the search parameter.
+
+           This option forces <span style="font-weight:bold;color:#7f7f7f;">blkid</span> to use udev when used for
+           LABEL or UUID tokens in <span style="font-weight:bold;color:#7f7f7f;">--match-token</span>. The goal is
+           to provide output consistent with other utils
+           (like <span style="font-weight:bold;color:#7f7f7f;">mount</span>(8), etc.) on systems where the same
+           tag is used for multiple devices.
+
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-L</span>, <span style="font-weight:bold;color:#7f7f7f;">--label</span> <span style="text-decoration:underline;">label</span>
+           Look up the device that uses this filesystem
+           <span style="text-decoration:underline;">label</span>; this is equal to <span style="font-weight:bold;color:#7f7f7f;">--list-one</span> <span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="font-weight:bold;color:#7f7f7f;">device</span>
+           <span style="font-weight:bold;color:#7f7f7f;">--match-token</span> <span style="font-weight:bold;color:#7f7f7f;">LABEL=</span><span style="text-decoration:underline;">label</span>. This lookup method is
+           able to reliably use /dev/disk/by-label udev
+           symlinks (dependent on a setting in
+           <span style="text-decoration:underline;">/etc/blkid.conf</span>). Avoid using the symlinks
+           directly; it is not reliable to use the symlinks
+           without verification. The <span style="font-weight:bold;color:#7f7f7f;">--label</span> option works on
+           systems with and without udev.
+
+           Unfortunately, the original <span style="font-weight:bold;color:#7f7f7f;">blkid</span>(8) from
+           e2fsprogs uses the <span style="font-weight:bold;color:#7f7f7f;">-L</span> option as a synonym for <span style="font-weight:bold;color:#7f7f7f;">-o</span>
+           <span style="font-weight:bold;color:#7f7f7f;">list</span>. For better portability, use <span style="font-weight:bold;color:#7f7f7f;">-l</span> <span style="font-weight:bold;color:#7f7f7f;">-o</span> <span style="font-weight:bold;color:#7f7f7f;">device</span> <span style="font-weight:bold;color:#7f7f7f;">-t</span>
+           <span style="font-weight:bold;color:#7f7f7f;">LABEL=</span><span style="text-decoration:underline;">label</span> and <span style="font-weight:bold;color:#7f7f7f;">-o</span> <span style="font-weight:bold;color:#7f7f7f;">list</span> in your scripts rather
+           than the <span style="font-weight:bold;color:#7f7f7f;">-L</span> option.
+<span style="color:#000000;background-color:#000000;"></span>page blkid(8) line 129 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       <span style="font-weight:bold;color:#7f7f7f;">-n</span>, <span style="font-weight:bold;color:#7f7f7f;">--match-types</span> <span style="text-decoration:underline;">list</span>
+           Restrict the probing functions to the specified
+           (comma-separated) <span style="text-decoration:underline;">list</span> of superblock types
+           (names). The list items may be prefixed with &quot;no&quot;
+           to specify the types which should be ignored. For
+           example:
+
+           <span style="font-weight:bold;color:#7f7f7f;">blkid</span> <span style="font-weight:bold;color:#7f7f7f;">--probe</span> <span style="font-weight:bold;color:#7f7f7f;">--match-types</span> <span style="font-weight:bold;color:#7f7f7f;">vfat,ext3,ext4</span>
+           <span style="font-weight:bold;color:#7f7f7f;">/dev/sda1</span>
+
+           probes for vfat, ext3 and ext4 filesystems, and
+
+           <span style="font-weight:bold;color:#7f7f7f;">blkid</span> <span style="font-weight:bold;color:#7f7f7f;">--probe</span> <span style="font-weight:bold;color:#7f7f7f;">--match-types</span> <span style="font-weight:bold;color:#7f7f7f;">nominix</span> <span style="font-weight:bold;color:#7f7f7f;">/dev/sda1</span>
+
+           probes for all supported formats except minix
+<span style="color:#000000;background-color:#000000;">           filesystems. This option is only useful together</span>n><span style="color:#000000;background-color:#000000;">
+           with <span style="font-weight:bold;color:#7f7f7f;">--probe</span>.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-o</span>, <span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="text-decoration:underline;">format</span>
+           Use the specified output format. Note that the
+           order of variables and devices is not fixed. See
+           also option <span style="font-weight:bold;color:#7f7f7f;">-s</span>. The <span style="text-decoration:underline;">format</span> parameter may be:
+
+           <span style="font-weight:bold;color:#7f7f7f;">full</span>
+               print all tags (the default)
+
+           <span style="font-weight:bold;color:#7f7f7f;">value</span>
+               print the value of the tags
+
+           <span style="font-weight:bold;color:#7f7f7f;">list</span>
+               print the devices in a user-friendly format;
+<span style="color:#000000;background-color:#000000;">               this output format is unsupported for</span>t)</span><span style="color:#000000;background-color:#000000;">
+               low-level probing (<span style="font-weight:bold;color:#7f7f7f;">--probe</span> or <span style="font-weight:bold;color:#7f7f7f;">--info</span>).
+
+               This output format is <span style="font-weight:bold;color:#7f7f7f;">DEPRECATED</span> in favour of
+               the <span style="font-weight:bold;color:#7f7f7f;">lsblk</span>(8) command.
+
+           <span style="font-weight:bold;color:#7f7f7f;">device</span>
+               print the device name only; this output format
+               is always enabled for the <span style="font-weight:bold;color:#7f7f7f;">--label</span> and <span style="font-weight:bold;color:#7f7f7f;">--uuid</span>
+               options
+
+           <span style="font-weight:bold;color:#7f7f7f;">udev</span>
+               print key=&quot;value&quot; pairs for easy import into
+               the udev environment; the keys are prefixed by
+               ID_FS_ or ID_PART_ prefixes. The value may be
+               modified to be safe for udev environment;
+<span style="color:#000000;background-color:#000000;">M               print the devices in a user-friendly format;</span>><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">list</span>ound-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>age blkid(8) line 175 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M               print the value of the tags</span> q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">value</span>und-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>age blkid(8) line 172 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M               print all tags (the default)</span>q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">full</span>ound-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M</span>age blkid(8) line 169 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           also option </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-s</span>. The <span style="text-decoration:underline;">format</span> parameter may be:
+<span style="color:#000000;background-color:#000000;">M           order of variables and devices is not fixed. See</span>><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           Use the specified output format. Note that the</span>an><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-o</span>, <span style="font-weight:bold;color:#7f7f7f;">--output</span> <span style="text-decoration:underline;">format</span>
+<span style="color:#000000;background-color:#000000;">M</span>age blkid(8) line 164 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           with </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--probe</span>.r:#000000;">
+<span style="color:#000000;background-color:#000000;">M           filesystems. This option is only useful together</span>><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">M           probes for all supported formats except minix</span>pan><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">               print the devices in a user-friendly format;</span>n><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">               this output format is unsupported for</span>t)</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">               low-level probing (</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--probe</span> or <span style="font-weight:bold;color:#7f7f7f;">--info</span>).
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5/stdoutbytfildelckground-color:#000000;">
+</span>$ sudo blkid /sedev/sda
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid /dev/sda1
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid /dev/sda1 /dev/sda- /dev/sdao /dev/sda /dev/sdau /dev/sdau /dev/sdai /dev/sdad /dev/sda
+blkid: unsupported output format uuid
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -o uuid /dev/sda /dev/sda /dev/sda /dev/sda /dev/sdaU /dev/sdaU /dev/sdaI /dev/sdaD /dev/sda
+blkid: unsupported output format UUID
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -o UUID /dev/sda /dev/sda /dev/sda /dev/sda /dev/sdaG /dev/sdaU /dev/sdaI /dev/sdaD /dev/sda
+blkid: unsupported output format GUID
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">">ITINF25/lektion5/stdoutbytfildel
+$ sudo blkid ddd-o-s uui /dev/sdsa /dev/sda- /dev/sdai /dev/sda /dev/sda/dev/sda /dev/sdai /dev/sdao /dev/sda /dev/sda/dev/sda /dev/sda /dev/sdao /dev/sda /dev/sdaa /dev/sda /dev/sdav /dev/sdaa /dev/sdal /dev/sdau /dev/sdae /dev/sda
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -s uuid -o value /dev/sda2
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -s uuid -o value /dev/sda
+
+
+
+
+
+<span style="color:#5c5cff;">dev/sda /dev/sda/dev/sdal /dev/sda /dev/sda<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -s uuid -o /dev/sda
+blkid: unsupported output format /dev/sda2
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -s uuid -o /dev/sda /dev/sda /dev/sda/dev/sda
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">dev/sdao<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ sudo blkid -o uuid /dev/sda
+blkid: unsupported output format uuid
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+touch uuidfinderkid -o uuid /dev/sda2
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ nano uuidfinder 
+<span style="color:#5c5cff;">f;">ITINF25/lektion5/stdoutbytfildelac FormM-P Prepend ^T Browse#00cdcd;">F</span><span style="color:#00cdcd;">a</span><span style="color:#00cdcd;">k</span><span style="color:#00cdcd;">e</span><span style="color:#00cdcd;"> </span><span style="color:#00cdcd;">U</span><span style="color:#00cdcd;">U</span><span style="color:#00cdcd;">I</span><span style="color:#00cdcd;">D</span>
+<span style="color:#5c5cff;">der <span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ chmod +x uuidfinder 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ /./uuidfinder 
+a529faababa
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;"> style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ chmod +x byt1 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+Hej
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+$ ./byt1 
+^C
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+^C
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+Hej
+Hej
+ENCYRRYPT_UUID
+1234
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ls
+byt1  minconfig.conf  uuidfinder
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+UUID är: a529faababa
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./uuidfinder 
+a529faababa
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+byt1an>$ ./uuidfinder 
+LOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID1234=
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234=
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=$uuid
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt1 
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ls
+byt1  minconfig.conf  uuidfinder
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cp minconfig.conf{,/p.bak}
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ls
+byt1  minconfig.conf  minconfig.conf.bak  uuidfinder
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+./byt1 $ cp minconfig.conf{,.bak}
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cp byt1 byt12
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+.p byt1 byt2.conf{,.bak}
+code byt2 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt2
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt2
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt2
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt2
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cp byt2 byt3
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ cpcode byt3
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">yle="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt3
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">olor:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ./byt3
+LOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ ex
+<span style="color:#5c5cff;">">ITINF25/lektion5/stdoutbytfildel
+</span>$ n=ubuntu
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run $n; docker ps<span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">docker run $n; docker p
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:#000000;background-color:#000000;">CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   &quot;docker-entrypoint.s…&quot;   7 weeks ago   Up 5 hours   0.0.0.0:3306-&gt;3306/tcp, [::]:3306-&gt;3306/tcp   mariadb-db-1
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion5/stdoutbytfildel
+</span>$ doccker stop ma
+<span style="color:#000000;background-color:#000000;">mariadb-db-1</span><span style="color:#000000;background-color:#000000;">
+mariadb-db-1
+<span style="color:#000000;background-color:#000000;">mariadb-db-1
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+run $n; docker psstop mariadb-db-1
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ <span style="color:#000000;background-color:#000000;">docker run $n; docker ps -a</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#5c5cff;background-color:#000000;">docker run $n; docker ps -a</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run $n; docker ps -a
+CONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                              PORTS     NAMES
+32b4c96e05e9   ubuntu                    &quot;/bin/bash&quot;              1 second ago         Exited (0) Less than a second ago             relaxed_ritchie
+418dfe344268   ubuntu                    &quot;/bin/bash&quot;              About a minute ago   Exited (0) About a minute ago                 trusting_khorana
+94d7846cdff0   ubuntu                    &quot;/bin/bash&quot;              About a minute ago   Exited (0) About a minute ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   &quot;docker-entrypoint.s…&quot;   7 weeks ago          Exited (0) About a minute ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                &quot;/bin/echo hello fish&quot;   4 months ago         Exited (0) 4 months ago                       ep
+7f002123a7a3   264f05a43946              &quot;/bin/echo -e&quot;           4 months ago         Exited (0) 4 months ago                       trusting_elion
+1e0e6725c1fa   mysql:8                   &quot;docker-entrypoint.s…&quot;   5 months ago         Exited (0) 5 months ago                       mysql
+b92ea2378d85   wordpress:php8.2-apache   &quot;docker-entrypoint.s…&quot;   5 months ago         Exited (0) 5 months ago                       wordpress
+ea98153cf04b   debian                    &quot;bash&quot;                   5 months ago         Exited (0) 5 months ago                       sharp_vaughan
+0d246cf9bf42   debian                    &quot;bash&quot;                   5 months ago         Exited (0) 5 months ago                       confident_turing
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+$ span>$ 
+<span style="color:#5c5cff;">">ITINF25/lektion5/stdoutbytfildel
+</span>$ <span style="color:#000000;background-color:#000000;">docker run $n &amp; sleep 0.3 &amp;&amp; docker ps</span><span style="color:#000000;background-color:#000000;">
+$ docker run $n &amp; sleep 0.3 &amp;&amp; docker ps"></span>$ docker run $n &amp; sleep 0.3 &amp;&amp; docker ps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&amp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1] 175423
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">sleep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run $n &amp; sleep 0.3 &amp;&amp; docker ps
+[2] 175719
+[1]   Done                    docker run $n
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+bf10fa2334d8   ubuntu    &quot;/bin/bash&quot;   1 second ago   Up Less than a second             zealous_jepsen
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+$ dpcleocker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[2]+  Done                    docker run $n
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ <span style="color:#000000;background-color:#000000;">docker run -d $n; sleep 0.3 &amp;&amp; docker ps</span><span style="color:#000000;background-color:#000000;">
+<span style="color:#000000;background-color:#000000;">docker run -d $n; sleep 0.3 &amp;&amp; docker p
+
+
+;
+
+
+
+
+
+
+<span style="color:#000000;background-color:#000000;">39ab7bbc97bc3e4fa63eb5c8055b914d24390a70b889eaaedd80bf3974f5ff5d
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;background-color:#000000;">0000;">ITINF25/lektion5/stdoutbytfildel
+</span>$ lazrydo
+
+cke
+
+
+
+<span style="color:#5c5cff;">amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+806c42a5eb5c1fbedb92b6e468d43fae15257a960e8bde9b2e225a64070fe373
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+f35bbbef75f1f7257c08d85b4a5ffa1a34f8c0ffffb110946b78c2eeb596836a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+75f9b4b45fefe2e2364da3a1280f0f2c0c722904011555bcef36a801fd65c03b
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+2c340071692c4e89f6d3a6298cb4b2259eb616b91a8dba80aa048ff484c18651
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+81bb96bb6cd17dc9945681ee568acbe2bb2001156b341319a71852233dc9151a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+b12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067f5e996bf
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker ps<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.3 &amp;&amp; docker ps
+2136593b774f4a24265dca464138511d64b805bf4876d14f38f0392f6a1e5cb2
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">eep 0.3 &amp;&amp; docker p2<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -d $n; sleep 0.2 &amp;&amp; docker p
+87383fddc68e0f760084e6532c17f2cae365f3e45eb840e6836ccf90e9942eee
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+87383fddc68e   ubuntu    &quot;/bin/bash&quot;   1 second ago   Up Less than a second             elated_driscoll
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">yle="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker ps -a
+CONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                          PORTS     NAMES
+87383fddc68e   ubuntu                    &quot;/bin/bash&quot;              25 seconds ago       Exited (0) 24 seconds ago                 elated_driscoll
+2136593b774f   ubuntu                    &quot;/bin/bash&quot;              30 seconds ago       Exited (0) 30 seconds ago                 priceless_hoover
+b12623ea6bca   ubuntu                    &quot;/bin/bash&quot;              32 seconds ago       Exited (0) 32 seconds ago                 gracious_perlman
+81bb96bb6cd1   ubuntu                    &quot;/bin/bash&quot;              34 seconds ago       Exited (0) 33 seconds ago                 hardcore_banzai
+2c340071692c   ubuntu                    &quot;/bin/bash&quot;              35 seconds ago       Exited (0) 35 seconds ago                 jovial_gagarin
+75f9b4b45fef   ubuntu                    &quot;/bin/bash&quot;              37 seconds ago       Exited (0) 37 seconds ago                 sharp_wu
+f35bbbef75f1   ubuntu                    &quot;/bin/bash&quot;              39 seconds ago       Exited (0) 39 seconds ago                 eloquent_ardinghelli
+806c42a5eb5c   ubuntu                    &quot;/bin/bash&quot;              41 seconds ago       Exited (0) 41 seconds ago                 mystifying_mcclintock
+39ab7bbc97bc   ubuntu                    &quot;/bin/bash&quot;              About a minute ago   Exited (0) About a minute ago             awesome_napier
+bf10fa2334d8   ubuntu                    &quot;/bin/bash&quot;              4 minutes ago        Exited (0) 4 minutes ago                  zealous_jepsen
+d123c3f7397c   ubuntu                    &quot;/bin/bash&quot;              4 minutes ago        Exited (0) 4 minutes ago                  gracious_sammet
+32b4c96e05e9   ubuntu                    &quot;/bin/bash&quot;              8 minutes ago        Exited (0) 8 minutes ago                  relaxed_ritchie
+418dfe344268   ubuntu                    &quot;/bin/bash&quot;              10 minutes ago       Exited (0) 10 minutes ago                 trusting_khorana
+94d7846cdff0   ubuntu                    &quot;/bin/bash&quot;              10 minutes ago       Exited (0) 10 minutes ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   &quot;docker-entrypoint.s…&quot;   7 weeks ago          Exited (0) 10 minutes ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                &quot;/bin/echo hello fish&quot;   4 months ago         Exited (0) 4 months ago                   ep
+7f002123a7a3   264f05a43946              &quot;/bin/echo -e&quot;           4 months ago         Exited (0) 4 months ago                   trusting_elion
+1e0e6725c1fa   mysql:8                   &quot;docker-entrypoint.s…&quot;   5 months ago         Exited (0) 5 months ago                   mysql
+b92ea2378d85   wordpress:php8.2-apache   &quot;docker-entrypoint.s…&quot;   5 months ago         Exited (0) 5 months ago                   wordpress
+ea98153cf04b   debian                    &quot;bash&quot;                   5 months ago         Exited (0) 5 months ago                   sharp_vaughan
+0d246cf9bf42   debian                    &quot;bash&quot;                   5 months ago         Exited (0) 5 months ago                   confident_turing
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ 
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ man docker-run
+DOCKER(1)            Docker User Manuals            DOCKER(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker-run  -  Create  and run a new container from an
+       image
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">run</span> [<span style="font-weight:bold;color:#7f7f7f;">-a</span>|<span style="font-weight:bold;color:#7f7f7f;">--attach</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--add-host</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--an‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">notation</span>[=<span style="text-decoration:underline;">[]</span>]]       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight</span>[=<span style="text-decoration:underline;">[BLKIO-WEIGHT]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight-device</span>[=<span style="text-decoration:underline;">[]</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">-c</span>|<span style="font-weight:bold;color:#7f7f7f;">--cpu-shares</span>[=<span style="text-decoration:underline;">0</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--cap-add</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cap-drop</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cgroupns</span>[=<span style="text-decoration:underline;">[]</span>]]
+<span style="color:#000000;background-color:#000000;">DOCKER(1)            Docker User Manuals            DOCKER(1)</span><span style="color:#000000;background-color:#000000;">
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker-run  -  Create  and run a new container from an
+       image
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">run</span> [<span style="font-weight:bold;color:#7f7f7f;">-a</span>|<span style="font-weight:bold;color:#7f7f7f;">--attach</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--add-host</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--an‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">notation</span>[=<span style="text-decoration:underline;">[]</span>]]       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight</span>[=<span style="text-decoration:underline;">[BLKIO-WEIGHT]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight-device</span>[=<span style="text-decoration:underline;">[]</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">-c</span>|<span style="font-weight:bold;color:#7f7f7f;">--cpu-shares</span>[=<span style="text-decoration:underline;">0</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--cap-add</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cap-drop</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cgroupns</span>[=<span style="text-decoration:underline;">[]</span>]]
+DOCKER(1)            Docker User Manuals            DOCKER(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       docker-run  -  Create  and run a new container from an
+       image
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">docker</span> <span style="font-weight:bold;color:#7f7f7f;">run</span> [<span style="font-weight:bold;color:#7f7f7f;">-a</span>|<span style="font-weight:bold;color:#7f7f7f;">--attach</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--add-host</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--an‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">notation</span>[=<span style="text-decoration:underline;">[]</span>]]       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight</span>[=<span style="text-decoration:underline;">[BLKIO-WEIGHT]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--blkio-weight-device</span>[=<span style="text-decoration:underline;">[]</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">-c</span>|<span style="font-weight:bold;color:#7f7f7f;">--cpu-shares</span>[=<span style="text-decoration:underline;">0</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--cap-add</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cap-drop</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--cgroupns</span>[=<span style="text-decoration:underline;">[]</span>]]
+...skipping...
+       [<span style="font-weight:bold;color:#7f7f7f;">--device-read</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">ops</span>[=<span style="text-decoration:underline;">[]</span>]]    [<span style="font-weight:bold;color:#7f7f7f;">--device-write-bps</span>[=<span style="text-decoration:underline;">[]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--device-write</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">ops</span>[=<span style="text-decoration:underline;">[]</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--dns</span>[=<span style="text-decoration:underline;">[]</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--dns-op‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">tion</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--dns-search</span>[=<span style="text-decoration:underline;">[]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--domainname</span>[=<span style="text-decoration:underline;">DOMAIN‐</span>
+       <span style="text-decoration:underline;">NAME</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">-e</span>|<span style="font-weight:bold;color:#7f7f7f;">--env</span>[=<span style="text-decoration:underline;">[]</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--entrypoint</span>[=<span style="text-decoration:underline;">ENTRYPOINT</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--env-file</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--expose</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--group-add</span>[=<span style="text-decoration:underline;">[]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">-h</span>|<span style="font-weight:bold;color:#7f7f7f;">--hostname</span>[=<span style="text-decoration:underline;">HOSTNAME</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--help</span>] [<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">nit</span>] [<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span>|<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">n‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">teractive</span>]    [<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">p</span>[=<span style="text-decoration:underline;">IPv4-ADDRESS</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">p6</span>[=<span style="text-decoration:underline;">IPv6-AD‐</span>
+       <span style="text-decoration:underline;">DRESS</span>]] [<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">pc</span>[=<span style="text-decoration:underline;">IPC</span>]] [<span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">solation</span>[=<span style="text-decoration:underline;">default</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--ker‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">nel-memory</span>[=<span style="text-decoration:underline;">KERNEL-MEMORY</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">-l</span>|<span style="font-weight:bold;color:#7f7f7f;">--label</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--la‐</span>
+       <span style="font-weight:bold;color:#7f7f7f;">bel-file</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--link</span>[=<span style="text-decoration:underline;">[]</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--link-local</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">p</span>[=<span style="text-decoration:underline;">[]</span>]]
+       [<span style="font-weight:bold;color:#7f7f7f;">--log-driver</span>[=<span style="text-decoration:underline;">[]</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">--log-opt</span>[=<span style="text-decoration:underline;">[]</span>]]    [<span style="font-weight:bold;color:#7f7f7f;">-m</span>|<span style="font-weight:bold;color:#7f7f7f;">--mem‐</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">ory</span>[=<span style="text-decoration:underline;">MEMORY</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--mac-address</span>[=<span style="text-decoration:underline;">MAC-ADDRESS</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--memory-</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">reservation</span>[=<span style="text-decoration:underline;">MEMORY-RESERVATION</span>]]           [<span style="font-weight:bold;color:#7f7f7f;">--memory-</span>
+       <span style="font-weight:bold;color:#7f7f7f;">swap</span>[=<span style="text-decoration:underline;">LIMIT</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">--memory-swappiness</span>[=<span style="text-decoration:underline;">MEMORY-SWAPPI‐</span>
+       <span style="text-decoration:underline;">NESS</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--mount</span>[=<span style="text-decoration:underline;">[MOUNT]</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--name</span>[=<span style="text-decoration:underline;">NAME</span>]] [<span style="font-weight:bold;color:#7f7f7f;">--network-</span>
+       <span style="font-weight:bold;color:#7f7f7f;">alias</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--network</span>[=<span style="text-decoration:underline;">&quot;bridge&quot;</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--oom-kill-dis‐</span>
+<span style="color:#000000;background-color:#000000;">       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">able</span>]     [<span style="font-weight:bold;color:#7f7f7f;">--oom-score-adj</span>[=<span style="text-decoration:underline;">0</span>]]     [<span style="font-weight:bold;color:#7f7f7f;">-P</span>|<span style="font-weight:bold;color:#7f7f7f;">--publish-all</span>]
+<span style="color:#000000;background-color:#000000;">       [</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-p</span>|<span style="font-weight:bold;color:#7f7f7f;">--publish</span>[=<span style="text-decoration:underline;">[]</span>]]  [<span style="font-weight:bold;color:#7f7f7f;">--pid</span>[=<span style="text-decoration:underline;">[PID]</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--userns</span>[=<span style="text-decoration:underline;">[]</span>]]
+<span style="color:#000000;background-color:#000000;">       [</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--pids-limit</span>[=<span style="text-decoration:underline;">PIDS_LIMIT</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--privileged</span>]  [<span style="font-weight:bold;color:#7f7f7f;">--read-</span>
+       <span style="font-weight:bold;color:#7f7f7f;">only</span>]   [<span style="font-weight:bold;color:#7f7f7f;">--restart</span>[=<span style="text-decoration:underline;">RESTART</span>]]   [<span style="font-weight:bold;color:#7f7f7f;">--rm</span>]    [<span style="font-weight:bold;color:#7f7f7f;">--security-</span>
+<span style="color:#000000;background-color:#000000;">...skipping...-run(1) line 28 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+          Add  a  custom  host-to</span><span style="color:#000000;background-color:#000000;">-I</span><span style="color:#000000;background-color:#000000;">P  mapping  (host=ip,   or</span>
+       host:ip)
+
+       Add  a  line to /etc/hosts. The format is hostname=ip,
+       or hostname:ip.
+          The <span style="font-weight:bold;color:#7f7f7f;">--add-host</span> option can be set multiple times.
+
+       <span style="font-weight:bold;color:#7f7f7f;">--annotation</span>=[]
+          Add an annotation to the container (passed  through
+       to the OCI runtime).
+
+<span style="color:#000000;background-color:#000000;">...skipping...-run(1) line 78 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       The proportion will only apply when CPU</span><span style="color:#000000;background-color:#000000;">-i</span><span style="color:#000000;background-color:#000000;">ntensive pro‐</span>
+       cesses  are  running.  When tasks in one container are
+       idle, other containers can use the left-over CPU time.
+       The  actual  amount of CPU time will vary depending on
+       the number of containers running on the system.
+
+       For example, consider three containers, one has a cpu-
+       share  of 1024 and two others have a cpu-share setting
+       of 512. When processes in all three containers attempt
+       to  use 100% of CPU, the first container would receive
+       50% of the total CPU time. If you add  a  fourth  con‐
+<span style="color:#000000;background-color:#000000;">...skipping...run(1) line 111 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">--device-read</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">ops</span>=[]
+          Limit  read rate from a device (e.g. --device-read-
+       iops=/dev/sda:1000)
+
+       <span style="font-weight:bold;color:#7f7f7f;">--device-write-bps</span>=[]
+          Limit write rate to a device (e.g.  --device-write-
+       bps=/dev/sda:1mb)
+
+       <span style="font-weight:bold;color:#7f7f7f;">--device-write</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">ops</span>=[]
+          Limit  write rate to a device (e.g. --device-write-
+       iops=/dev/sda:1000)
+<span style="color:#000000;background-color:#000000;"></span>docker-run(1) line 283 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       <span style="font-weight:bold;color:#7f7f7f;">--dns-search</span>=[]
+          Set custom DNS search domains  (Use  --dns-search=.
+       if you don&apos;t wish to set the search domain)
+
+       <span style="font-weight:bold;color:#7f7f7f;">--dns-option</span>=[]
+          Set custom DNS options
+
+<span style="color:#000000;background-color:#000000;">...skipping...run(1) line 291 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">nit</span>
+          Run an init inside the container that forwards sig‐
+       nals and reaps processes
+
+       <span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span>, <span style="font-weight:bold;color:#7f7f7f;">-</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">-i</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span><span style="font-weight:bold;color:#7f7f7f;">nteractive</span>=<span style="text-decoration:underline;">true</span>|<span style="text-decoration:underline;">false</span>
+          Keep  STDIN  open even if not attached. The default
+       is <span style="text-decoration:underline;">false</span>.
+
+       When set to true, keep stdin  open  even  if  not  at‐
+       tached.
+
+<span style="color:#5c5cff;background-color:#000000;">&gt;</span><span style="color:#5c5cff;background-color:#000000;">ITINF25/lektion5/stdoutbytfildelckground-color:#000000;">
+<span style="color:#5c5cff;">.2 &amp;&amp; docker p $n $n- $ni $n<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -i $n
+ls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+cd /etc
+ls
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+cloud
+cron.d
+cron.daily
+debconf.conf
+debian_version
+default
+dpkg
+e2scrub.conf
+environment
+fstab
+gai.conf
+gnutls
+group
+group-
+gshadow
+gshadow-
+host.conf
+hostname
+hosts
+init.d
+issue
+issue.net
+kernel
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libaudit.conf
+login.defs
+logrotate.d
+lsb-release
+machine-id
+mke2fs.conf
+mtab
+networks
+nsswitch.conf
+opt
+os-release
+pam.conf
+pam.d
+passwd
+passwd-
+profile
+profile.d
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+security
+selinux
+shadow
+shadow-
+shells
+skel
+subgid
+subgid-
+subuid
+subuid-
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+update-motd.d
+xattr.conf
+pwd
+/etc
+echo $SHELL
+/bin/bash
+exit
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -i $ $= $ $/ $t $$$$-$t$ $
+
+0;root&#64;e5ee2cb68c7e: /
+root&#64;e5ee2cb68c7e:/# 
+0;root&#64;e5ee2cb68c7e: /
+root&#64;e5ee2cb68c7e:/# ieuhjiuh ieuhieuh eiueheiieuhjiuh ieuhieuh eiueheiieuhjiuh ieuhieuh eiueheiieuhjiuh ieuhieuh eiueheiu
+bash: ieuhjiuh: command not found
+0;root&#64;e5ee2cb68c7e: /
+root&#64;e5ee2cb68c7e:/# ^C
+0;root&#64;e5ee2cb68c7e: /
+root&#64;e5ee2cb68c7e:/# ^C
+0;root&#64;e5ee2cb68c7e: /
+root&#64;e5ee2cb68c7e:/# 
+exit
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -i -t $ $ $
+iuheiu iuheiuehiu iuehiueheiu^[[1;5D^[[1;5D^[[1;5C^[[1;5C^[[1;5D
+/bin/bash: line 1: iuheiu: command not found
+/bin/bash: line 1: $&apos;5D\E[1&apos;: command not found
+/bin/bash: line 1: $&apos;5D\E[1&apos;: command not found
+/bin/bash: line 1: $&apos;5C\E[1&apos;: command not found
+/bin/bash: line 1: $&apos;5C\E[1&apos;: command not found
+/bin/bash: line 1: 5D: command not found
+^[[A
+/bin/bash: line 2: $&apos;\E[A&apos;: command not found
+exit
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+<span style="color:#5c5cff;">5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ docker run -i  $t$
+0;root&#64;b94dddfa87ed: /
+root&#64;b94dddfa87ed:/# 
+
+ls
+ls
+ls
+hiu
+^C^C
+0;root&#64;b94dddfa87ed: /
+root&#64;b94dddfa87ed:/# ^^^exit
+c
+
+exit
+
+<span style="color:#5c5cff;">ITINF25/lektion5/stdoutbytfildel
+</span>$ exit
+exit
+
+Script done on 2026-02-02 13:19:58+01:00 [COMMAND_EXIT_CODE=&quot;137&quot;]
+</pre>
+</body>
+</html>
+<!--HTML generated by ansifilter 2.18, http://www.andre-simon.de/-->

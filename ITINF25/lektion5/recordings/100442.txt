@@ -1549,4 +1549,162 @@ ea98153cf04b   debian                    "bash"                   5 months ago  
        [1m--dns-option[0m=[][m
           Set custom DNS options[m
 [m
-[7ml page docker-run(1) line 291 (press h for help or q to quit)[27m[K[K/[K..
+[7ml page docker-run(1) line 291 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-i[27m[0m[1mnit[0m[m
+          Run an init inside the container that forwards sig‐[m
+       nals and reaps processes[m
+[m
+       [1m[7m-i[27m[0m, [1m-[0m[1m[7m-i[27m[0m[1mnteractive[0m=[4mtrue[24m|[4mfalse[24m[m
+          Keep  STDIN  open even if not attached. The default[m
+       is [4mfalse[24m.[m
+[m
+       When set to true, keep stdin  open  even  if  not  at‐[m
+       tached.[m
+[m
+[7ml page docker-run(1) line 367 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man docker-run[C[C[2Pdocker ps -a[Krun -d $n; sleep 0.2 && docker ps[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[1P $n;[1P $n;- $n;i $n;[C[C[C[C[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i $n
+[?2004lls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+cd /etc
+ls
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+cloud
+cron.d
+cron.daily
+debconf.conf
+debian_version
+default
+dpkg
+e2scrub.conf
+environment
+fstab
+gai.conf
+gnutls
+group
+group-
+gshadow
+gshadow-
+host.conf
+hostname
+hosts
+init.d
+issue
+issue.net
+kernel
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libaudit.conf
+login.defs
+logrotate.d
+lsb-release
+machine-id
+mke2fs.conf
+mtab
+networks
+nsswitch.conf
+opt
+os-release
+pam.conf
+pam.d
+passwd
+passwd-
+profile
+profile.d
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+security
+selinux
+shadow
+shadow-
+shells
+skel
+subgid
+subgid-
+subuid
+subuid-
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+update-motd.d
+xattr.conf
+pwd
+/etc
+echo $SHELL
+/bin/bash
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i $n[C $n= $n[1P $n/ $nt $n[1P$n[1P$n[1P$n-$nt$n $n[C[C
+[?2004l[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# 
+[?2004l[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# ieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiu
+[?2004lbash: ieuhjiuh: command not found
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# [K^C[?2004l[?2004h[?2004l
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i -t $n[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i -t $n[1P $n[1P $n
+[?2004liuheiu iuheiuehiu iuehiueheiu^[[1;5D^[[1;5D^[[1;5C^[[1;5C^[[1;5D
+/bin/bash: line 1: iuheiu: command not found
+/bin/bash: line 1: $'5D\E[1': command not found
+/bin/bash: line 1: $'5D\E[1': command not found
+/bin/bash: line 1: $'5C\E[1': command not found
+/bin/bash: line 1: $'5C\E[1': command not found
+/bin/bash: line 1: 5D: command not found
+^[[A
+/bin/bash: line 2: $'\E[A': command not found
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i  $n[1P[1@t[C[C[1P$n
+[?2004l[?2004h]0;root@b94dddfa87ed: /root@b94dddfa87ed:/# 
+
+ls
+ls
+ls
+hiu
+^C^C[?2004l[?2004h[?2004l
+[?2004h]0;root@b94dddfa87ed: /root@b94dddfa87ed:/# ^L  ^L  ^L  exit
+c
+
+exit
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ exit
+[?2004lexit
+
+Script done on 2026-02-02 13:19:58+01:00 [COMMAND_EXIT_CODE="137"]
