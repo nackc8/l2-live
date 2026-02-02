@@ -1,5 +1,4 @@
 #!/bin/bash
 
-fil=minconfig.conf
-
-sed -E 's/ENCRYPT_UUID/1234/' "$fil"
+#fil=minconfig.conf
+# sed -E 's/ENCRYPT_UUID/1234/' "$fil"
