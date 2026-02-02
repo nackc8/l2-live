@@ -5,5 +5,9 @@ fil=minconfig.conf
 # byt mot relevant blkid
 uuid="$(./uuidfinder)"
 
-# Tänksätt 1: Låt det vara om redan finns
+# Tankesätt 1: Låt det vara om redan finns
+# I matchningen så säkerställer vi att det är radslut direkt efter "ENCRYPT_UUID=". Det blir så eftersom $ betyder radslut
+# sed -E "s/ENCRYPT_UUID=$/ENCRYPT_UUID=$uuid/" "$fil"
+
+# Tanksätt 2: Skriv över det med vårt värde
 sed -E "s/ENCRYPT_UUID=$/ENCRYPT_UUID=$uuid/" "$fil"
