@@ -7,7 +7,8 @@ uuid="$(./uuidfinder)"
 
 # Tankesätt 1: Låt det vara om redan finns
 # I matchningen utnyttjar vi att & betyder allt man matchat i ersättningsdelen
-sed -E "s/ENCRYPT_UUID=$/&$uuid/" "$fil"
+# sed -E "s/ENCRYPT_UUID=$/&$uuid/" "$fil"
 
 # Tanksätt 2: Skriv över det med vårt värde
-#sed -E "s/ENCRYPT_UUID=.*/ENCRYPT_UUID=$uuid/" "$fil"
+# Om vi inte vill upprepa denna del
+sed -E "s/ENCRYPT_UUID=.*/ENCRYPT_UUID=$uuid/" "$fil"
