@@ -1203,4 +1203,113 @@ MORE=NO
 (B[m$ ls
 [?2004lbyt1  minconfig.conf  uuidfinder
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
-(B[m$ ./byt1 [C[C[7@chmo
+(B[m$ ./byt1 [C[C[7@chmod +x [C[C[C[C[C[C[C[7P./[C[C[C[C[C[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lUUID är: a529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./uuidfinder 
+[?2004la529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./uuidfinder [C[C[C[C[6Pbyt1[C
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=$uuid
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp minconfig.conf [K{,/po[K[K[K.bak}
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  minconfig.conf.bak  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp minconfig.conf{,.bak}[C[C./byt1 [K
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt1 byt1 [K[K2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt1 byt2[C[C[5P./byt1 [C[Ccp minconfig.conf{,.bak}[C[C[11P./uuidfinder [C[C[1@chmod +x byt1[C[6@uuidfinder[C[C[C[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[6Pbyt1[C[C[C[1P./uuidfinder[C[C[Ccp minconfig.conf{,.bak}[C[C./byt1 [K[C[Ccp byt1 byt2[C[C[K./[K[Kcode byt2 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt2 c[Kbyt3
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp [K[K[Kcode byt2[K3
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ .-byt3[K[K[K[K[K-by[K[K[K/byt3[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3
