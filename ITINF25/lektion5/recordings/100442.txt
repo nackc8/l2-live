@@ -1352,4 +1352,53 @@ ea98153cf04b   debian                    "bash"                   5 months ago  
 0d246cf9bf42   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                       confident_turing
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
 (B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
-(B[m$ [7mdocker run $n & sleep 0.3 && docker ps[27m[C[Cdocker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && d
+(B[m$ [7mdocker run $n & sleep 0.3 && docker ps[27m[C[Cdocker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@;[1P[1@&[1@&[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[1] 175423
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n & sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n & sleep 0.3 && docker ps
+[?2004l[2] 175719
+[1]   Done                    docker run $n
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+bf10fa2334d8   ubuntu    "/bin/bash"   1 second ago   Up Less than a second             zealous_jepsen
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ dpcler[K[K[K[K[Kocker s[Kps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[2]+  Done                    docker run $n
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run -d $n; sleep 0.3 && docker ps[27m[C[Cdocker run -d $n; sleep 0.3 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[1@ [1@&[1P[1P[1@;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l39ab7bbc97bc3e4fa63eb5c8055b914d24390a70b889eaaedd80bf3974f5ff5d
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ lazry[K[Kydocker[K[K[K[K[K[K[K[K[K[Kdocker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l806c42a5eb5c1fbedb92b6e468d43fae15257a960e8bde9b2e225a64070fe373
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004lf35bbbef75f1f7257c08d85b4a5ffa1a34f8c0ffffb110946b78c2eeb596836a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l75f9b4b45fefe2e2364da3a1280f0f2c0c722904011555bcef36a801fd65c03b
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l2c340071692c4e89f6d3a6298cb4b2259eb616b91a8dba80aa048ff484c18651
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l81bb96bb6cd17dc9945681ee568acbe2bb2001156b341319a71852233dc9151a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004lb12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067
