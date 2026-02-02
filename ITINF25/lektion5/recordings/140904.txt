@@ -455,4 +455,32 @@ Run 'docker image COMMAND --help' for more information on a command.
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \ t\tpkg-config \t\tre2c",
                 "PHP_INI_DIR=/usr/local/etc/php",
-                "APACHE_CONFDIR=/etc/
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OF FSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_ OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+:[K[K [KESCESC[KOO[KBB[K                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9 :[K[K [KESCESC[KOO[KBB[KCF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_VERSION=8.2.29",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Entrypoint": [
+:[K[K [KESCESC[KOO[KBB[K                "docker-entrypoint.sh"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Cmd": [
+:[K[K [KESCESC[KOO[KBB[K                "apache2-foreground"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Volumes": {
+:[K[K [KESCESC[KOO[KBB[K                "/var/www/html": {}
+:[K[K [KESCESC[KOO[KBB[K            },
+:[K[K [KESCESC[KOO[KBB[K            "WorkingDir": "/var/www/html",
+:[K[K [KESCESC[KOO[KBB[K            "StopSignal": "SIGWINCH"
+:[K[K [KESCESC[KOO[KBB[K        },
+:[K[K [KESCESC[KOO[KBB[K        "Architecture": "amd64",
+:[K[K [KESCESC[KOO[KBB[K        "Os": "linux",
+:[K[K [KESCESC[KOO[KBB[K        "Size": 729877666,
+:[K[K [KESCESC[KOO[KBB[K        "GraphDriver": {
+:[K[K [KESCESC[KOO[KBB[K            "Data": {
+:[K[K [KESCESC[KOO[KBB[K                "LowerDir": "/shared/docker/overlay2/e6a11de71a54143ef938f4b88719b8283d6fcf3642b180 :[K[K [KESCESC[KOO[KBB[K00dd74cd3c6369b905/diff:/shared/docker/overlay2/facc85e766895ee44c9f96d165e7f491dfc63f4ae9cac5c597c :[K[K [KESCESC[KOO[KBB[K16ae1b3d43004/diff:/shared/docker/overlay2/138728d56dd334bbffd55d623e41b2efb1f352ab46e4ced8c234b416 :[K[K [KESCESC[KOO[KBB[Ke47c8e62/diff:/shared/docker/overlay2/034f8005f8a32f2e9851ab1589416bb083dd7c419bd3bde05ea70a179fd53 :[K[K [KESCESC[KOO[KBB[Kabd/diff:/shared/docker/overlay2/38e139492aa25be04f0489d5588a832b5ccea96e35ad16a4a7e28c53b0298093/d :[K[K [KESCESC[KOO[KBB[Kiff:/shared/docker/overlay2/d4dc08d1e8fea86afbf3dbf7f211d0a5022268e88f3ba54e737dd86f2e72de93/diff:/ :[K[K [KESCESC[KOO[KBB[Kshared/docker/overlay2/bdc8a8b614c52e26b076992635fb445768740bbbdc12c4da23678ae6fe01d5bb/diff:/share :[K[K [KESCESC[KOO[KBB[Kd/docker/overlay2/6e424c1904de0055ab385b17ece4d498707df9b9ad61f46c01de13fc276b98b7/diff:/shared/doc :[K[K [KESCESC[KOO[KBB[Kker/overlay2/293fada28152476a8729b8be577fcbf3ff3edb5c3b5c9279fc2394761d0f2107/diff:/shared/docker/o :[K[K [KESCESC[KOO[KBB[Kverlay2/5c03f9363d6caa96fb3d34ceb7bb6dadf11984c14fb05034a5aac4df31363aa6/diff:/shared/docker/overla :[K[K [KESCESC[KOO[KBB[Ky2/6da069f50fb46983d3f57127b50f01eaa797543401444a7c505cda2607ec6369/diff:/shared/docker/overlay2/05 :[K[K [KESCESC[KOO[KBB[Kb1674d5ba59c08ade6dcad3d47bfca332370c248d15e812b65bdef5666fbf9/diff:/shared/docker/overlay2/164dc21 :[K[K [KESCESC[KOO[KBB[K961f0334051269bf865d07f54ee8b9ccf198cabf7879cbb1c4f263c61/diff:/shared/docker/overlay2/29cc12ad891a :[K[K [KESCESC[KOO[KBB[K9e6f5b9d0166141caa6b73d813d465f49b137f28ef2a6be3706e/diff:/shared/docker/overlay2/61f22b
