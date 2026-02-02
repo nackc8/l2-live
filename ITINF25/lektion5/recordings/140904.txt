@@ -63,4 +63,160 @@ exit
 [?2004h]0;root@aa519539cbdd: /root@aa519539cbdd:/# [?2004l
 exit
 [?2004h[94mITINF25/lektion5
-(B[m$ docker exec -it sad_gauss bash # TRE PROCESSER MED PS )[K(en fö[K;r  [K[A[C[C[C[C[C[
+(B[m$ docker exec -it sad_gauss bash # TRE PROCESSER MED PS )[K(en fö[K;r  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kör  bash som strt[K[Kartade containern. [K[K, en för den vi strt[K[Kartade med exec)  ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion5
+(B[m$ [7mdocker run -v "$PWD:/work:ro" debian ls -la /[27m
+[A[C[Cdocker run -v "$PWD:/work:ro" debian ls -la /
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /
+[?2004ltotal 60
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 .
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 ..
+-rwxr-xr-x   1 root root    0 Feb  2 13:32 .dockerenv
+lrwxrwxrwx   1 root root    7 May 12  2025 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 May 12  2025 boot
+drwxr-xr-x   5 root root  340 Feb  2 13:32 dev
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 etc
+drwxr-xr-x   2 root root 4096 May 12  2025 home
+lrwxrwxrwx   1 root root    7 May 12  2025 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 May 12  2025 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 media
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 mnt
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 opt
+dr-xr-xr-x 459 root root    0 Feb  2 13:32 proc
+drwx------   2 root root 4096 Aug 11 00:00 root
+drwxr-xr-x   3 root root 4096 Aug 11 00:00 run
+lrwxrwxrwx   1 root root    8 May 12  2025 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 srv
+dr-xr-xr-x  13 root root    0 Feb  2 13:32 sys
+drwxrwxrwt   2 root root 4096 Aug 11 00:00 tmp
+drwxr-xr-x  12 root root 4096 Aug 11 00:00 usr
+drwxr-xr-x  11 root root 4096 Aug 11 00:00 var
+drwxr-xr-x   5 1000 1000 4096 Feb  2 12:46 work
+[?2004h[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /[H[2J[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /work
+[?2004ltotal 24
+drwxr-xr-x 5 1000 1000 4096 Feb  2 12:46 .
+drwxr-xr-x 1 root root 4096 Feb  2 13:33 ..
+-rwxr-xr-x 1 1000 1000 1013 Feb  2 08:55 ball.sh
+drwxr-xr-x 2 1000 1000 4096 Feb  2 12:46 hej
+drwxr-xr-x 2 1000 1000 4096 Feb  2 13:09 recordings
+drwxr-xr-x 2 1000 1000 4096 Feb  2 11:54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ ls +l[K[K-l
+[?2004ltotal 16
+-rwxr-xr-x 1 kent kent 1013  2 feb 09.55 ball.sh
+drwxr-xr-x 2 kent kent 4096  2 feb 13.46 hej
+drwxr-xr-x 2 kent kent 4096  2 feb 14.09 recordings
+drwxr-xr-x 2 kent kent 4096  2 feb 12.54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ ls -lal[1Pl[Ca[H[2J[94mITINF25/lektion5
+(B[m$ ls -la
+[?2004ltotal 24
+drwxr-xr-x 5 kent kent 4096  2 feb 13.46 .
+drwxr-xr-x 7 kent kent 4096  2 feb 09.10 ..
+-rwxr-xr-x 1 kent kent 1013  2 feb 09.55 ball.sh
+drwxr-xr-x 2 kent kent 4096  2 feb 13.46 hej
+drwxr-xr-x 2 kent kent 4096  2 feb 14.09 recordings
+drwxr-xr-x 2 kent kent 4096  2 feb 12.54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m          [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m
+               [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m
+               [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m     [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m
+               [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m
+               [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m
+               [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m
+               [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m
+               [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m
+               [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m
+               [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m
+               [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmd-doc-2-pdf-renderer:latest[0m
+               [39mc765345c0f01[0m       [39m4.64GB[0m             [39m0B[0m        
+[34m[1mmysql:8[0m        [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m      [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m   [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m   [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m        [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m
+               [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m
+               [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m
+               [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m
+               [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m
+               [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m
+               [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m
+               [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m
+               [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m
+               [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m
+               [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m
+               [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m
+               [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m
+               [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m   [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m
+               [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m
+               [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m   [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m
+               [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m
+               [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m
+               [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker images[H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                        [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                     [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                           [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                        [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                                 [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                        [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                        [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                    [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                              [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                  [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                       [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmd-doc-2-pdf-renderer:latest[0m                         [39mc765345c0f01[0m       [39m4.64GB[0m             [39m0B[0m        
+[34m[1mmysql:8[0m                                              [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                            [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                         [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                         [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                      [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                  [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                    [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                          [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                         [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest
