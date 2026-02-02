@@ -220,4 +220,82 @@ GRUB_CMDLINE_LINUX="i8042.kbdreset=1"
 # for guest OSes installed via LVM or raw disk devices, running
 # os-prober can cause damage to those guest OSes as it mounts
 # filesystems to look for things.
-GRUB_DISABLE_
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i vr[K[Kcrypt[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i crypt
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i crypt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kb
+[?2004l# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.reset i8042.nomux"
+GRUB_CMDLINE_LINUX="i8042.kbdreset=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ LS
+[?2004lbash: LS: command not found
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ nano minconfig.conf
+[?2004l[?2004h[?1049h[22;0;0t[1;17r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[15;26H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2             minconfig.conf                      [1;62H(B[m[16d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[17d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;43H(B[0;7m*[62G(B[m[?12l[?25h[2dE[?25l[?12l[?25hN[?25l[?12l[?25hA[?25l[?12l[?25hB[?25l[?12l[?25hL[?25l[?12l[?25hE[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l
