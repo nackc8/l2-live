@@ -6,4 +6,4 @@ fil=minconfig.conf
 uuid="$(./uuidfinder)"
 
 # Tänksätt 1: Låt det vara om redan finns
-sed -E "s/ENCRYPT_UUID=/ENCRYPT_UUID=$uuid/" "$fil"
+sed -E "s/ENCRYPT_UUID=$/ENCRYPT_UUID=$uuid/" "$fil"
