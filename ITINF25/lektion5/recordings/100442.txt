@@ -1312,4 +1312,44 @@ SOMETHING=YES PLEASE
 ENCRYPT_UUID=abhywt
 MORE=NO
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
-(B[m$ ./byt3
+(B[m$ ./byt3[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ exi[K[K[K[K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ n=ubuntu
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n; docker ps[27m[C[Cdocker run $n; docker ps[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 5 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ doce[K[Kcker stop ma[K[K[7mmariadb-db-1[27mmariadb-db-1
+[?2004lmariadb-db-1
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker psstop mariadb-db-1[C[C[C[C[C[C[C[C[Crun $n; docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n; docker ps -a[27m[C[Cdocker run $n; docker ps -a[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n; docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                              PORTS     NAMES
+32b4c96e05e9   ubuntu                    "/bin/bash"              1 second ago         Exited (0) Less than a second ago             relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago                 trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago          Exited (0) About a minute ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago         Exited (0) 4 months ago                       ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago         Exited (0) 4 months ago                       trusting_elion
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                       mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                       wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                       sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                       confident_turing
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n & sleep 0.3 && docker ps[27m[C[Cdocker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && d
