@@ -748,4 +748,59 @@ aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes a
 3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
 :[K[K [KESCESC[KOO[KBB[Kb8d5c06ad9eb   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=always"      About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               gifted_mcnulty
 :[K[K [KESCESC[KOO[KBB[K1964f7019cc1   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=auto"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               sweet_northcutt
-:[K[K [KESCESC[KOO[KBB[Ke0bde3236e74   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :
+:[K[K [KESCESC[KOO[KBB[Ke0bde3236e74   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               zealous_benz
+:[K[K [KESCESC[KOO[KBB[K419753022f76   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               festive_payne
+:[K[K [KESCESC[KOO[KBB[K9dac979dea5a   alpine                    "cat /et :[K[K [KESCESC[KOO[KBB[Kc/os-release"    About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               wonderful_chatelet
+:[K[K [KESCESC[KOO[KBB[Kc9061c49488a   alpine                    "hostnam :[K[K [KESCESC[KOO[KBB[Ke"               About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               nifty_visvesvaraya
+:[K[K [KESCESC[KOO[KBB[Kdf69b5391647   alpine                    "hostnam :[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker container prune[H[2J[94mITINF25/lektion5
+(B[m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+099fee160568a2dbf8c4ce1b1ca474af05d401ea5a2053b8eba2cc8b00d8b0d2
+3f94554c146e3d5664da86a13a64d0c5d5570247b007f6d72725f68a9df4e7b3
+3adbf48e7076d698a4e671b56fde26a5c1a60c857cd334bc88468fa0ff65fe23
+b8d5c06ad9ebed866a8b37bdfe3a5f50948cea2cfde18919d1802ce5a680b4ff
+1964f7019cc1906e1a024ea7f36fa7ca84fce3ba3fdf0931e4d5502f3bd834a3
+e0bde3236e746513f648fd4fb20e62a6b979dd721eaa35a8f96416d38839d295
+419753022f762f883e80aa5973f66e07cac5a5adafdce189ee79ea68f6b1aeae
+9dac979dea5ad0e2ce2021b396cdc972a57400da10129cedd629855d2341c7ab
+c9061c49488a3ea573b1d45ad6f02ae82036fd6d493d3446f1ef923804244450
+df69b5391647cb332f0b08c88a435dc1c590675679d56fa26476eb0f434f6166
+bb9fde689c3284898255e109ced70f2b37964046cb42bd2a1a9979d75716835f
+a0ffcbb83ca25ef627189dffaca2bb4aa7b599da2d13b5bdb90d3d9f1cbcfe12
+b94dddfa87edfaed19a1d0547e5ee29be85cefc6d6afd950c80be574971e421e
+2d52d823cfb62b37902f2a4335252285a47db90e1e97eb7d6bd94df3f937661d
+e5ee2cb68c7e14311dcd0086067c1111f32a81df2b843880e55f0df9c95a19ff
+eb23b6261296c0d4bc465ad0090a63e328d13f9c6ec83cf678f413e14816f99d
+87383fddc68e0f760084e6532c17f2cae365f3e45eb840e6836ccf90e9942eee
+2136593b774f4a24265dca464138511d64b805bf4876d14f38f0392f6a1e5cb2
+b12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067f5e996bf
+81bb96bb6cd17dc9945681ee568acbe2bb2001156b341319a71852233dc9151a
+2c340071692c4e89f6d3a6298cb4b2259eb616b91a8dba80aa048ff484c18651
+75f9b4b45fefe2e2364da3a1280f0f2c0c722904011555bcef36a801fd65c03b
+f35bbbef75f1f7257c08d85b4a5ffa1a34f8c0ffffb110946b78c2eeb596836a
+806c42a5eb5c1fbedb92b6e468d43fae15257a960e8bde9b2e225a64070fe373
+39ab7bbc97bc3e4fa63eb5c8055b914d24390a70b889eaaedd80bf3974f5ff5d
+bf10fa2334d83c6c2bf79586840018ea42248dfb405552871f5264b57935c433
+d123c3f7397cef5cb13a27fbe7f18852d12e66fc3dac83163f0d4fb936c66b58
+32b4c96e05e901a1ff82098cfdc65673706c432ec593d347f2b431e88d8ea601
+418dfe34426845bc509ac9487a064f2d1b7e684da9be38fd398d1432bfa7bb87
+94d7846cdff053b278880b6725f9c4c5f3711d2f6ce36366534bb167eb65a283
+dad9452343ad21de34a5921b4deb7ab25a79819b9e321440b7accc81e27d3e7a
+e25dca4a1c026e13cfe9f473cf05cad5700ce1ff6cfa93d4c2e390b7df3b29a8
+7f002123a7a31832e9196bff47a8e3b5483cd6484e23a848cb2c973cdf3732e7
+1e0e6725c1fa367f7ef8702287566a3dc7df57d63ab72c72526a59faf337934d
+b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
+ea98153cf04b870d405181a7f3a78ebe7efab71faf97ce083fba5c861b76e654
+0d246cf9bf420707130a0a21f06086b2bf832828fdb24bc30f16c945fc139cb4
+
+Total reclaimed space: 167B
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+aa519539cbdd   ubuntu    "/bin/bash"   54 minutes ago   Up 54 minutes             sad_gauss
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps
