@@ -803,4 +803,15 @@ Total reclaimed space: 167B
 [?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
 aa519539cbdd   ubuntu    "/bin/bash"   54 minutes ago   Up 54 minutes             sad_gauss
 [?2004h[94mITINF25/lektion5
-(B[m$ docker ps
+(B[m$ docker ps -acontainer prune[C[C[C[C[C[C[C[C[C[3Pps -a | less[C[C[C[C[C[C[C[C[C[6Pimages prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:264f05a43946f0f170e2356ca48a2cade55c78494b21ba07eceda0454fa452c3
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [?2004l
+exit
+
+Script done on 2026-02-02 15:34:13+01:00 [COMMAND_EXIT_CODE="0"]
