@@ -1,0 +1,41 @@
+Script started on 2026-02-02 10:04:42+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="115" LINES="30"]
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker[K[K[K[K[K[Kman [K[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man docker
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker - Docker image and container command line interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[m
+       [1mdocker[0m [--help|-v|--version][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdocker[0m is a client for interacting with the daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[m
+       The  Docker CLI has over 30 commands. The commands are listed below and each has its own[m
+       man page which explains usage and arguments.[m
+[m
+       To see the man page for a command run [1mman[0m [1mdocker[0m .[m
+[m
+[1mOPTIONS[0m[m
+[7m Manual page docker(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m[m
+[7m Manual page docker(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Print usage statement[m
+[7m Manual page docker(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--config[0m=""[m
+[7m Manual page docker(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Specifies the location of the  Docker  client  configuration  files.  The  default  is[m
+[7m Manual page docker(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       '~/.docker'.[m
+[7m Manual page docker(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[7m Manual page docker(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Enable debug mode. Default is false.[m
+[7m Manual page docker(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-H[0m,   [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:   tcp://[host]:[port][path]   to   bind   or[m
+[7m Manual page docker(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       unix://[/path/to/socket] to use.[m
+[7m Manual page docker(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         The socket(s) to bind to in daemon mode specified using one or more[m
+[7m Manual page docker(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         tcp://host:port/path, unix:///path/to/socket, fd://* or fd://socketfd.[m
+[7m Manual page docker(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         If the tcp port is not specified, then it will default to either [1m2375[0m when[m
+[7m Manual page docker(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is on, or [1m--tlsverify[0m is specified.[m
+[7m Manual page docker(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--log-level[0m="[4md
