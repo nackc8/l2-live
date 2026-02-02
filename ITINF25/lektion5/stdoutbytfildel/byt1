@@ -1,9 +1,8 @@
 #!/bin/bash
 
+fil=minconfig.conf
+
 # byt mot relevant blkid
 uuid="$(./uuidfinder)"
 
-echo "UUID är: $uuid"
-
-#fil=minconfig.conf
-# sed -E 's/ENCRYPT_UUID/1234/' "$fil"
+sed -E 's/ENCRYPT_UUID/1234/' "$fil"
