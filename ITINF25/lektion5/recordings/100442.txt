@@ -882,4 +882,250 @@ MORE=NO
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
 (B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf[C[1P[1@s[1@/[1@$[1@/[1@H[1@E[1@J[1@/
 [?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
-(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf
+(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[C[C[C
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[1P[1P[1P[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[C[C[C[C[C[C
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ blkid 
+[?2004lbash: blkid: command not found
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ blkid [K[K[K[K[K[Ksudo blkid
+[?2004l[sudo] password for kent: 
+/dev/nvme0n1p11: UUID="723aff47-6e78-4d68-90b9-7b369954a351" TYPE="crypto_LUKS" PARTLABEL="DataCrypt" PARTUUID="f553107a-d654-4765-bd3f-59be7ce3b283"
+/dev/nvme0n1p5: UUID="01825a8c-41eb-4713-a016-12f7b6bab902" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="DebBoot" PARTUUID="57437187-849e-4d33-86ed-b7fe88065076"
+/dev/nvme0n1p3: BLOCK_SIZE="512" UUID="D46A79F16A79D12A" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="33ee2485-3997-4009-bc40-28543898bdf5"
+/dev/nvme0n1p1: UUID="2E64-153F" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI system partition" PARTUUID="dcb08ef8-28e2-4f12-8eba-274b1294d1a2"
+/dev/nvme0n1p6: UUID="6f516c51-cb2c-4737-8007-7e8ebc6b8bb8" TYPE="crypto_LUKS" PARTLABEL="DebCrypt" PARTUUID="c3db2a61-4a5a-45f6-9f01-f8229656805d"
+/dev/nvme0n1p4: BLOCK_SIZE="512" UUID="2E5E7BB45E7B7405" TYPE="ntfs" PARTUUID="4f9e5899-d6f4-4f25-9e5b-c8cc4e9b6ffb"
+/dev/mapper/root_decrypt: LABEL="DebDecrypt" UUID="161a00c3-26c1-4611-8ebe-c6b3a55f485e" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/mapper/shared_decrypt: UUID="dc5ea6e0-79bd-4a45-9cd2-57414047b355" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/nvme0n1p2: PARTLABEL="Microsoft reserved partition" PARTUUID="0fe2620f-c0b3-47f0-a289-11971be0440d"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -u[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man blkdi[K[Kid
+[?2004l[?1049h[22;0;0t[?1h=BLKID(8)            System Administration            BLKID(8)[m
+[m
+[1mNAME[0m[m
+       blkid - locate/print block device attributes[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mblkid[0m [1m--label[0m [4mlabel[24m | [1m--uuid[0m [4muuid[24m[m
+[m
+       [1mblkid[0m [[1m--no-encoding[0m [1m--garbage-collect[0m [1m--list-one[0m[m
+       [1m--cache-file[0m [4mfile[24m] [[1m--output[0m [4mformat[24m] [[1m--match-tag[0m [4mtag[24m][m
+       [[1m--match-token[0m [4mNAME=value[24m] [[4mdevice[24m...][m
+[m
+       [1mblkid[0m [1m--probe[0m [[1m--offset[0m [4moffset[24m] [[1m--output[0m [4mformat[24m][m
+       [[1m--size[0m [4msize[24m] [[1m--match-tag[0m [4mtag[24m] [[1m--match-types[0m [4mlist[24m][m
+       [[1m--usages[0m [4mlist[24m] [[1m--no-part-details[0m] [4mdevice[24m...[m
+[m
+[7m Manual page blkid(8) line 1 (press h for help or q to quit)[27m[K[K       [1mblkid[0m [1m--info[0m [[1m--output[0m [1mformat[0m] [[1m--match-tag[0m [4mtag[24m][m
+       [4mdevice[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mblkid[0m program is the command-line interface to[m
+       working with the [1mlibblkid[0m(3) library. It can determine[m
+       the type of content (e.g., filesystem or swap) that a[m
+       block device holds, and also the attributes (tokens,[m
+       NAME=value pairs) from the content metadata (e.g.,[m
+       LABEL or UUID fields).[m
+[m
+       [1mIt[0m [1mis[0m [1mrecommended[0m [1mto[0m [1muse[0m [1mlsblk[0m(8) [1mcommand[0m [1mto[0m [1mget[0m[m
+       [1minformation[0m [1mabout[0m [1mblock[0m [1mdevices,[0m [1mor[0m [1mlsblk[0m [1m--fs[0m [1mto[0m [1mget[0m[m
+       [1man[0m [1moverview[0m [1mof[0m [1mfilesystems,[0m [1mor[0m [1mfindmnt[0m(8) [1mto[0m [1msearch[0m [1min[0m[m
+       [1malready[0m [1mmounted[0m [1mfilesystems.[0m[m
+[m
+[7m Manual page blkid(8) line 17 (press h for help or q to quit)[27m[K[K          [1mlsblk[0m(8) provides more information, better[m
+          control on output formatting, easy to use in[m
+          scripts and it does not require root[m
+          permissions to get actual information. [1mblkid[0m[m
+          reads information directly from devices and[m
+          for non-root users it returns cached[m
+          unverified information. [1mblkid[0m is mostly[m
+          designed for system services and to test[m
+          [1mlibblkid[0m(3) functionality.[m
+[m
+       When [4mdevice[24m is specified, tokens from only this device[m
+       are displayed. It is possible to specify multiple[m
+       [4mdevice[24m arguments on the command line. If none is[m
+       given, all partitions or unpartitioned devices which[m
+       appear in [4m/proc/partitions[24m are shown, if they are[m
+       recognized.[m
+[7m Manual page blkid(8) line 33 (press h for help or q to quit)[27m[K[K[m
+       [1mblkid[0m has two main forms of operation: either[m
+       searching for a device with a specific NAME=value[m
+       pair, or displaying NAME=value pairs for one or more[m
+       specified devices.[m
+[m
+       For security reasons [1mblkid[0m silently ignores all[m
+       devices where the probing result is ambivalent[m
+       (multiple colliding filesystems are detected). The[m
+       low-level probing mode ([1m-p[0m) provides more information[m
+       and extra exit status in this case. It’s recommended[m
+       to use [1mwipefs[0m(8) to get a detailed overview and to[m
+       erase obsolete stuff (magic strings) from the device.[m
+[m
+[1mOPTIONS[0m[m
+       The [4msize[24m and [4moffset[24m arguments may be followed by the[m
+[7m Manual page blkid(8) line 49 (press h for help or q to quit)[27m[K[K       multiplicative suffixes like KiB (=1024), MiB[m
+       (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB[m
+       and YiB (the "iB" is optional, e.g., "K" has the same[m
+       meaning as "KiB"), or the suffixes KB (=1000), MB[m
+       (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.[m
+[m
+       [1m-c[0m, [1m--cache-file[0m [4mcachefile[24m[m
+           Read from [4mcachefile[24m instead of reading from the[m
+           default cache file (see the [1mCONFIGURATION[0m [1mFILE[0m[m
+           section for more details). If you want to start[m
+           with a clean cache (i.e., don’t report devices[m
+           previously scanned but not necessarily available[m
+           at this time), specify [4m/dev/null[24m.[m
+[m
+       [1m-d[0m, [1m--no-encoding[0m[m
+           Don’t encode non-printing characters. The[m
+[7m Manual page blkid(8) line 65 (press h for help or q to quit)[27m[K[K           non-printing characters are encoded by ^ and M-[m
+           notation by default. Note that the [1m--output[0m [1mudev[0m[m
+           output format uses a different encoding which[m
+           cannot be disabled.[m
+[m
+       [1m-D[0m, [1m--no-part-details[0m[m
+           Don’t print information (PART_ENTRY_* tags) from[m
+           partition table in low-level probing mode.[m
+[m
+       [1m-g[0m, [1m--garbage-collect[0m[m
+           Perform a garbage collection pass on the blkid[m
+           cache to remove devices which no longer exist.[m
+[m
+       [1m-H[0m, [1m--hint[0m [4msetting[24m[m
+           Set probing hint. The hints are an optional way to[m
+           force probing functions to check, for example,[m
+[7m Manual page blkid(8) line 81 (press h for help or q to quit)[27m[K[K           another location. The currently supported is[m
+           "session_offset=[4mnumber[24m" to set session offset on[m
+           multi-session UDF.[m
+[m
+       [1m-i[0m, [1m--info[0m[m
+           Display information about I/O Limits (aka I/O[m
+           topology). The 'export' output format is[m
+           automatically enabled. This option can be used[m
+           together with the [1m--probe[0m option.[m
+[m
+       [1m-k[0m, [1m--list-filesystems[0m[m
+           List all known filesystems and RAIDs and exit.[m
+[m
+       [1m-l[0m, [1m--list-one[0m[m
+           Look up only one device that matches the search[m
+           parameter specified with the [1m--match-token[0m option.[m
+[7m Manual page blkid(8) line 97 (press h for help or q to quit)[27m[K[K           If there are multiple devices that match the[m
+           specified search parameter, then the device with[m
+           the highest priority is returned, and/or the first[m
+           device found at a given priority (but see below[m
+           note about udev). Device types in order of[m
+           decreasing priority are: Device Mapper, EVMS, LVM,[m
+           MD, and finally regular block devices. If this[m
+           option is not specified, [1mblkid[0m will print all of[m
+           the devices that match the search parameter.[m
+[m
+           This option forces [1mblkid[0m to use udev when used for[m
+           LABEL or UUID tokens in [1m--match-token[0m. The goal is[m
+           to provide output consistent with other utils[m
+           (like [1mmount[0m(8), etc.) on systems where the same[m
+           tag is used for multiple devices.[m
+[m
+[7mManual page blkid(8) line 113 (press h for help or q to quit)[27m[K[K       [1m-L[0m, [1m--label[0m [4mlabel[24m[m
+           Look up the device that uses this filesystem[m
+           [4mlabel[24m; this is equal to [1m--list-one[0m [1m--output[0m [1mdevice[0m[m
+           [1m--match-token[0m [1mLABEL=[0m[4mlabel[24m. This lookup method is[m
+           able to reliably use /dev/disk/by-label udev[m
+           symlinks (dependent on a setting in[m
+           [4m/etc/blkid.conf[24m). Avoid using the symlinks[m
+           directly; it is not reliable to use the symlinks[m
+           without verification. The [1m--label[0m option works on[m
+           systems with and without udev.[m
+[m
+           Unfortunately, the original [1mblkid[0m(8) from[m
+           e2fsprogs uses the [1m-L[0m option as a synonym for [1m-o[0m[m
+           [1mlist[0m. For better portability, use [1m-l[0m [1m-o[0m [1mdevice[0m [1m-t[0m[m
+           [1mLABEL=[0m[4mlabel[24m and [1m-o[0m [1mlist[0m in your scripts rather[m
+           than the [1m-L[0m option.[m
+[7mManual page blkid(8) line 129 (press h for help or q to quit)[27m[K[K[m
+       [1m-n[0m, [1m--match-types[0m [4mlist[24m[m
+           Restrict the probing functions to the specified[m
+           (comma-separated) [4mlist[24m of superblock types[m
+           (names). The list items may be prefixed with "no"[m
+           to specify the types which should be ignored. For[m
+           example:[m
+[m
+           [1mblkid[0m [1m--probe[0m [1m--match-types[0m [1mvfat,ext3,ext4[0m[m
+           [1m/dev/sda1[0m[m
+[m
+           probes for vfat, ext3 and ext4 filesystems, and[m
+[m
+           [1mblkid[0m [1m--probe[0m [1m--match-types[0m [1mnominix[0m [1m/dev/sda1[0m[m
+[m
+           probes for all supported formats except minix[m
+[7mManual page blkid(8) line 145 (press h for help or q to quit)[27m[K[K           filesystems. This option is only useful together[m
+           with [1m--probe[0m.[m
+[m
+       [1m-o[0m, [1m--output[0m [4mformat[24m[m
+           Use the specified output format. Note that the[m
+           order of variables and devices is not fixed. See[m
+           also option [1m-s[0m. The [4mformat[24m parameter may be:[m
+[m
+           [1mfull[0m[m
+               print all tags (the default)[m
+[m
+           [1mvalue[0m[m
+               print the value of the tags[m
+[m
+           [1mlist[0m[m
+               print the devices in a user-friendly format;[m
+[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K               this output format is unsupported for[m
+               low-level probing ([1m--probe[0m or [1m--info[0m).[m
+[m
+               This output format is [1mDEPRECATED[0m in favour of[m
+               the [1mlsblk[0m(8) command.[m
+[m
+           [1mdevice[0m[m
+               print the device name only; this output format[m
+               is always enabled for the [1m--label[0m and [1m--uuid[0m[m
+               options[m
+[m
+           [1mudev[0m[m
+               print key="value" pairs for easy import into[m
+               the udev environment; the keys are prefixed by[m
+               ID_FS_ or ID_PART_ prefixes. The value may be[m
+               modified to be safe for udev environment;[m
+[7mManual page blkid(8) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print the devices in a user-friendly format;[m
+[17;1H[K[7mManual page blkid(8) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mlist[0m[m
+[17;1H[K[7mManual page blkid(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print the value of the tags[m
+[17;1H[K[7mManual page blkid(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mvalue[0m[m
+[17;1H[K[7mManual page blkid(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print all tags (the default)[m
+[17;1H[K[7mManual page blkid(8) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mfull[0m[m
+[17;1H[K[7mManual page blkid(8) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           also option [1m-s[0m. The [4mformat[24m parameter may be:[m
+[17;1H[K[7mManual page blkid(8) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           order of variables and devices is not fixed. See[m
+[17;1H[K[7mManual page blkid(8) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           Use the specified output format. Note that the[m
+[17;1H[K[7mManual page blkid(8) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-o[0m, [1m--output[0m [4mformat[24m[m
+[17;1H[K[7mManual page blkid(8) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           with [1m--probe[0m.[m
+[17;1H[K[7mManual page blkid(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           filesystems. This option is only useful together[m
+[17;1H[K[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           probes for all supported formats except minix[m
+[17;1H[K[7mManual page blkid(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               print the devices in a user-friendly format;[m
+[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               this output format is unsupported for[m
+[7
