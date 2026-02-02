@@ -5,4 +5,4 @@ fil=minconfig.conf
 # byt mot relevant blkid
 uuid="$(./uuidfinder)"
 
-sed -E 's/ENCRYPT_UUID=/ENCRYPT_UUID=1234/' "$fil"
+sed -E 's/ENCRYPT_UUID=/ENCRYPT_UUID=$uuid/' "$fil"
