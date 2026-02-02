@@ -1,0 +1,66 @@
+Script started on 2026-02-02 14:09:04+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="63" LINES="12"]
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ dockr [Ke[K[Ker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+3adbf48e7076   ubuntu    "/bin/bash"   2 minutes ago   Up 2 minutes             beautiful_mclean
+[?2004h[94mITINF25/lektion5
+(B[m$ docker attach be[K[K[7mbeautiful_mclean[27mbeautiful_mclean[H[2J[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean
+[?2004l[K]0;root@3adbf48e7076: /root@3adbf48e7076:/# [K]0;root@3adbf48e7076: /root@3adbf48e7076:/# 3adbf48e7076            ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     10       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     11       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     12       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     13       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     14       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     15       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     16       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean[H[2J[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean # TVÅ PROCESSER VID PS (1 egen tligen)[A[C[C
+[C[C[C[C[C[C[C  ^C[K[K[K[K[A[C[C#docker attach beautiful_mclean # TVÅ PROCESSER VID PS (1 egentligen[A
+
+[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker exexc [K[K[Kc [K[K[K[K[K[K[K[K[K[K[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5
+(B[m$ docker [K[K[K[K[K[K[Kdocker exec sad?[K_gauss[H[2J[94mITINF25/lektion5
+(B[m$ docker exec sad_gauss bahs[K[Ksh[1@+[1@i[1P[1P[1@-[1@i[1@-[1P[1@t[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@aa519539cbdd: /root@aa519539cbdd:/# [7mps -e -o pid,ppid,cmd[27m
+[Aroot@aa519539cbdd:/# ps -e -o pid,ppid,cmd
+[K[Aroot@aa519539cbdd:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       0 bash
+     17       9 ps -e -o pid,ppid,cmd
+[?2004h]0;root@aa519539cbdd: /root@aa519539cbdd:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5
+(B[m$ docker exec -it sad_gauss bash # TRE PROCESSER MED PS )[K(en fö[K;r  [K[A[C[C[C[C[C[
