@@ -66,4 +66,67 @@ Script started on 2026-02-02 10:04:42+01:00 [TERM="xterm-256color" TTY="/dev/pts
 [7m Manual page docker(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mEXAMPLES[0m[m
 [7m Manual page docker(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For specific client examples see the man page for the specific Docker command. For exam‐[m
 [7m Manual page docker(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ple:[m
-[7m Manual page docker(1) line 46 (press h for he
+[7m Manual page docker(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       man docker-run[m
+[7m Manual page docker(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mHISTORY[0m[m
+[7m Manual page docker(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       April  2014,  Originally  compiled  by William Henry (whenry at redhat dot com) based on[m
+[7m Manual page docker(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       docker.com source material and internal work.[m
+[7m Manual page docker(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KDocker Community                           APRIL 2014                                 DOCKER(1)[m
+[7m Manual page docker(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ man docker-pull
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull - Download an image from a registry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m, [1m--all-tags[0m[=false]      Download all tagged images in the repository[m
+[m
+       [1m--platform[0m=""      Set platform if server is multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose output[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+[7m Manual page docker-pull(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ git lgo[K[Kog
+[?2004l[?1h=[33mcommit 2d11b894bef8e5fc33968a6e238bb97ded8c5e55[m[33m ([m[1;36mHEAD -> [m[1;32m260202[m[33m, [m[1;31morigin/260202[m[33m)[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:05:30 2026 +0100[m
+[m
+    autocommit complete 1005 (30)[m
+[m
+[33mcommit 1f3162fd0fdb17fd836608e01a37c9417f40228f[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:05:13 2026 +0100[m
+[m
+    autocommit complete 1005 (13)[m
+[m
+[33mcommit 00dd0adb84cafc7b200f5cc3d860a46b323d13cc[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:04:57 2026 +0100[m
+[m
+    autocommit complete 1004 (57)[m
+[m
+[33mcommit 33c0dc9a9f3fdc625e4e0995d3bcb441f0d08333[m[m
+:[K[K[?1l>[?2004h[94mITINF25/lektion5
+(B[m$ git log[C[Cman docker-pull[H[2J[94mITINF25/lektion5
+(B[m$ man docker-pull
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull - Download an image from a registry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1
