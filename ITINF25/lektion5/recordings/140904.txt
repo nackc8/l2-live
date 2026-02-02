@@ -322,4 +322,75 @@ Run 'docker image COMMAND --help' for more information on a command.
 [34m[1mmysql:8.0[0m                                            [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
 [34m[1mmysql:latest[0m                                         [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
 [34m[1mnginx:latest[0m                                         [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
-[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B
+[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                      [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                  [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                    [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                          [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                         [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                         [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                    [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m         [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m         [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m         [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m    [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                   [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                         [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                  [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                   [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                         [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                        [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                      [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                              [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [7mwordpress:php8.2-apache[27m[C[Cwordpress:php8.2-apache wordpress:php8.2-apached wordpress:php8.2-apacheo wordpress:php8.2-apachec wordpress:php8.2-apachek wordpress:php8.2-apachee wordpress:php8.2-apacher wordpress:php8.2-apache[C wordpress:php8.2-apachei wordpress:php8.2-apachen wordpress:php8.2-apaches wordpress:php8.2-apachep wordpress:php8.2-apachee wordpress:php8.2-apachec wordpress:php8.2-apachet wordpress:php8.2-apache[H[2J[94mITINF25/lektion5
+(B[m$ docker inspect wordpress:php8.2-apache[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[
+    {
+        "Id": "sha256:c23b6f0d53579bc3465a96902ed1ce010940c3800071c0e0f21477e7a2541d75",
+        "RepoTags": [
+            "wordpress:php8.2-apache"
+        ],
+        "RepoDigests": [
+            "wordpress@sha256:c5f075fe71c9120e769edbf761bcf20bf0b73d72d49dfde042a06aafcdfef08d"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-08-12T18:29:25Z",
+        "Config": {
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+                "PHP_VERSION=8.2.29",
+                "PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc",
+                "PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c"
+            ],
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "StopSignal": "SIGWINCH"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 729877666,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/e6a11de71a54143ef938f4b88719b8283d6fcf3642b18000dd74cd3c6369b905/diff:/shared/docker/overlay2/facc85e766895ee44c9f96d165e7f491dfc63f4ae9cac5c597c16ae1b3d43004/diff:/shared/docker/overlay2/138728d56dd334bbffd55d623e41b2efb1f352ab46e4ced8c234b416e47c8e62/diff:/shared/docker/overlay2/034f8005f8a32f2e9851ab1589416bb083dd7c419bd3bde05ea70a179fd53abd/diff:/shared/docker/overlay2/38e139492aa25be04f0489d5588a832b5ccea96e35ad16a4a7e28c53b0298093/diff:/shared/docker/overlay2/d4dc08d1e8fea86afbf3dbf7f211d0a5022268e88f3ba54e737dd86f2e72de93/diff:/shared/docker/overlay2/bdc8a8b614c52e26b076992635fb445768740bbbdc12c4da23678ae6fe01d5bb/diff:/shared/docker/overlay2/6e424c1904de0055ab385b17ece4d498707df9b9ad61f46c01de13fc276b98b7/diff:/shared/docker/overlay2/293fada28152476a8729b8be577fcbf3ff3edb5c3b5c9279fc2394761d0f2107/diff:/shared/docker/overlay2/5c03f9363d6caa96fb3d34ceb7bb6dadf11984c14fb05034a5aac4df31363aa6/diff:/shared/docker/overlay2/6da069f50fb46983d3f57127b50f01eaa797543401444a7c505cda2607ec6369/diff:/shared/docker/overlay2/05b1674d5ba59c08ade6dcad3d47bfca332370c248d15e812b65bdef5666fbf9/diff:/shared/docker/overlay2/164dc21961f0334051269bf865d07f54ee8b9ccf198cabf7879cbb1c4f263c61/diff:/shared/docker/overlay2/29cc12ad891a9e6f5b9d0166141caa6b73d813d465f49b137f28ef2a6be3706e/diff:/shared/docker/overlay2/61f22b70ccc9e010766923b9ce769ff5dcd99f2c1f5e054f7506a9e8f57cfb17/diff:/shared/docker/overlay2/b698235882e06f1faffaae637fcc69a645e6a36eb61e92d51d75e0211ce93ec3/diff:/shared/docker/overlay2/7760c5343cc40a315bff180e9614896fe9da54361afa89eaf1833683e9cd090b/diff:/shared/docker/overlay2/0ffef9528b16fcf4d6d895b1cd32815bc950729f1fc2b36f6b16a8aab60588e4/diff:/shared/docker/overlay2/9bb7dc8525870c336850075dac4f5dbd120a69ac080793996d112c2ea1789fef/diff:/shared/docker/overlay2/ab20351a7ff2d7cbce41d9348dd269ab1623abd366a37b4997bef3e5aff668b8/diff:/shared/docker/overlay2/7174d574a9e755b17620da7944c5629627c0d2d4821a920657895efb85126b99/diff:/shared/docker/overlay2/b85c60d6b880675cc458b327a81c471d73da3db87f0ba3c0f7e69e8003bf8217/diff:/shared/docker/overlay2/0acd283
