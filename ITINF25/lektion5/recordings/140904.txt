@@ -714,4 +714,38 @@ tc/os-release"    About an hour ago   Exited (0)[7m>[27m
 me"               About an hour ago   Exited (0)[7m>[27m
 me"               About an hour ago   Exited (0)[7m>[27m
 h"                2 hours ago         Exited (12[7m>[27m
-h"                2 hours
+h"                2 hours ago         Exited (0)[7m>[27m
+ash"              2 hours ago         Exited (13[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KBB[Kb8d5c06ad9eb   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=always"      About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               gifted_mcnulty
+:[K[K [KESCESC[KOO[KBB[K1964f7019cc1   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=auto"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               sweet_northcutt
+:[K[K [KESCESC[KOO[KBB[Ke0bde3236e74   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :
