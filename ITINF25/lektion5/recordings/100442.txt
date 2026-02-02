@@ -1128,4 +1128,38 @@ MORE=NO
 [17;1H[K[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           probes for all supported formats except minix[m
 [17;1H[K[7mManual page blkid(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               print the devices in a user-friendly format;[m
 [7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               this output format is unsupported for[m
-[7
+[7mManual page blkid(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               low-level probing ([1m--probe[0m or [1m--info[0m).[m
+[7mManual page blkid(8) line 163 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ b[Ksudo blkid /sed[K[K[Kdev/sda
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid /dev/sda1
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid /dev/sda1 [K[C /dev/sda1- /dev/sda1o /dev/sda1[C /dev/sda1u /dev/sda1u /dev/sda1i /dev/sda1d /dev/sda1
+[?2004lblkid: unsupported output format uuid
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1U /dev/sda1U /dev/sda1I /dev/sda1D /dev/sda1
+[?2004lblkid: unsupported output format UUID
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o UUID /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1G /dev/sda1U /dev/sda1I /dev/sda1D /dev/sda1
+[?2004lblkid: unsupported output format GUID
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ sudo blkd[Kid dddd[K[K[K[K-o [K[K[K-s uuid[C[C[C[C /dv[Kev/sds1[K[Ka1[C /dev/sda1- /dev/sda1i /dev/sda1[C /dev/sda1[1P/dev/sda1[1P /dev/sda1i /dev/sda1o /dev/sda1[C /dev/sda1[1P/dev/sda1[1P /dev/sda1[1P /dev/sda1o /dev/sda1[C /dev/sda1a /dev/sda1[1P /dev/sda1v /dev/sda1a /dev/sda1l /dev/sda1u /dev/sda1e /dev/sda1
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o value /dev/sda1[K2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o value /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P/dev/sda2l /dev/sda2[1P /dev/sda2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lblkid: unsupported output format /dev/sda2
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o /dev/sda2[C[1P /dev/sda2[1P /dev/sda2[1P/dev/sda2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid /dev/sda2[1P[1@o[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lblkid: unsupported output format uuid
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda2[C[C[Ktouch b[Kuuidfinder
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ nano uuidfinder 
+[?2004l[?2004h[?1049h[22;0;0t[1;8r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[6;18H(B[0;7m[ Reading... ](B[m[6;17H(B[0;7m[ Read 0
