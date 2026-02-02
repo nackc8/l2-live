@@ -1162,4 +1162,45 @@ MORE=NO
 (B[m$ sudo blkid -o uuid /dev/sda2[C[C[Ktouch b[Kuuidfinder
 [?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
 (B[m$ nano uuidfinder 
-[?2004l[?2004h[?1049h[22;0;0t[1;8r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[6;18H(B[0;7m[ Reading... ](B[m[6;17H(B[0;7m[ Read 0
+[?2004l[?2004h[?1049h[22;0;0t[1;8r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[6;18H(B[0;7m[ Reading... ](B[m[6;17H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2       uuidfinder                 [1;47H(B[m[7d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[8d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[1;33H(B[0;7m*[47G(B[m[?12l[?25h[2d[36m#[39m(B[m[?25l[?12l[?25h[36m![39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36mi[39m(B[m[?25l[?12l[?25h[36mn[39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[?12l[?25h[36ms[39m(B[m[?25l[?12l[?25h[36mh[39m(B[m[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25he[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[6d[K[?12l[?25h[4;7Hh[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hu[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25h5[?25l[?12l[?25h2[?25l[?12l[?25h9[?25l[?12l[?25hf[?25l[?12l[?25ha[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25h@[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[?12l[?25h[A[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36mF[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[?12l[?25h[36mk[39m(B[m[?25l[?12l[?25h[36me[39m(B[m[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36mU[39m(B[m[?25l[?12l[?25h[36mU[39m(B[m[?25l[?12l[?25h[36mI[39m(B[m[?25l[?12l[?25h[36mD[39m(B[m[?25l[?12l[?25h[A[?25l7[3;6r8[3dM[1;8r[3;1H[?12l[?25h[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[6d(B[0;7mSave modified buffer?                           [7;1H Y(B[m Yes[K[8d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[6;23H[?12l[?25h[?25l[7d(B[0;7m^G(B[m Help     (B[0;7mM-D(B[m DOS Form(B[0;7mM-A(B[m Append  (B[0;7mM-B(B[m Backup F[8;1H(B[0;7m^C(B[m Cancel   (B[0;7mM-M(B[m Mac Form(B[0;7mM-P(B[m Prepend (B[0;7m^T(B[m Browse[6d(B[0;7mFile Name to Write: uuidfinder(B[m[?12l[?25h[?25l[6;17H[1K (B[0;7m[ Writing... ](B[m[K[1;33H(B[0;7m [47G(B[m[6;16H(B[0;7m[ Wrote 4 lines ](B[m[J[8d[?12l[?25h[8;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chomd +[K[K[K[K[Kmox[Kd +x uuidfinder l[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x uuidfinder 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ /.[K[K./uuidfinder 
+[?2004la529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x he[K[Kbyt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x byt1 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lHej
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ./byt1 
+[?2004l^C
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004l^C
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lHej
+Hej
+ENCYRP   RYPT_UUID
+1234
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [C[C[7@chmo
