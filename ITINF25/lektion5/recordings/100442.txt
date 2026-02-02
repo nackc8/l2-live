@@ -1441,4 +1441,112 @@ d123c3f7397c   ubuntu                    "/bin/bash"              4 minutes ago 
 dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago          Exited (0) 10 minutes ago                 mariadb-db-1
 e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago         Exited (0) 4 months ago                   ep
 7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago         Exited (0) 4 months ago                   trusting_elion
-1e0e6725c1fa   mysql:8  
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                   mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                   wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                   sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                   confident_turing
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man docker-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run  -  Create  and run a new container from an[m
+       image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[7mual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kii[K[1;1HDOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run  -  Create  and run a new container from an[m
+[5;1H       image[m
+[6;1H[m
+[7;1H[1mSYNOPSIS[0m[m
+[8;1H       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+[9;1H       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+[10;1H       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+[11;1H       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[12;1H[1;1HDOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run  -  Create  and run a new container from an[m
+[5;1H       image[m
+[6;1H[m
+[7;1H[1mSYNOPSIS[0m[m
+[8;1H       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+[9;1H       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+[10;1H       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+[11;1H       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[12;1H...skipping...
+       [[1m--device-read[0m[1m[7m-i[27m[0m[1mops[0m[=[4m[][24m]]    [[1m--device-write-bps[0m[=[4m[][24m]][m
+       [[1m--device-write[0m[1m[7m-i[27m[0m[1mops[0m[=[4m[][24m]]   [[1m--dns[0m[=[4m[][24m]]   [[1m--dns-op‐[0m[m
+       [1mtion[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]] [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+       [4mNAME[24m]]   [[1m-e[0m|[1m--env[0m[=[4m[][24m]]   [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+       [[1m--env-file[0m[=[4m[][24m]]  [[1m--expose[0m[=[4m[][24m]]  [[1m--group-add[0m[=[4m[][24m]][m
+       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m-[0m[1m[7m-i[27m[0m[1mnit[0m] [[1m[7m-i[27m[0m|[1m-[0m[1m[7m-i[27m[0m[1mn‐[0m[m
+       [1mteractive[0m]    [[1m-[0m[1m[7m-i[27m[0m[1mp[0m[=[4mIPv4-ADDRESS[24m]]   [[1m-[0m[1m[7m-i[27m[0m[1mp6[0m[=[4mIPv6-AD‐[24m[m
+       [4mDRESS[24m]] [[1m-[0m[1m[7m-i[27m[0m[1mpc[0m[=[4mIPC[24m]] [[1m-[0m[1m[7m-i[27m[0m[1msolation[0m[=[4mdefault[24m]]  [[1m--ker‐[0m[m
+       [1mnel-memory[0m[=[4mKERNEL-MEMORY[24m]]  [[1m-l[0m|[1m--label[0m[=[4m[][24m]]  [[1m--la‐[0m[m
+       [1mbel-file[0m[=[4m[][24m]]  [[1m--link[0m[=[4m[][24m]]   [[1m--link-local[0m[1m[7m-i[27m[0m[1mp[0m[=[4m[][24m]][m
+       [[1m--log-driver[0m[=[4m[][24m]]     [[1m--log-opt[0m[=[4m[][24m]]    [[1m-m[0m|[1m--mem‐[0m[m
+[7mal page docker-run(1) line 19 (press h for help or q to quit)[27m[K[K/[K       [1mory[0m[=[4mMEMORY[24m]] [[1m--mac-address[0m[=[4mMAC-ADDRESS[24m]] [[1m--memory-[0m[m
+[7mal page docker-run(1) line 20 (press h for help or q to quit)[27m[K[K/[K       [1mreservation[0m[=[4mMEMORY-RESERVATION[24m]]           [[1m--memory-[0m[m
+       [1mswap[0m[=[4mLIMIT[24m]]     [[1m--memory-swappiness[0m[=[4mMEMORY-SWAPPI‐[24m[m
+       [4mNESS[24m]] [[1m--mount[0m[=[4m[MOUNT][24m]] [[1m--name[0m[=[4mNAME[24m]] [[1m--network-[0m[m
+       [1malias[0m[=[4m[][24m]]  [[1m--network[0m[=[4m"bridge"[24m]]   [[1m--oom-kill-dis‐[0m[m
+[7mal page docker-run(1) line 24 (press h for help or q to quit)[27m[K[K/[K       [1mable[0m]     [[1m--oom-score-adj[0m[=[4m0[24m]]     [[1m-P[0m|[1m--publish-all[0m][m
+[7mal page docker-run(1) line 25 (press h for help or q to quit)[27m[K[K/[K       [[1m-p[0m|[1m--publish[0m[=[4m[][24m]]  [[1m--pid[0m[=[4m[PID][24m]]   [[1m--userns[0m[=[4m[][24m]][m
+[7mal page docker-run(1) line 26 (press h for help or q to quit)[27m[K[K/[K       [[1m--pids-limit[0m[=[4mPIDS_LIMIT[24m]]   [[1m--privileged[0m]  [[1m--read-[0m[m
+       [1monly[0m]   [[1m--restart[0m[=[4mRESTART[24m]]   [[1m--rm[0m]    [[1m--security-[0m[m
+[7mal page docker-run(1) line 28 (press h for help or q to quit)[27m[K[K/[K...skipping...
+          Add  a  custom  host-to[7m-I[27mP  mapping  (host=ip,   or[m
+       host:ip)[m
+[m
+       Add  a  line to /etc/hosts. The format is hostname=ip,[m
+       or hostname:ip.[m
+          The [1m--add-host[0m option can be set multiple times.[m
+[m
+       [1m--annotation[0m=[][m
+          Add an annotation to the container (passed  through[m
+       to the OCI runtime).[m
+[m
+[7mal page docker-run(1) line 78 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       The proportion will only apply when CPU[7m-i[27mntensive pro‐[m
+       cesses  are  running.  When tasks in one container are[m
+       idle, other containers can use the left-over CPU time.[m
+       The  actual  amount of CPU time will vary depending on[m
+       the number of containers running on the system.[m
+[m
+       For example, consider three containers, one has a cpu-[m
+       share  of 1024 and two others have a cpu-share setting[m
+       of 512. When processes in all three containers attempt[m
+       to  use 100% of CPU, the first container would receive[m
+       50% of the total CPU time. If you add  a  fourth  con‐[m
+[7ml page docker-run(1) line 111 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--device-read[0m[1m[7m-i[27m[0m[1mops[0m=[][m
+          Limit  read rate from a device (e.g. --device-read-[m
+       iops=/dev/sda:1000)[m
+[m
+       [1m--device-write-bps[0m=[][m
+          Limit write rate to a device (e.g.  --device-write-[m
+       bps=/dev/sda:1mb)[m
+[m
+       [1m--device-write[0m[1m[7m-i[27m[0m[1mops[0m=[][m
+          Limit  write rate to a device (e.g. --device-write-[m
+       iops=/dev/sda:1000)[m
+[7ml page docker-run(1) line 283 (press h for help or q to quit)[27m[K[K/[K[m
+       [1m--dns-search[0m=[][m
+          Set custom DNS search domains  (Use  --dns-search=.[m
+       if you don't wish to set the search domain)[m
+[m
+       [1m--dns-option[0m=[][m
+          Set custom DNS options[m
+[m
+[7ml page docker-run(1) line 291 (press h for help or q to quit)[27m[K[K/[K..
