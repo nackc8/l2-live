@@ -515,4 +515,48 @@ Run 'docker image COMMAND --help' for more information on a command.
 :[K[K [KESCESC[KOO[KBB[K                "sha256:ba7d1e50abde01e1c0bec3e1e9e7e9ab45655cc659a359e9e17321fd40a56381",
 :[K[K [KESCESC[KOO[KBB[K                "sha256:4ae64fcadf12335491eebd6e4f0aa7ee85ba6bbeff79dcace266dbeaffa5d007",
 :[K[K [KESCESC[KOO[KBB[K                "sha256:d20dd3f025bc323ba96b14aa78921e383ef64f7aae4e2ff4ed184c418f75e4a9",
-:[K[K [KESCESC[KOO[KBB[K                "sha256:8c03c1f7654b7f4162b9dfad6f32e3d91c3689f95de37483ebd3
+:[K[K [KESCESC[KOO[KBB[K                "sha256:8c03c1f7654b7f4162b9dfad6f32e3d91c3689f95de37483ebd3ecd5ba18320d",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:0e98916d5033b4788bbfb9685e243f1075b9895d8e733d603312b8053e7a308c"
+:[K[K [KESCESC[KOO[KBB[K            ]
+:[K[K [KESCESC[KOO[KBB[K        },
+:[K[K [KESCESC[KOO[KBB[K        "Metadata": {
+:[K[K [KESCESC[KOO[KBB[K            "LastTagTime": "0001-01-01T00:00:00Z"
+:[K[K [KESCESC[KOO[KBB[K        }
+:[K[K    }
+]
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker image prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:e1720c22c4f280f7e277d7479753dc61023f391faa5f3872b7cca761e0841aa6
+deleted: sha256:9172200d3b73047803b6e53fc8bb2040b3af83dcdb649d335e0642b01cd62ebc
+deleted: sha256:15784b53fa2622ff7cf38134b82d7beeb122941153953c4658e4ad11a62515ed
+deleted: sha256:8fbb02a81f7a364fe9bc67d51f7006a67902ef6b3b5a8b9f6257aca8b151e74c
+deleted: sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24
+deleted: sha256:cb03e679557b10899928bc155e2c894fb017c892bb2b1df434ff8e1cada089eb
+deleted: sha256:e2310a8be0aeeffb629a7a06205d3821597eb2c0a0680a56fe81cf11fd4234d0
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion5
+(B[m$ doce[Kker images[H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                                                               [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                              [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                      [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                   [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                         [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                      [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                               [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                      [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                      [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                  [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                            [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                     [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8[0m                                            [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                          [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                       [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                       [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                      
