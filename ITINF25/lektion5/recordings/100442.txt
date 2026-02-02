@@ -1401,4 +1401,44 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
 (B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
 (B[m$ docker run -d $n; sleep 0.3 && docker ps
-[?2004lb12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067
+[?2004lb12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067f5e996bf
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l2136593b774f4a24265dca464138511d64b805bf4876d14f38f0392f6a1e5cb2
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[1P[1@2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.2 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l87383fddc68e0f760084e6532c17f2cae365f3e45eb840e6836ccf90e9942eee
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+87383fddc68e   ubuntu    "/bin/bash"   1 second ago   Up Less than a second             elated_driscoll
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ p[K
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps -a[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                          PORTS     NAMES
+87383fddc68e   ubuntu                    "/bin/bash"              25 seconds ago       Exited (0) 24 seconds ago                 elated_driscoll
+2136593b774f   ubuntu                    "/bin/bash"              30 seconds ago       Exited (0) 30 seconds ago                 priceless_hoover
+b12623ea6bca   ubuntu                    "/bin/bash"              32 seconds ago       Exited (0) 32 seconds ago                 gracious_perlman
+81bb96bb6cd1   ubuntu                    "/bin/bash"              34 seconds ago       Exited (0) 33 seconds ago                 hardcore_banzai
+2c340071692c   ubuntu                    "/bin/bash"              35 seconds ago       Exited (0) 35 seconds ago                 jovial_gagarin
+75f9b4b45fef   ubuntu                    "/bin/bash"              37 seconds ago       Exited (0) 37 seconds ago                 sharp_wu
+f35bbbef75f1   ubuntu                    "/bin/bash"              39 seconds ago       Exited (0) 39 seconds ago                 eloquent_ardinghelli
+806c42a5eb5c   ubuntu                    "/bin/bash"              41 seconds ago       Exited (0) 41 seconds ago                 mystifying_mcclintock
+39ab7bbc97bc   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago             awesome_napier
+bf10fa2334d8   ubuntu                    "/bin/bash"              4 minutes ago        Exited (0) 4 minutes ago                  zealous_jepsen
+d123c3f7397c   ubuntu                    "/bin/bash"              4 minutes ago        Exited (0) 4 minutes ago                  gracious_sammet
+32b4c96e05e9   ubuntu                    "/bin/bash"              8 minutes ago        Exited (0) 8 minutes ago                  relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              10 minutes ago       Exited (0) 10 minutes ago                 trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              10 minutes ago       Exited (0) 10 minutes ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago          Exited (0) 10 minutes ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago         Exited (0) 4 months ago                   ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago         Exited (0) 4 months ago                   trusting_elion
+1e0e6725c1fa   mysql:8  
