@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Fake UUID
+echo "a529faababa"
