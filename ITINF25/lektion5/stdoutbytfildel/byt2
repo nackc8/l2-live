@@ -10,4 +10,4 @@ uuid="$(./uuidfinder)"
 # sed -E "s/ENCRYPT_UUID=$/ENCRYPT_UUID=$uuid/" "$fil"
 
 # Tanksätt 2: Skriv över det med vårt värde
-sed -E "s/ENCRYPT_UUID=/ENCRYPT_UUID=$uuid/" "$fil"
+sed -E "s/ENCRYPT_UUID=.*/ENCRYPT_UUID=$uuid/" "$fil"
