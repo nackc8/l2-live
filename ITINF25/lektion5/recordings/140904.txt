@@ -559,4 +559,159 @@ Total reclaimed space: 0B
 [34m[1mmysql:8.0[0m                                          [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
 [34m[1mmysql:latest[0m                                       [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
 [34m[1mnginx:latest[0m                                       [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
-[34m[1mnode:20[0m                      
+[34m[1mnode:20[0m                                            [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                    [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                  [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                        [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                       [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                       [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                  [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m       [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m       [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m       [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m
+                                                   [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                 [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m
+                                                   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                       [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                 [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                       [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                      [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                    [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                            [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED             STATUS                           PORTS     NAMES
+099fee160568   debian                    "ls -la /work"           33 minutes ago      Exited (0) 33 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la /"               34 minutes ago      Exited (0) 34 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/bash"              53 minutes ago      Up 53 minutes                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/bash"              59 minutes ago      Exited (0) 55 minutes ago                  beautiful_mclean
+b8d5c06ad9eb   alpine                    "ls --color=always"      About an hour ago   Exited (0) About an hour ago               gifted_mcnulty
+1964f7019cc1   alpine                    "ls --color=auto"        About an hour ago   Exited (0) About an hour ago               sweet_northcutt
+e0bde3236e74   alpine                    "ls -l /usr/sbin"        About an hour ago   Exited (0) About an hour ago               zealous_benz
+419753022f76   alpine                    "ls -l /usr/sbin"        About an hour ago   Exited (0) About an hour ago               festive_payne
+9dac979dea5a   alpine                    "cat /etc/os-release"    About an hour ago   Exited (0) About an hour ago               wonderful_chatelet
+c9061c49488a   alpine                    "hostname"               About an hour ago   Exited (0) About an hour ago               nifty_visvesvaraya
+df69b5391647   alpine                    "hostname"               About an hour ago   Exited (0) About an hour ago               nervous_austin
+bb9fde689c32   alpine                    "/bin/sh"                2 hours ago         Exited (127) About an hour ago             inspiring_stonebraker
+a0ffcbb83ca2   alpine                    "/bin/sh"                2 hours ago         Exited (0) 2 hours ago                     serene_almeida
+b94dddfa87ed   ubuntu                    "/bin/bash"              2 hours ago         Exited (137) 2 hours ago                   nostalgic_swirles
+2d52d823cfb6   ubuntu                    "/bin/bash"              2 hours ago         Exited (127) 2 hours ago                   funny_keldysh
+e5ee2cb68c7e   ubuntu                    "/bin/bash"              2 hours ago         Exited (130) 2 hours ago                   distracted_taussig
+eb23b6261296   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     goofy_visvesvaraya
+87383fddc68e   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     elated_driscoll
+2136593b774f   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     priceless_hoover
+b12623ea6bca   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     gracious_perlman
+81bb96bb6cd1   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     hardcore_banzai
+2c340071692c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     jovial_gagarin
+75f9b4b45fef   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     sharp_wu
+f35bbbef75f1   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     eloquent_ardinghelli
+806c42a5eb5c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     mystifying_mcclintock
+39ab7bbc97bc   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     awesome_napier
+bf10fa2334d8   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     zealous_jepsen
+d123c3f7397c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     gracious_sammet
+32b4c96e05e9   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago         Exited (0) 2 hours ago                     mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago        Exited (0) 4 months ago                    ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago        Exited (0) 4 months ago                    trusting_elion
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago        Exited (0) 5 months ago                    mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago        Exited (0) 5 months ago                    wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago        Exited (0) 5 months ago                    sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago        Exited (0) 5 months ago                    confident_turing
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps -a | less
+[?2004l[?1049h[22;0;0t[?1h=CONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                  CREATED             STATUS    [7m>[27m
+ /work"           33 minutes ago      Exited (0)[7m>[27m
+ /"               34 minutes ago      Exited (0)[7m>[27m
+ash"              54 minutes ago      Up 53 minu[7m>[27m
+ash"              About an hour ago   Exited (0)[7m>[27m
+olor=always"      About an hour ago   Exited (0)[7m>[27m
+olor=auto"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+tc/os-release"    About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+h"                2 hours ago         Exited (12[7m>[27m
+h"                2 hours ago         Exited (0)[7m>[27m
+ash"              2 hours ago         Exited (13[7m>[27m
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[HD             STATUS                           P[7m>[27m
+utes ago      Exited (0) 33 minutes ago         [7m>[27m
+utes ago      Exited (0) 34 minutes ago         [7m>[27m
+utes ago      Up 53 minutes                     [7m>[27m
+an hour ago   Exited (0) 55 minutes ago         [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+s ago         Exited (127) About an hour ago    [7m>[27m
+s ago         Exited (0) 2 hours ago            [7m>[27m
+s ago         Exited (137) 2 hours ago          [7m>[27m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H                  CREATED             STATUS    [7m>[27m
+ /work"           33 minutes ago      Exited (0)[7m>[27m
+ /"               34 minutes ago      Exited (0)[7m>[27m
+ash"              54 minutes ago      Up 53 minu[7m>[27m
+ash"              About an hour ago   Exited (0)[7m>[27m
+olor=always"      About an hour ago   Exited (0)[7m>[27m
+olor=auto"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+tc/os-release"    About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+h"                2 hours ago         Exited (12[7m>[27m
+h"                2 hours

@@ -3206,4 +3206,64 @@ lrwxrwxrwx 1 root root            8 19 dec  2022  ypdomainname -> hostname
 lrwxrwxrwx 1 root root           47  2 maj  2023  yplan -> ../share/texlive/texmf-dist/scripts/yplan/yplan
 -rwxr-xr-x 1 root root          205  6 mar  2023  yt-dlp
 -rwxr-xr-x 1 root root        14280 11 jan  2023  yuvsplittoppm
--rwxr-xr-x 1 r
+-rwxr-xr-x 1 root root        14280 11 jan  2023  yuvtoppm
+-rwxr-xr-x 1 root root        14280 11 jan  2023  yuy2topam
+-rwxr-xr-x 1 root root         1984 10 apr  2022  zcat
+-rwxr-xr-x 1 root root         1678 10 apr  2022  zcmp
+-rwxr-xr-x 1 root root         6460 10 apr  2022  zdiff
+-rwxr-xr-x 1 root root        23064 25 aug 21.11  zdump
+-rwxr-xr-x 1 root root           29 10 apr  2022  zegrep
+-rwxr-xr-x 1 root root        14280 11 jan  2023  zeisstopnm
+-rwxr-xr-x 1 root root       123560 28 jan  2023  zenity
+-rwxr-xr-x 1 root root           29 10 apr  2022  zfgrep
+-rwxr-xr-x 1 root root         2081 10 apr  2022  zforce
+-rwxr-xr-x 1 root root         8103 10 apr  2022  zgrep
+-rwxr-xr-x 1 root root       217360 19 feb  2023  zip
+-rwxr-xr-x 1 root root        94696 19 feb  2023  zipcloak
+-rwxr-xr-x 1 root root        70193 29 aug 14.09  zipdetails
+-rwxr-xr-x 1 root root         2959 19 feb  2023  zipgrep
+-rwxr-xr-x 2 root root       179248 19 feb  2023  zipinfo
+-rwxr-xr-x 1 root root        86176 19 feb  2023  zipnote
+-rwxr-xr-x 1 root root        90304 19 feb  2023  zipsplit
+-rwxr-xr-x 1 root root         2206 10 apr  2022  zless
+-rwxr-xr-x 1 root root        22784 18 okt  2023  zlib-flate
+-rwxr-xr-x 1 root root         1842 10 apr  2022  zmore
+-rwxr-xr-x 1 root root         4577 10 apr  2022  znew
+lrwxrwxrwx 1 root root           22 15 jan  2025  zoom -> /opt/zoom/ZoomLauncher
+-rwxr-xr-x 1 root root       865768  3 jan 20.51  zsh
+-rwxr-xr-x 1 root root          852 25 feb  2022  zsh5
+-rwxr-xr-x 1 root root      1276544 18 mar  2023  zstd
+lrwxrwxrwx 1 root root            4 18 mar  2023  zstdcat -> zstd
+-rwxr-xr-x 1 root root         3869 18 mar  2023  zstdgrep
+-rwxr-xr-x 1 root root          197 18 mar  2023  zstdless
+lrwxrwxrwx 1 root root            4 18 mar  2023  zstdmt -> zstd
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [7mdocker run -dit ubuntu[27m[C[Cdocker run -dit ubuntu
+[?2004l3adbf48e7076d698a4e671b56fde26a5c1a60c857cd334bc88468fa0ff65fe23
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+3adbf48e7076   ubuntu    "/bin/bash"   11 seconds ago   Up 10 seconds             beautiful_mclean
+[?2004h[94mITINF25/lektion5
+(B[m$ docker psrun -dit ubuntu[H[2J[94mITINF25/lektion5
+(B[m$ docker run -dit ubuntu[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker sp[K[Kps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+3adbf48e7076   ubuntu    "/bin/bash"   43 seconds ago   Up 42 seconds             beautiful_mclean
+[?2004h[94mITINF25/lektion5
+(B[m$ h[K[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+3adbf48e7076   ubuntu    "/bin/bash"   55 seconds ago   Up 54 seconds             beautiful_mclean
+[?2004h[94mITINF25/lektion5
+(B[m$ docker psrun -dit ubuntu[H[2J[94mITINF25/lektion5
+(B[m$ docker run -dit ubuntu
+[?2004laa519539cbdda0a4a319281459a32ca7f653749e23409fc6015efb9e794fe881
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+aa519539cbdd   ubuntu    "/bin/bash"   4 seconds ago   Up 4 seconds             sad_gauss
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K
