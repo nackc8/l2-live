@@ -320,4 +320,314 @@ ENCRYPT_UUID=12345
 MORE=NO
 
 [?2004h[94mITINF25/lektion5/stdoutbytfildel
-(B[m$ sed -E '/^ENCRYPT_UUID=/ s/$/12345/' minconfig.conf [1P
+(B[m$ sed -E '/^ENCRYPT_UUID=/ s/$/12345/' minconfig.conf [1P[1P[1P[1P[1P[1P[C[C[1@ [1@![1P[1@/[1@U[1@U[1@I[1@D[1@/
+[?2004lsed: -e expression #1, char 12: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '/^ENCRYPT/ /UUID/ s/$/12345/' minconfig.conf 
+[?2004lsed: -e expression #1, char 12: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man sed
+[?2004l[?1049h[22;0;0t[?1h=SED(1)                  User Commands                  SED(1)[m
+[m
+[1mNAME[0m[m
+       sed  -  stream  editor  for filtering and transforming[m
+       text[m
+[m
+[1mSYNOPSIS[0m[m
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent][m
+           [-l N] [--line-length=N] [-u] [--unbuffered][m
+           [-E] [-r] [--regexp-extended][m
+           [-e script] [--expression=script][m
+           [-f script-file] [--file=script-file][m
+           [script-if-no-other-script][m
+           [file...][m
+[m
+[1mDESCRIPTION[0m[m
+[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K       [4mSed[24m is a stream editor.  A stream editor  is  used  to[m
+       perform  basic text transformations on an input stream[m
+       (a file or input from a pipeline).  While in some ways[m
+       similar  to  an  editor  which  permits scripted edits[m
+       (such as [4med[24m), [4msed[24m works by making only one  pass  over[m
+       the input(s), and is consequently more efficient.  But[m
+       it is [4msed[24m's ability to filter text in a pipeline which[m
+       particularly distinguishes it from other types of edi‐[m
+       tors.[m
+[m
+       [1m-n[0m, [1m--quiet[0m, [1m--silent[0m[m
+[m
+              suppress automatic printing of pattern space[m
+[m
+       [1m--debug[0m[m
+[m
+[7m Manual page sed(1) line 17 (press h for help or q to quit)[27m[K[K              annotate program execution[m
+[m
+       [1m-e[0m script, [1m--expression[0m=[4mscript[24m[m
+[m
+              add the script to the commands to be executed[m
+[m
+       [1m-f[0m script-file, [1m--file[0m=[4mscript-file[24m[m
+[m
+              add the contents of script-file to the commands[m
+              to be executed[m
+[m
+       [1m--follow-symlinks[0m[m
+[m
+              follow symlinks when processing in place[m
+[m
+       [1m-i[SUFFIX][0m, [1m--in-place[0m[=[4mSUFFIX[24m][m
+[7m Manual page sed(1) line 33 (press h for help or q to quit)[27m[K[K[m
+              edit  files  in  place  (makes backup if SUFFIX[m
+              supplied)[m
+[m
+       [1m-l[0m N, [1m--line-length[0m=[4mN[24m[m
+[m
+              specify the desired line-wrap  length  for  the[m
+              `l' command[m
+[m
+       [1m--posix[0m[m
+[m
+              disable all GNU extensions.[m
+[m
+       [1m-E[0m, [1m-r[0m, [1m--regexp-extended[0m[m
+[m
+              use  extended regular expressions in the script[m
+[7m Manual page sed(1) line 49 (press h for help or q to quit)[27m[K[K              (for portability use POSIX [1m-E[0m).[m
+[m
+       [1m-s[0m, [1m--separate[0m[m
+[m
+              consider files as separate  rather  than  as  a[m
+              single, continuous long stream.[m
+[m
+       [1m--sandbox[0m[m
+[m
+              operate  in  sandbox  mode  (disable e/r/w com‐[m
+              mands).[m
+[m
+       [1m-u[0m, [1m--unbuffered[0m[m
+[m
+              load minimal amounts of  data  from  the  input[m
+              files and flush the output buffers more often[m
+[7m Manual page sed(1) line 65 (press h for help or q to quit)[27m[K[K[m
+       [1m-z[0m, [1m--null-data[0m[m
+[m
+              separate lines by NUL characters[m
+[m
+       [1m--help[0m[m
+              display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       If no [1m-e[0m, [1m--expression[0m, [1m-f[0m, or [1m--file[0m option is given,[m
+       then the first non-option argument is taken as the sed[m
+       script  to  interpret.   All  remaining  arguments are[m
+       names of input files; if no input files are specified,[m
+       then the standard input is read.[m
+[7m Manual page sed(1) line 81 (press h for help or q to quit)[27m[K[K[m
+       GNU    sed   home   page:   <https://www.gnu.org/soft‐[m
+       ware/sed/>.   General   help   using   GNU   software:[m
+       <https://www.gnu.org/gethelp/>.   E-mail  bug  reports[m
+       to: <bug-sed@gnu.org>.[m
+[m
+       Packaged by Debian  Copyright  ©  2022  Free  Software[m
+       Foundation, Inc.  License GPLv3+: GNU GPL version 3 or[m
+       later  <https://gnu.org/licenses/gpl.html>.   This  is[m
+       free software: you are free to change and redistribute[m
+       it.  There is NO WARRANTY, to the extent permitted  by[m
+       law.[m
+[m
+[1mCOMMAND[0m [1mSYNOPSIS[0m[m
+       This is just a brief synopsis of [4msed[24m commands to serve[m
+       as a reminder to those who  already  know  [4msed[24m;  other[m
+[7m Manual page sed(1) line 97 (press h for help or q to quit)[27m[K[K       documentation  (such  as the texinfo document) must be[m
+       consulted for fuller descriptions.[m
+[m
+   [1mZero-address[0m [1m``commands''[0m[m
+       : [4mlabel[24m[m
+              Label for [1mb[0m and [1mt[0m commands.[m
+[m
+       #[4mcomment[24m[m
+              The comment extends until the next newline  (or[m
+              the end of a [1m-e[0m script fragment).[m
+[m
+       }      The closing bracket of a { } block.[m
+[m
+   [1mZero-[0m [1mor[0m [1mOne-[0m [1maddress[0m [1mcommands[0m[m
+       =      Print the current line number.[m
+[m
+[7m Manual page sed(1) line 113 (press h for help or q to quit)[27m[K[K       a \[m
+[m
+       [4mtext[24m   Append  [4mtext[24m,  which  has each embedded newline[m
+              preceded by a backslash.[m
+[m
+       i \[m
+[m
+       [4mtext[24m   Insert [4mtext[24m, which has  each  embedded  newline[m
+              preceded by a backslash.[m
+[m
+       q [[4mexit-code[24m][m
+              Immediately  quit  the  [4msed[24m script without pro‐[m
+              cessing any more input, except  that  if  auto-[m
+              print is not disabled the current pattern space[m
+              will be printed.  The exit code argument  is  a[m
+              GNU extension.[m
+[7m Manual page sed(1) line 129 (press h for help or q to quit)[27m[K[K[m
+       Q [[4mexit-code[24m][m
+              Immediately  quit  the  [4msed[24m script without pro‐[m
+              cessing any more input.  This is a  GNU  exten‐[m
+              sion.[m
+[m
+       r [4mfilename[24m[m
+              Append text read from [4mfilename[24m.[m
+[m
+       R [4mfilename[24m[m
+              Append a line read from [4mfilename[24m.  Each invoca‐[m
+              tion of the command reads a line from the file.[m
+              This is a GNU extension.[m
+[m
+   [1mCommands[0m [1mwhich[0m [1maccept[0m [1maddress[0m [1mranges[0m[m
+       {      Begin a block of commands (end with a }).[m
+[7m Manual page sed(1) line 145 (press h for help or q to quit)[27m[K[K[m
+       b [4mlabel[24m[m
+              Branch to [4mlabel[24m; if [4mlabel[24m is omitted, branch to[m
+              end of script.[m
+[m
+       c \[m
+[m
+       [4mtext[24m   Replace the selected lines with [4mtext[24m, which has[m
+              each embedded newline preceded by a backslash.[m
+[m
+       d      Delete pattern space.  Start next cycle.[m
+[m
+       D      If  pattern  space contains no newline, start a[m
+              normal new cycle as if the d  command  was  is‐[m
+              sued.   Otherwise,  delete  text in the pattern[m
+              space up to the first newline, and restart  cy‐[m
+[7m Manual page sed(1) line 161 (press h for help or q to quit)[27m[K[K              cle  with  the resultant pattern space, without[m
+              reading a new line of input.[m
+[m
+       h H    Copy/append pattern space to hold space.[m
+[m
+       g G    Copy/append hold space to pattern space.[m
+[m
+       l      List out the current line in a ``visually unam‐[m
+              biguous'' form.[m
+[m
+       l [4mwidth[24m[m
+              List out the current line in a ``visually unam‐[m
+              biguous'' form, breaking it  at  [4mwidth[24m  charac‐[m
+              ters.  This is a GNU extension.[m
+[m
+       n N    Read/append  the  next  line  of input into the[m
+[7m Manual page sed(1) line 177 (press h for help or q to quit)[27m[K[K              pattern space.[m
+[m
+       p      Print the current pattern space.[m
+[m
+       P      Print up to the first embedded newline  of  the[m
+              current pattern space.[m
+[m
+       s/[4mregexp[24m/[4mreplacement[24m/[m
+              Attempt  to  match  [4mregexp[24m  against the pattern[m
+              space.  If  successful,  replace  that  portion[m
+              matched  with [4mreplacement[24m.  The [4mreplacement[24m may[m
+              contain the special character  [1m&[0m  to  refer  to[m
+              that   portion   of  the  pattern  space  which[m
+              matched, and the special escapes \1 through  \9[m
+              to  refer to the corresponding matching sub-ex‐[m
+              pressions in the [4mregexp[24m.[m
+[7m Manual page sed(1) line 193 (press h for help or q to quit)[27m[K[K[m
+       t [4mlabel[24m[m
+              If a s/// has done  a  successful  substitution[m
+              since  the  last  input line was read and since[m
+              the last t or T command, then branch to  [4mlabel[24m;[m
+              if [4mlabel[24m is omitted, branch to end of script.[m
+[m
+       T [4mlabel[24m[m
+              If  no  s/// has done a successful substitution[m
+              since the last input line was  read  and  since[m
+              the  last t or T command, then branch to [4mlabel[24m;[m
+              if [4mlabel[24m is omitted, branch to end  of  script.[m
+              This is a GNU extension.[m
+[m
+       w [4mfilename[24m[m
+              Write the current pattern space to [4mfilename[24m.[m
+[7m Manual page sed(1) line 209 (press h for help or q to quit)[27m[K[K[m
+       W [4mfilename[24m[m
+              Write  the  first  line  of the current pattern[m
+              space to [4mfilename[24m.  This is a GNU extension.[m
+[m
+       x      Exchange the contents of the hold  and  pattern[m
+              spaces.[m
+[m
+       y/[4msource[24m/[4mdest[24m/[m
+              Transliterate  the  characters  in  the pattern[m
+              space which appear in [4msource[24m to the correspond‐[m
+              ing character in [4mdest[24m.[m
+[m
+[1mAddresses[0m[m
+       [4mSed[24m  commands can be given with no addresses, in which[m
+       case the command will be executed for all input lines;[m
+[7m Manual page sed(1) line 225 (press h for help or q to quit)[27m[K[K       with  one address, in which case the command will only[m
+       be executed for input lines which match that  address;[m
+       or  with two addresses, in which case the command will[m
+       be executed for all input lines which match the inclu‐[m
+       sive  range  of  lines starting from the first address[m
+       and continuing to the second address.  Three things to[m
+       note  about  address ranges: the syntax is [4maddr1[24m,[4maddr2[24m[m
+       (i.e., the addresses are separated by  a  comma);  the[m
+       line which [4maddr1[24m matched will always be accepted, even[m
+       if [4maddr2[24m selects an earlier line; and if  [4maddr2[24m  is  a[m
+       [4mregexp[24m,  it  will  not be tested against the line that[m
+       [4maddr1[24m matched.[m
+[m
+       After the address (or address-range), and  before  the[m
+       command,  a  [1m![0m   may be inserted, which specifies that[m
+       the command shall only be executed if the address  (or[m
+[7m Manual page sed(1) line 241 (press h for help or q to quit)[27m[K[K       address-range) does [1mnot[0m match.[m
+[m
+       The following address types are supported:[m
+[m
+       [4mnumber[24m Match only the specified line [4mnumber[24m (which in‐[m
+              crements cumulatively across files, unless  the[m
+              [1m-s[0m option is specified on the command line).[m
+[m
+       [4mfirst[24m~[4mstep[24m[m
+              Match  every  [4mstep[24m'th  line  starting with line[m
+              [4mfirst[24m.  For example, ``sed -n 1~2p'' will print[m
+              all the odd-numbered lines in the input stream,[m
+              and the address  2~5  will  match  every  fifth[m
+              line,  starting  with the second.  [4mfirst[24m can be[m
+              zero; in this case, [4msed[24m operates as if it  were[m
+              equal to [4mstep[24m.  (This is an extension.)[m
+[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       address-range) does [1mnot[0m match.[m
+[17;1H[K[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K[m
+       $      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match  lines  matching  the  regular expression[m
+              [4mregexp[24m.  Matching is performed on  the  current[m
+              pattern  space, which can be modified with com‐[m
+              mands such as ``s///''.[m
+[m
+       \[1mc[0m[4mregexp[24m[1mc[0m[m
+              Match lines  matching  the  regular  expression[m
+              [4mregexp[24m.  The [1mc[0m may be any character.[m
+[m
+       GNU [4msed[24m also supports some special 2-address forms:[m
+[m
+       0,[4maddr2[24m[m
+[7m Manual page sed(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Start out in "matched first address" state, un‐[m
+[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[7m Manual page sed(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              first line of input the 0,[4maddr2[24m form will be at[m
+[7m Manual page sed(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the  end of its range, whereas the 1,[4maddr2[24m form[m
+[7m Manual page sed(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              will still be at the beginning  of  its  range.[m
+[7m Manual page sed(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This works only when [4maddr2[24m is a regular expres‐[m
+[7m Manual page sed(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              sion.[m
+[7m Manual page sed(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,+[4mN[24m[m
+[7m Manual page sed(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m  and  the  [4mN[24m  lines  following[m
+[7m Manual page sed(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4maddr1[24m.[m
+[7m Manual page sed(1)
