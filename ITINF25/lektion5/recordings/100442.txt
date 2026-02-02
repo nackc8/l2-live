@@ -830,4 +830,56 @@ MORE=NO
 [17;1H[K[7m Manual page sed(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m[m
 [7m Manual page sed(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       E-mail  bug  reports to [1mbug-sed@gnu.org[0m.  Also, please[m
 [7m Manual page sed(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       include the output of ``sed --version'' in the body of[m
-[7m Manual page sed(1) line
+[7m Manual page sed(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       your report if at all possible.[m
+[7m Manual page sed(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page sed(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written  by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo[m
+[7m Manual page sed(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Bonzini, Jim Meyering, and Assaf Gordon.[m
+[7m Manual page sed(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 309 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf minconfig.conf [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf
+[?2004lsed: -e expression #1, char 5: unterminated address regex
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf[1@/[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lsed: -e expression #1, char 6: missing command
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[1@ [1@p
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=
+ENCRYPT_UUID=
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/ p' minconfig.conf[C[C[C[C[1@-[1@n[1@ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ p' minconfig.conf[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ p' minconfig.conf[C[1@ [1@/[1@/[C[C[1@U[1@U[1@I[1@D
+[?2004lsed: -e expression #1, char 8: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ /UUID/ p' minconfig.conf[1@{[1@ [C[C[C[C[C[C[C[C[1@ [1@}
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ { /UUID/ p }' minconfig.conf[C[C[C[C[1P[1P[1P[1P[1@E[1@N[1@C[1@R[1@Y[1@P[1@T[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/ p }' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/ p }' minconfig.conf[1@/[1@1[1P[1P[1@!
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/! p }' minconfig.conf[C[C[1P[1P[1P[1P[1@1[1@2[1@3[1@4[1@5[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf[C[1P[1@s[1@/[1@$[1@/[1@H[1@E[1@J[1@/
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf
