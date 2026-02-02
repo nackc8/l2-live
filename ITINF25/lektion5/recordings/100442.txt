@@ -129,4 +129,55 @@ Date:   Mon Feb 2 10:04:57 2026 +0100[m
        [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
 [m
 [1mDESCRIPTION[0m[m
-       Alias for [1mdocker[0m [1
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m, [1m--all-tags[0m[=false]      Download all tagged images in the repository[m
+[m
+       [1m--platform[0m=""      Set platform if server is multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose output[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+[7m Manual page docker-pull(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdocker(1)[0m[m
+[7m Manual page docker-pull(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker-pull(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KDocker Community                            Jan 2026                                  DOCKER(1)[m
+[7m Manual page docker-pull(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[20;1H[K[7m Manual page docker-pull(1) line 3/22 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K[7m Manual page docker-pull(1) line 2/22 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[20;1H[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ tldr docker
+[?2004ldocker
+
+[0m[0mManage Docker containers and images.
+Some subcommands such as run have their own usage documentation.
+More information: https://docs.docker.com/reference/cli/docker/.
+
+ - [0m[32;23;22;24;25mList all Docker containers (running and stopped):
+   [33;23;22;24;25mdocker ps [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mStart a container from an image, with a custom name:
+   [33;23;22;24;25mdocker run --name [0mcontainer_name[33;23;22;24;25m [0mimage
+[0m
+ - [0m[32;23;22;24;25mStart or stop an existing container:
+   [33;23;22;24;25mdocker [0mstart|stop[33;23;22;24;25m [0mcontainer_name
+[0m
+ - [0m[32;23;22;24;25mPull an image from a Docker registry:
+   [33;23;22;24;25mdocker pull [0mimage
+[0m
+ - [0m[32;23;22;24;25mDisplay the list of already downloaded images:
+   [33;23;22;24;25mdocker images[0m
+[0m
+ - [0m[32;23;22;24;25mOpen an interactive tty with Bourne shell (sh) inside a running container:
+   [33;23;22;24;25mdocker exec [0m[-it|--interactive --tty][33;23;22;24;25m [0mcontainer_name[33;23;22;24;25m [0msh
+[0m
+ - [0m[32;23;22;24;25mRemove stopped containers:
+   [33;23;22;24;25mdocker rm [0mcontainer1 container2 ...
+[0m
+ - [0m[32;23;22;24;25mFetch and follow the logs of a container:
+   [33;23;22;24;25mdocker logs [0m[-f|--follow][33;23;22;24;25m [0mcontainer_name
+[0m[0m[?2004h[94mITINF25/lektion5
+(B[m$ tldr docker[C[C[Ktldr docker[C[C[K[H[2J[94mITINF25/lektion5
+(B[m$ hueiheiuhe[K[K[K[K[K[K[K[K[K[Kuhiuhiuhiui[K[K[K[K[K[K[K[K[K[K[Kiuooijoi[K[K[K[K[K[K[K[Knano
+[?2004l[?2004h[?10
