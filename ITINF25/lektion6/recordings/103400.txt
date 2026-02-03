@@ -231,4 +231,121 @@ Script started on 2026-02-03 10:34:00+01:00 [TERM="xterm-256color" TTY="/dev/pts
                 "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
                 "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
                 "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
-    
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run --rm ordningstest cat/oftaandrad[H[2J[94mITINF25/lektion6
+(B[m$ docker run --rm ordningstest cat/oftaandrad /oftaandrad
+[?2004lINNEHALL I MINFIL
+18631
+26164
+9036
+2864
+14052
+27306
+14383
+28362
+26240
+26329
+6085
+3309
+[?2004h[94mITINF25/lektion6
+(B[m$ ca [Kt oftaandrad [H[2J[94mITINF25/lektion6
+(B[m$ cat oftaandrad 
+[?2004l16724
+6079
+20211
+10177
+[?2004h[94mITINF25/lektion6
+(B[m$ d[K[H[2J[94mITINF25/lektion6
+(B[m$ ls
+[?2004ldf1  experiment  lsfromscript  oftaandrad  recordings  tomfil
+[?2004h[94mITINF25/lektion6
+(B[m$ cd[K[Kcp -r[K[K[K[K[Kdockj[Ker run --[Kit [H[2J[94mITINF25/lektion6
+(B[m$ docker run -it alipi[K[K[Kpinbe[K[Ke bash
+[?2004lUnable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+
+[1A[2K589002ba0eae: Already exists [1BDigest: sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+Status: Downloaded newer image for alpine:latest
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "bash": executable file not found in $PATH
+
+Run 'docker run --help' for more information
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run -it alpine bash[K[K[K[K/bin/baa[Ksh[H[2J[94mITINF25/lektion6
+(B[m$ docker run -it alpine /bin/bash
+[?2004ldocker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "/bin/bash": stat /bin/bash: no such file or directory
+
+Run 'docker run --help' for more information
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run -it alpine /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bashd /bin/bashe /bin/bashb /bin/bashi /bin/basha /bin/bashn /bin/bash[H[2J[94mITINF25/lektion6
+(B[m$ docker run -it debian /bin/bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lUnable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+
+[1A[2Kef235bf1a09a: Already exists [1BDigest: sha256:8a4206e9cccfb5dcacb363063c66c39e8ab4aa4b9f601f0ef76a9cca6791bb23
+Status: Downloaded newer image for debian:latest
+[?2004hroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# ip address
+[?2004lbash: ip: command not found
+[?2004hroot@db69413a2d9a:/# ping
+[?2004lbash: ping: command not found
+[?2004hroot@db69413a2d9a:/# apt instll  all iputils[H[2Jroot@db69413a2d9a:/# apt install iputils
+[?2004lReading package lists... 0%Reading package lists... 0%                            Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 3%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                [1;31mError: [0m[1mUnable to locate package iputils[0m
+[?2004hroot@db69413a2d9a:/# apt install iputils               update
+[?2004l[33m0% [Working][0m            Get:1 http://deb.debian.org/debian trixie InRelease [140 kB]
+[33m0% [1 InRelease 13.0 kB/140 kB 9%][0m[33m                                  0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+[33m0% [2 InRelease 14.4 kB/47.3 kB 31%][0m[33m                                    0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+[33m0% [3 InRelease 14.4 kB/43.4 kB 33%][0m[33m                                    0% [Working][0m[33m15% [Waiting for headers][0m                         Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9670 kB]
+[33m15% [4 Packages 28.3 kB/9670 kB 0%][0m[33m                                   93% [Working][0m             Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [5412 B]
+[33m93% [Working][0m[33m93% [4 Packages store 0 B] [Waiting for headers][0m                                                Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [98.7 kB]
+[33m93% [4 Packages store 0 B] [6 Packages 4332 B/98.7 kB 4%][0m[33m                                                         93% [4 Packages store 0 B][0m[33m                          96% [Working][0m[33m96% [5 Packages store 0 B][0m[33m                          98% [Working][0m[33m98% [6 Packages store 0 B][0m[33m                          100% [Working][0m              Fetched 10.0 MB in 1s (9294 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                All packages are up to date.
+[?2004hroot@db69413a2d9a:/# apt updateinstall iputils[H[2Jroot@db69413a2d9a:/# apt install iputils
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                [1;31mError: [0m[1mUnable to locate package iputils[0m
+[?2004hroot@db69413a2d9a:/# apt install iputils  s ls-ping
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                Installing:
+[32m  iputils-ping
+[0m
+Installing dependencies:
+[32m  libidn2-0  libunistring5  linux-sysctl-defaults
+[0m
+Summary:
+  Upgrading: 0, Installing: 4, Removing: 0, Not Upgrading: 0
+  Download size: 643 kB
+  Space needed: 2810 kB / 724 GB available
+
+Continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://deb.debian.org/debian trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+[33m3% [1 libunistring5 26.0 kB/477 kB 5%][0m[33m                                      64% [Working][0m             Get:2 http://deb.debian.org/debian trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+[33m65% [2 libidn2-0 2888 B/109 kB 3%][0m[33m                                  83% [Waiting for headers][0m                         Get:3 http://deb.debian.org/debian trixie/main amd64 iputils-ping amd64 3:20240905-3 [51.2 kB]
+[33m83% [3 iputils-ping 2821 B/51.2 kB 6%][0m[33m                                      94% [Waiting for headers][0m                         Get:4 http://deb.debian.org/debian trixie/main amd64 linux-sysctl-defaults all 4.12 [5624 B]
+[33m95% [4 linux-sysctl-defaults 2844 B/5624 B 51%][0m[33m                                               100% [Working][0m              Fetched 643 kB in 0s (1735 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 4.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 4.)
+debconf: falling back to frontend: Teletype
+
+7[0;8r8[1ASelecting previously unselected package libunistring5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4936 files and directories currently installed.)
+Preparing to unpack .../libunistring5_1.3-2_amd64.deb ...
+7[9;0f[42m[30mProgress: [  0%][49m[39m [.........................................................] 87[9;0f[42m[30mProgress: [  6%][49m[39m [###......................................................] 8Unpacking libunistring5:amd64 (1.3-2) ...
+7[9;0f[42m[30mProgress: [ 12%][49m[39m [######...................................................] 8Selecting previously unselected package libidn2-0:amd64.
+Preparing to unpack .../libidn2-0_2.3.8-2_amd64.deb ...
+7[9;0f[42m[30mProgress: [ 18%][49m[39m [##########...............................................] 8Unpacking libidn2-0:amd64 (2.3.8-2) ...
+7[9;0f[42m[30mProgress: [ 24%][49m[39m [#############............................................] 8Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20240905-3_amd64.deb ...
+7[9;0f[42m[30mProgress: [ 29%][49m[39m [################.........................................] 8Unpacking iputils-ping (3:20240905-3) ...
+7[9;0f[42m[30mProgress: [ 35%][49m[39m [####################.....................................] 8Selecting previously unselected package linux-sysctl-defaults.
+Preparing to unpack .../linux-sysctl-defaults_4.12_all.deb ...
+7[9;0f[42m[30mProgress: [ 41%][49m[39m [#######################..................................] 8Unpacking linux-sysctl-defaults (4.12) ...
+7[9;0f[42m[30mProgress: [ 47%][49m[39m [##########################...............................] 8Setting up linux-sysctl-defaults (4.12) ...
+7[9;0f[42m[30mProgress: [ 53%][49m[39m [##############################...........................] 87[9;0f[42m[30mProgress: [ 59%][49m[39m [#################################........................] 8Setting up libunistring5:amd64 (1.3-2) ...
+7[9;0f[42m[30mProgress: [ 65%][49m[39m [####################################.....................] 87[9;0f[42m[30mProgress: [ 71%][49m[39m [########################################.................] 8Setting up libidn2-0:amd64 (2.3.8-2) ...
+7[9;0f[42m[30mPr
