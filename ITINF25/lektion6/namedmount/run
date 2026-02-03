@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Funkar!
+docker run --rm \
+	--name namedmount \
+	-v $(pwd)/mindatakatalog/:/app \
+	-e DEST=/app/ \
+	namedmountimg
+
+# Funkar!
 docker run --rm \
 	--name namedmount \
 	-v $(pwd)/mindatakatalog/:/app \
