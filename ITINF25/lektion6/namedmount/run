@@ -21,15 +21,9 @@
 # 	-e DEST=/app/ \
 # 	namedmountimg
 
-# Funkar!
+# Funkar-ish! MEN, det blir en namngiven volum
 docker run --rm \
 	--name namedmount \
 	-v mindatakatalog:/app \
 	-e DEST=/app/ \
 	namedmountimg
-
-# docker run --rm \
-# 	--name namedmount \
-# 	-v finnsej:/app \
-# 	-e DEST=/app/ \
-# 	namedmountimg
