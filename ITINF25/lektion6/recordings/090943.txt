@@ -815,4 +815,66 @@ m9to7q57whla83ad4auvgniz6
 m1rslwlcikwkw6au3vt1r52wo
 6bx2r4kxc8w42y7b64dl1m0qp
 san52ashdouamjhu7ggq04tn6
-nsz
+nszjuf1otdirovolei26evtkn
+3nm658qz716ns9973ye9muoj4
+3vlfm7p9f5dinqk5ebrapfe68
+mkch2py51kfjozub1mu0lsssr
+ievwl22qmhcdpn1rszchhm9d5
+ma17dn0b6fxyqe3kudumk3psh
+sbbas9ifafbvt49cajefxyk71
+u32k87f1dgapkdn7h27mv82w1
+q1mzcu8izt5n8tpfe5e7f7ziy
+82b0q9q02mfylc9eidj4ykr9d
+rfvwzwu2utyictvpl7bu7pq5h
+kpqc3qfy3kcaj73jphnc7dkq6
+mkllx4rtfjcndz7v08usgp43o
+zjoq4beh0r7chom1m24ubm3yy
+mtjyds8uo0lh2e34hj09lpv99
+wj2h082zchfapflm6p4iiqdmh
+v228vq8vsqmomuy029b9m993l
+evul5m41501y9v8h02oi02mb1
+29fc0lanlj0ryntr5l42zmx7y
+qwb0kzcjrt67iup2kvjp6mg5q
+8afg35bsdufyl06nvnf959qzs
+q2t8ig5bcv3o4oja6b0vtj8uo
+z1qfor8p4hon9zbf0mvu4tpdq
+zapocm3v1csv9mfxl4u16bemu
+9urul39ut0wc6eew5b7gk9wrm
+14g2uio8ln5jxtiamo1p3pe1v
+
+Total reclaimed space: 15.97GB
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ build[K[K[K[K[Kdocker build .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 70B                                       0.0s
+[0m => [internal] load metadata for docker.io/library/alpine:latest          0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 70B                                       0.0s
+[0m[34m => [internal] load metadata for docker.io/library/alpine:latest          0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (3/4)                                         docker:default
+[34m => [internal] load metadata for docker.io/library/alpine:latest          0.2s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m => [1/1] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752  0.1s
+[34m => => resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752  0.0s
+[0m => => sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0 0B / 3.86MB  0.1s
+[34m => => sha256:25109184c71bdad752c8312a8623239686a9a2071e 9.22kB / 9.22kB  0.0s
+[0m[34m => => sha256:59855d3dceb3ae53991193bd03301e082b2a7faa56 1.02kB / 1.02kB  0.0s
+[0m[34m => => sha256:a40c03cbb81c59bfb0e0887ab0b1859727075da7b9cc57 611B / 611B  0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (3/4)                                         docker:default
+[34m => [internal] load metadata for docker.io/library/alpine:latest          0.2s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m => [1/1] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752  0.3s
+[34m => => resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752  0.0s
+[0m => => sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0 0B / 3.86MB  0.3s
+[34m => => sha256:25109184c71bdad752c8312a8623239686a9a2071e 9.22kB / 9.22kB  0.0s
+[0m[34m => => sha256:59855d3dceb3ae53991193bd03301e082b2a7faa56 1.02kB / 1.02kB  0.0s
+[0m[34m => => sha256:a40c03cbb81c59bfb0e0887ab0b1859727075da7b9cc57 611B / 611B  0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.7s (3/4)                                
