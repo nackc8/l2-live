@@ -1,5 +1,5 @@
 FROM debian
 
-COPY ./minfil /
+#COPY ./minfil /
 
 CMD ["bash"]
