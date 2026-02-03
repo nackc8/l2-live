@@ -54,4 +54,57 @@ isdv4-serial-debugger     ispell                    istat
 [34m[1mdebian:bookworm-slim[0m
                       [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m
 [34m[1mdebian:latest[0m         [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m
-[34m[1mdebian:stable[0m
+[34m[1mdebian:stable[0m         [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m
+[34m[1mentrypoint:latest[0m     [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m
+[34m[1mgitlab/gitlab-ce:latest[0m
+                      [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m
+[34m[1mjenkins/jenkins:lts[0m   [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m
+[34m[1mmariadb:latest[0m        [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m
+[34m[1mmysql:8[0m               [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m
+[34m[1mmysql:8.0[0m             [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m
+[34m[1mmysql:latest[0m          [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m
+[34m[1mnginx:latest[0m          [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m
+[34m[1mnode:20[0m               [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m
+[34m[1mpgh_debug_image:latest[0m
+                      [39md2a8bf3f64b6[0m        [39m387MB[0m             [39m0B[0m
+[34m[1mpgh_test_archlinux_latest:45749[0m
+                      [39m1eaf15c3e6b3[0m        [39m878MB[0m             [39m0B[0m
+[34m[1mpgh_test_debian_bookworm-slim:16a3d[0m
+                      [39mfa0af48877f5[0m        [39m387MB[0m             [39m0B[0m
+[34m[1mpgh_test_debian_trixie-slim:66c75[0m
+                      [39mf05687c342a3[0m        [39m250MB[0m             [39m0B[0m
+[34m[1mpgh_test_ubuntu_24.04:e0bee[0m
+                      [39m55ea4f522c07[0m        [39m224MB[0m             [39m0B[0m
+[34m[1mpgh_test_ubuntu_latest:36ce0[0m
+                      [39m69acd4ec157d[0m        [39m224MB[0m             [39m0B[0m
+[34m[1mphpmyadmin/phpmyadmin:latest[0m
+                      [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m
+[34m[1mphpmyadmin:latest[0m     [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m
+                      [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m
+                      [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m
+                      [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m
+                      [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m
+[34m[1mpres-quarto:latest[0m    [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m
+                      [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m
+[34m[1mredis:latest[0m          [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m
+[34m[1mslidev-local:latest[0m   [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m
+[34m[1mtest-debian:latest[0m    [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m
+[34m[1mubuntu:24.04[0m          [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m
+[34m[1mubuntu:latest[0m         [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m
+[34m[1mumariadb:latest[0m       [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m
+[34m[1mwordpress:php8.2-apache[0m
+                      [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker images[K prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:f669d61b63ea8aa116df69ca8c913074a8fc0860226a9b92c39d4b4bc45818ef
+
+Total reclaimed space: 
