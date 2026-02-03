@@ -15,18 +15,18 @@
 # 	namedmountimg
 
 # Funkar INTE! ARG!
-docker run --rm \
-	--name namedmount \
-	-v mindatakatalog/:/app \
-	-e DEST=/app/ \
-	namedmountimg
-
-# # Funkar!
 # docker run --rm \
 # 	--name namedmount \
-# 	-v mindatakatalog:/app \
+# 	-v mindatakatalog/:/app \
 # 	-e DEST=/app/ \
 # 	namedmountimg
+
+# Funkar!
+docker run --rm \
+	--name namedmount \
+	-v mindatakatalog:/app \
+	-e DEST=/app/ \
+	namedmountimg
 
 # docker run --rm \
 # 	--name namedmount \
