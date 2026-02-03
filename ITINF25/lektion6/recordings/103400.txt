@@ -1,0 +1,435 @@
+Script started on 2026-02-03 10:34:00+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="79" LINES="9"]
+[?2004h[94mITINF25/lektion6
+(B[m$ [7mecho $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect [27m[7mo[27m[7mrdningstest[27m[A[C[Cecho $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest[H[2J[94mITINF25/lektion6
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (1/1) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 2B                                        0.0s
+[0m[?25hERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff",
+                "WorkDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:c65189aeb455b5c3f1f097e46aeee4fbb9287d48b65c4dc1eb3136e7bc6f6dea",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
+                "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion6
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest[H[2J[94mITINF25/lektion6
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (1/1) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 2B                                        0.0s
+[0m[?25hERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff",
+                "WorkDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:c65189aeb455b5c3f1f097e46aeee4fbb9287d48b65c4dc1eb3136e7bc6f6dea",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
+                "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad [H[2J[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad 
+[?2004l16724
+6079
+[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad [C[Cecho $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.1s (1/1) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 2B                                        0.0s
+[0m[?25hERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff",
+                "WorkDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:c65189aeb455b5c3f1f097e46aeee4fbb9287d48b65c4dc1eb3136e7bc6f6dea",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
+                "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest[A[C[Ccat ./oftaandrad [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad 
+[?2004l16724
+6079
+20211
+[?2004h[94mITINF25/lektion6
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad 
+[?2004l16724
+6079
+20211
+[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad [C[Cecho $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.1s (1/1) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 2B                                        0.0s
+[0m[?25hERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff",
+                "WorkDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:c65189aeb455b5c3f1f097e46aeee4fbb9287d48b65c4dc1eb3136e7bc6f6dea",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
+                "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run --rm ordningstest cat/oftaandrad[H[2J[94mITINF25/lektion6
+(B[m$ docker run --rm ordningstest cat/oftaandrad /oftaandrad
+[?2004lINNEHALL I MINFIL
+18631
+26164
+9036
+2864
+14052
+27306
+14383
+28362
+26240
+26329
+6085
+3309
+[?2004h[94mITINF25/lektion6
+(B[m$ ca [Kt oftaandrad [H[2J[94mITINF25/lektion6
+(B[m$ cat oftaandrad 
+[?2004l16724
+6079
+20211
+10177
+[?2004h[94mITINF25/lektion6
+(B[m$ d[K[H[2J[94mITINF25/lektion6
+(B[m$ ls
+[?2004ldf1  experiment  lsfromscript  oftaandrad  recordings  tomfil
+[?2004h[94mITINF25/lektion6
+(B[m$ cd[K[Kcp -r[K[K[K[K[Kdockj[Ker run --[Kit [H[2J[94mITINF25/lektion6
+(B[m$ docker run -it alipi[K[K[Kpinbe[K[Ke bash
+[?2004lUnable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+
+[1A[2K589002ba0eae: Already exists [1BDigest: sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+Status: Downloaded newer image for alpine:latest
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "bash": executable file not found in $PATH
+
+Run 'docker run --help' for more information
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run -it alpine bash[K[K[K[K/bin/baa[Ksh[H[2J[94mITINF25/lektion6
+(B[m$ docker run -it alpine /bin/bash
+[?2004ldocker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "/bin/bash": stat /bin/bash: no such file or directory
+
+Run 'docker run --help' for more information
+[?2004h[94mITINF25/lektion6
+(B[m$ docker run -it alpine /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bash[1P /bin/bashd /bin/bashe /bin/bashb /bin/bashi /bin/basha /bin/bashn /bin/bash[H[2J[94mITINF25/lektion6
+(B[m$ docker run -it debian /bin/bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lUnable to find image 'debian:latest' locally
+latest: Pulling from library/debian
+
+[1A[2Kef235bf1a09a: Already exists [1BDigest: sha256:8a4206e9cccfb5dcacb363063c66c39e8ab4aa4b9f601f0ef76a9cca6791bb23
+Status: Downloaded newer image for debian:latest
+[?2004hroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# ip address
+[?2004lbash: ip: command not found
+[?2004hroot@db69413a2d9a:/# ping
+[?2004lbash: ping: command not found
+[?2004hroot@db69413a2d9a:/# apt instll  all iputils[H[2Jroot@db69413a2d9a:/# apt install iputils
+[?2004lReading package lists... 0%Reading package lists... 0%                            Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 3%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                [1;31mError: [0m[1mUnable to locate package iputils[0m
+[?2004hroot@db69413a2d9a:/# apt install iputils               update
+[?2004l[33m0% [Working][0m            Get:1 http://deb.debian.org/debian trixie InRelease [140 kB]
+[33m0% [1 InRelease 13.0 kB/140 kB 9%][0m[33m                                  0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+[33m0% [2 InRelease 14.4 kB/47.3 kB 31%][0m[33m                                    0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+[33m0% [3 InRelease 14.4 kB/43.4 kB 33%][0m[33m                                    0% [Working][0m[33m15% [Waiting for headers][0m                         Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9670 kB]
+[33m15% [4 Packages 28.3 kB/9670 kB 0%][0m[33m                                   93% [Working][0m             Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [5412 B]
+[33m93% [Working][0m[33m93% [4 Packages store 0 B] [Waiting for headers][0m                                                Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [98.7 kB]
+[33m93% [4 Packages store 0 B] [6 Packages 4332 B/98.7 kB 4%][0m[33m                                                         93% [4 Packages store 0 B][0m[33m                          96% [Working][0m[33m96% [5 Packages store 0 B][0m[33m                          98% [Working][0m[33m98% [6 Packages store 0 B][0m[33m                          100% [Working][0m              Fetched 10.0 MB in 1s (9294 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                All packages are up to date.
+[?2004hroot@db69413a2d9a:/# apt updateinstall iputils[H[2Jroot@db69413a2d9a:/# apt install iputils
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                [1;31mError: [0m[1mUnable to locate package iputils[0m
+[?2004hroot@db69413a2d9a:/# apt install iputils  s ls-ping
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 1%                                Installing:
+[32m  iputils-ping
+[0m
+Installing dependencies:
+[32m  libidn2-0  libunistring5  linux-sysctl-defaults
+[0m
+Summary:
+  Upgrading: 0, Installing: 4, Removing: 0, Not Upgrading: 0
+  Download size: 643 kB
+  Space needed: 2810 kB / 724 GB available
+
+Continue? [Y/n] 
+[33m0% [Working][0m            Get:1 http://deb.debian.org/debian trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+[33m3% [1 libunistring5 26.0 kB/477 kB 5%][0m[33m                                      64% [Working][0m             Get:2 http://deb.debian.org/debian trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+[33m65% [2 libidn2-0 2888 B/109 kB 3%][0m[33m                                  83% [Waiting for headers][0m                         Get:3 http://deb.debian.org/debian trixie/main amd64 iputils-ping amd64 3:20240905-3 [51.2 kB]
+[33m83% [3 iputils-ping 2821 B/51.2 kB 6%][0m[33m                                      94% [Waiting for headers][0m                         Get:4 http://deb.debian.org/debian trixie/main amd64 linux-sysctl-defaults all 4.12 [5624 B]
+[33m95% [4 linux-sysctl-defaults 2844 B/5624 B 51%][0m[33m                                               100% [Working][0m              Fetched 643 kB in 0s (1735 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 4.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 4.)
+debconf: falling back to frontend: Teletype
+
+7[0;8r8[1ASelecting previously unselected package libunistring5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4936 files and directories currently installed.)
+Preparing to unpack .../libunistring5_1.3-2_amd64.deb ...
+7[9;0f[42m[30mProgress: [  0%][49m[39m [.........................................................] 87[9;0f[42m[30mProgress: [  6%][49m[39m [###......................................................] 8Unpacking libunistring5:amd64 (1.3-2) ...
+7[9;0f[42m[30mProgress: [ 12%][49m[39m [######...................................................] 8Selecting previously unselected package libidn2-0:amd64.
+Preparing to unpack .../libidn2-0_2.3.8-2_amd64.deb ...
+7[9;0f[42m[30mProgress: [ 18%][49m[39m [##########...............................................] 8Unpacking libidn2-0:amd64 (2.3.8-2) ...
+7[9;0f[42m[30mProgress: [ 24%][49m[39m [#############............................................] 8Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20240905-3_amd64.deb ...
+7[9;0f[42m[30mProgress: [ 29%][49m[39m [################.........................................] 8Unpacking iputils-ping (3:20240905-3) ...
+7[9;0f[42m[30mProgress: [ 35%][49m[39m [####################.....................................] 8Selecting previously unselected package linux-sysctl-defaults.
+Preparing to unpack .../linux-sysctl-defaults_4.12_all.deb ...
+7[9;0f[42m[30mProgress: [ 41%][49m[39m [#######################..................................] 8Unpacking linux-sysctl-defaults (4.12) ...
+7[9;0f[42m[30mProgress: [ 47%][49m[39m [##########################...............................] 8Setting up linux-sysctl-defaults (4.12) ...
+7[9;0f[42m[30mProgress: [ 53%][49m[39m [##############################...........................] 87[9;0f[42m[30mProgress: [ 59%][49m[39m [#################################........................] 8Setting up libunistring5:amd64 (1.3-2) ...
+7[9;0f[42m[30mProgress: [ 65%][49m[39m [####################################.....................] 87[9;0f[42m[30mProgress: [ 71%][49m[39m [########################################.................] 8Setting up libidn2-0:amd64 (2.3.8-2) ...
+7[9;0f[42m[30mProgress: [ 76%][49m[39m [###########################################..............] 87[9;0f[42m[30mProgress: [ 82%][49m[39m [##############################################...........] 8Setting up iputils-ping (3:20240905-3) ...
+7[9;0f[42m[30mProgress: [ 88%][49m[39m [##################################################.......] 87[9;0f[42m[30mProgress: [ 94%][49m[39m [#####################################################....] 8Processing triggers for libc-bin (2.41-12+deb13u1) ...
+
+7[0;9r8[1A[J[?2004hroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# ping
+[?2004lping: usage error: Destination address required
+[?2004hroot@db69413a2d9a:/# ping 18 672   72.17.0.1
+[?2004lPING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.086 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.036 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.076 ms
+^C
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2053ms
+rtt min/avg/max/mdev = 0.036/0.066/0.086/0.021 ms
+[?2004hroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# exit
+[?2004lexit
+[?2004h[94mITINF25/lektion6
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network my-network \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m   mysql[27m[A[A[A[C[Cdocker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysql
+[?2004lUnable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+
+[1A[2Kc21bb7e51cd3: Pulling fs layer [1B
+[1A[2K8cf746d6e600: Pulling fs layer [1B
+[1A[2K4a3afd2b6b75: Pulling fs layer [1B
+[1A[2K5fdc017098ae: Pulling fs layer [1B
+[1A[2Kd07d4e0fa091: Pulling fs layer [1B
+[1A[2K359d294926a1: Pulling fs layer [1B
+[1A[2Kb6c26b04681b: Pulling fs layer [1B
+[1A[2K012d138a56c4: Pulling fs layer [1B
+[1A[2K863342a2e065: Pulling fs layer [1B
+[1A[2K6f92d9f2f65a: Pulling fs layer [1B[7A[2K5fdc017098ae: Waiting [7B[5A[2K359d294926a1: Waiting [5B[4A[2Kb6c26b04681b: Waiting [4B[3A[2K012d138a56c4: Waiting [3B[2A[2K863342a2e065: Waiting [2B[6A[2Kd07d4e0fa091: Waiting [6B[1A[2K6f92d9f2f65a: Waiting [1B[9A[2K8cf746d6e600: Downloading     885B/885B[9B[9A[2K8cf746d6e600: Verifying Checksum [9B[9A[2K8cf746d6e600: Download complete [9B[8A[2K4a3afd2b6b75: Downloading  9.165kB/783.6kB[8B[10A[2Kc21bb7e51cd3: Downloading  475.1kB/47.31MB[10B[8A[2K4a3afd2b6b75: Downloading  783.6kB/783.6kB[8B[8A[2K4a3afd2b6b75: Verifying Checksum [8B[8A[2K4a3afd2b6b75: Download complete [8B[10A[2Kc21bb7e51cd3: Downloading  3.834MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  9.105MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  14.34MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  19.15MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  24.44MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  29.72MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  65.54kB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading  33.57MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  864.3kB/6.175MB[7B[6A[2Kd07d4e0fa091: Downloading  1.369kB/2.606kB[6B[6A[2Kd07d4e0fa091: Downloading  2.606kB/2.606kB[6B[6A[2Kd07d4e0fa091: Verifying Checksum [6B[6A[2Kd07d4e0fa091: Download complete [6B[10A[2Kc21bb7e51cd3: Downloading   37.4MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  1.987MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading  41.71MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  2.716MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading     46MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading   3.85MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Verifying Checksum [10B[10A[2Kc21bb7e51cd3: Download complete [10B[10A[2Kc21bb7e51cd3: Extracting  491.5kB/47.31MB[10B[7A[2K5fdc017098ae: Downloading   5.62MB/6.175MB[7B[7A[2K5fdc017098ae: Verifying Checksum [7B[7A[2K5fdc017098ae: Download complete [7B[10A[2Kc21bb7e51cd3: Extracting  6.881MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Extracting  15.24MB/47.31MB[10B[5A[2K359d294926a1: Downloading     339B/339B[5B[5A[2K359d294926a1: Download complete [5B[10A[2Kc21bb7e51cd3: Extracting  27.53MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Extracting  41.29MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Extracting  44.24MB/47.31MB[10B[4A[2Kb6c26b04681b: Downloading  528.4kB/51.46MB[4B[10A[2Kc21bb7e51cd3: Extracting  47.31MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Pull complete [10B[9A[2K8cf746d6e600: Extracting     885B/885B[9B[9A[2K8cf746d6e600: Extracting     885B/885B[9B[9A[2K8cf746d6e600: Pull complete [9B[8A[2K4a3afd2b6b75: Extracting  32.77kB/783.6kB[8B[8A[2K4a3afd2b6b75: Extracting  783.6kB/783.6kB[8B[8A[2K4a3afd2b6b75: Extracting  783.6kB/783.6kB[8B[3A[2K012d138a56c4: Downloading     325B/325B[3B[3A[2K012d138a56c4: Verifying Checksum [3B[3A[2K012d138a56c4: Download complete [3B[8A[2K4a3afd2b6b75: Pull complete [8B[4A[2Kb6c26b04681b: Downloading  4.194MB/51.46MB[4B[7A[2K5fdc017098ae: Extracting  65.54kB/6.175MB[7B[7A[2K5fdc017098ae: Extracting  6.175MB/6.175MB[7B[4A[2Kb6c26b04681b: Downloading  7.848MB/51.46MB[4B[7A[2K5fdc017098ae: Pull complete [7B[6A[2Kd07d4e0fa091: Extracting  2.606kB/2.606kB[6B[6A[2Kd07d4e0fa091: Extracting  2.606kB/2.606kB[6B[6A[2Kd07d4e0fa091: Pull complete [6B[5A[2K359d294926a1: Extracting     339B/339B[5B[5A[2K359d294926a1: Extracting     339B/339B[5B[5A[2K359d294926a1: Pull complete [5B[4A[2Kb6c26b04681b: Downloading  13.09MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  15.69MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  20.92MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  26.14MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  30.86MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  35.57MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  39.76MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading  45.52MB/51.46MB[4B[4A[2Kb6c26b04681b: Downloading   49.7MB/51.46MB[4B[4A[2Kb6c26b04681b: Verifying Checksum [4B[4A[2Kb6c26b04681b: Download complete [4B[4A[2Kb6c26b04681b: Extracting  524.3kB/51.46MB[4B[4A[2Kb6c26b04681b: Extracting  11.53MB/51.46MB[4B[4A[2Kb6c26b04681b: Extracting  23.59MB/51.46MB[4B[4A[2Kb6c26b04681b: Extracting  35.65MB/51.46MB[4B[4A[2Kb6c26b04681b: Extracting  46.14MB/51.46MB[4B[4A[2Kb6c26b04681b: Extracting  51.46MB/51.46MB[4B[4A[2Kb6c26b04681b: Pull complete [4B[3A[2K012d138a56c4: Extracting     325B/325B[3B[3A[2K012d138a56c4: Extracting     325B/325B[3B[3A[2K012d138a56c4: Pull complete [3B[1A[2K6f92d9f2f65a: Downloading     953B/5.33kB[1B[1A[2K6f92d9f2f65a: Downloading   5.33kB/5.33kB[1B[1A[2K6f92d9f2f65a: Verifying Checksum [1B[1A[2K6f92d9f2f65a: Download complete [1B[2A[2K863342a2e065: Downloading  540.7kB[2B[2A[2K863342a2e065: Downloading  4.829MB[2B[2A[2K863342a2e065: Downloading  9.114MB[2B[2A[2K863342a2e065: Downloading  12.34MB[2B[2A[2K863342a2e065: Downloading  16.09MB[2B[2A[2K863342a2e065: Downloading  20.92MB[2B[2A[2K863342a2e065: Downloading  26.25MB[2B[2A[2K863342a2e065: Downloading  31.08MB[2B[2A[2K863342a2e065: Downloading  35.38MB[2B[2A[2K863342a2e065: Downloading  40.17MB[2B[2A[2K863342a2e065: Downloading  44.99MB[2B[2A[2K863342a2e065: Downloading  48.23MB[2B[2A[2K863342a2e065: Downloading  51.45MB[2B[2A[2K863342a2e065: Downloading  54.67MB[2B[2A[2K863342a2e065: Downloading  58.97MB[2B[2A[2K863342a2e065: Downloading  62.71MB[2B[2A[2K863342a2e065: Downloading  65.38MB[2B[2A[2K863342a2e065: Downloading   68.6MB[2B[2A[2K863342a2e065: Downloading  72.88MB[2B[2A[2K863342a2e065: Downloading  76.09MB[2B[2A[2K863342a2e065: Downloading  78.23MB[2B[2A[2K863342a2e065: Downloading  79.84MB[2B[2A[2K863342a2e065: Downloading  81.97MB[2B[2A[2K863342a2e065: Downloading  83.57MB[2B[2A[2K863342a2e065: Downloading  85.18MB[2B[2A[2K863342a2e065: Downloading  87.31MB[2B[2A[2K863342a2e065: Downloading  90.01MB[2B[2A[2K863342a2e065: Downloading  93.23MB[2B[2A[2K863342a2e065: Downloading  96.45MB[2B[2A[2K863342a2e065: Downloading  99.68MB[2B[2A[2K863342a2e065: Downloading  103.4MB[2B[2A[2K863342a2e065: Downloading  107.2MB[2B[2A[2K863342a2e065: Downloading  110.4MB[2B[2A[2K863342a2e065: Downloading  113.6MB[2B[2A[2K863342a2e065: Downloading  116.8MB[2B[2A[2K863342a2e065: Downloading  120.1MB[2B[2A[2K863342a2e065: Downloading  123.8MB[2B[2A[2K863342a2e065: Downloading  128.1MB[2B[2A[2K863342a2e065: Downloading  131.3MB[2B[2A[2K863342a2e065: Downloading    135MB[2B[2A[2K863342a2e065: Downloading  139.3MB[2B[2A[2K863342a2e065: Downloading  143.1MB[2B[2A[2K863342a2e065: Downloading  147.4MB[2B[2A[2K863342a2e065: Downloading  151.1MB[2B[2A[2K863342a2e065: Downloading  153.8MB[2B[2A[2K863342a2e065: Downloading  156.5MB[2B[2A[2K863342a2e065: Downloading  158.6MB[2B[2A[2K863342a2e065: Verifying Checksum [2B[2A[2K863342a2e065: Download complete [2B[2A[2K863342a2e065: Extracting  557.1kB[2B[2A[2K863342a2e065: Extracting  12.26MB[2B[2A[2K863342a2e065: Extracting   23.4MB[2B[2A[2K863342a2e065: Extracting  30.64MB[2B[2A[2K863342a2e065: Extracting  37.88MB[2B[2A[2K863342a2e065: Extracting  40.11MB[2B[2A[2K863342a2e065: Extracting  41.22MB[2B[2A[2K863342a2e065: Extracting  42.89MB[2B[2A[2K863342a2e065: Extracting  44.01MB[2B[2A[2K863342a2e065: Extracting  45.12MB[2B[2A[2K863342a2e065: Extracting  46.24MB[2B[2A[2K863342a2e065: Extracting  47.35MB[2B[2A[2K863342a2e065: Extracting  48.46MB[2B[2A[2K863342a2e065: Extracting  49.58MB[2B[2A[2K863342a2e065: Extracting  51.25MB[2B[2A[2K863342a2e065: Extracting  52.92MB[2B[2A[2K863342a2e065: Extracting  54.03MB[2B[2A[2K863342a2e065: Extracting  55.15MB[2B[2A[2K863342a2e065: Extracting  57.38MB[2B[2A[2K863342a2e065: Extracting   59.6MB[2B[2A[2K863342a2e065: Extracting  68.52MB[2B[2A[2K863342a2e065: Extracting  78.54MB[2B[2A[2K863342a2e065: Extracting  87.46MB[2B[2A[2K863342a2e065: Extracting  99.71MB[2B[2A[2K863342a2e065: Extracting  112.5MB[2B[2A[2K863342a2e065: Extracting  125.3MB[2B[2A[2K863342a2e065: Extracting  136.5MB[2B[2A[2K863342a2e065: Extracting  143.2MB[2B[2A[2K863342a2e065: Extracting  148.7MB[2B[2A[2K863342a2e065: Extracting  159.9MB[2B[2A[2K863342a2e065: Extracting  160.6MB[2B[2A[2K863342a2e065: Pull complete [2B[1A[2K6f92d9f2f65a: Extracting   5.33kB/5.33kB[1B[1A[2K6f92d9f2f65a: Extracting   5.33kB/5.33kB[1B[1A[2K6f92d9f2f65a: Pull complete [1BDigest: sha256:932fe8fbc04c1488a38f8cab0f30cdac8d7753bded3df1762475a8001a323bc4
+Status: Downloaded newer image for mysql:latest
+24f7d87e461a7ae7f652add2cef418b12a01fd9af268e30b01b2925ed4efcc0b
+docker: Error response from daemon: failed to set up container networking: network my-network not found
+
+Run 'docker run --help' for more information
+[?2004h[94mITINF25/lektion6
+(B[m$ [H[2J[94mITINF25/lektion6
+(B[m$ docker network
+[?2004lUsage:  docker network COMMAND
+
+Manage networks
+
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  prune       Remove all unused networks
+  rm          Remove one or more networks
+
+Run 'docker network COMMAND --help' for more information on a command.
+[?2004h[94mITINF25/lektion6
+(B[m$ [H[2J[94mITINF25/lektion6
+(B[m$ coker [K[K[K[K[K[Kdocker -[Knetwork ls
+[?2004lNETWORK ID     NAME      DRIVER    SCOPE
+70e54757eafb   bridge    bridge    local
+af00aa7844d0   host      host      local
+6ee00c8e0df9   none      null      local
+[?2004h[94mITINF25/lektion6
+(B[m$ [7mdocker network create my-network[27m
+[A[C[Cdocker network create my-network
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion6
+(B[m$ docker network create my-network
+[?2004l894464f5e1b1e3b15af6adf390c44ce04924ac591b3a20309e046574bb1e7cde
+[?2004h[94mITINF25/lektion6
+(B[m$ docker network create my-networkls[K
+[?2004lNETWORK ID     NAME         DRIVER    SCOPE
+70e54757eafb   bridge       bridge    local
+af00aa7844d0   host         host      local
+894464f5e1b1   my-network   bridge    local
+6ee00c8e0df9   none         null      local
+[?2004h[94mITINF25/lektion6
+(B[m$ [H[2J[94mITINF25/lektion6
+(B[m$ [?2004l
+exit
+
+Script done on 2026-02-03 11:26:53+01:00 [COMMAND_EXIT_CODE="0"]

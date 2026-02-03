@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Funkar!
+# docker run --rm \
+# 	--name namedmount \
+# 	-v $(pwd)/mindatakatalog/:/app \
+# 	-e DEST=/app/ \
+# 	namedmountimg
+
+# Funkar också!
+# docker run --rm \
+# 	--name namedmount \
+# 	-v ./mindatakatalog:/app \
+# 	-e DEST=/app/ \
+# 	namedmountimg
+
+# Funkar INTE! ARG!
+# docker run --rm \
+# 	--name namedmount \
+# 	-v mindatakatalog/:/app \
+# 	-e DEST=/app/ \
+# 	namedmountimg
+
+# Funkar-ish! MEN, det blir en namngiven volum
+docker run --rm \
+	--name namedmount \
+	-v mindatakatalog:/app \
+	-e DEST=/app/ \
+	namedmountimg
