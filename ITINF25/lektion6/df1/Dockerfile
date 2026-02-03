@@ -1,5 +1,7 @@
 FROM debian
 
+# TODO: Helskumt
+
 RUN apt update && apt install -y tree
 COPY ./oftaandrad /
 COPY ./sallanandrad /
