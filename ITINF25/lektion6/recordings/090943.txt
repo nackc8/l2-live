@@ -3649,4 +3649,162 @@ error: no such object: ordningstestl
 [0m[34m => => transferring context: 2B                                           0.0s
 [0m[34m => [1/6] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
 [0m[34m => [internal] load build context                                         0.0s
-[0m
+[0m[34m => => transferring context: 149B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.1s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m[34m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.3s
+[0m[34m => exporting to image                                                    0.1s
+[0m[34m => => exporting layers                                                   0.1s
+[0m[34m => => writing image sha256:63717ec34a8363e3f586580380684d843d7a3591b7e4  0.0s
+[0m[34m => => naming to docker.io/library/ordningstest                           0.0s
+[0m[?25h[
+    {
+        "Id": "sha256:63717ec34a8363e3f586580380684d843d7a3591b7e4574dea263170da1b3f3f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:02.81461903+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131705,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/n6xof107xdlmyw1ewfrhz4y0g/diff:/shared/docker/overlay2/egvzbat7icurt2zedvlgyeglo/diff:/shared/docker/overlay2/q1qo6u3qhnbw23yrxngdu18n4/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/yn94rpn46lxtjmhzd8fhsik8m/merged",
+                "UpperDir": "/shared/docker/overlay2/yn94rpn46lxtjmhzd8fhsik8m/diff",
+                "WorkDir": "/shared/docker/overlay2/yn94rpn46lxtjmhzd8fhsik8m/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:9a5d6e392e1978e3f9cb5a5ad48c5fc2de25d7d8ac09e33f481d720394a9ee79",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:36fc3096b18f44b9bd21beab3a625985f2da02d70fb5cd6cbd017e4f12fbabc6",
+                "sha256:fbc29373340505753109edcee3ba607784f42e87677f3a5b03655e17347c9084"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:02.906423585+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest[H[2J[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (8/10)                                        docker:default
+[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/6] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (8/10)                                        docker:default
+[34m => [1/6] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.0s (9/10)                                        docker:default
+[34m => [1/6] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.2s (9/10)                                        docker:default
+[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.3s (9/10)                                        docker:default
+[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.4s (10/10)                                       docker:default
+[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m[34m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.4s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.6s (11/11)                                       docker:default
+[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m[34m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.4s
+[0m[34m => exporting to image                                                    0.1s
+[0m[34m => => exporting layers                                                   0.1s
+[0m[34m => => writing image sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c  0.0s
+[0m[34m => => naming to docker.io/library/ordningstest                           0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.6s (11/11) FINISHED                              docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 224B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/6] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 154B                                         0.0s
+[0m[34m => CACHED [2/6] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/6] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/6] COPY ./sallanandrad /                                           0.0s
+[0m[34m => [5/6] RUN cat /oftaandrad >from_oftaandrad                            0.3s
+[0m[34m => [6/6] RUN cat /sallanandrad >from_sallanandrad                        0.4s
+[0m[34m => exporting to image                                                    0.1s
+[0m[34m => => exporting layers                                                   0.1s
+[0m[34m => => writing image sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c  0.0s
+[0m[34m => => naming to docker.io/library/ordningstest                           0.0s
+[0m[?25h[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+     
