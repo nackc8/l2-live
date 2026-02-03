@@ -3291,4 +3291,65 @@ ERROR: failed to build: failed to solve: process "/bin/sh -c cat ./oftaandrad /h
 [0m[34m => [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
 [0m[34m => [internal] load build context                                         0.0s
 [0m[34m => => transferring context: 101B                                         0.0s
-[0m[34m => 
+[0m[34m => CACHED [2/4] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/4] COPY ./oftaandrad /                                             0.0s
+[0m[31m => ERROR [4/4] RUN cat /oftaandrad /hoppsan                              0.2s
+[0m[?25h------
+ > [4/4] RUN cat /oftaandrad /hoppsan:
+0.229 cat: /hoppsan: No such file or directory
+0.229 INNEHALL I MINFIL
+0.229 18631
+0.229 26164
+0.229 9036
+0.229 2864
+0.229 14052
+0.229 27306
+0.229 14383
+0.229 28362
+------
+Dockerfile:7
+--------------------
+   5 |     COPY ./oftaandrad /
+   6 |     
+   7 | >>> RUN cat /oftaandrad /hoppsan
+   8 |     
+   9 |     CMD ["bash"]
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cat /oftaandrad /hoppsan" did not complete successfully: exit code: 1
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest .[H[2J[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 153B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 153B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.3s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 153B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.5s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 153B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (3/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 153B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[0m[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (8/9)                                         docker:default
+[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 107B                                         0.0s
+[0m[34m => CACHED [2/4] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/4] COPY 
