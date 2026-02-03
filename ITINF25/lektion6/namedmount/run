@@ -2,6 +2,6 @@
 
 docker run --rm \
 	--name namedmount \
-	-v ./mindatakatalog:/app \
+	-v ./mindatakatalog/:/app \
 	-e DEST=/app/ \
 	namedmountimg
