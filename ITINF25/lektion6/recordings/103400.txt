@@ -68,4 +68,85 @@ Script started on 2026-02-03 10:34:00+01:00 [TERM="xterm-256color" TTY="/dev/pts
         "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
         "RepoTags": [
             "ordningstest:latest"
-      
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff",
+                "WorkDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:c65189aeb455b5c3f1f097e46aeee4fbb9287d48b65c4dc1eb3136e7bc6f6dea",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b",
+                "sha256:f681aa239d42fdd22c8ed2570cd8e53f9632c29ed7bb3cf4300aa5f91d5a7b4f",
+                "sha256:f5d25ef45b4aba8bc3fd8dc6bf59d1c28ec8022a17e45178ca3335e4c238f6f8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:32:57.486687511+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad [H[2J[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad 
+[?2004l16724
+6079
+[?2004h[94mITINF25/lektion6
+(B[m$ cat ./oftaandrad [C[Cecho $RANDOM >> oftaandrad ; docker build -t ordningstest . ; docker inspect ordningstest
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+ => [internal] load build definition from Dockerfile                      0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.1s (1/1) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 2B                                        0.0s
+[0m[?25hERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+[
+    {
+        "Id": "sha256:8f37382d09db2b0afc819e528e8aac8d540ab2cbed9c61e5d9365b8f17cfbe5f",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:32:57.387170763+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131715,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/cw1utjvenuser23n2omv330lk/diff:/shared/docker/overlay2/nvx909xgkw2be919dfp9bb10y/diff:/shared/docker/overlay2/2kl8j68nlmezlvt7x9l7uphkj/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/merged",
+                "UpperDir": "/shared/docker/overlay2/lmw1iq35f9pk9efjsoxgv19gw/diff
