@@ -1,6 +1,6 @@
 FROM debian
 
-ENV DEST
+ENV DEST=
 
 COPY "entry" /
 
