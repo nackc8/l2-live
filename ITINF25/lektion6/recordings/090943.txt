@@ -3177,4 +3177,57 @@ Total reclaimed space: 0B
                 "UpperDir": "/shared/docker/overlay2/rn65f6p8lrgb57ihtwrlww3kx/diff",
                 "WorkDir": "/shared/docker/overlay2/rn65f6p8lrgb57ihtwrlww3kx/work"
             },
-   
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:8949fd2fb16678204e4cde1a2b884def6b9127b0c914764325210377f698e854",
+                "sha256:aedb78ce1417651c9fe98d0dfff9220509998971f70b88bb3af399228c01651b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T10:14:53.957179467+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker inspect ordningstestl[C[Cecho $RANDOM >> oftaandrad ; docker build -t ordningstest .[H[2J[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad ; docker build -t ordningstest .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 154B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (2/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 154B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (7/8)                                         docker:default
+[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 95B                                          0.0s
+[0m[34m => CACHED [2/4] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/4] COPY ./oftaandrad /                                             0.0s
+[0m => [4/4] RUN cat ./oftaandrad /hoppsan                                   0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (7/8)                                         docker:default
+[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 95B                                          0.0s
+[0m[34m => CACHED [2/4] RUN apt update && apt install -y tree                    0.0s
+[0m[34m => [3/4] COPY ./oftaandrad /                                             0.0s
+[0m => [4/4] RUN cat ./oftaandrad /hoppsan                                   0.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (8/8) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 154B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 95B                                          0.0s
+[0m[34m => CACHED [2/4] RUN apt update && apt install -y tree                    0
