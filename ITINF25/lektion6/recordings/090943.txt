@@ -1,0 +1,57 @@
+Script started on 2026-02-03 09:09:50+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="42" LINES="23"]
+[?2004h[94mITINF25/lektion6
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion6
+(B[m$ touch df1[C[C[C[C[C[1P df1[1P df1[1P df1[1P df1[1P df1[C[Cm df1k df1d df1i df1r df1
+[?2004l[?2004h[94mITINF25/lektion6
+(B[m$ cd f[Kdf1/
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ code Dockerfile
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ alias
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ ls
+[?2004lDockerfile
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ ls --color=auto
+[?2004lDockerfile
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ ls --color=auto ../
+[?2004l[0m[01;34mdf1[0m  [01;34mexperiment[0m  [01;34mrecordings[0m
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ ti[Kouch l.[K[K../tomfil
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ touch ../tomfil[C[Cls --color=auto ../
+[?2004l[0m[01;34mdf1[0m  [01;34mexperiment[0m  [01;34mrecordings[0m  tomfil
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ code lsfromscript
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ chmod ?x [K[K[K_[K+x ./lsfromscript 
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ ./lsfromscript [H[2J[94mITINF25/lektion6/df1
+(B[m$ ./lsfromscript 
+[?2004l[0m[01;34mdf1[0m  [01;34mexperiment[0m  [01;34mrecordings[0m  tomfil
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ isa[K
+ischroot                  isdv4-serial-inputattach  ispell-wrapper
+isdv4-serial-debugger     ispell                    istat
+[94mITINF25/lektion6/df1
+(B[m$ is[K[K./lsfromscript [1@e[1@c[1@h[1@o[1@ [1@|[1@ [H[2J[94mITINF25/lektion6/df1
+(B[m$ echo | ./lsfromscript [C[C[C[C[C[C[C[C[C
+[?2004l[0m[01;34mdf1[0m  [01;34mexperiment[0m  [01;34mrecordings[0m  tomfil
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker images[K(B[m$ docker images
+[?2004l                                          [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                 [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m
+[34m[1malpine:latest[0m         [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m
+[34m[1marchlinux:latest[0m      [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m
+[34m[1mcow:latest[0m            [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m
+[34m[1mcowimg:latest[0m         [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m
+[34m[1mdebian:bookworm-slim[0m
+                      [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m
+[34m[1mdebian:latest[0m         [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m
+[34m[1mdebian:stable[0m
