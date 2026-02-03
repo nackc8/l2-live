@@ -2574,4 +2574,356 @@ Total reclaimed space: 0B
 [?2004l[?2004h[94mITINF25/lektion6/df1
 (B[m$ nano minfil2 [H[2J[94mITINF25/lektion6/df1
 (B[m$ nano minfil2 
-[?2004l[?2004h[?1049h[22;0;0t[1;9r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[7;33H(B[0;7m[ Reading... ](B[m[7;39H(B[0;7m 1 line ](B[m[H(B[0;7m  GNU nano 7.2                        minfil2                                  [1;78H(B[m[8d(B[0;7m^G(B[m Help[8;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[8;61H(B[0;7m^T(B[m Execute[9d(B[0;7m^X(B[m Exit[9;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2dINNEHALL I MINFIL[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[2;18H[?25l[1;47H(B[0;7m*[78G(B[m[?12l[?25h[2;18H2[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[36m#INNEHALL I MINFIL2#[39m(B[m[?25l[?12l[?25h[36m##INNEHALL I MINFIL2##[39m(B[m[?25l[?12l[?25h[36m###INNEHALL I MINFIL2###[39m(B[m[?25l[?12l[?25h[36m####INNEHALL I MINFIL2[5G[39m(B[m[?25l[?12l[?25h[36m INNEHALL I MINFIL2[6G[39m(B[m[?25l[?12l[?25h[2;24H[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[3d[?12l[?25h[?25l[7d(B[0;7mSave modified buffer?                                                          [8;1H Y(B[m Yes[K[9d(B[0;7m N(B[m No  [9;16H (B[0;7m^C(B[m Cancel[K[7;23H[?12l[?25h[?25l[8d(B[0;7m^G(B[m Help[8;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[8;58H(B[0;7mM-B(B[m Backup File[9d(B[0;7m^C(B[m Cancel[17G 
+[?2004l[?2004h[?1049h[22;0;0t[1;9r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[7;33H(B[0;7m[ Reading... ](B[m[7;39H(B[0;7m 1 line ](B[m[H(B[0;7m  GNU nano 7.2                        minfil2                                  [1;78H(B[m[8d(B[0;7m^G(B[m Help[8;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[8;61H(B[0;7m^T(B[m Execute[9d(B[0;7m^X(B[m Exit[9;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2dINNEHALL I MINFIL[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[2;18H[?25l[1;47H(B[0;7m*[78G(B[m[?12l[?25h[2;18H2[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[36m#INNEHALL I MINFIL2#[39m(B[m[?25l[?12l[?25h[36m##INNEHALL I MINFIL2##[39m(B[m[?25l[?12l[?25h[36m###INNEHALL I MINFIL2###[39m(B[m[?25l[?12l[?25h[36m####INNEHALL I MINFIL2[5G[39m(B[m[?25l[?12l[?25h[36m INNEHALL I MINFIL2[6G[39m(B[m[?25l[?12l[?25h[2;24H[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m#[39m(B[m[?25l[3d[?12l[?25h[?25l[7d(B[0;7mSave modified buffer?                                                          [8;1H Y(B[m Yes[K[9d(B[0;7m N(B[m No  [9;16H (B[0;7m^C(B[m Cancel[K[7;23H[?12l[?25h[?25l[8d(B[0;7m^G(B[m Help[8;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[8;58H(B[0;7mM-B(B[m Backup File[9d(B[0;7m^C(B[m Cancel[17G   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[9;58H(B[0;7m^T(B[m Browse[7d(B[0;7mFile Name to Write: minfil2(B[m[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1d(B[0;7m [78G(B[m[7;32H(B[0;7m[ Wrote 2 lines ](B[m[J[9d[?12l[?25h[9;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ cat minfil*
+[?2004lINNEHALL I MINFIL
+#### INNEHALL I MINFIL2 ####
+
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ cat minfil*[C[Cnano minfil2 [C[Ccp minfil minfil2[C[Cdocker inspect hejdebian[1@;[1@ [1@ [1@e[1@c[1@h[1@o[C[1@ [1@$[1@R[1@A[1@N[1@D[1@O[1@M[C[1@ [1@>[1@>[C[1@ [1@m[1@i[1@n[3@fil^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ ls
+[?2004lDockerfile  minfil  minfil2
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ mv minfil oftaandrad
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ mv minfil2 2[Ka[Ksallanandrad
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ ls
+[?2004lDockerfile  oftaandrad	sallanandrad
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ mv minfil2 sallanandrad[C[C[C[C[C[C[C[C[C[C[C[3P oftaandrad[C[C[9Pcat minfil*[C[Cnano minfil2 [C[Ccp minfil minfil2[C[C[4Pnano minfil2 [C[C[2Pcat minfil*[C[Cmv minfil oftaandrad2 sallanandrad[C[C[K[H[2J[94mITINF25/lektion6/df1
+(B[m$ echo RE[K[K$ER[K[KRANDOM
+[?2004l29327
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM
+[?2004l22149
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM
+[?2004l24074
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM
+[?2004l5633
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ cat oftaandrad 
+[?2004lINNEHALL I MINFIL
+18631
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ cat oftaandrad [C[C[12@echo $RANDOM >>[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad 
+[?2004l[?2004h[94mITINF25/lektion6/df1
+(B[m$ echo $RANDOM >> oftaandrad [C[C[12Pcat[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lINNEHALL I MINFIL
+18631
+26164
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ cat oftaandrad [C[C[12@echo $RANDOM >>[C[C[C[C[C[C[C[C[C[C[C[C; docker build -t ordningstest .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+[?25h[1A[0G[?25l[+] Building 0.2s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.3s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.5s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.6s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.8s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.9s
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (3/3)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.9s
+[0m[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.2s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.3s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.5s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.7s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.7s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.7s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.8s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.9s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           0.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.0s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.2s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.2s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.4s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.5s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.7s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.8s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.9s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           1.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.0s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.1s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.2s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.3s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.3s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.5s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.7s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.7s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.8s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 3.9s (6/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m => [2/4] RUN apt update && apt install -y tree                           2.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.1s (7/9)                                         docker:default
+[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m[34m => [2/4] RUN apt update && apt install -y tree                           3.1s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.3s (9/10)                                        docker:default
+[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m[34m => [2/4] RUN apt update && apt install -y tree                           3.1s
+[0m[34m => [3/4] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/4] COPY ./sallanandrad /                                           0.0s
+[0m => exporting to image                                                    0.1s
+[34m => => exporting layers                                                   0.1s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 4.4s (10/10) FINISHED                              docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 146B                                      0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.9s
+[0m[34m => [auth] library/debian:pull token for registry-1.docker.io             0.0s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/4] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => [internal] load build context                                         0.0s
+[0m[34m => => transferring context: 143B                                         0.0s
+[0m[34m => [2/4] RUN apt update && apt install -y tree                           3.1s
+[0m[34m => [3/4] COPY ./oftaandrad /                                             0.0s
+[0m[34m => [4/4] COPY ./sallanandrad /                                           0.0s
+[0m[34m => exporting to image                                                    0.1s
+[0m[34m => => exporting layers                                                   0.1s
+[0m[34m => => writing image sha256:58cfb37d2369f6da088fd4a31d3a4716cbc016777ad8  0.0s
+[0m[34m => => naming to docker.io/library/ordningstest                           0.0s
+[0m[?25h[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ dockwer [K[K[K[Ker inspect ordningstest
+[?2004l[
+    {
+        "Id": "sha256:58cfb37d2369f6da088fd4a31d3a4716cbc016777ad8b3f38f92c20372119003",
+        "RepoTags": [
+            "ordningstest:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-03T10:13:27.352087076+01:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 142131548,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/e4sgfgqugto8m8vl6bf3b3etd/diff:/shared/docker/overlay2/zjhy97m2qbhc7nyy2yr7waw73/diff:/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "MergedDir": "/shared/docker/overlay2/p4i190qy8lvnx50m5g1w34snw/merged",
+                "UpperDir": "/shared/docker/overlay2/p4i190qy8lvnx50m5g1w34snw/diff",
+                "WorkDir": "/shared/docker/overlay2/p4i190qy8lvnx50m5g1w34snw/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4",
+                "sha256:7e1e205c0e6d6d6a9b3083e653da5620e5298f59b049972957a045605f09f3c7",
+                "sha256:848818925f2d2807ce7f50e7faa0621abe3ed
