@@ -1,0 +1,14 @@
+#!/bin/bash
+
+fil=minconfig.conf
+
+# byt mot relevant blkid
+uuid="$(./uuidfinder)"
+
+# Tankesätt 1: Låt det vara om redan finns
+# I matchningen utnyttjar vi att & betyder allt man matchat i ersättningsdelen
+# sed -E "s/ENCRYPT_UUID=$/&$uuid/" "$fil"
+
+# Tanksätt 2: Skriv över det med vårt värde
+# Om vi inte vill upprepa denna del
+sed -E "s/(ENCRYPT_UUID=).*/\1$uuid/" "$fil"

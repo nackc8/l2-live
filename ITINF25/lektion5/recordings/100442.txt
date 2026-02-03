@@ -1,0 +1,1710 @@
+Script started on 2026-02-02 10:04:42+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="115" LINES="30"]
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker[K[K[K[K[K[Kman [K[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man[K(B[m$ man docker
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker - Docker image and container command line interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[m
+       [1mdocker[0m [--help|-v|--version][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdocker[0m is a client for interacting with the daemon (see [1mdockerd(8)[0m) through the CLI.[m
+[m
+       The  Docker CLI has over 30 commands. The commands are listed below and each has its own[m
+       man page which explains usage and arguments.[m
+[m
+       To see the man page for a command run [1mman[0m [1mdocker[0m .[m
+[m
+[1mOPTIONS[0m[m
+[7m Manual page docker(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m[m
+[7m Manual page docker(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Print usage statement[m
+[7m Manual page docker(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--config[0m=""[m
+[7m Manual page docker(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Specifies the location of the  Docker  client  configuration  files.  The  default  is[m
+[7m Manual page docker(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       '~/.docker'.[m
+[7m Manual page docker(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-D[0m, [1m--debug[0m=[4mtrue[24m|[4mfalse[24m[m
+[7m Manual page docker(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Enable debug mode. Default is false.[m
+[7m Manual page docker(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-H[0m,   [1m--host[0m=[[4munix:///var/run/docker.sock[24m]:   tcp://[host]:[port][path]   to   bind   or[m
+[7m Manual page docker(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       unix://[/path/to/socket] to use.[m
+[7m Manual page docker(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         The socket(s) to bind to in daemon mode specified using one or more[m
+[7m Manual page docker(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         tcp://host:port/path, unix:///path/to/socket, fd://* or fd://socketfd.[m
+[7m Manual page docker(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         If the tcp port is not specified, then it will default to either [1m2375[0m when[m
+[7m Manual page docker(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         [1m--tls[0m is off, or [1m2376[0m when [1m--tls[0m is on, or [1m--tlsverify[0m is specified.[m
+[7m Manual page docker(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--log-level[0m="[4mdebug[24m|[4minfo[24m|[4mwarn[24m|[4merror[24m|[4mfatal[24m"[m
+[7m Manual page docker(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Set the logging level. Default is [1minfo[0m.[m
+[7m Manual page docker(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tls[0m=[4mtrue[24m|[4mfalse[24m[m
+[7m Manual page docker(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Use TLS; implied by --tlsverify. Default is false.[m
+[7m Manual page docker(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tlscacert[0m=[4m~/.docker/ca.pem[24m[m
+[7m Manual page docker(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Trust certs signed only by this CA.[m
+[7m Manual page docker(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tlscert[0m=[4m~/.docker/cert.pem[24m[m
+[7m Manual page docker(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Path to TLS certificate file.[m
+[7m Manual page docker(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tlskey[0m=[4m~/.docker/key.pem[24m[m
+[7m Manual page docker(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Path to TLS key file.[m
+[7m Manual page docker(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tlsverify[0m=[4mtrue[24m|[4mfalse[24m[m
+[7m Manual page docker(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Use TLS and verify the remote (daemon: verify client, client: verify daemon).[m
+[7m Manual page docker(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Default is false.[m
+[7m Manual page docker(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m, [1m--version[0m=[4mtrue[24m|[4mfalse[24m[m
+[7m Manual page docker(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K         Print version information and quit. Default is false.[m
+[7m Manual page docker(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOMMANDS[0m[m
+[7m Manual page docker(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Use "docker help" or "docker --help" to get an overview of available commands.[m
+[7m Manual page docker(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mEXAMPLES[0m[m
+[7m Manual page docker(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For specific client examples see the man page for the specific Docker command. For exam‐[m
+[7m Manual page docker(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ple:[m
+[7m Manual page docker(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       man docker-run[m
+[7m Manual page docker(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mHISTORY[0m[m
+[7m Manual page docker(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       April  2014,  Originally  compiled  by William Henry (whenry at redhat dot com) based on[m
+[7m Manual page docker(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       docker.com source material and internal work.[m
+[7m Manual page docker(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KDocker Community                           APRIL 2014                                 DOCKER(1)[m
+[7m Manual page docker(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker(1) line 54/72 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ man docker-pull
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull - Download an image from a registry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m, [1m--all-tags[0m[=false]      Download all tagged images in the repository[m
+[m
+       [1m--platform[0m=""      Set platform if server is multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose output[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+[7m Manual page docker-pull(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ git lgo[K[Kog
+[?2004l[?1h=[33mcommit 2d11b894bef8e5fc33968a6e238bb97ded8c5e55[m[33m ([m[1;36mHEAD -> [m[1;32m260202[m[33m, [m[1;31morigin/260202[m[33m)[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:05:30 2026 +0100[m
+[m
+    autocommit complete 1005 (30)[m
+[m
+[33mcommit 1f3162fd0fdb17fd836608e01a37c9417f40228f[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:05:13 2026 +0100[m
+[m
+    autocommit complete 1005 (13)[m
+[m
+[33mcommit 00dd0adb84cafc7b200f5cc3d860a46b323d13cc[m[m
+Author: Kent Larsson <kent@c8.se>[m
+Date:   Mon Feb 2 10:04:57 2026 +0100[m
+[m
+    autocommit complete 1004 (57)[m
+[m
+[33mcommit 33c0dc9a9f3fdc625e4e0995d3bcb441f0d08333[m[m
+:[K[K[?1l>[?2004h[94mITINF25/lektion5
+(B[m$ git log[C[Cman docker-pull[H[2J[94mITINF25/lektion5
+(B[m$ man docker-pull
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-pull - Download an image from a registry[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mpull[0m [1m[OPTIONS][0m [1mNAME[:TAG|@DIGEST][0m[m
+[m
+[1mDESCRIPTION[0m[m
+       Alias for [1mdocker[0m [1mimage[0m [1mpull[0m.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m, [1m--all-tags[0m[=false]      Download all tagged images in the repository[m
+[m
+       [1m--platform[0m=""      Set platform if server is multi-platform capable[m
+[m
+       [1m-q[0m, [1m--quiet[0m[=false]      Suppress verbose output[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+[7m Manual page docker-pull(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdocker(1)[0m[m
+[7m Manual page docker-pull(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page docker-pull(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KDocker Community                            Jan 2026                                  DOCKER(1)[m
+[7m Manual page docker-pull(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page docker-pull(1) line 4/22 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[20;1H[K[7m Manual page docker-pull(1) line 3/22 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K[7m Manual page docker-pull(1) line 2/22 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMDOCKER(1)                             Docker User Manuals                             DOCKER(1)[m
+[20;1H[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page docker-pull(1) line 1/22 85% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ tldr docker
+[?2004ldocker
+
+[0m[0mManage Docker containers and images.
+Some subcommands such as run have their own usage documentation.
+More information: https://docs.docker.com/reference/cli/docker/.
+
+ - [0m[32;23;22;24;25mList all Docker containers (running and stopped):
+   [33;23;22;24;25mdocker ps [0m[-a|--all]
+[0m
+ - [0m[32;23;22;24;25mStart a container from an image, with a custom name:
+   [33;23;22;24;25mdocker run --name [0mcontainer_name[33;23;22;24;25m [0mimage
+[0m
+ - [0m[32;23;22;24;25mStart or stop an existing container:
+   [33;23;22;24;25mdocker [0mstart|stop[33;23;22;24;25m [0mcontainer_name
+[0m
+ - [0m[32;23;22;24;25mPull an image from a Docker registry:
+   [33;23;22;24;25mdocker pull [0mimage
+[0m
+ - [0m[32;23;22;24;25mDisplay the list of already downloaded images:
+   [33;23;22;24;25mdocker images[0m
+[0m
+ - [0m[32;23;22;24;25mOpen an interactive tty with Bourne shell (sh) inside a running container:
+   [33;23;22;24;25mdocker exec [0m[-it|--interactive --tty][33;23;22;24;25m [0mcontainer_name[33;23;22;24;25m [0msh
+[0m
+ - [0m[32;23;22;24;25mRemove stopped containers:
+   [33;23;22;24;25mdocker rm [0mcontainer1 container2 ...
+[0m
+ - [0m[32;23;22;24;25mFetch and follow the logs of a container:
+   [33;23;22;24;25mdocker logs [0m[-f|--follow][33;23;22;24;25m [0mcontainer_name
+[0m[0m[?2004h[94mITINF25/lektion5
+(B[m$ tldr docker[C[C[Ktldr docker[C[C[K[H[2J[94mITINF25/lektion5
+(B[m$ hueiheiuhe[K[K[K[K[K[K[K[K[K[Kuhiuhiuhiui[K[K[K[K[K[K[K[K[K[K[Kiuooijoi[K[K[K[K[K[K[K[Knano
+[?2004l[?2004h[?1049h[22;0;0t[1;20r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J(B[0;7m  GNU nano 7.2                                New Buffer                                          [1;97H(B[m[18;25H(B[0;7m[ Welcome to nano.  For basic help, type Ctrl+G. ](B[m[19d(B[0;7m^G(B[m Help[19;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[19;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[20d(B[0;7m^X(B[m Exit[20;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[20;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;58H(B[0;7m*[97G(B[m[?12l[?25h[2dj[?25l[?12l[?25he[?25l[?12l[?25hj[?25l[?12l[?25he[?25l[?12l[?25he[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25h[A[?25l[?12l[?25h[Aje[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4dee[?25l[?12l[?25h[5d[?25l[18d(B[0;7mSave modified buffer?                                                                             [19;1H Y(B[m Yes[K[20d(B[0;7m N(B[m No  [20;18H(B[0;7mC(B[m Cancel[K[18;23H[?12l[?25h[?25l[J[20d[?12l[?25h[20;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker ps[H[2J[94mITINF25/lektion5
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 3 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ mkdir Tes[K[K[Ktest[K[K[K[Kstdoutbytfil[K[K[Kfildel
+[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ cd d[Kstdoutbytfildel/
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub
+[?2004l# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.reset i8042.nomux"
+GRUB_CMDLINE_LINUX="i8042.kbdreset=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i vr[K[Kcrypt[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i crypt
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cat /etc/default/grub | grep -i crypt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kb
+[?2004l# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.reset i8042.nomux"
+GRUB_CMDLINE_LINUX="i8042.kbdreset=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ LS
+[?2004lbash: LS: command not found
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ nano minconfig.conf
+[?2004l[?2004h[?1049h[22;0;0t[1;17r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[15;26H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2             minconfig.conf                      [1;62H(B[m[16d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[17d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;43H(B[0;7m*[62G(B[m[?12l[?25h[2dE[?25l[?12l[?25hN[?25l[?12l[?25hA[?25l[?12l[?25hB[?25l[?12l[?25hL[?25l[?12l[?25hE[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25hL[?25l[?12l[?25hO[?25l[?12l[?25hG[?25l[15d[K[?12l[?25h[2;4HO[?25l[?12l[?25h=[?25l[?12l[?25hY[?25l[?12l[?25hE[?25l[?12l[?25hS[?25l[3d[?12l[?25h[?25l[?12l[?25hI[?25l[?12l[?25h_[?25l[?12l[?25hN[?25l[?12l[?25hE[?25l[?12l[?25hE[?25l[?12l[?25hD[?25l[?12l[?25h_[?25l[?12l[?25hS[?25l[?12l[?25hS[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25hU[?25l[?12l[?25hU[?25l[?12l[?25hI[?25l[?12l[?25hD[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25hE[?25l[?12l[?25hN[?25l[?12l[?25hC[?25l[?12l[?25hR[?25l[?12l[?25hY[?25l[?12l[?25hP[?25l[?12l[?25hT[?25l[?12l[?25h_[?25l[?12l[?25hU[?25l[?12l[?25hU[?25l[?12l[?25hI[?25l[?12l[?25hD[?25l[?12l[?25h=[?25l[4d[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[2;9H[?25l7[3;15r8[3dM[1;17r[3;1H[?12l[?25h[?25l[?12l[?25hS[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hO[?25l[?12l[?25hM[?25l[?12l[?25hE[?25l[?12l[?25hG[?25l[?12l[?25h+[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25hH[?25l[?12l[?25hI[?25l[?12l[?25hG[?25l[?12l[?25h [?25l[?12l[?25hN[?25l[?12l[?25hG[?25l[?12l[?25h=[?25l[?12l[?25hY[?25l[?12l[?25hE[?25l[?12l[?25hS[?25l[?12l[?25h [?25l[?12l[?25hP[?25l[?12l[?25hL[?25l[?12l[?25hE[?25l[?12l[?25hA[?25l[?12l[?25hS[?25l[?12l[?25hE[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25hM[?25l[?12l[?25hO[?25l[?12l[?25hR[?25l[?12l[?25hE[?25l[?12l[?25h=[?25l[?12l[?25hN[?25l[?12l[?25hO[?25l[?12l[?25hE[?25l[?12l[?25h [?25l[6d[?12l[?25h[?25l[15d(B[0;7mSave modified buffer?                                          [16;1H Y(B[m Yes[K[17d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[15;23H[?12l[?25h[?25l[16d(B[0;7m^G(B[m Help[16;16H(B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[17d(B[0;7m^C(B[m Cancel[16G(B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[15d(B[0;7mFile Name to Write: minconfig.conf(B[m[?12l[?25h[?25l[15;24H[1K (B[0;7m[ Writing... ](B[m[K[1;43H(B[0;7m [62G(B[m[15;24H(B[0;7m[ Wrote 5 lines ](B[m[J[17d[?12l[?25h[17;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed minconfig.conf [C[C[1@ [1@-[1@E[C[1@ [1@'[1@'[1@s[1@/[1P[1P
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '' minconfig.conf [C[C[C[C[1@^[1@E[1@N[1@C[1@R[1@Y[1@P[1@T[1@_[1@U[1@U[1@I[1@D[1@/[1P[1@ [1P[1@=[1@ 
+[?2004lsed: -e expression #1, char 1: unknown command: `^'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '^ENCRYPT_UUID= ' minconfig.conf [C[C[1@s[1@/[1@$[1@/[1@1[1@2[1@3[1@4[1@5[1@/[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '^ENCRYPT_UUID= s/$/12345/' minconfig.conf [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lsed: -e expression #1, char 1: unknown command: `^'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '^ENCRYPT_UUID= s/$/12345/' minconfig.conf [C[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@/
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=12345
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '/^ENCRYPT_UUID=/ s/$/12345/' minconfig.conf [1P[1P[1P[1P[1P[1P[C[C[1@ [1@![1P[1@/[1@U[1@U[1@I[1@D[1@/
+[?2004lsed: -e expression #1, char 12: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -E '/^ENCRYPT/ /UUID/ s/$/12345/' minconfig.conf 
+[?2004lsed: -e expression #1, char 12: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man sed
+[?2004l[?1049h[22;0;0t[?1h=SED(1)                  User Commands                  SED(1)[m
+[m
+[1mNAME[0m[m
+       sed  -  stream  editor  for filtering and transforming[m
+       text[m
+[m
+[1mSYNOPSIS[0m[m
+       sed [-V] [--version] [--help] [-n] [--quiet] [--silent][m
+           [-l N] [--line-length=N] [-u] [--unbuffered][m
+           [-E] [-r] [--regexp-extended][m
+           [-e script] [--expression=script][m
+           [-f script-file] [--file=script-file][m
+           [script-if-no-other-script][m
+           [file...][m
+[m
+[1mDESCRIPTION[0m[m
+[7m Manual page sed(1) line 1 (press h for help or q to quit)[27m[K[K       [4mSed[24m is a stream editor.  A stream editor  is  used  to[m
+       perform  basic text transformations on an input stream[m
+       (a file or input from a pipeline).  While in some ways[m
+       similar  to  an  editor  which  permits scripted edits[m
+       (such as [4med[24m), [4msed[24m works by making only one  pass  over[m
+       the input(s), and is consequently more efficient.  But[m
+       it is [4msed[24m's ability to filter text in a pipeline which[m
+       particularly distinguishes it from other types of edi‐[m
+       tors.[m
+[m
+       [1m-n[0m, [1m--quiet[0m, [1m--silent[0m[m
+[m
+              suppress automatic printing of pattern space[m
+[m
+       [1m--debug[0m[m
+[m
+[7m Manual page sed(1) line 17 (press h for help or q to quit)[27m[K[K              annotate program execution[m
+[m
+       [1m-e[0m script, [1m--expression[0m=[4mscript[24m[m
+[m
+              add the script to the commands to be executed[m
+[m
+       [1m-f[0m script-file, [1m--file[0m=[4mscript-file[24m[m
+[m
+              add the contents of script-file to the commands[m
+              to be executed[m
+[m
+       [1m--follow-symlinks[0m[m
+[m
+              follow symlinks when processing in place[m
+[m
+       [1m-i[SUFFIX][0m, [1m--in-place[0m[=[4mSUFFIX[24m][m
+[7m Manual page sed(1) line 33 (press h for help or q to quit)[27m[K[K[m
+              edit  files  in  place  (makes backup if SUFFIX[m
+              supplied)[m
+[m
+       [1m-l[0m N, [1m--line-length[0m=[4mN[24m[m
+[m
+              specify the desired line-wrap  length  for  the[m
+              `l' command[m
+[m
+       [1m--posix[0m[m
+[m
+              disable all GNU extensions.[m
+[m
+       [1m-E[0m, [1m-r[0m, [1m--regexp-extended[0m[m
+[m
+              use  extended regular expressions in the script[m
+[7m Manual page sed(1) line 49 (press h for help or q to quit)[27m[K[K              (for portability use POSIX [1m-E[0m).[m
+[m
+       [1m-s[0m, [1m--separate[0m[m
+[m
+              consider files as separate  rather  than  as  a[m
+              single, continuous long stream.[m
+[m
+       [1m--sandbox[0m[m
+[m
+              operate  in  sandbox  mode  (disable e/r/w com‐[m
+              mands).[m
+[m
+       [1m-u[0m, [1m--unbuffered[0m[m
+[m
+              load minimal amounts of  data  from  the  input[m
+              files and flush the output buffers more often[m
+[7m Manual page sed(1) line 65 (press h for help or q to quit)[27m[K[K[m
+       [1m-z[0m, [1m--null-data[0m[m
+[m
+              separate lines by NUL characters[m
+[m
+       [1m--help[0m[m
+              display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       If no [1m-e[0m, [1m--expression[0m, [1m-f[0m, or [1m--file[0m option is given,[m
+       then the first non-option argument is taken as the sed[m
+       script  to  interpret.   All  remaining  arguments are[m
+       names of input files; if no input files are specified,[m
+       then the standard input is read.[m
+[7m Manual page sed(1) line 81 (press h for help or q to quit)[27m[K[K[m
+       GNU    sed   home   page:   <https://www.gnu.org/soft‐[m
+       ware/sed/>.   General   help   using   GNU   software:[m
+       <https://www.gnu.org/gethelp/>.   E-mail  bug  reports[m
+       to: <bug-sed@gnu.org>.[m
+[m
+       Packaged by Debian  Copyright  ©  2022  Free  Software[m
+       Foundation, Inc.  License GPLv3+: GNU GPL version 3 or[m
+       later  <https://gnu.org/licenses/gpl.html>.   This  is[m
+       free software: you are free to change and redistribute[m
+       it.  There is NO WARRANTY, to the extent permitted  by[m
+       law.[m
+[m
+[1mCOMMAND[0m [1mSYNOPSIS[0m[m
+       This is just a brief synopsis of [4msed[24m commands to serve[m
+       as a reminder to those who  already  know  [4msed[24m;  other[m
+[7m Manual page sed(1) line 97 (press h for help or q to quit)[27m[K[K       documentation  (such  as the texinfo document) must be[m
+       consulted for fuller descriptions.[m
+[m
+   [1mZero-address[0m [1m``commands''[0m[m
+       : [4mlabel[24m[m
+              Label for [1mb[0m and [1mt[0m commands.[m
+[m
+       #[4mcomment[24m[m
+              The comment extends until the next newline  (or[m
+              the end of a [1m-e[0m script fragment).[m
+[m
+       }      The closing bracket of a { } block.[m
+[m
+   [1mZero-[0m [1mor[0m [1mOne-[0m [1maddress[0m [1mcommands[0m[m
+       =      Print the current line number.[m
+[m
+[7m Manual page sed(1) line 113 (press h for help or q to quit)[27m[K[K       a \[m
+[m
+       [4mtext[24m   Append  [4mtext[24m,  which  has each embedded newline[m
+              preceded by a backslash.[m
+[m
+       i \[m
+[m
+       [4mtext[24m   Insert [4mtext[24m, which has  each  embedded  newline[m
+              preceded by a backslash.[m
+[m
+       q [[4mexit-code[24m][m
+              Immediately  quit  the  [4msed[24m script without pro‐[m
+              cessing any more input, except  that  if  auto-[m
+              print is not disabled the current pattern space[m
+              will be printed.  The exit code argument  is  a[m
+              GNU extension.[m
+[7m Manual page sed(1) line 129 (press h for help or q to quit)[27m[K[K[m
+       Q [[4mexit-code[24m][m
+              Immediately  quit  the  [4msed[24m script without pro‐[m
+              cessing any more input.  This is a  GNU  exten‐[m
+              sion.[m
+[m
+       r [4mfilename[24m[m
+              Append text read from [4mfilename[24m.[m
+[m
+       R [4mfilename[24m[m
+              Append a line read from [4mfilename[24m.  Each invoca‐[m
+              tion of the command reads a line from the file.[m
+              This is a GNU extension.[m
+[m
+   [1mCommands[0m [1mwhich[0m [1maccept[0m [1maddress[0m [1mranges[0m[m
+       {      Begin a block of commands (end with a }).[m
+[7m Manual page sed(1) line 145 (press h for help or q to quit)[27m[K[K[m
+       b [4mlabel[24m[m
+              Branch to [4mlabel[24m; if [4mlabel[24m is omitted, branch to[m
+              end of script.[m
+[m
+       c \[m
+[m
+       [4mtext[24m   Replace the selected lines with [4mtext[24m, which has[m
+              each embedded newline preceded by a backslash.[m
+[m
+       d      Delete pattern space.  Start next cycle.[m
+[m
+       D      If  pattern  space contains no newline, start a[m
+              normal new cycle as if the d  command  was  is‐[m
+              sued.   Otherwise,  delete  text in the pattern[m
+              space up to the first newline, and restart  cy‐[m
+[7m Manual page sed(1) line 161 (press h for help or q to quit)[27m[K[K              cle  with  the resultant pattern space, without[m
+              reading a new line of input.[m
+[m
+       h H    Copy/append pattern space to hold space.[m
+[m
+       g G    Copy/append hold space to pattern space.[m
+[m
+       l      List out the current line in a ``visually unam‐[m
+              biguous'' form.[m
+[m
+       l [4mwidth[24m[m
+              List out the current line in a ``visually unam‐[m
+              biguous'' form, breaking it  at  [4mwidth[24m  charac‐[m
+              ters.  This is a GNU extension.[m
+[m
+       n N    Read/append  the  next  line  of input into the[m
+[7m Manual page sed(1) line 177 (press h for help or q to quit)[27m[K[K              pattern space.[m
+[m
+       p      Print the current pattern space.[m
+[m
+       P      Print up to the first embedded newline  of  the[m
+              current pattern space.[m
+[m
+       s/[4mregexp[24m/[4mreplacement[24m/[m
+              Attempt  to  match  [4mregexp[24m  against the pattern[m
+              space.  If  successful,  replace  that  portion[m
+              matched  with [4mreplacement[24m.  The [4mreplacement[24m may[m
+              contain the special character  [1m&[0m  to  refer  to[m
+              that   portion   of  the  pattern  space  which[m
+              matched, and the special escapes \1 through  \9[m
+              to  refer to the corresponding matching sub-ex‐[m
+              pressions in the [4mregexp[24m.[m
+[7m Manual page sed(1) line 193 (press h for help or q to quit)[27m[K[K[m
+       t [4mlabel[24m[m
+              If a s/// has done  a  successful  substitution[m
+              since  the  last  input line was read and since[m
+              the last t or T command, then branch to  [4mlabel[24m;[m
+              if [4mlabel[24m is omitted, branch to end of script.[m
+[m
+       T [4mlabel[24m[m
+              If  no  s/// has done a successful substitution[m
+              since the last input line was  read  and  since[m
+              the  last t or T command, then branch to [4mlabel[24m;[m
+              if [4mlabel[24m is omitted, branch to end  of  script.[m
+              This is a GNU extension.[m
+[m
+       w [4mfilename[24m[m
+              Write the current pattern space to [4mfilename[24m.[m
+[7m Manual page sed(1) line 209 (press h for help or q to quit)[27m[K[K[m
+       W [4mfilename[24m[m
+              Write  the  first  line  of the current pattern[m
+              space to [4mfilename[24m.  This is a GNU extension.[m
+[m
+       x      Exchange the contents of the hold  and  pattern[m
+              spaces.[m
+[m
+       y/[4msource[24m/[4mdest[24m/[m
+              Transliterate  the  characters  in  the pattern[m
+              space which appear in [4msource[24m to the correspond‐[m
+              ing character in [4mdest[24m.[m
+[m
+[1mAddresses[0m[m
+       [4mSed[24m  commands can be given with no addresses, in which[m
+       case the command will be executed for all input lines;[m
+[7m Manual page sed(1) line 225 (press h for help or q to quit)[27m[K[K       with  one address, in which case the command will only[m
+       be executed for input lines which match that  address;[m
+       or  with two addresses, in which case the command will[m
+       be executed for all input lines which match the inclu‐[m
+       sive  range  of  lines starting from the first address[m
+       and continuing to the second address.  Three things to[m
+       note  about  address ranges: the syntax is [4maddr1[24m,[4maddr2[24m[m
+       (i.e., the addresses are separated by  a  comma);  the[m
+       line which [4maddr1[24m matched will always be accepted, even[m
+       if [4maddr2[24m selects an earlier line; and if  [4maddr2[24m  is  a[m
+       [4mregexp[24m,  it  will  not be tested against the line that[m
+       [4maddr1[24m matched.[m
+[m
+       After the address (or address-range), and  before  the[m
+       command,  a  [1m![0m   may be inserted, which specifies that[m
+       the command shall only be executed if the address  (or[m
+[7m Manual page sed(1) line 241 (press h for help or q to quit)[27m[K[K       address-range) does [1mnot[0m match.[m
+[m
+       The following address types are supported:[m
+[m
+       [4mnumber[24m Match only the specified line [4mnumber[24m (which in‐[m
+              crements cumulatively across files, unless  the[m
+              [1m-s[0m option is specified on the command line).[m
+[m
+       [4mfirst[24m~[4mstep[24m[m
+              Match  every  [4mstep[24m'th  line  starting with line[m
+              [4mfirst[24m.  For example, ``sed -n 1~2p'' will print[m
+              all the odd-numbered lines in the input stream,[m
+              and the address  2~5  will  match  every  fifth[m
+              line,  starting  with the second.  [4mfirst[24m can be[m
+              zero; in this case, [4msed[24m operates as if it  were[m
+              equal to [4mstep[24m.  (This is an extension.)[m
+[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       address-range) does [1mnot[0m match.[m
+[17;1H[K[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K[m
+       $      Match the last line.[m
+[m
+       /[4mregexp[24m/[m
+              Match  lines  matching  the  regular expression[m
+              [4mregexp[24m.  Matching is performed on  the  current[m
+              pattern  space, which can be modified with com‐[m
+              mands such as ``s///''.[m
+[m
+       \[1mc[0m[4mregexp[24m[1mc[0m[m
+              Match lines  matching  the  regular  expression[m
+              [4mregexp[24m.  The [1mc[0m may be any character.[m
+[m
+       GNU [4msed[24m also supports some special 2-address forms:[m
+[m
+       0,[4maddr2[24m[m
+[7m Manual page sed(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Start out in "matched first address" state, un‐[m
+[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[7m Manual page sed(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              first line of input the 0,[4maddr2[24m form will be at[m
+[7m Manual page sed(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the  end of its range, whereas the 1,[4maddr2[24m form[m
+[7m Manual page sed(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              will still be at the beginning  of  its  range.[m
+[7m Manual page sed(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This works only when [4maddr2[24m is a regular expres‐[m
+[7m Manual page sed(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              sion.[m
+[7m Manual page sed(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,+[4mN[24m[m
+[7m Manual page sed(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m  and  the  [4mN[24m  lines  following[m
+[7m Manual page sed(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4maddr1[24m.[m
+[7m Manual page sed(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,~[4mN[24m[m
+[7m Manual page sed(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will  match [4maddr1[24m and the lines following [4maddr1[24m[m
+[7m Manual page sed(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              until the next line whose input line number  is[m
+[7m Manual page sed(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a multiple of [4mN[24m.[m
+[7m Manual page sed(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREGULAR[0m [1mEXPRESSIONS[0m[m
+[7m Manual page sed(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       POSIX.2 BREs [4mshould[24m be supported, but they aren't com‐[m
+[7m Manual page sed(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       pletely because of performance problems.  The  [1m\n[0m  se‐[m
+[7m Manual page sed(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       quence  in  a  regular  expression matches the newline[m
+[7m Manual page sed(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       character, and similarly for [1m\a[0m,  [1m\t[0m,  and  other  se‐[m
+[7m Manual page sed(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              This works only when [4maddr2[24m is a regular expres‐[m
+[17;1H[K[7m Manual page sed(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              will still be at the beginning  of  its  range.[m
+[17;1H[K[7m Manual page sed(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the  end of its range, whereas the 1,[4maddr2[24m form[m
+[17;1H[K[7m Manual page sed(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first line of input the 0,[4maddr2[24m form will be at[m
+[17;1H[K[7m Manual page sed(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[17;1H[K[7m Manual page sed(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[17;1H[K[7m Manual page sed(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Start out in "matched first address" state, un‐[m
+[17;1H[K[7m Manual page sed(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       0,[4maddr2[24m[m
+[17;1H[K[7m Manual page sed(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       GNU [4msed[24m also supports some special 2-address forms:[m
+[17;1H[K[7m Manual page sed(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,~[4mN[24m[m
+[7m Manual page sed(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will  match [4maddr1[24m and the lines following [4maddr1[24m[m
+[7m Manual page sed(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              until the next line whose input line number  is[m
+[7m Manual page sed(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a multiple of [4mN[24m.[m
+[7m Manual page sed(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREGULAR[0m [1mEXPRESSIONS[0m[m
+[7m Manual page sed(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       POSIX.2 BREs [4mshould[24m be supported, but they aren't com‐[m
+[7m Manual page sed(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       pletely because of performance problems.  The  [1m\n[0m  se‐[m
+[7m Manual page sed(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       quence  in  a  regular  expression matches the newline[m
+[7m Manual page sed(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       character, and similarly for [1m\a[0m,  [1m\t[0m,  and  other  se‐[m
+[7m Manual page sed(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       quences.   The  [4m-E[24m  option  switches to using extended[m
+[7m Manual page sed(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       regular expressions instead; it has been supported for[m
+[7m Manual page sed(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       years by GNU sed, and is now included in POSIX.[m
+[7m Manual page sed(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m[m
+[7m Manual page sed(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       E-mail  bug  reports to [1mbug-sed@gnu.org[0m.  Also, please[m
+[7m Manual page sed(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       include the output of ``sed --version'' in the body of[m
+[7m Manual page sed(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       your report if at all possible.[m
+[7m Manual page sed(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page sed(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written  by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo[m
+[7m Manual page sed(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Bonzini, Jim Meyering, and Assaf Gordon.[m
+[7m Manual page sed(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 309 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This sed  program  was  built  with  SELinux  support.[m
+[7m Manual page sed(1) line 310 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       SELinux is disabled on this system.[m
+[7m Manual page sed(1) line 311 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 312 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU    sed   home   page:   <https://www.gnu.org/soft‐[m
+[7m Manual page sed(1) line 313 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       quences.   The  [4m-E[24m  option  switches to using extended[m
+[17;1H[K[7m Manual page sed(1) line 312 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       character, and similarly for [1m\a[0m,  [1m\t[0m,  and  other  se‐[m
+[17;1H[K[7m Manual page sed(1) line 311 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       quence  in  a  regular  expression matches the newline[m
+[17;1H[K[7m Manual page sed(1) line 310 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       pletely because of performance problems.  The  [1m\n[0m  se‐[m
+[17;1H[K[7m Manual page sed(1) line 309 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       POSIX.2 BREs [4mshould[24m be supported, but they aren't com‐[m
+[17;1H[K[7m Manual page sed(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mREGULAR[0m [1mEXPRESSIONS[0m[m
+[17;1H[K[7m Manual page sed(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              a multiple of [4mN[24m.[m
+[17;1H[K[7m Manual page sed(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              until the next line whose input line number  is[m
+[17;1H[K[7m Manual page sed(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Will  match [4maddr1[24m and the lines following [4maddr1[24m[m
+[17;1H[K[7m Manual page sed(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4maddr1[24m,~[4mN[24m[m
+[17;1H[K[7m Manual page sed(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [4maddr1[24m.[m
+[17;1H[K[7m Manual page sed(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Will match [4maddr1[24m  and  the  [4mN[24m  lines  following[m
+[17;1H[K[7m Manual page sed(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4maddr1[24m,+[4mN[24m[m
+[17;1H[K[7m Manual page sed(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              sion.[m
+[17;1H[K[7m Manual page sed(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              This works only when [4maddr2[24m is a regular expres‐[m
+[17;1H[K[7m Manual page sed(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              will still be at the beginning  of  its  range.[m
+[17;1H[K[7m Manual page sed(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the  end of its range, whereas the 1,[4maddr2[24m form[m
+[17;1H[K[7m Manual page sed(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first line of input the 0,[4maddr2[24m form will be at[m
+[17;1H[K[7m Manual page sed(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[17;1H[K[7m Manual page sed(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[17;1H[K[7m Manual page sed(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Start out in "matched first address" state, un‐[m
+[17;1H[K[7m Manual page sed(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       0,[4maddr2[24m[m
+[17;1H[K[7m Manual page sed(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       GNU [4msed[24m also supports some special 2-address forms:[m
+[17;1H[K[7m Manual page sed(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [4mregexp[24m.  The [1mc[0m may be any character.[m
+[17;1H[K[7m Manual page sed(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Match lines  matching  the  regular  expression[m
+[17;1H[K[7m Manual page sed(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \[1mc[0m[4mregexp[24m[1mc[0m[m
+[17;1H[K[7m Manual page sed(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              mands such as ``s///''.[m
+[17;1H[K[7m Manual page sed(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              pattern  space, which can be modified with com‐[m
+[17;1H[K[7m Manual page sed(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [4mregexp[24m.  Matching is performed on  the  current[m
+[17;1H[K[7m Manual page sed(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Match  lines  matching  the  regular expression[m
+[17;1H[K[7m Manual page sed(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       /[4mregexp[24m/[m
+[17;1H[K[7m Manual page sed(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       $      Match the last line.[m
+[17;1H[K[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              equal to [4mstep[24m.  (This is an extension.)[m
+[17;1H[K[7m Manual page sed(1) line 272 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              zero; in this case, [4msed[24m operates as if it  were[m
+[17;1H[K[7m Manual page sed(1) line 271 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              line,  starting  with the second.  [4mfirst[24m can be[m
+[17;1H[K[7m Manual page sed(1) line 270 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              and the address  2~5  will  match  every  fifth[m
+[17;1H[K[7m Manual page sed(1) line 269 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              all the odd-numbered lines in the input stream,[m
+[17;1H[K[7m Manual page sed(1) line 268 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [4mfirst[24m.  For example, ``sed -n 1~2p'' will print[m
+[17;1H[K[7m Manual page sed(1) line 267 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Match  every  [4mstep[24m'th  line  starting with line[m
+[17;1H[K[7m Manual page sed(1) line 266 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4mfirst[24m~[4mstep[24m[m
+[17;1H[K[7m Manual page sed(1) line 265 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 264 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1m-s[0m option is specified on the command line).[m
+[17;1H[K[7m Manual page sed(1) line 263 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              crements cumulatively across files, unless  the[m
+[17;1H[K[7m Manual page sed(1) line 262 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4mnumber[24m Match only the specified line [4mnumber[24m (which in‐[m
+[17;1H[K[7m Manual page sed(1) line 261 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 260 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The following address types are supported:[m
+[17;1H[K[7m Manual page sed(1) line 259 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       address-range) does [1mnot[0m match.[m
+[17;1H[K[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       the command shall only be executed if the address  (or[m
+[17;1H[K[7m Manual page sed(1) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       command,  a  [1m![0m   may be inserted, which specifies that[m
+[17;1H[K[7m Manual page sed(1) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       After the address (or address-range), and  before  the[m
+[17;1H[K[7m Manual page sed(1) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4maddr1[24m matched.[m
+[17;1H[K[7m Manual page sed(1) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4mregexp[24m,  it  will  not be tested against the line that[m
+[17;1H[K[7m Manual page sed(1) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       if [4maddr2[24m selects an earlier line; and if  [4maddr2[24m  is  a[m
+[17;1H[K[7m Manual page sed(1) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       line which [4maddr1[24m matched will always be accepted, even[m
+[17;1H[K[7m Manual page sed(1) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       (i.e., the addresses are separated by  a  comma);  the[m
+[17;1H[K[7m Manual page sed(1) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       note  about  address ranges: the syntax is [4maddr1[24m,[4maddr2[24m[m
+[17;1H[K[7m Manual page sed(1) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       and continuing to the second address.  Three things to[m
+[17;1H[K[7m Manual page sed(1) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       sive  range  of  lines starting from the first address[m
+[17;1H[K[7m Manual page sed(1) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       be executed for all input lines which match the inclu‐[m
+[17;1H[K[7m Manual page sed(1) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       or  with two addresses, in which case the command will[m
+[17;1H[K[7m Manual page sed(1) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       be executed for input lines which match that  address;[m
+[17;1H[K[7m Manual page sed(1) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       with  one address, in which case the command will only[m
+[17;1H[K[7m Manual page sed(1) line 241 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       case the command will be executed for all input lines;[m
+[17;1H[K[7m Manual page sed(1) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4mSed[24m  commands can be given with no addresses, in which[m
+[17;1H[K[7m Manual page sed(1) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mAddresses[0m[m
+[17;1H[K[7m Manual page sed(1) line 238 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 237 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 238 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       After the address (or address-range), and  before  the[m
+[7m Manual page sed(1) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       command,  a  [1m![0m   may be inserted, which specifies that[m
+[7m Manual page sed(1) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the command shall only be executed if the address  (or[m
+[7m Manual page sed(1) line 241 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       address-range) does [1mnot[0m match.[m
+[7m Manual page sed(1) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The following address types are supported:[m
+[7m Manual page sed(1) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mnumber[24m Match only the specified line [4mnumber[24m (which in‐[m
+[7m Manual page sed(1) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              crements cumulatively across files, unless  the[m
+[7m Manual page sed(1) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1m-s[0m option is specified on the command line).[m
+[7m Manual page sed(1) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mfirst[24m~[4mstep[24m[m
+[7m Manual page sed(1) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Match  every  [4mstep[24m'th  line  starting with line[m
+[7m Manual page sed(1) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4mfirst[24m.  For example, ``sed -n 1~2p'' will print[m
+[7m Manual page sed(1) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all the odd-numbered lines in the input stream,[m
+[7m Manual page sed(1) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              and the address  2~5  will  match  every  fifth[m
+[7m Manual page sed(1) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              line,  starting  with the second.  [4mfirst[24m can be[m
+[7m Manual page sed(1) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              zero; in this case, [4msed[24m operates as if it  were[m
+[7m Manual page sed(1) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              equal to [4mstep[24m.  (This is an extension.)[m
+[7m Manual page sed(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       $      Match the last line.[m
+[7m Manual page sed(1) line 259 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 260 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       /[4mregexp[24m/[m
+[7m Manual page sed(1) line 261 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Match  lines  matching  the  regular expression[m
+[7m Manual page sed(1) line 262 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4mregexp[24m.  Matching is performed on  the  current[m
+[7m Manual page sed(1) line 263 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              pattern  space, which can be modified with com‐[m
+[7m Manual page sed(1) line 264 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mands such as ``s///''.[m
+[7m Manual page sed(1) line 265 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 266 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \[1mc[0m[4mregexp[24m[1mc[0m[m
+[7m Manual page sed(1) line 267 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Match lines  matching  the  regular  expression[m
+[7m Manual page sed(1) line 268 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4mregexp[24m.  The [1mc[0m may be any character.[m
+[7m Manual page sed(1) line 269 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 270 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU [4msed[24m also supports some special 2-address forms:[m
+[7m Manual page sed(1) line 271 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 272 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       0,[4maddr2[24m[m
+[7m Manual page sed(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Start out in "matched first address" state, un‐[m
+[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[7m Manual page sed(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       $      Match the last line.[m
+[17;1H[K[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7m Manual page sed(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Start out in "matched first address" state, un‐[m
+[7m Manual page sed(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              til  [4maddr2[24m  is  found.   This  is  similar   to[m
+[7m Manual page sed(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              1,[4maddr2[24m,  except that if [4maddr2[24m matches the very[m
+[7m Manual page sed(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              first line of input the 0,[4maddr2[24m form will be at[m
+[7m Manual page sed(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the  end of its range, whereas the 1,[4maddr2[24m form[m
+[7m Manual page sed(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              will still be at the beginning  of  its  range.[m
+[7m Manual page sed(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This works only when [4maddr2[24m is a regular expres‐[m
+[7m Manual page sed(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              sion.[m
+[7m Manual page sed(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,+[4mN[24m[m
+[7m Manual page sed(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will match [4maddr1[24m  and  the  [4mN[24m  lines  following[m
+[7m Manual page sed(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [4maddr1[24m.[m
+[7m Manual page sed(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4maddr1[24m,~[4mN[24m[m
+[7m Manual page sed(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Will  match [4maddr1[24m and the lines following [4maddr1[24m[m
+[7m Manual page sed(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              until the next line whose input line number  is[m
+[7m Manual page sed(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a multiple of [4mN[24m.[m
+[7m Manual page sed(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREGULAR[0m [1mEXPRESSIONS[0m[m
+[7m Manual page sed(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       POSIX.2 BREs [4mshould[24m be supported, but they aren't com‐[m
+[7m Manual page sed(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       pletely because of performance problems.  The  [1m\n[0m  se‐[m
+[7m Manual page sed(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       quence  in  a  regular  expression matches the newline[m
+[7m Manual page sed(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       character, and similarly for [1m\a[0m,  [1m\t[0m,  and  other  se‐[m
+[7m Manual page sed(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       quences.   The  [4m-E[24m  option  switches to using extended[m
+[7m Manual page sed(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       regular expressions instead; it has been supported for[m
+[7m Manual page sed(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       years by GNU sed, and is now included in POSIX.[m
+[7m Manual page sed(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m[m
+[7m Manual page sed(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [4maddr1[24m.[m
+[17;1H[K[7m Manual page sed(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m[m
+[7m Manual page sed(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       E-mail  bug  reports to [1mbug-sed@gnu.org[0m.  Also, please[m
+[7m Manual page sed(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       include the output of ``sed --version'' in the body of[m
+[7m Manual page sed(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       your report if at all possible.[m
+[7m Manual page sed(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page sed(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written  by Jay Fenlason, Tom Lord, Ken Pizzini, Paolo[m
+[7m Manual page sed(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Bonzini, Jim Meyering, and Assaf Gordon.[m
+[7m Manual page sed(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sed(1) line 309 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf minconfig.conf [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf
+[?2004lsed: -e expression #1, char 5: unterminated address regex
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID' minconfig.conf[1@/[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lsed: -e expression #1, char 6: missing command
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[1@ [1@p
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=
+ENCRYPT_UUID=
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/UUID/ p' minconfig.conf[C[C[C[C[1@-[1@n[1@ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ p' minconfig.conf[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ p' minconfig.conf[C[1@ [1@/[1@/[C[C[1@U[1@U[1@I[1@D
+[?2004lsed: -e expression #1, char 8: unknown command: `/'
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ /UUID/ p' minconfig.conf[1@{[1@ [C[C[C[C[C[C[C[C[1@ [1@}
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/UUID/ { /UUID/ p }' minconfig.conf[C[C[C[C[1P[1P[1P[1P[1@E[1@N[1@C[1@R[1@Y[1@P[1@T[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/ p }' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/ p }' minconfig.conf[1@/[1@1[1P[1P[1@!
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /UUID/! p }' minconfig.conf[C[C[1P[1P[1P[1P[1@1[1@2[1@3[1@4[1@5[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf
+[?2004lENCRYPT_UUID=
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! p }' minconfig.conf[C[1P[1@s[1@/[1@$[1@/[1@H[1@E[1@J[1@/
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[C[C[C
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed -n '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[1P[1P[1P[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf[C[C[C[C[C[C
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sed '/ENCRYPT/ { /12345/! s/$/HEJ/ }' minconfig.conf
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=HEJ
+MORE=NO
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ blkid 
+[?2004lbash: blkid: command not found
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ blkid [K[K[K[K[K[Ksudo blkid
+[?2004l[sudo] password for kent: 
+/dev/nvme0n1p11: UUID="723aff47-6e78-4d68-90b9-7b369954a351" TYPE="crypto_LUKS" PARTLABEL="DataCrypt" PARTUUID="f553107a-d654-4765-bd3f-59be7ce3b283"
+/dev/nvme0n1p5: UUID="01825a8c-41eb-4713-a016-12f7b6bab902" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="DebBoot" PARTUUID="57437187-849e-4d33-86ed-b7fe88065076"
+/dev/nvme0n1p3: BLOCK_SIZE="512" UUID="D46A79F16A79D12A" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="33ee2485-3997-4009-bc40-28543898bdf5"
+/dev/nvme0n1p1: UUID="2E64-153F" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI system partition" PARTUUID="dcb08ef8-28e2-4f12-8eba-274b1294d1a2"
+/dev/nvme0n1p6: UUID="6f516c51-cb2c-4737-8007-7e8ebc6b8bb8" TYPE="crypto_LUKS" PARTLABEL="DebCrypt" PARTUUID="c3db2a61-4a5a-45f6-9f01-f8229656805d"
+/dev/nvme0n1p4: BLOCK_SIZE="512" UUID="2E5E7BB45E7B7405" TYPE="ntfs" PARTUUID="4f9e5899-d6f4-4f25-9e5b-c8cc4e9b6ffb"
+/dev/mapper/root_decrypt: LABEL="DebDecrypt" UUID="161a00c3-26c1-4611-8ebe-c6b3a55f485e" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/mapper/shared_decrypt: UUID="dc5ea6e0-79bd-4a45-9cd2-57414047b355" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/nvme0n1p2: PARTLABEL="Microsoft reserved partition" PARTUUID="0fe2620f-c0b3-47f0-a289-11971be0440d"
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -u[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man blkdi[K[Kid
+[?2004l[?1049h[22;0;0t[?1h=BLKID(8)            System Administration            BLKID(8)[m
+[m
+[1mNAME[0m[m
+       blkid - locate/print block device attributes[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mblkid[0m [1m--label[0m [4mlabel[24m | [1m--uuid[0m [4muuid[24m[m
+[m
+       [1mblkid[0m [[1m--no-encoding[0m [1m--garbage-collect[0m [1m--list-one[0m[m
+       [1m--cache-file[0m [4mfile[24m] [[1m--output[0m [4mformat[24m] [[1m--match-tag[0m [4mtag[24m][m
+       [[1m--match-token[0m [4mNAME=value[24m] [[4mdevice[24m...][m
+[m
+       [1mblkid[0m [1m--probe[0m [[1m--offset[0m [4moffset[24m] [[1m--output[0m [4mformat[24m][m
+       [[1m--size[0m [4msize[24m] [[1m--match-tag[0m [4mtag[24m] [[1m--match-types[0m [4mlist[24m][m
+       [[1m--usages[0m [4mlist[24m] [[1m--no-part-details[0m] [4mdevice[24m...[m
+[m
+[7m Manual page blkid(8) line 1 (press h for help or q to quit)[27m[K[K       [1mblkid[0m [1m--info[0m [[1m--output[0m [1mformat[0m] [[1m--match-tag[0m [4mtag[24m][m
+       [4mdevice[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mblkid[0m program is the command-line interface to[m
+       working with the [1mlibblkid[0m(3) library. It can determine[m
+       the type of content (e.g., filesystem or swap) that a[m
+       block device holds, and also the attributes (tokens,[m
+       NAME=value pairs) from the content metadata (e.g.,[m
+       LABEL or UUID fields).[m
+[m
+       [1mIt[0m [1mis[0m [1mrecommended[0m [1mto[0m [1muse[0m [1mlsblk[0m(8) [1mcommand[0m [1mto[0m [1mget[0m[m
+       [1minformation[0m [1mabout[0m [1mblock[0m [1mdevices,[0m [1mor[0m [1mlsblk[0m [1m--fs[0m [1mto[0m [1mget[0m[m
+       [1man[0m [1moverview[0m [1mof[0m [1mfilesystems,[0m [1mor[0m [1mfindmnt[0m(8) [1mto[0m [1msearch[0m [1min[0m[m
+       [1malready[0m [1mmounted[0m [1mfilesystems.[0m[m
+[m
+[7m Manual page blkid(8) line 17 (press h for help or q to quit)[27m[K[K          [1mlsblk[0m(8) provides more information, better[m
+          control on output formatting, easy to use in[m
+          scripts and it does not require root[m
+          permissions to get actual information. [1mblkid[0m[m
+          reads information directly from devices and[m
+          for non-root users it returns cached[m
+          unverified information. [1mblkid[0m is mostly[m
+          designed for system services and to test[m
+          [1mlibblkid[0m(3) functionality.[m
+[m
+       When [4mdevice[24m is specified, tokens from only this device[m
+       are displayed. It is possible to specify multiple[m
+       [4mdevice[24m arguments on the command line. If none is[m
+       given, all partitions or unpartitioned devices which[m
+       appear in [4m/proc/partitions[24m are shown, if they are[m
+       recognized.[m
+[7m Manual page blkid(8) line 33 (press h for help or q to quit)[27m[K[K[m
+       [1mblkid[0m has two main forms of operation: either[m
+       searching for a device with a specific NAME=value[m
+       pair, or displaying NAME=value pairs for one or more[m
+       specified devices.[m
+[m
+       For security reasons [1mblkid[0m silently ignores all[m
+       devices where the probing result is ambivalent[m
+       (multiple colliding filesystems are detected). The[m
+       low-level probing mode ([1m-p[0m) provides more information[m
+       and extra exit status in this case. It’s recommended[m
+       to use [1mwipefs[0m(8) to get a detailed overview and to[m
+       erase obsolete stuff (magic strings) from the device.[m
+[m
+[1mOPTIONS[0m[m
+       The [4msize[24m and [4moffset[24m arguments may be followed by the[m
+[7m Manual page blkid(8) line 49 (press h for help or q to quit)[27m[K[K       multiplicative suffixes like KiB (=1024), MiB[m
+       (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB[m
+       and YiB (the "iB" is optional, e.g., "K" has the same[m
+       meaning as "KiB"), or the suffixes KB (=1000), MB[m
+       (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.[m
+[m
+       [1m-c[0m, [1m--cache-file[0m [4mcachefile[24m[m
+           Read from [4mcachefile[24m instead of reading from the[m
+           default cache file (see the [1mCONFIGURATION[0m [1mFILE[0m[m
+           section for more details). If you want to start[m
+           with a clean cache (i.e., don’t report devices[m
+           previously scanned but not necessarily available[m
+           at this time), specify [4m/dev/null[24m.[m
+[m
+       [1m-d[0m, [1m--no-encoding[0m[m
+           Don’t encode non-printing characters. The[m
+[7m Manual page blkid(8) line 65 (press h for help or q to quit)[27m[K[K           non-printing characters are encoded by ^ and M-[m
+           notation by default. Note that the [1m--output[0m [1mudev[0m[m
+           output format uses a different encoding which[m
+           cannot be disabled.[m
+[m
+       [1m-D[0m, [1m--no-part-details[0m[m
+           Don’t print information (PART_ENTRY_* tags) from[m
+           partition table in low-level probing mode.[m
+[m
+       [1m-g[0m, [1m--garbage-collect[0m[m
+           Perform a garbage collection pass on the blkid[m
+           cache to remove devices which no longer exist.[m
+[m
+       [1m-H[0m, [1m--hint[0m [4msetting[24m[m
+           Set probing hint. The hints are an optional way to[m
+           force probing functions to check, for example,[m
+[7m Manual page blkid(8) line 81 (press h for help or q to quit)[27m[K[K           another location. The currently supported is[m
+           "session_offset=[4mnumber[24m" to set session offset on[m
+           multi-session UDF.[m
+[m
+       [1m-i[0m, [1m--info[0m[m
+           Display information about I/O Limits (aka I/O[m
+           topology). The 'export' output format is[m
+           automatically enabled. This option can be used[m
+           together with the [1m--probe[0m option.[m
+[m
+       [1m-k[0m, [1m--list-filesystems[0m[m
+           List all known filesystems and RAIDs and exit.[m
+[m
+       [1m-l[0m, [1m--list-one[0m[m
+           Look up only one device that matches the search[m
+           parameter specified with the [1m--match-token[0m option.[m
+[7m Manual page blkid(8) line 97 (press h for help or q to quit)[27m[K[K           If there are multiple devices that match the[m
+           specified search parameter, then the device with[m
+           the highest priority is returned, and/or the first[m
+           device found at a given priority (but see below[m
+           note about udev). Device types in order of[m
+           decreasing priority are: Device Mapper, EVMS, LVM,[m
+           MD, and finally regular block devices. If this[m
+           option is not specified, [1mblkid[0m will print all of[m
+           the devices that match the search parameter.[m
+[m
+           This option forces [1mblkid[0m to use udev when used for[m
+           LABEL or UUID tokens in [1m--match-token[0m. The goal is[m
+           to provide output consistent with other utils[m
+           (like [1mmount[0m(8), etc.) on systems where the same[m
+           tag is used for multiple devices.[m
+[m
+[7mManual page blkid(8) line 113 (press h for help or q to quit)[27m[K[K       [1m-L[0m, [1m--label[0m [4mlabel[24m[m
+           Look up the device that uses this filesystem[m
+           [4mlabel[24m; this is equal to [1m--list-one[0m [1m--output[0m [1mdevice[0m[m
+           [1m--match-token[0m [1mLABEL=[0m[4mlabel[24m. This lookup method is[m
+           able to reliably use /dev/disk/by-label udev[m
+           symlinks (dependent on a setting in[m
+           [4m/etc/blkid.conf[24m). Avoid using the symlinks[m
+           directly; it is not reliable to use the symlinks[m
+           without verification. The [1m--label[0m option works on[m
+           systems with and without udev.[m
+[m
+           Unfortunately, the original [1mblkid[0m(8) from[m
+           e2fsprogs uses the [1m-L[0m option as a synonym for [1m-o[0m[m
+           [1mlist[0m. For better portability, use [1m-l[0m [1m-o[0m [1mdevice[0m [1m-t[0m[m
+           [1mLABEL=[0m[4mlabel[24m and [1m-o[0m [1mlist[0m in your scripts rather[m
+           than the [1m-L[0m option.[m
+[7mManual page blkid(8) line 129 (press h for help or q to quit)[27m[K[K[m
+       [1m-n[0m, [1m--match-types[0m [4mlist[24m[m
+           Restrict the probing functions to the specified[m
+           (comma-separated) [4mlist[24m of superblock types[m
+           (names). The list items may be prefixed with "no"[m
+           to specify the types which should be ignored. For[m
+           example:[m
+[m
+           [1mblkid[0m [1m--probe[0m [1m--match-types[0m [1mvfat,ext3,ext4[0m[m
+           [1m/dev/sda1[0m[m
+[m
+           probes for vfat, ext3 and ext4 filesystems, and[m
+[m
+           [1mblkid[0m [1m--probe[0m [1m--match-types[0m [1mnominix[0m [1m/dev/sda1[0m[m
+[m
+           probes for all supported formats except minix[m
+[7mManual page blkid(8) line 145 (press h for help or q to quit)[27m[K[K           filesystems. This option is only useful together[m
+           with [1m--probe[0m.[m
+[m
+       [1m-o[0m, [1m--output[0m [4mformat[24m[m
+           Use the specified output format. Note that the[m
+           order of variables and devices is not fixed. See[m
+           also option [1m-s[0m. The [4mformat[24m parameter may be:[m
+[m
+           [1mfull[0m[m
+               print all tags (the default)[m
+[m
+           [1mvalue[0m[m
+               print the value of the tags[m
+[m
+           [1mlist[0m[m
+               print the devices in a user-friendly format;[m
+[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K               this output format is unsupported for[m
+               low-level probing ([1m--probe[0m or [1m--info[0m).[m
+[m
+               This output format is [1mDEPRECATED[0m in favour of[m
+               the [1mlsblk[0m(8) command.[m
+[m
+           [1mdevice[0m[m
+               print the device name only; this output format[m
+               is always enabled for the [1m--label[0m and [1m--uuid[0m[m
+               options[m
+[m
+           [1mudev[0m[m
+               print key="value" pairs for easy import into[m
+               the udev environment; the keys are prefixed by[m
+               ID_FS_ or ID_PART_ prefixes. The value may be[m
+               modified to be safe for udev environment;[m
+[7mManual page blkid(8) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print the devices in a user-friendly format;[m
+[17;1H[K[7mManual page blkid(8) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mlist[0m[m
+[17;1H[K[7mManual page blkid(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print the value of the tags[m
+[17;1H[K[7mManual page blkid(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mvalue[0m[m
+[17;1H[K[7mManual page blkid(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               print all tags (the default)[m
+[17;1H[K[7mManual page blkid(8) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           [1mfull[0m[m
+[17;1H[K[7mManual page blkid(8) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           also option [1m-s[0m. The [4mformat[24m parameter may be:[m
+[17;1H[K[7mManual page blkid(8) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           order of variables and devices is not fixed. See[m
+[17;1H[K[7mManual page blkid(8) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           Use the specified output format. Note that the[m
+[17;1H[K[7mManual page blkid(8) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-o[0m, [1m--output[0m [4mformat[24m[m
+[17;1H[K[7mManual page blkid(8) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[17;1H[K[7mManual page blkid(8) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           with [1m--probe[0m.[m
+[17;1H[K[7mManual page blkid(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           filesystems. This option is only useful together[m
+[17;1H[K[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           probes for all supported formats except minix[m
+[17;1H[K[7mManual page blkid(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               print the devices in a user-friendly format;[m
+[7mManual page blkid(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               this output format is unsupported for[m
+[7mManual page blkid(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               low-level probing ([1m--probe[0m or [1m--info[0m).[m
+[7mManual page blkid(8) line 163 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ b[Ksudo blkid /sed[K[K[Kdev/sda
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid /dev/sda1
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid /dev/sda1 [K[C /dev/sda1- /dev/sda1o /dev/sda1[C /dev/sda1u /dev/sda1u /dev/sda1i /dev/sda1d /dev/sda1
+[?2004lblkid: unsupported output format uuid
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1U /dev/sda1U /dev/sda1I /dev/sda1D /dev/sda1
+[?2004lblkid: unsupported output format UUID
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o UUID /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1[1P /dev/sda1G /dev/sda1U /dev/sda1I /dev/sda1D /dev/sda1
+[?2004lblkid: unsupported output format GUID
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ sudo blkd[Kid dddd[K[K[K[K-o [K[K[K-s uuid[C[C[C[C /dv[Kev/sds1[K[Ka1[C /dev/sda1- /dev/sda1i /dev/sda1[C /dev/sda1[1P/dev/sda1[1P /dev/sda1i /dev/sda1o /dev/sda1[C /dev/sda1[1P/dev/sda1[1P /dev/sda1[1P /dev/sda1o /dev/sda1[C /dev/sda1a /dev/sda1[1P /dev/sda1v /dev/sda1a /dev/sda1l /dev/sda1u /dev/sda1e /dev/sda1
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o value /dev/sda1[K2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o value /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P /dev/sda2[1P/dev/sda2l /dev/sda2[1P /dev/sda2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lblkid: unsupported output format /dev/sda2
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid -o /dev/sda2[C[1P /dev/sda2[1P /dev/sda2[1P/dev/sda2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -s uuid /dev/sda2[1P[1@o[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lblkid: unsupported output format uuid
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ sudo blkid -o uuid /dev/sda2[C[C[Ktouch b[Kuuidfinder
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ nano uuidfinder 
+[?2004l[?2004h[?1049h[22;0;0t[1;8r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[6;18H(B[0;7m[ Reading... ](B[m[6;17H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2       uuidfinder                 [1;47H(B[m[7d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[8d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste[2d[?12l[?25h[?25l[1;33H(B[0;7m*[47G(B[m[?12l[?25h[2d[36m#[39m(B[m[?25l[?12l[?25h[36m![39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36mi[39m(B[m[?25l[?12l[?25h[36mn[39m(B[m[?25l[?12l[?25h[36m/[39m(B[m[?25l[?12l[?25h[36mb[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[?12l[?25h[36ms[39m(B[m[?25l[?12l[?25h[36mh[39m(B[m[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[?12l[?25he[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[6d[K[?12l[?25h[4;7Hh[?25l[?12l[?25hd[?25l[?12l[?25hi[?25l[?12l[?25hu[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25h5[?25l[?12l[?25h2[?25l[?12l[?25h9[?25l[?12l[?25hf[?25l[?12l[?25ha[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25ha[?25l[?12l[?25h@[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[?12l[?25h[A[?25l[?12l[?25h[36m#[39m(B[m[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36mF[39m(B[m[?25l[?12l[?25h[36ma[39m(B[m[?25l[?12l[?25h[36mk[39m(B[m[?25l[?12l[?25h[36me[39m(B[m[?25l[?12l[?25h[36m [39m(B[m[?25l[?12l[?25h[36mU[39m(B[m[?25l[?12l[?25h[36mU[39m(B[m[?25l[?12l[?25h[36mI[39m(B[m[?25l[?12l[?25h[36mD[39m(B[m[?25l[?12l[?25h[A[?25l7[3;6r8[3dM[1;8r[3;1H[?12l[?25h[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[6d(B[0;7mSave modified buffer?                           [7;1H Y(B[m Yes[K[8d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[6;23H[?12l[?25h[?25l[7d(B[0;7m^G(B[m Help     (B[0;7mM-D(B[m DOS Form(B[0;7mM-A(B[m Append  (B[0;7mM-B(B[m Backup F[8;1H(B[0;7m^C(B[m Cancel   (B[0;7mM-M(B[m Mac Form(B[0;7mM-P(B[m Prepend (B[0;7m^T(B[m Browse[6d(B[0;7mFile Name to Write: uuidfinder(B[m[?12l[?25h[?25l[6;17H[1K (B[0;7m[ Writing... ](B[m[K[1;33H(B[0;7m [47G(B[m[6;16H(B[0;7m[ Wrote 4 lines ](B[m[J[8d[?12l[?25h[8;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chomd +[K[K[K[K[Kmox[Kd +x uuidfinder l[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x uuidfinder 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ /.[K[K./uuidfinder 
+[?2004la529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x he[K[Kbyt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ chmod +x byt1 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lHej
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ ./byt1 
+[?2004l^C
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004l^C
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lHej
+Hej
+ENCYRP   RYPT_UUID
+1234
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [C[C[7@chmod +x [C[C[C[C[C[C[C[7P./[C[C[C[C[C[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lUUID är: a529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./uuidfinder 
+[?2004la529faababa
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./uuidfinder [C[C[C[C[6Pbyt1[C
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234=
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=1234
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=$uuid
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt1 
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp minconfig.conf [K{,/po[K[K[K.bak}
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ls
+[?2004lbyt1  minconfig.conf  minconfig.conf.bak  uuidfinder
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp minconfig.conf{,.bak}[C[C./byt1 [K
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt1 byt1 [K[K2
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt1 byt2[C[C[5P./byt1 [C[Ccp minconfig.conf{,.bak}[C[C[11P./uuidfinder [C[C[1@chmod +x byt1[C[6@uuidfinder[C[C[C[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[6Pbyt1[C[C[C[1P./uuidfinder[C[C[Ccp minconfig.conf{,.bak}[C[C./byt1 [K[C[Ccp byt1 byt2[C[C[K./[K[Kcode byt2 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababaabhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt2
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp byt2 c[Kbyt3
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ cp [K[K[Kcode byt2[K3
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ .-byt3[K[K[K[K[K-by[K[K[K/byt3[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=abhywt
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ ./byt3
+[?2004lLOGO=YES
+SOMETHING=YES PLEASE
+ENCRYPT_UUID=a529faababa
+MORE=NO
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ exi[K[K[K[K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ n=ubuntu
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n; docker ps[27m[C[Cdocker run $n; docker ps[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+dad9452343ad   mariadb   "docker-entrypoint.s…"   7 weeks ago   Up 5 hours   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp   mariadb-db-1
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ doce[K[Kcker stop ma[K[K[7mmariadb-db-1[27mmariadb-db-1
+[?2004lmariadb-db-1
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker psstop mariadb-db-1[C[C[C[C[C[C[C[C[Crun $n; docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n; docker ps -a[27m[C[Cdocker run $n; docker ps -a[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n; docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                              PORTS     NAMES
+32b4c96e05e9   ubuntu                    "/bin/bash"              1 second ago         Exited (0) Less than a second ago             relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago                 trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago          Exited (0) About a minute ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago         Exited (0) 4 months ago                       ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago         Exited (0) 4 months ago                       trusting_elion
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                       mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                       wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                       sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                       confident_turing
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run $n & sleep 0.3 && docker ps[27m[C[Cdocker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[K(B[m$ docker run $n & sleep 0.3 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@;[1P[1@&[1@&[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[1] 175423
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n & sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run $n & sleep 0.3 && docker ps
+[?2004l[2] 175719
+[1]   Done                    docker run $n
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+bf10fa2334d8   ubuntu    "/bin/bash"   1 second ago   Up Less than a second             zealous_jepsen
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [K(B[m$ [K(B[m$ dpcler[K[K[K[K[Kocker s[Kps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[2]+  Done                    docker run $n
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [7mdocker run -d $n; sleep 0.3 && docker ps[27m[C[Cdocker run -d $n; sleep 0.3 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[1@ [1@&[1P[1P[1@;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l39ab7bbc97bc3e4fa63eb5c8055b914d24390a70b889eaaedd80bf3974f5ff5d
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ lazry[K[Kydocker[K[K[K[K[K[K[K[K[K[Kdocker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l806c42a5eb5c1fbedb92b6e468d43fae15257a960e8bde9b2e225a64070fe373
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004lf35bbbef75f1f7257c08d85b4a5ffa1a34f8c0ffffb110946b78c2eeb596836a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l75f9b4b45fefe2e2364da3a1280f0f2c0c722904011555bcef36a801fd65c03b
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l2c340071692c4e89f6d3a6298cb4b2259eb616b91a8dba80aa048ff484c18651
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l81bb96bb6cd17dc9945681ee568acbe2bb2001156b341319a71852233dc9151a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004lb12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067f5e996bf
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps
+[?2004l2136593b774f4a24265dca464138511d64b805bf4876d14f38f0392f6a1e5cb2
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.3 && docker ps[1P[1@2[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -d $n; sleep 0.2 && docker ps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l87383fddc68e0f760084e6532c17f2cae365f3e45eb840e6836ccf90e9942eee
+CONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                  PORTS     NAMES
+87383fddc68e   ubuntu    "/bin/bash"   1 second ago   Up Less than a second             elated_driscoll
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ p[K
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps -a[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS                          PORTS     NAMES
+87383fddc68e   ubuntu                    "/bin/bash"              25 seconds ago       Exited (0) 24 seconds ago                 elated_driscoll
+2136593b774f   ubuntu                    "/bin/bash"              30 seconds ago       Exited (0) 30 seconds ago                 priceless_hoover
+b12623ea6bca   ubuntu                    "/bin/bash"              32 seconds ago       Exited (0) 32 seconds ago                 gracious_perlman
+81bb96bb6cd1   ubuntu                    "/bin/bash"              34 seconds ago       Exited (0) 33 seconds ago                 hardcore_banzai
+2c340071692c   ubuntu                    "/bin/bash"              35 seconds ago       Exited (0) 35 seconds ago                 jovial_gagarin
+75f9b4b45fef   ubuntu                    "/bin/bash"              37 seconds ago       Exited (0) 37 seconds ago                 sharp_wu
+f35bbbef75f1   ubuntu                    "/bin/bash"              39 seconds ago       Exited (0) 39 seconds ago                 eloquent_ardinghelli
+806c42a5eb5c   ubuntu                    "/bin/bash"              41 seconds ago       Exited (0) 41 seconds ago                 mystifying_mcclintock
+39ab7bbc97bc   ubuntu                    "/bin/bash"              About a minute ago   Exited (0) About a minute ago             awesome_napier
+bf10fa2334d8   ubuntu                    "/bin/bash"              4 minutes ago        Exited (0) 4 minutes ago                  zealous_jepsen
+d123c3f7397c   ubuntu                    "/bin/bash"              4 minutes ago        Exited (0) 4 minutes ago                  gracious_sammet
+32b4c96e05e9   ubuntu                    "/bin/bash"              8 minutes ago        Exited (0) 8 minutes ago                  relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              10 minutes ago       Exited (0) 10 minutes ago                 trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              10 minutes ago       Exited (0) 10 minutes ago                 wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago          Exited (0) 10 minutes ago                 mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago         Exited (0) 4 months ago                   ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago         Exited (0) 4 months ago                   trusting_elion
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                   mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago         Exited (0) 5 months ago                   wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                   sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago         Exited (0) 5 months ago                   confident_turing
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ 
+[?2004l[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man docker-run
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker-run  -  Create  and run a new container from an[m
+       image[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[7mual page docker-run(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kii[K[1;1HDOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run  -  Create  and run a new container from an[m
+[5;1H       image[m
+[6;1H[m
+[7;1H[1mSYNOPSIS[0m[m
+[8;1H       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+[9;1H       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+[10;1H       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+[11;1H       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[12;1H[1;1HDOCKER(1)            Docker User Manuals            DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker-run  -  Create  and run a new container from an[m
+[5;1H       image[m
+[6;1H[m
+[7;1H[1mSYNOPSIS[0m[m
+[8;1H       [1mdocker[0m [1mrun[0m [[1m-a[0m|[1m--attach[0m[=[4m[][24m]] [[1m--add-host[0m[=[4m[][24m]] [[1m--an‐[0m[m
+[9;1H       [1mnotation[0m[=[4m[][24m]]       [[1m--blkio-weight[0m[=[4m[BLKIO-WEIGHT][24m]][m
+[10;1H       [[1m--blkio-weight-device[0m[=[4m[][24m]]     [[1m-c[0m|[1m--cpu-shares[0m[=[4m0[24m]][m
+[11;1H       [[1m--cap-add[0m[=[4m[][24m]]  [[1m--cap-drop[0m[=[4m[][24m]]  [[1m--cgroupns[0m[=[4m[][24m]][m
+[12;1H...skipping...
+       [[1m--device-read[0m[1m[7m-i[27m[0m[1mops[0m[=[4m[][24m]]    [[1m--device-write-bps[0m[=[4m[][24m]][m
+       [[1m--device-write[0m[1m[7m-i[27m[0m[1mops[0m[=[4m[][24m]]   [[1m--dns[0m[=[4m[][24m]]   [[1m--dns-op‐[0m[m
+       [1mtion[0m[=[4m[][24m]]  [[1m--dns-search[0m[=[4m[][24m]] [[1m--domainname[0m[=[4mDOMAIN‐[24m[m
+       [4mNAME[24m]]   [[1m-e[0m|[1m--env[0m[=[4m[][24m]]   [[1m--entrypoint[0m[=[4mENTRYPOINT[24m]][m
+       [[1m--env-file[0m[=[4m[][24m]]  [[1m--expose[0m[=[4m[][24m]]  [[1m--group-add[0m[=[4m[][24m]][m
+       [[1m-h[0m|[1m--hostname[0m[=[4mHOSTNAME[24m]] [[1m--help[0m] [[1m-[0m[1m[7m-i[27m[0m[1mnit[0m] [[1m[7m-i[27m[0m|[1m-[0m[1m[7m-i[27m[0m[1mn‐[0m[m
+       [1mteractive[0m]    [[1m-[0m[1m[7m-i[27m[0m[1mp[0m[=[4mIPv4-ADDRESS[24m]]   [[1m-[0m[1m[7m-i[27m[0m[1mp6[0m[=[4mIPv6-AD‐[24m[m
+       [4mDRESS[24m]] [[1m-[0m[1m[7m-i[27m[0m[1mpc[0m[=[4mIPC[24m]] [[1m-[0m[1m[7m-i[27m[0m[1msolation[0m[=[4mdefault[24m]]  [[1m--ker‐[0m[m
+       [1mnel-memory[0m[=[4mKERNEL-MEMORY[24m]]  [[1m-l[0m|[1m--label[0m[=[4m[][24m]]  [[1m--la‐[0m[m
+       [1mbel-file[0m[=[4m[][24m]]  [[1m--link[0m[=[4m[][24m]]   [[1m--link-local[0m[1m[7m-i[27m[0m[1mp[0m[=[4m[][24m]][m
+       [[1m--log-driver[0m[=[4m[][24m]]     [[1m--log-opt[0m[=[4m[][24m]]    [[1m-m[0m|[1m--mem‐[0m[m
+[7mal page docker-run(1) line 19 (press h for help or q to quit)[27m[K[K/[K       [1mory[0m[=[4mMEMORY[24m]] [[1m--mac-address[0m[=[4mMAC-ADDRESS[24m]] [[1m--memory-[0m[m
+[7mal page docker-run(1) line 20 (press h for help or q to quit)[27m[K[K/[K       [1mreservation[0m[=[4mMEMORY-RESERVATION[24m]]           [[1m--memory-[0m[m
+       [1mswap[0m[=[4mLIMIT[24m]]     [[1m--memory-swappiness[0m[=[4mMEMORY-SWAPPI‐[24m[m
+       [4mNESS[24m]] [[1m--mount[0m[=[4m[MOUNT][24m]] [[1m--name[0m[=[4mNAME[24m]] [[1m--network-[0m[m
+       [1malias[0m[=[4m[][24m]]  [[1m--network[0m[=[4m"bridge"[24m]]   [[1m--oom-kill-dis‐[0m[m
+[7mal page docker-run(1) line 24 (press h for help or q to quit)[27m[K[K/[K       [1mable[0m]     [[1m--oom-score-adj[0m[=[4m0[24m]]     [[1m-P[0m|[1m--publish-all[0m][m
+[7mal page docker-run(1) line 25 (press h for help or q to quit)[27m[K[K/[K       [[1m-p[0m|[1m--publish[0m[=[4m[][24m]]  [[1m--pid[0m[=[4m[PID][24m]]   [[1m--userns[0m[=[4m[][24m]][m
+[7mal page docker-run(1) line 26 (press h for help or q to quit)[27m[K[K/[K       [[1m--pids-limit[0m[=[4mPIDS_LIMIT[24m]]   [[1m--privileged[0m]  [[1m--read-[0m[m
+       [1monly[0m]   [[1m--restart[0m[=[4mRESTART[24m]]   [[1m--rm[0m]    [[1m--security-[0m[m
+[7mal page docker-run(1) line 28 (press h for help or q to quit)[27m[K[K/[K...skipping...
+          Add  a  custom  host-to[7m-I[27mP  mapping  (host=ip,   or[m
+       host:ip)[m
+[m
+       Add  a  line to /etc/hosts. The format is hostname=ip,[m
+       or hostname:ip.[m
+          The [1m--add-host[0m option can be set multiple times.[m
+[m
+       [1m--annotation[0m=[][m
+          Add an annotation to the container (passed  through[m
+       to the OCI runtime).[m
+[m
+[7mal page docker-run(1) line 78 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       The proportion will only apply when CPU[7m-i[27mntensive pro‐[m
+       cesses  are  running.  When tasks in one container are[m
+       idle, other containers can use the left-over CPU time.[m
+       The  actual  amount of CPU time will vary depending on[m
+       the number of containers running on the system.[m
+[m
+       For example, consider three containers, one has a cpu-[m
+       share  of 1024 and two others have a cpu-share setting[m
+       of 512. When processes in all three containers attempt[m
+       to  use 100% of CPU, the first container would receive[m
+       50% of the total CPU time. If you add  a  fourth  con‐[m
+[7ml page docker-run(1) line 111 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m--device-read[0m[1m[7m-i[27m[0m[1mops[0m=[][m
+          Limit  read rate from a device (e.g. --device-read-[m
+       iops=/dev/sda:1000)[m
+[m
+       [1m--device-write-bps[0m=[][m
+          Limit write rate to a device (e.g.  --device-write-[m
+       bps=/dev/sda:1mb)[m
+[m
+       [1m--device-write[0m[1m[7m-i[27m[0m[1mops[0m=[][m
+          Limit  write rate to a device (e.g. --device-write-[m
+       iops=/dev/sda:1000)[m
+[7ml page docker-run(1) line 283 (press h for help or q to quit)[27m[K[K/[K[m
+       [1m--dns-search[0m=[][m
+          Set custom DNS search domains  (Use  --dns-search=.[m
+       if you don't wish to set the search domain)[m
+[m
+       [1m--dns-option[0m=[][m
+          Set custom DNS options[m
+[m
+[7ml page docker-run(1) line 291 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-[0m[1m[7m-i[27m[0m[1mnit[0m[m
+          Run an init inside the container that forwards sig‐[m
+       nals and reaps processes[m
+[m
+       [1m[7m-i[27m[0m, [1m-[0m[1m[7m-i[27m[0m[1mnteractive[0m=[4mtrue[24m|[4mfalse[24m[m
+          Keep  STDIN  open even if not attached. The default[m
+       is [4mfalse[24m.[m
+[m
+       When set to true, keep stdin  open  even  if  not  at‐[m
+       tached.[m
+[m
+[7ml page docker-run(1) line 367 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ man docker-run[C[C[2Pdocker ps -a[Krun -d $n; sleep 0.2 && docker ps[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[1P $n;[1P $n;- $n;i $n;[C[C[C[C[K[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i $n
+[?2004lls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+cd /etc
+ls
+alternatives
+apt
+bash.bashrc
+bindresvport.blacklist
+cloud
+cron.d
+cron.daily
+debconf.conf
+debian_version
+default
+dpkg
+e2scrub.conf
+environment
+fstab
+gai.conf
+gnutls
+group
+group-
+gshadow
+gshadow-
+host.conf
+hostname
+hosts
+init.d
+issue
+issue.net
+kernel
+ld.so.cache
+ld.so.conf
+ld.so.conf.d
+legal
+libaudit.conf
+login.defs
+logrotate.d
+lsb-release
+machine-id
+mke2fs.conf
+mtab
+networks
+nsswitch.conf
+opt
+os-release
+pam.conf
+pam.d
+passwd
+passwd-
+profile
+profile.d
+rc0.d
+rc1.d
+rc2.d
+rc3.d
+rc4.d
+rc5.d
+rc6.d
+rcS.d
+resolv.conf
+rmt
+security
+selinux
+shadow
+shadow-
+shells
+skel
+subgid
+subgid-
+subuid
+subuid-
+sysctl.conf
+sysctl.d
+systemd
+terminfo
+update-motd.d
+xattr.conf
+pwd
+/etc
+echo $SHELL
+/bin/bash
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i $n[C $n= $n[1P $n/ $nt $n[1P$n[1P$n[1P$n-$nt$n $n[C[C
+[?2004l[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# 
+[?2004l[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# ieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiuieuhjiuh ieuhieuh eiueheiu
+[?2004lbash: ieuhjiuh: command not found
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# [K^C[?2004l[?2004h[?2004l
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@e5ee2cb68c7e: /root@e5ee2cb68c7e:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i -t $n[H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i -t $n[1P $n[1P $n
+[?2004liuheiu iuheiuehiu iuehiueheiu^[[1;5D^[[1;5D^[[1;5C^[[1;5C^[[1;5D
+/bin/bash: line 1: iuheiu: command not found
+/bin/bash: line 1: $'5D\E[1': command not found
+/bin/bash: line 1: $'5D\E[1': command not found
+/bin/bash: line 1: $'5C\E[1': command not found
+/bin/bash: line 1: $'5C\E[1': command not found
+/bin/bash: line 1: 5D: command not found
+^[[A
+/bin/bash: line 2: $'\E[A': command not found
+exit
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ [H[2J[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ docker run -i  $n[1P[1@t[C[C[1P$n
+[?2004l[?2004h]0;root@b94dddfa87ed: /root@b94dddfa87ed:/# 
+
+ls
+ls
+ls
+hiu
+^C^C[?2004l[?2004h[?2004l
+[?2004h]0;root@b94dddfa87ed: /root@b94dddfa87ed:/# ^L  ^L  ^L  exit
+c
+
+exit
+
+[?2004h[94mITINF25/lektion5/stdoutbytfildel
+(B[m$ exit
+[?2004lexit
+
+Script done on 2026-02-02 13:19:58+01:00 [COMMAND_EXIT_CODE="137"]

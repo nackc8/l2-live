@@ -1,0 +1,817 @@
+Script started on 2026-02-02 14:09:04+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="63" LINES="12"]
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ dockr [Ke[K[Ker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS     NAMES
+3adbf48e7076   ubuntu    "/bin/bash"   2 minutes ago   Up 2 minutes             beautiful_mclean
+[?2004h[94mITINF25/lektion5
+(B[m$ docker attach be[K[K[7mbeautiful_mclean[27mbeautiful_mclean[H[2J[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean
+[?2004l[K]0;root@3adbf48e7076: /root@3adbf48e7076:/# [K]0;root@3adbf48e7076: /root@3adbf48e7076:/# 3adbf48e7076            ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     10       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     11       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     12       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     13       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     14       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     15       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd[H[2J]0;root@3adbf48e7076: /root@3adbf48e7076:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+     16       1 ps -e -o pid,ppid,cmd
+[?2004h]0;root@3adbf48e7076: /root@3adbf48e7076:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean[H[2J[94mITINF25/lektion5
+(B[m$ docker attach beautiful_mclean # TVÅ PROCESSER VID PS (1 egen tligen)[A[C[C
+[C[C[C[C[C[C[C  ^C[K[K[K[K[A[C[C#docker attach beautiful_mclean # TVÅ PROCESSER VID PS (1 egentligen[A
+
+[?2004l[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker exexc [K[K[Kc [K[K[K[K[K[K[K[K[K[K[K[Kdocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion5
+(B[m$ docker [K[K[K[K[K[K[Kdocker exec sad?[K_gauss[H[2J[94mITINF25/lektion5
+(B[m$ docker exec sad_gauss bahs[K[Ksh[1@+[1@i[1P[1P[1@-[1@i[1@-[1P[1@t[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@aa519539cbdd: /root@aa519539cbdd:/# [7mps -e -o pid,ppid,cmd[27m
+[Aroot@aa519539cbdd:/# ps -e -o pid,ppid,cmd
+[K[Aroot@aa519539cbdd:/# ps -e -o pid,ppid,cmd
+[?2004l    PID    PPID CMD
+      1       0 /bin/bash
+      9       0 bash
+     17       9 ps -e -o pid,ppid,cmd
+[?2004h]0;root@aa519539cbdd: /root@aa519539cbdd:/# [?2004l
+exit
+[?2004h[94mITINF25/lektion5
+(B[m$ docker exec -it sad_gauss bash # TRE PROCESSER MED PS )[K(en fö[K;r  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kör  bash som strt[K[Kartade containern. [K[K, en för den vi strt[K[Kartade med exec)  ^C[?2004l[?2004h[?2004l
+[?2004h[94mITINF25/lektion5
+(B[m$ [7mdocker run -v "$PWD:/work:ro" debian ls -la /[27m
+[A[C[Cdocker run -v "$PWD:/work:ro" debian ls -la /
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /
+[?2004ltotal 60
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 .
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 ..
+-rwxr-xr-x   1 root root    0 Feb  2 13:32 .dockerenv
+lrwxrwxrwx   1 root root    7 May 12  2025 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 May 12  2025 boot
+drwxr-xr-x   5 root root  340 Feb  2 13:32 dev
+drwxr-xr-x   1 root root 4096 Feb  2 13:32 etc
+drwxr-xr-x   2 root root 4096 May 12  2025 home
+lrwxrwxrwx   1 root root    7 May 12  2025 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 May 12  2025 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 media
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 mnt
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 opt
+dr-xr-xr-x 459 root root    0 Feb  2 13:32 proc
+drwx------   2 root root 4096 Aug 11 00:00 root
+drwxr-xr-x   3 root root 4096 Aug 11 00:00 run
+lrwxrwxrwx   1 root root    8 May 12  2025 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Aug 11 00:00 srv
+dr-xr-xr-x  13 root root    0 Feb  2 13:32 sys
+drwxrwxrwt   2 root root 4096 Aug 11 00:00 tmp
+drwxr-xr-x  12 root root 4096 Aug 11 00:00 usr
+drwxr-xr-x  11 root root 4096 Aug 11 00:00 var
+drwxr-xr-x   5 1000 1000 4096 Feb  2 12:46 work
+[?2004h[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /[H[2J[94mITINF25/lektion5
+(B[m$ docker run -v "$PWD:/work:ro" debian ls -la /work
+[?2004ltotal 24
+drwxr-xr-x 5 1000 1000 4096 Feb  2 12:46 .
+drwxr-xr-x 1 root root 4096 Feb  2 13:33 ..
+-rwxr-xr-x 1 1000 1000 1013 Feb  2 08:55 ball.sh
+drwxr-xr-x 2 1000 1000 4096 Feb  2 12:46 hej
+drwxr-xr-x 2 1000 1000 4096 Feb  2 13:09 recordings
+drwxr-xr-x 2 1000 1000 4096 Feb  2 11:54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ ls +l[K[K-l
+[?2004ltotal 16
+-rwxr-xr-x 1 kent kent 1013  2 feb 09.55 ball.sh
+drwxr-xr-x 2 kent kent 4096  2 feb 13.46 hej
+drwxr-xr-x 2 kent kent 4096  2 feb 14.09 recordings
+drwxr-xr-x 2 kent kent 4096  2 feb 12.54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ ls -lal[1Pl[Ca[H[2J[94mITINF25/lektion5
+(B[m$ ls -la
+[?2004ltotal 24
+drwxr-xr-x 5 kent kent 4096  2 feb 13.46 .
+drwxr-xr-x 7 kent kent 4096  2 feb 09.10 ..
+-rwxr-xr-x 1 kent kent 1013  2 feb 09.55 ball.sh
+drwxr-xr-x 2 kent kent 4096  2 feb 13.46 hej
+drwxr-xr-x 2 kent kent 4096  2 feb 14.09 recordings
+drwxr-xr-x 2 kent kent 4096  2 feb 12.54 stdoutbytfildel
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m          [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m
+               [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m
+               [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m     [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m
+               [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m
+               [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m
+               [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m
+               [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m
+               [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m
+               [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m
+               [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m
+               [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmd-doc-2-pdf-renderer:latest[0m
+               [39mc765345c0f01[0m       [39m4.64GB[0m             [39m0B[0m        
+[34m[1mmysql:8[0m        [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m      [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m   [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m   [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m        [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m
+               [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m
+               [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m
+               [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m
+               [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m
+               [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m
+               [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m
+               [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m
+               [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m
+               [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m
+               [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m
+               [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m
+               [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m
+               [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m   [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m
+               [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m
+               [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m   [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m
+               [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m
+               [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m
+               [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker images[H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                        [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                     [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                           [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                        [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                                 [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                        [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                        [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                    [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                              [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                  [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                       [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmd-doc-2-pdf-renderer:latest[0m                         [39mc765345c0f01[0m       [39m4.64GB[0m             [39m0B[0m        
+[34m[1mmysql:8[0m                                              [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                            [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                         [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                         [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                      [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                  [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                    [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                          [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                         [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                         [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                    [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m         [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m         [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m         [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m    [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                   [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                         [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                  [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                   [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                         [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                        [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                      [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                              [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker rmi [7mmd-doc-2-pdf-renderer:latest[27m[C[C[C[C[C[C[C[C[C[C[C[C[Cmd-doc-2-pdf-renderer:latest[H[2J[94mITINF25/lektion5
+(B[m$ docker rmi md-doc-2-pdf-renderer:latest
+[?2004lUntagged: md-doc-2-pdf-renderer:latest
+Deleted: sha256:c765345c0f0138b0941c20e0822020bd049730860b7d516cba23d37d2741c680
+[?2004h[94mITINF25/lektion5
+(B[m$ docker rmi md-doc-2-pdf-renderer:latest[C[C[C[C[C[C[C[C[Cimages[K
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                        [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                     [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                           [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                        [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                                 [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                        [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                        [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                    [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                              [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                  [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                       [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8[0m                                              [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                            [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                         [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                         [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                      [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                  [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                    [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                          [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                         [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                         [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                    [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m         [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m         [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m         [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m    [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                   [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                         [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                  [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                   [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                         [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                        [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                      [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                              [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker image[H[2J[94mITINF25/lektion5
+(B[m$ docker image
+[?2004lUsage:  docker image COMMAND
+
+Manage images
+
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+Run 'docker image COMMAND --help' for more information on a command.
+[?2004h[94mITINF25/lektion5
+(B[m$ docker image [Ks[H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                                                                                    [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                        [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                     [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                           [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                        [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                                 [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                        [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                        [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                    [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                              [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                  [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                       [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8[0m                                              [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                            [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                         [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                         [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                                              [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                      [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                  [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                    [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                          [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                         [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                         [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                    [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m         [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m         [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m         [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m    [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                   [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                         [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                  [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                   [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                         [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                        [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                      [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                              [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [7mwordpress:php8.2-apache[27m[C[Cwordpress:php8.2-apache wordpress:php8.2-apached wordpress:php8.2-apacheo wordpress:php8.2-apachec wordpress:php8.2-apachek wordpress:php8.2-apachee wordpress:php8.2-apacher wordpress:php8.2-apache[C wordpress:php8.2-apachei wordpress:php8.2-apachen wordpress:php8.2-apaches wordpress:php8.2-apachep wordpress:php8.2-apachee wordpress:php8.2-apachec wordpress:php8.2-apachet wordpress:php8.2-apache[H[2J[94mITINF25/lektion5
+(B[m$ docker inspect wordpress:php8.2-apache[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[
+    {
+        "Id": "sha256:c23b6f0d53579bc3465a96902ed1ce010940c3800071c0e0f21477e7a2541d75",
+        "RepoTags": [
+            "wordpress:php8.2-apache"
+        ],
+        "RepoDigests": [
+            "wordpress@sha256:c5f075fe71c9120e769edbf761bcf20bf0b73d72d49dfde042a06aafcdfef08d"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-08-12T18:29:25Z",
+        "Config": {
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+                "PHP_VERSION=8.2.29",
+                "PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc",
+                "PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c"
+            ],
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "StopSignal": "SIGWINCH"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 729877666,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/shared/docker/overlay2/e6a11de71a54143ef938f4b88719b8283d6fcf3642b18000dd74cd3c6369b905/diff:/shared/docker/overlay2/facc85e766895ee44c9f96d165e7f491dfc63f4ae9cac5c597c16ae1b3d43004/diff:/shared/docker/overlay2/138728d56dd334bbffd55d623e41b2efb1f352ab46e4ced8c234b416e47c8e62/diff:/shared/docker/overlay2/034f8005f8a32f2e9851ab1589416bb083dd7c419bd3bde05ea70a179fd53abd/diff:/shared/docker/overlay2/38e139492aa25be04f0489d5588a832b5ccea96e35ad16a4a7e28c53b0298093/diff:/shared/docker/overlay2/d4dc08d1e8fea86afbf3dbf7f211d0a5022268e88f3ba54e737dd86f2e72de93/diff:/shared/docker/overlay2/bdc8a8b614c52e26b076992635fb445768740bbbdc12c4da23678ae6fe01d5bb/diff:/shared/docker/overlay2/6e424c1904de0055ab385b17ece4d498707df9b9ad61f46c01de13fc276b98b7/diff:/shared/docker/overlay2/293fada28152476a8729b8be577fcbf3ff3edb5c3b5c9279fc2394761d0f2107/diff:/shared/docker/overlay2/5c03f9363d6caa96fb3d34ceb7bb6dadf11984c14fb05034a5aac4df31363aa6/diff:/shared/docker/overlay2/6da069f50fb46983d3f57127b50f01eaa797543401444a7c505cda2607ec6369/diff:/shared/docker/overlay2/05b1674d5ba59c08ade6dcad3d47bfca332370c248d15e812b65bdef5666fbf9/diff:/shared/docker/overlay2/164dc21961f0334051269bf865d07f54ee8b9ccf198cabf7879cbb1c4f263c61/diff:/shared/docker/overlay2/29cc12ad891a9e6f5b9d0166141caa6b73d813d465f49b137f28ef2a6be3706e/diff:/shared/docker/overlay2/61f22b70ccc9e010766923b9ce769ff5dcd99f2c1f5e054f7506a9e8f57cfb17/diff:/shared/docker/overlay2/b698235882e06f1faffaae637fcc69a645e6a36eb61e92d51d75e0211ce93ec3/diff:/shared/docker/overlay2/7760c5343cc40a315bff180e9614896fe9da54361afa89eaf1833683e9cd090b/diff:/shared/docker/overlay2/0ffef9528b16fcf4d6d895b1cd32815bc950729f1fc2b36f6b16a8aab60588e4/diff:/shared/docker/overlay2/9bb7dc8525870c336850075dac4f5dbd120a69ac080793996d112c2ea1789fef/diff:/shared/docker/overlay2/ab20351a7ff2d7cbce41d9348dd269ab1623abd366a37b4997bef3e5aff668b8/diff:/shared/docker/overlay2/7174d574a9e755b17620da7944c5629627c0d2d4821a920657895efb85126b99/diff:/shared/docker/overlay2/b85c60d6b880675cc458b327a81c471d73da3db87f0ba3c0f7e69e8003bf8217/diff:/shared/docker/overlay2/0acd28333a745e1d4421b5a2f739df9a6e26bfe62a935c39779577b5572dcfbd/diff",
+                "MergedDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4b44fd0ff989cdc9c6a7/merged",
+                "UpperDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4b44fd0ff989cdc9c6a7/diff",
+                "WorkDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4b44fd0ff989cdc9c6a7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e6a3842ebc7f5e41d8a38f19a0aa5ea56c255475695ac6682882420800cf5465",
+                "sha256:9bb7955bcd6eaf71e2d6dde73c7a58d2d814c14a3e70bdb21bfdfdd285fa704c",
+                "sha256:d572a2bc4cbb70dd25645f4342ca22c85200102b5787baf1a6ce9a197193ef6d",
+                "sha256:6d679245d443268cd3e15a527994e94643b3c6c5e9887d33fc33c681aa3626d3",
+                "sha256:a1826d414078c6f47af1928429635f1a18e9af167724776e3c12f7a516702368",
+                "sha256:23c71e9cc7bfc36d2abf0f301b6a091493627403f0016f53f061008172973d95",
+                "sha256:f85d6af0dd9d91a6e902048be6e793a9b7b3d53b90bb592f32c27f39bcc8c04a",
+                "sha256:64336ae76c0c94fcc39fff76e951b999f538fd7405a2f4606f03f9d462f9746a",
+                "sha256:7a9220ebbaeabd6445c48e838bbbbe87a8327f98996f4c94b85213223942a723",
+                "sha256:d4f6fcafeb109d8751303195370b14c88a3e7f26540701bf851cd2a72f342427",
+                "sha256:5da95962388bf421708dffb69ba05d433923fa6c63f5543b034b37b57e71afe9",
+                "sha256:750f0ae7ff69040317cb8a3d0de284670c918dd71937624133befeccaf9388e5",
+                "sha256:54895e312e4895be719a12b38665c7c8419132a2698c651442508c36b0dbfb15",
+                "sha256:85be1dc7918cf757f82e3064dd5936e3d5dbcb46bf3dd9d1171068099a7606ee",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:268a62eaf6d3398584dc0d664f7f8e5858bfb3d056b5183ee6372ca27dcd50ef",
+                "sha256:54e0cab81654827976d051e42f7caaeb58a8674d9e6905d6b4fa2bec20155a21",
+                "sha256:5fe802f77ae2003982717295dbefb80125b49bf28a26ba858ce296df1d471fc0",
+                "sha256:2f0e40998c8224f174d93d1f3def74100eeb9032a89ec720c0bb165a89b9143f",
+                "sha256:ba7d1e50abde01e1c0bec3e1e9e7e9ab45655cc659a359e9e17321fd40a56381",
+                "sha256:4ae64fcadf12335491eebd6e4f0aa7ee85ba6bbeff79dcace266dbeaffa5d007",
+                "sha256:d20dd3f025bc323ba96b14aa78921e383ef64f7aae4e2ff4ed184c418f75e4a9",
+                "sha256:8c03c1f7654b7f4162b9dfad6f32e3d91c3689f95de37483ebd3ecd5ba18320d",
+                "sha256:0e98916d5033b4788bbfb9685e243f1075b9895d8e733d603312b8053e7a308c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker inspect wordpress:php8.2-apache * [K[K| less
+[?2004l[?1049h[22;0;0t[?1h=[
+    {
+        "Id": "sha256:c23b6f0d53579bc3465a96902ed1ce010940c3800071c0e0f21477e7a2541d75",
+        "RepoTags": [
+            "wordpress:php8.2-apache"
+        ],
+        "RepoDigests": [
+            "wordpress@sha256:c5f075fe71c9120e769edbf761bcf20bf0b73d72d49dfde042a06aafcdfef08d"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-08-12T18:29:25Z",
+        "Config": {
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \ t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OF FSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_ OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+:[K[K [KESCESC[KOO[KBB[K                "GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9 :[K[K [KESCESC[KOO[KBB[KCF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_VERSION=8.2.29",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_URL=https://www.php.net/distributions/php-8.2.29.tar.xz",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_ASC_URL=https://www.php.net/distributions/php-8.2.29.tar.xz.asc",
+:[K[K [KESCESC[KOO[KBB[K                "PHP_SHA256=475f991afd2d5b901fb410be407d929bc00c46285d3f439a02c59e8b6fe3589c"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Entrypoint": [
+:[K[K [KESCESC[KOO[KBB[K                "docker-entrypoint.sh"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Cmd": [
+:[K[K [KESCESC[KOO[KBB[K                "apache2-foreground"
+:[K[K [KESCESC[KOO[KBB[K            ],
+:[K[K [KESCESC[KOO[KBB[K            "Volumes": {
+:[K[K [KESCESC[KOO[KBB[K                "/var/www/html": {}
+:[K[K [KESCESC[KOO[KBB[K            },
+:[K[K [KESCESC[KOO[KBB[K            "WorkingDir": "/var/www/html",
+:[K[K [KESCESC[KOO[KBB[K            "StopSignal": "SIGWINCH"
+:[K[K [KESCESC[KOO[KBB[K        },
+:[K[K [KESCESC[KOO[KBB[K        "Architecture": "amd64",
+:[K[K [KESCESC[KOO[KBB[K        "Os": "linux",
+:[K[K [KESCESC[KOO[KBB[K        "Size": 729877666,
+:[K[K [KESCESC[KOO[KBB[K        "GraphDriver": {
+:[K[K [KESCESC[KOO[KBB[K            "Data": {
+:[K[K [KESCESC[KOO[KBB[K                "LowerDir": "/shared/docker/overlay2/e6a11de71a54143ef938f4b88719b8283d6fcf3642b180 :[K[K [KESCESC[KOO[KBB[K00dd74cd3c6369b905/diff:/shared/docker/overlay2/facc85e766895ee44c9f96d165e7f491dfc63f4ae9cac5c597c :[K[K [KESCESC[KOO[KBB[K16ae1b3d43004/diff:/shared/docker/overlay2/138728d56dd334bbffd55d623e41b2efb1f352ab46e4ced8c234b416 :[K[K [KESCESC[KOO[KBB[Ke47c8e62/diff:/shared/docker/overlay2/034f8005f8a32f2e9851ab1589416bb083dd7c419bd3bde05ea70a179fd53 :[K[K [KESCESC[KOO[KBB[Kabd/diff:/shared/docker/overlay2/38e139492aa25be04f0489d5588a832b5ccea96e35ad16a4a7e28c53b0298093/d :[K[K [KESCESC[KOO[KBB[Kiff:/shared/docker/overlay2/d4dc08d1e8fea86afbf3dbf7f211d0a5022268e88f3ba54e737dd86f2e72de93/diff:/ :[K[K [KESCESC[KOO[KBB[Kshared/docker/overlay2/bdc8a8b614c52e26b076992635fb445768740bbbdc12c4da23678ae6fe01d5bb/diff:/share :[K[K [KESCESC[KOO[KBB[Kd/docker/overlay2/6e424c1904de0055ab385b17ece4d498707df9b9ad61f46c01de13fc276b98b7/diff:/shared/doc :[K[K [KESCESC[KOO[KBB[Kker/overlay2/293fada28152476a8729b8be577fcbf3ff3edb5c3b5c9279fc2394761d0f2107/diff:/shared/docker/o :[K[K [KESCESC[KOO[KBB[Kverlay2/5c03f9363d6caa96fb3d34ceb7bb6dadf11984c14fb05034a5aac4df31363aa6/diff:/shared/docker/overla :[K[K [KESCESC[KOO[KBB[Ky2/6da069f50fb46983d3f57127b50f01eaa797543401444a7c505cda2607ec6369/diff:/shared/docker/overlay2/05 :[K[K [KESCESC[KOO[KBB[Kb1674d5ba59c08ade6dcad3d47bfca332370c248d15e812b65bdef5666fbf9/diff:/shared/docker/overlay2/164dc21 :[K[K [KESCESC[KOO[KBB[K961f0334051269bf865d07f54ee8b9ccf198cabf7879cbb1c4f263c61/diff:/shared/docker/overlay2/29cc12ad891a :[K[K [KESCESC[KOO[KBB[K9e6f5b9d0166141caa6b73d813d465f49b137f28ef2a6be3706e/diff:/shared/docker/overlay2/61f22b70ccc9e0107 :[K[K [KESCESC[KOO[KBB[K66923b9ce769ff5dcd99f2c1f5e054f7506a9e8f57cfb17/diff:/shared/docker/overlay2/b698235882e06f1faffaae :[K[K [KESCESC[KOO[KBB[K637fcc69a645e6a36eb61e92d51d75e0211ce93ec3/diff:/shared/docker/overlay2/7760c5343cc40a315bff180e961 :[K[K [KESCESC[KOO[KBB[K4896fe9da54361afa89eaf1833683e9cd090b/diff:/shared/docker/overlay2/0ffef9528b16fcf4d6d895b1cd32815b :[K[K [KESCESC[KOO[KBB[Kc950729f1fc2b36f6b16a8aab60588e4/diff:/shared/docker/overlay2/9bb7dc8525870c336850075dac4f5dbd120a6 :[K[K9ac080793996d112c2ea1789fef/diff:/shared/docker/overlay2/ab20351a7ff2d7cbce41d9348dd269ab1623abd366 a37b4997bef3e5aff668b8/diff:/shared/docker/overlay2/7174d574a9e755b17620da7944c5629627c0d2d4821a920 657895efb85126b99/diff:/shared/docker/overlay2/b85c60d6b880675cc458b327a81c471d73da3db87f0ba3c0f7e6 9e8003bf8217/diff:/shared/docker/overlay2/0acd28333a745e1d4421b5a2f739df9a6e26bfe62a935c39779577b55 72dcfbd/diff",
+                "MergedDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4 b44fd0ff989cdc9c6a7/merged",
+                "UpperDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4b 44fd0ff989cdc9c6a7/diff",
+                "WorkDir": "/shared/docker/overlay2/aaa9da63bebc6748a7faa7d0cc5cb69c5d2fce8f54fb4b4 4fd0ff989cdc9c6a7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e6a3842ebc7f5e41d8a38f19a0aa5ea56c255475695ac6682882420800cf5465",
+                "sha256:9bb7955bcd6eaf71e2d6dde73c7a58d2d814c14a3e70bdb21bfdfdd285fa704c",
+                "sha256:d572a2bc4cbb70dd25645f4342ca22c85200102b5787baf1a6ce9a197193ef6d",
+                "sha256:6d679245d443268cd3e15a527994e94643b3c6c5e9887d33fc33c681aa3626d3",
+                "sha256:a1826d414078c6f47af1928429635f1a18e9af167724776e3c12f7a516702368",
+                "sha256:23c71e9cc7bfc36d2abf0f301b6a091493627403f0016f53f061008172973d95",
+                "sha256:f85d6af0dd9d91a6e902048be6e793a9b7b3d53b90bb592f32c27f39bcc8c04a",
+                "sha256:64336ae76c0c94fcc39fff76e951b999f538fd7405a2f4606f03f9d462f9746a",
+                "sha256:7a9220ebbaeabd6445c48e838bbbbe87a8327f98996f4c94b85213223942a723",
+                "sha256:d4f6fcafeb109d8751303195370b14c88a3e7f26540701bf851cd2a72f342427",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:5da95962388bf421708dffb69ba05d433923fa6c63f5543b034b37b57e71afe9",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:750f0ae7ff69040317cb8a3d0de284670c918dd71937624133befeccaf9388e5",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:54895e312e4895be719a12b38665c7c8419132a2698c651442508c36b0dbfb15",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:85be1dc7918cf757f82e3064dd5936e3d5dbcb46bf3dd9d1171068099a7606ee",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:268a62eaf6d3398584dc0d664f7f8e5858bfb3d056b5183ee6372ca27dcd50ef",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:54e0cab81654827976d051e42f7caaeb58a8674d9e6905d6b4fa2bec20155a21",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:5fe802f77ae2003982717295dbefb80125b49bf28a26ba858ce296df1d471fc0",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:2f0e40998c8224f174d93d1f3def74100eeb9032a89ec720c0bb165a89b9143f",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:ba7d1e50abde01e1c0bec3e1e9e7e9ab45655cc659a359e9e17321fd40a56381",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:4ae64fcadf12335491eebd6e4f0aa7ee85ba6bbeff79dcace266dbeaffa5d007",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:d20dd3f025bc323ba96b14aa78921e383ef64f7aae4e2ff4ed184c418f75e4a9",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:8c03c1f7654b7f4162b9dfad6f32e3d91c3689f95de37483ebd3ecd5ba18320d",
+:[K[K [KESCESC[KOO[KBB[K                "sha256:0e98916d5033b4788bbfb9685e243f1075b9895d8e733d603312b8053e7a308c"
+:[K[K [KESCESC[KOO[KBB[K            ]
+:[K[K [KESCESC[KOO[KBB[K        },
+:[K[K [KESCESC[KOO[KBB[K        "Metadata": {
+:[K[K [KESCESC[KOO[KBB[K            "LastTagTime": "0001-01-01T00:00:00Z"
+:[K[K [KESCESC[KOO[KBB[K        }
+:[K[K    }
+]
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker image prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:e1720c22c4f280f7e277d7479753dc61023f391faa5f3872b7cca761e0841aa6
+deleted: sha256:9172200d3b73047803b6e53fc8bb2040b3af83dcdb649d335e0642b01cd62ebc
+deleted: sha256:15784b53fa2622ff7cf38134b82d7beeb122941153953c4658e4ad11a62515ed
+deleted: sha256:8fbb02a81f7a364fe9bc67d51f7006a67902ef6b3b5a8b9f6257aca8b151e74c
+deleted: sha256:8c816793e3f39ee2d5bb58d8d66c960ebb9be3ab97525612ed437c0508d6ea24
+deleted: sha256:cb03e679557b10899928bc155e2c894fb017c892bb2b1df434ff8e1cada089eb
+deleted: sha256:e2310a8be0aeeffb629a7a06205d3821597eb2c0a0680a56fe81cf11fd4234d0
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion5
+(B[m$ doce[Kker images[H[2J[94mITINF25/lektion5
+(B[m$ docker images
+[?2004l                                                                               [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                                              [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1malpine:latest[0m                                      [39m9234e8fb04c4[0m       [39m8.31MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1marchlinux:latest[0m                                   [39m565265df5481[0m        [39m529MB[0m             [39m0B[0m        
+[34m[1mcow:latest[0m                                         [39m9c4816f8ad0c[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mcowimg:latest[0m                                      [39m70eb4e699fec[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mdebian:bookworm-slim[0m                               [39md60e93accd5d[0m       [39m74.8MB[0m             [39m0B[0m        
+[34m[1mdebian:latest[0m                                      [39m047bd8d81940[0m        [39m120MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mdebian:stable[0m                                      [39m3ac824b78d56[0m        [39m120MB[0m             [39m0B[0m        
+[34m[1mentrypoint:latest[0m                                  [39mdd0ccc107506[0m         [39m77MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mgitlab/gitlab-ce:latest[0m                            [39mdb5c72135fb3[0m       [39m3.75GB[0m             [39m0B[0m        
+[34m[1mjenkins/jenkins:lts[0m                                [39m091ba5742e7e[0m        [39m472MB[0m             [39m0B[0m        
+[34m[1mmariadb:latest[0m                                     [39mdfbea441e6fc[0m        [39m330MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8[0m                                            [39m45f1b9da918e[0m        [39m786MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mmysql:8.0[0m                                          [39m57c7595ac65f[0m        [39m781MB[0m             [39m0B[0m        
+[34m[1mmysql:latest[0m                                       [39m2c5440daffa8[0m        [39m921MB[0m             [39m0B[0m        
+[34m[1mnginx:latest[0m                                       [39mad5708199ec7[0m        [39m192MB[0m             [39m0B[0m        
+[34m[1mnode:20[0m                                            [39mc07ac7d6dbed[0m        [39m1.1GB[0m             [39m0B[0m        
+[34m[1mpgh_test_archlinux_latest:1ad81[0m                    [39m9414a77075d3[0m        [39m755MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_bookworm-slim:132d5[0m                [39m1fd51b2e279a[0m        [39m298MB[0m             [39m0B[0m        
+[34m[1mpgh_test_debian_trixie-slim:49381[0m                  [39m1bfe404ad894[0m        [39m143MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_24.04:652b7[0m                        [39m907df6ad3978[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mpgh_test_ubuntu_latest:990fc[0m                       [39mc2bb83f935ab[0m        [39m144MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin/phpmyadmin:latest[0m                       [39m0276a66ce322[0m        [39m571MB[0m             [39m0B[0m        
+[34m[1mphpmyadmin:latest[0m                                  [39m21c6d797c79c[0m        [39m568MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-2f0a7715:latest[0m       [39m881f6b5e9862[0m        [39m562MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-6db1751a:latest[0m       [39mb054d9006da6[0m        [39m546MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-e39f04f4:latest[0m       [39m98543f6dc7ac[0m        [39m664MB[0m             [39m0B[0m        
+[34m[1mplayground-hooks-integration-test-d44cbf12:latest[0m
+                                                   [39m41ac9b463e44[0m        [39m156MB[0m             [39m0B[0m        
+[34m[1mpres-quarto:latest[0m                                 [39mc5d867325fac[0m       [39m1.05GB[0m             [39m0B[0m        
+[34m[1mpublic.ecr.aws/docker/library/python:3.9.23-trixie[0m
+                                                   [39m87856a00ca33[0m       [39m1.09GB[0m             [39m0B[0m        
+[34m[1mredis:latest[0m                                       [39m9d1fe3a9a889[0m        [39m137MB[0m             [39m0B[0m        
+[34m[1mslidev-local:latest[0m                                [39m33fc79c05898[0m       [39m2.16GB[0m             [39m0B[0m        
+[34m[1mtest-debian:latest[0m                                 [39m3e8984c339ba[0m        [39m590MB[0m             [39m0B[0m        
+[34m[1mubuntu:24.04[0m                                       [39m493218ed0f40[0m       [39m78.1MB[0m             [39m0B[0m        
+[34m[1mubuntu:latest[0m                                      [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mumariadb:latest[0m                                    [39m4e2627c08ae7[0m        [39m448MB[0m             [39m0B[0m        
+[34m[1mwordpress:php8.2-apache[0m                            [39mc23b6f0d5357[0m        [39m730MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a[K(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED             STATUS                           PORTS     NAMES
+099fee160568   debian                    "ls -la /work"           33 minutes ago      Exited (0) 33 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la /"               34 minutes ago      Exited (0) 34 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/bash"              53 minutes ago      Up 53 minutes                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/bash"              59 minutes ago      Exited (0) 55 minutes ago                  beautiful_mclean
+b8d5c06ad9eb   alpine                    "ls --color=always"      About an hour ago   Exited (0) About an hour ago               gifted_mcnulty
+1964f7019cc1   alpine                    "ls --color=auto"        About an hour ago   Exited (0) About an hour ago               sweet_northcutt
+e0bde3236e74   alpine                    "ls -l /usr/sbin"        About an hour ago   Exited (0) About an hour ago               zealous_benz
+419753022f76   alpine                    "ls -l /usr/sbin"        About an hour ago   Exited (0) About an hour ago               festive_payne
+9dac979dea5a   alpine                    "cat /etc/os-release"    About an hour ago   Exited (0) About an hour ago               wonderful_chatelet
+c9061c49488a   alpine                    "hostname"               About an hour ago   Exited (0) About an hour ago               nifty_visvesvaraya
+df69b5391647   alpine                    "hostname"               About an hour ago   Exited (0) About an hour ago               nervous_austin
+bb9fde689c32   alpine                    "/bin/sh"                2 hours ago         Exited (127) About an hour ago             inspiring_stonebraker
+a0ffcbb83ca2   alpine                    "/bin/sh"                2 hours ago         Exited (0) 2 hours ago                     serene_almeida
+b94dddfa87ed   ubuntu                    "/bin/bash"              2 hours ago         Exited (137) 2 hours ago                   nostalgic_swirles
+2d52d823cfb6   ubuntu                    "/bin/bash"              2 hours ago         Exited (127) 2 hours ago                   funny_keldysh
+e5ee2cb68c7e   ubuntu                    "/bin/bash"              2 hours ago         Exited (130) 2 hours ago                   distracted_taussig
+eb23b6261296   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     goofy_visvesvaraya
+87383fddc68e   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     elated_driscoll
+2136593b774f   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     priceless_hoover
+b12623ea6bca   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     gracious_perlman
+81bb96bb6cd1   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     hardcore_banzai
+2c340071692c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     jovial_gagarin
+75f9b4b45fef   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     sharp_wu
+f35bbbef75f1   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     eloquent_ardinghelli
+806c42a5eb5c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     mystifying_mcclintock
+39ab7bbc97bc   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     awesome_napier
+bf10fa2334d8   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     zealous_jepsen
+d123c3f7397c   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     gracious_sammet
+32b4c96e05e9   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     relaxed_ritchie
+418dfe344268   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     trusting_khorana
+94d7846cdff0   ubuntu                    "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                     wizardly_elbakyan
+dad9452343ad   mariadb                   "docker-entrypoint.s…"   7 weeks ago         Exited (0) 2 hours ago                     mariadb-db-1
+e25dca4a1c02   entrypoint                "/bin/echo hello fish"   4 months ago        Exited (0) 4 months ago                    ep
+7f002123a7a3   264f05a43946              "/bin/echo -e"           4 months ago        Exited (0) 4 months ago                    trusting_elion
+1e0e6725c1fa   mysql:8                   "docker-entrypoint.s…"   5 months ago        Exited (0) 5 months ago                    mysql
+b92ea2378d85   wordpress:php8.2-apache   "docker-entrypoint.s…"   5 months ago        Exited (0) 5 months ago                    wordpress
+ea98153cf04b   debian                    "bash"                   5 months ago        Exited (0) 5 months ago                    sharp_vaughan
+0d246cf9bf42   debian                    "bash"                   5 months ago        Exited (0) 5 months ago                    confident_turing
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps -a | less
+[?2004l[?1049h[22;0;0t[?1h=CONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H                  CREATED             STATUS    [7m>[27m
+ /work"           33 minutes ago      Exited (0)[7m>[27m
+ /"               34 minutes ago      Exited (0)[7m>[27m
+ash"              54 minutes ago      Up 53 minu[7m>[27m
+ash"              About an hour ago   Exited (0)[7m>[27m
+olor=always"      About an hour ago   Exited (0)[7m>[27m
+olor=auto"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+tc/os-release"    About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+h"                2 hours ago         Exited (12[7m>[27m
+h"                2 hours ago         Exited (0)[7m>[27m
+ash"              2 hours ago         Exited (13[7m>[27m
+:[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[HD             STATUS                           P[7m>[27m
+utes ago      Exited (0) 33 minutes ago         [7m>[27m
+utes ago      Exited (0) 34 minutes ago         [7m>[27m
+utes ago      Up 53 minutes                     [7m>[27m
+an hour ago   Exited (0) 55 minutes ago         [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+an hour ago   Exited (0) About an hour ago      [7m>[27m
+s ago         Exited (127) About an hour ago    [7m>[27m
+s ago         Exited (0) 2 hours ago            [7m>[27m
+s ago         Exited (137) 2 hours ago          [7m>[27m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H                  CREATED             STATUS    [7m>[27m
+ /work"           33 minutes ago      Exited (0)[7m>[27m
+ /"               34 minutes ago      Exited (0)[7m>[27m
+ash"              54 minutes ago      Up 53 minu[7m>[27m
+ash"              About an hour ago   Exited (0)[7m>[27m
+olor=always"      About an hour ago   Exited (0)[7m>[27m
+olor=auto"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+/usr/sbin"        About an hour ago   Exited (0)[7m>[27m
+tc/os-release"    About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+me"               About an hour ago   Exited (0)[7m>[27m
+h"                2 hours ago         Exited (12[7m>[27m
+h"                2 hours ago         Exited (0)[7m>[27m
+ash"              2 hours ago         Exited (13[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H                 COMMAND                  CREATE[7m>[27m
+                 "ls -la /work"           33 min[7m>[27m
+                 "ls -la /"               34 min[7m>[27m
+                 "/bin/bash"              54 min[7m>[27m
+                 "/bin/bash"              About [7m>[27m
+                 "ls --color=always"      About [7m>[27m
+                 "ls --color=auto"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "ls -l /usr/sbin"        About [7m>[27m
+                 "cat /etc/os-release"    About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "hostname"               About [7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/sh"                2 hour[7m>[27m
+                 "/bin/bash"              2 hour[7m>[27m
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[HCONTAINER ID   IMAGE                     COMMAND                   CREATED             STATUS                            PORTS     NAMES
+099fee160568   debian                    "ls -la  /work"           33 minutes ago      Exited (0) 3 3 minutes ago                  nervous_payne
+3f94554c146e   debian                    "ls -la  /"               34 minutes ago      Exited (0) 3 4 minutes ago                  sweet_mclean
+aa519539cbdd   ubuntu                    "/bin/ba sh"              54 minutes ago      Up 53 minute s                              sad_gauss
+3adbf48e7076   ubuntu                    "/bin/ba sh"              About an hour ago   Exited (0) 5 5 minutes ago                  beautiful_mclean
+:[K[K [KESCESC[KOO[KBB[Kb8d5c06ad9eb   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=always"      About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               gifted_mcnulty
+:[K[K [KESCESC[KOO[KBB[K1964f7019cc1   alpine                    "ls --co :[K[K [KESCESC[KOO[KBB[Klor=auto"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               sweet_northcutt
+:[K[K [KESCESC[KOO[KBB[Ke0bde3236e74   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               zealous_benz
+:[K[K [KESCESC[KOO[KBB[K419753022f76   alpine                    "ls -l / :[K[K [KESCESC[KOO[KBB[Kusr/sbin"        About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               festive_payne
+:[K[K [KESCESC[KOO[KBB[K9dac979dea5a   alpine                    "cat /et :[K[K [KESCESC[KOO[KBB[Kc/os-release"    About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               wonderful_chatelet
+:[K[K [KESCESC[KOO[KBB[Kc9061c49488a   alpine                    "hostnam :[K[K [KESCESC[KOO[KBB[Ke"               About an hour ago   Exited (0) A :[K[K [KESCESC[KOO[KBB[Kbout an hour ago               nifty_visvesvaraya
+:[K[K [KESCESC[KOO[KBB[Kdf69b5391647   alpine                    "hostnam :[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ docker container prune[H[2J[94mITINF25/lektion5
+(B[m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+099fee160568a2dbf8c4ce1b1ca474af05d401ea5a2053b8eba2cc8b00d8b0d2
+3f94554c146e3d5664da86a13a64d0c5d5570247b007f6d72725f68a9df4e7b3
+3adbf48e7076d698a4e671b56fde26a5c1a60c857cd334bc88468fa0ff65fe23
+b8d5c06ad9ebed866a8b37bdfe3a5f50948cea2cfde18919d1802ce5a680b4ff
+1964f7019cc1906e1a024ea7f36fa7ca84fce3ba3fdf0931e4d5502f3bd834a3
+e0bde3236e746513f648fd4fb20e62a6b979dd721eaa35a8f96416d38839d295
+419753022f762f883e80aa5973f66e07cac5a5adafdce189ee79ea68f6b1aeae
+9dac979dea5ad0e2ce2021b396cdc972a57400da10129cedd629855d2341c7ab
+c9061c49488a3ea573b1d45ad6f02ae82036fd6d493d3446f1ef923804244450
+df69b5391647cb332f0b08c88a435dc1c590675679d56fa26476eb0f434f6166
+bb9fde689c3284898255e109ced70f2b37964046cb42bd2a1a9979d75716835f
+a0ffcbb83ca25ef627189dffaca2bb4aa7b599da2d13b5bdb90d3d9f1cbcfe12
+b94dddfa87edfaed19a1d0547e5ee29be85cefc6d6afd950c80be574971e421e
+2d52d823cfb62b37902f2a4335252285a47db90e1e97eb7d6bd94df3f937661d
+e5ee2cb68c7e14311dcd0086067c1111f32a81df2b843880e55f0df9c95a19ff
+eb23b6261296c0d4bc465ad0090a63e328d13f9c6ec83cf678f413e14816f99d
+87383fddc68e0f760084e6532c17f2cae365f3e45eb840e6836ccf90e9942eee
+2136593b774f4a24265dca464138511d64b805bf4876d14f38f0392f6a1e5cb2
+b12623ea6bca662064a9be953223ec5e070da37841632a56a17f8067f5e996bf
+81bb96bb6cd17dc9945681ee568acbe2bb2001156b341319a71852233dc9151a
+2c340071692c4e89f6d3a6298cb4b2259eb616b91a8dba80aa048ff484c18651
+75f9b4b45fefe2e2364da3a1280f0f2c0c722904011555bcef36a801fd65c03b
+f35bbbef75f1f7257c08d85b4a5ffa1a34f8c0ffffb110946b78c2eeb596836a
+806c42a5eb5c1fbedb92b6e468d43fae15257a960e8bde9b2e225a64070fe373
+39ab7bbc97bc3e4fa63eb5c8055b914d24390a70b889eaaedd80bf3974f5ff5d
+bf10fa2334d83c6c2bf79586840018ea42248dfb405552871f5264b57935c433
+d123c3f7397cef5cb13a27fbe7f18852d12e66fc3dac83163f0d4fb936c66b58
+32b4c96e05e901a1ff82098cfdc65673706c432ec593d347f2b431e88d8ea601
+418dfe34426845bc509ac9487a064f2d1b7e684da9be38fd398d1432bfa7bb87
+94d7846cdff053b278880b6725f9c4c5f3711d2f6ce36366534bb167eb65a283
+dad9452343ad21de34a5921b4deb7ab25a79819b9e321440b7accc81e27d3e7a
+e25dca4a1c026e13cfe9f473cf05cad5700ce1ff6cfa93d4c2e390b7df3b29a8
+7f002123a7a31832e9196bff47a8e3b5483cd6484e23a848cb2c973cdf3732e7
+1e0e6725c1fa367f7ef8702287566a3dc7df57d63ab72c72526a59faf337934d
+b92ea2378d85740c8b7d3facd844a1f67d429ce4c0052cdd8e9d598c79ea0e29
+ea98153cf04b870d405181a7f3a78ebe7efab71faf97ce083fba5c861b76e654
+0d246cf9bf420707130a0a21f06086b2bf832828fdb24bc30f16c945fc139cb4
+
+Total reclaimed space: 167B
+[?2004h[94mITINF25/lektion5
+(B[m$ [H[2J[94mITINF25/lektion5
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS     NAMES
+aa519539cbdd   ubuntu    "/bin/bash"   54 minutes ago   Up 54 minutes             sad_gauss
+[?2004h[94mITINF25/lektion5
+(B[m$ docker ps -acontainer prune[C[C[C[C[C[C[C[C[C[3Pps -a | less[C[C[C[C[C[C[C[C[C[6Pimages prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:264f05a43946f0f170e2356ca48a2cade55c78494b21ba07eceda0454fa452c3
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion5
+(B[m$ [K(B[m$ [K(B[m$ [?2004l
+exit
+
+Script done on 2026-02-02 15:34:13+01:00 [COMMAND_EXIT_CODE="0"]
