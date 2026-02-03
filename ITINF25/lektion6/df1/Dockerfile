@@ -1,5 +1,5 @@
-FROM alpine
+FROM debian
 
 # COPY ./minfil /
 
-CMD ["echo", "hej"]
+CMD ["echo", "hej debian"]
