@@ -413,4 +413,23 @@ Run 'docker network COMMAND --help' for more information on a command.
 [?2004lNETWORK ID     NAME      DRIVER    SCOPE
 70e54757eafb   bridge    bridge    local
 af00aa7844d0   host      host      local
-6ee00c8e0df9   none      n
+6ee00c8e0df9   none      null      local
+[?2004h[94mITINF25/lektion6
+(B[m$ [7mdocker network create my-network[27m
+[A[C[Cdocker network create my-network
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J[94mITINF25/lektion6
+(B[m$ docker network create my-network
+[?2004l894464f5e1b1e3b15af6adf390c44ce04924ac591b3a20309e046574bb1e7cde
+[?2004h[94mITINF25/lektion6
+(B[m$ docker network create my-networkls[K
+[?2004lNETWORK ID     NAME         DRIVER    SCOPE
+70e54757eafb   bridge       bridge    local
+af00aa7844d0   host         host      local
+894464f5e1b1   my-network   bridge    local
+6ee00c8e0df9   none         null      local
+[?2004h[94mITINF25/lektion6
+(B[m$ [H[2J[94mITINF25/lektion6
+(B[m$ [?2004l
+exit
+
+Script done on 2026-02-03 11:26:53+01:00 [COMMAND_EXIT_CODE="0"]
