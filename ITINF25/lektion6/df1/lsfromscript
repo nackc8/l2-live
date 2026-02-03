@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Ingen tty om körd som ett skript i egen process
+ls --color=auto ../
