@@ -332,4 +332,70 @@ deleted: sha256:04f7affb5a7ee54dbce293df63dd3accb79e04b20a2b94bbd0dd4413afe2e26b
 deleted: sha256:1bacc4a3d8b29a2cf9a509b21528c3ccc6164b914ef3675c2d8df9e1a7904fa6
 deleted: sha256:5ccc466e97d3ae3aca60b9c2eabb1d1719c91a38a932e13e15fa38a2327f947d
 deleted: sha256:3e636d881e6df78b18d600015a9fbe1de2efede66f8b43d14379b2229b562409
-deleted: sha256:27fce811a8f960e0512fb0394b5970e8f4da7ce84d43f28e233054aafb
+deleted: sha256:27fce811a8f960e0512fb0394b5970e8f4da7ce84d43f28e233054aafb369c46
+deleted: sha256:ba08cde3115deabc0f51bbea2cdcde58dccc4d682379b4c5be9f204e15f1a6ce
+deleted: sha256:ef77fc555a190e80f82443995c2dd82db09222de38a598ffde86d31abacfd59e
+deleted: sha256:8126d0c2b3e67ab785f9545914a022885767d41d86436bfc4c29e87bbfd37463
+deleted: sha256:12c155f89f98441ad780333cb6e61ca4c4f53f3a723c71a89211eb855185e597
+deleted: sha256:3353cbeecea8d369de0b4f9ba7859e9c26214f030f406a85334b7334ff951c26
+deleted: sha256:aeb7646bf08211c12b9bb9b6b7b8e2e164349702a319f427916c92d99726b233
+deleted: sha256:26075a059b0f689903d3671c619894cb6add86e54e13a5d7fb020d860b448d7b
+deleted: sha256:ea4a387429187c80c1af0d68d3b211274255c36169ca195c3a84e44989d1053a
+deleted: sha256:6f773904b4beca2ee5e8d06b24637fc947530a17d9b735a88dbb6ce48fb4981c
+deleted: sha256:3509d80aa811c9a5b0e677967a318f217ff0f6e234d95b085c8e02c109e85968
+deleted: sha256:91222a8a615643b78761749e60ca867ae4e62c4a0b0bbc276fd635bc080de791
+deleted: sha256:e6a3842ebc7f5e41d8a38f19a0aa5ea56c255475695ac6682882420800cf5465
+untagged: public.ecr.aws/docker/library/python:3.9.23-trixie
+untagged: public.ecr.aws/docker/library/python@sha256:10c3875a6435af5b2461c6f99c52bfa11716aae0ca8b27b77f81df9faab93b16
+deleted: sha256:87856a00ca33e6e7ccaec22761f885622035f2817eed36ebeea6aad6d3ab14e3
+deleted: sha256:d63faf6202875c3a9c373f13b37e0fd7e64bc0b5e58f2f3425311aff3d2203c7
+deleted: sha256:6c2bb714c1f40974fea474db1229e7724d35fb8ec65356caa3f346f007381ec8
+deleted: sha256:9cdd39c59dd5dc15406452a9d35a8b884949d286d937a7b4f5809197379f596b
+deleted: sha256:4e65c0510f8c22592464db0bb373e99224184267eec9f996c5de50ed7d194fad
+deleted: sha256:e0e35c74660cb2629bda541aedaf15401e3287a0947fb2e97f04e0351a3acc3b
+deleted: sha256:fee0f7166a1ec6858714827effcfc0757f33d255ca88bde2143984fc3d80b0d2
+
+Total reclaimed space: 10.56GB
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker image [Ks
+[?2004l                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m           [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mubuntu:latest[0m   [39me0f16e6366fe[0m       [39m78.1MB[0m             [39m0B[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker ps[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND       CREATED        STATUS                      PORTS     NAMES
+aa519539cbdd   ubuntu    "/bin/bash"   19 hours ago   Exited (137) 17 hours ago             sad_gauss
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker prune
+[?2004ldocker: unknown command: docker prune
+
+Run 'docker --help' for more information
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker container prune
+[?2004lWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+aa519539cbdda0a4a319281459a32ca7f653749e23409fc6015efb9e794fe881
+
+Total reclaimed space: 22B
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker ps -acontainer prune[C[C[C[C[C[C[C[C[C[10Ppruneimages prune -a
+[?2004lWARNING! This will remove all images without at least one container associated to them.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+untagged: ubuntu:latest
+untagged: ubuntu@sha256:7c06e91f61fa88c08cc74f7e1b7c69ae24910d745357e0dfe1d2c0322aaf20f9
+deleted: sha256:e0f16e6366fef4e695b9f8788819849d265cde40eb84300c0147a6e5261d2750
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker images
+[?2004l                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m   [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39
