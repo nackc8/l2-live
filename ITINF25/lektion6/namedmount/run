@@ -13,3 +13,10 @@ docker run --rm \
 	-v ./mindatakatalog:/app \
 	-e DEST=/app/ \
 	namedmountimg
+
+# Funkar också!
+docker run --rm \
+	--name namedmount \
+	-v mindatakatalog/:/app \
+	-e DEST=/app/ \
+	namedmountimg
