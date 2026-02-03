@@ -398,4 +398,421 @@ Total reclaimed space: 0B
 (B[m$ [H[2J[94mITINF25/lektion6/df1
 (B[m$ docker images
 [?2004l                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
-[39m[1mIMAGE[0m   [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39
+[39m[1mIMAGE[0m   [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ doc[K[K[Kdocker prune
+[?2004ldocker: unknown command: docker prune
+
+Run 'docker --help' for more information
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ l[K[H[2J[94mITINF25/lektion6/df1
+(B[m$ man docker
+[?2004l[?1049h[22;0;0t[?1h=DOCKER(1)                    Docker User Manuals                    DOCKER(1)[m
+[m
+[1mNAME[0m[m
+       docker - Docker image and container command line interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[m
+       [1mdocker[0m [--help|-v|--version][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdocker[0m  is  a  client for interacting with the daemon (see [1mdockerd(8)[0m)[m
+       through the CLI.[m
+[m
+       The Docker CLI has over 30 commands. The commands are listed below and[m
+[7m Manual page docker(1) line 1 (press h for help or q to quit)[27m[K[K/[Kpp[Krr[Kuu[Knn[Kee[K[1;1HDOCKER(1)                    Docker User Manuals                    DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker - Docker image and container command line interface[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[8;1H[m
+[9;1H       [1mdocker[0m [--help|-v|--version][m
+[10;1H[m
+[11;1H[1mDESCRIPTION[0m[m
+[12;1H       [1mdocker[0m  is  a  client for interacting with the daemon (see [1mdockerd(8)[0m)[m
+[13;1H       through the CLI.[m
+[14;1H[m
+[15;1H       The Docker CLI has over 30 commands. The commands are listed below and[m
+[16;1H[1;1HDOCKER(1)                    Docker User Manuals                    DOCKER(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       docker - Docker image and container command line interface[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mdocker[0m [OPTIONS] COMMAND [ARG...][m
+[8;1H[m
+[9;1H       [1mdocker[0m [--help|-v|--version][m
+[10;1H[m
+[11;1H[1mDESCRIPTION[0m[m
+[12;1H       [1mdocker[0m  is  a  client for interacting with the daemon (see [1mdockerd(8)[0m)[m
+[13;1H       through the CLI.[m
+[14;1H[m
+[15;1H       The Docker CLI has over 30 commands. The commands are listed below and[m
+[16;1H[K[7mPattern not found  (press RETURN)[27m[16;1H[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker sytem[K[K[Kstem prune --all[K[K[K[Ka[K--[Kall[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker system prune --all
+[?2004lWARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Networks:
+mariadb_default
+wpnet
+my-network
+
+Deleted build cache objects:
+hwz5t2nvyz6k9tudffjctyvl4
+ziuuws3mt0yswu42fv5y35acm
+hf225czeywx72r6lt37he5vaq
+ktwf5rvzm7oytd6i1xks5xd0z
+l9nogfwuj4dyaaqfb2pwypvkc
+sbc49dim2jj1nz9pe2fv95kkp
+xk9s8lueo1cs499jdhxiey9gu
+vtxk6pd1j5y31hv44ycp7zi4d
+fbxvhogvtogh7d18oehxw69qr
+yul240cohpto2yhb7r3ovepiz
+q93j2bnb40ntyys2m8y8e948f
+9cyxkwge3p5av2xr9pxi90ola
+dvl6x9mu7uarnl1adu9gvyeih
+sjgz72u5e14v26uyg43axf5n5
+suc98ci574ozuigedjvs4fgfh
+m659b5294auftwipds53n8dgb
+kdrzs1jqf1wcjvb8f3s6bx8ma
+w9aspwuo9p528pze8qc3yirtj
+owruic219ocqyvz4518ow7wdn
+uw031a9x6en9dcx9it81qm34v
+a32yemz96e1yfc0pp9dc7zjoy
+cy06db82pf67f964g80oue2hv
+uenobajhxrmp5jmw366m29s7o
+9rj69d3z9eftimbyhnhkpxtyd
+0kmlea66qez4803jh0olkbcp9
+66xijhbfvtnnvzbhnxysuubgq
+cndlal2mrd9soa72eb86morlb
+ba39mvob97knm08kk3374yh8j
+p3suir0dts0aezlmas13eie0q
+ic1z8t3qpdw8z49t7k6x97wmo
+gm3rpm659x9owz572gkjt3q81
+bt711h2l0339g82qcc063n7pm
+h8fqc46bfhn8rcoobrs2mgbpo
+yt6ja4npl1rrwz9spknvcsgmf
+6it8d5glvdkz9z8vqn0xm5c4z
+ryugxc29qs7h5fimesf2fntou
+wu693nsqw3rujkqkxeeo6pe9j
+c14x5672gcv5befievo6hecjd
+3l3xd711l41vr2bqqxc9mxk2v
+a9p2tr121jv0mm4gtty4kooia
+antpo9cue1ehgmy2dm7d2a2wn
+u69lxra87ompt9xfugjrt0517
+47boylnadtnnetrkyv2fnftvc
+jbj79zj4s72sbjm1xb119laym
+6jp6eopw21i9jvgsrb50kcdvb
+nok4n2jtp1e76lia3eey8x1no
+ozvt3sjed22t34a3v5sa7umpp
+il2l64odv8iw2ycm2xxl9ikj4
+ox1jqkkszo7wtwb0stac7rf1x
+no6wka47ge2mmu3yxw8zkzf2c
+tvq0g8cggbfxi4knndawpdj6m
+zfymb6cn0uumkx9ofsq8guzn4
+dy9kl20ykebam569a35w3qw51
+kg4s53wz7iqyxfkom2uqxn1zx
+zn7kdye6ily5gqt84yd8cafd7
+p97vrrjwljeyo6le0bg8gcxuq
+p9sv8j0q42e8ouo2kpgrz4j6m
+4cv6a2hrhya4if0kh2xc0nrgd
+jd2h7cr2xkue89zrj1h1si1ax
+thber6jgd2xje1j071d5eh97l
+qnf8aeiw886w7742ea9vhuqdr
+i84p2tyxs9mj3opz4155h3z2d
+00jptz045ou0e9b80glcsxyuo
+0xfu8suhuqycarz7mueotq11p
+5zdq5ccfnujclc2dt7zs66jx5
+x7zdtpdiff72gp868r8pi0nmp
+amjgdgv0k6xk76yw225k98n0x
+rrmwfizm7kepwauo2xpoordmz
+oz45liehdz0ubodccw26ovy64
+uyagwezhjc2rbv4pszizd6sqx
+sfngj8u7gr7rhw2itqqj1t55e
+p47akzfwylxifhc1clk9aib44
+vt4pnxrf8v2h8k009peduloqp
+ski1cgucuxbks2am5ejsobz5g
+i1h09xadf9mk374h8a1erubnu
+rtqzwaljxpigultsbunx6clir
+jvf2pyilk29wad05phte2m7h5
+numnjo42wql9kdffo1r5zthmx
+ra8eo96rt3ndr98shxv191zp7
+us3mdz5rzqf2vz0xfki5j7t3v
+n6dwvtvofj1u2s19fl5mtx46b
+rxrl69x6ruebsrxwfeau9obvo
+sfp5rzjzsitric72ri92jwzj7
+1xvt6i2b1ot6pvpi99ag7j5in
+qy55qegegsuc6p4abizpyf5tv
+kofqixxd4hlwjbknbjqeucsok
+yovv5kmhicfm3cpwwvkqopskl
+ep9h058ndbds2qkxz0h447cgq
+ir2x9nlrciawu470pgaacg1wg
+l28px29ffcl0vo6pswsvlthhx
+zzbhlohqx71cbu54q4vg0runt
+kysszm49jo2p91xbgm1n6505p
+bfrjtjnjma1iw5lta3zmlg9nv
+pg2b0k79yg41yphtqnlnkhpaf
+9j9nset1mh2jmxe1xymblfyyy
+dkr4s3romyngg9rfs614ym1lb
+jlpc54ynybhjwtjoktjhomjmu
+w79rlb9wv4htmx8jyd0781pqd
+y529fbmcyj6uey7l370lwfwix
+yfpkkak28lgg09ac9lui9tj04
+2cimpha0daeahli0oyxqwnqee
+r95yzbxus6q3sjotzjp8y7mk0
+9664y6b0mlt8t19jcawarz73d
+bxo2394oi2dmcb9bsi1o6mkzk
+hfmj44wpps7xz94ngk0of5z6m
+iqluk1jl5vs1y7keustjadntc
+zejepvg0vg9ipvicq00fnus02
+y3rywge38mqfspt9yezysl5lg
+o5s12s58vctnhat25sk74vvhr
+rb5jgmed4vhyes26d2mh4pe0o
+ctnu29zzk0xtq4lezjhrgpb30
+45o46wolaspgy40h5dnkiuni6
+rk7v749y7zxz8rm7zhrejhryc
+1mugzsmivf0k7w895gcga26a9
+t6fdhicn723xqff1dqdb196hi
+5kmuksncr1nrgo5g7t5ij5nie
+wv30s8as4styme3hbn3qt233a
+s72vnqp6c6vnx2llqrd6rhcnv
+kn5rz89e0u8m4u1ba9uvsvstd
+cq825xn70h7vue5k2yoo1x9wj
+5ra111qw82sdct4bbbs9p9xl7
+i1k5myarjmt1pn8s6d1xewzrn
+j4ywx9vpygq7m2ntjmcnglqsy
+56qsjirs7yj5ncjvxvffvwnlv
+bohmc01dihnos6bwvtiyxn056
+wzb98hmncjya97giussbdqu8a
+4ipclq5eib2c85u3g165xu1ga
+ln874xjfbm7vtqjl5nhojb1a9
+dzqizk9w4eyjtrjairj8bwwd3
+r9f7itbkcqslnyu705b90mm36
+71lir2rkg87gc2cklhhduq89k
+qsriwsjomuczakqo4xqwfui4b
+nwemaqrb3gwzqvb7ky9ap0kfm
+wgzfm97b2egvox9m82v0i545z
+zex47zberzol2g2tyqy93ebpt
+nu2o8iume2hesrwgh1728pzor
+xzrm622rjb5hrpobkpwygv5o4
+hvyeawhsy4v271mnywk822cvf
+26g4pbo06tz0g49nsok53y1o3
+le0eik1cb63t8tny2ah6mbup7
+pwaef5ux6xoe37j7s7p8k9bt5
+cegl6806ilikpmsa582rq27gj
+pvsbgsrtt279xqo9f3cy5f9cw
+mw45pduirwyg49p16flhxxaxg
+typyptgfbdb23c01odoshl04d
+7ivwkfixvpvdlamrbsb1sycci
+ll98aisn3t92ovidf736lkmzv
+fza4yaosg298uhakidjvck5hk
+haic48czl9af2zex96n29a2r4
+lbvcjdyjzlcl4qlsdyg6kwemw
+t9dtvwzzz516xl86t897j3sad
+cg24armyjp5i3nshadateusui
+l3y93jh171ykn5rgqaj8rrktv
+wcav4bhssrbs1vcydwdyoe6q2
+rmoqd83dlc9d6p7jmm338swxo
+si3xs4tos50btxn74u1jfcv3r
+soghpibjbx2r04kqx8xzhyo3z
+x4w2itqytvcrkh5kk5rxx18d8
+hi5ttoyfxe2n8u8cp9vysi2nh
+i4y197epdzw2f7rguqxmvhs88
+xd5fn2qp0pd4m27eqojql8a8o
+6t11z0f6b4c3vmujt344kf4nl
+qqcx3kxwn70mdfkm26jh4noe8
+gg4r2q39ablmzqi3f45h8xsvx
+mass30p1se79n0u7d13pmxgy9
+oxpf4dxgugj04fs9ib0gnf1qn
+voiiycda7eqlzpbgip0rem2wo
+xto33pakrp9t2ayg2tsuh0kdl
+xwwp7i1av0k5jpsmbwnl0mys9
+l4ldozd7x0wfcysbujb2zhw89
+rt2gfje0ndfoym9hjs20twc7n
+k165v8n1vjh14qqrjya290ish
+dd1wnmqstess3v9vxeqivey17
+zz0jy74vpgrzr14xr3e6au9m8
+zr4m2igrxm3akiyrr0x10xm00
+9mbsanqfv0zfrl7lx2ms8rz5d
+hid5yja9ehjr2kwu6i9fajs89
+cfvfuyqn697cs7r1z0cx9l3cs
+uheq58ears44c0nge17vpv2j2
+xx5hdw6llfdf5f5l55byqxa1l
+m3wheku85hb3q0rbwvdvq4ol8
+l5824rr8kji06v9ifpptqfzz9
+j7wpxqzddukwekauojbc4q30j
+k54t9lczu1jz4jde09sje5jbl
+p02xlowds9xqckx6fc6c2hij6
+yf5ozjn8tkdde890sty6sj44e
+h1lewlkl6ap9bky7cstljbpba
+q6n2eedhwr7r1jic27enft88z
+i1udb1jy1ycmm105w7xxxzrth
+nha0jk91nu3m5r5ce0gn2regz
+ky8x18907ah2hvrlcbh4zxxeo
+zvwxcle710gwvybyf0x0atv4i
+hh1irejkbw40dxph921rdsx7h
+rudierfww7vozk2bj1ofjmfwe
+q7hz0g7it68kt3i9um8cvzd8k
+30tro39gacq3x8qyxnx3h0u1t
+itam5bdpf0tq2lrfe80ysd56p
+wzinnhfn02qcafbykoeultjh1
+ymbgmpdxhlhyybkx110nsvcdu
+ybt2hvsel63x4e4j90sipkd47
+qtuz5zerz1ds0z4yfq9vrr2h8
+c9ruhq9u4ywg1znvswfdj8xdm
+m5ns640wuy00d29vj1420ses3
+qij8a6bzoiun7bxuhdm6qpr5t
+nxrdgdsyzqg6ao2m57jjurqwy
+rwhxv2dlfgnzogywjvk88sblo
+x2j2xpv5f7knys57snlef6qik
+oyd7qqu3ta2j0f1huq5oi895t
+uwue122s3yw2tyfgsbmdtehv9
+nzihxgppkv9460n2bz6lq3nty
+mnngz29mfivqck8zau29cpjg6
+km14adbaaotkra00suqz6pavz
+hy7c6w4ei55r12lwjixs10stq
+y0rk4qjkfy2vy2kxyv22xhw72
+lqljofj27d4yatxlicorjv6j2
+i6hi21lfmhgzqpf6f0quxmzzk
+tt12cmpev3hndsctdw0qva5yr
+182abyzuuh8kovfc0d8ztzpnn
+f0wlx7z3bh1ei7gjk3mvnzf63
+iaazeu9ewkfrfbgfny6vnohtu
+397v6wemti10jpcnyp386c9vg
+hu9fvchg57o078nz714yncpoe
+f114a738d0uks3riaiyslwvls
+r9otkkcbyk01tdzo6lrtpu5vr
+0q8ppxvl9jiud58quq1clnzmk
+mxhwdtxobjmusqtx9fwfhn88l
+xcclmjlu35vhry6qly4r6rdvk
+y7i2xwxzxq9mwxecwblo8o6ml
+dmsk4ms2odb3iqy7j5kv2dwu3
+zph0yk8r4mnbue6q3ka3ubrzt
+mva6ew76wr4otppzdnpjqqob1
+2slubciaj6t745whg6kdbsobe
+4le8iiagnzrb0kbxhalorf9jt
+wdxx1soetr3uigare2gt5dw5j
+51yu714864veegm3c7iiafagh
+ify9xa4nfnotqpme53f6mpncr
+knppxq7ip44nnmu742d5c0bbt
+gjl9ph0t392cnf2g7bghy86vf
+4sxzeqvt25bgr5fwh4cqprped
+fzo819v3g81la9pr9ma89xofs
+o0ufi3x8yx1yrm7l67hzvo3wb
+fk8j2nb8ewi2nc9pb9pnc4bxj
+om0c0qs777ganm24o1j9tg8fj
+fh8s5h7owi5nieveo9axsszs6
+sf9d8hwfq8wiknqczawefcmxk
+0m2djono0ppabrqwh1ne78uvj
+56c2290cjm5s7csj31pxb2u6m
+jclvn3vxflw5ttezaie87ph1o
+gv13x3zr2emyq6llf79ki0gfw
+ivqsh4zelzaeketqvih13vjjg
+r5vwncu17kvdw19z4tn5nxylt
+js8q4rdmk92egwva4cegsar9x
+9xeqe58n424g6q9jni5ejdpv8
+lawn0nt2czbea84o654f59o03
+vwlm99qc6t9x5vmcafdydej50
+si3nu5dupxvedba4njadmhue1
+whl9yqwgjrbchp4bboub9fmc2
+wrfwrae56en3gmqm3y8tse5p4
+vluxge7mk5zua0k1o9fbcapyw
+wv19n2h8wq1aczo0yl6sohzy3
+7bagte12ev36xkd4ie0ipkxs4
+f088ly68iimerc88qti2yijfw
+qeba1pgwxbrboqoar9smytk0i
+031oc5youzkjpu9ufnnzdzwbp
+4zljsw98wmmfb286gvjwb8oxo
+s183od173gh43ti07isqr3pnb
+uczlzbqn6o9pbyuo8g3nx9mgh
+atxc2ls7wcii7t09x2900487d
+veviiwlexwhfrymjuz39jrdog
+is3si03gk9xjt8n81zwv6gu22
+hbw1ryz40ktq8khvc1yr6q9hx
+i8e1scbcta4ffmtd30p7ht7si
+8ms2kgejhas9vemr4z20qr1oc
+q63wu7qde8p1vseusewmngz5t
+t2u0lawkopva3ch22vlk79do3
+w89a1fq9fqsx31w328tjovf3t
+rlf6dws33auokgzzuwxaoaucp
+y2k8h1de6r6zml28o29yfsxcw
+mgyaj9dnbsx2rix8j8o9dpouj
+hzmaf6ph5h3unn6jlnb1cg9u7
+kmbbrjfgo2zkkmf8nwh3p9sdb
+l47pgd12q4jb81shgi70h87qg
+y5at80gq88bqd2gzqzd2a4i72
+09zn2vt4n0pwxo692eexl9n3f
+o27yx0tq174zclavpv0ngs4rq
+9b1s5wda8czv4w4s6ad9hm283
+dbxq49fbash2h37n2ww46qua2
+af8kwe6zvpqldj2lxenufh3mp
+yzch9n7yjrsnfjrsym3pkfzdu
+5ynjg8gp3zmnu2g7otzxu7bqa
+bl0e8d05flr9s8kghzbiu3ifh
+xkh1vtbvo96jxg88t4cgoy87y
+5qafxvcd1e5yy0kmvet1ksk8p
+u2awj7ra8sr19v7cw5te1h85q
+ftj88t41loauw46226mag7bci
+m5pngjik0i8xvzopmrg94ysp1
+pyp1mm6b3bknkrpnkhcgp2dtx
+vmhga20p2oxmzjbgh6o54bu84
+swd4xd1e50cvwjnopzz8w39ia
+pg1waunr99e6hcpxgnlg0eoxp
+sgdcnzmmwo43lobsd1qb6guw6
+h82zz1c6h74gak1do36ln2f7q
+j3p2x6u47h4eoz2vfp28z22vk
+msl7v8ilxy7puzyd7c2uuua4n
+xrl0r8w81hjucc9sm5958ovwz
+k3kkvzg4vbz4ou7zgnvtzow0c
+23ntuwiaotw8qx6bmxb0ik3sy
+3ceso64qslnoq8rvdsrto74ol
+42aekwb1kwvmof5k0ruxg0y2w
+nicdzduwn6aol78vb4kx73rdk
+o5guj6xxuf8ephny8avmxvxpz
+8ek49fyywxvqarhrepkp9ayxz
+r1q969m9otx0r74ilcy5i1oq0
+rde482cjvyydr8qlvfzo9huj7
+ulhvcu9xq2jgg3yk3tz0c49yj
+umah0s0n8ewucqmgvmnr4age5
+ngw3vv1u810id2w7zlmvxi5uj
+zd7yvcz5mf7waxch8o62zvwvp
+xyggjrvpml2arxapkf2a7vgc5
+0s9lau1f7rqc5lztlypu8o8gh
+m1gr3mhbpporzlrf6bpl4gdbx
+175kzwurki8lkbc7yo64sx0xn
+72xit6d1lu6zgldgddq5m45tw
+w2ahh8otperymeacs6hc47138
+ldeow619pj5cfyf491n97xigc
+jnus8xhqzmk859r0agv0x7by2
+o1j23hv4hqj6eoxow1te7k31q
+fwfty8lq5cjjptg96nl35771x
+0l9sdo1t3cx5a700pt2wb338z
+l1paw2fuutc4jloxtxl2bdhqo
+xybu751drk7oa853a10l0rhef
+3at4psa5ap5us5arhvpign3s6
+4si9q2p5jub8as9p7snuck5j4
+sm2xgghu4cags036hbb78lxdq
+5w2758snjpzdb0yywxgcthprs
+orkrgqgrwx3gfv32jmhkysks9
+ycg1cyvyuce86f6zw9tvlby0q
+ndq4nzh7efircylro2b15vuzl
+3wtv4ev2z00ce2d52s3n3nv7k
+myc1chs6g4ombgvfebddn3gae
+6paioccsgznmgugflq7awe74o
+qfdapq9su32v15gk2boyq8c80
+v342jumrq9y80lqgm2kv7y1x6
+m9to7q57whla83ad4auvgniz6
+m1rslwlcikwkw6au3vt1r52wo
+6bx2r4kxc8w42y7b64dl1m0qp
+san52ashdouamjhu7ggq04tn6
+nsz
