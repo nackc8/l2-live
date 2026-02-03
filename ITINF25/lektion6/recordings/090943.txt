@@ -6371,4 +6371,166 @@ Status: Downloaded newer image for ubuntu:latest
 [?2004lsuperdelat
 [?2004h[94mITINF25/lektion6/df1
 (B[m$ docker volume create superdelat[C[C[C[C[C[C[C[C[Crun -it --rm --name myvolymsrv -v finfil:/delat ubuntu[H[2J[94mITINF25/lektion6/df1
-(B[m$ docker run -it --rm --name myvolymsrv -v finfil:/delat ubuntu[1P[1P[1P[1P[1P[1P[1@s[1@u[1@p[1@e[1@r[1@d[1@e[1@l[1@a[1@t[C[C[C[C[C[C[C[1P ubuntu[1P ubuntu[1P ubuntu[1P ubuntu[1P ubuntus ubuntuu ubuntup ubuntue ubuntur ubuntu1 ubuntu[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@d[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(B[m$ docker run -it --rm --name myvolymsrv -v finfil:/delat ubuntu[1P[1P[1P[1P[1P[1P[1@s[1@u[1@p[1@e[1@r[1@d[1@e[1@l[1@a[1@t[C[C[C[C[C[C[C[1P ubuntu[1P ubuntu[1P ubuntu[1P ubuntu[1P ubuntus ubuntuu ubuntup ubuntue ubuntur ubuntu1 ubuntu[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@d[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@eaf97e5627e0: /root@eaf97e5627e0:/# cd /super1/
+[?2004l[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# ls
+[?2004l[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# echo ""$"("h"o"s"t"n"a"m"e")"):" "H"e"j"!" "" >> chat.txt
+[?2004l[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# [Kcat chat.txt 
+[?2004leaf97e5627e0: Hej! 
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# ls
+[?2004lchat.txt  counter.txt
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# cat counter.txt 
+[?2004l1
+2
+3
+4
+5
+6
+7
+8
+9
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# cat counter.txt [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# cat counter.txt 
+[?2004l1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# t tail counter.txt [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail counter.txt 
+[?2004l17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail counter.txt [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail counter.txt 
+[?2004l20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail counter.txt [1@-[1@f[1@ [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail -f counter.txt 
+[?2004l27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+^C
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail -f counter.txt  -f c [1@ [1@-[1@n [1@ [1@2[H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail -f -n 2 counter.txt 
+[?2004l70
+71
+72
+73
+74
+75
+76
+77
+^C
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail -f -n 2 counter.txt [1P[1@4[1@0[H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# tail -f -n 40 counter.txt 
+[?2004l45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+^C
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# [H[2J]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# ls
+[?2004lchat.txt  counter.txt
+[?2004h]0;root@eaf97e5627e0: /super1root@eaf97e5627e0:/super1# [?2004l
+exit
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [?2004l
+exit
+
+Script done on 2026-02-03 11:35:16+01:00 [COMMAND_EXIT_CODE="0"]
