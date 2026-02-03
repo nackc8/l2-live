@@ -4098,4 +4098,97 @@ Run 'docker --help' for more information
 [7m  -p 8080:80 \[27m
 [7m   phpmyadmin[27m
 [H[2J[94mITINF25/lektion6/df1
-(B[m$ [7mdocker run -d --name phpmyadmin 
+(B[m$ [7mdocker run -d --name phpmyadmin \[27m
+[7m  --network my-network \[27m
+[7m  -e PMA_HOST=mysql \[27m
+[7m  -p 8080:80 \[27m
+[7m   phpmyadmin[27m
+[A[A[A[A[A[C[Cdocker run -d --name phpmyadmin \
+  --network my-network \
+  -e PMA_HOST=mysql \
+  -p 8080:80 \
+   phpmyadmin
+[A
+[?2004ld2397ffd2fd4119e640d79f5d23fa5efcf15033b1ff44812c132c5d068b52bcf
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+d2397ffd2fd4   phpmyadmin   "/docker-entrypoint.…"   15 seconds ago   Up 14 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   phpmyadmin
+20b52ba6c0a0   mysql        "docker-entrypoint.s…"   51 seconds ago   Up 50 seconds   3306/tcp, 33060/tcp                       mysql
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+d2397ffd2fd4   phpmyadmin   "/docker-entrypoint.…"   20 minutes ago   Up 20 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   phpmyadmin
+20b52ba6c0a0   mysql        "docker-entrypoint.s…"   20 minutes ago   Up 20 minutes   3306/tcp, 33060/tcp                       mysql
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker stop [7mphpmyadmin[27mphpmyadmin
+[?2004lphpmyadmin
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker stop phpmyadmin[K[K[K[K[K[K[K[K[K[Kmysql[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker stop mysql
+[?2004lmysql
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker sp[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker sp
+[?2004ldocker: unknown command: docker sp
+
+Run 'docker --help' for more information
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker sp[K[Kps[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     2fc39cd1998c6dce0c4938b5d65e46eaa86c79e26d427b84424ac3c342803070
+local     cf0537c851583bc89dd0234946f22ca59f15f137a8d233f3f182e6d094571b3f
+local     hittamig
+local     mariadb_mariadb_data
+local     mysql-data
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker volume ls[K[Kprune
+[?2004lWARNING! This will remove anonymous local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+2fc39cd1998c6dce0c4938b5d65e46eaa86c79e26d427b84424ac3c342803070
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker volume prune[3Pls[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     cf0537c851583bc89dd0234946f22ca59f15f137a8d233f3f182e6d094571b3f
+local     hittamig
+local     mariadb_mariadb_data
+local     mysql-data
+local     wordpress-db
+local     wordpress-files
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker volume lsprune +a[K[K-a[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker volume prune -a
+[?2004lWARNING! This will remove all local volumes not used by at least one container.
+Are you sure you want to continue? [y/N] y
+Deleted Volumes:
+hittamig
+mariadb_mariadb_data
+mysql-data
+wordpress-db
+wordpress-files
+
+Total reclaimed space: 647.1MB
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker volume prune -als[K[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     cf0537c851583bc89dd0234946f22ca59f15f137a8d233f3f182e6d094571b3f
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker bo[K[Kvolume create mysql+[K-data
+[?2004lmysql-data
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker volume create mysql-datals[K
+[?2004lDRIVER    VOLU
