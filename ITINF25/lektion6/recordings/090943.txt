@@ -1701,4 +1701,53 @@ Total reclaimed space: 52B
 [0m[34m => => sha256:404d07a1110c5965e2a8c39c66a2985de4d977c8bf6603 451B / 451B  0.0s
 [0m[34m => => sha256:ef235bf1a09a237b896b69935c8c8d917c9c6a78 49.29MB / 49.29MB  1.5s
 [0m[34m => => sha256:8a4206e9cccfb5dcacb363063c66c39e8ab4aa4b9f 8.93kB / 8.93kB  0.0s
-[0m[34m => => sha256:aca3e110b8fee2a2acdf8cbe6cef1cfe
+[0m[34m => => sha256:aca3e110b8fee2a2acdf8cbe6cef1cfebef52e5257 1.02kB / 1.02kB  0.0s
+[0m[34m => => extracting sha256:ef235bf1a09a237b896b69935c8c8d917c9c6a78b538724  0.6s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (5/5) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 96B                                       0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => [1/1] FROM docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  2.2s
+[0m[34m => => resolve docker.io/library/debian:latest@sha256:8a4206e9cccfb5dcac  0.0s
+[0m[34m => => sha256:404d07a1110c5965e2a8c39c66a2985de4d977c8bf6603 451B / 451B  0.0s
+[0m[34m => => sha256:ef235bf1a09a237b896b69935c8c8d917c9c6a78 49.29MB / 49.29MB  1.5s
+[0m[34m => => sha256:8a4206e9cccfb5dcacb363063c66c39e8ab4aa4b9f 8.93kB / 8.93kB  0.0s
+[0m[34m => => sha256:aca3e110b8fee2a2acdf8cbe6cef1cfebef52e5257 1.02kB / 1.02kB  0.0s
+[0m[34m => => extracting sha256:ef235bf1a09a237b896b69935c8c8d917c9c6a78b538724  0.6s
+[0m[34m => exporting to image                                                    0.0s
+[0m[34m => => exporting layers                                                   0.0s
+[0m[34m => => writing image sha256:d844a7470fadbee801e68ba8b40c589ed2a28f6fdf4e  0.0s
+[0m[34m => => naming to docker.io/library/hejdebian                              0.0s
+[0m[?25h[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker images -a
+[?2004l                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m              [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhejdebian:latest[0m   [39md844a7470fad[0m        [39m120MB[0m             [39m0B[0m        
+[39m[2m<untagged>[0m         [39mbc96d2f90826[0m       [39m8.44MB[0m             [39m0B[0m        
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ docker image prune
+[?2004lWARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+deleted: sha256:bc96d2f908266a0684a1fd2c02e70386d0aa7e4266b4885e9c1bf433117e29bf
+
+Total reclaimed space: 0B
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker images -a
+[?2004l                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m              [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhejdebian:latest[0m   [39md844a7470fad[0m        [39m120MB[0m             [39m0B[0m        
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ ls
+[?2004lDockerfile  minfil
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ nano counter[K[K[K[K[K[K[K[K[K[K[K[Kdocker run -it [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[H[2J[94mITINF25/lektion6/df1
+(B[m$ docker run[K[K[K[K[K[K[K[K[K[K(reverse-i-search)`': b': docker build -t hejde[7mb[27mian .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u': docker [7mbu[27mild -t hejdeb[1@i': docker [7mbui[27m[1@l': docker [7mbuil[27m[1@d': docker [7mbuild[27m[25P(B[m$ docker build[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
+[?25h[1A[0G[?25l[+] Bu
