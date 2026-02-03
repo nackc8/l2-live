@@ -1,4 +1,5 @@
 #!/bin/bash
 
 # ${DEST-/} använder / om inte DEST är satt
-seq 1 10000000 >"${DEST-/}utfil.txt"
+utfil="${DEST-/}utfil.txt"
+seq 1 10000000 >"utfil"
