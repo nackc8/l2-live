@@ -14,7 +14,14 @@ docker run --rm \
 	-e DEST=/app/ \
 	namedmountimg
 
-# Funkar också!
+# # Funkar INTE! ARG!
+# docker run --rm \
+# 	--name namedmount \
+# 	-v mindatakatalog/:/app \
+# 	-e DEST=/app/ \
+# 	namedmountimg
+
+# Funkar INTE! ARG!
 docker run --rm \
 	--name namedmount \
 	-v mindatakatalog/:/app \
