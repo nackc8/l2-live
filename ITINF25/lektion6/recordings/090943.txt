@@ -1797,4 +1797,72 @@ Total reclaimed space: 0B
 (B[m$ r[Kdocker[K[K[K[K[K[K(reverse-i-search)`': b': docker run -it hejde[7mb[27mian[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu': docker [7mbu[27mild -t hejdebian .[1@i': docker [7mbui[27m[1@l': docker [7mbuil[27m[1@d': docker [7mbuild[27m[25P(B[m$ docker build[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
 [?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                         docker:default
  => [internal] load build definition from Dockerfile                      0.0s
-[?25h[1A
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 82B                                       0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (1/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 82B                                       0.0s
+[0m => [internal] load metadata for docker.io/library/debian:latest          0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/2)                                         docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 82B                                       0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.4s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (5/5) FINISHED                                docker:default
+[34m => [internal] load build definition from Dockerfile                      0.0s
+[0m[34m => => transferring dockerfile: 82B                                       0.0s
+[0m[34m => [internal] load metadata for docker.io/library/debian:latest          0.4s
+[0m[34m => [internal] load .dockerignore                                         0.0s
+[0m[34m => => transferring context: 2B                                           0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/library/debian:latest@sha256:8a4206e9ccc  0.0s
+[0m[34m => exporting to image                                                    0.0s
+[0m[34m => => exporting layers                                                   0.0s
+[0m[34m => => writing image sha256:ec01946877c768da83e28bf3d1ac2cf791ff3cf3dfe6  0.0s
+[0m[34m => => naming to docker.io/library/hejdebian                              0.0s
+[0m[?25h[?2004h[94mITINF25/lektion6/df1
+(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ docker inspect hejdebian
+[?2004l[
+    {
+        "Id": "sha256:ec01946877c768da83e28bf3d1ac2cf791ff3cf3dfe6dc12cf776f86ee6f71ec",
+        "RepoTags": [
+            "hejdebian:latest"
+        ],
+        "RepoDigests": [],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-02T00:00:00Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 119856754,
+        "GraphDriver": {
+            "Data": {
+                "MergedDir": "/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/merged",
+                "UpperDir": "/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/diff",
+                "WorkDir": "/shared/docker/overlay2/389b4fc03ec79a6b50157b5797dc25c12c519b89df9f723b69d1adff536ff454/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:d16566b6c5a6bd5c45da221a2fc94937d8d503c920c8627f154a2f8a57537da4"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-02-03T09:57:08.965823612+01:00"
+        }
+    }
+]
+[?2004h[94mITINF25/lektion6/df1
+(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [K(B[m$ [H[2J[94mITINF25/lektion6/df1
+(B[m$ (reverse-i-search)`': b': docker inspect hejde
