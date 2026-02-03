@@ -1,5 +1,5 @@
 FROM alpine
 
-COPY ./minfil /
+# COPY ./minfil /
 
 CMD ["echo", "hej"]
