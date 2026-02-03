@@ -348,4 +348,40 @@ Preparing to unpack .../linux-sysctl-defaults_4.12_all.deb ...
 7[9;0f[42m[30mProgress: [ 47%][49m[39m [##########################...............................] 8Setting up linux-sysctl-defaults (4.12) ...
 7[9;0f[42m[30mProgress: [ 53%][49m[39m [##############################...........................] 87[9;0f[42m[30mProgress: [ 59%][49m[39m [#################################........................] 8Setting up libunistring5:amd64 (1.3-2) ...
 7[9;0f[42m[30mProgress: [ 65%][49m[39m [####################################.....................] 87[9;0f[42m[30mProgress: [ 71%][49m[39m [########################################.................] 8Setting up libidn2-0:amd64 (2.3.8-2) ...
-7[9;0f[42m[30mPr
+7[9;0f[42m[30mProgress: [ 76%][49m[39m [###########################################..............] 87[9;0f[42m[30mProgress: [ 82%][49m[39m [##############################################...........] 8Setting up iputils-ping (3:20240905-3) ...
+7[9;0f[42m[30mProgress: [ 88%][49m[39m [##################################################.......] 87[9;0f[42m[30mProgress: [ 94%][49m[39m [#####################################################....] 8Processing triggers for libc-bin (2.41-12+deb13u1) ...
+
+7[0;9r8[1A[J[?2004hroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# ping
+[?2004lping: usage error: Destination address required
+[?2004hroot@db69413a2d9a:/# ping 18 672   72.17.0.1
+[?2004lPING 172.17.0.1 (172.17.0.1) 56(84) bytes of data.
+64 bytes from 172.17.0.1: icmp_seq=1 ttl=64 time=0.086 ms
+64 bytes from 172.17.0.1: icmp_seq=2 ttl=64 time=0.036 ms
+64 bytes from 172.17.0.1: icmp_seq=3 ttl=64 time=0.076 ms
+^C
+--- 172.17.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2053ms
+rtt min/avg/max/mdev = 0.036/0.066/0.086/0.021 ms
+[?2004hroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [Kroot@db69413a2d9a:/# [H[2Jroot@db69413a2d9a:/# exit
+[?2004lexit
+[?2004h[94mITINF25/lektion6
+(B[m$ [7mdocker run -d --name mysql \[27m
+[7m  --network my-network \[27m
+[7m  -e MYSQL_ROOT_PASSWORD=root \[27m
+[7m   mysql[27m[A[A[A[C[Cdocker run -d --name mysql \
+  --network my-network \
+  -e MYSQL_ROOT_PASSWORD=root \
+   mysql
+[?2004lUnable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+
+[1A[2Kc21bb7e51cd3: Pulling fs layer [1B
+[1A[2K8cf746d6e600: Pulling fs layer [1B
+[1A[2K4a3afd2b6b75: Pulling fs layer [1B
+[1A[2K5fdc017098ae: Pulling fs layer [1B
+[1A[2Kd07d4e0fa091: Pulling fs layer [1B
+[1A[2K359d294926a1: Pulling fs layer [1B
+[1A[2Kb6c26b04681b: Pulling fs layer [1B
+[1A[2K012d138a56c4: Pulling fs layer [1B
+[1A[2K863342a2e065: Pulling fs layer [1B
+[1A[2K6f92d9f2f65a: Pulling fs layer [1B[7A[2K5fdc017098ae: Waiting [7B[5A[2K359d294926a1: Waiting [5B[4A[2Kb6c26b04681b: Waiting [4B[3A[2K012d138a56c4: Waiting [3B[2A[2K863342a2e065: Waiting [2B[6A[2Kd07d4e0fa091: Waiting [6B[1A[2K6f92d9f2f65a: Waiting [1B[9A[2K8cf746d6e600: Downloading     885B/885B[9B[9A[2K8cf746d6e600: Verifying Checksum [9B[9A[2K8cf746d6e600: Download complete [9B[8A[2K4a3afd2b6b75: Downloading  9.165kB/783.6kB[8B[10A[2Kc21bb7e51cd3: Downloading  475.1kB/47.31MB[10B[8A[2K4a3afd2b6b75: Downloading  783.6kB/783.6kB[8B[8A[2K4a3afd2b6b75: Verifying Checksum [8B[8A[2K4a3afd2b6b75: Download complete [8B[10A[2Kc21bb7e51cd3: Downloading  3.834MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  9.105MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  14.34MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  19.15MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  24.44MB/47.31MB[10B[10A[2Kc21bb7e51cd3: Downloading  29.72MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  65.54kB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading  33.57MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  864.3kB/6.175MB[7B[6A[2Kd07d4e0fa091: Downloading  1.369kB/2.606kB[6B[6A[2Kd07d4e0fa091: Downloading  2.606kB/2.606kB[6B[6A[2Kd07d4e0fa091: Verifying Checksum [6B[6A[2Kd07d4e0fa091: Download complete [6B[10A[2Kc21bb7e51cd3: Downloading   37.4MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  1.987MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading  41.71MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading  2.716MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Downloading     46MB/47.31MB[10B[7A[2K5fdc017098ae: Downloading   3.85MB/6.175MB[7B[10A[2Kc21bb7e51cd3: Verifying Checksum [10B[10A[2Kc21bb7e51cd3: Download complete [10B[10A[2Kc21bb7e51cd3: Extracting  491.5kB/47.31MB[10B[7A[2K5fdc017098ae: Downloading   5.62MB/6.175MB[7B[7A[2K5fdc017098a
