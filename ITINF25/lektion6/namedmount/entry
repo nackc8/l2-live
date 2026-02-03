@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# ${DEST-/} använder / om inte DEST är satt
+seq 1 10000000 >"${DEST-/}"
