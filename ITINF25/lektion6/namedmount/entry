@@ -4,4 +4,4 @@ set -x
 
 # ${DEST-/} använder / om inte DEST är satt
 utfil="${DEST-/}utfil.txt"
-seq 1 10000000 >"utfil"
+seq 1 10000000 >"$utfil"
