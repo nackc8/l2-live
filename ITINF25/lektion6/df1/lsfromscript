@@ -1,4 +1,6 @@
 #!/bin/bash
 
+# TODO: Exemplet funkar inte, den har en tty på något vis?
+
 # Ingen tty om körd som ett skript i egen process
 ls --color=auto ../
