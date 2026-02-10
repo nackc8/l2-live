@@ -118,4 +118,60 @@ boot.log.3		dpkg.log.7.gz	popularity-contest.6774
        not usually contain fields that identify an actual device. For the resulting log entries to[m
        be correct for the actual device, the relevant parts of the environment at the time the[m
        entry was logged, in particular the actual device corresponding to the device node, must[m
-       have been the same as those at the time of the query. Because device nodes generall
+       have been the same as those at the time of the query. Because device nodes generally change[m
+       their corresponding devices across reboots, specifying a device node path causes the[m
+       resulting entries to be restricted to those from the current boot.[m
+[m
+       Additional constraints may be added using options [1m--boot[0m, [1m--unit=[0m, etc., to further limit[m
+[7m Manual page journalctl(1) line 18 (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m[7m-k[27m[0m, [1m--dmesg[0m[m
+           Show only kernel messages. This implies [1m-b[0m and adds the match "_TRANSPORT=kernel".[m
+[m
+[1mOUTPUT[0m [1mOPTIONS[0m[m
+       The following options control how journal records are printed:[m
+[m
+       [1m-o[0m, [1m--output=[0m[m
+           Controls the formatting of the journal entries that are shown. Takes one of the[m
+           following options:[m
+[m
+           [1mshort[0m[m
+               is the default and generates an output that is mostly identical to the formatting of[m
+               classic syslog files, showing one line per journal entry.[m
+[m
+           [1mshort-full[0m[m
+               is very similar, but shows timestamps in the format the [1m--since=[0m and [1m--until=[0m[m
+               options accept. Unlike the timestamp information shown in [1mshort[0m output mode this[m
+               mode includes weekday, year and timezone information in the output, and is[m
+               locale-independent.[m
+[m
+           [1mshort-iso[0m[m
+               is very similar, but shows ISO 8601 wallclock timestamps.[m
+[m
+           [1mshort-iso-precise[0m[m
+               as for [1mshort-iso[0m but includes full microsecond precision.[m
+[m
+[7m Manual page journalctl(1) line 225 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion9
+(B[m$ sudo journalctl -k[H[2J[94mITINF25/lektion9
+(B[m$ sudo journalctl -k
+[?2004l[?1h=feb 10 07:48:06 klad kernel: microcode: microcode updated early to revision 0x43a, date = 2025-10-12[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mLinux version 6.1.0-37-amd64 (debian-kernel@lists.debian.org) (gcc-12 (D[m[7m>[27m
+feb 10 07:48:06 klad kernel: Command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1[m[7m>[27m
+feb 10 07:48:06 klad kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks[m[7m>[27m
+feb 10 07:48:06 klad kernel: BIOS-provided physical RAM map:[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043b00000-0x0000000047ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000048e00000-0x0000000048ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000004a000000-0x00000000507fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000
