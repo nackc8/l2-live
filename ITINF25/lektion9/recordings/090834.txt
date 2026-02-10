@@ -4091,4 +4091,46 @@ dec 23 22:28:54 klad sshd[2026]: Server listening on :: port 22.[m
 [32m[ 5944.232975] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00009061 | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM[0m
 [32m[ 5944.233027] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000061 | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR[0m
 [32m[ 5944.233184] [0m[33miwlwifi 0000:00:14.3: [0m[1mWRT: Collecting data: ini trigger 4 fired (delay=0ms).[0m
-[32m[ 5944.233195] 
+[32m[ 5944.233195] [0m[33mieee80211 phy0: [0mHardware restart was requested
+[32m[ 6367.966300] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[10508.333236] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[10578.832275] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[10587.772248] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[10623.503228] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[10636.483253] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11308.170174] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11509.245263] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11515.217503] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11524.675448] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11528.986509] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11537.006258] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11548.153253] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11553.577241] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11559.226359] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11568.176239] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11603.127227] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11683.329400] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11696.792270] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11762.172449] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11763.035375] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11768.791315] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11769.932226] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11781.688317] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11790.056253] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11806.566326] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11807.753348] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11808.555445] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11810.264257] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11811.180457] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11814.559233] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11818.558237] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11825.440303] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11849.125306] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11858.281301] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11882.834223] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11907.312265] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11921.089330] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11921.613360] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11927.659246] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11931.089244] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[11941.446294
