@@ -3990,4 +3990,105 @@ dec 23 22:28:54 klad sshd[2026]: Server listening on :: port 22.[m
            [4m/dev/kmsg[24m (since kernel 3.5.0).[m
 [m
        [1m[7m-W[27m[0m, [1m--follow-new[0m[m
-           Wait and print
+           Wait and print only new messages.[m
+[m
+       [1m-x[0m, [1m--decode[0m[m
+           Decode facility and level (priority) numbers to human-readable prefixes.[m
+[m
+       [1m-h[0m, [1m--help[0m[m
+           Display help text and exit.[m
+[m
+       [1m-V[0m, [1m--version[0m[m
+           Print version and exit.[m
+[m
+[1mCOLORS[0m[m
+       The output colorization is implemented by [1mterminal-colors.d[0m(5) functionality. Implicit[m
+       coloring can be disabled by an empty file[m
+[m
+          [4m/etc/terminal-colors.d/dmesg.disable[24m[m
+[m
+       for the [1mdmesg[0m command or for all tools by[m
+[m
+          [4m/etc/terminal-colors.d/disable[24m[m
+[m
+[7m Manual page dmesg(1) line 161/238 82% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion9
+(B[m$ man dmesg[C[Csudo dmesg -w[KW[H[2J[94mITINF25/lektion9
+(B[m$ sudo dmesg -W
+[?2004l[32m[ 3512.569598] [0m[33minput: [0mJBL Charge 5 (AVRCP) as /devices/virtual/input/input27
+[32m[ 3531.302450] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[ 4171.578260] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[ 4797.751386] [0m[33mBluetooth: [0m[31mhci0: Unknown advertising packet type: 0x40[0m
+[32m[ 5944.230368] [0m[33miwlwifi 0000:00:14.3: [0m[31mQueue 5 is stuck 727 746[0m
+[32m[ 5944.231355] [0m[33miwlwifi 0000:00:14.3: [0m[31mMicrocode SW error detected. Restarting 0x0.[0m
+[32m[ 5944.231493] [0m[33miwlwifi 0000:00:14.3: [0m[31mStart IWL Error Log Dump:[0m
+[32m[ 5944.231497] [0m[33miwlwifi 0000:00:14.3: [0m[31mTransport status: 0x0000004A, valid: 6[0m
+[32m[ 5944.231502] [0m[33miwlwifi 0000:00:14.3: [0m[31mLoaded firmware version: 72.daa05125.0 so-a0-gf-a0-72.ucode[0m
+[32m[ 5944.231506] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000084 | NMI_INTERRUPT_UNKNOWN       [0m
+[32m[ 5944.231510] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00008210 | trm_hw_status0[0m
+[32m[ 5944.231513] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | trm_hw_status1[0m
+[32m[ 5944.231516] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x004DAAEE | branchlink2[0m
+[32m[ 5944.231518] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x004D0C26 | interruptlink1[0m
+[32m[ 5944.231521] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x004D0C26 | interruptlink2[0m
+[32m[ 5944.231523] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x0000B852 | data1[0m
+[32m[ 5944.231526] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x01000000 | data2[0m
+[32m[ 5944.231529] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | data3[0m
+[32m[ 5944.231531] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x2040E6FE | beacon time[0m
+[32m[ 5944.231534] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x8921AE78 | tsf low[0m
+[32m[ 5944.231537] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x000008DE | tsf hi[0m
+[32m[ 5944.231539] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | time gp1[0m
+[32m[ 5944.231542] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x5EFCDBF5 | time gp2[0m
+[32m[ 5944.231544] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000001 | uCode revision type[0m
+[32m[ 5944.231547] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000048 | uCode version major[0m
+[32m[ 5944.231550] [0m[33miwlwifi 0000:00:14.3: [0m[31m0xDAA05125 | uCode version minor[0m
+[32m[ 5944.231552] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000370 | hw version[0m
+[32m[ 5944.231555] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00C89002 | board version[0m
+[32m[ 5944.231557] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x80BBF400 | hcmd[0m
+[32m[ 5944.231560] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x24020000 | isr0[0m
+[32m[ 5944.231562] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x01000000 | isr1[0m
+[32m[ 5944.231565] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x48F0000A | isr2[0m
+[32m[ 5944.231567] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00C3080C | isr3[0m
+[32m[ 5944.231569] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | isr4[0m
+[32m[ 5944.231572] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x05D5001C | last cmd Id[0m
+[32m[ 5944.231574] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x0000B852 | wait_event[0m
+[32m[ 5944.231577] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x000000D4 | l2p_control[0m
+[32m[ 5944.231580] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00010034 | l2p_duration[0m
+[32m[ 5944.231582] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000007 | l2p_mhvalid[0m
+[32m[ 5944.231585] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | l2p_addr_match[0m
+[32m[ 5944.231587] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000009 | lmpm_pmg_sel[0m
+[32m[ 5944.231590] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | timestamp[0m
+[32m[ 5944.231592] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00002004 | flow_handler[0m
+[32m[ 5944.231672] [0m[33miwlwifi 0000:00:14.3: [0m[31mStart IWL Error Log Dump:[0m
+[32m[ 5944.231674] [0m[33miwlwifi 0000:00:14.3: [0m[31mTransport status: 0x0000004A, valid: 7[0m
+[32m[ 5944.231677] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x20000066 | NMI_INTERRUPT_HOST[0m
+[32m[ 5944.231680] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | umac branchlink1[0m
+[32m[ 5944.231683] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x8045FDF8 | umac branchlink2[0m
+[32m[ 5944.231685] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x804805CE | umac interruptlink1[0m
+[32m[ 5944.231688] [0m[33miwlwifi 0000:00:14.3: [0m[31m0xC008228A | umac interruptlink2[0m
+[32m[ 5944.231690] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x01000000 | umac data1[0m
+[32m[ 5944.231693] [0m[33miwlwifi 0000:00:14.3: [0m[31m0xC008228A | umac data2[0m
+[32m[ 5944.231695] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000000 | umac data3[0m
+[32m[ 5944.231698] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000048 | umac major[0m
+[32m[ 5944.231700] [0m[33miwlwifi 0000:00:14.3: [0m[31m0xDAA05125 | umac minor[0m
+[32m[ 5944.231703] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x5EFCDE83 | frame pointer[0m
+[32m[ 5944.231705] [0m[33miwlwifi 0000:00:14.3: [0m[31m0xC0887EF4 | stack pointer[0m
+[32m[ 5944.231708] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x000B010C | last host cmd[0m
+[32m[ 5944.231710] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000404 | isr status reg[0m
+[32m[ 5944.231908] [0m[33miwlwifi 0000:00:14.3: [0m[31mIML/ROM dump:[0m
+[32m[ 5944.231910] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000B03 | IML/ROM error/state[0m
+[32m[ 5944.232115] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00007F36 | IML/ROM data1[0m
+[32m[ 5944.232316] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000090 | IML/ROM WFPM_AUTH_KEY_0[0m
+[32m[ 5944.232416] [0m[33miwlwifi 0000:00:14.3: [0m[31mFseq Registers:[0m
+[32m[ 5944.232466] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x60000000 | FSEQ_ERROR_CODE[0m
+[32m[ 5944.232516] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x003E0003 | FSEQ_TOP_INIT_VERSION[0m
+[32m[ 5944.232565] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00190002 | FSEQ_CNVIO_INIT_VERSION[0m
+[32m[ 5944.232615] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x0000A652 | FSEQ_OTP_VERSION[0m
+[32m[ 5944.232667] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000003 | FSEQ_TOP_CONTENT_VERSION[0m
+[32m[ 5944.232717] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x4552414E | FSEQ_ALIVE_TOKEN[0m
+[32m[ 5944.232766] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00080400 | FSEQ_CNVI_ID[0m
+[32m[ 5944.232816] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00400410 | FSEQ_CNVR_ID[0m
+[32m[ 5944.232869] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00080400 | CNVI_AUX_MISC_CHIP[0m
+[32m[ 5944.232916] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00400410 | CNVR_AUX_MISC_CHIP[0m
+[32m[ 5944.232975] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00009061 | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM[0m
+[32m[ 5944.233027] [0m[33miwlwifi 0000:00:14.3: [0m[31m0x00000061 | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR[0m
+[32m[ 5944.233184] [0m[33miwlwifi 0000:00:14.3: [0m[1mWRT: Collecting data: ini trigger 4 fired (delay=0ms).[0m
+[32m[ 5944.233195] 
