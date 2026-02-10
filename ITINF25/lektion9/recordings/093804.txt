@@ -1,0 +1,121 @@
+Script started on 2026-02-10 09:38:04+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="102" LINES="27"]
+[?2004h[94mITINF25/lektion9
+(B[m$ sudo partprobe
+[?2004l[sudo] password for kent: 
+[?2004h[94mITINF25/lektion9
+(B[m$ sudo less /var/log/ker[K[Kr[Kern.log
+[?2004l/var/log/kern.log: No such file or directory
+[?2004h[94mITINF25/lektion9
+(B[m$ ls /var//l[K[Klog/
+[?2004lalternatives.log	boot.log.4	dpkg.log.8.gz		 popularity-contest.6774.gpg
+alternatives.log.1	boot.log.5	dpkg.log.9.gz		 popularity-contest.6.gz
+alternatives.log.10.gz	boot.log.6	exim4			 popularity-contest.gpg
+alternatives.log.11.gz	boot.log.7	faillog			 private
+alternatives.log.12.gz	btmp		fontconfig.log		 README
+alternatives.log.2.gz	btmp.1		gdm3			 runit
+alternatives.log.3.gz	cups		installer		 speech-dispatcher
+alternatives.log.4.gz	dpkg.log	journal			 swtpm
+alternatives.log.5.gz	dpkg.log.1	lastlog			 sysstat
+alternatives.log.6.gz	dpkg.log.10.gz	libvirt			 tor
+alternatives.log.7.gz	dpkg.log.11.gz	popularity-contest	 vbox-setup.log
+alternatives.log.8.gz	dpkg.log.12.gz	popularity-contest.0	 vbox-setup.log.1
+alternatives.log.9.gz	dpkg.log.2.gz	popularity-contest.1.gz  vbox-setup.log.2
+apt			dpkg.log.3.gz	popularity-contest.2.gz  vbox-setup.log.3
+boot.log		dpkg.log.4.gz	popularity-contest.3.gz  vbox-setup.log.4
+boot.log.1		dpkg.log.5.gz	popularity-contest.4.gz  wtmp
+boot.log.2		dpkg.log.6.gz	popularity-contest.5.gz  wtmp.1
+boot.log.3		dpkg.log.7.gz	popularity-contest.6774
+[?2004h[94mITINF25/lektion9
+(B[m$ ls /var/log/[C[C[K[H[2J[94mITINF25/lektion9
+(B[m$ man journalctl
+[?2004l[?1049h[22;0;0t[?1h=JOURNALCTL(1)                                journalctl                               JOURNALCTL(1)[m
+[m
+[1mNAME[0m[m
+       journalctl - Query the systemd journal[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mjournalctl[0m [OPTIONS...] [MATCHES...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mjournalctl[0m may be used to query the contents of the [1msystemd[0m(1) journal as written by[m
+       [1msystemd-journald.service[0m(8).[m
+[m
+       If called without parameters, it will show the full contents of the journal, starting with[m
+       the oldest entry collected.[m
+[m
+       If one or more match arguments are passed, the output is filtered accordingly. A match is in[m
+       the format "FIELD=VALUE", e.g.  "_SYSTEMD_UNIT=httpd.service", referring to the components[m
+       of a structured journal entry. See [1msystemd.journal-fields[0m(7) for a list of well-known[m
+       fields. If multiple matches are specified matching different fields, the log entries are[m
+       filtered by both, i.e. the resulting output will show only entries matching all the[m
+       specified matches of this kind. If two matches apply to the same field, then they are[m
+       automatically matched as alternatives, i.e. the resulting output will show entries matching[m
+       any of the specified matches for the same field. Finally, the character "+" may appear as a[m
+       separate word between other terms on the command line. This causes all matches before and[m
+       after to be combined in a disjunction (i.e. logical OR).[m
+[m
+[7m Manual page journalctl(1) line 1 (press h for help or q to quit)[27m[K[K/[K--[Kjj[K[Kkk[K[1;1HJOURNALCTL(1)                                journalctl                               JOURNALCTL(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       journalctl - Query the systemd journal[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mjournalctl[0m [OPTIONS...] [MATCHES...][m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       [1mjournalctl[0m may be used to query the contents of the [1msystemd[0m(1) journal as written by[m
+[11;1H       [1msystemd-journald.service[0m(8).[m
+[12;1H[m
+[13;1H       If called without parameters, it will show the full contents of the journal, starting with[m
+[14;1H       the oldest entry collected.[m
+[15;1H[m
+[16;1H       If one or more match arguments are passed, the output is filtered accordingly. A match is in[m
+[17;1H       the format "FIELD=VALUE", e.g.  "_SYSTEMD_UNIT=httpd.service", referring to the components[m
+[18;1H       of a structured journal entry. See [1msystemd.journal-fields[0m(7) for a list of well-known[m
+[19;1H       fields. If multiple matches are specified matching different fields, the log entries are[m
+[20;1H       filtered by both, i.e. the resulting output will show only entries matching all the[m
+[21;1H       specified matches of this kind. If two matches apply to the same field, then they are[m
+[22;1H       automatically matched as alternatives, i.e. the resulting output will show entries matching[m
+[23;1H       any of the specified matches for the same field. Finally, the character "+" may appear as a[m
+[24;1H       separate word between other terms on the command line. This causes all matches before and[m
+[25;1H       after to be combined in a disjunction (i.e. logical OR).[m
+[26;1H[m
+[27;1H[1;1HJOURNALCTL(1)                                journalctl                               JOURNALCTL(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       journalctl - Query the systemd journal[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mjournalctl[0m [OPTIONS...] [MATCHES...][m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       [1mjournalctl[0m may be used to query the contents of the [1msystemd[0m(1) journal as written by[m
+[11;1H       [1msystemd-journald.service[0m(8).[m
+[12;1H[m
+[13;1H       If called without parameters, it will show the full contents of the journal, starting with[m
+[14;1H       the oldest entry collected.[m
+[15;1H[m
+[16;1H       If one or more match arguments are passed, the output is filtered accordingly. A match is in[m
+[17;1H       the format "FIELD=VALUE", e.g.  "_SYSTEMD_UNIT=httpd.service", referring to the components[m
+[18;1H       of a structured journal entry. See [1msystemd.journal-fields[0m(7) for a list of well[7m-k[27mnown[m
+[19;1H       fields. If multiple matches are specified matching different fields, the log entries are[m
+[20;1H       filtered by both, i.e. the resulting output will show only entries matching all the[m
+[21;1H       specified matches of this kind. If two matches apply to the same field, then they are[m
+[22;1H       automatically matched as alternatives, i.e. the resulting output will show entries matching[m
+[23;1H       any of the specified matches for the same field. Finally, the character "+" may appear as a[m
+[24;1H       separate word between other terms on the command line. This causes all matches before and[m
+[25;1H       after to be combined in a disjunction (i.e. logical OR).[m
+[26;1H[m
+[27;1H       It is also possible to filter the entries by specifying an absolute file path as an[m
+       argument. The file path may be a file or a symbolic link and the file must exist at the time[m
+       of the query. If a file path refers to an executable binary, an "_EXE=" match for the[m
+       canonicalized binary path is added to the query. If a file path refers to an executable[m
+       script, a "_COMM=" match for the script name is added to the query. If a file path refers to[m
+       a device node, "_KERNEL_DEVICE=" matches for the kernel name of the device and for each of[m
+       its ancestor devices is added to the query. Symbolic links are dereferenced, kernel names[m
+       are synthesized, and parent devices are identified from the environment at the time of the[m
+       query. In general, a device node is the best proxy for an actual device, as log entries do[m
+       not usually contain fields that identify an actual device. For the resulting log entries to[m
+       be correct for the actual device, the relevant parts of the environment at the time the[m
+       entry was logged, in particular the actual device corresponding to the device node, must[m
+       have been the same as those at the time of the query. Because device nodes generall
