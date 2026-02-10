@@ -174,4 +174,32 @@ feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000004a000000-0x00000000507fff
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved[m
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved[m
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved[m
-feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000100000000-0x00000004af7fffff] usable[m
+feb 10 07:48:06 klad kernel: NX (Execute Disable) protection: active[m
+feb 10 07:48:06 klad kernel: efi: EFI v2.80 by INSYDE Corp.[m
+feb 10 07:48:06 klad kernel: efi: ACPI=0x43afe000 ACPI 2.0=0x43afe014 TPMFinalLog=0x439a6000 SMBIOS=0[m[7m>[27m
+[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: secureboot: Secure boot disabled[m
+[7mlines 2-27[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: SMBIOS 3.3 present.[m
+[7mlines 3-28[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: DMI: Acer Swift SF314-71/Starfish_ADH, BIOS V1.08 05/23/2023[m
+[7mlines 4-29[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: tsc: Detected 2500.000 MHz processor[m
+[7mlines 5-30[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: tsc: Detected 2496.000 MHz TSC[m
+[7mlines 6-31[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x00000000-0x00000fff] usable ==> reserved[0m[m
+[7mlines 7-32[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0x000a0000-0x000fffff] usable[0m[m
+[7mlines 8-33[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: last_pfn = 0x4af800 max_arch_pfn = 0x400000000[m
+[7mlines 9-34[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  [m
+[7mlines 10-35[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: last_pfn = 0x43b00 max_arch_pfn = 0x400000000[m
+[7mlines 11-36[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: esrt: Reserving ESRT space from 0x000000003844b498 to 0x000000003844b4f8.[m
+[7mlines 12-37[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x3844b000-0x3844bfff] usable ==> reserved[0m[m
+[7mlines 13-38[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: Using GB pages for direct mapping[m
+[7mlines 14-39[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: RAMDISK: [mem 0x2f395000-0x339c1fff][m
+[7mlines 15-40[27m[K[K [KESCESC[KOO[KBB[Kfeb 10 07:48:06 klad kernel: ACPI: Early table checksum verification disabled[m
+[7mlines 16-41[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable[m
+[27;1H[K[7mlines 15-40[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data[m
+[27;1H[K[7mlines 14-39[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS[m
+[27;1H[K[7mlines 13-38[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved[m
+[27;1H[K[7mlines 12-37[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20[m
+[27;1H[K[7mlines 11-36[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
+[27;1H[K[7mlines 10-35[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved[m
+[27;1H[K[7mlines 9-34[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable[m
+[27;1H[K[7mlines 8-33[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
