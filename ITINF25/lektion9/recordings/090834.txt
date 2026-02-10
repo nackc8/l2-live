@@ -2661,4 +2661,64 @@ dec 23 22:28:54 klad sshd[2026]: Server listening on :: port 22.[m
 [13;1H[    0.000000] BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved
 [14;1H[    0.000000] BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable
 [15;1H[    0.000000] BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20
-[16;1H[    0.000000]
+[16;1H[    0.000000] BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved
+[17;1H[    0.000000] BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS
+[18;1H[    0.000000] BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data
+[19;1H[    0.000000] BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable
+[20;1H[    0.000000] BIOS-e820: [mem 0x0000000043b00000-0x0000000047ffffff] reserved
+[21;1H[    0.000000] BIOS-e820: [mem 0x0000000048e00000-0x0000000048ffffff] reserved
+[22;1H[    0.000000] BIOS-e820: [mem 0x000000004a000000-0x00000000507fffff] reserved
+[23;1H[    0.000000] BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+[24;1H[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[25;1H[    0.000000] BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+[26;1H[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[27;1H[1;1H[    0.000000] microcode: microcode updated early to revision 0x43a, date = 2025-10-12
+[2;1H[    0.000000] Linux version 6.1.0-37-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14 [3;1H+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025 [4;1H-05-22)
+[5;1H[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1-4611-8ebe-c6b3 [6;1Ha55f485e ro i8042.kbdreset=1 quiet splash i8042.reset i8042.nomux
+[7;1H[    0.000000] x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on [8;1H user-space split_locks
+[9;1H[    0.000000] BIOS-provided physical RAM map:
+[10;1H[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[11;1H[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+[12;1H[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable
+[13;1H[    0.000000] BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved
+[14;1H[    0.000000] BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable
+[15;1H[    0.000000] BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20
+[16;1H[    0.000000] BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved
+[17;1H[    0.000000] BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS
+[18;1H[    0.000000] BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data
+[19;1H[    0.000000] BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable
+[20;1H[    0.000000] BIOS-e820: [mem 0x0000000043b00000-0x0000000047ffffff] reserved
+[21;1H[    0.000000] BIOS-e820: [mem 0x0000000048e00000-0x0000000048ffffff] reserved
+[22;1H[    0.000000] BIOS-e820: [mem 0x000000004a000000-0x00000000507fffff] reserved
+[23;1H[    0.000000] BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+[24;1H[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[25;1H[    0.000000] BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+[26;1H[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[27;1H[K[7mPattern not found  (press RETURN)[27m[27;1H[K[K[?1l>[?1049l[23;0;0t[?2004h[94mITINF25/lektion9
+(B[m$ [H[2J[94mITINF25/lektion9
+(B[m$ man dmesg
+[?2004l[?1049h[22;0;0t[?1h=DMESG(1)                                   User Commands                                   DMESG(1)[m
+[m
+[1mNAME[0m[m
+       dmesg - print or control the kernel ring buffer[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mdmesg[0m [options][m
+[m
+       [1mdmesg[0m [1m--clear[0m[m
+[m
+       [1mdmesg[0m [1m--read-clear[0m [options][m
+[m
+       [1mdmesg[0m [1m--console-level[0m [4mlevel[24m[m
+[m
+       [1mdmesg[0m [1m--console-on[0m[m
+[m
+       [1mdmesg[0m [1m--console-off[0m[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mdmesg[0m is used to examine or control the kernel ring buffer.[m
+[m
+       The default action is to display all messages from the kernel ring buffer.[m
+[m
+[1mOPTIONS[0m[m
+       The 
