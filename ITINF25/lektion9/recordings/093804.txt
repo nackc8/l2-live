@@ -202,4 +202,485 @@ feb 10 07:48:06 klad kernel: efi: ACPI=0x43afe000 ACPI 2.0=0x43afe014 TPMFinalLo
 [27;1H[K[7mlines 11-36[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
 [27;1H[K[7mlines 10-35[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved[m
 [27;1H[K[7mlines 9-34[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable[m
-[27;1H[K[7mlines 8-33[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+[27;1H[K[7mlines 8-33[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved[m
+[27;1H[K[7mlines 7-32[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable[m
+[27;1H[K[7mlines 6-31[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: BIOS-provided physical RAM map:[m
+[27;1H[K[7mlines 5-30[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks[m[7m>[27m
+[27;1H[K[7mlines 4-29[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: Command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1[m[7m>[27m
+[27;1H[K[7mlines 3-28[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mLinux version 6.1.0-37-amd64 (debian-kernel@lists.debian.org) (gcc-12 (D[m[7m>[27m
+[27;1H[K[7mlines 2-27[27m[K[K [KESCESC[KOO[KAA[K[HMfeb 10 07:48:06 klad kernel: microcode: microcode updated early to revision 0x43a, date = 2025-10-12[m
+[27;1H[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[Kfeb 10 07:48:06 klad kernel: secureboot: Secure boot disabled[m
+feb 10 07:48:06 klad kernel: SMBIOS 3.3 present.[m
+feb 10 07:48:06 klad kernel: DMI: Acer Swift SF314-71/Starfish_ADH, BIOS V1.08 05/23/2023[m
+feb 10 07:48:06 klad kernel: tsc: Detected 2500.000 MHz processor[m
+feb 10 07:48:06 klad kernel: tsc: Detected 2496.000 MHz TSC[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x00000000-0x00000fff] usable ==> reserved[0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: remove [mem 0x000a0000-0x000fffff] usable[0m[m
+feb 10 07:48:06 klad kernel: last_pfn = 0x4af800 max_arch_pfn = 0x400000000[m
+feb 10 07:48:06 klad kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  [m
+feb 10 07:48:06 klad kernel: last_pfn = 0x43b00 max_arch_pfn = 0x400000000[m
+feb 10 07:48:06 klad kernel: esrt: Reserving ESRT space from 0x000000003844b498 to 0x000000003844b4f8.[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x3844b000-0x3844bfff] usable ==> reserved[0m[m
+feb 10 07:48:06 klad kernel: Using GB pages for direct mapping[m
+feb 10 07:48:06 klad kernel: RAMDISK: [mem 0x2f395000-0x339c1fff][m
+feb 10 07:48:06 klad kernel: ACPI: Early table checksum verification disabled[m
+feb 10 07:48:06 klad kernel: ACPI: RSDP 0x0000000043AFE014 000024 (v02 ACRSYS)[m
+feb 10 07:48:06 klad kernel: ACPI: XSDT 0x0000000043AC6188 00013C (v01 ACRSYS ACRPRDCT 00000002      [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: FACP 0x0000000043AC5000 000114 (v06 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: DSDT 0x0000000043A4F000 0720C1 (v02 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: FACS 0x0000000043980000 000040[m
+feb 10 07:48:06 klad kernel: ACPI: UEFI 0x0000000043A2E000 000236 (v01 ACRSYS ACRPRDCT 00000001 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AF9000 003B86 (v02 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AF8000 00038C (v02 ACRSYS ACRPRDCT 00000001 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AF2000 005D2C (v02 ACRSYS ACRPRDCT 00003000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AEF000 002A07 (v02 ACRSYS ACRPRDCT 00003000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AEB000 0033D3 (v02 ACRSYS ACRPRDCT 00003000 1025 [m[7m>[27m
+[7mlines 27-52[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043ADD000 00D2B3 (v02 INTEL  TcssSsdt 00001000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043ADC000 00077B (v02 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: TPM2 0x0000000043ADB000 00004C (v04 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: MSDM 0x0000000043ADA000 000055 (v03 ACRSYS ACRPRDCT 00000001 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AD8000 001B1D (v02 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: LPIT 0x0000000043AD7000 0000CC (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: WSMT 0x0000000043AD6000 000028 (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AD5000 000AD9 (v02 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AD2000 002357 (v02 ACRSYS ACRPRDCT 00000000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: DBGP 0x0000000043AD1000 000034 (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: DBG2 0x0000000043AD0000 000054 (v00 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: NHLT 0x0000000043ACE000 001B64 (v00 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043AC7000 006EF7 (v01 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: ECDT 0x0000000043AFD000 000069 (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: HPET 0x0000000043AC4000 000038 (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: APIC 0x0000000043AC3000 0001DC (v04 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: MCFG 0x0000000043AC2000 00003C (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A49000 005AC0 (v02 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A47000 001D0E (v02 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: $H2O 0x0000000043A46000 00002C (v01 ACRSYS ACRPRDCT 00000001 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: DMAR 0x0000000043A45000 000088 (v02 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A44000 000B45 (v02 ACRSYS ACRPRDCT 00000000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A40000 003AEA (v02 ACRSYS ACRPRDCT 00003000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A3C000 0039DA (v02 ACRSYS ACRPRDCT 00003000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0x0000000043A3B000 0000F8 (v01 ACRSYS ACRPRDCT 00001000 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: FPDT 0x0000000043A3A000 000044 (v01 ACRSYS ACRPRDCT 00000002 1025 [m[7m>[27m
+[7mlines 53-78[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: PHAT 0x0000000043A38000 0007FC (v01 ACRSYS ACRPRDCT 00000005 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: BGRT 0x0000000043A39000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Reserving FACP table memory at [mem 0x43ac5000-0x43ac5113][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving DSDT table memory at [mem 0x43a4f000-0x43ac10c0][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving FACS table memory at [mem 0x43980000-0x4398003f][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving UEFI table memory at [mem 0x43a2e000-0x43a2e235][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43af9000-0x43afcb85][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43af8000-0x43af838b][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43af2000-0x43af7d2b][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43aef000-0x43af1a06][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43aeb000-0x43aee3d2][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43add000-0x43aea2b2][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43adc000-0x43adc77a][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving TPM2 table memory at [mem 0x43adb000-0x43adb04b][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving MSDM table memory at [mem 0x43ada000-0x43ada054][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43ad8000-0x43ad9b1c][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving LPIT table memory at [mem 0x43ad7000-0x43ad70cb][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving WSMT table memory at [mem 0x43ad6000-0x43ad6027][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43ad5000-0x43ad5ad8][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43ad2000-0x43ad4356][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving DBGP table memory at [mem 0x43ad1000-0x43ad1033][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving DBG2 table memory at [mem 0x43ad0000-0x43ad0053][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving NHLT table memory at [mem 0x43ace000-0x43acfb63][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43ac7000-0x43acdef6][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving ECDT table memory at [mem 0x43afd000-0x43afd068][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving HPET table memory at [mem 0x43ac4000-0x43ac4037][m
+[7mlines 79-104[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: Reserving APIC table memory at [mem 0x43ac3000-0x43ac31db][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving MCFG table memory at [mem 0x43ac2000-0x43ac203b][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a49000-0x43a4eabf][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a47000-0x43a48d0d][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving $H2O table memory at [mem 0x43a46000-0x43a4602b][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving DMAR table memory at [mem 0x43a45000-0x43a45087][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a44000-0x43a44b44][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a40000-0x43a43ae9][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a3c000-0x43a3f9d9][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving SSDT table memory at [mem 0x43a3b000-0x43a3b0f7][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving FPDT table memory at [mem 0x43a3a000-0x43a3a043][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving PHAT table memory at [mem 0x43a38000-0x43a387fb][m
+feb 10 07:48:06 klad kernel: ACPI: Reserving BGRT table memory at [mem 0x43a39000-0x43a39037][m
+feb 10 07:48:06 klad kernel: No NUMA configuration found[m
+feb 10 07:48:06 klad kernel: Faking a node at [mem 0x0000000000000000-0x00000004af7fffff][m
+feb 10 07:48:06 klad kernel: NODE_DATA(0) allocated [mem 0x4af7d5000-0x4af7fffff][m
+feb 10 07:48:06 klad kernel: Zone ranges:[m
+feb 10 07:48:06 klad kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff][m
+feb 10 07:48:06 klad kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff][m
+feb 10 07:48:06 klad kernel:   Normal   [mem 0x0000000100000000-0x00000004af7fffff][m
+feb 10 07:48:06 klad kernel:   Device   empty[m
+feb 10 07:48:06 klad kernel: Movable zone start for each node[m
+feb 10 07:48:06 klad kernel: Early memory node ranges[m
+feb 10 07:48:06 klad kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff][m
+feb 10 07:48:06 klad kernel:   node   0: [mem 0x0000000000100000-0x000000003c2c8fff][m
+feb 10 07:48:06 klad kernel:   node   0: [mem 0x000000003cbc9000-0x000000003e9defff][m
+[7mlines 105-130[27m[K[Kfeb 10 07:48:06 klad kernel:   node   0: [mem 0x0000000043aff000-0x0000000043afffff][m
+feb 10 07:48:06 klad kernel:   node   0: [mem 0x0000000100000000-0x00000004af7fffff][m
+feb 10 07:48:06 klad kernel: Initmem setup node 0 [mem 0x0000000000001000-0x00000004af7fffff][m
+feb 10 07:48:06 klad kernel: On node 0, zone DMA: 1 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: On node 0, zone DMA: 97 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: On node 0, zone DMA32: 2304 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: On node 0, zone DMA32: 20768 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: On node 0, zone Normal: 17664 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: On node 0, zone Normal: 2048 pages in unavailable ranges[m
+feb 10 07:48:06 klad kernel: Reserving Intel graphics memory at [mem 0x4c800000-0x507fffff][m
+feb 10 07:48:06 klad kernel: ACPI: PM-Timer IO Port: 0x1808[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])[m
+[7mlines 131-156[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])[m
+feb 10 07:48:06 klad kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119[m
+feb 10 07:48:06 klad kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)[m
+feb 10 07:48:06 klad kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)[m
+feb 10 07:48:06 klad kernel: ACPI: Using ACPI (MADT) for SMP configuration information[m
+feb 10 07:48:06 klad kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: update [mem 0x377d1000-0x379f3fff] usable ==> reserved[0m[m
+feb 10 07:48:06 klad kernel: TSC deadline timer available[m
+feb 10 07:48:06 klad kernel: smpboot: Allowing 12 CPUs, 0 hotplug CPUs[m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x377d1000-0x379f3fff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x3844b000-0x3844bfff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x3c2c9000-0x3cbc8fff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x3e9df000-0x43afefff][m
+feb 10 07:48:06 klad kernel: PM: hibernation: Registered nosave memory: [mem 0x43b00000-0xffffffff][m
+feb 10 07:48:06 klad kernel: [mem 0x50800000-0xbfffffff] available for PCI devices[m
+feb 10 07:48:06 klad kernel: Booting paravirtualized kernel on bare hardware[m
+[7mlines 157-182[27m[K[Kfeb 10 07:48:06 klad kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, m[m[7m>[27m
+feb 10 07:48:06 klad kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:12 nr_cpu_ids:12 nr_node_ids:1[m
+feb 10 07:48:06 klad kernel: percpu: Embedded 61 pages/cpu s212992 r8192 d28672 u262144[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245mpcpu-alloc: s212992 r8192 d28672 u262144 alloc=1*2097152[0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245mpcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 -- -- -- -- [0m[m
+feb 10 07:48:06 klad kernel: Fallback order for Node 0: 0 [m
+feb 10 07:48:06 klad kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4054140[m
+feb 10 07:48:06 klad kernel: Policy zone: Normal[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mKernel command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00[m[7m>[27m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mUnknown kernel command line parameters "splash BOOT_IMAGE=/vmlinuz-6.1.0[m[7m>[27m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mrandom: crng init done[0m[m
+feb 10 07:48:06 klad kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, lin[m[7m>[27m
+feb 10 07:48:06 klad kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linea[m[7m>[27m
+feb 10 07:48:06 klad kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off[m
+feb 10 07:48:06 klad kernel: software IO TLB: area num 16.[m
+feb 10 07:48:06 klad kernel: Memory: 916636K/16474616K available (14343K kernel code, 2339K rwdata, 9[m[7m>[27m
+feb 10 07:48:06 klad kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=12, Nodes=1[m
+feb 10 07:48:06 klad kernel: ftrace: allocating 40346 entries in 158 pages[m
+feb 10 07:48:06 klad kernel: ftrace: allocated 158 pages with 5 groups[m
+feb 10 07:48:06 klad kernel: Dynamic Preempt: voluntary[m
+feb 10 07:48:06 klad kernel: rcu: Preemptible hierarchical RCU implementation.[m
+feb 10 07:48:06 klad kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=12.[m
+feb 10 07:48:06 klad kernel:         Trampoline variant of Tasks RCU enabled.[m
+feb 10 07:48:06 klad kernel:         Rude variant of Tasks RCU enabled.[m
+feb 10 07:48:06 klad kernel:         Tracing variant of Tasks RCU enabled.[m
+feb 10 07:48:06 klad kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.[m
+[7mlines 183-208[27m[K[Kfeb 10 07:48:06 klad kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=12[m
+feb 10 07:48:06 klad kernel: NR_IRQS: 524544, nr_irqs: 2152, preallocated irqs: 16[m
+feb 10 07:48:06 klad kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.[m
+feb 10 07:48:06 klad kernel: Console: colour dummy device 80x25[m
+feb 10 07:48:06 klad kernel: printk: console [tty0] enabled[m
+feb 10 07:48:06 klad kernel: ACPI: Core revision 20220331[m
+feb 10 07:48:06 klad kernel: hpet: HPET dysfunctional in PC10. Force disabled.[m
+feb 10 07:48:06 klad kernel: APIC: Switch to symmetric I/O mode setup[m
+feb 10 07:48:06 klad kernel: DMAR: Host address width 39[m
+feb 10 07:48:06 klad kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0[m
+feb 10 07:48:06 klad kernel: DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c40660462 ecap 29a[m[7m>[27m
+feb 10 07:48:06 klad kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1[m
+feb 10 07:48:06 klad kernel: DMAR: dmar1: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050[m[7m>[27m
+feb 10 07:48:06 klad kernel: DMAR: RMRR base: 0x0000004c000000 end: 0x000000507fffff[m
+feb 10 07:48:06 klad kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1[m
+feb 10 07:48:06 klad kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000[m
+feb 10 07:48:06 klad kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-[m[7m>[27m
+feb 10 07:48:06 klad kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode[m
+feb 10 07:48:06 klad kernel: x2apic enabled[m
+feb 10 07:48:06 klad kernel: Switched APIC routing to cluster x2apic.[m
+feb 10 07:48:06 klad kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x23fa772cf[m[7m>[27m
+feb 10 07:48:06 klad kernel: Calibrating delay loop (skipped), value calculated using timer frequency[m[7m>[27m
+feb 10 07:48:06 klad kernel: CPU0: Thermal monitoring enabled (TM1)[m
+feb 10 07:48:06 klad kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated[m
+feb 10 07:48:06 klad kernel: process: using mwait in idle threads[m
+feb 10 07:48:06 klad kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0[m
+[7mlines 209-234[27m[K[Kfeb 10 07:48:06 klad kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0[m
+feb 10 07:48:06 klad kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer san[m[7m>[27m
+feb 10 07:48:06 klad kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS[m
+feb 10 07:48:06 klad kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT[m
+feb 10 07:48:06 klad kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction[m[7m>[27m
+feb 10 07:48:06 klad kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled [m[7m>[27m
+feb 10 07:48:06 klad kernel: Register File Data Sampling: Mitigation: Clear Register File[m
+feb 10 07:48:06 klad kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'[m
+feb 10 07:48:06 klad kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'[m
+feb 10 07:48:06 klad kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'[m
+feb 10 07:48:06 klad kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'[m
+feb 10 07:48:06 klad kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256[m
+feb 10 07:48:06 klad kernel: x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8[m
+feb 10 07:48:06 klad kernel: x86/fpu: Enabled xstate features 0x207, context size is 840 bytes, using[m[7m>[27m
+feb 10 07:48:06 klad kernel: Freeing SMP alternatives memory: 36K[m
+feb 10 07:48:06 klad kernel: pid_max: default: 32768 minimum: 301[m
+feb 10 07:48:06 klad kernel: LSM: Security Framework initializing[m
+feb 10 07:48:06 klad kernel: landlock: Up and running.[m
+feb 10 07:48:06 klad kernel: Yama: disabled by default; enable with sysctl kernel.yama.*[m
+feb 10 07:48:06 klad kernel: AppArmor: AppArmor initialized[m
+feb 10 07:48:06 klad kernel: TOMOYO Linux initialized[m
+feb 10 07:48:06 klad kernel: LSM support for eBPF active[m
+feb 10 07:48:06 klad kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)[m
+feb 10 07:48:06 klad kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, line[m[7m>[27m
+feb 10 07:48:06 klad kernel: smpboot: CPU0: 12th Gen Intel(R) Core(TM) i5-12450H (family: 0x6, model:[m[7m>[27m
+feb 10 07:48:06 klad kernel: cblist_init_generic: Setting adjustable number of callback queues.[m
+[7mlines 235-260[27m[K[Kfeb 10 07:48:06 klad kernel: cblist_init_generic: Setting shift to 4 and lim to 1.[m
+feb 10 07:48:06 klad kernel: cblist_init_generic: Setting adjustable number of callback queues.[m
+feb 10 07:48:06 klad kernel: cblist_init_generic: Setting shift to 4 and lim to 1.[m
+feb 10 07:48:06 klad kernel: cblist_init_generic: Setting adjustable number of callback queues.[m
+feb 10 07:48:06 klad kernel: cblist_init_generic: Setting shift to 4 and lim to 1.[m
+feb 10 07:48:06 klad kernel: Performance Events: XSAVE Architectural LBR, PEBS fmt4+-baseline,  AnyTh[m[7m>[27m
+feb 10 07:48:06 klad kernel: core: cpu_core PMU driver: [m
+feb 10 07:48:06 klad kernel: ... version:                5[m
+feb 10 07:48:06 klad kernel: ... bit width:              48[m
+feb 10 07:48:06 klad kernel: ... generic registers:      8[m
+feb 10 07:48:06 klad kernel: ... value mask:             0000ffffffffffff[m
+feb 10 07:48:06 klad kernel: ... max period:             00007fffffffffff[m
+feb 10 07:48:06 klad kernel: ... fixed-purpose events:   4[m
+feb 10 07:48:06 klad kernel: ... event mask:             0001000f000000ff[m
+feb 10 07:48:06 klad kernel: signal: max sigframe size: 3632[m
+feb 10 07:48:06 klad kernel: Estimated ratio of average max frequency by base frequency (times 1024):[m[7m>[27m
+feb 10 07:48:06 klad kernel: rcu: Hierarchical SRCU implementation.[m
+feb 10 07:48:06 klad kernel: rcu:         Max phase no-delay instances is 1000.[m
+feb 10 07:48:06 klad kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.[m
+feb 10 07:48:06 klad kernel: smp: Bringing up secondary CPUs ...[m
+feb 10 07:48:06 klad kernel: x86: Booting SMP configuration:[m
+feb 10 07:48:06 klad kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8[m
+feb 10 07:48:06 klad kernel: core: cpu_atom PMU driver: PEBS-via-PT [m
+feb 10 07:48:06 klad kernel: ... version:                5[m
+feb 10 07:48:06 klad kernel: ... bit width:              48[m
+feb 10 07:48:06 klad kernel: ... generic registers:      6[m
+[7mlines 261-286[27m[K[Kfeb 10 07:48:06 klad kernel: ... value mask:             0000ffffffffffff[m
+feb 10 07:48:06 klad kernel: ... max period:             00007fffffffffff[m
+feb 10 07:48:06 klad kernel: ... fixed-purpose events:   3[m
+feb 10 07:48:06 klad kernel: ... event mask:             000000070000003f[m
+feb 10 07:48:06 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m  #9 #10 #11[0m[m
+feb 10 07:48:06 klad kernel: smp: Brought up 1 node, 12 CPUs[m
+feb 10 07:48:06 klad kernel: smpboot: Max logical packages: 1[m
+feb 10 07:48:06 klad kernel: smpboot: Total of 12 processors activated (59904.00 BogoMIPS)[m
+feb 10 07:48:06 klad kernel: node 0 deferred pages initialised in 8ms[m
+feb 10 07:48:06 klad kernel: devtmpfs: initialized[m
+feb 10 07:48:06 klad kernel: x86/mm: Memory block size: 128MB[m
+feb 10 07:48:06 klad kernel: ACPI: PM: Registering ACPI NVS region [mem 0x40a7f000-0x43a2efff] (50003[m[7m>[27m
+feb 10 07:48:06 klad kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_[m[7m>[27m
+feb 10 07:48:06 klad kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, linear)[m
+feb 10 07:48:06 klad kernel: pinctrl core: initialized pinctrl subsystem[m
+feb 10 07:48:06 klad kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family[m
+feb 10 07:48:06 klad kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations[m
+feb 10 07:48:06 klad kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations[m
+feb 10 07:48:06 klad kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocati[m[7m>[27m
+feb 10 07:48:06 klad kernel: audit: initializing netlink subsys (disabled)[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=2000 audit(1770709634.044:1): state=initialized audit_enable[m[7m>[27m
+feb 10 07:48:06 klad kernel: thermal_sys: Registered thermal governor 'fair_share'[m
+feb 10 07:48:06 klad kernel: thermal_sys: Registered thermal governor 'bang_bang'[m
+feb 10 07:48:06 klad kernel: thermal_sys: Registered thermal governor 'step_wise'[m
+feb 10 07:48:06 klad kernel: thermal_sys: Registered thermal governor 'user_space'[m
+feb 10 07:48:06 klad kernel: thermal_sys: Registered thermal governor 'power_allocator'[m
+[7mlines 287-312[27m[K[Kfeb 10 07:48:06 klad kernel: cpuidle: using governor ladder[m
+feb 10 07:48:06 klad kernel: cpuidle: using governor menu[m
+feb 10 07:48:06 klad kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5[m
+feb 10 07:48:06 klad kernel: PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff][m[7m>[27m
+feb 10 07:48:06 klad kernel: PCI: MMCONFIG at [mem 0xc0000000-0xcfffffff] reserved in E820[m
+feb 10 07:48:06 klad kernel: PCI: Using configuration type 1 for base access[m
+feb 10 07:48:06 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mENERGY_PERF_BIAS: Set to 'normal', was 'performance'[0m[m
+feb 10 07:48:06 klad kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized [m[7m>[27m
+feb 10 07:48:06 klad kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages[m
+feb 10 07:48:06 klad kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page[m
+feb 10 07:48:06 klad kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages[m
+feb 10 07:48:06 klad kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page[m
+feb 10 07:48:06 klad kernel: ACPI: Added _OSI(Module Device)[m
+feb 10 07:48:06 klad kernel: ACPI: Added _OSI(Processor Device)[m
+feb 10 07:48:06 klad kernel: ACPI: Added _OSI(3.0 _SCP Extensions)[m
+feb 10 07:48:06 klad kernel: ACPI: Added _OSI(Processor Aggregator Device)[m
+feb 10 07:48:06 klad kernel: ACPI: 18 ACPI AML tables successfully acquired and loaded[m
+feb 10 07:48:06 klad kernel: [0;1;31m[0;1;39m[0;1;31mACPI Error: AE_NOT_FOUND, While resolving a named reference package elem[m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: EC: EC started[m
+feb 10 07:48:06 klad kernel: ACPI: EC: interrupt blocked[m
+feb 10 07:48:06 klad kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62[m
+feb 10 07:48:06 klad kernel: ACPI: EC: Boot ECDT EC used to handle transactions[m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9AC1602400 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: \_SB_.PR00: _OSC native thermal LVT Acked[m
+feb 10 07:48:06 klad kernel: ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+[m
+[7mlines 313-338[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+[m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9E5F7D1000 000394 (v02 PmRef  Cpu0Cst  00003001 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9E5F7F2800 0005E4 (v02 PmRef  Cpu0Ist  00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9E5F7F7800 0004BA (v02 PmRef  Cpu0Hwp  00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9AC10B6000 001BAF (v02 PmRef  ApIst    00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9AC18AA000 001038 (v02 PmRef  ApHwp    00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9AC18A8000 001349 (v02 PmRef  ApPsd    00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Dynamic OEM Table Load:[m
+feb 10 07:48:06 klad kernel: ACPI: SSDT 0xFFFF8E9E5F7FB000 000FBB (v02 PmRef  ApCst    00003000 INTL [m[7m>[27m
+feb 10 07:48:06 klad kernel: ACPI: Interpreter enabled[m
+feb 10 07:48:06 klad kernel: ACPI: PM: (supports S0 S3 S4 S5)[m
+feb 10 07:48:06 klad kernel: ACPI: Using IOAPIC for interrupt routing[m
+feb 10 07:48:06 klad kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" [m[7m>[27m
+feb 10 07:48:06 klad kernel: PCI: Ignoring E820 reservations for host bridge windows[m
+feb 10 07:48:06 klad kernel: ACPI: Enabled 7 GPEs in block 00 to 7F[m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [PXP][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [BTRT][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [PAUD][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [PXTC][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [WRST][m
+[7mlines 339-364[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [PXP][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [TBT0][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [TBT1][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [D3C][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [FN00][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [FN01][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [FN02][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [FN03][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [FN04][m
+feb 10 07:48:06 klad kernel: ACPI: PM: Power Resource [PIN][m
+feb 10 07:48:06 klad kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])[m
+feb 10 07:48:06 klad kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments[m[7m>[27m
+feb 10 07:48:06 klad kernel: acpi PNP0A08:00: _OSC: platform does not support [AER][m
+feb 10 07:48:06 klad kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME PCIe[m[7m>[27m
+feb 10 07:48:06 klad kernel: PCI host bridge to bus 0000:00[m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window][m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window][m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window][m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [mem 0x50800000-0xbfffffff window][m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window][m
+feb 10 07:48:06 klad kernel: pci_bus 0000:00: root bus resource [bus 00-fe][m
+feb 10 07:48:06 klad kernel: pci 0000:00:00.0: [8086:4629] type 00 class 0x060000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: [8086:46a3] type 00 class 0x030000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: reg 0x10: [mem 0x601c000000-0x601cffffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: reg 0x18: [mem 0x4000000000-0x400fffffff 64bit pref][m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f][m
+[7mlines 365-390[27m[K[Kfeb 10 07:48:06 klad kernel: pci 0000:00:02.0: BAR 2: assigned to efifb[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x00[m[7m>[27m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: reg 0x344: [mem 0x00000000-0x00ffffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: VF(n) BAR0 space: [mem 0x00000000-0x06ffffff 64bit] (c[m[7m>[27m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: reg 0x34c: [mem 0x00000000-0x1fffffff 64bit pref][m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: VF(n) BAR2 space: [mem 0x00000000-0xdfffffff 64bit pre[m[7m>[27m
+feb 10 07:48:06 klad kernel: pci 0000:00:04.0: [8086:461d] type 00 class 0x118000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:04.0: reg 0x10: [mem 0x601d180000-0x601d19ffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.0: [8086:464d] type 01 class 0x060400[m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.0: PME# supported from D0 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.0: PTM enabled (root), 4ns granularity[m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.2: [8086:463d] type 01 class 0x060400[m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.2: PME# supported from D0 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.2: PTM enabled (root), 4ns granularity[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0: [8086:466e] type 01 class 0x060400[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0: Overriding RP PIO Log Size to 4[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0: PME# supported from D0 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0: PTM enabled (root), 4ns granularity[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2: [8086:462f] type 01 class 0x060400[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2: Overriding RP PIO Log Size to 4[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2: PME# supported from D0 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2: PTM enabled (root), 4ns granularity[m
+feb 10 07:48:06 klad kernel: pci 0000:00:08.0: [8086:464f] type 00 class 0x088000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:08.0: reg 0x10: [mem 0x601d1ca000-0x601d1cafff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0a.0: [8086:467d] type 00 class 0x118000[m
+[7mlines 391-416[27m[K[Kfeb 10 07:48:06 klad kernel: pci 0000:00:0a.0: reg 0x10: [mem 0x601d1b0000-0x601d1b7fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0a.0: enabling Extended Tags[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.0: [8086:461e] type 00 class 0x0c0330[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.0: reg 0x10: [mem 0x601d1a0000-0x601d1affff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.0: PME# supported from D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.2: [8086:463e] type 00 class 0x0c0340[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.2: reg 0x10: [mem 0x601d140000-0x601d17ffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.2: reg 0x18: [mem 0x601d1c9000-0x601d1c9fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.2: supports D1 D2[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.2: PME# supported from D0 D1 D2 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.3: [8086:466d] type 00 class 0x0c0340[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.3: reg 0x10: [mem 0x601d100000-0x601d13ffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.3: reg 0x18: [mem 0x601d1c8000-0x601d1c8fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.3: supports D1 D2[m
+feb 10 07:48:06 klad kernel: pci 0000:00:0d.3: PME# supported from D0 D1 D2 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.0: [8086:51ed] type 00 class 0x0c0330[m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.0: reg 0x10: [mem 0x5e300000-0x5e30ffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.2: [8086:51ef] type 00 class 0x050000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.2: reg 0x10: [mem 0x601d1c0000-0x601d1c3fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.2: reg 0x18: [mem 0x601d1c7000-0x601d1c7fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.3: [8086:51f0] type 00 class 0x028000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.3: reg 0x10: [mem 0x601d1bc000-0x601d1bffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:14.3: PME# supported from D0 D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:15.0: [8086:51e8] type 00 class 0x0c8000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:15.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit][m
+[7mlines 417-442[27m[K[Kfeb 10 07:48:06 klad kernel: pci 0000:00:16.0: [8086:51e0] type 00 class 0x078000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:16.0: reg 0x10: [mem 0x601d1c5000-0x601d1c5fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:16.0: PME# supported from D3hot[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.0: [8086:5182] type 00 class 0x060100[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.3: [8086:51c8] type 00 class 0x040100[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.3: reg 0x10: [mem 0x601d1b8000-0x601d1bbfff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.3: reg 0x20: [mem 0x601d000000-0x601d0fffff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.4: [8086:51a3] type 00 class 0x0c0500[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.4: reg 0x10: [mem 0x601d1c4000-0x601d1c40ff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf][m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.5: [8086:51a4] type 00 class 0x0c8000[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff][m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.0: PCI bridge to [bus 01][m
+feb 10 07:48:06 klad kernel: pci 0000:02:00.0: [144d:a808] type 00 class 0x010802[m
+feb 10 07:48:06 klad kernel: pci 0000:02:00.0: reg 0x10: [mem 0x5e200000-0x5e203fff 64bit][m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.2: PCI bridge to [bus 02][m
+feb 10 07:48:06 klad kernel: pci 0000:00:06.2:   bridge window [mem 0x5e200000-0x5e2fffff][m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0: PCI bridge to [bus 03-2b][m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0:   bridge window [mem 0x60000000-0x6c1fffff][m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.0:   bridge window [mem 0x6000000000-0x601bffffff 64bit p[m[7m>[27m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2: PCI bridge to [bus 2c-54][m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2:   bridge window [mem 0x52000000-0x5e1fffff][m
+feb 10 07:48:06 klad kernel: pci 0000:00:07.2:   bridge window [mem 0x6020000000-0x603bffffff 64bit p[m[7m>[27m
+feb 10 07:48:06 klad kernel: Low-power S0 idle used by default for system suspend[m
+feb 10 07:48:06 klad kernel: ACPI: EC: interrupt unblocked[m
+[7mlines 443-468[27m[K[Kfeb 10 07:48:06 klad kernel: ACPI: EC: event unblocked[m
+feb 10 07:48:06 klad kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62[m
+feb 10 07:48:06 klad kernel: ACPI: EC: GPE=0x6e[m
+feb 10 07:48:06 klad kernel: ACPI: \_SB_.PC00.LPCB.H_EC: Boot ECDT EC initialization complete[m
+feb 10 07:48:06 klad kernel: ACPI: \_SB_.PC00.LPCB.H_EC: EC: Used to handle transactions and events[m
+feb 10 07:48:06 klad kernel: iommu: Default domain type: Translated [m
+feb 10 07:48:06 klad kernel: iommu: DMA domain TLB invalidation policy: lazy mode [m
+feb 10 07:48:06 klad kernel: pps_core: LinuxPPS API ver. 1 registered[m
+feb 10 07:48:06 klad kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <gi[m[7m>[27m
+feb 10 07:48:06 klad kernel: PTP clock support registered[m
+feb 10 07:48:06 klad kernel: EDAC MC: Ver: 3.0.0[m
+feb 10 07:48:06 klad kernel: Registered efivars operations[m
+feb 10 07:48:06 klad kernel: NetLabel: Initializing[m
+feb 10 07:48:06 klad kernel: NetLabel:  domain hash size = 128[m
+feb 10 07:48:06 klad kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO[m
+feb 10 07:48:06 klad kernel: NetLabel:  unlabeled traffic allowed by default[m
+feb 10 07:48:06 klad kernel: PCI: Using ACPI for IRQ routing[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245mPCI: pci_cache_line_size set to 64 bytes[0m[m
+feb 10 07:48:06 klad kernel: pci 0000:00:1f.5: can't claim BAR 0 [mem 0xfe010000-0xfe010fff]: no comp[m[7m>[27m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x0009f000-0x0009ffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x377d1000-0x37ffffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x3844b000-0x3bffffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x3c2c9000-0x3fffffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x3e9df000-0x3fffffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x43b00000-0x43ffffff][0m[m
+feb 10 07:48:06 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245me820: reserve RAM buffer [mem 0x4af800000-0x4afffffff][0m[m
+[7mlines 469-494[27m[K[Kfeb 10 07:48:06 klad kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: vgaarb: bridge control possible[m
+feb 10 07:48:06 klad kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,l[m[7m>[27m
+feb 10 07:48:06 klad kernel: vgaarb: loaded[m
+feb 10 07:48:06 klad kernel: clocksource: Switched to clocksource tsc-early[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mVFS: Disk quotas dquot_6.6.0[0m[m
+feb 10 07:48:06 klad kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 
