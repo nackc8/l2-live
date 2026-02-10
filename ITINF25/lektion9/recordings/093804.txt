@@ -683,4 +683,42 @@ feb 10 07:48:06 klad kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes
 feb 10 07:48:06 klad kernel: vgaarb: loaded[m
 feb 10 07:48:06 klad kernel: clocksource: Switched to clocksource tsc-early[m
 feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mVFS: Disk quotas dquot_6.6.0[0m[m
-feb 10 07:48:06 klad kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 
+feb 10 07:48:06 klad kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)[m
+feb 10 07:48:06 klad kernel: AppArmor: AppArmor Filesystem Enabled[m
+feb 10 07:48:06 klad kernel: pnp: PnP ACPI init[m
+feb 10 07:48:06 klad kernel: system 00:00: [io  0x0680-0x069f] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:00: [io  0x164e-0x164f] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:01: [io  0x1854-0x1857] has been reserved[m
+feb 10 07:48:06 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mpnp 00:03: disabling [mem 0xc0000000-0xcfffffff] because it overlaps 000[m[7m>[27m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfedc0000-0xfedc7fff] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfeda0000-0xfeda0fff] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfeda1000-0xfeda1fff] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfed20000-0xfed7ffff] could not be reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfed90000-0xfed93fff] could not be reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfed45000-0xfed8ffff] could not be reserved[m
+feb 10 07:48:06 klad kernel: system 00:03: [mem 0xfee00000-0xfeefffff] has been reserved[m
+feb 10 07:48:06 klad kernel: system 00:04: [io  0x2000-0x20fe] has been reserved[m
+feb 10 07:48:06 klad kernel: pnp: PnP ACPI: found 6 devices[m
+feb 10 07:48:06 klad kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: [m[7m>[27m
+feb 10 07:48:06 klad kernel: NET: Registered PF_INET protocol family[m
+feb 10 07:48:06 klad kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)[m
+feb 10 07:48:06 klad kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 byte[m[7m>[27m
+[7mlines 495-520[27m[K[K[?1l>[?2004h[94mITINF25/lektion9
+(B[m$ [H[2J[94mITINF25/lektion9
+(B[m$ c[Kr[K(reverse-i-search)`': r': sudo jou[7mr[27mnalctl -ke': gh [7mre[27mpo view --webs': sudo sysctl kernel.dmesg_[7mres[27mtrict[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct': sudo sysctl kernel.dmesg_[7mrest[27mrict[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr': sudo sysctl kernel.dmesg_[7mrestr[27mict[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci': sudo sysctl kernel.dmesg_[7mrestri[27mct[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc': sudo sysctl kernel.dmesg_[7mrestric[27mt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct': sudo sysctl kernel.dmesg_[7mrestrict[27m[28P(B[m$ sudo sysctl kernel.dmesg_restrict[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lkernel.dmesg_restrict = 1
+[?2004h[94mITINF25/lektion9
+(B[m$ ls /proc/sys/kernel/printk[C[C[1P /proc/sys/kernel/printk[1P /proc/sys/kernel/printkl /proc/sys/kernel/printks /proc/sys/kernel/printk
+[?2004l/proc/sys/kernel/printk
+[?2004h[94mITINF25/lektion9
+(B[m$ ls /proc/sys/kernel/printk[C[C[1P /proc/sys/kernel/printk[1P /proc/sys/kernel/printkc /proc/sys/kernel/printka /proc/sys/kernel/printkt /proc/sys/kernel/printk
+[?2004l4	4	1	7
+[?2004h[94mITINF25/lektion9
+(B[m$ ls /var/log[H[2J[94mITINF25/lektion9
+(B[m$ ls /var/log/
+[?2004lalternatives.log	boot.log.4	dpkg.log.8.gz		 popularity-contest.6774.gpg
+alternatives.log.1	boot.log.5	dpkg.log.9.gz		 popularity-contest.6.gz
+alternatives.log.10.gz	boot.log.6	exim4			 popularity-contest.gpg
+alternatives.log.11.gz	boot.log.7	faillog			 private
+alternatives.log.12.gz	btmp		fontconfig.log		 README
+alternatives.log.2.gz	btmp.1		gd
