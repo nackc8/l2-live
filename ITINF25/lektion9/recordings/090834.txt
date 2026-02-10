@@ -86,4 +86,108 @@ feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8f
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20[m
 feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved[m
-feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI 
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043b00000-0x0000000047ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000048e00000-0x0000000048ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000004a000000-0x00000000507fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000100000000-0x00000004af7fffff] usable[m
+feb 10 07:48:06 klad kernel: NX (Execute Disable) protection: active[m
+feb 10 07:48:06 klad kernel: efi: EFI v2.80 by INSYDE Corp.[m
+feb 10 07:48:06 klad kernel: efi: ACPI=0x43afe000 ACPI 2.0=0x43afe014 TPMFinalLog=0x439a6000 SMBIOS=0[m[7m>[27m
+[7mlines 1-26[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[Hpdated early to revision 0x43a, date = 2025-10-12[m
+[0;1;39m[0;1;31m[0;1;39m-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binuti[m[7m>[27m
+GE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1-4611-8ebe-c6b3a55f485e ro i8042.kbdreset=1 quiet s[m[7m>[27m
+on: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks[m
+ RAM map:[m
+000000000000-0x000000000009efff] usable[m
+00000009f000-0x00000000000fffff] reserved[m
+000000100000-0x000000003c2c8fff] usable[m
+00003c2c9000-0x000000003cbc8fff] reserved[m
+00003cbc9000-0x000000003e9defff] usable[m
+00003e9df000-0x000000003edaefff] type 20[m
+00003edaf000-0x0000000040a7efff] reserved[m
+000040a7f000-0x0000000043a2efff] ACPI NVS[m
+000043a2f000-0x0000000043afefff] ACPI data[m
+000043aff000-0x0000000043afffff] usable[m
+000043b00000-0x0000000047ffffff] reserved[m
+000048e00000-0x0000000048ffffff] reserved[m
+00004a000000-0x00000000507fffff] reserved[m
+0000c0000000-0x00000000cfffffff] reserved[m
+0000fe010000-0x00000000fe010fff] reserved[m
+0000fed20000-0x00000000fed7ffff] reserved[m
+0000ff000000-0x00000000ffffffff] reserved[m
+000100000000-0x00000004af7fffff] usable[m
+rotection: active[m
+DE Corp.[m
+CPI 2.0=0x43afe014 TPMFinalLog=0x439a6000 SMBIOS=0x3f086000 MEMATTR=0x38120018 ESRT=0x3844b498 MOKvar[m[7m>[27m
+[7mlines 1-26[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[Hfeb 10 07:48:06 klad kernel: microcode: microcode updated early to revision 0x43a, date = 2025-10-12[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mLinux version 6.1.0-37-amd64 (debian-kernel@lists.debian.org) (gcc-12 (D[m[7m>[27m
+feb 10 07:48:06 klad kernel: Command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1[m[7m>[27m
+feb 10 07:48:06 klad kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks[m[7m>[27m
+feb 10 07:48:06 klad kernel: BIOS-provided physical RAM map:[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000040a7f000-0x0000000043a2efff] ACPI NVS[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043a2f000-0x0000000043afefff] ACPI data[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043aff000-0x0000000043afffff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000043b00000-0x0000000047ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000048e00000-0x0000000048ffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000004a000000-0x00000000507fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000100000000-0x00000004af7fffff] usable[m
+feb 10 07:48:06 klad kernel: NX (Execute Disable) protection: active[m
+feb 10 07:48:06 klad kernel: efi: EFI v2.80 by INSYDE Corp.[m
+feb 10 07:48:06 klad kernel: efi: ACPI=0x43afe000 ACPI 2.0=0x43afe014 TPMFinalLog=0x439a6000 SMBIOS=0[m[7m>[27m
+[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-26[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[Hpdated early to revision 0x43a, date = 2025-10-12[m
+[0;1;39m[0;1;31m[0;1;39m-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binuti[m[7m>[27m
+GE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1-4611-8ebe-c6b3a55f485e ro i8042.kbdreset=1 quiet s[m[7m>[27m
+on: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks[m
+ RAM map:[m
+000000000000-0x000000000009efff] usable[m
+00000009f000-0x00000000000fffff] reserved[m
+000000100000-0x000000003c2c8fff] usable[m
+00003c2c9000-0x000000003cbc8fff] reserved[m
+00003cbc9000-0x000000003e9defff] usable[m
+00003e9df000-0x000000003edaefff] type 20[m
+00003edaf000-0x0000000040a7efff] reserved[m
+000040a7f000-0x0000000043a2efff] ACPI NVS[m
+000043a2f000-0x0000000043afefff] ACPI data[m
+000043aff000-0x0000000043afffff] usable[m
+000043b00000-0x0000000047ffffff] reserved[m
+000048e00000-0x0000000048ffffff] reserved[m
+00004a000000-0x00000000507fffff] reserved[m
+0000c0000000-0x00000000cfffffff] reserved[m
+0000fe010000-0x00000000fe010fff] reserved[m
+0000fed20000-0x00000000fed7ffff] reserved[m
+0000ff000000-0x00000000ffffffff] reserved[m
+000100000000-0x00000004af7fffff] usable[m
+rotection: active[m
+DE Corp.[m
+CPI 2.0=0x43afe014 TPMFinalLog=0x439a6000 SMBIOS=0x3f086000 MEMATTR=0x38120018 ESRT=0x3844b498 MOKvar[m[7m>[27m
+[7mlines 1-26[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[Hfeb 10 07:48:06 klad kernel: microcode: microcode updated early to revision 0x43a, date = 2025-10-12[m
+feb 10 07:48:06 klad kernel: [0;1;39m[0;1;31m[0;1;39mLinux version 6.1.0-37-amd64 (debian-kernel@lists.debian.org) (gcc-12 (D[m[7m>[27m
+feb 10 07:48:06 klad kernel: Command line: BOOT_IMAGE=/vmlinuz-6.1.0-37-amd64 root=UUID=161a00c3-26c1[m[7m>[27m
+feb 10 07:48:06 klad kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks[m[7m>[27m
+feb 10 07:48:06 klad kernel: BIOS-provided physical RAM map:[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003c2c8fff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003c2c9000-0x000000003cbc8fff] reserved[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003cbc9000-0x000000003e9defff] usable[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003e9df000-0x000000003edaefff] type 20[m
+feb 10 07:48:06 klad kernel: BIOS-e820: [mem 0x000000003edaf000-0x0000000040a7efff] reserved[m
+feb 10 07:48:06 klad kernel: BIO
