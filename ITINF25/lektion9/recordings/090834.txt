@@ -698,4 +698,614 @@ ing plugin" id=io.containerd.mount-manager.v1.bolt type=io.containerd.mount-mana
 2-10T07:57:08.942208159+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overla[m[7m>[27m
 2-10T07:57:08.942438994+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs ty[m[7m>[27m
 2-10T07:57:08.942469328+01:00" level=info msg="skip loading plugin" [7merror[27m="lstat /var/lib/containerd/[m[7m>[27m
-2-10T07:57:08.942479380+01:00" leve
+2-10T07:57:08.942479380+01:00" level=info msg="loading plugin" id=io.containerd.event.v1.exchange typ[m[7m>[27m
+2-10T07:57:08.943073429+01:00" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgrou[m[7m>[27m
+2-10T07:57:08.943497956+01:00" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type[m[7m>[27m
+2-10T07:57:08.943525422+01:00" level=info msg="metadata content store policy set" policy=shared[m
+fully read all properties[m
+2-10T07:57:08.947263695+01:00" level=info msg="loading plugin" id=io.containerd.gc.v1.scheduler type=[m[7m>[27m
+2-10T07:57:08.947452886+01:00" level=info msg="loading plugin" id=io.containerd.nri.v1.nri type=io.co[m[7m>[27m
+2-10T07:57:08.947496454+01:00" level=info msg="built-in NRI default validator is disabled"[m
+2-10T07:57:08.947502100+01:00" level=info msg="runtime interface created"[m
+2-10T07:57:08.947505404+01:00" level=info msg="created NRI interface"[m
+2-10T07:57:08.947513617+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.erofs type=[m[7m>[27m
+2-10T07:57:08.947801354+01:00" level=info msg="skip loading plugin" [7merror[27m="failed to check mkfs.erofs[m[7m>[27m
+2-10T07:57:08.947830652+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.walking typ[m[7m>[27m
+2-10T07:57:08.947844321+01:00" level=info msg="loading plugin" id=io.containerd.lease.v1.manager type[m[7m>[27m
+2-10T07:57:08.947854727+01:00" level=info msg="loading plugin" id=io.containerd.mount-manager.v1.bolt[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KCC[H[2J[H loading plugin" [7merror[27m="no scratch file generator: skip plugin" id=io.containerd.snapshotter.v1.block[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a [m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.sna[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.native type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.overlayfs type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or d[m[7m>[27m
+ing plugin" id=io.containerd.event.v1.exchange type=io.containerd.event.v1[m
+ing plugin" id=io.containerd.monitor.task.v1.cgroups type=io.containerd.monitor.task.v1[m
+ing plugin" id=io.containerd.metadata.v1.bolt type=io.containerd.metadata.v1[m
+data content store policy set" policy=shared[m
+[m
+ing plugin" id=io.containerd.gc.v1.scheduler type=io.containerd.gc.v1[m
+ing plugin" id=io.containerd.nri.v1.nri type=io.containerd.nri.v1[m
+t-in NRI default validator is disabled"[m
+ime interface created"[m
+ted NRI interface"[m
+ing plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1[m
+ loading plugin" [7merror[27m="failed to check mkfs.erofs availability: failed to run mkfs.erofs --help: exe[m[7m>[27m
+ing plugin" id=io.containerd.differ.v1.walking type=io.containerd.differ.v1[m
+ing plugin" id=io.containerd.lease.v1.manager type=io.containerd.lease.v1[m
+ing plugin" id=io.containerd.mount-manager.v1.bolt type=io.containerd.mount-manager.v1[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KCC[H[2J[Hskip plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1[m
+ype=io.containerd.snapshotter.v1[m
+.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshot[m[7m>[27m
+er type=io.containerd.snapshotter.v1[m
+kip plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1[m
+ype=io.containerd.snapshotter.v1[m
+modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1[m
+type=io.containerd.snapshotter.v1[m
+fs type=io.containerd.snapshotter.v1[m
+e=io.containerd.snapshotter.v1[m
+o.containerd.snapshotter.v1.zfs: no such file or directory: skip plugin" id=io.containerd.snapshotter[m[7m>[27m
+=io.containerd.event.v1[m
+s type=io.containerd.monitor.task.v1[m
+io.containerd.metadata.v1[m
+[m
+[m
+o.containerd.gc.v1[m
+tainerd.nri.v1[m
+[m
+[m
+[m
+o.containerd.differ.v1[m
+availability: failed to run mkfs.erofs --help: exec: \"mkfs.erofs\": executable file not found in $PA[m[7m>[27m
+=io.containerd.differ.v1[m
+io.containerd.lease.v1[m
+type=io.containerd.mount-manager.v1[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KCC[H[2J[Hile type=io.containerd.snapshotter.v1[m
+[m
+trfs filesystem to be used with the btrfs snapshotter: skip plugin" id=io.containerd.snapshotter.v1.b[m[7m>[27m
+[m
+er type=io.containerd.snapshotter.v1[m
+[m
+shotter.v1.erofs type=io.containerd.snapshotter.v1[m
+[m
+[m
+[m
+rectory: skip plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+: \"mkfs.erofs\": executable file not found in $PATH: skip plugin" id=io.containerd.differ.v1.erofs t[m[7m>[27m
+[m
+[m
+[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[Hskip plugin" id=io.containerd.snapshotter.v1.blockfile type=io.containerd.snapshotter.v1[m
+ype=io.containerd.snapshotter.v1[m
+.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshot[m[7m>[27m
+er type=io.containerd.snapshotter.v1[m
+kip plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1[m
+ype=io.containerd.snapshotter.v1[m
+modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1[m
+type=io.containerd.snapshotter.v1[m
+fs type=io.containerd.snapshotter.v1[m
+e=io.containerd.snapshotter.v1[m
+o.containerd.snapshotter.v1.zfs: no such file or directory: skip plugin" id=io.containerd.snapshotter[m[7m>[27m
+=io.containerd.event.v1[m
+s type=io.containerd.monitor.task.v1[m
+io.containerd.metadata.v1[m
+[m
+[m
+o.containerd.gc.v1[m
+tainerd.nri.v1[m
+[m
+[m
+[m
+o.containerd.differ.v1[m
+availability: failed to run mkfs.erofs --help: exec: \"mkfs.erofs\": executable file not found in $PA[m[7m>[27m
+=io.containerd.differ.v1[m
+io.containerd.lease.v1[m
+type=io.containerd.mount-manager.v1[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[H loading plugin" [7merror[27m="no scratch file generator: skip plugin" id=io.containerd.snapshotter.v1.block[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a [m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.sna[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.native type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.overlayfs type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or d[m[7m>[27m
+ing plugin" id=io.containerd.event.v1.exchange type=io.containerd.event.v1[m
+ing plugin" id=io.containerd.monitor.task.v1.cgroups type=io.containerd.monitor.task.v1[m
+ing plugin" id=io.containerd.metadata.v1.bolt type=io.containerd.metadata.v1[m
+data content store policy set" policy=shared[m
+[m
+ing plugin" id=io.containerd.gc.v1.scheduler type=io.containerd.gc.v1[m
+ing plugin" id=io.containerd.nri.v1.nri type=io.containerd.nri.v1[m
+t-in NRI default validator is disabled"[m
+ime interface created"[m
+ted NRI interface"[m
+ing plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1[m
+ loading plugin" [7merror[27m="failed to check mkfs.erofs availability: failed to run mkfs.erofs --help: exe[m[7m>[27m
+ing plugin" id=io.containerd.differ.v1.walking type=io.containerd.differ.v1[m
+ing plugin" id=io.containerd.lease.v1.manager type=io.containerd.lease.v1[m
+ing plugin" id=io.containerd.mount-manager.v1.bolt type=io.containerd.mount-manager.v1[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[H2-10T07:57:08.941322452+01:00" level=info msg="skip loading plugin" [7merror[27m="no scratch file generator:[m[7m>[27m
+2-10T07:57:08.941342597+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.btrfs [m[7m>[27m
+2-10T07:57:08.941497893+01:00" level=info msg="skip loading plugin" [7merror[27m="path /var/lib/containerd/i[m[7m>[27m
+2-10T07:57:08.941513953+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+2-10T07:57:08.941532447+01:00" level=info msg="skip loading plugin" [7merror[27m="devmapper not configured: [m[7m>[27m
+2-10T07:57:08.941536824+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.erofs [m[7m>[27m
+2-10T07:57:08.942036348+01:00" level=info msg="skip loading plugin" [7merror[27m="EROFS unsupported, please [m[7m>[27m
+2-10T07:57:08.942048616+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.native[m[7m>[27m
+2-10T07:57:08.942208159+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overla[m[7m>[27m
+2-10T07:57:08.942438994+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs ty[m[7m>[27m
+2-10T07:57:08.942469328+01:00" level=info msg="skip loading plugin" [7merror[27m="lstat /var/lib/containerd/[m[7m>[27m
+2-10T07:57:08.942479380+01:00" level=info msg="loading plugin" id=io.containerd.event.v1.exchange typ[m[7m>[27m
+2-10T07:57:08.943073429+01:00" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgrou[m[7m>[27m
+2-10T07:57:08.943497956+01:00" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type[m[7m>[27m
+2-10T07:57:08.943525422+01:00" level=info msg="metadata content store policy set" policy=shared[m
+fully read all properties[m
+2-10T07:57:08.947263695+01:00" level=info msg="loading plugin" id=io.containerd.gc.v1.scheduler type=[m[7m>[27m
+2-10T07:57:08.947452886+01:00" level=info msg="loading plugin" id=io.containerd.nri.v1.nri type=io.co[m[7m>[27m
+2-10T07:57:08.947496454+01:00" level=info msg="built-in NRI default validator is disabled"[m
+2-10T07:57:08.947502100+01:00" level=info msg="runtime interface created"[m
+2-10T07:57:08.947505404+01:00" level=info msg="created NRI interface"[m
+2-10T07:57:08.947513617+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.erofs type=[m[7m>[27m
+2-10T07:57:08.947801354+01:00" level=info msg="skip loading plugin" [7merror[27m="failed to check mkfs.erofs[m[7m>[27m
+2-10T07:57:08.947830652+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.walking typ[m[7m>[27m
+2-10T07:57:08.947844321+01:00" level=info msg="loading plugin" id=io.containerd.lease.v1.manager type[m[7m>[27m
+2-10T07:57:08.947854727+01:00" level=info msg="loading plugin" id=io.containerd.mount-manager.v1.bolt[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[Hfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941322452+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941342597+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941497893+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941513953+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941532447+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941536824+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942036348+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942048616+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942208159+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942438994+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942469328+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942479380+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943073429+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943497956+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943525422+01:00" level=info msg="met[m[7m>[27m
+feb 10 07:57:08 klad tailscaled[1688]: TPM: successfully read all properties[m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947263695+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947452886+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947496454+01:00" level=info msg="bui[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947502100+01:00" level=info msg="run[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947505404+01:00" level=info msg="cre[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947513617+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947801354+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947830652+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947844321+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947854727+01:00" level=info msg="loa[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KCC[H[2J[H2-10T07:57:08.941322452+01:00" level=info msg="skip loading plugin" [7merror[27m="no scratch file generator:[m[7m>[27m
+2-10T07:57:08.941342597+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.btrfs [m[7m>[27m
+2-10T07:57:08.941497893+01:00" level=info msg="skip loading plugin" [7merror[27m="path /var/lib/containerd/i[m[7m>[27m
+2-10T07:57:08.941513953+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+2-10T07:57:08.941532447+01:00" level=info msg="skip loading plugin" [7merror[27m="devmapper not configured: [m[7m>[27m
+2-10T07:57:08.941536824+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.erofs [m[7m>[27m
+2-10T07:57:08.942036348+01:00" level=info msg="skip loading plugin" [7merror[27m="EROFS unsupported, please [m[7m>[27m
+2-10T07:57:08.942048616+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.native[m[7m>[27m
+2-10T07:57:08.942208159+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overla[m[7m>[27m
+2-10T07:57:08.942438994+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs ty[m[7m>[27m
+2-10T07:57:08.942469328+01:00" level=info msg="skip loading plugin" [7merror[27m="lstat /var/lib/containerd/[m[7m>[27m
+2-10T07:57:08.942479380+01:00" level=info msg="loading plugin" id=io.containerd.event.v1.exchange typ[m[7m>[27m
+2-10T07:57:08.943073429+01:00" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgrou[m[7m>[27m
+2-10T07:57:08.943497956+01:00" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type[m[7m>[27m
+2-10T07:57:08.943525422+01:00" level=info msg="metadata content store policy set" policy=shared[m
+fully read all properties[m
+2-10T07:57:08.947263695+01:00" level=info msg="loading plugin" id=io.containerd.gc.v1.scheduler type=[m[7m>[27m
+2-10T07:57:08.947452886+01:00" level=info msg="loading plugin" id=io.containerd.nri.v1.nri type=io.co[m[7m>[27m
+2-10T07:57:08.947496454+01:00" level=info msg="built-in NRI default validator is disabled"[m
+2-10T07:57:08.947502100+01:00" level=info msg="runtime interface created"[m
+2-10T07:57:08.947505404+01:00" level=info msg="created NRI interface"[m
+2-10T07:57:08.947513617+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.erofs type=[m[7m>[27m
+2-10T07:57:08.947801354+01:00" level=info msg="skip loading plugin" [7merror[27m="failed to check mkfs.erofs[m[7m>[27m
+2-10T07:57:08.947830652+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.walking typ[m[7m>[27m
+2-10T07:57:08.947844321+01:00" level=info msg="loading plugin" id=io.containerd.lease.v1.manager type[m[7m>[27m
+2-10T07:57:08.947854727+01:00" level=info msg="loading plugin" id=io.containerd.mount-manager.v1.bolt[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KCC[H[2J[H loading plugin" [7merror[27m="no scratch file generator: skip plugin" id=io.containerd.snapshotter.v1.block[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.btrfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a [m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.devmapper type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="devmapper not configured: skip plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.sna[m[7m>[27m
+ing plugin" id=io.containerd.snapshotter.v1.native type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.overlayfs type=io.containerd.snapshotter.v1[m
+ing plugin" id=io.containerd.snapshotter.v1.zfs type=io.containerd.snapshotter.v1[m
+ loading plugin" [7merror[27m="lstat /var/lib/containerd/io.containerd.snapshotter.v1.zfs: no such file or d[m[7m>[27m
+ing plugin" id=io.containerd.event.v1.exchange type=io.containerd.event.v1[m
+ing plugin" id=io.containerd.monitor.task.v1.cgroups type=io.containerd.monitor.task.v1[m
+ing plugin" id=io.containerd.metadata.v1.bolt type=io.containerd.metadata.v1[m
+data content store policy set" policy=shared[m
+[m
+ing plugin" id=io.containerd.gc.v1.scheduler type=io.containerd.gc.v1[m
+ing plugin" id=io.containerd.nri.v1.nri type=io.containerd.nri.v1[m
+t-in NRI default validator is disabled"[m
+ime interface created"[m
+ted NRI interface"[m
+ing plugin" id=io.containerd.differ.v1.erofs type=io.containerd.differ.v1[m
+ loading plugin" [7merror[27m="failed to check mkfs.erofs availability: failed to run mkfs.erofs --help: exe[m[7m>[27m
+ing plugin" id=io.containerd.differ.v1.walking type=io.containerd.differ.v1[m
+ing plugin" id=io.containerd.lease.v1.manager type=io.containerd.lease.v1[m
+ing plugin" id=io.containerd.mount-manager.v1.bolt type=io.containerd.mount-manager.v1[m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[H2-10T07:57:08.941322452+01:00" level=info msg="skip loading plugin" [7merror[27m="no scratch file generator:[m[7m>[27m
+2-10T07:57:08.941342597+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.btrfs [m[7m>[27m
+2-10T07:57:08.941497893+01:00" level=info msg="skip loading plugin" [7merror[27m="path /var/lib/containerd/i[m[7m>[27m
+2-10T07:57:08.941513953+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.devmap[m[7m>[27m
+2-10T07:57:08.941532447+01:00" level=info msg="skip loading plugin" [7merror[27m="devmapper not configured: [m[7m>[27m
+2-10T07:57:08.941536824+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.erofs [m[7m>[27m
+2-10T07:57:08.942036348+01:00" level=info msg="skip loading plugin" [7merror[27m="EROFS unsupported, please [m[7m>[27m
+2-10T07:57:08.942048616+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.native[m[7m>[27m
+2-10T07:57:08.942208159+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.overla[m[7m>[27m
+2-10T07:57:08.942438994+01:00" level=info msg="loading plugin" id=io.containerd.snapshotter.v1.zfs ty[m[7m>[27m
+2-10T07:57:08.942469328+01:00" level=info msg="skip loading plugin" [7merror[27m="lstat /var/lib/containerd/[m[7m>[27m
+2-10T07:57:08.942479380+01:00" level=info msg="loading plugin" id=io.containerd.event.v1.exchange typ[m[7m>[27m
+2-10T07:57:08.943073429+01:00" level=info msg="loading plugin" id=io.containerd.monitor.task.v1.cgrou[m[7m>[27m
+2-10T07:57:08.943497956+01:00" level=info msg="loading plugin" id=io.containerd.metadata.v1.bolt type[m[7m>[27m
+2-10T07:57:08.943525422+01:00" level=info msg="metadata content store policy set" policy=shared[m
+fully read all properties[m
+2-10T07:57:08.947263695+01:00" level=info msg="loading plugin" id=io.containerd.gc.v1.scheduler type=[m[7m>[27m
+2-10T07:57:08.947452886+01:00" level=info msg="loading plugin" id=io.containerd.nri.v1.nri type=io.co[m[7m>[27m
+2-10T07:57:08.947496454+01:00" level=info msg="built-in NRI default validator is disabled"[m
+2-10T07:57:08.947502100+01:00" level=info msg="runtime interface created"[m
+2-10T07:57:08.947505404+01:00" level=info msg="created NRI interface"[m
+2-10T07:57:08.947513617+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.erofs type=[m[7m>[27m
+2-10T07:57:08.947801354+01:00" level=info msg="skip loading plugin" [7merror[27m="failed to check mkfs.erofs[m[7m>[27m
+2-10T07:57:08.947830652+01:00" level=info msg="loading plugin" id=io.containerd.differ.v1.walking typ[m[7m>[27m
+2-10T07:57:08.947844321+01:00" level=info msg="loading plugin" id=io.containerd.lease.v1.manager type[m[7m>[27m
+2-10T07:57:08.947854727+01:00" level=info msg="loading plugin" id=io.containerd.mount-manager.v1.bolt[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[Hfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941322452+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941342597+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941497893+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941513953+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941532447+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941536824+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942036348+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942048616+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942208159+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942438994+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942469328+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942479380+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943073429+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943497956+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943525422+01:00" level=info msg="met[m[7m>[27m
+feb 10 07:57:08 klad tailscaled[1688]: TPM: successfully read all properties[m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947263695+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947452886+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947496454+01:00" level=info msg="bui[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947502100+01:00" level=info msg="run[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947505404+01:00" level=info msg="cre[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947513617+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947801354+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947830652+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947844321+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947854727+01:00" level=info msg="loa[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[Hfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941322452+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941342597+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941497893+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941513953+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941532447+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941536824+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942036348+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942048616+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942208159+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942438994+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942469328+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942479380+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943073429+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943497956+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943525422+01:00" level=info msg="met[m[7m>[27m
+feb 10 07:57:08 klad tailscaled[1688]: TPM: successfully read all properties[m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947263695+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947452886+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947496454+01:00" level=info msg="bui[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947502100+01:00" level=info msg="run[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947505404+01:00" level=info msg="cre[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947513617+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947801354+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947830652+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947844321+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947854727+01:00" level=info msg="loa[m[7m>[27m
+[7mlines 1552-1577[27m[K[K [KESCESC[KOO[KDD[H[2J[Hfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941322452+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941342597+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941497893+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941513953+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941532447+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.941536824+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942036348+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942048616+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942208159+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942438994+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942469328+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.942479380+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943073429+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943497956+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.943525422+01:00" level=info msg="met[m[7m>[27m
+feb 10 07:57:08 klad tailscaled[1688]: TPM: successfully read all properties[m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947263695+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947452886+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947496454+01:00" level=info msg="bui[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947502100+01:00" level=info msg="run[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947505404+01:00" level=info msg="cre[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947513617+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947801354+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947830652+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947844321+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.947854727+01:00" level=info msg="loa[m[7m>[27m
+[7mlines 1552-1577[27m[K[Kfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948025556+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948047483+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948057890+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948067196+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948076335+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948085562+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948092638+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948099771+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948109490+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948404434+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948417062+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948426423+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948436990+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948446674+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948457332+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948465426+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948472585+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948480412+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948488024+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948500756+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948508758+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948735775+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948773216+01:00" level=info msg="Get[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.948784875+01:00" level=info msg="Sta[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.949360461+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.949531958+01:00" level=info msg="sta[m[7m>[27m
+[7mlines 1578-1603[27m[K[Kfeb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.949576254+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.949619422+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950081848+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950101927+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950123387+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950133333+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950142966+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950152189+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950162130+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950172055+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950180350+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950201081+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950217993+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950226280+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950235589+01:00" level=info msg="ski[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950242228+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950249907+01:00" level=info msg="loa[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950793754+01:00" level=info msg=serv[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950832072+01:00" level=info msg=serv[m[7m>[27m
+feb 10 07:57:08 klad containerd[1690]: time="2026-02-10T07:57:08.950885886+01:00" level=info msg="con[m[7m>[27m
+feb 10 07:57:08 klad systemd[1]: Started containerd.service - containerd container runtime.[m
+feb 10 07:57:08 klad systemd[1]: Started blueman-mechanism.service - Bluetooth management mechanism.[m
+feb 10 07:57:09 klad systemd[1]: Received SIGRTMIN+21 from PID 375 (plymouthd).[m
+feb 10 07:57:09 klad gdm-launch-environment][1826]: pam_unix(gdm-launch-environment:session): session[m[7m>[27m
+feb 10 07:57:09 klad systemd[1]: Created slice user-113.slice - User Slice of UID 113.[m
+feb 10 07:57:09 klad systemd[1]: Starting user-runtime-dir@113.service - User Runtime Directory /run/[m[7m>[27m
+[7mlines 1604-1629[27m[K[Kfeb 10 07:57:09 klad systemd-logind[1566]: New session c1 of user Debian-gdm.[m
+feb 10 07:57:09 klad systemd[1]: Finished user-runtime-dir@113.service - User Runtime Directory /run/[m[7m>[27m
+feb 10 07:57:09 klad systemd[1]: Starting user@113.service - User Manager for UID 113...[m
+feb 10 07:57:09 klad (systemd)[1854]: pam_unix(systemd-user:session): session opened for user Debian-[m[7m>[27m
+feb 10 07:57:09 klad vboxdrv.sh[1570]: vboxdrv.sh: Starting VirtualBox services.[m
+feb 10 07:57:09 klad vboxdrv.sh[1863]: [0;1;39m[0;1;31m[0;1;39mStarting VirtualBox services.[0m[m
+feb 10 07:57:09 klad systemd-xdg-autostart-generator[1972]: Exec binary 'kalendarac' does not exist: [m[7m>[27m
+feb 10 07:57:09 klad systemd-xdg-autostart-generator[1972]: /etc/xdg/autostart/org.kde.kalendarac.des[m[7m>[27m
+feb 10 07:57:09 klad systemd-xdg-autostart-generator[1972]: Exec binary 'solaar' does not exist: No s[m[7m>[27m
+feb 10 07:57:09 klad systemd-xdg-autostart-generator[1972]: /etc/xdg/autostart/solaar.desktop: not ge[m[7m>[27m
+feb 10 07:57:09 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mvboxdrv: loading out-of-tree module taints kernel.[0m[m
+feb 10 07:57:09 klad kernel: [0;1;39m[0;1;31m[0;1;39mvboxdrv: module verification failed: signature and/or required key missi[m[7m>[27m
+feb 10 07:57:09 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245mvboxdrv: Found 12 processor cores/threads[0m[m
+feb 10 07:57:09 klad kernel: vboxdrv: TSC mode is Invariant, tentative frequency 2495999584 Hz[m
+feb 10 07:57:09 klad kernel: [0;38;5;245m[0;1;31m[0;38;5;245mvboxdrv: Successfully loaded version 7.0.26 r168464 (interface 0x0033000[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Queued start job for default target default.target.[m
+feb 10 07:57:09 klad kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: logtail started[m
+feb 10 07:57:09 klad tailscaled[1688]: Program starting: v1.92.5-t1c215f6e5-g9b792287b, Go 1.25.5: [][m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: LogID: f7accfaed5c0022231c054507685d9259f483427b33a1341bd6ef6b[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: logpolicy: using $STATE_DIRECTORY, "/var/lib/tailscale"[m
+feb 10 07:57:09 klad tailscaled[1688]: logtail: dial "log.tailscale.com:443" failed: dial tcp: lookup[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: dns: resolvedIsActuallyResolver [7merror[27m: resolv.conf has no name[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: dns: [rc=nm resolved=not-in-use ret=direct][m
+feb 10 07:57:09 klad tailscaled[1688]: dns: using "direct" mode[m
+feb 10 07:57:09 klad tailscaled[1688]: dns: using *dns.directManager[m
+[7mlines 1630-1655[27m[K[Kfeb 10 07:57:09 klad tailscaled[1688]: dns: inotify: NewDirWatcher: context canceled[m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp2f.tailscale.com", "208.111.34.178") [m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp2f.tailscale.com", "208.111.34.178") for "lo[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp5.tailscale.com", "2001:19f0:5801:10b[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp5.tailscale.com", "2001:19f0:5801:10b7:5400:[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp1c.tailscale.com", "104.248.8.210") f[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp1c.tailscale.com", "104.248.8.210") for "log[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp4e.tailscale.com", "2a03:b0c0:3:d0::2[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.1700] device (wlp0s20f3): set-hw-addr:[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp4e.tailscale.com", "2a03:b0c0:3:d0::29:9001"[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp11.tailscale.com", "18.230.97.74") fo[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp11.tailscale.com", "18.230.97.74") for "log.[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp9b.tailscale.com", "2001:19f0:6401:eb[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp9b.tailscale.com", "2001:19f0:6401:eb5:5400:[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp4e.tailscale.com", "134.122.74.153") [m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp4e.tailscale.com", "134.122.74.153") for "lo[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp1e.tailscale.com", "2604:a880:800:10:[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp1e.tailscale.com", "2604:a880:800:10::873:40[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp11.tailscale.com", "18.230.97.74") fo[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp11.tailscale.com", "18.230.97.74") for "log.[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp12.tailscale.com", "2001:19f0:5c01:28[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp12.tailscale.com", "2001:19f0:5c01:289:5400:[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp8d.tailscale.com", "178.62.44.132") f[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp8d.tailscale.com", "178.62.44.132") for "log[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: trying bootstrapDNS("derp2e.tailscale.com", "2607:f740:0:3f::4[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: bootstrapDNS("derp2e.tailscale.com", "2607:f740:0:3f::44c") fo[m[7m>[27m
+[7mlines 1656-1681[27m[K[Kfeb 10 07:57:09 klad tailscaled[1688]: logtail: upload: log upload of 505 bytes compressed failed: Po[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Created slice app.slice - User Application Slice.[m
+feb 10 07:57:09 klad systemd[1854]: Created slice session.slice - User Core Session Slice.[m
+feb 10 07:57:09 klad systemd[1854]: Created slice background.slice - User Background Tasks Slice.[m
+feb 10 07:57:09 klad systemd[1854]: drkonqi-coredump-cleanup.timer - Cleanup lingering KCrash metadat[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Reached target paths.target - Paths.[m
+feb 10 07:57:09 klad systemd[1854]: Reached target timers.target - Timers.[m
+feb 10 07:57:09 klad systemd[1854]: Starting dbus.socket - D-Bus User Message Bus Socket...[m
+feb 10 07:57:09 klad systemd[1854]: Listening on dirmngr.socket - GnuPG network certificate managemen[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on drkonqi-coredump-launcher.socket - Socket to launch [m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.[m
+feb 10 07:57:09 klad systemd[1854]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.[m
+feb 10 07:57:09 klad systemd[1854]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent a[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ss[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on gpg-agent.socket - GnuPG cryptographic agent and pas[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.[m
+feb 10 07:57:09 klad systemd[1854]: Listening on pipewire.socket - PipeWire Multimedia System Socket.[m
+feb 10 07:57:09 klad systemd[1854]: Listening on pk-debconf-helper.socket - debconf communication soc[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Listening on dbus.socket - D-Bus User Message Bus Socket.[m
+feb 10 07:57:09 klad systemd[1854]: Reached target sockets.target - Sockets.[m
+feb 10 07:57:09 klad systemd[1854]: Reached target basic.target - Basic System.[m
+feb 10 07:57:09 klad systemd[1854]: drkonqi-coredump-cleanup.service - Cleanup lingering KCrash metad[m[7m>[27m
+feb 10 07:57:09 klad systemd[1]: Started user@113.service - User Manager for UID 113.[m
+feb 10 07:57:09 klad systemd[1854]: Started pipewire.service - PipeWire Multimedia Service.[m
+feb 10 07:57:09 klad systemd[1]: Started session-c1.scope - Session c1 of User Debian-gdm.[m
+[7mlines 1682-1707[27m[K[Kfeb 10 07:57:09 klad systemd[1854]: Starting tracker-extract-3.service - Tracker metadata extractor...[m
+feb 10 07:57:09 klad systemd[1854]: Started wireplumber.service - Multimedia Service Session Manager.[m
+feb 10 07:57:09 klad systemd[1854]: Started pipewire-pulse.service - PipeWire PulseAudio.[m
+feb 10 07:57:09 klad systemd[1854]: Starting dbus.service - D-Bus User Message Bus...[m
+feb 10 07:57:09 klad systemd[1854]: Started dbus.service - D-Bus User Message Bus.[m
+feb 10 07:57:09 klad pipewire-pulse[2058]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmod.rt: Can't find org.freedesktop.portal.Desktop. Is xdg-[m[7m>[27m
+feb 10 07:57:09 klad pipewire-pulse[2058]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmod.rt: found session bus but no portal[0m[m
+feb 10 07:57:09 klad pipewire[2055]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmod.rt: Can't find org.freedesktop.portal.Desktop. Is xdg-deskto[m[7m>[27m
+feb 10 07:57:09 klad pipewire[2055]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmod.rt: found session bus but no portal[0m[m
+feb 10 07:57:09 klad wireplumber[2057]: [0;1;39m[0;1;31m[0;1;39mCan't find org.freedesktop.portal.Desktop. Is xdg-desktop-por[m[7m>[27m
+feb 10 07:57:09 klad wireplumber[2057]: [0;1;39m[0;1;31m[0;1;39mfound session bus but no portal[0m[m
+feb 10 07:57:09 klad dbus-daemon[1558]: [system] Activating via systemd: service name='org.freedeskto[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Successfully activated service 'or[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Starting gvfs-daemon.service - Virtual filesystem service...[m
+feb 10 07:57:09 klad systemd[1]: Starting rtkit-daemon.service - RealtimeKit Scheduling Policy Servic[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Successfully activated service 'or[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Started gvfs-daemon.service - Virtual filesystem service.[m
+feb 10 07:57:09 klad gnome-shell[2090]: [0;1;39m[0;1;31m[0;1;39mRunning GNOME Shell (using mutter 43.8) as a Wayland display [m[7m>[27m
+feb 10 07:57:09 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mVBoxNetFlt: Successfully started.[0m[m
+feb 10 07:57:09 klad kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mVBoxNetAdp: Successfully started.[0m[m
+feb 10 07:57:09 klad vboxdrv.sh[2117]: [0;1;39m[0;1;31m[0;1;39mVirtualBox services started.[0m[m
+feb 10 07:57:09 klad systemd[1]: Started vboxdrv.service - VirtualBox Linux kernel module.[m
+feb 10 07:57:09 klad systemd[1]: Starting vboxautostart-service.service...[m
+feb 10 07:57:09 klad systemd[1]: Starting vboxballoonctrl-service.service...[m
+feb 10 07:57:09 klad systemd[1]: Started vboxautostart-service.service.[m
+[7mlines 1708-1733[27m[K[Kfeb 10 07:57:09 klad systemd[1]: Started vboxballoonctrl-service.service.[m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4378] device (lo): state change: disco[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4381] device (lo): state change: prepa[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4383] device (lo): state change: confi[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4390] manager: (virbr0): new Bridge de[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4394] device (lo): state change: ip-co[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[1558]: [system] Successfully activated service 'org.freedesktop.Real[m[7m>[27m
+feb 10 07:57:09 klad systemd[1]: Started rtkit-daemon.service - RealtimeKit Scheduling Policy Service.[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSuccessfully called chroot.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSuccessfully dropped privileges.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSuccessfully limited resources.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mCanary thread running.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mRunning.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mWatchdog thread running.[0m[m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4424] modem-manager: ModemManager avai[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4424] device (lo): state change: ip-ch[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4425] device (lo): state change: secon[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4427] device (lo): Activation: success[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4434] manager: (AC:5F:EA:FC:3E:FF): ne[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4435] device (AC:5F:EA:FC:3E:FF): stat[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.4440] device (AC:5F:EA:FC:3E:FF): stat[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: Successfully made thread 2058 of process 2058 owned by '113'[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 1 threads of 1 processes of 1 users.[0m[m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5023] device (wlp0s20f3): supplicant i[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5024] Wi-Fi P2P device controlled by i[m[7m>[27m
+[7mlines 1734-1759[27m[K[Kfeb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5025] manager: (p2p-dev-wlp0s20f3): ne[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5026] device (p2p-dev-wlp0s20f3): stat[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5027] device (wlp0s20f3): state change[m[7m>[27m
+feb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.5029] device (p2p-dev-wlp0s20f3): stat[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: Successfully made thread 2055 of process 2055 owned by '113'[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 2 threads of 2 processes of 1 users.[0m[m
+feb 10 07:57:09 klad systemd[1854]: Starting tracker-miner-fs-3.service - Tracker file system data mi[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad tracker-miner-f[2160]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mUnable to get XDG user directory path for special directo[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: Successfully made thread 2057 of process 2057 owned by '113'[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 3 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 3 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 3 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 3 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 3 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad gnome-shell[2090]: [0;1;39m[0;1;31m[0;1;39mDevice '/dev/dri/card0' prefers shadow buffer[0m[m
+feb 10 07:57:09 klad gnome-shell[2090]: [0;1;39m[0;1;31m[0;1;39mAdded device '/dev/dri/card0' (i915) using atomic mode settin[m[7m>[27m
+feb 10 07:57:09 klad gnome-shell[2090]: [0;1;39m[0;1;31m[0;1;39mCreated gbm renderer for '/dev/dri/card0'[0m[m
+feb 10 07:57:09 klad gnome-shell[2090]: [0;1;39m[0;1;31m[0;1;39mBoot VGA GPU /dev/dri/card0 selected as primary[0m[m
+[7mlines 1760-1785[27m[K[Kfeb 10 07:57:09 klad rtkit-daemon[2067]: Successfully made thread 2182 of process 2057 owned by '113'[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 4 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 4 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 4 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: Successfully made thread 2185 of process 2055 owned by '113'[m[7m>[27m
+feb 10 07:57:09 klad rtkit-daemon[2067]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 5 threads of 3 processes of 1 users.[0m[m
+feb 10 07:57:09 klad wireplumber[2057]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mFailed to set scheduler settings: Operation not permitted[0m[m
+feb 10 07:57:09 klad wireplumber[2057]: [0;1;39m[0;1;31m[0;1;39mSPA handle 'api.libcamera.enum.manager' could not be loaded; [m[7m>[27m
+feb 10 07:57:09 klad wireplumber[2057]: [0;1;39m[0;1;31m[0;1;39mPipeWire's libcamera SPA missing or broken. libcamera not sup[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Starting gvfs-udisks2-volume-monitor.service - Virtual filesystem[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Successfully activated service 'or[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem [m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Starting gvfs-gphoto2-volume-monitor.service - Virtual filesystem[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Successfully activated service 'or[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem [m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem ser[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Successfully activated service 'or[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem serv[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating via systemd: service na[m[7m>[27m
+feb 10 07:57:09 klad systemd[1854]: Starting gvfs-goa-volume-monitor.service - Virtual filesystem ser[m[7m>[27m
+feb 10 07:57:09 klad avahi-daemon[1554]: Server startup complete. Host name is klad.local. Local serv[m[7m>[27m
+feb 10 07:57:09 klad dbus-daemon[2061]: [session uid=113 pid=2061] Activating service name='org.gnome[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: wgengine.NewUserspaceEngine(tun "tailscale0") ...[m
+[7mlines 1786-1811[27m[K[Kfeb 10 07:57:09 klad NetworkManager[1627]: <info>  [1770706629.6871] manager: (tailscale0): new Tun d[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: dns: resolvedIsActuallyResolver [7merror[27m: resolv.conf has no name[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: dns: [rc=nm resolved=not-in-use ret=direct][m
+feb 10 07:57:09 klad tailscaled[1688]: dns: using "direct" mode[m
+feb 10 07:57:09 klad kernel: tun: Universal TUN/TAP device driver, 1.6[m
+feb 10 07:57:09 klad tailscaled[1688]: dns: using *dns.directManager[m
+feb 10 07:57:09 klad tailscaled[1688]: link state: interfaces.State{defaultRoute= ifs={} v4=false v6=[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: magicsock: disco key = d:335706a33eef52c7[m
+feb 10 07:57:09 klad tailscaled[1688]: magicsock: SetNetworkUp(false)[m
+feb 10 07:57:09 klad tailscaled[1688]: Creating WireGuard device...[m
+feb 10 07:57:09 klad tailscaled[1688]: router: portUpdate(port=41641, network=udp6)[m
+feb 10 07:57:09 klad tailscaled[1688]: router: using firewall mode pref[m
+feb 10 07:57:09 klad tailscaled[1688]: external route: up[m
+feb 10 07:57:09 klad tailscaled[1688]: Bringing WireGuard device up...[m
+feb 10 07:57:09 klad tailscaled[1688]: Bringing router up...[m
+feb 10 07:57:09 klad tailscaled[1688]: router: default choosing iptables[m
+feb 10 07:57:09 klad tailscaled[1688]: router: netfilter running in iptables mode v6 = true, v6filter[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: router: portUpdate(port=41641, network=udp4)[m
+feb 10 07:57:09 klad tailscaled[1688]: Clearing router settings...[m
+feb 10 07:57:09 klad tailscaled[1688]: Starting network monitor...[m
+feb 10 07:57:09 klad tailscaled[1688]: Engine created.[m
+feb 10 07:57:09 klad tailscaled[1688]: monitor: [unexpected] network state changed, but stringificati[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: monitor: [unexpected] old: {"InterfaceIPs":{"lo":["127.0.0.1/8[m[7m>[27m
+feb 10 07:57:09 klad tailscaled[1688]: monitor: [unexpected] new: {"InterfaceIPs":{"lo":["127.0.0.1/8
